@@ -1,0 +1,31 @@
+.ebook {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  background-color: var(--white);
+  padding: 16px;
+  width: 400px;
+  height: 550px;
+  border-radius: 8px;
+  text-decoration: underline;
+}
+
+.ebook:hover {
+  text-decoration: none;
+}
+
+.img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.descBook {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+}

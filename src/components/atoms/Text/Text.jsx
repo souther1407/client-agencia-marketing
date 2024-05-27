@@ -6,7 +6,9 @@ const getSize = (size) => {
     case "md":
       return "1rem";
     case "sm":
-      return "0.78rem";
+      return "0.8889rem";
+    case "ty":
+      return "0.7778rem";
     default:
       return "1rem";
   }
@@ -17,7 +19,7 @@ const Text = ({
   bold,
   color = "standard",
   children,
-  size,
+  size = "md",
   textAlign = "start",
   ...otherProps
 }) => {
@@ -25,7 +27,7 @@ const Text = ({
     return (
       <h1
         className={`${styles.title} ${styles[color]} ${bold && styles.bold}`}
-        style={{ textAlign, fontSize: getSize(size) ?? "" }}
+        style={{ textAlign }}
         {...otherProps}
       >
         {children}
@@ -35,7 +37,7 @@ const Text = ({
     return (
       <h3
         className={`${styles.subtitle} ${styles[color]} ${bold && styles.bold}`}
-        style={{ textAlign, fontSize: getSize(size) ?? "" }}
+        style={{ textAlign }}
         {...otherProps}
       >
         {children}
