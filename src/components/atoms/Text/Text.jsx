@@ -1,6 +1,17 @@
 import React from "react";
 import styles from "./text.module.css";
 
+const getSize = (size) => {
+  switch (size) {
+    case "md":
+      return "1rem";
+    case "sm":
+      return "0.78rem";
+    default:
+      return "1rem";
+  }
+};
+
 const Text = ({
   type = "text",
   bold,
@@ -8,14 +19,13 @@ const Text = ({
   children,
   size,
   textAlign = "start",
-  fontFamily = "inherit",
   ...otherProps
 }) => {
   if (type === "title") {
     return (
       <h1
         className={`${styles.title} ${styles[color]} ${bold && styles.bold}`}
-        style={{ textAlign, fontSize: size ?? "", fontFamily }}
+        style={{ textAlign, fontSize: getSize(size) ?? "" }}
         {...otherProps}
       >
         {children}
@@ -25,7 +35,7 @@ const Text = ({
     return (
       <h3
         className={`${styles.subtitle} ${styles[color]} ${bold && styles.bold}`}
-        style={{ textAlign, fontSize: size ?? "", fontFamily }}
+        style={{ textAlign, fontSize: getSize(size) ?? "" }}
         {...otherProps}
       >
         {children}
@@ -35,7 +45,7 @@ const Text = ({
   return (
     <p
       className={`${styles.text} ${styles[color]} ${bold && styles.bold}`}
-      style={{ textAlign, fontSize: size ?? "", fontFamily }}
+      style={{ textAlign, fontSize: getSize(size) ?? "" }}
       {...otherProps}
     >
       {children}

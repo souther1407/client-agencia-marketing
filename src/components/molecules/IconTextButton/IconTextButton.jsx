@@ -7,7 +7,7 @@ const IconTextButton = ({
   size = "auto",
   textProps,
   colorVariant = "primary",
-  iconProps,
+  icon,
   onClick,
   children,
   ...otherProps
@@ -19,10 +19,12 @@ const IconTextButton = ({
       onClick={onClick}
       {...otherProps}
     >
+      {icon && (
+        <Icon size={"1.5rem"} type={icon} color={`var(--${colorVariant})`} />
+      )}
       <Text {...textProps} color="inherit">
         {children}
       </Text>
-      {iconProps?.type && <Icon {...iconProps} />}
     </button>
   );
 };

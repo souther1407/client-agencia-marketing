@@ -1,0 +1,13 @@
+.nav {
+  display: flex;
+  padding: 8px 120px;
+  background-color: var(--white);
+  border-bottom: 1px solid var(--black);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sections {
+  display: flex;
+  gap: 64px;
+}

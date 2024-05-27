@@ -4,11 +4,29 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "lexend";
+  src: url("./assets/fonts/Lexend-Medium.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "lexend";
+  src: url("./assets/fonts/Lexend-SemiBold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "lexend";
+  src: url("./assets/fonts/Lexend-Light.ttf");
+  font-weight: 300;
+}
+
 :root {
-  --white: #dddddd;
+  --white: #fefefe;
   --white-transparent: #ffffff3b;
   --yellow-cream: #f6f4eb;
-  --black: #161f32;
+  --black: #213343;
   --black-transparent: #1e22265e;
   --light-blue: #749bc2;
   --light-gray: rgba(159, 159, 159, 0.26);
@@ -19,21 +37,28 @@
   --green: rgb(77, 219, 77);
   --light-green: rgb(122, 243, 122);
   --dark-green: #1e2226;
-  --primary: #0ecb81;
+  --primary: #206767;
   --primary-transparent: #0ecb832a;
   --secondary: #1a4789;
   --error: red;
   --primary-dark: #0ecb8334;
-  --background: #111113;
+  --background: #eff0f2;
   --background-light: #18181b;
   --background-dark: rgb(21, 26, 43);
   --background-container: var(--white-transparent);
   --container-border: var(--light-gray);
 }
 
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
 html,
 body {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 img {

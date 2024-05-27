@@ -1,7 +1,12 @@
 import { useState } from "react";
-import "./services/firebase/firebase";
+import { Route, Routes } from "react-router-dom";
+import LandingEBooks from "./pages/LandingEBooks/LandingEBooks";
 function App() {
-  return <></>;
+  return (
+    <Routes>
+      <Route path="/" element={<LandingEBooks />} />
+    </Routes>
+  );
 }
 
 export default App;
