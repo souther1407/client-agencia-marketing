@@ -3,6 +3,8 @@ import styles from "./text.module.css";
 
 const getSize = (size) => {
   switch (size) {
+    case "lg":
+      return "1.2rem";
     case "md":
       return "1rem";
     case "sm":
@@ -23,10 +25,10 @@ const Text = ({
   textAlign = "start",
   ...otherProps
 }) => {
-  if (type === "title") {
+  if (type === "title" || type == "bigtitle") {
     return (
       <h1
-        className={`${styles.title} ${styles[color]} ${bold && styles.bold}`}
+        className={`${styles[type]} ${styles[color]} ${bold && styles.bold}`}
         style={{ textAlign }}
         {...otherProps}
       >
