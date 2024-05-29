@@ -11,11 +11,10 @@ const Modal = ({ children, isOpen, onClose }) => {
         className={`${styles.modalContent} ${isOpen && styles.show}`}
         onClick={(e) => e.stopPropagation()}
       >
-        {" "}
-        <div className={styles.closeButton}>
+        <header className={styles.header}>
           <IconButton icon="close" size="1.5rem" onClick={onClose} />
-        </div>
-        {children}
+        </header>
+        <main>{children}</main>
       </div>
     </div>
   );

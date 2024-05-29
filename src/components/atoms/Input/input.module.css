@@ -57,11 +57,11 @@
 }
 
 .secondary .input {
-  border: none;
-  border: 1px solid var(--primary);
+  border: 1px solid var(--gray);
+  border-radius: 4px;
   padding: 12px;
-  color: var(--white);
-  background: transparent;
+  color: var(--black);
+  background-color: var(--background);
   font-size: 1rem;
 }
 .secondary .input:focus {

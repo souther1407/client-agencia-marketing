@@ -36,7 +36,9 @@
 .primary {
   color: var(--primary);
 }
-
+.light {
+  color: var(--white);
+}
 .soft {
   color: var(--grat-dark);
 }

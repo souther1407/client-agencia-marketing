@@ -55,7 +55,10 @@ a:active {
   text-decoration: none;
   color: inherit;
 }
-
+ul,
+ol {
+  list-style: none;
+}
 html,
 body {
   font-size: 18px;

@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./styles.module.css";
 import Text from "../../components/atoms/Text/Text";
 import logo from "@assets/react.svg";
 import IconTextButton from "../../components/molecules/IconTextButton/IconTextButton";
+import Modal from "../../components/molecules/Modal/Modal";
+import DownloadForm from "./components/DownloadForm/DownloadForm";
+
 const DownloadEBook = () => {
+  const [modalOpened, setModalOpened] = useState(false);
   return (
     <div className={styles.page}>
       <nav className={styles.nav}>
@@ -21,7 +25,9 @@ const DownloadEBook = () => {
               líderes en marketing digital.
             </Text>
             <div className={styles.downloadEBook}>
-              <IconTextButton size="100%">Descargar Gratis</IconTextButton>
+              <IconTextButton size="100%" onClick={() => setModalOpened(true)}>
+                Descargar Gratis
+              </IconTextButton>
             </div>
           </section>
           <img
@@ -30,6 +36,9 @@ const DownloadEBook = () => {
           />
         </div>
       </main>
+      <Modal isOpen={modalOpened} onClose={() => setModalOpened(false)}>
+        <DownloadForm />
+      </Modal>
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import React from "react";
 import { RiSendPlaneLine } from "react-icons/ri";
-import { FaInfoCircle, FaWhatsapp } from "react-icons/fa";
+import { FaInfoCircle, FaWhatsapp, FaTimes, FaCheck } from "react-icons/fa";
 import { IoDiamondOutline } from "react-icons/io5";
 import styles from "./icon.module.css";
 
@@ -15,6 +15,8 @@ const Icon = ({ type, size, color = "inherit" }) => {
     wp: <FaWhatsapp {...props} />,
     info: <FaInfoCircle {...props} />,
     diamond: <IoDiamondOutline {...props} />,
+    close: <FaTimes {...props} />,
+    check: <FaCheck {...props} />,
   };
   return <i>{icons[type]}</i>;
 };
