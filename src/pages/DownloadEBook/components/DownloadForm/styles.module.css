@@ -41,16 +41,30 @@
   background-color: var(--gray);
   outline: 8px solid var(--white);
 }
+.progress .indicators .indicator.success {
+  background-color: var(--primary);
+}
 .progress .indicators .indicator > :first-child {
   position: relative;
   top: 1px;
 }
 .content {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
+  padding: 16px;
   gap: 24px;
 }
+.hide {
+  visibility: hidden;
+}
+
+.inputs {
+  display: flex;
+  gap: 24px;
+}
+
 .footer {
   display: flex;
   justify-content: space-between;

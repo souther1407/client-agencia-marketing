@@ -37,7 +37,7 @@ const DownloadEBook = () => {
         </div>
       </main>
       <Modal isOpen={modalOpened} onClose={() => setModalOpened(false)}>
-        <DownloadForm />
+        <DownloadForm modalOpened={modalOpened} />
       </Modal>
     </div>
   );
