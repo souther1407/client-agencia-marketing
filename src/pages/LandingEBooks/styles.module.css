@@ -17,3 +17,16 @@
   grid-template-columns: repeat(3, auto);
   gap: 32px;
 }
+
+@media screen and (max-width: 1000px) {
+  .books {
+    grid-template-columns: repeat(2, auto);
+    gap: 16px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .books {
+    grid-template-columns: repeat(1, auto);
+  }
+}

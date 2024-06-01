@@ -14,3 +14,19 @@
   position: relative;
   left: 64px;
 }
+
+.btnDropdown {
+  display: none;
+}
+
+@media screen and (max-width: 850px) {
+  .btnDropdown {
+    display: flex;
+  }
+  .sections {
+    display: none;
+  }
+  .btnContact {
+    display: none;
+  }
+}

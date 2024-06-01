@@ -24,7 +24,7 @@
 .ebook {
   width: 340px;
   height: auto;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .banner {
@@ -45,4 +45,23 @@
 
 .downloadEBook > :first-child {
   height: 100% !important;
+}
+
+@media screen and (max-width: 800px) {
+  .banner {
+    flex-direction: column-reverse;
+    width: 100%;
+    padding: 32px;
+  }
+  .ebook {
+    width: 100%;
+    transform: scale(1.2);
+  }
+
+  .desc {
+    margin-left: 32px;
+  }
+  .downloadEBook {
+    align-self: center;
+  }
 }

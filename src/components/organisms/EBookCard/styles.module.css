@@ -30,3 +30,9 @@
   justify-content: space-between;
   align-items: center;
 }
+
+@media screen and (max-width: 600px) {
+  .ebook {
+    width: 100%;
+  }
+}
