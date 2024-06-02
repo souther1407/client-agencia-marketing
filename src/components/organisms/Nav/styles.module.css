@@ -29,4 +29,18 @@
   .btnContact {
     display: none;
   }
+  .mobileMenu {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 8px;
+  }
+  .element {
+    display: flex;
+    background-color: var(--gray-light);
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: 1px solid var(--gray-light);
+    justify-content: space-between;
+  }
 }

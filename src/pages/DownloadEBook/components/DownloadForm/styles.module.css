@@ -1,6 +1,9 @@
 .downloadForm {
   display: flex;
   flex-direction: column;
+  width: 900px;
+  justify-content: space-between;
+  height: 400px;
   padding: 24px;
 }
 
@@ -68,4 +71,12 @@
 .footer {
   display: flex;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 800px) {
+  .downloadForm {
+    width: 100vw;
+    height: 100vh;
+    justify-content: space-evenly;
+  }
 }

@@ -15,7 +15,7 @@ const DownloadForm = ({ modalOpened }) => {
     phoneNumber: "",
     url: "",
   });
-
+  window.innerWidth;
   const [currentForm, setCurrentForm] = useState(1);
 
   const handleNextForm = () => {
@@ -40,7 +40,17 @@ const DownloadForm = ({ modalOpened }) => {
   }, [modalOpened]);
 
   return (
-    <div className={styles.downloadForm}>
+    <div
+      className={styles.downloadForm}
+      style={{
+        height:
+          window.innerWidth <= 600
+            ? form.email.length > 0
+              ? "100vh"
+              : "75vh"
+            : "",
+      }}
+    >
       <header className={styles.header}>
         <div
           className={`${styles.progress} ${currentForm == 1 && styles.hide}`}

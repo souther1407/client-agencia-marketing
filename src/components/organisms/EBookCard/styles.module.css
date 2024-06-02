@@ -34,5 +34,6 @@
 @media screen and (max-width: 600px) {
   .ebook {
     width: 100%;
+    height: 500px;
   }
 }

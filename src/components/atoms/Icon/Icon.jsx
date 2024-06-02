@@ -8,6 +8,7 @@ import {
   FaBars,
 } from "react-icons/fa";
 import { IoDiamondOutline } from "react-icons/io5";
+import { MdArrowForwardIos } from "react-icons/md";
 import styles from "./icon.module.css";
 
 const Icon = ({ type, size, color = "inherit" }) => {
@@ -24,6 +25,7 @@ const Icon = ({ type, size, color = "inherit" }) => {
     close: <FaTimes {...props} />,
     check: <FaCheck {...props} />,
     bars: <FaBars {...props} />,
+    arrow: <MdArrowForwardIos {...props} />,
   };
   return <i>{icons[type]}</i>;
 };

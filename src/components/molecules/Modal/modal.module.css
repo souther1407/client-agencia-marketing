@@ -1,5 +1,6 @@
 .modal {
   display: none;
+
   position: fixed;
   top: 0;
   left: 0;
@@ -10,7 +11,6 @@
   overflow: hidden;
   background-color: var(--black-transparent);
   z-index: 10000;
-  padding: 8px;
 }
 
 .modal.show {
@@ -19,11 +19,9 @@
 
 .modalContent {
   position: relative;
-  width: 50%;
   border-radius: 8px;
   background-color: var(--white);
-  min-height: 230px;
-  overflow: auto;
+  overflow: hidden;
 }
 .header {
   padding: 16px;
@@ -31,12 +29,8 @@
   justify-content: flex-end;
   border-bottom: 1px solid var(--gray);
 }
-@media screen and (max-width: 600px) {
-  .modalContent {
-    width: 100%;
-  }
-  .closeButton {
-    top: 7%;
-    right: 6%;
+@media screen and (max-width: 800px) {
+  .modal {
+    align-items: flex-start;
   }
 }
