@@ -1,13 +1,18 @@
-import { useState } from "react";
 import { Route, Routes } from "react-router-dom";
-import { DOWNLOAD_EBOOK, LANDING_EBOOKS } from "./constants/routes";
+import {
+  DOWNLOAD_EBOOK,
+  LANDING_EBOOKS,
+  ADMIN_PANEL,
+} from "./constants/routes";
 import LandingEBooks from "./pages/LandingEBooks/LandingEBooks";
 import DownloadEBook from "./pages/DownloadEBook/DownloadEBook";
+import AdminDashboard from "./pages/AdminDashboard/AdminDashboard";
 function App() {
   return (
     <Routes>
       <Route path={LANDING_EBOOKS} element={<LandingEBooks />} />
       <Route path={DOWNLOAD_EBOOK} element={<DownloadEBook />} />
+      <Route path={ADMIN_PANEL} element={<AdminDashboard />} />
     </Routes>
   );
 }
