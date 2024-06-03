@@ -3,7 +3,7 @@
   flex-direction: column;
   width: 900px;
   justify-content: space-between;
-  height: 400px;
+  min-height: 400px;
   padding: 24px;
 }
 
@@ -62,9 +62,13 @@
 .hide {
   visibility: hidden;
 }
+.none {
+  display: none;
+}
 
 .inputs {
   display: flex;
+  align-items: center;
   gap: 24px;
 }
 
@@ -73,7 +77,27 @@
   justify-content: space-between;
 }
 
+.check {
+  display: flex;
+  gap: 8px;
+}
+
+.checks {
+  margin-top: 16px;
+}
+
+.downloadBtn {
+  display: none;
+}
+
+.show {
+  display: flex;
+}
+
 @media screen and (max-width: 800px) {
+  .inputs {
+    flex-direction: column;
+  }
   .downloadForm {
     width: 100vw;
     height: 100vh;

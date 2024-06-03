@@ -4,7 +4,7 @@ import Text from "../../../../components/atoms/Text/Text";
 import IconTextButton from "../../../../components/molecules/IconTextButton/IconTextButton";
 import Input from "../../../../components/atoms/Input/Input";
 import Icon from "../../../../components/atoms/Icon/Icon";
-
+import TextLink from "../../../../components/molecules/TextLink/TextLink";
 const MAX_FORMS = 4;
 const DownloadForm = ({ modalOpened }) => {
   const [form, setForm] = useState({
@@ -104,7 +104,7 @@ const DownloadForm = ({ modalOpened }) => {
         {currentForm == 1 && (
           <div className={styles.content}>
             <div className={styles.desc}>
-              <Text bold type="title">
+              <Text bold type="title" textAlign="center">
                 Descarga el Ebook Gratuito
               </Text>
               <Text size="ty" textAlign="center">
@@ -125,7 +125,7 @@ const DownloadForm = ({ modalOpened }) => {
         {currentForm == 2 && (
           <div className={styles.content}>
             <div className={styles.desc}>
-              <Text bold type="title">
+              <Text bold type="title" textAlign="center">
                 Descarga el Ebook Gratuito
               </Text>
               <Text size="ty" textAlign="center">
@@ -155,7 +155,7 @@ const DownloadForm = ({ modalOpened }) => {
         {currentForm == 3 && (
           <div className={styles.content}>
             <div className={styles.desc}>
-              <Text bold type="title">
+              <Text bold type="title" textAlign="center">
                 Descarga el Ebook Gratuito
               </Text>
               <Text size="ty" textAlign="center">
@@ -185,7 +185,7 @@ const DownloadForm = ({ modalOpened }) => {
         {currentForm == 4 && (
           <div className={styles.content}>
             <div className={styles.desc}>
-              <Text bold type="title">
+              <Text bold type="title" textAlign="center">
                 Descarga el Ebook Gratuito
               </Text>
               <Text size="ty" textAlign="center">
@@ -201,6 +201,22 @@ const DownloadForm = ({ modalOpened }) => {
                 onError={(id, error) => {}}
                 label="URL del sitio web"
               />
+              <div className={styles.checks}>
+                <div className={styles.check}>
+                  <input type="checkbox" />
+                  <Text>
+                    Suscribirse a nuestro{" "}
+                    <TextLink to={"#"}>Blog de Marketing Dental</TextLink>
+                  </Text>
+                </div>
+                <div className={styles.check}>
+                  <input type="checkbox" />
+                  <Text>
+                    Acepto los{" "}
+                    <TextLink to={"#"}>términos y condiciones</TextLink>
+                  </Text>
+                </div>
+              </div>
             </div>
           </div>
         )}
@@ -211,8 +227,17 @@ const DownloadForm = ({ modalOpened }) => {
             Anterior
           </IconTextButton>
         </div>
-        <div className={currentForm == MAX_FORMS && styles.hide}>
+        <div className={currentForm == MAX_FORMS && styles.none}>
           <IconTextButton onClick={handleNextForm}>Siguiente</IconTextButton>
+        </div>
+        <div
+          className={`${styles.downloadBtn} ${
+            currentForm == MAX_FORMS && styles.show
+          }`}
+        >
+          <IconTextButton disabled onClick={handleNextForm}>
+            Descargar pdf
+          </IconTextButton>
         </div>
       </footer>
     </div>

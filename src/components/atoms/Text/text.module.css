@@ -42,3 +42,7 @@
 .soft {
   color: var(--grat-dark);
 }
+.link {
+  color: var(--light-blue);
+  text-decoration: underline;
+}
