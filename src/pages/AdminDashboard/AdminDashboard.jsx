@@ -4,8 +4,22 @@ import IconTextButton from "../../components/molecules/IconTextButton/IconTextBu
 import TextArea from "../../components/atoms/Textarea/Textarea";
 import Input from "../../components/atoms/Input/Input";
 import Text from "../../components/atoms/Text/Text";
+import LoadingScreen from "../../components/molecules/LoadingScreen/LoadingScreen";
+
 const AdminDashboard = () => {
   const [currentForm, setCurrentForm] = useState(0);
+  const [form, setForm] = useState({
+    detailTitle: "",
+    detailDescription: "",
+    cardTitle: "",
+    cardDetail: "",
+    img: null,
+    pdf: null,
+  });
+
+  const handleChange = (id, value) => {
+    setForm((prev) => ({ ...prev, [id]: value }));
+  };
   const onNext = () => {
     if (currentForm == 1) return;
     setCurrentForm((prev) => prev + 1);
@@ -13,6 +27,12 @@ const AdminDashboard = () => {
   const onAnt = () => {
     if (currentForm == 0) return;
     setCurrentForm((prev) => prev - 1);
+  };
+  const allFieldsCompleted = () => {
+    for (let e in form) {
+      if (form[e] === "") return false;
+    }
+    return true;
   };
   return (
     <div className={styles.page}>
@@ -27,14 +47,14 @@ const AdminDashboard = () => {
             id={"detailTitle"}
             label="Titulo Biblioteca"
             placeholder="Eg: Como Mejorar la Aceptación de Casos de tu Clinica"
-            onChange={(id, value) => {}}
+            onChange={handleChange}
             onError={(id, value) => {}}
           />
           <TextArea
             id={"detailDescription"}
             placeholder="Eg: Transforma tu clínica dental con nuestros ebooks, redactados por líderes en marketing digital."
             label="Micro-Descripcion del ebook"
-            onChange={(id, value) => {}}
+            onChange={handleChange}
           />
         </div>
         <div className={`${styles.form} ${currentForm == 1 && styles.show}`}>
@@ -43,14 +63,14 @@ const AdminDashboard = () => {
             id={"cardTitle"}
             label="Titulo Landing Page"
             placeholder="Eg: Como Mejorar la Aceptación de Casos de tu Clinica"
-            onChange={(id, value) => {}}
+            onChange={handleChange}
             onError={(id, value) => {}}
           />
           <TextArea
             id={"cardDetail"}
             placeholder="Eg: Transforma tu clínica dental con nuestros ebooks, redactados por líderes en marketing digital."
             label="Descripcion Landing Page"
-            onChange={(id, value) => {}}
+            onChange={handleChange}
           />
           <div className={styles.upload}>
             <label>
@@ -62,8 +82,12 @@ const AdminDashboard = () => {
                 id="img"
                 type="file"
                 style={{ display: "none" }}
+                onChange={(e) => handleChange("img", e.target.files[0])}
               />
             </label>
+            <div>
+              <Text>{form.img?.name}</Text>
+            </div>
           </div>
           <div className={styles.upload}>
             <label>
@@ -74,13 +98,19 @@ const AdminDashboard = () => {
                 id="pdf"
                 accept="application/pdf"
                 type="file"
+                onChange={(e) => handleChange("pdf", e.target.files[0])}
                 style={{ display: "none" }}
               />
             </label>
+            <div>
+              <Text>{form.pdf?.name}</Text>
+            </div>
           </div>
 
           <div className={styles.createBook}>
-            <IconTextButton>Crear EBook</IconTextButton>
+            <IconTextButton disabled={!allFieldsCompleted()}>
+              Crear EBook
+            </IconTextButton>
           </div>
         </div>
       </main>
