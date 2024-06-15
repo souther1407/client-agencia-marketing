@@ -18,7 +18,7 @@ const getSize = (size) => {
 
 const Text = ({
   type = "text",
-  bold,
+  bold = "normal",
   color = "standard",
   children,
   size = "md",
@@ -28,7 +28,7 @@ const Text = ({
   if (type === "title" || type == "bigtitle") {
     return (
       <h1
-        className={`${styles[type]} ${styles[color]} ${bold && styles.bold}`}
+        className={`${styles[type]} ${styles[color]} ${styles[bold]}`}
         style={{ textAlign }}
         {...otherProps}
       >
@@ -38,7 +38,7 @@ const Text = ({
   } else if (type === "subtitle") {
     return (
       <h3
-        className={`${styles.subtitle} ${styles[color]} ${bold && styles.bold}`}
+        className={`${styles.subtitle} ${styles[color]} ${styles[bold]}`}
         style={{ textAlign }}
         {...otherProps}
       >
@@ -48,7 +48,7 @@ const Text = ({
   }
   return (
     <p
-      className={`${styles.text} ${styles[color]} ${bold && styles.bold}`}
+      className={`${styles.text} ${styles[color]} ${styles[bold]}`}
       style={{ textAlign, fontSize: getSize(size) ?? "" }}
       {...otherProps}
     >

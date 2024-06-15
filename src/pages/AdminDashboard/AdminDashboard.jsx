@@ -5,9 +5,12 @@ import TextArea from "../../components/atoms/Textarea/Textarea";
 import Input from "../../components/atoms/Input/Input";
 import Text from "../../components/atoms/Text/Text";
 import LoadingScreen from "../../components/molecules/LoadingScreen/LoadingScreen";
+import { createEBook } from "../../services/firebase/db";
+import { uploadFile } from "../../services/firebase/fileUpload";
 
 const AdminDashboard = () => {
   const [currentForm, setCurrentForm] = useState(0);
+  const [loading, setLoading] = useState(false);
   const [form, setForm] = useState({
     detailTitle: "",
     detailDescription: "",
@@ -20,22 +23,45 @@ const AdminDashboard = () => {
   const handleChange = (id, value) => {
     setForm((prev) => ({ ...prev, [id]: value }));
   };
+
   const onNext = () => {
     if (currentForm == 1) return;
     setCurrentForm((prev) => prev + 1);
   };
+
   const onAnt = () => {
     if (currentForm == 0) return;
     setCurrentForm((prev) => prev - 1);
   };
+
   const allFieldsCompleted = () => {
     for (let e in form) {
       if (form[e] === "") return false;
     }
     return true;
   };
+
+  const handleCreateEBook = async () => {
+    try {
+      setLoading(true);
+      const fileImgUrlPromise = uploadFile(form.img, "imgs");
+      const filePdfUrlPromise = uploadFile(form.pdf, "pdfs");
+      const [imgUrl, pdfUrl] = await Promise.all([
+        fileImgUrlPromise,
+        filePdfUrlPromise,
+      ]);
+      await createEBook({ ...form, img: imgUrl, pdf: pdfUrl });
+      alert("ebook creado!");
+    } catch (error) {
+      alert(error.message);
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <div className={styles.page}>
+      {loading && <LoadingScreen />}
       <header className={styles.header}>
         <IconTextButton onClick={onAnt}>Atrás</IconTextButton>
         <IconTextButton onClick={onNext}>Siguiente</IconTextButton>
@@ -108,7 +134,10 @@ const AdminDashboard = () => {
           </div>
 
           <div className={styles.createBook}>
-            <IconTextButton disabled={!allFieldsCompleted()}>
+            <IconTextButton
+              onClick={handleCreateEBook}
+              disabled={!allFieldsCompleted()}
+            >
               Crear EBook
             </IconTextButton>
           </div>

@@ -29,20 +29,28 @@
   color: inherit;
 }
 
-.bold {
-  font-weight: bold;
-}
-
 .primary {
   color: var(--primary);
 }
-.light {
+.color-light {
   color: var(--white);
 }
 .soft {
-  color: var(--grat-dark);
+  color: var(--gray-dark);
 }
 .link {
   color: var(--light-blue);
   text-decoration: underline;
+}
+
+.normal {
+  font-weight: 500;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.bold {
+  font-weight: bold;
 }

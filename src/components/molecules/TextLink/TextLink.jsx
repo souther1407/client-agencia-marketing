@@ -5,9 +5,9 @@ import styles from "./styles.module.css";
 const TextLink = ({ to, extern, children }) => {
   return (
     <Link to={to} extern={extern}>
-      <Text style={{ display: "inline" }} color="link">
-        {children}
-      </Text>
+      <div className={styles.textLink}>
+        <Text style={{ display: "inline" }}>{children}</Text>
+      </div>
     </Link>
   );
 };

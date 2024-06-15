@@ -7,6 +7,7 @@ import Logo from "../../atoms/Logo/Logo";
 import IconButton from "../../molecules/IconButton/IconButton";
 import Drawer from "../../molecules/Drawer/Drawer";
 import Icon from "../../atoms/Icon/Icon";
+import TextLink from "../../molecules/TextLink/TextLink";
 const Nav = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   useEffect(() => {
@@ -17,22 +18,18 @@ const Nav = () => {
   }, []);
   return (
     <nav className={styles.nav}>
-      <Logo />
-      <section className={styles.sections}>
-        <Link to={"#"} extern>
-          <Text>Inicio</Text>
-        </Link>
-        <Link to={"#"} extern>
-          <Text>Ebooks</Text>
-        </Link>
-        <Link to={"#"} extern>
-          <Text>Blog</Text>
-        </Link>
-      </section>
-      <div className={styles.btnContact}>
-        <IconButtonText icon="wp" variant="bordered">
-          Contáctanos
-        </IconButtonText>
+      <div className={styles.left}>
+        <Logo />
+        <TextLink>Guias</TextLink>
+        <TextLink>Servicios</TextLink>
+      </div>
+      <div className={styles.right}>
+        <TextLink>Contacto</TextLink>
+        <div className={styles.btnContact}>
+          <IconButtonText icon="wp" variant="full">
+            Contáctanos
+          </IconButtonText>
+        </div>
       </div>
       <div className={styles.btnDropdown}>
         <IconButton
