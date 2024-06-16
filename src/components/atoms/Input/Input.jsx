@@ -47,7 +47,7 @@ const Input = ({
           <Icon type={icon} size={"1.4rem"} />
         </div>
       )}
-      {label && <Text size={"0.77rem"}>{label}</Text>}
+      {label && <Text size={"0.7778rem"}>{label}</Text>}
       <input
         ref={input}
         style={{ width: size }}

@@ -12,7 +12,8 @@
 }
 
 .title {
-  font-size: 2rem;
+  font-size: 1.78rem;
+  line-height: 1.25;
 }
 
 .bigtitle {
@@ -37,6 +38,9 @@
 }
 .soft {
   color: var(--gray-dark);
+}
+.soft-light {
+  color: var(--light-blue-transparent);
 }
 .link {
   color: var(--light-blue);
