@@ -53,7 +53,7 @@ const DownloadForm = ({ modalOpened }) => {
     >
       <header className={styles.header}>
         <div
-          className={`${styles.progress} ${currentForm == 1 && styles.hide}`}
+          className={`${styles.progress} ${currentForm == 1 && styles.none}`}
         >
           <div className={styles.progressLine}></div>
           <ul className={styles.indicators}>
@@ -192,7 +192,7 @@ const DownloadForm = ({ modalOpened }) => {
                 todos los campos son obligatorios
               </Text>
             </div>
-            <div>
+            <div className={styles.inputChecks}>
               <Input
                 variant="secondary"
                 id={"url"}

@@ -1,3 +1,7 @@
+.textLink {
+  display: inline;
+}
+
 .textLink > *:hover {
   color: var(--blue);
   text-decoration: underline;
