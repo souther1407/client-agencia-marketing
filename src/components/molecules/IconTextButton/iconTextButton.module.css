@@ -17,7 +17,7 @@
 /* Primary */
 .primary.iconTextButton.full {
   background-color: var(--primary);
-  color: var(--white);
+  color: var(--dark-black);
 }
 .primary.iconTextButton:disabled {
   background-color: #2d4356;

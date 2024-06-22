@@ -1,22 +1,35 @@
 .nav {
   display: flex;
-  padding: 16px 32px;
-  background-color: var(--white);
-  box-shadow: 0 4px 10px var(--gray-light);
-  justify-content: space-evenly;
-  align-items: center;
+  background-color: var(--dark-black);
+  height: calc(var(--width-unit) * 0.25);
+  padding-left: var(--width-unit);
+  padding-right: var(--width-unit);
   position: sticky;
   z-index: 1000;
   top: 0;
 }
+.elements {
+  display: flex;
+  flex-basis: calc(var(--width-unit) * 3);
+  justify-content: space-between;
+}
 
-.left,
-.right {
+.nav *:not(.logo) {
+  z-index: 2;
+}
+.logo {
+  z-index: 0;
+}
+.left {
   display: flex;
   align-items: center;
   gap: 64px;
 }
-
+.right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
 .btnDropdown {
   display: none;
 }

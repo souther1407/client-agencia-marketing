@@ -2,7 +2,16 @@
   display: flex;
   align-items: center;
   cursor: pointer;
-  padding: 0 16px;
   background-color: transparent;
   border: none;
+}
+
+.primary {
+  padding: 6px;
+  border: 1px solid var(--primary);
+  border-radius: 8px;
+}
+
+.primary > * {
+  color: var(--primary);
 }

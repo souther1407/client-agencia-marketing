@@ -8,6 +8,7 @@ import IconButton from "../../molecules/IconButton/IconButton";
 import Drawer from "../../molecules/Drawer/Drawer";
 import Icon from "../../atoms/Icon/Icon";
 import TextLink from "../../molecules/TextLink/TextLink";
+
 const Nav = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   useEffect(() => {
@@ -18,25 +19,32 @@ const Nav = () => {
   }, []);
   return (
     <nav className={styles.nav}>
-      <div className={styles.left}>
-        <Logo />
-        <TextLink>Guias</TextLink>
-        <TextLink>Servicios</TextLink>
-      </div>
-      <div className={styles.right}>
-        <TextLink>Contacto</TextLink>
-        <div className={styles.btnContact}>
-          <IconButtonText icon="wp" variant="full">
-            Contáctanos
-          </IconButtonText>
+      <div className={styles.elements}>
+        <div className={styles.left}>
+          <div className={styles.logo}>
+            <Logo />
+          </div>
+          <TextLink textProps={{ color: "soft" }}>Guias</TextLink>
+          <TextLink textProps={{ color: "soft" }}>Servicios</TextLink>
+          <TextLink textProps={{ color: "soft" }}>Contacto</TextLink>
         </div>
-      </div>
-      <div className={styles.btnDropdown}>
-        <IconButton
-          icon="bars"
-          size="2rem"
-          onClick={() => setShowMobileMenu(true)}
-        />
+        <div className={styles.right}>
+          <div className={styles.wsBtn}>
+            <IconButton icon="wp" size="2rem" />
+          </div>
+          <div className={styles.btnContact}>
+            <IconButtonText icon="wp" variant="full">
+              Obten un plan gratis
+            </IconButtonText>
+          </div>
+        </div>
+        <div className={styles.btnDropdown}>
+          <IconButton
+            icon="bars"
+            size="2rem"
+            onClick={() => setShowMobileMenu(true)}
+          />
+        </div>
       </div>
       <Drawer show={showMobileMenu} onClose={() => setShowMobileMenu(false)}>
         <div className={styles.mobileMenu}>

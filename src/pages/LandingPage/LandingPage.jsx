@@ -6,42 +6,40 @@ import Text from "../../components/atoms/Text/Text";
 import IconTextButton from "../../components/molecules/IconTextButton/IconTextButton";
 import EbookImg from "@assets/Foto Prueba.svg";
 import Link from "../../components/atoms/Link/Link";
-import BannerBGImg from "@assets/BannerBG.svg";
 import Input from "../../components/atoms/Input/Input";
 import Footer from "../../components/organisms/Footer/Footer";
+
 const LandingPage = () => {
   return (
     <div className={styles.page}>
-      <Nav />
-      <section className={styles.banner}>
-        <img className={styles.banner__bg} src={BannerBGImg} />
-        <div className={styles.banner__content}>
-          <Text size="ty" bold="bold">
-            AGENCIA DE MARKETING DENTAL
-          </Text>
-          <Text type="title" bold="bold">
-            INVIERTE EN EL CRECIMIENTO DE TU CLÍNICA DENTAL
-          </Text>
-          <Text size="sm">
-            Somos una agencia de marketing que trabaja mano a mano con Clinicas
-            Dentales en Espana y Latinoamerica para llevar sus ingresos al
-            siguiente nivel.
-          </Text>
+      <header className={styles.header}>
+        <Nav />
+        <section className={styles.banner}>
+          <div className={styles.banner__content}>
+            <Text size="ty" bold="bold" color="primary">
+              AGENCIA DE MARKETING DENTAL
+            </Text>
+            <Text type="title" bold="bold" color="light">
+              Invierte en tu Clínica Dental con InkaDentist
+            </Text>
+            <Text size="sm" color="soft" bold="font-light">
+              Somos expertos en marketing dental. Nuestro objetivo es generar
+              pacientes leales para Clinicas ubicadas en España y Latinoamerica
+            </Text>
 
-          <div className={styles.banner__btns}>
-            <IconTextButton>Solicitar Plan de Marketing</IconTextButton>
-            <div className={styles.videoBtn}>
-              <div className={styles.videoBtn__desc}>
-                <Text bold>¿Qué es Inkadentist?</Text>
-                <Text color="soft" size="sm">
-                  Mirar video introductorio
-                </Text>
-              </div>
+            <div className={styles.banner__btns}>
+              <IconTextButton>Solicitar Plan de Marketing</IconTextButton>
             </div>
+            <Text size="sm" color="soft" bold="font-light">
+              Solo para Clinicas Dentales que ofrezcan implantes
+            </Text>
           </div>
+          <img className={styles.bannerImg} src={BannerImg} />
+        </section>
+        <div className={styles.contactBanner}>
+          <div className={styles.desc}></div>
         </div>
-        <img className={styles.bannerImg} src={BannerImg} />
-      </section>
+      </header>
       <section className={styles.mainEBook}>
         <div className={styles.mainEBook__card}>
           <img src={EbookImg} className={styles.mainEBook__img} />
