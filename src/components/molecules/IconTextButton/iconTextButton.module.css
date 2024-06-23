@@ -40,12 +40,18 @@
 }
 
 /* Secondary */
-.secondary.iconTextButton.full {
-  background-color: var(--primary-light);
-  color: white;
+.secondary.iconTextButton {
+  border: 1px solid var(--primary);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: transparent;
+  transition: all 0.3s ease-in;
 }
 
-.secondary.iconTextButton.bordered {
-  border: 1px solid var(--secondary);
-  color: var(--white);
+.secondary.iconTextButton:hover {
+  background-color: var(--primary-transparent);
+}
+
+.secondary.iconTextButton > i {
+  color: var(--primary);
 }
