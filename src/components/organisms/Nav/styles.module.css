@@ -4,7 +4,8 @@
   height: calc(var(--width-unit) * 0.25);
   padding-left: var(--width-unit);
   padding-right: var(--width-unit);
-  position: sticky;
+  position: fixed;
+  width: 100%;
   z-index: 1000;
   top: 0;
 }

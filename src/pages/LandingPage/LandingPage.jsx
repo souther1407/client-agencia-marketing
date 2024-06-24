@@ -101,10 +101,11 @@ const LandingPage = () => {
       <section className={styles.form}>
         <div className={styles.form__desc}>
           <Text type="title">
-            Vea cómo InkaDentist puede ayudarle a hacer crecer su práctica
-            dental.
+            Pide una Propuesta de Marketing para tu Clinica Dental
           </Text>
-          <Text>Aviso: Solo aplica para dueños de clinicas dentales</Text>
+          <Text>
+            Aviso: No aplica para dueños de clinicas con servicio no dentales
+          </Text>
         </div>
         <div className={styles.form__inputs}>
           <div className={styles.line}>
@@ -123,31 +124,17 @@ const LandingPage = () => {
               onError={(id, value) => {}}
             />
           </div>
-          <div className={styles.line}>
-            <Input
-              id={"phone"}
-              label="Número de teléfono (Whatsapp)"
-              variant="secondary"
-              onChange={(id, value) => {}}
-              onError={(id, value) => {}}
-            />
-            <Input
-              id={"email"}
-              label="Email"
-              variant="secondary"
-              onChange={(id, value) => {}}
-              onError={(id, value) => {}}
-            />
-          </div>
           <Input
-            id={"clinicName"}
-            label="Nombre de tu clínica dental"
+            id={"email"}
+            label="Email"
             variant="secondary"
             onChange={(id, value) => {}}
             onError={(id, value) => {}}
             size="100%"
           />
-          <IconTextButton>Solicitar Plan de Marketing</IconTextButton>
+          <IconTextButton variant="terciary">
+            Solicitar Plan de Marketing
+          </IconTextButton>
         </div>
       </section>
       <Footer />

@@ -10,11 +10,36 @@
   flex-direction: column;
   gap: 8px;
 }
-.links {
+.header {
   display: flex;
   gap: 64px;
+  justify-content: space-between;
 }
-.links * {
-  color: var(--white);
-  text-decoration: underline;
+
+.section {
+  display: flex;
+  flex-direction: column;
+}
+
+.copy {
+  display: flex;
+  gap: 32px;
+}
+
+.separator {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  height: 1px;
+  width: 100%;
+  background-color: var(--dark-white);
+}
+.links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.vbar {
+  width: 1px;
+  background-color: var(--dark-white);
+  height: 12px;
 }

@@ -65,7 +65,7 @@
   font-size: 1rem;
 }
 .secondary .input:focus {
-  outline: none;
+  outline: 1px solid var(--blue);
 }
 .secondary .icon {
   color: gray;
