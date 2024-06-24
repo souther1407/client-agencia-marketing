@@ -3,6 +3,7 @@ import styles from "./styles.module.css";
 import Text from "../../atoms/Text/Text";
 import Link from "../../atoms/Link/Link";
 import Logo from "../../atoms/Logo/Logo";
+import Icon from "../../atoms/Icon/Icon";
 const Footer = () => {
   return (
     <footer className={styles.footer}>
@@ -35,16 +36,25 @@ const Footer = () => {
             <Text type="subtitle" color="light">
               Contáctanos
             </Text>
-            <Link>
-              <Text color="soft" bold="font-light">
-                info@inkadentist.com
-              </Text>
-            </Link>
-            <Link>
-              <Text color="soft" bold="font-light">
-                65730273
-              </Text>
-            </Link>
+
+            <Text color="soft" bold="font-light">
+              info@inkadentist.com
+            </Text>
+
+            <Text color="soft" bold="font-light">
+              65730273
+            </Text>
+
+            <div className={styles.socialMedia}>
+              <Icon type={"wp"} size={"1rem"} color="var(--dark-white)" />
+              <Icon type={"facebook"} size={"1rem"} color="var(--dark-white)" />
+              <Icon
+                type={"instagram"}
+                size={"1rem"}
+                color="var(--dark-white)"
+              />
+              <Icon type={"linkedin"} size={"1rem"} color="var(--dark-white)" />
+            </div>
           </section>
         </header>
         <div className={styles.separator}></div>

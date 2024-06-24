@@ -10,6 +10,8 @@ import {
 import { IoDiamondOutline } from "react-icons/io5";
 import { MdArrowForwardIos } from "react-icons/md";
 import styles from "./icon.module.css";
+import { FaLinkedin } from "react-icons/fa6";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 
 const Icon = ({ type, size, color = "inherit" }) => {
   const props = {
@@ -26,6 +28,9 @@ const Icon = ({ type, size, color = "inherit" }) => {
     check: <FaCheck {...props} />,
     bars: <FaBars {...props} />,
     arrow: <MdArrowForwardIos {...props} />,
+    linkedin: <FaLinkedin {...props} />,
+    facebook: <FaFacebook {...props} />,
+    instagram: <FaInstagram {...props} />,
   };
   return <i>{icons[type]}</i>;
 };

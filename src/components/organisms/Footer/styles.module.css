@@ -25,7 +25,9 @@
   display: flex;
   gap: 32px;
 }
-
+.socialMedia {
+  align-self: flex-end;
+}
 .separator {
   margin-top: 8px;
   margin-bottom: 8px;
