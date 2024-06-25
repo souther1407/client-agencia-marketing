@@ -8,9 +8,12 @@ import IconButton from "../../molecules/IconButton/IconButton";
 import Drawer from "../../molecules/Drawer/Drawer";
 import Icon from "../../atoms/Icon/Icon";
 import TextLink from "../../molecules/TextLink/TextLink";
+import { DOWNLOAD_EBOOK } from "../../../constants/routes";
+import { useNavigate } from "react-router-dom";
 
 const Nav = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
+  const navigate = useNavigate();
   useEffect(() => {
     window.addEventListener("resize", () => {
       setShowMobileMenu(false);
@@ -33,7 +36,11 @@ const Nav = () => {
             <IconButton icon="wp" size="2rem" />
           </div>
           <div className={styles.btnContact}>
-            <IconButtonText icon="wp" variant="full">
+            <IconButtonText
+              icon="wp"
+              variant="full"
+              onClick={() => navigate(DOWNLOAD_EBOOK)}
+            >
               Obten un plan gratis
             </IconButtonText>
           </div>

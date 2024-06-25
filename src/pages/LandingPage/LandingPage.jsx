@@ -11,8 +11,10 @@ import Footer from "../../components/organisms/Footer/Footer";
 import Icon from "../../components/atoms/Icon/Icon";
 import VideoImg from "@assets/Imagen Video.svg";
 import Mark from "../../components/atoms/Mark/Mark";
-
+import { useNavigate } from "react-router-dom";
+import { DOWNLOAD_EBOOK, LANDING_EBOOKS } from "../../constants/routes";
 const LandingPage = () => {
+  const navigate = useNavigate();
   return (
     <div className={styles.page}>
       <div className={styles.wsBtn}>
@@ -36,7 +38,9 @@ const LandingPage = () => {
               </Text>
 
               <div className={styles.banner__btns}>
-                <IconTextButton>Solicitar Plan de Marketing</IconTextButton>
+                <IconTextButton onClick={() => navigate(DOWNLOAD_EBOOK)}>
+                  Solicitar Plan de Marketing
+                </IconTextButton>
               </div>
               <Text size="sm" color="soft" bold="font-light">
                 Solo para Clinicas Dentales que ofrezcan implantes
