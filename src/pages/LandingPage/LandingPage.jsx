@@ -67,9 +67,12 @@ const LandingPage = () => {
               <Text bold="bold" color="light" type="subtitle">
                 ¡Estamos Listos para Llenar tu Clinica de Pacientes!
               </Text>
-              <Text color="soft" bold="font-light">
-                Garantizamos ≈10 Nuevos Pacientes cada mes
-              </Text>
+              <div className={styles.desc__prize}>
+                <Icon type={"medal"} size={"1.2rem"} color="var(--primary)" />
+                <Text color="soft" bold="font-light">
+                  Garantizamos ≈10 Nuevos Pacientes cada mes
+                </Text>
+              </div>
             </div>
             <IconTextButton icon={"wp"} variant="secondary">
               ¿Tienes Dudas?

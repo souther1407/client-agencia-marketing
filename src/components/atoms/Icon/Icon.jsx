@@ -12,6 +12,7 @@ import { MdArrowForwardIos } from "react-icons/md";
 import styles from "./icon.module.css";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
+import { BiSolidMedal } from "react-icons/bi";
 
 const Icon = ({ type, size, color = "inherit" }) => {
   const props = {
@@ -31,6 +32,7 @@ const Icon = ({ type, size, color = "inherit" }) => {
     linkedin: <FaLinkedin {...props} />,
     facebook: <FaFacebook {...props} />,
     instagram: <FaInstagram {...props} />,
+    medal: <BiSolidMedal {...props} />,
   };
   return <i>{icons[type]}</i>;
 };
