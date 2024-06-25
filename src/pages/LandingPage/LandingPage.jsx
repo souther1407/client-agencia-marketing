@@ -5,7 +5,7 @@ import BannerImg from "@assets/banner.svg";
 import Text from "../../components/atoms/Text/Text";
 import IconTextButton from "../../components/molecules/IconTextButton/IconTextButton";
 import EbookImg from "@assets/Foto Prueba.svg";
-import Link from "../../components/atoms/Link/Link";
+import IconButton from "../../components/molecules/IconButton/IconButton";
 import Input from "../../components/atoms/Input/Input";
 import Footer from "../../components/organisms/Footer/Footer";
 import Icon from "../../components/atoms/Icon/Icon";
@@ -17,8 +17,19 @@ const LandingPage = () => {
   const navigate = useNavigate();
   return (
     <div className={styles.page}>
-      <div className={styles.wsBtn}>
-        <Icon size={"2.5rem"} type={"wp"} color="var(--primary)" />
+      <div className={styles.help}>
+        <div className={styles.notification}>
+          <Text bold="font-light" size="ty">
+            👋 Tienes alguna duda sobre nuestros servicios de marketing?
+            Consultanos por WhatsApp
+          </Text>
+          <div className={styles.closeBtn}>
+            <IconButton icon="close" variant="secondary" />
+          </div>
+        </div>
+        <div className={styles.wsBtn}>
+          <Icon size={"2.5rem"} type={"wp"} color="var(--primary)" />
+        </div>
       </div>
       <header className={styles.header}>
         <Nav />
