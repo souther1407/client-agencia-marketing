@@ -88,7 +88,7 @@ const LandingPage = () => {
       <section className={styles.mainEBookSection}>
         <div className={styles.mainEBook__card}>
           <div className={styles.mainEBook__desc}>
-            <Text type="subtitle" bold="bold" color="light">
+            <Text type="subtitle" bold="bold" color="very-light">
               <Mark color="primary">Marketing Dental:</Mark> La Guia Definitiva
             </Text>
             <Text size="sm" bold="font-light" color="soft">
@@ -137,7 +137,7 @@ const LandingPage = () => {
             size="100%"
           />
           <IconTextButton variant="terciary">
-            Solicitar Plan de Marketing
+            Quiero Ser Contactado
           </IconTextButton>
         </div>
       </section>

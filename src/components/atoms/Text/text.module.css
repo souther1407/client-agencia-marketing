@@ -33,6 +33,9 @@
 .primary {
   color: var(--primary);
 }
+.very-light {
+  color: var(--light-white);
+}
 .light {
   color: var(--white);
 }

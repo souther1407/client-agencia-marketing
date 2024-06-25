@@ -25,7 +25,8 @@
 :root {
   --dark-white: #d9d9d9;
   --white: #fefefe;
-  --white-transparent: #ffffff3b;
+  --light-white: #fff;
+  --white-transparent: #d9d9d9;
   --yellow-cream: #f6f4eb;
   --black: #213343;
   --dark-black: #1a1e23;

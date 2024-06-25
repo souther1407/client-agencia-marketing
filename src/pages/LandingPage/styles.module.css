@@ -181,6 +181,8 @@
 }
 .form__desc {
   display: flex;
+
+  width: 600px;
   flex-direction: column;
   gap: 32px;
 }
@@ -188,13 +190,11 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+  width: 500px;
 }
 
 .form__inputs .line {
   display: flex;
-  justify-content: space-between;
+  width: 100%;
   gap: 16px;
-}
-.form__inputs .line input {
-  width: 300px !important;
 }
