@@ -27,23 +27,32 @@ const Nav = () => {
           <div className={styles.logo}>
             <Logo />
           </div>
-          <TextLink textProps={{ color: "soft" }}>Guias</TextLink>
-          <TextLink textProps={{ color: "soft" }}>Servicios</TextLink>
-          <TextLink textProps={{ color: "soft" }}>Contacto</TextLink>
         </div>
         <div className={styles.right}>
-          <div className={styles.wsBtn}>
-            <IconButton icon="wp" size="2rem" />
-          </div>
-          <div className={styles.btnContact}>
-            <IconButtonText
-              icon="wp"
-              variant="full"
-              onClick={() => navigate(DOWNLOAD_EBOOK)}
-            >
-              Obten un plan gratis
-            </IconButtonText>
-          </div>
+          <TextLink
+            textProps={{ color: "soft", bold: "font-light", size: "ty" }}
+          >
+            Guias
+          </TextLink>
+          <TextLink
+            textProps={{ color: "soft", bold: "font-light", size: "ty" }}
+          >
+            Servicios
+          </TextLink>
+          <TextLink
+            textProps={{ color: "soft", bold: "font-light", size: "ty" }}
+          >
+            Contacto
+          </TextLink>
+          <div className={styles.separator}></div>
+          <TextLink
+            textProps={{ color: "soft", bold: "font-light", size: "ty" }}
+          >
+            <div className={styles.iconWS}>
+              <Icon size={"1rem"} color="var(--white)" type={"wp"} />{" "}
+            </div>
+            +51949503751
+          </TextLink>
         </div>
         <div className={styles.btnDropdown}>
           <IconButton

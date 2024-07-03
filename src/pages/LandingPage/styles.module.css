@@ -49,7 +49,7 @@
   padding-top: calc(var(--yellow-line) + 40px);
   padding-bottom: var(--yellow-line);
   display: flex;
-  background-color: var(--black);
+  background: linear-gradient(var(--gradient-banner), white);
 }
 .banner > .contents {
   display: flex;
@@ -126,11 +126,9 @@
 }
 
 .bannerImg {
-  width: 700px;
+  width: 600px;
   height: auto;
   object-fit: fill;
-  position: relative;
-  left: 128px;
 }
 
 .videoSection {

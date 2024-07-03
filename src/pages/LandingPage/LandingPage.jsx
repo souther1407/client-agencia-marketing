@@ -36,16 +36,13 @@ const LandingPage = () => {
         <section className={styles.banner}>
           <div className={styles.contents}>
             <div className={styles.banner__content}>
-              <Text size="ty" bold="bold" color="primary">
-                AGENCIA DE MARKETING DENTAL
-              </Text>
-              <Text type="title" bold="bold" color="light">
+              <Text bold="bold">¿QUE SOMOS?</Text>
+              <Text type="title" bold="bold">
                 Invierte en tu Clínica Dental con InkaDentist
               </Text>
-              <Text size="sm" color="soft" bold="font-light">
-                Somos expertos en marketing dental. Nuestro objetivo es generar
-                pacientes leales para Clinicas ubicadas en España y
-                Latinoamerica
+              <Text size="sm" bold="font-light">
+                Trabajamos con clinicas dentales en España y Latinoamerica que
+                busquen crecer su negocio.
               </Text>
 
               <div className={styles.banner__btns}>
@@ -53,7 +50,7 @@ const LandingPage = () => {
                   Solicitar Plan de Marketing
                 </IconTextButton>
               </div>
-              <Text size="sm" color="soft" bold="font-light">
+              <Text size="sm" bold="font-light">
                 Solo para Clinicas Dentales que ofrezcan implantes
               </Text>
             </div>

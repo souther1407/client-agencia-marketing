@@ -6,9 +6,7 @@ const TextLink = ({ to, extern, textProps, children }) => {
   return (
     <Link to={to} extern={extern}>
       <div className={styles.textLink}>
-        <Text {...textProps} style={{ display: "inline" }}>
-          {children}
-        </Text>
+        <Text {...textProps}>{children}</Text>
       </div>
     </Link>
   );

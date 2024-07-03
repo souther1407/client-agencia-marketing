@@ -35,6 +35,16 @@
   display: none;
 }
 
+.separator {
+  width: 2px;
+  height: 2rem;
+  background-color: var(--gray-light);
+}
+.iconWS {
+  display: inline;
+  position: relative;
+  top: 2px;
+}
 @media screen and (max-width: 850px) {
   .btnDropdown {
     display: flex;
