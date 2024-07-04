@@ -55,7 +55,7 @@
   --background-container: var(--white-transparent);
   --container-border: var(--light-gray);
   --width-unit: calc(100vw / 4.5);
-  --linea-amarilla: calc(100vw / 11.5);
+  --linea-amarilla: calc(100vw / 13);
   --linea-verde: calc(100vw / 24.5);
   --linea-rosa: calc(100vw / 6.67);
   --linea-roja: calc(100vw / 14.2);

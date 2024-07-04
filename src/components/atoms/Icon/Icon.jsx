@@ -13,6 +13,7 @@ import styles from "./icon.module.css";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { BiSolidMedal } from "react-icons/bi";
+import { CiWarning } from "react-icons/ci";
 
 const Icon = ({ type, size, color = "inherit" }) => {
   const props = {
@@ -33,6 +34,7 @@ const Icon = ({ type, size, color = "inherit" }) => {
     facebook: <FaFacebook {...props} />,
     instagram: <FaInstagram {...props} />,
     medal: <BiSolidMedal {...props} />,
+    warning: <CiWarning {...props} />,
   };
   return <i>{icons[type]}</i>;
 };

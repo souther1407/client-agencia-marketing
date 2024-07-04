@@ -46,8 +46,8 @@
   height: calc(var(--banner-height) - var(--width-unit) * 0.25);
   padding-right: var(--width-unit);
   padding-left: var(--width-unit);
-  padding-top: calc(var(--yellow-line) + 40px);
-  padding-bottom: var(--yellow-line);
+  padding-top: calc(var(--linea-roja) + var(--linea-amarilla));
+  padding-bottom: var(--linea-roja);
   display: flex;
   background: linear-gradient(var(--gradient-banner), white);
 }
@@ -82,42 +82,35 @@
 .contactBannerSection {
   display: flex;
   width: 100%;
-  justify-content: flex-end;
-}
-
-.contactBannerCard {
-  position: relative;
-  display: flex;
+  background-color: var(--black);
+  padding-left: var(--width-unit);
+  padding-right: var(--width-unit);
+  height: var(--linea-rosa);
   align-items: center;
-  gap: 32px;
-  background-color: var(--dark-black);
-  border: 4px solid var(--blue);
-  padding: 16px 140px;
-  width: calc(var(--width-unit) * 4);
-  z-index: 2;
-  bottom: 32px;
-  clip-path: polygon(1% 1%, 100% 0%, 100% 99%, 7% 100%);
+  gap: 16px;
 }
-.desc__prize {
-  display: flex;
-  align-items: center;
-}
-.contactBannerCard::before {
-  position: absolute;
-  content: "";
-  height: 100%;
-  width: 24px;
-  left: 57px;
-  background-color: var(--dark-black);
-  border-left: 4px solid var(--blue);
-  transform: skew(33deg);
-}
-
-.contactBannerCard .desc {
+.contactBannerSection .desc {
   display: flex;
   flex-direction: column;
+  gap: 12px;
 }
-
+.contactBannerSection .links {
+  display: flex;
+  border: 1px solid var(--light-gray);
+  border-radius: 16px;
+  width: fit-content;
+  padding: 4px 8px;
+  gap: 8px;
+  align-items: center;
+}
+.contactBannerSection .separator {
+  width: 1px;
+  height: 1rem;
+  background-color: var(--light-gray);
+}
+.contactWS {
+  flex-grow: 1;
+}
 .videoBtn {
   background-color: var(--white);
   padding: 8px 32px;
@@ -135,13 +128,13 @@
   width: 100%;
   padding-left: var(--width-unit);
   padding-right: var(--width-unit);
-  margin-top: 200px;
+  margin-top: 400px;
   display: flex;
   gap: 32px;
 }
 .imgVideo {
   background-color: var(--black);
-  height: var(--width-unit);
+  height: var(--linea-rosa);
 }
 .videoSection__desc {
   display: flex;

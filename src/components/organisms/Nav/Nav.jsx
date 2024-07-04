@@ -10,6 +10,7 @@ import Icon from "../../atoms/Icon/Icon";
 import TextLink from "../../molecules/TextLink/TextLink";
 import { DOWNLOAD_EBOOK } from "../../../constants/routes";
 import { useNavigate } from "react-router-dom";
+import IconTextButton from "../../molecules/IconTextButton/IconTextButton";
 
 const Nav = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -23,43 +24,57 @@ const Nav = () => {
   return (
     <nav className={styles.nav}>
       <div className={styles.elements}>
-        <div className={styles.left}>
-          <div className={styles.logo}>
-            <Logo />
-          </div>
+        <div className={styles.topMenu}>
+          <Icon type={"warning"} size={"3rem"} color="var(--primary)" />
+          <Text bold="bold" color="light" textAlign="center">
+            ¿QUIERES LLENAR TU CLÍNICA DE PACIENTES?
+          </Text>
+          <IconTextButton textProps={{ size: "ty" }}>
+            Si, Quiero más pacientes
+          </IconTextButton>
+          <IconTextButton variant="bordered-primary" textProps={{ size: "ty" }}>
+            No, No quiero crecer
+          </IconTextButton>
         </div>
-        <div className={styles.right}>
-          <TextLink
-            textProps={{ color: "soft", bold: "font-light", size: "ty" }}
-          >
-            Guias
-          </TextLink>
-          <TextLink
-            textProps={{ color: "soft", bold: "font-light", size: "ty" }}
-          >
-            Servicios
-          </TextLink>
-          <TextLink
-            textProps={{ color: "soft", bold: "font-light", size: "ty" }}
-          >
-            Contacto
-          </TextLink>
-          <div className={styles.separator}></div>
-          <TextLink
-            textProps={{ color: "soft", bold: "font-light", size: "ty" }}
-          >
-            <div className={styles.iconWS}>
-              <Icon size={"1rem"} color="var(--white)" type={"wp"} />{" "}
+        <div className={styles.bottomMenu}>
+          <div className={styles.left}>
+            <div className={styles.logo}>
+              <Logo />
             </div>
-            +51949503751
-          </TextLink>
-        </div>
-        <div className={styles.btnDropdown}>
-          <IconButton
-            icon="bars"
-            size="2rem"
-            onClick={() => setShowMobileMenu(true)}
-          />
+          </div>
+          <div className={styles.right}>
+            <TextLink
+              textProps={{ color: "soft", bold: "font-light", size: "ty" }}
+            >
+              Recursos gratis
+            </TextLink>
+            <TextLink
+              textProps={{ color: "soft", bold: "font-light", size: "ty" }}
+            >
+              Programa de socios
+            </TextLink>
+            <TextLink
+              textProps={{ color: "soft", bold: "font-light", size: "ty" }}
+            >
+              Contacto
+            </TextLink>
+            <div className={styles.separator}></div>
+            <TextLink
+              textProps={{ color: "soft", bold: "font-light", size: "ty" }}
+            >
+              <div className={styles.iconWS}>
+                <Icon size={"1rem"} color="var(--white)" type={"wp"} />{" "}
+              </div>
+              +51949503751
+            </TextLink>
+          </div>
+          <div className={styles.btnDropdown}>
+            <IconButton
+              icon="bars"
+              size="2rem"
+              onClick={() => setShowMobileMenu(true)}
+            />
+          </div>
         </div>
       </div>
       <Drawer show={showMobileMenu} onClose={() => setShowMobileMenu(false)}>

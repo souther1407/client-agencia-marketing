@@ -58,21 +58,28 @@ const LandingPage = () => {
           </div>
         </section>
         <div className={styles.contactBannerSection}>
-          <div className={styles.contactBannerCard}>
-            <div className={styles.desc}>
-              <Text color="primary">¡Pongámonos en contacto!</Text>
-              <Text bold="bold" color="light" type="subtitle">
-                ¡Estamos Listos para Llenar tu Clinica de Pacientes!
+          <div className={styles.desc}>
+            <div className={styles.links}>
+              <Text color="primary" size="ty">
+                Aceptamos Socios
               </Text>
-              <div className={styles.desc__prize}>
-                <Icon type={"medal"} size={"1.2rem"} color="var(--primary)" />
-                <Text color="soft" bold="font-light">
-                  Garantizamos ≈10 Nuevos Pacientes cada mes
-                </Text>
-              </div>
+              <div className={styles.separator}></div>
+              <Text color="soft" size="ty">
+                Contactanos
+              </Text>
             </div>
-            <IconTextButton icon={"wp"} variant="secondary">
-              ¿Tienes Dudas?
+            <Text size="sm" color="light">
+              Programa de Marketing Dental de 6 meses
+            </Text>
+            <Text size="sm" color="soft" bold="font-light">
+              Estamos seleccionando 10 clínicas dentales para un exclusivo
+              programa de 6 meses que atrae pacientes de tratamientos premium.
+              Contáctanos y descubre si calificas.
+            </Text>
+          </div>
+          <div className={styles.contactWS}>
+            <IconTextButton size="250px" icon={"wp"} variant="secondary">
+              ¿Tienes dudas?
             </IconTextButton>
           </div>
         </div>
