@@ -21,8 +21,10 @@
 }
 
 .secondary {
+  padding: 6px;
+  border: none;
 }
 
 .secondary > * {
-  color: var(--black);
+  color: var(--white);
 }

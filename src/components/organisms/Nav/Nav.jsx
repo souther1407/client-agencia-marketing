@@ -25,7 +25,7 @@ const Nav = () => {
     <nav className={styles.nav}>
       <div className={styles.elements}>
         <div className={styles.topMenu}>
-          <Icon type={"warning"} size={"3rem"} color="var(--primary)" />
+          <Icon type={"warning"} size={"2rem"} color="var(--primary)" />
           <Text bold="bold" color="light" textAlign="center">
             ¿QUIERES LLENAR TU CLÍNICA DE PACIENTES?
           </Text>
@@ -67,13 +67,14 @@ const Nav = () => {
               </div>
               +51949503751
             </TextLink>
-          </div>
-          <div className={styles.btnDropdown}>
-            <IconButton
-              icon="bars"
-              size="2rem"
-              onClick={() => setShowMobileMenu(true)}
-            />
+            <div className={styles.btnDropdown}>
+              <IconButton
+                icon="bars"
+                size="2rem"
+                variant="secondary"
+                onClick={() => setShowMobileMenu(true)}
+              />
+            </div>
           </div>
         </div>
       </div>

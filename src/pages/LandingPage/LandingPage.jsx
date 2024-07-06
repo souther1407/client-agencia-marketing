@@ -38,8 +38,10 @@ const LandingPage = () => {
           <div className={styles.contents}>
             <div className={styles.banner__content}>
               <Text bold="bold">¿QUE SOMOS?</Text>
+
               <Text type="title" bold="bold">
-                Invierte en tu Clínica Dental con InkaDentist
+                Una Agencia Diferente de{" "}
+                <span className={styles.underLine}>Marketing Dental</span>
               </Text>
               <Text size="sm" bold="font-light">
                 Trabajamos con clinicas dentales en España y Latinoamerica que
@@ -80,7 +82,7 @@ const LandingPage = () => {
           </Text>
         </div>
         <div className={styles.contactWS}>
-          <IconTextButton size="250px" icon={"wp"} variant="secondary">
+          <IconTextButton icon={"wp"} variant="secondary">
             ¿Tienes dudas?
           </IconTextButton>
         </div>
@@ -126,8 +128,7 @@ const LandingPage = () => {
       <section className={styles.form}>
         <div className={styles.form__desc}>
           <Text type="subtitle">
-            Pide una <br></br>
-            <Mark>Propuesta de Marketing para tu Clinica Dental</Mark>
+            Pide una <Mark>Propuesta de Marketing para tu Clinica Dental</Mark>
           </Text>
           <Text size="sm">
             Aviso: No aplica para dueños de clinicas con servicio no dentales
