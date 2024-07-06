@@ -34,7 +34,7 @@
   --light-blue: #749bc2;
   --light-gray: rgba(159, 159, 159, 0.26);
   --gray: #8f8f8f;
-  --gray-blue: #314d66;
+  --gray-blue: #e3eaf1;
   --gray-light: #cfcdcd77;
   --gray-dark: rgb(83, 83, 83);
   --light-blue-transparent: #ccd6dd;
@@ -49,7 +49,7 @@
   --primary-dark: #097474;
   --background: #eff0f2;
   --banner-bg: #e3eaf1;
-  --gradient-banner: rgba(188, 255, 218, 0.37);
+  --gradient-banner: #d8e8e6;
   --background-light: #18181b;
   --background-dark: rgb(21, 26, 43);
   --background-container: var(--white-transparent);

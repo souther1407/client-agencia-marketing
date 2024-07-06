@@ -39,11 +39,13 @@
 
 .header {
   height: var(--banner-height);
+  display: flex;
+  flex-direction: column;
 }
 .banner {
   position: relative;
   width: 100%;
-  height: calc(var(--banner-height) - var(--width-unit) * 0.25);
+  flex-grow: 1;
   padding-right: var(--width-unit);
   padding-left: var(--width-unit);
   padding-top: calc(var(--linea-roja) + var(--linea-amarilla));
@@ -117,18 +119,29 @@
   border: 1px solid var(--primary);
   border-radius: 12px;
 }
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+  background: linear-gradient(var(--gradient-banner), white);
+  padding-top: var(--linea-roja);
+  padding-bottom: var(--linea-roja);
+  padding-left: var(--width-unit);
+  padding-right: var(--width-unit);
+}
 
 .bannerImg {
-  width: 600px;
+  width: 500px;
+  position: relative;
+  bottom: 32px;
+  transform: scale(1.2);
   height: auto;
   object-fit: fill;
 }
 
 .videoSection {
   width: 100%;
-  padding-left: var(--width-unit);
-  padding-right: var(--width-unit);
-  margin-top: 400px;
+
   display: flex;
   gap: 32px;
 }
@@ -139,7 +152,7 @@
 .videoSection__desc {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 24px;
 }
 .videoSection__desc .btn {
   display: flex;
@@ -155,14 +168,14 @@
 .mainEBook__card {
   display: flex;
   align-items: center;
-  background-color: var(--dark-black);
+  background-color: var(--black);
   border-radius: 24px;
-  height: var(--width-unit);
-  padding: 64px;
+  height: var(--linea-rosa);
+  padding: 40px;
 }
 
 .mainEBook__img {
-  width: 500px;
+  width: 450px;
   position: relative;
   height: auto;
 }
@@ -181,11 +194,13 @@
 .form {
   display: flex;
   justify-content: space-between;
-  margin-top: var(--yellow-line);
-  margin-bottom: var(--yellow-line);
+
   padding-left: var(--width-unit);
   padding-right: var(--width-unit);
   gap: 64px;
+  padding-top: var(--linea-roja);
+  padding-bottom: var(--linea-roja);
+  background-color: var(--gray-blue);
 }
 .form__desc {
   display: flex;

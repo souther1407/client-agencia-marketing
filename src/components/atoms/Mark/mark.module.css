@@ -9,3 +9,7 @@
 .mark.error {
   color: var(--error);
 }
+
+.mark.dark {
+  color: var(--black);
+}
