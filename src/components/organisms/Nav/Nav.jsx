@@ -75,7 +75,7 @@ const Nav = () => {
               <IconButton
                 icon="bars"
                 size="2rem"
-                variant="secondary"
+                variant="terciary"
                 onClick={() => setShowMobileMenu(true)}
               />
             </div>

@@ -28,3 +28,12 @@
 .secondary > * {
   color: var(--black);
 }
+
+.terciary {
+  padding: 6px;
+  border: none;
+}
+
+.terciary > * {
+  color: var(--white);
+}
