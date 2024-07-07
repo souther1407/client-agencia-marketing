@@ -6,6 +6,8 @@
   --banner-height: calc(var(--width-unit) * 2);
   --yellow-line: calc(var(--width-unit) * 0.375);
   --green-line: calc(var(--width-unit) * 0.25);
+  --mobile-margin: 32px;
+  overflow-x: hidden;
 }
 
 .help {
@@ -27,7 +29,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--dark-black);
+  background-color: var(--white);
 }
 .notification {
   padding: 16px;
@@ -81,7 +83,7 @@
 
 .banner__btns {
   display: flex;
-  gap: 32px;
+  height: 3.5rem;
 }
 
 .contactBannerSection {
@@ -197,7 +199,9 @@
 }
 
 .form {
+  width: 100%;
   display: flex;
+
   justify-content: space-between;
   padding-left: var(--width-unit);
   padding-right: var(--width-unit);
@@ -208,7 +212,7 @@
 }
 .form__desc {
   display: flex;
-  width: 600px;
+
   flex-direction: column;
   gap: 32px;
 }
@@ -226,7 +230,7 @@
 }
 @media screen and (max-width: 1400px) {
   .mainContent {
-    padding: 64px;
+    padding: var(--mobile-margin);
   }
 }
 @media screen and (max-width: 1200px) {
@@ -260,7 +264,7 @@
     padding: 16px;
   }
   .mainContent {
-    padding: 64px;
+    padding: var(--mobile-margin);
   }
   .mainEBook__card {
     height: auto;
@@ -282,7 +286,7 @@
     align-items: center;
     height: auto;
     width: 100%;
-    padding: 32px;
+    padding: var(--mobile-margin);
   }
 
   .header {
@@ -294,7 +298,10 @@
   }
   .contactBannerSection {
     flex-direction: column;
-    padding: 32px;
+    padding: var(--mobile-margin);
+  }
+  .banner__btns {
+    width: 100%;
   }
   .contactWS {
     width: 100%;
@@ -307,7 +314,7 @@
   }
   .videoSection {
     flex-direction: column;
-    padding: 64px;
+    padding: var(--mobile-margin);
   }
   .imgVideo {
     width: 100%;
@@ -315,11 +322,11 @@
   }
   .mainEBook__card {
     border-radius: 0;
-    padding: 16px;
+    padding: var(--mobile-margin);
   }
   .mainEBook__img {
-    width: 200px;
-    transform: scale(1.5);
+    width: 100px;
+    transform: scale(3);
   }
   .btn {
     width: 100%;

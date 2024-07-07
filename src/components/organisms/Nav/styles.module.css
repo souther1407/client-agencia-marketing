@@ -89,6 +89,7 @@
     padding: 0;
     height: auto;
     animation: none;
+    padding: 0 32px;
   }
 
   .topMenu {
@@ -98,7 +99,8 @@
   .right > :nth-child(1),
   .right > :nth-child(2),
   .right > :nth-child(3),
-  .right > :nth-child(4) {
+  .right > :nth-child(4),
+  .right > :nth-child(5) {
     display: none;
   }
   .btnDropdown {

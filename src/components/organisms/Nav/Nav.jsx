@@ -8,7 +8,7 @@ import IconButton from "../../molecules/IconButton/IconButton";
 import Drawer from "../../molecules/Drawer/Drawer";
 import Icon from "../../atoms/Icon/Icon";
 import TextLink from "../../molecules/TextLink/TextLink";
-import { DOWNLOAD_EBOOK } from "../../../constants/routes";
+import { DOWNLOAD_EBOOK, LANDING_EBOOKS } from "../../../constants/routes";
 import { useNavigate } from "react-router-dom";
 import IconTextButton from "../../molecules/IconTextButton/IconTextButton";
 
@@ -32,7 +32,11 @@ const Nav = () => {
           <IconTextButton textProps={{ size: "ty" }}>
             Si, Quiero más pacientes
           </IconTextButton>
-          <IconTextButton variant="bordered-primary" textProps={{ size: "ty" }}>
+          <IconTextButton
+            variant="bordered-primary"
+            textProps={{ size: "ty" }}
+            onClick={() => navigate(LANDING_EBOOKS)}
+          >
             No, No quiero crecer
           </IconTextButton>
         </div>

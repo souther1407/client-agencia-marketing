@@ -12,7 +12,7 @@
 }
 
 .title {
-  font-size: 1.78rem;
+  font-size: 1.95rem;
   line-height: 1.25;
 }
 
@@ -21,7 +21,7 @@
 }
 
 .subtitle {
-  font-size: calc(2rem - 12px);
+  font-size: 21px;
 }
 .standard {
   color: var(--black);
@@ -60,4 +60,8 @@
 
 .bold {
   font-weight: bold;
+}
+
+.extra-bold {
+  font-weight: bolder;
 }

@@ -8,7 +8,7 @@ const getSize = (size) => {
     case "md":
       return "1rem";
     case "sm":
-      return "0.8889rem";
+      return "0.83rem";
     case "ty":
       return "0.7778rem";
     default:

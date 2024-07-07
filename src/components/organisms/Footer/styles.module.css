@@ -45,3 +45,12 @@
   background-color: var(--dark-white);
   height: 12px;
 }
+
+@media screen and (max-width: 800px) {
+  .footer {
+    padding: 32px;
+  }
+  .header {
+    gap: 0;
+  }
+}

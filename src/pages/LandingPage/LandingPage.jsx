@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./styles.module.css";
 import Nav from "../../components/organisms/Nav/Nav";
 import BannerImg from "@assets/banner.svg";
@@ -16,18 +16,25 @@ import { DOWNLOAD_EBOOK, LANDING_EBOOKS } from "../../constants/routes";
 
 const LandingPage = () => {
   const navigate = useNavigate();
+  const [showWSMsg, setShowWSMsg] = useState(true);
   return (
     <div className={styles.page}>
       <div className={styles.help}>
-        <div className={styles.notification}>
-          <Text bold="font-light" size="ty">
-            👋 Tienes alguna duda sobre nuestros servicios de marketing?
-            Consultanos por WhatsApp
-          </Text>
-          <div className={styles.closeBtn}>
-            <IconButton icon="close" variant="secondary" />
+        {showWSMsg && (
+          <div className={styles.notification}>
+            <Text bold="font-light" size="ty">
+              👋 Tienes alguna duda sobre nuestros servicios de marketing?
+              Consultanos por WhatsApp
+            </Text>
+            <div className={styles.closeBtn}>
+              <IconButton
+                icon="close"
+                variant="secondary"
+                onClick={() => setShowWSMsg(false)}
+              />
+            </div>
           </div>
-        </div>
+        )}
         <div className={styles.wsBtn}>
           <Icon size={"2.5rem"} type={"wp"} color="var(--primary)" />
         </div>
@@ -39,7 +46,7 @@ const LandingPage = () => {
             <div className={styles.banner__content}>
               <Text bold="bold">¿QUE SOMOS?</Text>
 
-              <Text type="title" bold="bold">
+              <Text type="title" bold="extra-bold">
                 Una Agencia Diferente de{" "}
                 <span className={styles.underLine}>Marketing Dental</span>
               </Text>
@@ -49,8 +56,11 @@ const LandingPage = () => {
               </Text>
 
               <div className={styles.banner__btns}>
-                <IconTextButton onClick={() => navigate(DOWNLOAD_EBOOK)}>
-                  Solicitar Plan de Marketing
+                <IconTextButton
+                  size="100%"
+                  onClick={() => navigate(DOWNLOAD_EBOOK)}
+                >
+                  Cuentanos de tu clinica
                 </IconTextButton>
               </div>
               <Text size="sm" bold="font-light">
@@ -128,11 +138,9 @@ const LandingPage = () => {
       <section className={styles.form}>
         <div className={styles.form__desc}>
           <Text type="subtitle">
-            Pide una <Mark>Propuesta de Marketing para tu Clinica Dental</Mark>
+            Pide una <Mark>auditoria gratuita para tu clinica dental</Mark>
           </Text>
-          <Text size="sm">
-            Aviso: No aplica para dueños de clinicas con servicio no dentales
-          </Text>
+          <Text size="sm">solo aplica para dueños de clínicas</Text>
         </div>
         <div className={styles.form__inputs}>
           <div className={styles.line}>
