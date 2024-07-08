@@ -9,6 +9,7 @@
     transform: translateY(-50%);
   }
 }
+
 .nav {
   display: flex;
   background-color: var(--black);
@@ -17,7 +18,7 @@
   padding-right: var(--width-unit);
   align-items: center;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   z-index: 1000;
   top: 0;
   animation: hide-top 1s linear forwards;
@@ -26,6 +27,7 @@
 .elements {
   display: flex;
   flex-direction: column;
+  gap: 16px;
   width: calc(var(--width-unit) * 3);
 }
 .topMenu,
@@ -70,8 +72,99 @@
 .iconWS {
   display: inline;
   position: relative;
-  top: 2px;
+  top: 4px;
 }
+.resoursesDropDown {
+  top: 100%;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: calc(100vh - var(--linea-amarilla));
+  background-color: var(--light-gray);
+  display: flex;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-in;
+}
+
+.resoursesDropDown.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+body:has(.resoursesDropDown.show) {
+  overflow-y: hidden;
+}
+
+.resoursesDropDown .cardsBanner {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  background-color: var(--white);
+  justify-content: center;
+  transform: scale(0);
+  transform-origin: top;
+  transition: transform 0.3s ease-in-out;
+}
+.resoursesDropDown .contactBanner {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: var(--white);
+  height: fit-content;
+  padding: 32px;
+  width: 300px;
+  right: 25%;
+}
+.resoursesDropDown .contactBanner > * {
+  transition: all 0.3s ease-in;
+}
+.resoursesDropDown .contactBanner > *:hover {
+  color: var(--primary);
+  cursor: pointer;
+  transform: translateX(16px);
+}
+.resoursesDropDown .content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+}
+.resoursesDropDown .content > :nth-child(1) {
+  align-self: flex-end;
+}
+.resoursesDropDown.show .cardsBanner {
+  transform: scale(1);
+}
+
+.separator {
+  width: 1px;
+  height: 100%;
+  background-color: var(--gray);
+}
+.resoursesDropDown .cards {
+  display: flex;
+  gap: 32px;
+}
+.resoursesDropDown .card {
+  width: 250px;
+  background-color: var(--gray-blue);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  cursor: pointer;
+}
+.resoursesDropDown .card:hover > :nth-child(3) {
+  color: var(--primary);
+}
+.resoursesDropDown .cardImg {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+}
+
 @media screen and (max-width: 1200px) {
   .elements {
     display: flex;

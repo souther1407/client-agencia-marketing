@@ -5,6 +5,6 @@
 }
 
 .textLink > *:hover {
-  color: var(--blue);
+  color: var(--primary);
   text-decoration: underline;
 }

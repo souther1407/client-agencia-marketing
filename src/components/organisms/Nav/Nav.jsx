@@ -11,7 +11,6 @@ import TextLink from "../../molecules/TextLink/TextLink";
 import { DOWNLOAD_EBOOK, LANDING_EBOOKS } from "../../../constants/routes";
 import { useNavigate } from "react-router-dom";
 import IconTextButton from "../../molecules/IconTextButton/IconTextButton";
-
 const Nav = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const navigate = useNavigate();
@@ -21,6 +20,17 @@ const Nav = () => {
     });
     return () => window.removeEventListener("resize", window);
   }, []);
+  const [showResources, setShowResources] = useState(false);
+  const [showContact, setShowContact] = useState(false);
+
+  const handleShowResources = () => {
+    setShowResources((prev) => !prev);
+    setShowContact(false);
+  };
+  const handleShowContact = () => {
+    setShowResources(false);
+    setShowContact((prev) => !prev);
+  };
   return (
     <nav className={styles.nav}>
       <div className={styles.elements}>
@@ -50,26 +60,27 @@ const Nav = () => {
             <TextLink
               textProps={{ color: "soft", bold: "font-light", size: "ty" }}
             >
-              Recursos gratis
+              ¿Que somos?
             </TextLink>
-            <TextLink
-              textProps={{ color: "soft", bold: "font-light", size: "ty" }}
-            >
-              Programa de socios
-            </TextLink>
-            <TextLink
-              textProps={{ color: "soft", bold: "font-light", size: "ty" }}
-            >
-              Contacto
-            </TextLink>
+            <div onClick={handleShowResources}>
+              <TextLink
+                textProps={{ color: "soft", bold: "font-light", size: "ty" }}
+              >
+                Recursos gratis
+              </TextLink>
+            </div>
+            <div onClick={handleShowContact}>
+              <TextLink
+                textProps={{ color: "soft", bold: "font-light", size: "ty" }}
+              >
+                Contacto
+              </TextLink>
+            </div>
             <div className={styles.separator}></div>
             <TextLink
               textProps={{ color: "soft", bold: "font-light", size: "ty" }}
             >
-              <div className={styles.iconWS}>
-                <Icon size={"1rem"} color="var(--white)" type={"wp"} />{" "}
-              </div>
-              +51949503751
+              Cuentanos de tu Clinica{" >"}
             </TextLink>
             <div className={styles.btnDropdown}>
               <IconButton
@@ -105,6 +116,72 @@ const Nav = () => {
           <IconButtonText icon={"wp"}>Contáctanos</IconButtonText>
         </div>
       </Drawer>
+      <div
+        className={`${styles.resoursesDropDown} ${
+          (showResources || showContact) && styles.show
+        }`}
+      >
+        {showResources && (
+          <div className={styles.cardsBanner}>
+            <div className={styles.content}>
+              <Text size="sm">ver todas las guias</Text>
+              <div className={styles.cards}>
+                <div className={styles.card}>
+                  <img
+                    src="https://img.freepik.com/free-photo/book-library-with-open-textbook_1150-5920.jpg"
+                    className={styles.cardImg}
+                  />
+                  <Text size="ty" bold="font-light">
+                    Ebook
+                  </Text>
+                  <Text size="sm">Marketing Dental: La Guia Definitiva</Text>
+                  <Text size="ty" bold="font-light">
+                    23 Paginas
+                  </Text>
+                </div>
+                <div className={styles.separator}></div>
+                <div className={styles.card}>
+                  <img
+                    src="https://img.freepik.com/free-photo/book-library-with-open-textbook_1150-5920.jpg"
+                    className={styles.cardImg}
+                  />
+                  <Text size="ty" bold="font-light">
+                    Ebook
+                  </Text>
+                  <Text size="sm">Marketing Dental: La Guia Definitiva</Text>
+                  <Text size="ty" bold="font-light">
+                    23 Paginas
+                  </Text>
+                </div>
+                <div className={styles.separator}></div>
+                <div className={styles.card}>
+                  <img
+                    src="https://img.freepik.com/free-photo/book-library-with-open-textbook_1150-5920.jpg"
+                    className={styles.cardImg}
+                  />
+                  <Text size="ty" bold="font-light">
+                    Ebook
+                  </Text>
+                  <Text size="sm">Marketing Dental: La Guia Definitiva</Text>
+                  <Text size="ty" bold="font-light">
+                    23 Paginas
+                  </Text>
+                </div>
+              </div>
+              <Text bold="font-light" size="ty" textAlign="center">
+                Pagina Web Desarrrollada por el equipo de HackDental
+              </Text>
+            </div>
+          </div>
+        )}
+        {showContact && (
+          <div className={styles.contactBanner}>
+            <Text>Forma de contacto</Text>
+            <Text>info@inkadentist.com</Text>
+            <Text>657302731</Text>
+          </div>
+        )}
+      </div>
     </nav>
   );
 };
