@@ -112,7 +112,9 @@ const Nav = () => {
           </div>
           <div className={styles.dropdownMenu}>
             <div
-              className={styles.dropMenuBtn}
+              className={`${styles.dropMenuBtn} ${
+                dropElements.recursosGratis && styles.focus
+              }`}
               onClick={() => handleDropMobileElements("recursosGratis")}
             >
               <Text type="subtitle">Recursos gratis</Text>
@@ -174,7 +176,9 @@ const Nav = () => {
           </div>
           <div className={styles.dropdownMenu}>
             <div
-              className={styles.dropMenuBtn}
+              className={`${styles.dropMenuBtn} ${
+                dropElements.contacto && styles.focus
+              }`}
               onClick={() => handleDropMobileElements("contacto")}
             >
               <Text type="subtitle">Contacto</Text>

@@ -180,6 +180,9 @@ body:has(.resoursesDropDown.show) {
   cursor: pointer;
   justify-content: center;
 }
+.dropMenuBtn.focus > * {
+  color: var(--primary) !important;
+}
 .dropElements {
   display: flex;
   flex-direction: column;
