@@ -10,7 +10,6 @@ const Drawer = ({ show, children, onClose }) => {
     >
       <div className={styles.container} onClick={(e) => e.stopPropagation()}>
         <header className={styles.header}>
-          <Logo />
           <div className={styles.close} onClick={onClose}>
             <Icon size="2rem" type={"close"} />
           </div>

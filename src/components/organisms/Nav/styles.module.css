@@ -164,7 +164,64 @@ body:has(.resoursesDropDown.show) {
   height: 200px;
   border-radius: 8px;
 }
-
+.mobileMenu {
+}
+.dropdownMenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid var(--black);
+  overflow: hidden;
+}
+.dropMenuBtn {
+  width: 100%;
+  display: flex;
+  padding: 16px;
+  cursor: pointer;
+  justify-content: center;
+}
+.dropElements {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: var(--gray-light);
+  transform-origin: top;
+  overflow: hidden;
+  transition: all 0.3s ease-in;
+  max-height: 0;
+}
+.dropElements.show {
+  max-height: fit-content;
+}
+.mobileCard {
+  display: flex;
+  background-color: var(--gray-blue);
+  padding: 16px;
+  border-radius: 8px;
+  margin: 8px 16px;
+  gap: 16px;
+  cursor: pointer;
+}
+.mobileCard .mobileImg {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+}
+.mobileCard .mobileDesc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.seeGuides {
+  align-self: flex-end;
+}
+.mobileContact {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 8px 16px;
+}
 @media screen and (max-width: 1200px) {
   .elements {
     display: flex;

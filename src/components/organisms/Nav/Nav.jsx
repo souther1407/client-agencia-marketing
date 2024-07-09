@@ -22,15 +22,25 @@ const Nav = () => {
   }, []);
   const [showResources, setShowResources] = useState(false);
   const [showContact, setShowContact] = useState(false);
+  const [dropElements, setDropElements] = useState({
+    recursosGratis: false,
+    contacto: false,
+  });
 
   const handleShowResources = () => {
     setShowResources((prev) => !prev);
     setShowContact(false);
   };
+
   const handleShowContact = () => {
     setShowResources(false);
     setShowContact((prev) => !prev);
   };
+
+  const handleDropMobileElements = (name) => {
+    setDropElements((prev) => ({ ...prev, [name]: !dropElements[name] }));
+  };
+
   return (
     <nav className={styles.nav}>
       <div className={styles.elements}>
@@ -95,25 +105,97 @@ const Nav = () => {
       </div>
       <Drawer show={showMobileMenu} onClose={() => setShowMobileMenu(false)}>
         <div className={styles.mobileMenu}>
-          <Link to={"#"} extern>
-            <div className={styles.element}>
-              <Text>Inicio</Text>
-              <Icon type="arrow" size={"1.5rem"} />
+          <div className={styles.dropdownMenu}>
+            <div className={styles.dropMenuBtn}>
+              <Text type="subtitle">¿Que somos?</Text>
             </div>
-          </Link>
-          <Link to={"#"} extern>
-            <div className={styles.element}>
-              <Text>Ebooks</Text>
-              <Icon type="arrow" size={"1.5rem"} />
+          </div>
+          <div className={styles.dropdownMenu}>
+            <div
+              className={styles.dropMenuBtn}
+              onClick={() => handleDropMobileElements("recursosGratis")}
+            >
+              <Text type="subtitle">Recursos gratis</Text>
             </div>
-          </Link>
-          <Link to={"#"} extern>
-            <div className={styles.element}>
-              <Text>Blog</Text>
-              <Icon type="arrow" size={"1.5rem"} />
+            <div
+              className={`${styles.dropElements} ${
+                dropElements.recursosGratis && styles.show
+              }`}
+            >
+              <div className={styles.seeGuides}>
+                <Text size="sm">ver todas las guias</Text>
+              </div>
+              <div className={styles.mobileCard}>
+                <img
+                  src="https://img.freepik.com/free-photo/book-library-with-open-textbook_1150-5920.jpg"
+                  className={styles.mobileImg}
+                />
+                <div className={styles.mobileDesc}>
+                  <Text bold="font-light" size="ty">
+                    Ebook
+                  </Text>
+                  <Text color="primary">
+                    Marketing Dental: La Guia Definitiva
+                  </Text>
+                  <Text size="sm">23 Paginas</Text>
+                </div>
+              </div>
+              <div className={styles.mobileCard}>
+                <img
+                  src="https://img.freepik.com/free-photo/book-library-with-open-textbook_1150-5920.jpg"
+                  className={styles.mobileImg}
+                />
+                <div className={styles.mobileDesc}>
+                  <Text bold="font-light" size="ty">
+                    Ebook
+                  </Text>
+                  <Text color="primary">
+                    Marketing Dental: La Guia Definitiva
+                  </Text>
+                  <Text size="sm">23 Paginas</Text>
+                </div>
+              </div>
+              <div className={styles.mobileCard}>
+                <img
+                  src="https://img.freepik.com/free-photo/book-library-with-open-textbook_1150-5920.jpg"
+                  className={styles.mobileImg}
+                />
+                <div className={styles.mobileDesc}>
+                  <Text bold="font-light" size="ty">
+                    Ebook
+                  </Text>
+                  <Text color="primary">
+                    Marketing Dental: La Guia Definitiva
+                  </Text>
+                  <Text size="sm">23 Paginas</Text>
+                </div>
+              </div>
             </div>
-          </Link>
-          <IconButtonText icon={"wp"}>Contáctanos</IconButtonText>
+          </div>
+          <div className={styles.dropdownMenu}>
+            <div
+              className={styles.dropMenuBtn}
+              onClick={() => handleDropMobileElements("contacto")}
+            >
+              <Text type="subtitle">Contacto</Text>
+            </div>
+            <div
+              className={`${styles.dropElements} ${
+                dropElements.contacto && styles.show
+              }`}
+            >
+              <div className={styles.mobileContact}>
+                <Text>Forma de Contacto</Text>
+                <Text>info@inkadentist.com</Text>
+                <Text>657302731</Text>
+              </div>
+            </div>
+          </div>
+          <div className={styles.dropdownMenu}>
+            <div className={styles.dropMenuBtn}>
+              <Text type="subtitle">Cuentanos de tu Clinica {">"}</Text>
+            </div>
+          </div>
         </div>
       </Drawer>
       <div
