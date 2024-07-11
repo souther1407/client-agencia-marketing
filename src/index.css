@@ -38,14 +38,14 @@
   --black-transparent: #1e22265e;
   --light-blue: #749bc2;
   --light-gray: rgba(159, 159, 159, 0.26);
-  --gray: #8f8f8f;
+  --gray: #455a64;
   --gray-blue: #e3eaf1;
   --gray-light: #92a3a377;
   --gray-dark: rgb(83, 83, 83);
   --light-blue-transparent: #ccd6dd;
   --blue: #4682a9;
-  --green: rgb(77, 219, 77);
-  --light-green: rgb(122, 243, 122);
+  --green: #11b474;
+  --light-green: #b0cdcb;
   --dark-green: #1e2226;
   --primary: #01dbb0;
   --primary-transparent: #01dbaf49;
@@ -64,6 +64,7 @@
   --linea-verde: calc(100vw / 24.5);
   --linea-rosa: calc(100vw / 6.67);
   --linea-roja: calc(100vw / 14.2);
+  --gradient: linear-gradient(var(--gradient-banner) 50%, white);
 }
 
 a,
@@ -79,6 +80,7 @@ ol {
 html,
 body {
   font-size: 18px;
+  overflow-x: hidden;
 }
 
 img {

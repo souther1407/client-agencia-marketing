@@ -24,6 +24,12 @@
   animation: hide-top 1s linear forwards;
   animation-timeline: scroll();
 }
+.nav.ajust {
+  height: auto;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  animation: none;
+}
 .elements {
   display: flex;
   flex-direction: column;

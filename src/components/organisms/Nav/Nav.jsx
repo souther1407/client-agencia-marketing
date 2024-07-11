@@ -11,7 +11,7 @@ import TextLink from "../../molecules/TextLink/TextLink";
 import { DOWNLOAD_EBOOK, LANDING_EBOOKS } from "../../../constants/routes";
 import { useNavigate } from "react-router-dom";
 import IconTextButton from "../../molecules/IconTextButton/IconTextButton";
-const Nav = () => {
+const Nav = ({ hideTopMenu = false }) => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const navigate = useNavigate();
   useEffect(() => {
@@ -42,24 +42,26 @@ const Nav = () => {
   };
 
   return (
-    <nav className={styles.nav}>
+    <nav className={`${styles.nav} ${hideTopMenu && styles.ajust}`}>
       <div className={styles.elements}>
-        <div className={styles.topMenu}>
-          <Icon type={"warning"} size={"2rem"} color="var(--primary)" />
-          <Text bold="bold" color="light" textAlign="center">
-            ¿QUIERES LLENAR TU CLÍNICA DE PACIENTES?
-          </Text>
-          <IconTextButton textProps={{ size: "ty" }}>
-            Si, Quiero más pacientes
-          </IconTextButton>
-          <IconTextButton
-            variant="bordered-primary"
-            textProps={{ size: "ty" }}
-            onClick={() => navigate(LANDING_EBOOKS)}
-          >
-            No, No quiero crecer
-          </IconTextButton>
-        </div>
+        {hideTopMenu || (
+          <div className={styles.topMenu}>
+            <Icon type={"warning"} size={"2rem"} color="var(--primary)" />
+            <Text bold="bold" color="light" textAlign="center">
+              ¿QUIERES LLENAR TU CLÍNICA DE PACIENTES?
+            </Text>
+            <IconTextButton textProps={{ size: "ty" }}>
+              Si, Quiero más pacientes
+            </IconTextButton>
+            <IconTextButton
+              variant="bordered-primary"
+              textProps={{ size: "ty" }}
+              onClick={() => navigate(LANDING_EBOOKS)}
+            >
+              No, No quiero crecer
+            </IconTextButton>
+          </div>
+        )}
         <div className={styles.bottomMenu}>
           <div className={styles.left}>
             <div className={styles.logo}>
