@@ -40,8 +40,9 @@
   --light-gray: rgba(159, 159, 159, 0.26);
   --gray: #455a64;
   --gray-blue: #e3eaf1;
+  --gray-blue-dark: #d4e1ee;
   --gray-light: #92a3a377;
-  --gray-dark: rgb(83, 83, 83);
+  --gray-dark: rgba(83, 83, 83, 0.411);
   --light-blue-transparent: #ccd6dd;
   --blue: #4682a9;
   --green: #11b474;

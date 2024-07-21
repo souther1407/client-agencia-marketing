@@ -13,7 +13,7 @@ import VideoImg from "@assets/Imagen Video.svg";
 import Mark from "../../components/atoms/Mark/Mark";
 import { useNavigate } from "react-router-dom";
 import { DOWNLOAD_EBOOK, LANDING_EBOOKS } from "../../constants/routes";
-
+import ImgBanner from "./components/BannerImg/BannerImg";
 const LandingPage = () => {
   const navigate = useNavigate();
   const [showWSMsg, setShowWSMsg] = useState(true);
@@ -67,7 +67,8 @@ const LandingPage = () => {
                 Solo para Clinicas Dentales que ofrezcan implantes
               </Text>
             </div>
-            <img className={styles.bannerImg} src={BannerImg} />
+            {/*  <img className={styles.bannerImg} src={BannerImg} /> */}
+            <ImgBanner />
           </div>
         </section>
       </header>

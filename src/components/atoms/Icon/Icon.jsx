@@ -15,7 +15,7 @@ import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { BiSolidMedal } from "react-icons/bi";
 import { CiWarning } from "react-icons/ci";
 import { IoIosArrowForward } from "react-icons/io";
-
+import { PiArrowSquareOutBold } from "react-icons/pi";
 const Icon = ({ type, size, color = "inherit" }) => {
   const props = {
     size: size || "100%",
@@ -37,6 +37,7 @@ const Icon = ({ type, size, color = "inherit" }) => {
     medal: <BiSolidMedal {...props} />,
     warning: <CiWarning {...props} />,
     arrowFoward: <IoIosArrowForward {...props} />,
+    arrowSquare: <PiArrowSquareOutBold {...props} />,
   };
   return <i>{icons[type]}</i>;
 };

@@ -1,0 +1,69 @@
+@keyframes anim1 {
+  0% {
+    transform: scaleX(0.1) translate(-50%, -50%);
+  }
+  100% {
+    transform: scaleX(1) translate(-50%, -50%);
+  }
+}
+@keyframes fixed {
+  0% {
+    transform: scaleX(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes anim2 {
+}
+@keyframes anim3 {
+}
+@keyframes anim4 {
+}
+.bannerImg {
+  position: relative;
+  width: 500px;
+}
+
+.bannerImg img {
+  width: 100%;
+  height: 100%;
+}
+.img1Container,
+.img2Container,
+.img3Container,
+.img4Container {
+  position: absolute;
+  height: auto;
+  object-fit: contain;
+}
+
+.img1Container {
+  width: 300px;
+  top: 50%;
+  left: 50%;
+  background-color: antiquewhite;
+  animation: anim1 0.5s ease-in 0s forwards;
+}
+.img1Container > img {
+  width: 300px;
+  animation: fixed 0.5s ease-in 0s forwards;
+}
+
+.img2Container {
+  width: 80px;
+  top: 66%;
+  left: 4%;
+}
+
+.img3Container {
+  width: 120px;
+  top: 30%;
+  left: 20%;
+}
+
+.img4Container {
+  width: 240px;
+  left: 40%;
+  bottom: 10%;
+}

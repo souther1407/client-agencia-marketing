@@ -63,7 +63,7 @@
   width: calc(var(--width-unit) * 3);
 }
 .underLine {
-  border-bottom: 4px solid var(--primary);
+  border-bottom: 4px solid var(--black);
 }
 .banner__bg {
   position: absolute;

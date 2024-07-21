@@ -13,9 +13,10 @@
 .nav {
   display: flex;
   background-color: var(--black);
-  height: var(--linea-amarilla);
   padding-left: var(--width-unit);
   padding-right: var(--width-unit);
+  padding-top: 8px;
+  padding-bottom: 8px;
   align-items: center;
   position: fixed;
   width: 100vw;
@@ -54,6 +55,7 @@
   z-index: 2;
 }
 .logo {
+  cursor: pointer;
   z-index: 0;
 }
 .left {
@@ -70,10 +72,14 @@
   display: none;
 }
 
-.separator {
+.nav .separator {
   width: 2px;
   height: 2rem;
+  margin: 0 16px;
   background-color: var(--gray-light);
+}
+
+.formBtn {
 }
 .iconWS {
   display: inline;
@@ -85,8 +91,8 @@
   left: 0;
   position: absolute;
   width: 100%;
-  height: calc(100vh - var(--linea-amarilla));
-  background-color: var(--light-gray);
+  height: 100vh;
+  background-color: var(--gray-dark);
   display: flex;
   visibility: hidden;
   opacity: 0;
@@ -108,9 +114,16 @@ body:has(.resoursesDropDown.show) {
   height: fit-content;
   background-color: var(--white);
   justify-content: center;
-  transform: scale(0);
+  transform: translateY(-100%);
+  visibility: hidden;
   transform-origin: top;
-  transition: transform 0.3s ease-in-out;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.resoursesDropDown.show .cardsBanner.show {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
 }
 .resoursesDropDown .contactBanner {
   position: absolute;
@@ -122,7 +135,17 @@ body:has(.resoursesDropDown.show) {
   padding: 32px;
   width: 300px;
   right: 25%;
+  visibility: hidden;
+  opacity: 0;
+  top: -100%;
+  transition: all 0.3s ease-in-out;
 }
+.resoursesDropDown.show .contactBanner.show {
+  top: 0;
+  visibility: visible;
+  opacity: 1;
+}
+
 .resoursesDropDown .contactBanner > * {
   transition: all 0.3s ease-in;
 }
@@ -140,11 +163,8 @@ body:has(.resoursesDropDown.show) {
 .resoursesDropDown .content > :nth-child(1) {
   align-self: flex-end;
 }
-.resoursesDropDown.show .cardsBanner {
-  transform: scale(1);
-}
 
-.separator {
+.resoursesDropDown .separator {
   width: 1px;
   height: 100%;
   background-color: var(--gray);
@@ -161,14 +181,44 @@ body:has(.resoursesDropDown.show) {
   flex-direction: column;
   gap: 8px;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.resoursesDropDown .card:hover {
+  background-color: var(--gray-blue-dark);
 }
 .resoursesDropDown .card:hover > :nth-child(3) {
-  color: var(--primary);
+  color: var(--primary-dark);
 }
-.resoursesDropDown .cardImg {
+.resoursesDropDown .card:hover .cardImg {
+  transform: scale(1.1);
+}
+.resoursesDropDown .cardImgContainer {
   width: 100%;
   height: 200px;
+  overflow: hidden;
+}
+.resoursesDropDown .cardImg {
   border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease-in-out;
+}
+.resoursesDropDown .developText {
+  padding: 8px;
+}
+
+.resoursesDropDown.show .developText:hover {
+  overflow: hidden;
+  background-color: var(--gray-blue-dark);
+  transition: all 0.3s ease-in-out;
+}
+
+.resoursesDropDown .cardsBanner .developText > * {
+  transition: all 0.3s ease-in-out;
+}
+.resoursesDropDown .cardsBanner.show .developText:hover > * {
+  transform: scale(1.1);
+  transition: all 0.1s ease-in-out;
 }
 .mobileMenu {
 }

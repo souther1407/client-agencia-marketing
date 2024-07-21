@@ -40,6 +40,34 @@
   color: var(--primary);
 }
 
+/*primary rounded*/
+.primary-rounded.iconTextButton.full {
+  background-color: var(--primary);
+  color: var(--dark-black);
+  border-radius: 32px;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+.primary-rounded.iconTextButton:disabled {
+  background-color: #2d4356;
+  cursor: auto;
+  color: var(--white);
+  cursor: no-drop;
+}
+.primary-rounded.iconTextButton:disabled:hover {
+}
+.primary-rounded.iconTextButton.full:hover {
+  background-color: var(--primary-dark);
+}
+
+.primary-rounded.iconTextButton.bordered:hover {
+}
+
+.primary-rounded.iconTextButton.bordered {
+  border: 1px solid var(--primary);
+  color: var(--primary);
+}
 /* Secondary */
 .secondary.iconTextButton {
   border: 1px solid var(--primary);

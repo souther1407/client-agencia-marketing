@@ -4,7 +4,8 @@
   gap: 16px;
 }
 
-.textLink > *:hover {
-  color: var(--primary);
+.textLink > *:hover,
+.textLink.marked > * {
+  color: var(--primary) !important;
   text-decoration: underline;
 }
