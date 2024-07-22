@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styles from "./styles.module.css";
 import Nav from "../../components/organisms/Nav/Nav";
 import BannerImg from "@assets/banner.svg";
+import imgSubBanner from "@assets/imgSubBanner.svg";
 import Text from "../../components/atoms/Text/Text";
 import IconTextButton from "../../components/molecules/IconTextButton/IconTextButton";
 import EbookImg from "@assets/Foto Prueba.svg";
@@ -83,20 +84,56 @@ const LandingPage = () => {
               Contactanos
             </Text>
           </div>
-          <Text size="sm" color="light">
-            Programa de Marketing Dental de 6 meses
+          <Text type="subtitle" size="sm" color="light">
+            Marketing de Tratamientos Premium
           </Text>
           <Text size="sm" color="soft" bold="font-light">
-            Estamos seleccionando 10 clínicas dentales para un exclusivo
-            programa de 6 meses que atrae pacientes de tratamientos premium.
+            Estamos seleccionando solo a 10 dueños de clínicas dentales para
+            llenarlas de pacientes dentales con tratamientos premium. El
+            programa dura 6 meses. Algunos de los servicios que recibiran los
+            elegidos son:
+          </Text>
+          <div className={styles.line}>
+            <Icon type={"check"} color="var(--primary)" size={"1.2rem"} />
+            <Text size="ty" color="soft" bold="font-light">
+              Desarrollo Web para servicios dentales
+            </Text>
+          </div>
+          <div className={styles.line}>
+            <Icon type={"check"} color="var(--primary)" size={"1.2rem"} />
+            <Text size="ty" color="soft" bold="font-light">
+              Google Ads de Tratamientos Premium (Implantes).
+            </Text>
+          </div>
+          <div className={styles.line}>
+            <Icon type={"check"} color="var(--primary)" size={"1.2rem"} />
+            <Text size="ty" color="soft" bold="font-light">
+              Email Marketing Dental
+            </Text>
+          </div>
+          <div className={styles.line}>
+            <Icon type={"check"} color="var(--primary)" size={"1.2rem"} />
+            <Text size="ty" color="soft" bold="font-light">
+              Automatizaciones de Whatsapp para Clinicas Dentales
+            </Text>
+          </div>
+          <div className={styles.line}>
+            <Icon type={"check"} color="var(--primary)" size={"1.2rem"} />
+            <Text size="ty" color="soft" bold="font-light">
+              Creacion de Programas de Referidos para Clinicas
+            </Text>
+          </div>
+          <div className={styles.btns}>
+            <IconTextButton size="300px">Ver Mas {">"}</IconTextButton>
+            <IconTextButton colorVariant="secondary" icon={"wp"}>
+              ¿Tienes dudas?
+            </IconTextButton>
+          </div>
+          <Text size="ty" color="soft" bold="font-light">
             Contáctanos y descubre si calificas.
           </Text>
         </div>
-        <div className={styles.contactWS}>
-          <IconTextButton icon={"wp"} variant="secondary">
-            ¿Tienes dudas?
-          </IconTextButton>
-        </div>
+        <img className={styles.imgSubBanner} src={imgSubBanner} />
       </div>
       <section className={styles.mainContent}>
         <section className={styles.videoSection}>
