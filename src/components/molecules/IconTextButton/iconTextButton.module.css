@@ -92,6 +92,7 @@
   color: var(--white);
   background-color: var(--black);
   transition: all 0.3s ease-in;
+  display: flex;
 }
 
 /* bordered-primary */
@@ -101,4 +102,25 @@
   background-color: transparent;
   transition: all 0.3s ease-in;
   border: 1px solid var(--primary-dark);
+}
+
+/* Secondary-dark */
+.secondary-dark.iconTextButton {
+  display: flex;
+  border: 1px solid var(--black);
+  padding: 10px 24px;
+  border-radius: 8px;
+  color: var(--black);
+  background-color: transparent;
+  transition: all 0.3s ease-in;
+  justify-content: center;
+  align-items: center;
+}
+
+.secondary-dark.iconTextButton:hover {
+  background-color: var(--primary-transparent);
+}
+
+.secondary-dark.iconTextButton > i {
+  color: var(--primary);
 }

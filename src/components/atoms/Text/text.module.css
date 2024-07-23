@@ -1,7 +1,8 @@
 .text,
 .bigtitle,
 .title,
-.subtitle {
+.subtitle,
+.smalltitle {
   line-height: 1.7;
   font-family: "lexend";
   font-weight: 500;
@@ -15,7 +16,9 @@
   font-size: 2.12rem;
   line-height: 1.25;
 }
-
+.smalltitle {
+  font-size: 1.778rem;
+}
 .bigtitle {
   font-size: 2.67rem;
 }

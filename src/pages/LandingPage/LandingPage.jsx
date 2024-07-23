@@ -10,7 +10,7 @@ import IconButton from "../../components/molecules/IconButton/IconButton";
 import Input from "../../components/atoms/Input/Input";
 import Footer from "../../components/organisms/Footer/Footer";
 import Icon from "../../components/atoms/Icon/Icon";
-import VideoImg from "@assets/Imagen Video.svg";
+import PreFooterImg from "@assets/preFooterImg.svg";
 import Mark from "../../components/atoms/Mark/Mark";
 import { useNavigate } from "react-router-dom";
 import { DOWNLOAD_EBOOK, LANDING_EBOOKS } from "../../constants/routes";
@@ -85,7 +85,8 @@ const LandingPage = () => {
             </Text>
           </div>
           <Text type="subtitle" size="sm" color="light">
-            Marketing de Tratamientos Premium
+            Marketing de{" "}
+            <span className={styles.underLine2}>Tratamientos Premium</span>
           </Text>
           <Text size="sm" color="soft" bold="font-light">
             Estamos seleccionando solo a 10 dueños de clínicas dentales para
@@ -137,9 +138,8 @@ const LandingPage = () => {
       </div>
       <section className={styles.mainContent}>
         <section className={styles.videoSection}>
-          <img src={VideoImg} alt="imagen video" className={styles.imgVideo} />
           <div className={styles.videoSection__desc}>
-            <Text bold="bold">
+            <Text bold="bold" type="smalltitle">
               ¿Es posible aumentar las ganancias de una clínica en menos de un
               año?
             </Text>
@@ -148,22 +148,31 @@ const LandingPage = () => {
               funciona, y ha diseñado estrategias de marketing para clinicas
               como la tuya.
             </Text>
-            <div className={styles.btn}>
-              <IconTextButton>Solicita una reunión gratis</IconTextButton>
-              <Text bold="font-light" size="ty">
-                Discutamos el crecimiento de tu práctica dental
-              </Text>
+            <iframe
+              className={styles.video}
+              src="https://www.youtube.com/embed/Fu4GHmyvDk8?si=-ugwjpi28KLqfGSM?controls=0&showinfo=0"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; modestbranding; encrypted-media; gyroscope; picture-in-picture"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+            <div className={styles.btns}>
+              <IconTextButton size="300px">Solicita una reunión</IconTextButton>
+              <IconTextButton colorVariant="secondary-dark">
+                Ver más {">"}
+              </IconTextButton>
             </div>
           </div>
         </section>
         <div className={styles.mainEBook__card}>
           <div className={styles.mainEBook__desc}>
             <Text type="subtitle" bold="bold" color="very-light">
-              <Mark color="primary">Marketing Dental:</Mark> La Guia Definitiva
+              Marketing Dental:{" "}
+              <span className={styles.underLine2}>La Guia Definitiva</span>
             </Text>
             <Text size="sm" bold="font-light" color="soft">
-              Transforma tu clínica dental con nuestros ebook, redactados por
-              nuestro director de Marketing.
+              ransforma tu clínica dental con nuestros ebook.
             </Text>
             <div className={styles.btnDownload}>
               <IconTextButton>Descarga Gratis</IconTextButton>
@@ -172,43 +181,14 @@ const LandingPage = () => {
           <img src={EbookImg} className={styles.mainEBook__img} />
         </div>
       </section>
-
-      <section className={styles.form}>
-        <div className={styles.form__desc}>
-          <Text type="subtitle">
-            Pide una <Mark>auditoria gratuita para tu clinica dental</Mark>
+      <section className={styles.preFooter}>
+        <div className={styles.desc}>
+          <Text type="smalltitle" color="light">
+            Impulsemos tu Clínica Dental Juntos
           </Text>
-          <Text size="sm">solo aplica para dueños de clínicas</Text>
+          <IconTextButton>Solicita una reunión</IconTextButton>
         </div>
-        <div className={styles.form__inputs}>
-          <div className={styles.line}>
-            <Input
-              id={"firstName"}
-              label="Nombre"
-              variant="secondary"
-              onChange={(id, value) => {}}
-              onError={(id, value) => {}}
-            />
-            <Input
-              id={"lastName"}
-              label="Apellido"
-              variant="secondary"
-              onChange={(id, value) => {}}
-              onError={(id, value) => {}}
-            />
-          </div>
-          <Input
-            id={"email"}
-            label="Email"
-            variant="secondary"
-            onChange={(id, value) => {}}
-            onError={(id, value) => {}}
-            size="100%"
-          />
-          <IconTextButton variant="terciary">
-            Quiero Ser Contactado
-          </IconTextButton>
-        </div>
+        <img className={styles.preFooterImg} src={PreFooterImg} />
       </section>
       <Footer />
     </div>
