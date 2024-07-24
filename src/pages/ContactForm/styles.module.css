@@ -1,0 +1,31 @@
+.contactForm {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background-color: var(--light-white);
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.desc {
+  display: flex;
+  flex-direction: column;
+}
+.benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.line {
+  display: flex;
+  gap: 16px;
+}
+.usefullLinks {
+  display: flex;
+  gap: 32px;
+}

@@ -15,8 +15,7 @@
   background-color: var(--black);
   padding-left: var(--width-unit);
   padding-right: var(--width-unit);
-  padding-top: 8px;
-  padding-bottom: 8px;
+
   align-items: center;
   position: fixed;
   width: 100vw;

@@ -11,10 +11,20 @@ const Footer = () => {
         <header className={styles.header}>
           <section className={styles.section}>
             {/*  <Logo /> */}
-            <Text color="light">LOGO</Text>
+            <div className={styles.logo}>
+              <Logo />
+            </div>
+          </section>
+          <section className={styles.section}>
+            <Text color="light">Recursos Gratis</Text>
             <Link>
               <Text color="soft" size="ty" bold="font-light">
-                Marketing para Clinicas Dentales
+                Nuestro Programa
+              </Text>
+            </Link>
+            <Link>
+              <Text color="soft" size="ty" bold="font-light">
+                Aplica a el programa
               </Text>
             </Link>
           </section>
@@ -45,32 +55,31 @@ const Footer = () => {
             </div> */}
           </section>
         </header>
-        {/* <div className={styles.separator}></div>
+        <div className={styles.separator}></div>
         <div className={styles.copy}>
           <Text color="soft" bold="font-light" size="sm">
-            Copyright © {new Date().getFullYear()}, Inkadentist.com | Powered by
-            Marketing Dental Club
+            Copyright © {new Date().getFullYear()}, hackdental.com
           </Text>
           <div className={styles.links}>
             <Link>
-              <Text color="soft" bold="font-light">
+              <Text color="soft" bold="font-light" size="ty">
                 Politica de Privacidad
               </Text>
             </Link>
             <div className={styles.vbar}></div>
             <Link>
-              <Text color="soft" bold="font-light">
+              <Text color="soft" bold="font-light" size="ty">
                 Manejo de Cookies
               </Text>
             </Link>
             <div className={styles.vbar}></div>
             <Link>
-              <Text color="soft" bold="font-light">
+              <Text color="soft" bold="font-light" size="ty">
                 Cosas Legales
               </Text>
             </Link>
           </div>
-        </div> */}
+        </div>
       </div>
     </footer>
   );
