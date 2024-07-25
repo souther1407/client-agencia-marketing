@@ -5,7 +5,9 @@ import Icon from "../../components/atoms/Icon/Icon";
 import IconTextButton from "../../components/molecules/IconTextButton/IconTextButton";
 import TextLink from "../../components/molecules/TextLink/TextLink";
 import Nav from "../../components/organisms/Nav/Nav";
-
+import Input from "../../components/atoms/Input/Input";
+import Select from "../../components/atoms/Select/Select";
+import TextArea from "../../components/atoms/Textarea/Textarea";
 const ContactForm = () => {
   return (
     <div className={styles.contactForm}>
@@ -87,7 +89,100 @@ const ContactForm = () => {
             </TextLink>
           </div>
         </section>
-        <section className={styles.form}></section>
+        <section className={styles.form}>
+          <Text>Llena estos datos para hablar con un experto</Text>
+          <div className={styles.input_line}>
+            <Input
+              variant="secondary"
+              id={"firstName"}
+              label="Nombre*"
+              onChange={() => {}}
+              onError={() => {}}
+              placeholder="Nombre"
+            />
+            <Input
+              variant="secondary"
+              id={"lastName"}
+              label="Apellido*"
+              onChange={() => {}}
+              onError={() => {}}
+              placeholder="Apellido"
+            />
+          </div>
+          <div className={styles.input_line}>
+            <Input
+              variant="secondary"
+              id={"email"}
+              label="Email*"
+              onChange={() => {}}
+              onError={() => {}}
+              placeholder="Email"
+            />
+            <Input
+              variant="secondary"
+              id={"phone"}
+              label="Teléfono*"
+              onChange={() => {}}
+              onError={() => {}}
+              placeholder="Teléfono"
+            />
+          </div>
+          <div className={styles.input_line}>
+            <Input
+              variant="secondary"
+              id={"clinicName"}
+              label="Nombre de la Clinica Dental*"
+              onChange={() => {}}
+              onError={() => {}}
+              placeholder="Nombre de la Clinica Dental"
+            />
+            <Input
+              variant="secondary"
+              id={"website"}
+              label="Sitio Web*"
+              onChange={() => {}}
+              onError={() => {}}
+              placeholder="Sitio Web*"
+            />
+          </div>
+          <div className={styles.input_line}>
+            <Select
+              variant="secondary"
+              elements={["safasf", "eee"]}
+              id={"location"}
+              onChange={() => {}}
+              onError={() => {}}
+              placeholder="Porfavor seleccione"
+              label="Ubicación de la clínica*"
+              icon={"arrow"}
+            />
+            <Select
+              variant="secondary"
+              elements={["safasf", "eee"]}
+              id={"location"}
+              onChange={() => {}}
+              onError={() => {}}
+              placeholder="Porfavor seleccione"
+              label="Ingresos Anuales*"
+              icon={"arrow"}
+            />
+          </div>
+          <TextArea
+            variant="secondary"
+            label="Comentarios (opcional)"
+            id={"comments"}
+            onChange={() => {}}
+          />
+          <Text size="sm">
+            Nos comunicaremos con usted por correo electrónico en menos de 24
+            horas.
+          </Text>
+          <div className={styles.sendBtn}>
+            <IconTextButton colorVariant="primary-dark">
+              Quiero Ser Contactado {">"}
+            </IconTextButton>
+          </div>
+        </section>
       </main>
     </div>
   );

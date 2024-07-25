@@ -1,19 +1,19 @@
-.listInput {
-  background-color: var(--gray);
-  padding: 16px;
-  height: 124px;
-  border-radius: 8px;
+.secondary {
+  background-color: var(--light-white);
+
+  border-radius: 4px;
   overflow: auto;
 }
 
-.input {
+.secondary .input {
   background: transparent;
   border: none;
   font-size: 1rem;
+  padding: 8px;
 }
-.input::placeholder {
+.secondary .input::placeholder {
   color: gray;
 }
-.input:focus {
+.secondary .input:focus {
   outline: none;
 }

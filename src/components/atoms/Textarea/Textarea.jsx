@@ -19,7 +19,7 @@ const Textarea = ({
         errorValue ? styles.error : ""
       }`}
     >
-      {label && <Text size={"0.77rem"}>{label}</Text>}
+      {label && <Text size={"ty"}>{label}</Text>}
       <textarea
         style={{ width: size }}
         id={id}

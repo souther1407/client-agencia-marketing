@@ -1,5 +1,6 @@
 .primary.iconTextButton,
-.secondary.iconTextButton {
+.secondary.iconTextButton,
+.primary-dark.iconTextButton {
   display: flex;
   outline: none;
   border: 1px solid transparent;
@@ -122,5 +123,29 @@
 }
 
 .secondary-dark.iconTextButton > i {
+  color: var(--primary);
+}
+
+/*primary-dark*/
+.primary-dark.iconTextButton.full {
+  background-color: var(--black);
+  color: var(--white);
+  border-radius: 8px;
+}
+
+.primary-dark.iconTextButton:disabled {
+  background-color: #2d4356;
+  cursor: auto;
+  color: var(--white);
+  cursor: no-drop;
+}
+.primary-dark.iconTextButton:disabled:hover {
+}
+.primary-dark.iconTextButton.full:hover {
+  background-color: var(--black);
+}
+
+.primary-dark.iconTextButton.bordered {
+  border: 1px solid var(--primary);
   color: var(--primary);
 }

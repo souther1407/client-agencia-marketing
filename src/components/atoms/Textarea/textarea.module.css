@@ -17,3 +17,23 @@
 .primary .input::placeholder {
   color: gray;
 }
+
+.secondary .input {
+  border-radius: 8px;
+  font-family: "lexend";
+  border: 1px solid transparent;
+  background: none;
+  font-size: 0.7778rem;
+  width: 100%;
+  height: 100px;
+  background-color: var(--light-white);
+  resize: none;
+  color: var(--black);
+  padding: 12px;
+}
+.secondary .input:focus {
+  outline: none;
+}
+.secondary .input::placeholder {
+  color: gray;
+}

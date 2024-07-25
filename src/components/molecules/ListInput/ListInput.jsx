@@ -1,7 +1,14 @@
 import React, { useState } from "react";
 import styles from "./listInput.module.css";
 
-const ListInput = ({ id, values, onEnterValue, onDelete }) => {
+const ListInput = ({
+  id,
+  values,
+  onEnterValue,
+  onDelete,
+  variant = "secondary",
+  ...otherProps
+}) => {
   const handleEnterListValue = (e) => {
     if (e.key === "Enter" && e.target.value.trim() !== "") {
       const value = e.target.value;
@@ -10,7 +17,7 @@ const ListInput = ({ id, values, onEnterValue, onDelete }) => {
     }
   };
   return (
-    <div className={styles.listInput}>
+    <div className={styles[variant]}>
       <ul className={styles.list}>
         {values.map((v, i) => (
           <li>
@@ -32,8 +39,8 @@ const ListInput = ({ id, values, onEnterValue, onDelete }) => {
             type="text"
             className={styles.input}
             onKeyDown={handleEnterListValue}
-            placeholder="Ingrese una habilidad"
             autoFocus={true}
+            {...otherProps}
           />
         </li>
       </ul>

@@ -57,12 +57,12 @@
 }
 
 .secondary .input {
-  border: 1px solid var(--gray);
+  border: 1px solid transparent;
   border-radius: 4px;
   padding: 12px;
   color: var(--black);
-  background-color: var(--white);
-  font-size: 1rem;
+  background-color: var(--light-white);
+  font-size: 0.7rem;
 }
 .secondary .input:focus {
   outline: 1px solid var(--blue);
@@ -71,13 +71,11 @@
   color: gray;
 }
 .secondary .input::placeholder {
-  color: gray;
-  font-weight: bold;
+  color: var(--gray);
 }
 
 .plain.container {
   outline: none;
-
   background-color: transparent;
 }
 .plain.container:hover,

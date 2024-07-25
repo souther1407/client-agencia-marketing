@@ -11,9 +11,10 @@ const Select = ({
   onError,
   variant = "primary",
   icon,
-  title,
   listPosition = "bottom",
   onChange,
+  label,
+  placeholder,
   onClear = () => {},
 }) => {
   const [show, setShow] = useState(false);
@@ -44,23 +45,19 @@ const Select = ({
       href="#"
       onBlur={handleCloseOnBlur}
     >
+      {label && <Text size={"ty"}>{label}</Text>}
       <div className={styles.header} onClick={handleClick}>
         <div className={styles.placeholder}>
+          <Text size="ty" bold="font-light">
+            {value || placeholder}
+          </Text>
           {icon && (
             <div className={styles.icon}>
-              <Icon size={"1.4rem"} type={icon} />
+              <Icon size={"1rem"} type={icon} />
             </div>
           )}
-          <Text color={!value && "soft"} bold>
-            {value || title}
-          </Text>
         </div>
-        {/*  <a
-          ref={btn}
-          style={{ width: "0px", height: "0px" }}
-          href="#"
-          onBlur={handleCloseOnBlur}
-        /> */}
+
         <div className={styles.btns}>
           {value && <IconButton icon={"close"} onClick={handleClear} />}
           <Icon type={"upDownArrows"} size={"1rem"} />
