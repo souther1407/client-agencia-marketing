@@ -15,7 +15,7 @@
   background-color: var(--black);
   padding-left: var(--width-unit);
   padding-right: var(--width-unit);
-
+  padding-top: 16px;
   align-items: center;
   position: fixed;
   width: 100vw;
@@ -26,8 +26,8 @@
 }
 .nav.ajust {
   height: auto;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 0px;
+  padding-bottom: 0px;
   animation: none;
 }
 .elements {

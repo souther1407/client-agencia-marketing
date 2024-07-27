@@ -10,11 +10,15 @@ import IconButton from "../../components/molecules/IconButton/IconButton";
 import Input from "../../components/atoms/Input/Input";
 import Footer from "../../components/organisms/Footer/Footer";
 import Icon from "../../components/atoms/Icon/Icon";
-import PreFooterImg from "@assets/preFooterImg.svg";
 import Mark from "../../components/atoms/Mark/Mark";
 import { useNavigate } from "react-router-dom";
-import { DOWNLOAD_EBOOK, LANDING_EBOOKS } from "../../constants/routes";
+import {
+  DOWNLOAD_EBOOK,
+  LANDING_EBOOKS,
+  CONTACT_FORM,
+} from "../../constants/routes";
 import ImgBanner from "./components/BannerImg/BannerImg";
+import PreFooter from "../../components/organisms/PreFooter/PreFooter";
 const LandingPage = () => {
   const navigate = useNavigate();
   const [showWSMsg, setShowWSMsg] = useState(true);
@@ -158,7 +162,12 @@ const LandingPage = () => {
               allowfullscreen
             ></iframe>
             <div className={styles.btns}>
-              <IconTextButton size="300px">Solicita una reunión</IconTextButton>
+              <IconTextButton
+                onClick={() => navigate(CONTACT_FORM)}
+                size="300px"
+              >
+                Solicita una reunión
+              </IconTextButton>
               <IconTextButton colorVariant="secondary-dark">
                 Ver más {">"}
               </IconTextButton>
@@ -181,15 +190,7 @@ const LandingPage = () => {
           <img src={EbookImg} className={styles.mainEBook__img} />
         </div>
       </section>
-      <section className={styles.preFooter}>
-        <div className={styles.desc}>
-          <Text type="smalltitle" color="light">
-            Impulsemos tu Clínica Dental Juntos
-          </Text>
-          <IconTextButton>Solicita una reunión</IconTextButton>
-        </div>
-        <img className={styles.preFooterImg} src={PreFooterImg} />
-      </section>
+      <PreFooter />
       <Footer />
     </div>
   );

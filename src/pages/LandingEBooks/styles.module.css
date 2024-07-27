@@ -4,7 +4,7 @@
   width: 100%;
 }
 .header {
-  height: calc(var(--width-unit) * 2);
+  height: calc(var(--width-unit) * 1.5);
   display: flex;
   flex-direction: column;
 }
@@ -16,20 +16,20 @@
   align-items: center;
   flex-grow: 1;
   gap: 16px;
-  background: var(--gradient);
+  background: var(--primary-darker);
 }
 .imgBanner1,
 .imgBanner2 {
   position: absolute;
-  width: 300px;
+  width: 200px;
 }
 .imgBanner1 {
   left: 5%;
-  bottom: -5%;
+  bottom: 0%;
 }
 .imgBanner2 {
   right: 5%;
-  top: 0;
+  top: 20%;
 }
 
 .subnav {
@@ -55,21 +55,86 @@
   gap: 16px;
 }
 
+.mainEBook {
+  display: flex;
+  justify-content: center;
+  padding-left: var(--width-unit);
+  padding-right: var(--width-unit);
+}
+.mainEbookCard {
+  position: relative;
+  padding: 32px;
+  display: flex;
+  background-color: var(--white);
+  border: 1px solid var(--gray);
+  border-radius: 8px;
+}
+.tag {
+  background-color: var(--primary);
+  position: absolute;
+  right: -5%;
+  top: 2%;
+  padding: 8px;
+  border-radius: 12px 8px 8px 12px;
+}
+.ebookImg {
+  width: 300px;
+  transform: scale(1.5);
+}
+.desc {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-self: center;
+}
+.desc > :last-child {
+  align-self: center;
+}
 .books {
   display: grid;
   grid-template-columns: repeat(3, auto);
-  gap: 32px;
+  gap: 16px;
+  padding-left: var(--width-unit);
+  padding-right: var(--width-unit);
 }
 
 @media screen and (max-width: 1000px) {
+  .header {
+    height: auto;
+  }
   .books {
     grid-template-columns: repeat(2, auto);
     gap: 16px;
   }
+  .imgBanner1,
+  .imgBanner2 {
+    display: none;
+  }
+  .mainEbookCard {
+    flex-direction: column;
+    height: 500px;
+    justify-content: space-around;
+  }
+  .desc {
+    gap: 32px;
+  }
+  .ebookImg {
+    width: 100%;
+  }
+  .main {
+    padding: 8px;
+  }
+  .tag {
+    right: -2%;
+  }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .books {
     grid-template-columns: repeat(1, auto);
+    padding: 8px;
+  }
+  .mainEBook {
+    padding: 8px;
   }
 }

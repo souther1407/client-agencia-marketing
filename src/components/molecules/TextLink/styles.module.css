@@ -1,11 +1,24 @@
-.textLink {
+.primary.textLink {
   display: flex;
   align-items: center;
   gap: 16px;
 }
 
-.textLink > *:hover,
-.textLink.marked > * {
+.primary.textLink > *:hover,
+.primary.textLink.marked > * {
   color: var(--primary) !important;
+  text-decoration: underline;
+}
+
+/* secondary */
+.secondary.textLink {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.secondary.textLink > *:hover,
+.secondary.textLink.marked > * {
+  color: var(--gray) !important;
   text-decoration: underline;
 }
