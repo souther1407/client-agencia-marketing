@@ -12,7 +12,6 @@
 
 .nav {
   display: flex;
-
   align-items: center;
   position: fixed;
   width: 100vw;
@@ -305,7 +304,10 @@ body:has(.resoursesDropDown.show) {
     animation: none;
     padding: 0 32px;
   }
-
+  .elements {
+    justify-content: space-between;
+    padding: 0;
+  }
   .topMenu {
     display: none;
   }

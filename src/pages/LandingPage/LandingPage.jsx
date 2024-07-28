@@ -137,7 +137,7 @@ const LandingPage = () => {
             </Text>
           </div>
           <div className={styles.btns}>
-            <IconTextButton size="300px">Ver Mas {">"}</IconTextButton>
+            <IconTextButton>Ver Mas {">"}</IconTextButton>
             <IconTextButton colorVariant="secondary" icon={"wp"}>
               ¿Tienes dudas?
             </IconTextButton>

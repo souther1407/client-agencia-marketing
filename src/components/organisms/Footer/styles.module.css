@@ -55,11 +55,15 @@
   height: 12px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   .footer {
     padding: 32px;
   }
   .header {
-    gap: 0;
+    gap: 32px;
+    flex-direction: column;
+  }
+  .copy {
+    flex-direction: column;
   }
 }

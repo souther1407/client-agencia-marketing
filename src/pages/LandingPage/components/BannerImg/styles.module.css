@@ -16,26 +16,26 @@
 }
 @keyframes anim2 {
   0% {
-    transform: translateX(-30%);
+    transform: translateX(-50%);
   }
   100% {
-    transform: translateX(0);
+    transform: translateX(-40%);
   }
 }
 @keyframes anim3 {
   0% {
-    transform: translateY(-30%);
+    transform: translateY(-40%);
   }
   100% {
-    transform: translate(0);
+    transform: translateY(-25%);
   }
 }
 @keyframes anim4 {
   0% {
-    transform: translate(30%, 50%);
+    transform: translate(50%, 70%);
   }
   100% {
-    transform: translate(0, 0);
+    transform: translate(30%, 50%);
   }
 }
 .bannerImg {
@@ -57,39 +57,38 @@
 }
 
 .img1Container {
-  width: 300px;
+  width: 80%;
   top: 50%;
   left: 50%;
   position: relative;
   animation: anim1 0.3s ease-in 0s forwards;
 }
-.img1Container > img {
-  top: 0;
-  left: 0;
-  width: 300px;
-  z-index: 1;
-}
 
 .img2Container {
-  width: 80px;
-  top: 66%;
-  left: 4%;
-  transform: translateX(-30%);
+  width: 20%;
+  top: 74%;
+  left: 0;
+  transform: translateX(-50%);
   animation: anim2 0.3s ease-in 0.3s forwards;
 }
 
 .img3Container {
-  width: 120px;
+  width: 40%;
   top: 30%;
   left: 20%;
-  transform: translateY(-30%);
+  transform: translateY(-40%);
   animation: anim3 0.3s ease-in 0.6s forwards;
 }
 
 .img4Container {
-  width: 240px;
+  width: 50%;
   left: 40%;
   bottom: 10%;
-  transform: translate(30%, 50%);
+  transform: translate(50%, 70%);
   animation: anim4 0.3s ease-in 0.9s forwards;
+}
+@media screen and (max-width: 1024px) {
+  .bannerImg {
+    width: 80%;
+  }
 }
