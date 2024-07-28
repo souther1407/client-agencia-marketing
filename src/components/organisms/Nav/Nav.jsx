@@ -11,6 +11,7 @@ import {
   DOWNLOAD_EBOOK,
   LANDING_EBOOKS,
   LANDING_PAGE,
+  CONTACT_FORM,
 } from "../../../constants/routes";
 import { useNavigate } from "react-router-dom";
 import IconTextButton from "../../molecules/IconTextButton/IconTextButton";
@@ -180,6 +181,7 @@ const Nav = ({ hideTopMenu = false }) => {
               <IconTextButton
                 colorVariant="primary-rounded"
                 textProps={{ size: "ty" }}
+                onClick={() => navigate(CONTACT_FORM)}
               >
                 Cuentanos de tu Clinica {">"}
               </IconTextButton>

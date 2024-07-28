@@ -71,7 +71,7 @@ const LandingPage = () => {
               <div className={styles.banner__btns}>
                 <IconTextButton
                   size="100%"
-                  onClick={() => navigate(DOWNLOAD_EBOOK)}
+                  onClick={() => navigate(CONTACT_FORM)}
                 >
                   Cuentanos de tu clinica
                 </IconTextButton>
