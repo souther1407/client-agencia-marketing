@@ -68,7 +68,13 @@
   background-color: var(--white);
   border: 1px solid var(--gray);
   border-radius: 8px;
+  cursor: pointer;
 }
+
+.mainEbookCard:hover .ebookImg {
+  transform: scale(1.7);
+}
+
 .tag {
   background-color: var(--primary);
   position: absolute;
@@ -80,6 +86,7 @@
 .ebookImg {
   width: 300px;
   transform: scale(1.5);
+  transition: all 0.3s ease-in-out;
 }
 .desc {
   display: flex;

@@ -9,7 +9,9 @@ const EBookCard = ({ img, title, desc }) => {
   return (
     <Link to={DOWNLOAD_EBOOK} target="_blank">
       <div className={styles.ebook}>
-        <img className={styles.img} src={img} alt={title} />
+        <div className={styles.imgContainer}>
+          <img className={styles.img} src={img} alt={title} />
+        </div>
         <div className={styles.descBook}>
           <Text bold type="subtitle" textAlign="center">
             {title}
