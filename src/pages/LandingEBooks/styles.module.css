@@ -16,6 +16,8 @@
   align-items: center;
   flex-grow: 1;
   gap: 16px;
+  padding-top: calc(var(--linea-roja) + var(--linea-amarilla) + 32px);
+  padding-bottom: calc(var(--linea-roja) + var(--linea-amarilla) + 32px);
   background: var(--primary-darker);
 }
 .imgBanner1,
@@ -116,7 +118,7 @@
   }
   .banner {
     padding-top: calc(var(--linea-roja) + var(--linea-amarilla) + 32px);
-    padding-bottom: 32px;
+    padding-bottom: calc(var(--linea-roja) + var(--linea-amarilla) + 32px);
     padding-left: 16px;
     padding-right: 16px;
   }
