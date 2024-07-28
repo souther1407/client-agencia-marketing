@@ -14,6 +14,7 @@ import {
 } from "../../../constants/routes";
 import { useNavigate } from "react-router-dom";
 import IconTextButton from "../../molecules/IconTextButton/IconTextButton";
+
 const Nav = ({ hideTopMenu = false }) => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const navigate = useNavigate();
@@ -52,6 +53,85 @@ const Nav = ({ hideTopMenu = false }) => {
 
   return (
     <nav className={`${styles.nav} ${hideTopMenu && styles.ajust}`}>
+      <div
+        id="shadow-zone"
+        className={`${styles.resoursesDropDown} ${
+          (showResources || showContact) && styles.show
+        }`}
+        onClick={handleHideDropElements}
+      >
+        <div
+          className={`${styles.cardsBanner} ${showResources && styles.show}`}
+        >
+          <div className={styles.content}>
+            <TextLink to={LANDING_EBOOKS} textProps={{ size: "sm" }}>
+              ver todas las guias
+            </TextLink>
+            <div className={styles.cards}>
+              <div className={styles.card}>
+                <div className={styles.cardImgContainer}>
+                  <img
+                    src="https://img.freepik.com/free-photo/book-library-with-open-textbook_1150-5920.jpg"
+                    className={styles.cardImg}
+                  />
+                </div>
+                <Text size="ty" bold="font-light">
+                  Ebook
+                </Text>
+                <Text size="sm">Marketing Dental: La Guia Definitiva</Text>
+                <Text size="ty" bold="font-light">
+                  23 Paginas
+                </Text>
+              </div>
+              <div className={styles.separator}></div>
+              <div className={styles.card}>
+                <div className={styles.cardImgContainer}>
+                  <img
+                    src="https://img.freepik.com/free-photo/book-library-with-open-textbook_1150-5920.jpg"
+                    className={styles.cardImg}
+                  />
+                </div>
+                <Text size="ty" bold="font-light">
+                  Ebook
+                </Text>
+                <Text size="sm">Marketing Dental: La Guia Definitiva</Text>
+                <Text size="ty" bold="font-light">
+                  23 Paginas
+                </Text>
+              </div>
+              <div className={styles.separator}></div>
+              <div className={styles.card}>
+                <div className={styles.cardImgContainer}>
+                  <img
+                    src="https://img.freepik.com/free-photo/book-library-with-open-textbook_1150-5920.jpg"
+                    className={styles.cardImg}
+                  />
+                </div>
+                <Text size="ty" bold="font-light">
+                  Ebook
+                </Text>
+                <Text size="sm">Marketing Dental: La Guia Definitiva</Text>
+                <Text size="ty" bold="font-light">
+                  23 Paginas
+                </Text>
+              </div>
+            </div>
+            <div className={styles.developText}>
+              <Text bold="font-light" size="ty" textAlign="center">
+                Pagina Web Desarrrollada por el equipo de HackDental
+              </Text>
+            </div>
+          </div>
+        </div>
+
+        <div
+          className={`${styles.contactBanner} ${showContact && styles.show}`}
+        >
+          <Text>Forma de contacto</Text>
+          <Text>info@inkadentist.com</Text>
+          <Text>657302731</Text>
+        </div>
+      </div>
       <div className={styles.elements}>
         {hideTopMenu || (
           <div className={styles.topMenu}>
@@ -215,85 +295,6 @@ const Nav = ({ hideTopMenu = false }) => {
           </div>
         </div>
       </Drawer>
-      <div
-        id="shadow-zone"
-        className={`${styles.resoursesDropDown} ${
-          (showResources || showContact) && styles.show
-        }`}
-        onClick={handleHideDropElements}
-      >
-        <div
-          className={`${styles.cardsBanner} ${showResources && styles.show}`}
-        >
-          <div className={styles.content}>
-            <TextLink to={LANDING_EBOOKS} textProps={{ size: "sm" }}>
-              ver todas las guias
-            </TextLink>
-            <div className={styles.cards}>
-              <div className={styles.card}>
-                <div className={styles.cardImgContainer}>
-                  <img
-                    src="https://img.freepik.com/free-photo/book-library-with-open-textbook_1150-5920.jpg"
-                    className={styles.cardImg}
-                  />
-                </div>
-                <Text size="ty" bold="font-light">
-                  Ebook
-                </Text>
-                <Text size="sm">Marketing Dental: La Guia Definitiva</Text>
-                <Text size="ty" bold="font-light">
-                  23 Paginas
-                </Text>
-              </div>
-              <div className={styles.separator}></div>
-              <div className={styles.card}>
-                <div className={styles.cardImgContainer}>
-                  <img
-                    src="https://img.freepik.com/free-photo/book-library-with-open-textbook_1150-5920.jpg"
-                    className={styles.cardImg}
-                  />
-                </div>
-                <Text size="ty" bold="font-light">
-                  Ebook
-                </Text>
-                <Text size="sm">Marketing Dental: La Guia Definitiva</Text>
-                <Text size="ty" bold="font-light">
-                  23 Paginas
-                </Text>
-              </div>
-              <div className={styles.separator}></div>
-              <div className={styles.card}>
-                <div className={styles.cardImgContainer}>
-                  <img
-                    src="https://img.freepik.com/free-photo/book-library-with-open-textbook_1150-5920.jpg"
-                    className={styles.cardImg}
-                  />
-                </div>
-                <Text size="ty" bold="font-light">
-                  Ebook
-                </Text>
-                <Text size="sm">Marketing Dental: La Guia Definitiva</Text>
-                <Text size="ty" bold="font-light">
-                  23 Paginas
-                </Text>
-              </div>
-            </div>
-            <div className={styles.developText}>
-              <Text bold="font-light" size="ty" textAlign="center">
-                Pagina Web Desarrrollada por el equipo de HackDental
-              </Text>
-            </div>
-          </div>
-        </div>
-
-        <div
-          className={`${styles.contactBanner} ${showContact && styles.show}`}
-        >
-          <Text>Forma de contacto</Text>
-          <Text>info@inkadentist.com</Text>
-          <Text>657302731</Text>
-        </div>
-      </div>
     </nav>
   );
 };

@@ -3,19 +3,16 @@
     transform: translateY(0);
   }
   5% {
-    transform: translateY(-50%);
+    transform: translateY(-45%);
   }
   100% {
-    transform: translateY(-50%);
+    transform: translateY(-45%);
   }
 }
 
 .nav {
   display: flex;
-  background-color: var(--black);
-  padding-left: var(--width-unit);
-  padding-right: var(--width-unit);
-  padding-top: 16px;
+
   align-items: center;
   position: fixed;
   width: 100vw;
@@ -23,6 +20,7 @@
   top: 0;
   animation: hide-top 1s linear forwards;
   animation-timeline: scroll();
+  background-color: var(--black);
 }
 .nav.ajust {
   height: auto;
@@ -31,10 +29,16 @@
   animation: none;
 }
 .elements {
+  width: 100%;
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 16px;
-  width: calc(var(--width-unit) * 3);
+  padding-top: 16px;
+  padding-left: var(--width-unit);
+  padding-right: var(--width-unit);
+  z-index: 1000;
+  background-color: var(--black);
 }
 .topMenu,
 .bottomMenu {
@@ -50,9 +54,6 @@
   justify-content: space-between;
 }
 
-.nav *:not(.logo) {
-  z-index: 2;
-}
 .logo {
   cursor: pointer;
   z-index: 0;
@@ -96,11 +97,13 @@
   visibility: hidden;
   opacity: 0;
   transition: all 0.3s ease-in;
+  z-index: 0;
 }
 
 .resoursesDropDown.show {
   visibility: visible;
   opacity: 1;
+  z-index: 0;
 }
 
 body:has(.resoursesDropDown.show) {
@@ -108,6 +111,7 @@ body:has(.resoursesDropDown.show) {
 }
 
 .resoursesDropDown .cardsBanner {
+  position: relative;
   display: flex;
   width: 100%;
   height: fit-content;
@@ -118,6 +122,7 @@ body:has(.resoursesDropDown.show) {
   transform-origin: top;
   opacity: 0;
   transition: all 0.3s ease-in-out;
+  z-index: -5;
 }
 .resoursesDropDown.show .cardsBanner.show {
   transform: translateY(0);
@@ -138,6 +143,7 @@ body:has(.resoursesDropDown.show) {
   opacity: 0;
   top: -100%;
   transition: all 0.3s ease-in-out;
+  z-index: -5;
 }
 .resoursesDropDown.show .contactBanner.show {
   top: 0;

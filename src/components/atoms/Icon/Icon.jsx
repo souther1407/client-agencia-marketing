@@ -11,7 +11,7 @@ import { IoDiamondOutline } from "react-icons/io5";
 import { MdArrowForwardIos } from "react-icons/md";
 import styles from "./icon.module.css";
 import { FaLinkedin } from "react-icons/fa6";
-import { FaFacebook, FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaPlay } from "react-icons/fa";
 import { BiSolidMedal } from "react-icons/bi";
 import { CiWarning } from "react-icons/ci";
 import { IoIosArrowForward } from "react-icons/io";
@@ -38,6 +38,7 @@ const Icon = ({ type, size, color = "inherit" }) => {
     warning: <CiWarning {...props} />,
     arrowFoward: <IoIosArrowForward {...props} />,
     arrowSquare: <PiArrowSquareOutBold {...props} />,
+    play: <FaPlay {...props} />,
   };
   return <i>{icons[type]}</i>;
 };

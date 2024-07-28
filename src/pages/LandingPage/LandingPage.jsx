@@ -19,9 +19,17 @@ import {
 } from "../../constants/routes";
 import ImgBanner from "./components/BannerImg/BannerImg";
 import PreFooter from "../../components/organisms/PreFooter/PreFooter";
+import imgVideo from "@assets/imgVideo.svg";
 const LandingPage = () => {
   const navigate = useNavigate();
   const [showWSMsg, setShowWSMsg] = useState(true);
+  const [showModalVideo, setShowModalVideo] = useState(false);
+
+  const handleHideModalVideo = (e) => {
+    if (e.target.id == "bg-video-modal") {
+      setShowModalVideo(false);
+    }
+  };
   return (
     <div className={styles.page}>
       <div className={styles.help}>
@@ -72,7 +80,7 @@ const LandingPage = () => {
                 Solo para Clinicas Dentales que ofrezcan implantes
               </Text>
             </div>
-            {/*  <img className={styles.bannerImg} src={BannerImg} /> */}
+
             <ImgBanner />
           </div>
         </section>
@@ -143,24 +151,42 @@ const LandingPage = () => {
       <section className={styles.mainContent}>
         <section className={styles.videoSection}>
           <div className={styles.videoSection__desc}>
-            <Text bold="bold" type="smalltitle">
+            <Text bold="bold" type="smalltitle" textAlign="center">
               ¿Es posible aumentar las ganancias de una clínica en menos de un
               año?
             </Text>
-            <Text bold="font-light">
+            <Text bold="font-light" textAlign="center">
               <Mark>Por supuesto que si.</Mark> Nuestro equipo sabe lo que
               funciona, y ha diseñado estrategias de marketing para clinicas
               como la tuya.
             </Text>
-            <iframe
-              className={styles.video}
-              src="https://www.youtube.com/embed/Fu4GHmyvDk8?si=-ugwjpi28KLqfGSM?controls=0&showinfo=0"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; modestbranding; encrypted-media; gyroscope; picture-in-picture"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
+            <div className={styles.videoDrawer}>
+              <img className={styles.videoImg} src={imgVideo} />
+              <button
+                className={styles.videoPlayBtn}
+                onClick={() => setShowModalVideo(true)}
+              >
+                <Icon size={"1.5rem"} color="var(--white)" type={"play"} />
+              </button>
+              <div
+                id="bg-video-modal"
+                className={`${styles.modalVideo} ${
+                  showModalVideo && styles.show
+                }`}
+                onClick={handleHideModalVideo}
+              >
+                <iframe
+                  className={styles.video}
+                  src="https://www.youtube.com/embed/Fu4GHmyvDk8?si=-ugwjpi28KLqfGSM?controls=0&showinfo=0"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; modestbranding; encrypted-media; gyroscope; picture-in-picture"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+
             <div className={styles.btns}>
               <IconTextButton
                 onClick={() => navigate(CONTACT_FORM)}
