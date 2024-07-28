@@ -46,7 +46,7 @@ const LandingEBooks = () => {
               <img className={styles.ebookImg} src={EBookImg} />
             </div>
             <div className={styles.desc}>
-              <Text type="subtitle" textAlign="center">
+              <Text type="smallsubtitle" textAlign="center">
                 Marketing Dental: La Guia Definitiva
               </Text>
               <Text bold="font-light" size="ty" textAlign="center">
