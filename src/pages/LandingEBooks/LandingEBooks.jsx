@@ -19,7 +19,7 @@ const LandingEBooks = () => {
           <img src={banner1} className={styles.imgBanner1} />
           <img src={banner2} className={styles.imgBanner2} />
           <img />
-          <Text type="title" bold="bold" color="light">
+          <Text type="title" bold="bold" color="light" textAlign="center">
             Guías de Marketing Dental
           </Text>
           <Text color="light" textAlign="center">

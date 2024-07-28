@@ -13,14 +13,19 @@ const EBookCard = ({ img, title, desc }) => {
           <img className={styles.img} src={img} alt={title} />
         </div>
         <div className={styles.descBook}>
-          <Text bold type="subtitle" textAlign="center">
+          <Text bold type="smallsubtitle" textAlign="center">
             {title}
           </Text>
           <Text size={"ty"} textAlign="center">
             {desc}
           </Text>
 
-          <TextLink marked variant="secondary" to={DOWNLOAD_EBOOK}>
+          <TextLink
+            marked
+            textProps={{ size: "ty" }}
+            variant="secondary"
+            to={DOWNLOAD_EBOOK}
+          >
             Descargar la Guia <Icon type={"arrowSquare"} size={"1rem"} />
           </TextLink>
         </div>

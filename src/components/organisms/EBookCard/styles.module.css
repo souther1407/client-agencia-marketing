@@ -3,11 +3,14 @@
   flex-direction: column;
   align-items: center;
   gap: 16px;
+  width: 320px;
+  height: 500px;
   background-color: var(--white);
   padding: 16px;
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  box-shadow: 0px 0px 8px var(--gray-light);
 }
 
 .imgContainer {
@@ -16,7 +19,7 @@
 
 .ebook:hover {
   transform: translate(-2px, -2px);
-  box-shadow: 0px 0px 15px var(--gray-light);
+  box-shadow: 0px 0px 20px var(--gray-light);
 }
 .ebook:hover .img {
   transform: scale(1.2);
@@ -33,9 +36,8 @@
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-
   align-items: center;
-  gap: 32px;
+  justify-content: space-evenly;
 }
 
 @media screen and (max-width: 800px) {

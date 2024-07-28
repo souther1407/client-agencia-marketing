@@ -2,13 +2,15 @@
 .bigtitle,
 .title,
 .subtitle,
-.smalltitle {
+.smalltitle,
+.smallsubtitle {
   line-height: 1.7;
   font-family: "lexend";
   font-weight: 500;
 }
 .title,
-.subtitle {
+.subtitle,
+.smallsubtitle {
   line-height: 1.4;
 }
 
@@ -29,6 +31,9 @@
 
 .subtitle {
   font-size: 24px;
+}
+.smallsubtitle {
+  font-size: 21px;
 }
 .standard {
   color: var(--black);

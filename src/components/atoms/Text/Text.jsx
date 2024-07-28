@@ -25,7 +25,12 @@ const Text = ({
   textAlign = "start",
   ...otherProps
 }) => {
-  if (type === "title" || type == "bigtitle" || type == "smalltitle") {
+  if (
+    type === "title" ||
+    type == "bigtitle" ||
+    type == "smalltitle" ||
+    type == "smallsubtitle"
+  ) {
     return (
       <h1
         className={`${styles[type]} ${styles[color]} ${styles[bold]}`}

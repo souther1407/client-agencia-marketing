@@ -66,14 +66,15 @@
   padding: 32px;
   display: flex;
   background-color: var(--white);
-  border: 1px solid var(--gray);
+  border: 1px solid transparent;
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  box-shadow: 0px 0px 8px var(--gray-light);
 }
 .mainEbookCard:hover {
   transform: translate(-2px, -2px);
-  box-shadow: 0px 0px 10px var(--gray-light);
+  box-shadow: 0px 0px 20px var(--gray-light);
 }
 .mainEbookCard:hover .ebookImg {
   transform: scale(1.7);
@@ -109,9 +110,15 @@
   padding-right: var(--width-unit);
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
   .header {
     height: auto;
+  }
+  .banner {
+    padding-top: calc(var(--linea-roja) + var(--linea-amarilla) + 32px);
+    padding-bottom: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
   .books {
     grid-template-columns: repeat(2, auto);
