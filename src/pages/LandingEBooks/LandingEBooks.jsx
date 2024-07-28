@@ -9,6 +9,7 @@ import banner2 from "@assets/bannerBiblioteca2.svg";
 import Footer from "../../components/organisms/Footer/Footer";
 import PreFooter from "../../components/organisms/PreFooter/PreFooter";
 import TextLink from "../../components/molecules/TextLink/TextLink";
+import Icon from "../../components/atoms/Icon/Icon";
 import { DOWNLOAD_EBOOK } from "../../constants/routes";
 const LandingEBooks = () => {
   return (
@@ -56,9 +57,9 @@ const LandingEBooks = () => {
                 marked
                 variant="secondary"
                 to={DOWNLOAD_EBOOK}
-                textProps={{ textAlign: "center" }}
+                textProps={{ textAlign: "center", size: "sm" }}
               >
-                Descargar la Guia
+                Descargar la Guia <Icon type={"arrowSquare"} size={"1rem"} />
               </TextLink>
             </div>
           </div>
