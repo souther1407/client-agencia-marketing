@@ -121,7 +121,7 @@ body:has(.resoursesDropDown.show) {
   visibility: hidden;
   transform-origin: top;
   opacity: 0;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
   z-index: -5;
 }
 .resoursesDropDown.show .cardsBanner.show {
@@ -142,7 +142,7 @@ body:has(.resoursesDropDown.show) {
   visibility: hidden;
   opacity: 0;
   top: -100%;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
   z-index: -5;
 }
 .resoursesDropDown.show .contactBanner.show {
