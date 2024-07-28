@@ -1,9 +1,9 @@
 @keyframes anim1 {
   0% {
-    transform: scaleX(0.1) translate(-50%, -50%);
+    transform: translate(-30%, -50%);
   }
   100% {
-    transform: scaleX(1) translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
 }
 @keyframes fixed {
@@ -15,10 +15,28 @@
   }
 }
 @keyframes anim2 {
+  0% {
+    transform: translateX(-30%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 @keyframes anim3 {
+  0% {
+    transform: translateY(-30%);
+  }
+  100% {
+    transform: translate(0);
+  }
 }
 @keyframes anim4 {
+  0% {
+    transform: translate(30%, 50%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
 }
 .bannerImg {
   position: relative;
@@ -43,7 +61,7 @@
   top: 50%;
   left: 50%;
   position: relative;
-  animation: anim1 0.5s ease-in 0s forwards;
+  animation: anim1 0.3s ease-in 0s forwards;
 }
 .img1Container > img {
   top: 0;
@@ -56,16 +74,22 @@
   width: 80px;
   top: 66%;
   left: 4%;
+  transform: translateX(-30%);
+  animation: anim2 0.3s ease-in 0.3s forwards;
 }
 
 .img3Container {
   width: 120px;
   top: 30%;
   left: 20%;
+  transform: translateY(-30%);
+  animation: anim3 0.3s ease-in 0.6s forwards;
 }
 
 .img4Container {
   width: 240px;
   left: 40%;
   bottom: 10%;
+  transform: translate(30%, 50%);
+  animation: anim4 0.3s ease-in 0.9s forwards;
 }
