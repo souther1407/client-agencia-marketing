@@ -15,7 +15,7 @@ const DownloadForm = ({ modalOpened }) => {
     phoneNumber: "",
     url: "",
   });
-  window.innerWidth;
+
   const [currentForm, setCurrentForm] = useState(1);
 
   const handleNextForm = () => {
@@ -222,12 +222,16 @@ const DownloadForm = ({ modalOpened }) => {
         )}
       </main>
       <footer className={styles.footer}>
-        <div className={currentForm == 1 && styles.hide}>
-          <IconTextButton onClick={handleAntForm} variant="bordered">
+        <div className={currentForm === 1 && styles.hide}>
+          <IconTextButton
+            onClick={handleAntForm}
+            variant="bordered"
+            colorVariant="secondary-dark"
+          >
             Anterior
           </IconTextButton>
         </div>
-        <div className={currentForm == MAX_FORMS && styles.none}>
+        <div className={currentForm === MAX_FORMS && styles.none}>
           <IconTextButton onClick={handleNextForm}>Siguiente</IconTextButton>
         </div>
         <div

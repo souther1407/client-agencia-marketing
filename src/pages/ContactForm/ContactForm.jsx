@@ -8,6 +8,7 @@ import Nav from "../../components/organisms/Nav/Nav";
 import Input from "../../components/atoms/Input/Input";
 import Select from "../../components/atoms/Select/Select";
 import TextArea from "../../components/atoms/Textarea/Textarea";
+import Footer from "../../components/organisms/Footer/Footer";
 const ContactForm = () => {
   return (
     <div className={styles.contactForm}>
@@ -15,14 +16,14 @@ const ContactForm = () => {
       <main className={styles.content}>
         <div className={styles.content_sections}>
           <section className={styles.desc}>
-            <Text type="subtitle" bold="bold">
-              ¡QUEREMOS SER LA AGENCIA DE TU CLÍNICA!
+            <Text size="big" bold="bold">
+              Contactanos
             </Text>
-            <Text size="sm">
-              Estamos seleccionando solo a{" "}
-              <strong>10 dueños de clínicas dentales</strong> para{" "}
-              <strong>llenarlas de pacientes con tratamientos premium.</strong>{" "}
-              El programa dura <strong>6 meses.</strong>
+            <Text size="sm" bold="font-light">
+              Solo tenemos <strong>10 cupos</strong> para{" "}
+              <strong>nuestro programa anual 2024 de marketing dental.</strong>{" "}
+              Completa la forma para recibir más información. En HackDental nos
+              enorgullecemos de ser:
             </Text>
             <div className={styles.benefits}>
               <div className={styles.line}>
@@ -32,7 +33,7 @@ const ContactForm = () => {
                   size={"1.2rem"}
                 />
                 <Text size="ty" bold="font-light">
-                  Desarrollo Web para servicios dentales
+                  Autoridad en marketing dental
                 </Text>
               </div>
               <div className={styles.line}>
@@ -42,7 +43,7 @@ const ContactForm = () => {
                   size={"1.2rem"}
                 />
                 <Text size="ty" bold="font-light">
-                  Google Ads de Tratamientos Premium (Implantes).
+                  Expertos en Publicidad de Tratamientos
                 </Text>
               </div>
               <div className={styles.line}>
@@ -52,7 +53,7 @@ const ContactForm = () => {
                   size={"1.2rem"}
                 />
                 <Text size="ty" bold="font-light">
-                  Email Marketing Dental
+                  Expertos en Desarrollo Web
                 </Text>
               </div>
               <div className={styles.line}>
@@ -62,23 +63,13 @@ const ContactForm = () => {
                   size={"1.2rem"}
                 />
                 <Text size="ty" bold="font-light">
-                  Automatizaciones de Whatsapp para Clinicas Dentales
-                </Text>
-              </div>
-              <div className={styles.line}>
-                <Icon
-                  type={"check"}
-                  color="var(--primary-dark)"
-                  size={"1.2rem"}
-                />
-                <Text size="ty" bold="font-light">
-                  Creacion de Programas de Referidos para Clinicas
+                  Expertos en Google Ads
                 </Text>
               </div>
             </div>
             <div className={styles.infoBtn}>
               <IconTextButton icon={"wp"} colorVariant="secondary-dark">
-                ¿Tienes dudas?
+                Whatsapp
               </IconTextButton>
             </div>
             <hr className={styles.separator} />
@@ -91,7 +82,9 @@ const ContactForm = () => {
             </div>
           </section>
           <section className={styles.form}>
-            <Text>Llena estos datos para hablar con un experto</Text>
+            <Text size="xlg">
+              Completa esta forma para aplicar a nuestro programa.
+            </Text>
             <div className={styles.input_line}>
               <Input
                 variant="secondary"
@@ -186,6 +179,7 @@ const ContactForm = () => {
           </section>
         </div>
       </main>
+      <Footer />
     </div>
   );
 };

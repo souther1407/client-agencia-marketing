@@ -17,19 +17,20 @@ const DownloadEBook = () => {
       <main className={styles.main}>
         <div className={styles.banner}>
           <section className={styles.banner__desc}>
-            <Text>Ebook Gratuito</Text>
-            <Text type="bigtitle" bold>
-              Marketing Dental: Guia para Principiantes
+            <Text color="primary">Ebook Gratuito</Text>
+            <Text color="light" type="title" bold>
+              Como Mejorar la Aceptación de Casos de tu Clinica
             </Text>
             <div className={styles.desc}>
-              <Text>
-                Intro al Marketing Digital para Dueños de Clinicas sin
-                experiencia
+              <Text color="soft" bold="font-light">
+                Save thousands of engineering hours by using the NexHealth
+                Synchronizer API to sync bidirectionally with health record
+                systems like Dentrix, Open Dental, eClinicalWorks, and more
               </Text>
             </div>
             <div className={styles.downloadEBook}>
               <IconTextButton size="100%" onClick={() => setModalOpened(true)}>
-                Descargar Gratis
+                Descargar Ahora
               </IconTextButton>
             </div>
           </section>

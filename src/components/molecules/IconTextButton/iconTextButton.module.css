@@ -116,6 +116,8 @@
   transition: all 0.3s ease-in;
   justify-content: center;
   align-items: center;
+  gap: 8px;
+  cursor: pointer;
 }
 
 .secondary-dark.iconTextButton:hover {
@@ -124,6 +126,10 @@
 
 .secondary-dark.iconTextButton > i {
   color: var(--primary);
+}
+.secondary-dark.iconTextButton.bordered {
+  border: 1px solid var(--black);
+  color: var(--black);
 }
 
 /*primary-dark*/
@@ -139,8 +145,10 @@
   color: var(--white);
   cursor: no-drop;
 }
+
 .primary-dark.iconTextButton:disabled:hover {
 }
+
 .primary-dark.iconTextButton.full:hover {
   background-color: var(--black);
 }
