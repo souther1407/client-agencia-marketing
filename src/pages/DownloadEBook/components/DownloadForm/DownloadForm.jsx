@@ -5,7 +5,8 @@ import IconTextButton from "../../../../components/molecules/IconTextButton/Icon
 import Input from "../../../../components/atoms/Input/Input";
 import Icon from "../../../../components/atoms/Icon/Icon";
 import TextLink from "../../../../components/molecules/TextLink/TextLink";
-const MAX_FORMS = 4;
+import Select from "../../../../components/atoms/Select/Select";
+const MAX_FORMS = 2;
 const DownloadForm = ({ modalOpened }) => {
   const [form, setForm] = useState({
     email: "",
@@ -79,28 +80,10 @@ const DownloadForm = ({ modalOpened }) => {
                 <Text color="light">2</Text>
               )}
             </li>
-            <li
-              className={`${styles.indicator} ${
-                currentForm > 3 && styles.success
-              }`}
-            >
-              {currentForm > 3 ? (
-                <Icon type={"check"} color="var(--white)" size={"1rem"} />
-              ) : (
-                <Text color="light">3</Text>
-              )}
-            </li>
-            <li className={styles.indicator}>
-              {currentForm > 4 ? (
-                <Icon type={"check"} color="var(--white)" size={"1rem"} />
-              ) : (
-                <Text color="light">4</Text>
-              )}
-            </li>
           </ul>
         </div>
       </header>
-      <main>
+      <main className={styles.main}>
         {currentForm == 1 && (
           <div className={styles.content}>
             <div className={styles.desc}>
@@ -113,12 +96,12 @@ const DownloadForm = ({ modalOpened }) => {
             </div>
 
             <Input
-              variant="secondary"
+              variant="white"
               id={"email"}
               value={form.email}
               onChange={handleChange}
               onError={(id, error) => {}}
-              label="Correo electronico de trabajo"
+              label="Correo electronico de trabajo*"
             />
           </div>
         )}
@@ -132,91 +115,52 @@ const DownloadForm = ({ modalOpened }) => {
                 todos los campos son obligatorios
               </Text>
             </div>
-            <div className={styles.inputs}>
+            <div className={styles.inputChecks}>
               <Input
-                variant="secondary"
+                variant="white"
                 id={"firstName"}
                 value={form.firstName}
                 onChange={handleChange}
                 onError={(id, error) => {}}
-                label="Nombre"
+                label="Nombre*"
               />
               <Input
-                variant="secondary"
+                variant="white"
                 id={"lastName"}
                 value={form.lastName}
                 onChange={handleChange}
                 onError={(id, error) => {}}
-                label="Apellido"
-              />
-            </div>
-          </div>
-        )}
-        {currentForm == 3 && (
-          <div className={styles.content}>
-            <div className={styles.desc}>
-              <Text bold type="title" textAlign="center">
-                Descarga el Ebook Gratuito
-              </Text>
-              <Text size="ty" textAlign="center">
-                todos los campos son obligatorios
-              </Text>
-            </div>
-            <div className={styles.inputs}>
-              <Input
-                variant="secondary"
-                id={"workInOffice"}
-                value={form.workInOffice}
-                onChange={handleChange}
-                onError={(id, error) => {}}
-                label="¿Trabajas en un Consultorio?"
+                label="Apellidos*"
               />
               <Input
-                variant="secondary"
+                variant="white"
                 id={"phoneNumber"}
                 value={form.phoneNumber}
                 onChange={handleChange}
                 onError={(id, error) => {}}
-                label="Numero de Telefono"
+                label="Numero de Telefono*"
               />
-            </div>
-          </div>
-        )}
-        {currentForm == 4 && (
-          <div className={styles.content}>
-            <div className={styles.desc}>
-              <Text bold type="title" textAlign="center">
-                Descarga el Ebook Gratuito
-              </Text>
-              <Text size="ty" textAlign="center">
-                todos los campos son obligatorios
-              </Text>
-            </div>
-            <div className={styles.inputChecks}>
-              <Input
-                variant="secondary"
-                id={"url"}
-                value={form.url}
+              <Select
+                icon={"arrowFoward"}
+                variant="white"
+                id={"howKnowAbout"}
                 onChange={handleChange}
-                onError={(id, error) => {}}
-                label="URL del sitio web"
+                label={"¿Como escuchaste de este ebook?*"}
+                onError={() => {}}
+                placeholder={"Porfavor Seleccione*"}
+                elements={["Redes sociales", "Google"]}
               />
-              <div className={styles.checks}>
-                <div className={styles.check}>
-                  <input type="checkbox" />
-                  <Text>
-                    Suscribirse a nuestro{" "}
-                    <TextLink to={"#"}>Blog de Marketing Dental</TextLink>
-                  </Text>
-                </div>
-                <div className={styles.check}>
-                  <input type="checkbox" />
-                  <Text>
-                    Acepto los{" "}
-                    <TextLink to={"#"}>términos y condiciones</TextLink>
-                  </Text>
-                </div>
-              </div>
+            </div>
+            <div className={styles.privacy}>
+              <Text bold="font-light">
+                Tu privacidad es importante para nosotros. HackDental utiliza la
+                información que proporcionas para ponerse en contacto contigo en
+                relación con contenido, productos y servicios relevantes para
+                ti. Puedes darte de baja para dejar de recibir este tipo de
+                comunicaciones en cualquier momento. Si deseas obtener más
+                información sobre la protección de tus datos en HackDental,
+                consulta nuestra Política de Privacidad.
+              </Text>
             </div>
           </div>
         )}

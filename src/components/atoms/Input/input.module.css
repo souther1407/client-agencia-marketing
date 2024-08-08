@@ -56,6 +56,8 @@
   font-size: 1rem;
 }
 
+/*secondary*/
+
 .secondary .input {
   border: 1px solid transparent;
   border-radius: 4px;
@@ -71,6 +73,26 @@
   color: gray;
 }
 .secondary .input::placeholder {
+  color: var(--gray);
+}
+
+/*white*/
+
+.white .input {
+  border: 1px solid var(--black);
+  border-radius: 4px;
+  padding: 12px;
+  color: var(--black);
+  background-color: var(--white);
+  font-size: 0.7rem;
+}
+.white .input:focus {
+  outline: 1px solid var(--blue);
+}
+.white .icon {
+  color: gray;
+}
+.white .input::placeholder {
   color: var(--gray);
 }
 

@@ -88,6 +88,10 @@
   position: relative;
   top: 1px;
 }
+.main {
+  display: flex;
+  justify-content: center;
+}
 .content {
   display: flex;
   justify-content: center;
@@ -95,6 +99,10 @@
   flex-direction: column;
   padding: 16px;
   gap: 24px;
+  width: 78%;
+  align-self: center;
+}
+.privacy {
 }
 
 .hide {
@@ -133,7 +141,9 @@
   display: flex;
 }
 .inputChecks {
-  width: 50%;
+  display: grid;
+  grid-template-columns: 300px 300px;
+  gap: 32px;
 }
 
 @media screen and (max-width: 800px) {

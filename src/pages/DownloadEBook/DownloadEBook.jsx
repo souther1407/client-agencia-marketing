@@ -36,6 +36,23 @@ const DownloadEBook = () => {
           </section>
           <img className={styles.ebook} src={EBookImg} />
         </div>
+        <div className={styles.moreInfo}>
+          <div className={styles.info}>
+            <Text bold="bold" type="subtitle">
+              Adentro aprenderás:
+            </Text>
+            <Text bold="font-light">
+              Panorama de las ventas por chat para el 2023
+            </Text>
+            <Text bold="font-light">
+              Cuáles son las industrias que más venden por chat aprendiendo a
+              vender por medio de Facebook.
+            </Text>
+            <Text bold="font-light">
+              Aprendiendo a vender por medio de WhatsApp, Telegram e Instagram
+            </Text>
+          </div>
+        </div>
       </main>
       <Modal isOpen={modalOpened} onClose={() => setModalOpened(false)}>
         <DownloadForm modalOpened={modalOpened} />

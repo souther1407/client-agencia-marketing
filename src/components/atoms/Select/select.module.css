@@ -108,3 +108,31 @@
   justify-content: space-between;
   width: 100%;
 }
+
+/* white */
+.white {
+  display: block;
+  position: relative;
+}
+.white .header {
+  border: 1px solid var(--black);
+  background-color: var(--white);
+  padding: 8px;
+}
+
+.white .icon {
+  color: var(--black);
+}
+
+.white .elementsList {
+  width: 100%;
+  position: absolute;
+  border: 1px solid var(--black);
+  background-color: var(--white);
+  padding: 8px;
+}
+.white .placeholder {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}

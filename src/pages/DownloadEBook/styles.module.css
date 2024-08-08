@@ -49,6 +49,14 @@
   height: 100% !important;
 }
 
+.moreInfo {
+  padding-top: var(--linea-amarilla);
+  padding-bottom: var(--linea-amarilla);
+  padding-left: var(--width-unit);
+  padding-right: var(--width-unit);
+  display: flex;
+}
+
 @media screen and (max-width: 800px) {
   .banner {
     flex-direction: column-reverse;
