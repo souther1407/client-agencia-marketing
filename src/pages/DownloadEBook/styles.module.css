@@ -55,8 +55,55 @@
   padding-left: var(--width-unit);
   padding-right: var(--width-unit);
   display: flex;
+  justify-content: space-between;
 }
 
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 440px;
+}
+.line {
+  display: flex;
+  gap: 8px;
+}
+.imgPortada {
+  width: 400px;
+}
+.prefooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: calc(var(--linea-amarilla) / 2);
+  padding-bottom: calc(var(--linea-amarilla) / 2);
+  padding-left: var(--width-unit);
+  padding-right: var(--width-unit);
+  background: var(--light-black);
+}
+.prefooter .downloadBtn {
+  display: flex;
+  width: 350px;
+  height: 80px;
+}
+.separator {
+  height: 0.77rem;
+  border: 1px solid var(--light-blue-transparent);
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--black);
+  padding-top: 32px;
+  gap: 8px;
+  padding-bottom: calc(var(--linea-amarilla) / 2);
+}
+.footer .links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
 @media screen and (max-width: 800px) {
   .banner {
     flex-direction: column-reverse;
