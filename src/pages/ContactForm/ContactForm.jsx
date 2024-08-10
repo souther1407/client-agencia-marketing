@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./styles.module.css";
 import Text from "../../components/atoms/Text/Text";
 import Icon from "../../components/atoms/Icon/Icon";
@@ -9,10 +9,43 @@ import Input from "../../components/atoms/Input/Input";
 import Select from "../../components/atoms/Select/Select";
 import TextArea from "../../components/atoms/Textarea/Textarea";
 import Footer from "../../components/organisms/Footer/Footer";
+import { sendContactForm } from "../../services/api/sendContactForm";
+import LoadingScreen from "../../components/molecules/LoadingScreen/LoadingScreen";
+
 const ContactForm = () => {
+  const [contactForm, setContactForm] = useState({
+    first_name: "",
+    last_name: "",
+    email: "",
+    phone: "",
+    clinic_name: "",
+    website: "",
+    location: "",
+    anual_revenues: "",
+    comments: "",
+  });
+  const [loading, setLoading] = useState(false);
+
+  const handleChange = (id, value) => {
+    setContactForm((prev) => ({ ...prev, [id]: value }));
+  };
+
+  const handleSendFormData = async () => {
+    try {
+      setLoading(true);
+      await sendContactForm(contactForm);
+      alert("Datos enviados!");
+    } catch (error) {
+      alert("hubo un error al enviar los datos, por favor intente nuevamente");
+      console.log(error);
+    } finally {
+      setLoading(false);
+    }
+  };
   return (
     <div className={styles.contactForm}>
       <Nav hideTopMenu />
+      {loading && <LoadingScreen />}
       <main className={styles.content}>
         <div className={styles.content_sections}>
           <section className={styles.desc}>
@@ -88,19 +121,21 @@ const ContactForm = () => {
             <div className={styles.input_line}>
               <Input
                 variant="secondary"
-                id={"firstName"}
+                id={"first_name"}
                 label="Nombre*"
-                onChange={() => {}}
+                onChange={handleChange}
                 onError={() => {}}
                 placeholder="Nombre"
+                value={contactForm.first_name}
               />
               <Input
                 variant="secondary"
-                id={"lastName"}
+                id={"last_name"}
                 label="Apellido*"
-                onChange={() => {}}
+                onChange={handleChange}
                 onError={() => {}}
                 placeholder="Apellido"
+                value={contactForm.last_name}
               />
             </div>
             <div className={styles.input_line}>
@@ -108,35 +143,39 @@ const ContactForm = () => {
                 variant="secondary"
                 id={"email"}
                 label="Email*"
-                onChange={() => {}}
+                onChange={handleChange}
                 onError={() => {}}
                 placeholder="Email"
+                value={contactForm.email}
               />
               <Input
                 variant="secondary"
                 id={"phone"}
                 label="Teléfono*"
-                onChange={() => {}}
+                onChange={handleChange}
                 onError={() => {}}
                 placeholder="Teléfono"
+                value={contactForm.phone}
               />
             </div>
             <div className={styles.input_line}>
               <Input
                 variant="secondary"
-                id={"clinicName"}
+                id={"clinic_name"}
                 label="Nombre de la Clinica Dental*"
-                onChange={() => {}}
+                onChange={handleChange}
                 onError={() => {}}
                 placeholder="Nombre de la Clinica Dental"
+                value={contactForm.clinic_name}
               />
               <Input
                 variant="secondary"
                 id={"website"}
                 label="Sitio Web*"
-                onChange={() => {}}
+                onChange={handleChange}
                 onError={() => {}}
                 placeholder="Sitio Web*"
+                value={contactForm.website}
               />
             </div>
             <div className={styles.input_line}>
@@ -144,35 +183,41 @@ const ContactForm = () => {
                 variant="secondary"
                 elements={["safasf", "eee"]}
                 id={"location"}
-                onChange={() => {}}
+                onChange={handleChange}
                 onError={() => {}}
                 placeholder="Porfavor seleccione"
                 label="Ubicación de la clínica*"
                 icon={"arrow"}
+                value={contactForm.location}
               />
               <Select
                 variant="secondary"
                 elements={["safasf", "eee"]}
-                id={"location"}
-                onChange={() => {}}
+                id={"anual_revenues"}
+                onChange={handleChange}
                 onError={() => {}}
                 placeholder="Porfavor seleccione"
                 label="Ingresos Anuales*"
                 icon={"arrow"}
+                value={contactForm.anual_revenues}
               />
             </div>
             <TextArea
               variant="secondary"
               label="Comentarios (opcional)"
               id={"comments"}
-              onChange={() => {}}
+              onChange={handleChange}
+              value={contactForm.comments}
             />
             <Text size="sm">
               Nos comunicaremos con usted por correo electrónico en menos de 24
               horas.
             </Text>
             <div className={styles.sendBtn}>
-              <IconTextButton colorVariant="primary-dark">
+              <IconTextButton
+                colorVariant="primary-dark"
+                onClick={handleSendFormData}
+              >
                 Quiero Ser Contactado {">"}
               </IconTextButton>
             </div>
