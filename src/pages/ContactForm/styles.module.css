@@ -23,7 +23,8 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
-  margin-right: 16px;
+  margin-right: 32px;
+  width: 400px;
 }
 .form {
   display: flex;
