@@ -13,6 +13,7 @@ import Link from "../../components/atoms/Link/Link";
 
 const DownloadEBook = () => {
   const [modalOpened, setModalOpened] = useState(false);
+
   return (
     <div className={styles.page}>
       <nav className={styles.nav}>
@@ -33,7 +34,11 @@ const DownloadEBook = () => {
               </Text>
             </div>
             <div className={styles.downloadEBook}>
-              <IconTextButton size="100%" onClick={() => setModalOpened(true)}>
+              <IconTextButton
+                size="100%"
+                textProps={{ size: "lg" }}
+                onClick={() => setModalOpened(true)}
+              >
                 Descargar Ahora
               </IconTextButton>
             </div>

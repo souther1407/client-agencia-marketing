@@ -48,7 +48,7 @@ const Select = ({
       {label && <Text size={"ty"}>{label}</Text>}
       <div className={styles.header} onClick={handleClick}>
         <div className={styles.placeholder}>
-          <Text size="ty" bold="font-light">
+          <Text size="ty" bold={!value && "font-light"}>
             {value || placeholder}
           </Text>
           {icon && (
@@ -56,11 +56,6 @@ const Select = ({
               <Icon size={"1rem"} type={icon} />
             </div>
           )}
-        </div>
-
-        <div className={styles.btns}>
-          {value && <IconButton icon={"close"} onClick={handleClear} />}
-          <Icon type={"upDownArrows"} size={"1rem"} />
         </div>
       </div>
       {show && (

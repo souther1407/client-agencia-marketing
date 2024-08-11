@@ -4,18 +4,30 @@ import Text from "../../../../components/atoms/Text/Text";
 import IconTextButton from "../../../../components/molecules/IconTextButton/IconTextButton";
 import Input from "../../../../components/atoms/Input/Input";
 import Icon from "../../../../components/atoms/Icon/Icon";
-import TextLink from "../../../../components/molecules/TextLink/TextLink";
 import Select from "../../../../components/atoms/Select/Select";
+import { isEmail, isEmpty } from "../../../../utils/inputValidators";
+import { sendContactFormDownloadEbook } from "../../../../services/api/sendContactForm";
+import LoadingScreen from "../../../../components/molecules/LoadingScreen/LoadingScreen";
+
 const MAX_FORMS = 2;
 const DownloadForm = ({ modalOpened }) => {
   const [form, setForm] = useState({
     email: "",
-    firstName: "",
-    lastName: "",
-    workInOffice: "",
-    phoneNumber: "",
-    url: "",
+    first_name: "",
+    last_name: "",
+    how_know_about: "",
+    phone_number: "",
   });
+
+  const [formErrors, setFormErros] = useState({
+    email: "empty",
+    first_name: "empty",
+    last_name: "empty",
+    how_know_about: "empty",
+    phone_number: "empty",
+  });
+
+  const [loading, setLoading] = useState(false);
 
   const [currentForm, setCurrentForm] = useState(1);
 
@@ -27,6 +39,10 @@ const DownloadForm = ({ modalOpened }) => {
     setForm((prev) => ({ ...prev, [id]: value }));
   };
 
+  const handleErrorsChange = (id, value) => {
+    setFormErros((prev) => ({ ...prev, [id]: value }));
+  };
+
   const handleAntForm = () => {
     setCurrentForm((prev) => prev - 1);
   };
@@ -34,11 +50,33 @@ const DownloadForm = ({ modalOpened }) => {
   const resetData = () => {
     setCurrentForm(1);
   };
+
   useEffect(() => {
     if (!modalOpened) {
       resetData();
     }
   }, [modalOpened]);
+
+  const isAnFormError = () => {
+    for (let e in formErrors) {
+      if (!!formErrors[e]) {
+        return true;
+      }
+    }
+    return false;
+  };
+
+  const handleDownloadEbook = async () => {
+    try {
+      setLoading(true);
+      await sendContactFormDownloadEbook(form);
+      alert("ebook descargado!");
+    } catch (error) {
+      alert("hubo un error, intente nuevamente");
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <div
@@ -52,6 +90,7 @@ const DownloadForm = ({ modalOpened }) => {
             : "",
       }}
     >
+      {loading && <LoadingScreen />}
       <header className={styles.header}>
         <div
           className={`${styles.progress} ${currentForm == 1 && styles.none}`}
@@ -100,8 +139,9 @@ const DownloadForm = ({ modalOpened }) => {
               id={"email"}
               value={form.email}
               onChange={handleChange}
-              onError={(id, error) => {}}
+              onError={handleErrorsChange}
               label="Correo electronico de trabajo*"
+              validators={[isEmail, isEmail]}
             />
           </div>
         )}
@@ -118,37 +158,42 @@ const DownloadForm = ({ modalOpened }) => {
             <div className={styles.inputChecks}>
               <Input
                 variant="white"
-                id={"firstName"}
-                value={form.firstName}
+                id={"first_name"}
+                value={form.first_name}
                 onChange={handleChange}
-                onError={(id, error) => {}}
+                onError={handleErrorsChange}
                 label="Nombre*"
+                validators={[isEmpty]}
               />
               <Input
                 variant="white"
-                id={"lastName"}
-                value={form.lastName}
+                id={"last_name"}
+                value={form.last_name}
                 onChange={handleChange}
-                onError={(id, error) => {}}
+                onError={handleErrorsChange}
                 label="Apellidos*"
+                validators={[isEmpty]}
               />
               <Input
                 variant="white"
-                id={"phoneNumber"}
-                value={form.phoneNumber}
+                id={"phone_number"}
+                value={form.phone_number}
                 onChange={handleChange}
-                onError={(id, error) => {}}
+                onError={handleErrorsChange}
                 label="Numero de Telefono*"
+                validators={[isEmpty]}
               />
               <Select
                 icon={"arrowFoward"}
                 variant="white"
-                id={"howKnowAbout"}
+                id={"how_know_about"}
                 onChange={handleChange}
                 label={"¿Como escuchaste de este ebook?*"}
-                onError={() => {}}
+                onError={handleErrorsChange}
                 placeholder={"Porfavor Seleccione*"}
                 elements={["Redes sociales", "Google"]}
+                value={form.how_know_about}
+                validators={[isEmpty]}
               />
             </div>
             <div className={styles.privacy}>
@@ -176,14 +221,22 @@ const DownloadForm = ({ modalOpened }) => {
           </IconTextButton>
         </div>
         <div className={currentForm === MAX_FORMS && styles.none}>
-          <IconTextButton onClick={handleNextForm}>Siguiente</IconTextButton>
+          <IconTextButton
+            onClick={handleNextForm}
+            disabled={currentForm == 1 && !!formErrors.email}
+          >
+            Siguiente
+          </IconTextButton>
         </div>
         <div
           className={`${styles.downloadBtn} ${
             currentForm == MAX_FORMS && styles.show
           }`}
         >
-          <IconTextButton disabled onClick={handleNextForm}>
+          <IconTextButton
+            disabled={isAnFormError()}
+            onClick={handleDownloadEbook}
+          >
             Descargar pdf
           </IconTextButton>
         </div>

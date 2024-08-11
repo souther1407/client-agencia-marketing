@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styles from "./input.module.css";
 import Text from "../Text/Text";
 import Icon from "../Icon/Icon";
@@ -9,7 +9,6 @@ const Input = ({
   onError,
   variant = "primary",
   label = "",
-  errorValue = "",
   icon,
   size = "100%",
   setFocus = false,
@@ -18,6 +17,8 @@ const Input = ({
   ...otherProps
 }) => {
   const input = useRef(null);
+
+  const [errorMsg, setErrorMsg] = useState("");
   const handleChange = (e) => {
     handleError(e.target.value);
     onChange(id, e.target.value);
@@ -26,10 +27,10 @@ const Input = ({
   const handleError = (value) => {
     let error = "";
     for (const validator of validators) {
-      console.log("itero");
       error = validator(value);
       if (error) break;
     }
+    setErrorMsg(error);
     onError(id, error);
   };
   useEffect(() => {
@@ -39,7 +40,7 @@ const Input = ({
   return (
     <div
       className={`${styles[variant]} ${styles.container} ${
-        errorValue ? styles.error : ""
+        errorMsg ? styles.error : ""
       }`}
     >
       {icon && (
@@ -47,7 +48,12 @@ const Input = ({
           <Icon type={icon} size={"1.4rem"} />
         </div>
       )}
-      {label && <Text size={"ty"}>{label}</Text>}
+
+      {label && (
+        <Text size={"ty"} color={errorMsg && "error"}>
+          {label}
+        </Text>
+      )}
       <input
         ref={input}
         style={{ width: size }}

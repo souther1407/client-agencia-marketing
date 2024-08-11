@@ -51,6 +51,9 @@
 .light {
   color: var(--white);
 }
+.error {
+  color: var(--error);
+}
 .soft {
   color: var(--dark-white);
 }

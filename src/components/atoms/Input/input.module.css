@@ -96,6 +96,11 @@
   color: var(--gray);
 }
 
+.white.error .input {
+  border: 1px solid var(--error);
+  color: var(--error);
+}
+
 .plain.container {
   outline: none;
   background-color: transparent;
