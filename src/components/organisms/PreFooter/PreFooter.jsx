@@ -11,7 +11,7 @@ const PreFooter = () => {
   return (
     <section className={styles.preFooter}>
       <div className={styles.desc}>
-        <Text type="smalltitle" color="light">
+        <Text type="smalltitle" color="light" bold="bold">
           Impulsemos tu Clínica Dental Juntos
         </Text>
         <IconTextButton onClick={() => navigate(CONTACT_FORM)}>

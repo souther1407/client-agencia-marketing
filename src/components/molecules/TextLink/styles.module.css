@@ -22,3 +22,16 @@
   color: var(--gray) !important;
   text-decoration: underline;
 }
+
+/* white */
+.white.textLink {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.white.textLink > *:hover,
+.white.textLink.marked > * {
+  color: var(--white) !important;
+  text-decoration: underline;
+}

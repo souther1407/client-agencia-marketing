@@ -18,6 +18,7 @@ import IconTextButton from "../../molecules/IconTextButton/IconTextButton";
 
 const Nav = ({ hideTopMenu = false }) => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
+  const [isTopMenuHidden, setisTopMenuHidden] = useState(false);
   const navigate = useNavigate();
   useEffect(() => {
     window.addEventListener("resize", () => {
@@ -134,15 +135,23 @@ const Nav = ({ hideTopMenu = false }) => {
         </div>
       </div>
       <div className={styles.elements}>
-        {hideTopMenu || (
+        {hideTopMenu || isTopMenuHidden || (
           <div className={styles.topMenu}>
-            <Text size="ty" color="light">
+            <div className={styles.closeBtn}>
+              <IconButton
+                icon="close"
+                variant="terciary"
+                size="1.2rem"
+                onClick={() => setisTopMenuHidden(true)}
+              />
+            </div>
+            <Text size="xty" color="light" bold="font-light">
               ¿Quieres Llenar tu Clínica de Pacientes? Aprende Gratis con
               nuestra biblioteca de ebooks?
             </Text>
             <TextLink
               to={LANDING_EBOOKS}
-              textProps={{ size: "ty", color: "light" }}
+              textProps={{ size: "xty", color: "light", bold: "font-light" }}
             >
               Ir ahora <Icon size={"0.8rem"} type={"arrowSquare"} />
             </TextLink>

@@ -13,7 +13,6 @@ import Link from "../../components/atoms/Link/Link";
 
 const DownloadEBook = () => {
   const [modalOpened, setModalOpened] = useState(false);
-
   return (
     <div className={styles.page}>
       <nav className={styles.nav}>
@@ -22,12 +21,14 @@ const DownloadEBook = () => {
       <main className={styles.main}>
         <div className={styles.banner}>
           <section className={styles.banner__desc}>
-            <Text color="primary">Ebook Gratuito</Text>
+            <Text color="primary" size="sm">
+              Ebook Gratuito
+            </Text>
             <Text color="light" type="title" bold>
               Como Mejorar la Aceptación de Casos de tu Clinica
             </Text>
             <div className={styles.desc}>
-              <Text color="soft" bold="font-light">
+              <Text color="soft" bold="font-light" size="sm">
                 Save thousands of engineering hours by using the NexHealth
                 Synchronizer API to sync bidirectionally with health record
                 systems like Dentrix, Open Dental, eClinicalWorks, and more
@@ -36,7 +37,7 @@ const DownloadEBook = () => {
             <div className={styles.downloadEBook}>
               <IconTextButton
                 size="100%"
-                textProps={{ size: "lg" }}
+                textProps={{ size: "sm" }}
                 onClick={() => setModalOpened(true)}
               >
                 Descargar Ahora
@@ -51,21 +52,33 @@ const DownloadEBook = () => {
               Adentro aprenderás:
             </Text>
             <div className={styles.line}>
-              <Icon type={"check"} color="var(--primary-dark)" size={"1rem"} />{" "}
-              <Text bold="font-light">
+              <Icon
+                type={"check"}
+                color="var(--primary-dark)"
+                size={"0.7rem"}
+              />{" "}
+              <Text bold="font-light" size="sm">
                 Panorama de las ventas por chat para el 2023
               </Text>
             </div>
             <div className={styles.line}>
-              <Icon type={"check"} color="var(--primary-dark)" size={"1rem"} />{" "}
-              <Text bold="font-light">
+              <Icon
+                type={"check"}
+                color="var(--primary-dark)"
+                size={"0.7rem"}
+              />{" "}
+              <Text bold="font-light" size="sm">
                 Cuáles son las industrias que más venden por chat aprendiendo a
                 vender por medio de Facebook.
               </Text>
             </div>
             <div className={styles.line}>
-              <Icon type={"check"} color="var(--primary-dark)" size={"1rem"} />{" "}
-              <Text bold="font-light">
+              <Icon
+                type={"check"}
+                color="var(--primary-dark)"
+                size={"0.7rem"}
+              />{" "}
+              <Text bold="font-light" size="sm">
                 Aprendiendo a vender por medio de WhatsApp, Telegram e Instagram
               </Text>
             </div>
@@ -78,7 +91,11 @@ const DownloadEBook = () => {
           Obten tu Guia Gratis
         </Text>
         <div className={styles.downloadBtn}>
-          <IconTextButton size="100%" textProps={{ size: "lg" }}>
+          <IconTextButton
+            size="100%"
+            textProps={{ size: "sm" }}
+            onClick={() => setModalOpened(true)}
+          >
             Descargar Ahora
           </IconTextButton>
         </div>

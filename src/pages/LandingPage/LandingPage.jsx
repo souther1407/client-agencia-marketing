@@ -11,6 +11,7 @@ import Input from "../../components/atoms/Input/Input";
 import Footer from "../../components/organisms/Footer/Footer";
 import Icon from "../../components/atoms/Icon/Icon";
 import Mark from "../../components/atoms/Mark/Mark";
+import TextLink from "../../components/molecules/TextLink/TextLink";
 import { useNavigate } from "react-router-dom";
 import {
   DOWNLOAD_EBOOK,
@@ -200,18 +201,25 @@ const LandingPage = () => {
             </div>
           </div>
         </section>
-        <div className={styles.mainEBook__card}>
+        <div
+          className={styles.mainEBook__card}
+          onClick={() => navigate(DOWNLOAD_EBOOK)}
+        >
           <div className={styles.mainEBook__desc}>
+            <Text color="primary" size="sm">
+              EBOOK GRATUITO
+            </Text>
             <Text type="subtitle" bold="bold" color="very-light">
-              Marketing Dental:{" "}
-              <span className={styles.underLine2}>La Guia Definitiva</span>
+              Marketing Dental: a Guia Definitiva
             </Text>
-            <Text size="sm" bold="font-light" color="soft">
-              ransforma tu clínica dental con nuestros ebook.
-            </Text>
-            <div className={styles.btnDownload}>
-              <IconTextButton>Descarga Gratis</IconTextButton>
-            </div>
+            <TextLink
+              marked
+              textProps={{ size: "ty" }}
+              variant="white"
+              to={DOWNLOAD_EBOOK}
+            >
+              Descargar la Guia <Icon type={"arrowSquare"} size={"1rem"} />
+            </TextLink>
           </div>
           <img src={EbookImg} className={styles.mainEBook__img} />
         </div>

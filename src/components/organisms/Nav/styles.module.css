@@ -17,7 +17,6 @@
   width: 100vw;
   z-index: 1000;
   top: 0;
-  animation: hide-top 1s linear forwards;
   animation-timeline: scroll();
   background-color: var(--black);
 }
@@ -33,9 +32,6 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-  padding-top: 16px;
-  padding-left: var(--width-unit);
-  padding-right: var(--width-unit);
   z-index: 1000;
   background-color: var(--black);
 }
@@ -46,11 +42,21 @@
   align-items: center;
 }
 .topMenu {
+  width: 100%;
   gap: 16px;
   justify-content: center;
+  background-color: black;
+  padding: 16px;
+  position: relative;
+}
+.closeBtn {
+  position: absolute;
+  right: 2.5%;
 }
 .bottomMenu {
   justify-content: space-between;
+  padding-left: var(--width-unit);
+  padding-right: var(--width-unit);
 }
 
 .logo {
@@ -189,13 +195,12 @@ body:has(.resoursesDropDown.show) {
 }
 .resoursesDropDown .card:hover {
   background-color: var(--gray-blue-dark);
+  transform: scale(1.1);
 }
 .resoursesDropDown .card:hover > :nth-child(3) {
   color: var(--primary-dark);
 }
-.resoursesDropDown .card:hover .cardImg {
-  transform: scale(1.1);
-}
+
 .resoursesDropDown .cardImgContainer {
   width: 100%;
   height: 200px;
