@@ -29,6 +29,7 @@ const Text = ({
   children,
   size = "md",
   textAlign = "start",
+  fontFamily = "font-primary",
   ...otherProps
 }) => {
   if (
@@ -39,7 +40,7 @@ const Text = ({
   ) {
     return (
       <h1
-        className={`${styles[type]} ${styles[color]} ${styles[bold]}`}
+        className={`${styles[type]} ${styles[color]} ${styles[bold]} ${styles[fontFamily]}`}
         style={{ textAlign }}
         {...otherProps}
       >
@@ -49,7 +50,7 @@ const Text = ({
   } else if (type === "subtitle") {
     return (
       <h3
-        className={`${styles.subtitle} ${styles[color]} ${styles[bold]}`}
+        className={`${styles.subtitle} ${styles[color]} ${styles[bold]} ${styles[fontFamily]}`}
         style={{ textAlign }}
         {...otherProps}
       >
@@ -59,7 +60,7 @@ const Text = ({
   }
   return (
     <p
-      className={`${styles.text} ${styles[color]} ${styles[bold]}`}
+      className={`${styles.text} ${styles[color]} ${styles[bold]} ${styles[fontFamily]}`}
       style={{ textAlign, fontSize: getSize(size) ?? "" }}
       {...otherProps}
     >

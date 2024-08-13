@@ -58,15 +58,18 @@ const LandingPage = () => {
         <section className={styles.banner}>
           <div className={styles.contents}>
             <div className={styles.banner__content}>
-              <Text bold="bold">¿QUE SOMOS?</Text>
+              <Text bold="bold">¿QUIENES SOMOS?</Text>
 
-              <Text type="title" bold="extra-bold">
-                Una Agencia Diferente de{" "}
-                <span className={styles.underLine}>Marketing Dental</span>
+              <Text
+                type="bigtitle"
+                bold="extra-bold"
+                fontFamily="font-secondary"
+              >
+                Una agencia diferente de Marketing Dental
               </Text>
               <Text size="sm" bold="font-light">
-                Trabajamos con clinicas dentales en España y Latinoamerica que
-                busquen crecer su negocio.
+                Posicionamos a tu clínica dental como autoridad en tu mercado
+                local.
               </Text>
 
               <div className={styles.banner__btns}>
@@ -74,11 +77,11 @@ const LandingPage = () => {
                   size="100%"
                   onClick={() => navigate(CONTACT_FORM)}
                 >
-                  Cuentanos de tu clinica
+                  Quiero saber más
                 </IconTextButton>
               </div>
               <Text size="sm" bold="font-light">
-                Solo para Clinicas Dentales que ofrezcan implantes
+                *Solo trabajamos con clínicas que ofrecen implantes.
               </Text>
             </div>
 
@@ -88,63 +91,50 @@ const LandingPage = () => {
       </header>
       <div className={styles.contactBannerSection}>
         <div className={styles.desc}>
-          <div className={styles.links}>
-            <Text color="primary" size="ty">
-              Aceptamos Socios
-            </Text>
-            <div className={styles.separator}></div>
-            <Text color="soft" size="ty">
-              Contactanos
-            </Text>
-          </div>
-          <Text type="subtitle" size="sm" color="light">
-            Marketing de{" "}
-            <span className={styles.underLine2}>Tratamientos Premium</span>
+          <Text size="ty" color="light" bold="font-light">
+            PROGRAMA EXCLUSIVO PARA CLÍNICAS DENTALES
+          </Text>
+          <Text type="title" size="sm" color="light">
+            Transformamos el marketing de tu clínica en 6 meses
           </Text>
           <Text size="sm" color="soft" bold="font-light">
-            Estamos seleccionando solo a 10 dueños de clínicas dentales para
-            llenarlas de pacientes dentales con tratamientos premium. El
-            programa dura 6 meses. Algunos de los servicios que recibiran los
-            elegidos son:
+            ¿Buscas una agencia que garantice resultados a largo plazo?.
+            Descubre cómo nuestro programa de 180 días puede transformar tu
+            práctica dental:
           </Text>
           <div className={styles.line}>
             <Icon type={"check"} color="var(--primary)" size={"1.2rem"} />
             <Text size="ty" color="soft" bold="font-light">
-              Desarrollo Web para servicios dentales
+              Nuevos pacientes asegurados cada mes
             </Text>
           </div>
           <div className={styles.line}>
             <Icon type={"check"} color="var(--primary)" size={"1.2rem"} />
             <Text size="ty" color="soft" bold="font-light">
-              Google Ads de Tratamientos Premium (Implantes).
+              Reducción de cancelaciones de citas.
             </Text>
           </div>
           <div className={styles.line}>
             <Icon type={"check"} color="var(--primary)" size={"1.2rem"} />
             <Text size="ty" color="soft" bold="font-light">
-              Email Marketing Dental
+              Enfoque en pacientes de tratamientos de alto valor.
             </Text>
           </div>
           <div className={styles.line}>
             <Icon type={"check"} color="var(--primary)" size={"1.2rem"} />
             <Text size="ty" color="soft" bold="font-light">
-              Automatizaciones de Whatsapp para Clinicas Dentales
+              Asesoramiento personal semanal por Zoom.
             </Text>
           </div>
-          <div className={styles.line}>
-            <Icon type={"check"} color="var(--primary)" size={"1.2rem"} />
-            <Text size="ty" color="soft" bold="font-light">
-              Creacion de Programas de Referidos para Clinicas
-            </Text>
-          </div>
+
           <div className={styles.btns}>
-            <IconTextButton>Ver Mas {">"}</IconTextButton>
-            <IconTextButton colorVariant="secondary" icon={"wp"}>
-              ¿Tienes dudas?
+            <IconTextButton>Quiero saber más</IconTextButton>
+            <IconTextButton colorVariant="secondary">
+              Aplicar Ahora
             </IconTextButton>
           </div>
           <Text size="ty" color="soft" bold="font-light">
-            Contáctanos y descubre si calificas.
+            *El programa solo tiene cupos para 10 dueños de clínicas dentales.
           </Text>
         </div>
         <img className={styles.imgSubBanner} src={imgSubBanner} />
@@ -152,6 +142,7 @@ const LandingPage = () => {
       <section className={styles.mainContent}>
         <section className={styles.videoSection}>
           <div className={styles.videoSection__desc}>
+            <Text>---- NUESTRO METODO ----</Text>
             <Text bold="bold" type="smalltitle" textAlign="center">
               ¿Es posible aumentar las ganancias de una clínica en menos de un
               año?

@@ -164,11 +164,6 @@ const Nav = ({ hideTopMenu = false }) => {
             </div>
           </div>
           <div className={styles.right}>
-            <TextLink
-              textProps={{ color: "soft", bold: "font-light", size: "ty" }}
-            >
-              ¿Que somos?
-            </TextLink>
             <div onClick={handleShowResources}>
               <TextLink
                 marked={showResources}
@@ -177,6 +172,11 @@ const Nav = ({ hideTopMenu = false }) => {
                 Recursos gratis
               </TextLink>
             </div>
+            <TextLink
+              textProps={{ color: "soft", bold: "font-light", size: "ty" }}
+            >
+              Nuestro Programa
+            </TextLink>
             <div onClick={handleShowContact}>
               <TextLink
                 marked={showContact}
