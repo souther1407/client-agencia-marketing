@@ -307,11 +307,15 @@ body:has(.resoursesDropDown.show) {
     padding: 0;
     height: auto;
     animation: none;
-    padding: 0 32px;
   }
+
   .elements {
     justify-content: space-between;
     padding: 0;
+  }
+
+  .bottomMenu {
+    padding: 0 32px;
   }
   .topMenu {
     display: none;

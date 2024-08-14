@@ -238,6 +238,7 @@
   align-self: center;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  margin-bottom: 32px;
 }
 .mainEBook__card:hover {
   transform: scale(1.05);

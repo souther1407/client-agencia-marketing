@@ -141,4 +141,8 @@
   .mainEBook {
     padding: 8px;
   }
+
+  .main {
+    top: -30px;
+  }
 }

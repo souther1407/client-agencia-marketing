@@ -15,6 +15,7 @@ import {
 } from "../../../constants/routes";
 import { useNavigate } from "react-router-dom";
 import IconTextButton from "../../molecules/IconTextButton/IconTextButton";
+import imgEbookPrueba from "@assets/imgEbookPrueba.svg";
 
 const Nav = ({ hideTopMenu = false }) => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -72,10 +73,7 @@ const Nav = ({ hideTopMenu = false }) => {
             <div className={styles.cards}>
               <div className={styles.card}>
                 <div className={styles.cardImgContainer}>
-                  <img
-                    src="https://img.freepik.com/free-photo/book-library-with-open-textbook_1150-5920.jpg"
-                    className={styles.cardImg}
-                  />
+                  <img src={imgEbookPrueba} className={styles.cardImg} />
                 </div>
                 <Text size="ty" bold="font-light">
                   Ebook
@@ -88,10 +86,7 @@ const Nav = ({ hideTopMenu = false }) => {
               <div className={styles.separator}></div>
               <div className={styles.card}>
                 <div className={styles.cardImgContainer}>
-                  <img
-                    src="https://img.freepik.com/free-photo/book-library-with-open-textbook_1150-5920.jpg"
-                    className={styles.cardImg}
-                  />
+                  <img src={imgEbookPrueba} className={styles.cardImg} />
                 </div>
                 <Text size="ty" bold="font-light">
                   Ebook
@@ -104,10 +99,7 @@ const Nav = ({ hideTopMenu = false }) => {
               <div className={styles.separator}></div>
               <div className={styles.card}>
                 <div className={styles.cardImgContainer}>
-                  <img
-                    src="https://img.freepik.com/free-photo/book-library-with-open-textbook_1150-5920.jpg"
-                    className={styles.cardImg}
-                  />
+                  <img src={imgEbookPrueba} className={styles.cardImg} />
                 </div>
                 <Text size="ty" bold="font-light">
                   Ebook
@@ -232,10 +224,7 @@ const Nav = ({ hideTopMenu = false }) => {
                 <Text size="sm">ver todas las guias</Text>
               </div>
               <div className={styles.mobileCard}>
-                <img
-                  src="https://img.freepik.com/free-photo/book-library-with-open-textbook_1150-5920.jpg"
-                  className={styles.mobileImg}
-                />
+                <img src={imgEbookPrueba} className={styles.mobileImg} />
                 <div className={styles.mobileDesc}>
                   <Text bold="font-light" size="ty">
                     Ebook
@@ -247,10 +236,7 @@ const Nav = ({ hideTopMenu = false }) => {
                 </div>
               </div>
               <div className={styles.mobileCard}>
-                <img
-                  src="https://img.freepik.com/free-photo/book-library-with-open-textbook_1150-5920.jpg"
-                  className={styles.mobileImg}
-                />
+                <img src={imgEbookPrueba} className={styles.mobileImg} />
                 <div className={styles.mobileDesc}>
                   <Text bold="font-light" size="ty">
                     Ebook
@@ -262,10 +248,7 @@ const Nav = ({ hideTopMenu = false }) => {
                 </div>
               </div>
               <div className={styles.mobileCard}>
-                <img
-                  src="https://img.freepik.com/free-photo/book-library-with-open-textbook_1150-5920.jpg"
-                  className={styles.mobileImg}
-                />
+                <img src={imgEbookPrueba} className={styles.mobileImg} />
                 <div className={styles.mobileDesc}>
                   <Text bold="font-light" size="ty">
                     Ebook
