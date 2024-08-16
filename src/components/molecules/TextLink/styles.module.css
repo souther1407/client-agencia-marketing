@@ -35,3 +35,16 @@
   color: var(--white) !important;
   text-decoration: underline;
 }
+
+/* primary-dark */
+.primary-dark.textLink {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.primary-dark.textLink > *:hover,
+.primary-dark.textLink.marked > * {
+  color: var(--primary-dark) !important;
+  text-decoration: underline;
+}

@@ -12,7 +12,17 @@
 }
 .line {
   display: flex;
-  gap: 16px;
+  gap: 12px;
+  align-items: center;
+}
+.markLine {
+  width: 40px;
+  height: 1px;
+  background-color: var(--black);
+}
+
+.markLine.primary {
+  background-color: var(--primary);
 }
 
 .help {
@@ -230,6 +240,7 @@
 .mainEBook__card {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   background-color: var(--black);
   border-radius: 16px;
   height: var(--linea-rosa);
@@ -296,7 +307,7 @@
     display: flex;
     justify-content: center;
     height: auto;
-    padding: 16px;
+    padding: 32px;
   }
   .mainContent {
     padding: var(--mobile-margin);
@@ -358,11 +369,10 @@
     width: 100% !important;
   }
   .mainContent {
-    padding: 0;
+    padding: 32px;
   }
   .videoSection {
     flex-direction: column;
-    padding: var(--mobile-margin);
   }
 
   .videoSection__desc .btns {
@@ -380,8 +390,8 @@
     height: 300px;
   }
   .mainEBook__card {
-    border-radius: 0;
     padding: var(--mobile-margin);
+    width: 100%;
   }
   .mainEBook__img {
     width: 100px;

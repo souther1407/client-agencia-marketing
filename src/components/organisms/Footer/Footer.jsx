@@ -10,40 +10,46 @@ const Footer = () => {
       <div className={styles.footer__desc}>
         <header className={styles.header}>
           <section className={styles.section}>
-            {/*  <Logo /> */}
             <div className={styles.logo}>
               <Logo />
             </div>
           </section>
-          <section className={styles.section}>
-            <Text color="light">Recursos Gratis</Text>
-            <Link>
-              <Text color="soft" size="ty" bold="font-light">
-                Nuestro Programa
+          <div className={styles.linkSection}>
+            <section className={styles.section}>
+              <Text color="light" size="ty">
+                Recursos Gratis
               </Text>
-            </Link>
-            <Link>
-              <Text color="soft" size="ty" bold="font-light">
-                Aplica a el programa
+              <Link>
+                <Text color="soft" size="xty" bold="font-light">
+                  Nuestro Programa
+                </Text>
+              </Link>
+              <Link>
+                <Text color="soft" size="xty" bold="font-light">
+                  Aplica a el programa
+                </Text>
+              </Link>
+            </section>
+            <section className={styles.section}>
+              <Text color="light" size="ty">
+                Recursos Gratis
               </Text>
-            </Link>
-          </section>
-          <section className={styles.section}>
-            <Text color="light">Recursos Gratis</Text>
-            <Link>
-              <Text color="soft" size="ty" bold="font-light">
-                Biblioteca de Marketing Dental
+              <Link>
+                <Text color="soft" size="xty" bold="font-light">
+                  Biblioteca de Marketing Dental
+                </Text>
+              </Link>
+            </section>
+            <section className={styles.section}>
+              <Text color="light" size="ty">
+                Contáctanos
               </Text>
-            </Link>
-          </section>
-          <section className={styles.section}>
-            <Text color="light">Contáctanos</Text>
 
-            <Text color="soft" bold="font-light">
-              info@inkadentist.com
-            </Text>
+              <Text color="soft" bold="font-light" size="xty">
+                info@inkadentist.com
+              </Text>
 
-            {/* <div className={styles.socialMedia}>
+              {/* <div className={styles.socialMedia}>
               <Icon type={"wp"} size={"1rem"} color="var(--dark-white)" />
               <Icon type={"facebook"} size={"1rem"} color="var(--dark-white)" />
               <Icon
@@ -53,7 +59,8 @@ const Footer = () => {
               />
               <Icon type={"linkedin"} size={"1rem"} color="var(--dark-white)" />
             </div> */}
-          </section>
+            </section>
+          </div>
         </header>
         <div className={styles.separator}></div>
         <div className={styles.copy}>

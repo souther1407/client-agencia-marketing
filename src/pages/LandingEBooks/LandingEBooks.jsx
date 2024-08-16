@@ -9,8 +9,10 @@ import TextLink from "../../components/molecules/TextLink/TextLink";
 import Icon from "../../components/atoms/Icon/Icon";
 import { DOWNLOAD_EBOOK } from "../../constants/routes";
 import imgEbookPrueba from "@assets/imgEbookPrueba.svg";
-
+import { useNavigate } from "react-router-dom";
+import Link from "../../components/atoms/Link/Link";
 const LandingEBooks = () => {
+  const navigate = useNavigate();
   return (
     <div className={styles.page}>
       <Nav hideTopMenu={true} />
@@ -26,33 +28,35 @@ const LandingEBooks = () => {
         </section>
       </header>
       <main className={styles.main}>
-        <div className={styles.mainEBook}>
-          <div className={styles.mainEbookCard}>
-            <div className={styles.tag}>
-              <Text size="ty" color="light">
-                Empieza Aqui
-              </Text>
-            </div>
-            <img className={styles.ebookImg} src={imgEbookPrueba} />
-            <div className={styles.desc}>
-              <Text type="smallsubtitle">
-                Marketing Dental: La Guia Definitiva
-              </Text>
-              <Text bold="font-light" size="ty">
-                Transforma tu clínica dental con nuestros ebooks, redactados por
-                líderes en marketing digital.
-              </Text>
-              <TextLink
-                marked
-                variant="secondary"
-                to={DOWNLOAD_EBOOK}
-                textProps={{ size: "sm" }}
-              >
-                Descargar la Guia <Icon type={"arrowSquare"} size={"1rem"} />
-              </TextLink>
+        <Link to={DOWNLOAD_EBOOK} target="_blank">
+          <div className={styles.mainEBook}>
+            <div className={styles.mainEbookCard}>
+              <div className={styles.tag}>
+                <Text size="ty" color="light">
+                  Empieza Aqui
+                </Text>
+              </div>
+              <img className={styles.ebookImg} src={imgEbookPrueba} />
+              <div className={styles.desc}>
+                <Text type="smallsubtitle">
+                  Marketing Dental: La Guia Definitiva
+                </Text>
+                <Text bold="font-light" size="ty">
+                  Transforma tu clínica dental con nuestros ebooks, redactados
+                  por líderes en marketing digital.
+                </Text>
+                <TextLink
+                  marked
+                  variant="secondary"
+                  to={DOWNLOAD_EBOOK}
+                  textProps={{ size: "sm" }}
+                >
+                  Descargar la Guia <Icon type={"arrowSquare"} size={"1rem"} />
+                </TextLink>
+              </div>
             </div>
           </div>
-        </div>
+        </Link>
         <div className={styles.books}>
           <EBookCard
             img={imgEbookPrueba}

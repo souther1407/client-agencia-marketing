@@ -12,7 +12,7 @@ const PreFooter = () => {
     <section className={styles.preFooter}>
       <div className={styles.desc}>
         <Text type="smalltitle" color="light" bold="bold">
-          Impulsemos tu Clínica Dental Juntos
+          Impulsemos tu Clínica Dental, Juntos
         </Text>
         <IconTextButton onClick={() => navigate(CONTACT_FORM)}>
           Solicita una reunión

@@ -58,8 +58,10 @@ const LandingPage = () => {
         <section className={styles.banner}>
           <div className={styles.contents}>
             <div className={styles.banner__content}>
-              <Text bold="bold">¿QUIENES SOMOS?</Text>
-
+              <div className={styles.line}>
+                <span className={styles.markLine} />
+                <Text size="sm">¿QUIENES SOMOS?</Text>
+              </div>
               <Text
                 type="bigtitle"
                 bold="extra-bold"
@@ -91,9 +93,12 @@ const LandingPage = () => {
       </header>
       <div className={styles.contactBannerSection}>
         <div className={styles.desc}>
-          <Text size="ty" color="light" bold="font-light">
-            PROGRAMA EXCLUSIVO PARA CLÍNICAS DENTALES
-          </Text>
+          <div className={styles.line}>
+            <span className={`${styles.markLine} ${styles.primary}`} />
+            <Text size="sm" color="light" bold="font-light">
+              PROGRAMA EXCLUSIVO PARA CLÍNICAS DENTALES
+            </Text>
+          </div>
           <Text type="title" size="sm" color="light">
             Transformamos el marketing de tu clínica en 6 meses
           </Text>
@@ -142,7 +147,11 @@ const LandingPage = () => {
       <section className={styles.mainContent}>
         <section className={styles.videoSection}>
           <div className={styles.videoSection__desc}>
-            <Text>---- NUESTRO METODO ----</Text>
+            <div className={styles.line}>
+              <span className={styles.markLine} />
+              <Text size="sm">NUESTRO METODO</Text>
+              <span className={styles.markLine} />
+            </div>
             <Text bold="bold" type="smalltitle" textAlign="center">
               ¿Es posible aumentar las ganancias de una clínica en menos de un
               año?
@@ -192,6 +201,7 @@ const LandingPage = () => {
             </div>
           </div>
         </section>
+
         <div
           className={styles.mainEBook__card}
           onClick={() => navigate(DOWNLOAD_EBOOK)}

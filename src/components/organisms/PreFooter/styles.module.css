@@ -35,10 +35,9 @@
   .preFooter .desc > :first-child {
     text-align: center !important;
   }
-  .preFooter .desc > :last-child {
-    align-self: center;
-  }
+
   .preFooterImg {
     width: 100%;
+    display: none;
   }
 }

@@ -67,7 +67,7 @@ const Nav = ({ hideTopMenu = false }) => {
           className={`${styles.cardsBanner} ${showResources && styles.show}`}
         >
           <div className={styles.content}>
-            <TextLink to={LANDING_EBOOKS} textProps={{ size: "sm" }}>
+            <TextLink to={LANDING_EBOOKS} variant="primary-dark" textProps={{ size: "sm" }}>
               ver todas las guias
             </TextLink>
             <div className={styles.cards}>
@@ -184,7 +184,7 @@ const Nav = ({ hideTopMenu = false }) => {
                 textProps={{ size: "ty" }}
                 onClick={() => navigate(CONTACT_FORM)}
               >
-                Cuentanos de tu Clinica {">"}
+                Solicita una reunión
               </IconTextButton>
             </div>
 
