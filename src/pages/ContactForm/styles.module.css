@@ -70,6 +70,12 @@
     flex-direction: column-reverse;
     gap: 32px;
   }
+  .desc {
+    width: 100%;
+  }
+  .form {
+    width: 100%;
+  }
   .input_line {
     flex-direction: column;
   }
