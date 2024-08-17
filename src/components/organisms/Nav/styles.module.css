@@ -300,6 +300,22 @@ body:has(.resoursesDropDown.show) {
     padding: 8px;
     height: auto;
   }
+  .topMenu {
+    display: none;
+  }
+  .right > :nth-child(1),
+  .right > :nth-child(2),
+  .right > :nth-child(3),
+  .right > :nth-child(4),
+  .right > :nth-child(5) {
+    display: none;
+  }
+  .btnDropdown {
+    display: flex;
+  }
+  .bottomMenu {
+    padding: 0 32px;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -314,21 +330,7 @@ body:has(.resoursesDropDown.show) {
     padding: 0;
   }
 
-  .bottomMenu {
-    padding: 0 32px;
-  }
   .topMenu {
     display: none;
-  }
-
-  .right > :nth-child(1),
-  .right > :nth-child(2),
-  .right > :nth-child(3),
-  .right > :nth-child(4),
-  .right > :nth-child(5) {
-    display: none;
-  }
-  .btnDropdown {
-    display: flex;
   }
 }

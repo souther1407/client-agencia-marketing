@@ -67,7 +67,11 @@ const Nav = ({ hideTopMenu = false }) => {
           className={`${styles.cardsBanner} ${showResources && styles.show}`}
         >
           <div className={styles.content}>
-            <TextLink to={LANDING_EBOOKS} variant="primary-dark" textProps={{ size: "sm" }}>
+            <TextLink
+              to={LANDING_EBOOKS}
+              variant="primary-dark"
+              textProps={{ size: "sm" }}
+            >
               ver todas las guias
             </TextLink>
             <div className={styles.cards}>
@@ -221,44 +225,56 @@ const Nav = ({ hideTopMenu = false }) => {
               }`}
             >
               <div className={styles.seeGuides}>
-                <Text size="sm">ver todas las guias</Text>
+                <TextLink
+                  to={LANDING_EBOOKS}
+                  variant="primary-dark"
+                  textProps={{ size: "sm" }}
+                >
+                  ver todas las guias
+                </TextLink>
               </div>
-              <div className={styles.mobileCard}>
-                <img src={imgEbookPrueba} className={styles.mobileImg} />
-                <div className={styles.mobileDesc}>
-                  <Text bold="font-light" size="ty">
-                    Ebook
-                  </Text>
-                  <Text color="primary">
-                    Marketing Dental: La Guia Definitiva
-                  </Text>
-                  <Text size="sm">23 Paginas</Text>
+              <Link to={DOWNLOAD_EBOOK} target="_blank">
+                <div className={styles.mobileCard}>
+                  <img src={imgEbookPrueba} className={styles.mobileImg} />
+                  <div className={styles.mobileDesc}>
+                    <Text bold="font-light" size="ty">
+                      Ebook
+                    </Text>
+                    <Text color="primary">
+                      Marketing Dental: La Guia Definitiva
+                    </Text>
+                    <Text size="sm">23 Paginas</Text>
+                  </div>
                 </div>
-              </div>
-              <div className={styles.mobileCard}>
-                <img src={imgEbookPrueba} className={styles.mobileImg} />
-                <div className={styles.mobileDesc}>
-                  <Text bold="font-light" size="ty">
-                    Ebook
-                  </Text>
-                  <Text color="primary">
-                    Marketing Dental: La Guia Definitiva
-                  </Text>
-                  <Text size="sm">23 Paginas</Text>
+              </Link>
+              <Link to={DOWNLOAD_EBOOK} target="_blank">
+                <div className={styles.mobileCard}>
+                  <img src={imgEbookPrueba} className={styles.mobileImg} />
+                  <div className={styles.mobileDesc}>
+                    <Text bold="font-light" size="ty">
+                      Ebook
+                    </Text>
+                    <Text color="primary">
+                      Marketing Dental: La Guia Definitiva
+                    </Text>
+                    <Text size="sm">23 Paginas</Text>
+                  </div>
                 </div>
-              </div>
-              <div className={styles.mobileCard}>
-                <img src={imgEbookPrueba} className={styles.mobileImg} />
-                <div className={styles.mobileDesc}>
-                  <Text bold="font-light" size="ty">
-                    Ebook
-                  </Text>
-                  <Text color="primary">
-                    Marketing Dental: La Guia Definitiva
-                  </Text>
-                  <Text size="sm">23 Paginas</Text>
+              </Link>
+              <Link to={DOWNLOAD_EBOOK} target="_blank">
+                <div className={styles.mobileCard}>
+                  <img src={imgEbookPrueba} className={styles.mobileImg} />
+                  <div className={styles.mobileDesc}>
+                    <Text bold="font-light" size="ty">
+                      Ebook
+                    </Text>
+                    <Text color="primary">
+                      Marketing Dental: La Guia Definitiva
+                    </Text>
+                    <Text size="sm">23 Paginas</Text>
+                  </div>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
           <div className={styles.dropdownMenu}>
@@ -283,9 +299,11 @@ const Nav = ({ hideTopMenu = false }) => {
             </div>
           </div>
           <div className={styles.dropdownMenu}>
-            <div className={styles.dropMenuBtn}>
-              <Text type="subtitle">Cuentanos de tu Clinica {">"}</Text>
-            </div>
+            <Link to={CONTACT_FORM} target="_blank">
+              <div className={styles.dropMenuBtn}>
+                <Text type="subtitle">Cuentanos de tu Clinica {">"}</Text>
+              </div>
+            </Link>
           </div>
         </div>
       </Drawer>
