@@ -2,15 +2,15 @@ import React, { useState } from "react";
 import styles from "./styles.module.css";
 import Nav from "../../components/organisms/Nav/Nav";
 import BannerImg from "@assets/banner.svg";
-import imgSubBanner from "@assets/imgSubBanner.svg";
+import spainBanner from "@assets/spainBanner.svg";
 import Text from "../../components/atoms/Text/Text";
 import IconTextButton from "../../components/molecules/IconTextButton/IconTextButton";
 import EbookImg from "@assets/Foto Prueba.svg";
 import IconButton from "../../components/molecules/IconButton/IconButton";
-import Input from "../../components/atoms/Input/Input";
+
 import Footer from "../../components/organisms/Footer/Footer";
 import Icon from "../../components/atoms/Icon/Icon";
-import Mark from "../../components/atoms/Mark/Mark";
+
 import TextLink from "../../components/molecules/TextLink/TextLink";
 import { useNavigate } from "react-router-dom";
 import {
@@ -200,64 +200,26 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
-      <section className={styles.mainContent}>
-        <section className={styles.videoSection}>
-          <div className={styles.videoSection__desc}>
-            <div className={styles.line}>
-              <span className={styles.markLine} />
-              <Text size="sm">NUESTRO METODO</Text>
-              <span className={styles.markLine} />
-            </div>
-            <Text bold="bold" type="smalltitle" textAlign="center">
-              ¿Es posible aumentar las ganancias de una clínica en menos de un
-              año?
-            </Text>
-            <Text bold="font-light" textAlign="center">
-              <Mark>Por supuesto que si.</Mark> Nuestro equipo sabe lo que
-              funciona, y ha diseñado estrategias de marketing para clinicas
-              como la tuya.
-            </Text>
-            <div className={styles.videoDrawer}>
-              <img className={styles.videoImg} src={imgVideo} />
-              <button
-                className={styles.videoPlayBtn}
-                onClick={() => setShowModalVideo(true)}
-              >
-                <Icon size={"1.5rem"} color="var(--white)" type={"play"} />
-              </button>
-              <div
-                id="bg-video-modal"
-                className={`${styles.modalVideo} ${
-                  showModalVideo && styles.show
-                }`}
-                onClick={handleHideModalVideo}
-              >
-                <iframe
-                  className={styles.video}
-                  src="https://www.youtube.com/embed/Fu4GHmyvDk8?si=-ugwjpi28KLqfGSM?controls=0&showinfo=0"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; modestbranding; encrypted-media; gyroscope; picture-in-picture"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                ></iframe>
-              </div>
-            </div>
-
-            <div className={styles.btns}>
-              <IconTextButton
-                onClick={() => navigate(CONTACT_FORM)}
-                size="300px"
-              >
-                Solicita una reunión
-              </IconTextButton>
-              <IconTextButton colorVariant="secondary-dark">
-                Ver más {">"}
-              </IconTextButton>
-            </div>
+      <div className={styles.spainBanner}>
+        <img className={styles.spainBannerImg} src={spainBanner} />
+        <div className={styles.desc}>
+          <div className={styles.line}>
+            <span className={styles.markLine} />
+            <Text size="ty">NUESTRA UBICACION</Text>
           </div>
-        </section>
-
+          <Text type="title">Trabajamos con clínicas en toda España.</Text>
+          <Text size="sm" bold="font-light">
+            Nuestras estrategias están diseñadas para ser efectivas con
+            pacientes locales.
+          </Text>
+          <div className={styles.seeMore}>
+            <IconTextButton size="100%" colorVariant="yellow">
+              Ver Programa
+            </IconTextButton>
+          </div>
+        </div>
+      </div>
+      <section className={styles.mainContent}>
         <div
           className={styles.mainEBook__card}
           onClick={() => navigate(DOWNLOAD_EBOOK)}

@@ -159,12 +159,31 @@
   height: auto;
 }
 
-.videoBtn {
-  background-color: var(--white);
-  padding: 8px 32px;
-  border: 1px solid var(--primary);
-  border-radius: 12px;
+.spainBanner {
+  background-color: rgb(252, 252, 242);
+  padding-left: var(--width-unit);
+  padding-right: var(--width-unit);
+  display: flex;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  gap: 32px;
 }
+
+.spainBanner .spainBannerImg {
+  width: 600px;
+}
+
+.spainBanner .desc {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  position: relative;
+  top: 64px;
+}
+.spainBanner .seeMore {
+  width: 300px;
+}
+
 .mainContent {
   display: flex;
   flex-direction: column;
