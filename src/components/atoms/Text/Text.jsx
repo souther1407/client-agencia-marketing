@@ -8,7 +8,7 @@ const getSize = (size) => {
     case "xlg":
       return "1.3334rem";
     case "lg":
-      return "1.2rem";
+      return "1.16667rem";
     case "md":
       return "1rem";
     case "sm":

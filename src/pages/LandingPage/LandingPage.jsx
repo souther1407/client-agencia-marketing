@@ -60,18 +60,17 @@ const LandingPage = () => {
             <div className={styles.banner__content}>
               <div className={styles.line}>
                 <span className={styles.markLine} />
-                <Text size="sm">¿QUIENES SOMOS?</Text>
+                <Text size="sm">NUESTRA AGENCIA</Text>
               </div>
               <Text
                 type="bigtitle"
                 bold="extra-bold"
                 fontFamily="font-secondary"
               >
-                Una agencia diferente de Marketing Dental
+                Tu Mejor Opción en Marketing Dental.
               </Text>
               <Text size="sm" bold="font-light">
-                Posicionamos a tu clínica dental como autoridad en tu mercado
-                local.
+                Convertimos tu clínica en autoridad local
               </Text>
 
               <div className={styles.banner__btns}>
@@ -95,19 +94,18 @@ const LandingPage = () => {
         <div className={styles.desc}>
           <div className={styles.line}>
             <span className={`${styles.markLine} ${styles.primary}`} />
-            <Text size="sm" color="light" bold="font-light">
-              PROGRAMA EXCLUSIVO PARA CLÍNICAS DENTALES
+            <Text size="sm" color="soft" bold="font-light">
+              NUESTRO PROGRAMA DE MARKETING
             </Text>
           </div>
           <Text type="title" size="sm" color="light">
-            Transformamos el marketing de tu clínica en 6 meses
+            Transformamos tu clínica en 6 meses
           </Text>
           <Text size="sm" color="soft" bold="font-light">
-            ¿Buscas una agencia que garantice resultados a largo plazo?.
-            Descubre cómo nuestro programa de 180 días puede transformar tu
-            práctica dental:
+            Aprende más sobre nuestro programa de 6 meses y cómo puede cambiar
+            tu práctica dental.
           </Text>
-          <div className={styles.line}>
+          {/* <div className={styles.line}>
             <Icon type={"check"} color="var(--primary)" size={"1.2rem"} />
             <Text size="ty" color="soft" bold="font-light">
               Nuevos pacientes asegurados cada mes
@@ -131,18 +129,76 @@ const LandingPage = () => {
               Asesoramiento personal semanal por Zoom.
             </Text>
           </div>
-
+ */}
           <div className={styles.btns}>
-            <IconTextButton>Quiero saber más</IconTextButton>
-            <IconTextButton colorVariant="secondary">
-              Aplicar Ahora
-            </IconTextButton>
+            <IconTextButton>Ver Programa</IconTextButton>
           </div>
-          <Text size="ty" color="soft" bold="font-light">
+          {/*   <Text size="ty" color="soft" bold="font-light">
             *El programa solo tiene cupos para 10 dueños de clínicas dentales.
-          </Text>
+          </Text> */}
         </div>
-        <img className={styles.imgSubBanner} src={imgSubBanner} />
+        <div className={styles.details}>
+          <div className={styles.detail}>
+            <Text color="light" size="lg">
+              Programa Exclusivo (Solo 10 cupos)
+            </Text>
+            <Text size="sm" bold="font-light" color="soft">
+              ¿Buscas una agencia que brinde resultados a largo plazo? Aprende
+              más sobre nuestro programa de 180 días y cómo puede cambiar tu
+              práctica dental.
+            </Text>
+          </div>
+          <div className={styles.detail}>
+            <Text color="light" size="lg">
+              Programa Exclusivo (Solo 10 cupos)
+            </Text>
+            <Text size="sm" bold="font-light" color="soft">
+              ¿Buscas una agencia que brinde resultados a largo plazo? Aprende
+              más sobre nuestro programa de 180 días y cómo puede cambiar tu
+              práctica dental.
+            </Text>
+          </div>
+          <div className={styles.detail}>
+            <Text color="light" size="lg">
+              Programa Exclusivo (Solo 10 cupos)
+            </Text>
+            <Text size="sm" bold="font-light" color="soft">
+              ¿Buscas una agencia que brinde resultados a largo plazo? Aprende
+              más sobre nuestro programa de 180 días y cómo puede cambiar tu
+              práctica dental.
+            </Text>
+          </div>
+          <div className={styles.detail}>
+            <Text color="light" size="lg">
+              Factura con pacientes premium
+            </Text>
+            <Text size="sm" bold="font-light" color="soft">
+              ¿Buscas una agencia que brinde resultados a largo plazo? Aprende
+              más sobre nuestro programa de 180 días y cómo puede cambiar tu
+              práctica dental.
+            </Text>
+          </div>
+          <div className={styles.detail}>
+            <Text color="light" size="lg">
+              Crece sin esfuerzo
+            </Text>
+            <Text size="sm" bold="font-light" color="soft">
+              ¿Buscas una agencia que brinde resultados a largo plazo? Aprende
+              más sobre nuestro programa de 180 días y cómo puede cambiar tu
+              práctica dental.
+            </Text>
+          </div>
+          <div className={styles.detail}>
+            <Text color="light" size="lg">
+              Reuniones Semanales
+            </Text>
+            <Text size="sm" bold="font-light" color="soft">
+              ¿Buscas una agencia que brinde resultados a largo plazo? Aprende
+              más sobre nuestro programa de 180 días y cómo puede cambiar tu
+              práctica dental.
+            </Text>
+          </div>
+        </div>
       </div>
       <section className={styles.mainContent}>
         <section className={styles.videoSection}>

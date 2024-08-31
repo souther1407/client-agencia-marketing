@@ -55,7 +55,7 @@
 }
 
 .header {
-  height: var(--banner-height);
+  /*  height: var(--banner-height); */
   display: flex;
   flex-direction: column;
 }
@@ -74,7 +74,8 @@
 .contents {
   display: flex;
   height: var(--width-unit);
-  width: calc(var(--width-unit) * 3);
+  justify-content: space-between;
+  gap: 64px;
 }
 .underLine {
   border-bottom: 4px solid var(--black);
@@ -101,8 +102,9 @@
 
 .banner__btns {
   display: flex;
-  height: 3.5rem;
+  height: 5rem;
   align-self: flex-start;
+  width: 300px;
 }
 
 .contactBannerSection {
@@ -111,15 +113,25 @@
   background-color: var(--black);
   padding-left: var(--width-unit);
   padding-right: var(--width-unit);
-  padding-top: 32px;
-  padding-bottom: 32px;
-  align-items: center;
-  gap: 16px;
+  padding-top: 128px;
+  padding-bottom: 128px;
+  justify-content: space-between;
 }
+
 .contactBannerSection .desc {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  width: 500px;
+}
+.contactBannerSection .details {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 600px;
 }
 .contactBannerSection .btns {
   display: flex;

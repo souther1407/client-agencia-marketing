@@ -155,12 +155,19 @@ const Nav = ({ hideTopMenu = false }) => {
         )}
         <div className={styles.bottomMenu}>
           <div className={styles.left}>
-            <div className={styles.logo} onClick={() => navigate(LANDING_PAGE)}>
+            <div
+              className={styles.logo}
+              onhO
+              onClick={() => navigate(LANDING_PAGE)}
+            >
               <Logo />
             </div>
           </div>
           <div className={styles.right}>
-            <div onClick={handleShowResources}>
+            <div
+              onMouseEnter={handleShowResources}
+              onClick={handleShowResources}
+            >
               <TextLink
                 marked={showResources}
                 textProps={{ color: "soft", bold: "font-light", size: "ty" }}
@@ -173,7 +180,7 @@ const Nav = ({ hideTopMenu = false }) => {
             >
               Nuestro Programa
             </TextLink>
-            <div onClick={handleShowContact}>
+            <div onMouseEnter={handleShowContact} onClick={handleShowContact}>
               <TextLink
                 marked={showContact}
                 textProps={{ color: "soft", bold: "font-light", size: "ty" }}
