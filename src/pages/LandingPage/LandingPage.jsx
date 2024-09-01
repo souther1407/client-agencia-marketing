@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import styles from "./styles.module.css";
 import Nav from "../../components/organisms/Nav/Nav";
-import BannerImg from "@assets/banner.svg";
+import iconBenefit from "@assets/iconoBeneficio.svg";
 import spainBanner from "@assets/spainBanner.svg";
 import Text from "../../components/atoms/Text/Text";
 import IconTextButton from "../../components/molecules/IconTextButton/IconTextButton";
-import EbookImg from "@assets/Foto Prueba.svg";
+import EbookImg from "@assets/imgEbookPrueba.svg";
 import IconButton from "../../components/molecules/IconButton/IconButton";
 
 import Footer from "../../components/organisms/Footer/Footer";
@@ -20,7 +20,7 @@ import {
 } from "../../constants/routes";
 import ImgBanner from "./components/BannerImg/BannerImg";
 import PreFooter from "../../components/organisms/PreFooter/PreFooter";
-import imgVideo from "@assets/imgVideo.svg";
+
 const LandingPage = () => {
   const navigate = useNavigate();
   const [showWSMsg, setShowWSMsg] = useState(true);
@@ -139,9 +139,12 @@ const LandingPage = () => {
         </div>
         <div className={styles.details}>
           <div className={styles.detail}>
-            <Text color="light" size="lg">
-              Programa Exclusivo (Solo 10 cupos)
-            </Text>
+            <div className={styles.line}>
+              <img className={styles.iconBenefit} src={iconBenefit} />
+              <Text color="light" size="lg">
+                Programa Exclusivo (Solo 10 cupos)
+              </Text>
+            </div>
             <Text size="sm" bold="font-light" color="soft">
               ¿Buscas una agencia que brinde resultados a largo plazo? Aprende
               más sobre nuestro programa de 180 días y cómo puede cambiar tu
@@ -149,9 +152,12 @@ const LandingPage = () => {
             </Text>
           </div>
           <div className={styles.detail}>
-            <Text color="light" size="lg">
-              Programa Exclusivo (Solo 10 cupos)
-            </Text>
+            <div className={styles.line}>
+              <img className={styles.iconBenefit} src={iconBenefit} />
+              <Text color="light" size="lg">
+                Factura con pacientes premium
+              </Text>
+            </div>
             <Text size="sm" bold="font-light" color="soft">
               ¿Buscas una agencia que brinde resultados a largo plazo? Aprende
               más sobre nuestro programa de 180 días y cómo puede cambiar tu
@@ -159,9 +165,12 @@ const LandingPage = () => {
             </Text>
           </div>
           <div className={styles.detail}>
-            <Text color="light" size="lg">
-              Programa Exclusivo (Solo 10 cupos)
-            </Text>
+            <div className={styles.line}>
+              <img className={styles.iconBenefit} src={iconBenefit} />
+              <Text color="light" size="lg">
+                Crece sin esfuerzo
+              </Text>
+            </div>
             <Text size="sm" bold="font-light" color="soft">
               ¿Buscas una agencia que brinde resultados a largo plazo? Aprende
               más sobre nuestro programa de 180 días y cómo puede cambiar tu
@@ -169,9 +178,12 @@ const LandingPage = () => {
             </Text>
           </div>
           <div className={styles.detail}>
-            <Text color="light" size="lg">
-              Factura con pacientes premium
-            </Text>
+            <div className={styles.line}>
+              <img className={styles.iconBenefit} src={iconBenefit} />
+              <Text color="light" size="lg">
+                Reuniones Semanales
+              </Text>
+            </div>
             <Text size="sm" bold="font-light" color="soft">
               ¿Buscas una agencia que brinde resultados a largo plazo? Aprende
               más sobre nuestro programa de 180 días y cómo puede cambiar tu
@@ -179,9 +191,12 @@ const LandingPage = () => {
             </Text>
           </div>
           <div className={styles.detail}>
-            <Text color="light" size="lg">
-              Crece sin esfuerzo
-            </Text>
+            <div className={styles.line}>
+              <img className={styles.iconBenefit} src={iconBenefit} />
+              <Text color="light" size="lg">
+                Programa Exclusivo (Solo 10 cupos)
+              </Text>
+            </div>
             <Text size="sm" bold="font-light" color="soft">
               ¿Buscas una agencia que brinde resultados a largo plazo? Aprende
               más sobre nuestro programa de 180 días y cómo puede cambiar tu
@@ -189,9 +204,12 @@ const LandingPage = () => {
             </Text>
           </div>
           <div className={styles.detail}>
-            <Text color="light" size="lg">
-              Reuniones Semanales
-            </Text>
+            <div className={styles.line}>
+              <img className={styles.iconBenefit} src={iconBenefit} />
+              <Text color="light" size="lg">
+                Programa Exclusivo (Solo 10 cupos)
+              </Text>
+            </div>
             <Text size="sm" bold="font-light" color="soft">
               ¿Buscas una agencia que brinde resultados a largo plazo? Aprende
               más sobre nuestro programa de 180 días y cómo puede cambiar tu
@@ -220,27 +238,34 @@ const LandingPage = () => {
         </div>
       </div>
       <section className={styles.mainContent}>
-        <div
-          className={styles.mainEBook__card}
-          onClick={() => navigate(DOWNLOAD_EBOOK)}
-        >
-          <div className={styles.mainEBook__desc}>
-            <Text color="primary" size="sm">
-              EBOOK GRATUITO
-            </Text>
-            <Text type="subtitle" bold="bold" color="very-light">
-              Marketing Dental: a Guia Definitiva
-            </Text>
-            <TextLink
-              marked
-              textProps={{ size: "ty" }}
-              variant="white"
-              to={DOWNLOAD_EBOOK}
-            >
-              Descargar la Guia <Icon type={"arrowSquare"} size={"1rem"} />
-            </TextLink>
+        <div className={styles.desc}>
+          <div className={styles.line}>
+            <span className={styles.markLine} />
+            <Text size="sm">NUESTRO CONOCIMIENTO</Text>
           </div>
-          <img src={EbookImg} className={styles.mainEBook__img} />
+          <Text type="title">Aprende sobre Marketing Dental</Text>
+          <Text bold="font-light">¡Disfruta de nuestros ebooks gratuitos!</Text>
+          <TextLink>Ver todas las guias</TextLink>
+        </div>
+        <div className={styles.card}>
+          <img className={styles.cardImg} src={EbookImg} />
+          <Text color="soft" size="ty">
+            EBOOK
+          </Text>
+          <Text color="light" size="lg">
+            Email Marketing
+          </Text>
+          <Text color="soft" bold="font-light" size="sm">
+            Transforma tu clínica dental con nuestros ebooks
+          </Text>
+          <TextLink
+            marked
+            textProps={{ size: "ty" }}
+            variant="white"
+            to={DOWNLOAD_EBOOK}
+          >
+            Descargar la Guia <Icon type={"arrowSquare"} size={"1rem"} />
+          </TextLink>
         </div>
       </section>
       <PreFooter />
