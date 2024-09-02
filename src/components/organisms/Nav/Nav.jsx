@@ -12,6 +12,7 @@ import {
   LANDING_EBOOKS,
   LANDING_PAGE,
   CONTACT_FORM,
+  OUR_PROGRAM,
 } from "../../../constants/routes";
 import { useNavigate } from "react-router-dom";
 import IconTextButton from "../../molecules/IconTextButton/IconTextButton";
@@ -176,6 +177,7 @@ const Nav = ({ hideTopMenu = false }) => {
               </TextLink>
             </div>
             <TextLink
+              to={OUR_PROGRAM}
               textProps={{ color: "soft", bold: "font-light", size: "ty" }}
             >
               Nuestro Programa

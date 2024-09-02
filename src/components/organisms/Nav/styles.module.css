@@ -19,6 +19,7 @@
   top: 0;
   animation-timeline: scroll();
   background-color: var(--black);
+  border-bottom: 1px solid var(--primary);
 }
 .nav.ajust {
   height: auto;
