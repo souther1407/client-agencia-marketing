@@ -11,6 +11,18 @@
   overflow-x: hidden;
 }
 
+.line {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.markLine {
+  width: 40px;
+  height: 1px;
+  background-color: var(--black);
+}
+
 .banner {
   width: 100%;
   height: var(--banner-height);
@@ -98,9 +110,38 @@
   width: 100%;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 64px;
+}
+.applyBtn {
+  width: 240px;
 }
 .title {
   display: flex;
   flex-direction: column;
   flex-basis: 60%;
+}
+.benefits {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 32px;
+}
+.benefit {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.iconBenefit {
+  width: 64px;
+}
+
+.faq {
+  display: flex;
+  margin-top: 128px;
+}
+
+.faq .desc {
+  display: flex;
+  flex-direction: column;
+  gap: 16pxs;
 }

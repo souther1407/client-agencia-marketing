@@ -5,6 +5,8 @@ import Text from "../../components/atoms/Text/Text";
 import Icon from "../../components/atoms/Icon/Icon";
 import imgVideo from "@assets/imgVideo.svg";
 import IconTextButton from "../../components/molecules/IconTextButton/IconTextButton";
+import iconBenefit from "@assets/iconoBeneficio.svg";
+
 const OurProgram = () => {
   const [showModalVideo, setShowModalVideo] = useState(false);
 
@@ -13,6 +15,7 @@ const OurProgram = () => {
       setShowModalVideo(false);
     }
   };
+
   return (
     <div className={styles.page}>
       <Nav />
@@ -60,9 +63,81 @@ const OurProgram = () => {
               Resuelve los problemas que limitan el crecimiento de tu práctica
             </Text>
           </div>
-          <IconTextButton>Aplicar Ahora</IconTextButton>
+          <div className={styles.applyBtn}>
+            <IconTextButton
+              textProps={{ size: "sm", bold: "font-light" }}
+              colorVariant="black"
+              size="100%"
+            >
+              Aplicar Ahora
+            </IconTextButton>
+          </div>
         </section>
-        <section className={styles.benefits}></section>
+        <section className={styles.benefits}>
+          <div className={styles.benefit}>
+            <img className={styles.iconBenefit} src={iconBenefit} />
+            <Text>Marketing Dental</Text>
+            <Text bold="font-light" size="sm">
+              Nuevos pacientes asegurados cada mes.Nuevos pacientes asegurados
+              cada mes.
+            </Text>
+          </div>
+          <div className={styles.benefit}>
+            <img className={styles.iconBenefit} src={iconBenefit} />
+            <Text>Reuniones Semanales</Text>
+            <Text bold="font-light" size="sm">
+              Asesoramiento personal semanal por Zoom.
+            </Text>
+          </div>
+          <div className={styles.benefit}>
+            <img className={styles.iconBenefit} src={iconBenefit} />
+            <Text>Tratamientos Premium</Text>
+            <Text bold="font-light" size="sm">
+              Enfoque en pacientes de tratamientos de alto valor. Enfoque en
+              pacientes de tratamientos de alto valor.
+            </Text>
+          </div>
+          <div className={styles.benefit}>
+            <img className={styles.iconBenefit} src={iconBenefit} />
+            <Text>Desarrollo Web</Text>
+            <Text bold="font-light" size="sm">
+              Nuevos pacientes asegurados cada mes.Nuevos pacientes asegurados
+              cada mes.
+            </Text>
+          </div>
+          <div className={styles.benefit}>
+            <img className={styles.iconBenefit} src={iconBenefit} />
+            <Text>Marketing Dental</Text>
+            <Text bold="font-light" size="sm">
+              Nuevos pacientes asegurados cada mes.Nuevos pacientes asegurados
+              cada mes.
+            </Text>
+          </div>
+          <div className={styles.benefit}>
+            <img className={styles.iconBenefit} src={iconBenefit} />
+            <Text>Marketing Dental</Text>
+            <Text bold="font-light" size="sm">
+              Nuevos pacientes asegurados cada mes.Nuevos pacientes asegurados
+              cada mes.
+            </Text>
+          </div>
+        </section>
+        <section className={styles.faq}>
+          <div className={styles.desc}>
+            <div className={styles.line}>
+              <span className={styles.markLine} />
+              <Text size="ty">SOBRE EL PROGRAMA</Text>
+            </div>
+            <Text type="subtitle">Preguntas Frecuentes</Text>
+            <Text bold="font-light">
+              ¿Tienes alguna duda que no hayamos resuelto? Hablanos al Whatsapp.
+            </Text>
+            <IconTextButton icon={"wp"} colorVariant="black" variant="bordered">
+              Whatsapp
+            </IconTextButton>
+          </div>
+          <div className={styles.dropdowns}></div>
+        </section>
       </main>
     </div>
   );
