@@ -1,0 +1,11 @@
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.dropdown .header {
+  display: flex;
+  cursor: pointer;
+  border-bottom: 1px solid var(--black);
+}

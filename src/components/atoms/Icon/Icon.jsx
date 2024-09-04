@@ -14,7 +14,7 @@ import { FaLinkedin } from "react-icons/fa6";
 import { FaFacebook, FaInstagram, FaPlay } from "react-icons/fa";
 import { BiSolidMedal } from "react-icons/bi";
 import { CiWarning } from "react-icons/ci";
-import { IoIosArrowForward } from "react-icons/io";
+import { IoIosArrowForward, IoIosArrowDown } from "react-icons/io";
 import { PiArrowSquareOutBold } from "react-icons/pi";
 const Icon = ({ type, size, color = "inherit" }) => {
   const props = {
@@ -38,6 +38,7 @@ const Icon = ({ type, size, color = "inherit" }) => {
     warning: <CiWarning {...props} />,
     arrowFoward: <IoIosArrowForward {...props} />,
     arrowSquare: <PiArrowSquareOutBold {...props} />,
+    arrowDown: <IoIosArrowDown {...props} />,
     play: <FaPlay {...props} />,
   };
   return <i>{icons[type]}</i>;

@@ -138,10 +138,27 @@
 .faq {
   display: flex;
   margin-top: 128px;
+  gap: 40px;
 }
 
 .faq .desc {
   display: flex;
   flex-direction: column;
-  gap: 16pxs;
+  gap: 16px;
+  flex-grow: 1;
+}
+.faq .desc .wpBtn {
+  width: 300px;
+  align-self: self-start;
+}
+
+.faq .dropdowns {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.faq .dropdown {
+  padding-bottom: 16px;
+  width: 600px;
 }

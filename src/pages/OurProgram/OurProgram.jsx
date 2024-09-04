@@ -6,7 +6,7 @@ import Icon from "../../components/atoms/Icon/Icon";
 import imgVideo from "@assets/imgVideo.svg";
 import IconTextButton from "../../components/molecules/IconTextButton/IconTextButton";
 import iconBenefit from "@assets/iconoBeneficio.svg";
-
+import Dropdown from "../../components/molecules/Dropdown/Dropdown";
 const OurProgram = () => {
   const [showModalVideo, setShowModalVideo] = useState(false);
 
@@ -132,11 +132,58 @@ const OurProgram = () => {
             <Text bold="font-light">
               ¿Tienes alguna duda que no hayamos resuelto? Hablanos al Whatsapp.
             </Text>
-            <IconTextButton icon={"wp"} colorVariant="black" variant="bordered">
-              Whatsapp
-            </IconTextButton>
+            <div className={styles.wpBtn}>
+              <IconTextButton
+                icon={"wp"}
+                colorVariant="black"
+                variant="bordered"
+                size="100%"
+              >
+                Whatsapp
+              </IconTextButton>
+            </div>
           </div>
-          <div className={styles.dropdowns}></div>
+          <div className={styles.dropdowns}>
+            <div className={styles.dropdown}>
+              <Dropdown
+                title={`What makes your eCommerce development services stand out from
+other eCommerce development companies?`}
+              >
+                <Text>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Magnam quam, repudiandae explicabo tempora harum pariatur
+                  dolorem eligendi esse sapiente molestias iusto amet libero
+                  magni officia nobis quaerat deleniti. Obcaecati, veritatis!
+                </Text>
+              </Dropdown>
+            </div>
+            <div className={styles.dropdown}>
+              <Dropdown
+                title={`What makes your eCommerce development services stand out from
+other eCommerce development companies?`}
+              >
+                <Text>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Magnam quam, repudiandae explicabo tempora harum pariatur
+                  dolorem eligendi esse sapiente molestias iusto amet libero
+                  magni officia nobis quaerat deleniti. Obcaecati, veritatis!
+                </Text>
+              </Dropdown>
+            </div>
+            <div className={styles.dropdown}>
+              <Dropdown
+                title={`What makes your eCommerce development services stand out from
+other eCommerce development companies?`}
+              >
+                <Text>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Magnam quam, repudiandae explicabo tempora harum pariatur
+                  dolorem eligendi esse sapiente molestias iusto amet libero
+                  magni officia nobis quaerat deleniti. Obcaecati, veritatis!
+                </Text>
+              </Dropdown>
+            </div>
+          </div>
         </section>
       </main>
     </div>
