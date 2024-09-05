@@ -9,6 +9,7 @@ const Input = ({
   onError,
   variant = "primary",
   label = "",
+  labelColor = "standard",
   icon,
   size = "100%",
   setFocus = false,
@@ -50,7 +51,11 @@ const Input = ({
       )}
 
       {label && (
-        <Text size={"ty"} color={errorMsg && "error"}>
+        <Text
+          size={"ty"}
+          bold="font-light"
+          color={errorMsg ? "error" : labelColor}
+        >
           {label}
         </Text>
       )}

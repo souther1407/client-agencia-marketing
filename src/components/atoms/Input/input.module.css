@@ -101,6 +101,31 @@
   color: var(--error);
 }
 
+/*black*/
+
+.black .input {
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 12px;
+  color: var(--white);
+  background-color: var(--light-black);
+  font-size: 0.7rem;
+}
+.black .input:focus {
+  outline: 1px solid var(--blue);
+}
+.black .icon {
+  color: gray;
+}
+.black .input::placeholder {
+  color: var(--dark-white);
+}
+
+.black.error .input {
+  border: 1px solid var(--error);
+  color: var(--error);
+}
+
 .plain.container {
   outline: none;
   background-color: transparent;

@@ -6,6 +6,7 @@ const Textarea = ({
   onChange,
   variant = "primary",
   label = "",
+  labelColor = "standard",
   size = "100%",
   errorValue,
   ...otherProps
@@ -19,7 +20,11 @@ const Textarea = ({
         errorValue ? styles.error : ""
       }`}
     >
-      {label && <Text size={"ty"}>{label}</Text>}
+      {label && (
+        <Text size={"ty"} bold="font-light" color={labelColor}>
+          {label}
+        </Text>
+      )}
       <textarea
         style={{ width: size }}
         id={id}

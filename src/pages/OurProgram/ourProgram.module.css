@@ -23,6 +23,10 @@
   background-color: var(--black);
 }
 
+.markLine.primary {
+  background-color: var(--primary);
+}
+
 .banner {
   width: 100%;
   height: var(--banner-height);
@@ -102,6 +106,9 @@
   display: flex;
   flex-direction: column;
   padding-top: 20%;
+}
+
+.main > *:not(.contact) {
   padding-left: var(--width-unit);
   padding-right: var(--width-unit);
 }
@@ -161,4 +168,46 @@
 .faq .dropdown {
   padding-bottom: 16px;
   width: 600px;
+}
+
+.contact {
+  display: flex;
+  background-color: var(--black);
+}
+
+.contact .desc {
+  background-color: var(--light-black);
+  padding-top: 64px;
+  padding-left: var(--width-unit);
+  width: 50%;
+}
+
+.contact .formContainer {
+  display: flex;
+  padding-top: 64px;
+  flex-direction: column;
+  padding-right: var(--width-unit);
+  width: 50%;
+}
+.contact .form {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  padding-left: 64px;
+  gap: 16px;
+}
+
+.contact .formLine {
+  display: flex;
+  width: 100%;
+  gap: 16px;
+}
+
+.contact .formLine > * {
+  width: 50%;
+}
+
+.contact .btnEnviar {
+  width: fit-content;
+  align-self: flex-end;
 }

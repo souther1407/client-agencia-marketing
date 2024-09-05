@@ -37,3 +37,25 @@
 .secondary .input::placeholder {
   color: gray;
 }
+
+/*black*/
+
+.black .input {
+  border-radius: 8px;
+  font-family: "lexend";
+  border: 1px solid transparent;
+  background: none;
+  font-size: 0.7778rem;
+  width: 100%;
+  height: 100px;
+  background-color: var(--light-black);
+  resize: none;
+  color: var(--white);
+  padding: 12px;
+}
+.black .input:focus {
+  outline: none;
+}
+.black .input::placeholder {
+  color: var(--dark-white);
+}
