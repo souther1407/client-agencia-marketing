@@ -211,3 +211,69 @@
   width: fit-content;
   align-self: flex-end;
 }
+
+@media screen and (max-width: 1000px) {
+  .banner {
+    padding: var(--mobile-margin);
+    height: 100%;
+  }
+  .banner .elements {
+    position: relative;
+    top: 80px;
+  }
+  .videoDrawer {
+    width: 100%;
+  }
+
+  .header {
+    padding: var(--mobile-margin) !important;
+    margin-bottom: 32px;
+  }
+
+  .title {
+    flex-basis: 100%;
+  }
+  .applyBtn {
+    display: none;
+  }
+  .benefits {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    gap: 32px;
+    padding: var(--mobile-margin) !important;
+  }
+  .faq {
+    margin-top: 32px;
+    padding: var(--mobile-margin) !important;
+    flex-direction: column;
+  }
+
+  .dropdown {
+    width: 100% !important;
+  }
+  .contact {
+    flex-direction: column;
+  }
+
+  .contact .desc {
+    padding: var(--mobile-margin);
+    width: 100%;
+  }
+
+  .contact .formContainer {
+    padding: var(--mobile-margin);
+    width: 100%;
+  }
+  .contact .formContainer .form {
+    padding: 0;
+    width: 100%;
+  }
+  .form .formLine {
+    flex-direction: column;
+  }
+  .contact .formLine > * {
+    width: 100%;
+  }
+  .btnEnviar {
+  }
+}

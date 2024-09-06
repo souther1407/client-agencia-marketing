@@ -26,7 +26,7 @@ const OurProgram = () => {
           <Text type="title" color="light">
             ¿Cómo funciona?
           </Text>
-          <Text bold="font-light" color="light">
+          <Text textAlign="center" bold="font-light" color="light">
             Haz crecer tu práctica sin esfuerzo con nuestro método comprobado
           </Text>
           <div className={styles.videoDrawer}>
