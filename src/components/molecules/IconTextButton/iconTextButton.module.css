@@ -3,7 +3,8 @@
 .primary-dark.iconTextButton,
 .yellow.iconTextButton,
 .black.iconTextButton,
-.white.iconTextButton {
+.white.iconTextButton,
+.very-light-black.iconTextButton {
   display: flex;
   outline: none;
   border: 1px solid transparent;
@@ -237,4 +238,30 @@
 .white.iconTextButton.bordered {
   border: 1px solid var(--black);
   color: var(--black);
+}
+
+/* very-light-black */
+.very-light-black.iconTextButton.full {
+  background-color: var(--very-light-black);
+  color: var(--white);
+  border-radius: 8px;
+}
+.very-light-black.iconTextButton:disabled {
+  background-color: #2d4356;
+  cursor: auto;
+  color: var(--white);
+  cursor: no-drop;
+}
+.very-light-black.iconTextButton:disabled:hover {
+}
+
+.very-light-black.iconTextButton.full:hover {
+}
+
+.very-light-black.iconTextButton.bordered:hover {
+}
+
+.very-light-black.iconTextButton.bordered {
+  border: 1px solid var(--very-light-black);
+  color: var(--very-light-black);
 }

@@ -57,18 +57,19 @@ const LandingPage = () => {
         <section className={styles.banner}>
           <div className={styles.contents}>
             <div className={styles.banner__content}>
-              <div className={styles.line}>
+              {/*  <div className={styles.line}>
                 <span className={styles.markLine} />
                 <Text size="sm">NUESTRA AGENCIA</Text>
-              </div>
+              </div> */}
               <Text
                 type="bigtitle"
                 bold="extra-bold"
                 fontFamily="font-secondary"
+                color="light"
               >
                 Tu Mejor Opción en Marketing Dental.
               </Text>
-              <Text size="sm" bold="font-light">
+              <Text size="sm" bold="font-light" color="light">
                 Convertimos tu clínica en autoridad local
               </Text>
 
@@ -80,7 +81,7 @@ const LandingPage = () => {
                   Quiero saber más
                 </IconTextButton>
               </div>
-              <Text size="sm" bold="font-light">
+              <Text size="sm" bold="font-light" color="soft">
                 *Solo trabajamos con clínicas que ofrecen implantes.
               </Text>
             </div>
@@ -92,15 +93,15 @@ const LandingPage = () => {
       <div className={styles.contactBannerSection}>
         <div className={styles.desc}>
           <div className={styles.line}>
-            <span className={`${styles.markLine} ${styles.primary}`} />
-            <Text size="sm" color="soft" bold="font-light">
+            <span className={`${styles.markLine}`} />
+            <Text size="sm" bold="font-light">
               NUESTRO PROGRAMA DE MARKETING
             </Text>
           </div>
-          <Text type="title" size="sm" color="light">
+          <Text type="title" size="sm">
             Transformamos tu clínica en 6 meses
           </Text>
-          <Text size="sm" color="soft" bold="font-light">
+          <Text size="sm" bold="font-light">
             Aprende más sobre nuestro programa de 6 meses y cómo puede cambiar
             tu práctica dental.
           </Text>
@@ -140,11 +141,9 @@ const LandingPage = () => {
           <div className={styles.detail}>
             <div className={styles.line}>
               <img className={styles.iconBenefit} src={iconBenefit} />
-              <Text color="light" size="lg">
-                Programa Exclusivo (Solo 10 cupos)
-              </Text>
+              <Text size="lg">Programa Exclusivo (Solo 10 cupos)</Text>
             </div>
-            <Text size="sm" bold="font-light" color="soft">
+            <Text size="sm" bold="font-light">
               ¿Buscas una agencia que brinde resultados a largo plazo? Aprende
               más sobre nuestro programa de 180 días y cómo puede cambiar tu
               práctica dental.
@@ -153,11 +152,9 @@ const LandingPage = () => {
           <div className={styles.detail}>
             <div className={styles.line}>
               <img className={styles.iconBenefit} src={iconBenefit} />
-              <Text color="light" size="lg">
-                Factura con pacientes premium
-              </Text>
+              <Text size="lg">Factura con pacientes premium</Text>
             </div>
-            <Text size="sm" bold="font-light" color="soft">
+            <Text size="sm" bold="font-light">
               ¿Buscas una agencia que brinde resultados a largo plazo? Aprende
               más sobre nuestro programa de 180 días y cómo puede cambiar tu
               práctica dental.
@@ -166,11 +163,9 @@ const LandingPage = () => {
           <div className={styles.detail}>
             <div className={styles.line}>
               <img className={styles.iconBenefit} src={iconBenefit} />
-              <Text color="light" size="lg">
-                Crece sin esfuerzo
-              </Text>
+              <Text size="lg">Crece sin esfuerzo</Text>
             </div>
-            <Text size="sm" bold="font-light" color="soft">
+            <Text size="sm" bold="font-light">
               ¿Buscas una agencia que brinde resultados a largo plazo? Aprende
               más sobre nuestro programa de 180 días y cómo puede cambiar tu
               práctica dental.
@@ -179,11 +174,9 @@ const LandingPage = () => {
           <div className={styles.detail}>
             <div className={styles.line}>
               <img className={styles.iconBenefit} src={iconBenefit} />
-              <Text color="light" size="lg">
-                Reuniones Semanales
-              </Text>
+              <Text size="lg">Reuniones Semanales</Text>
             </div>
-            <Text size="sm" bold="font-light" color="soft">
+            <Text size="sm" bold="font-light">
               ¿Buscas una agencia que brinde resultados a largo plazo? Aprende
               más sobre nuestro programa de 180 días y cómo puede cambiar tu
               práctica dental.
@@ -192,11 +185,9 @@ const LandingPage = () => {
           <div className={styles.detail}>
             <div className={styles.line}>
               <img className={styles.iconBenefit} src={iconBenefit} />
-              <Text color="light" size="lg">
-                Programa Exclusivo (Solo 10 cupos)
-              </Text>
+              <Text size="lg">Programa Exclusivo (Solo 10 cupos)</Text>
             </div>
-            <Text size="sm" bold="font-light" color="soft">
+            <Text size="sm" bold="font-light">
               ¿Buscas una agencia que brinde resultados a largo plazo? Aprende
               más sobre nuestro programa de 180 días y cómo puede cambiar tu
               práctica dental.
@@ -205,11 +196,9 @@ const LandingPage = () => {
           <div className={styles.detail}>
             <div className={styles.line}>
               <img className={styles.iconBenefit} src={iconBenefit} />
-              <Text color="light" size="lg">
-                Programa Exclusivo (Solo 10 cupos)
-              </Text>
+              <Text size="lg">Programa Exclusivo (Solo 10 cupos)</Text>
             </div>
-            <Text size="sm" bold="font-light" color="soft">
+            <Text size="sm" bold="font-light">
               ¿Buscas una agencia que brinde resultados a largo plazo? Aprende
               más sobre nuestro programa de 180 días y cómo puede cambiar tu
               práctica dental.
@@ -222,15 +211,23 @@ const LandingPage = () => {
         <div className={styles.desc}>
           <div className={styles.line}>
             <span className={styles.markLine} />
-            <Text size="ty">NUESTRA UBICACION</Text>
+            <Text size="ty" color="soft" bold="font-light">
+              NUESTRA UBICACION
+            </Text>
           </div>
-          <Text type="title">Trabajamos con clínicas en toda España.</Text>
-          <Text size="sm" bold="font-light">
+          <Text type="title" color="light">
+            Trabajamos con clínicas en toda España.
+          </Text>
+          <Text size="sm" bold="font-light" color="soft">
             Nuestras estrategias están diseñadas para ser efectivas con
             pacientes locales.
           </Text>
           <div className={styles.seeMore}>
-            <IconTextButton size="100%" colorVariant="yellow">
+            <IconTextButton
+              size="100%"
+              textProps={{ size: "ty" }}
+              colorVariant="very-light-black"
+            >
               Ver Programa
             </IconTextButton>
           </div>
@@ -248,22 +245,16 @@ const LandingPage = () => {
         </div>
         <div className={styles.card}>
           <img className={styles.cardImg} src={EbookImg} />
-          <Text color="soft" size="ty">
-            EBOOK
-          </Text>
-          <Text color="light" size="lg">
-            Email Marketing
-          </Text>
-          <Text color="soft" bold="font-light" size="sm">
-            Transforma tu clínica dental con nuestros ebooks
-          </Text>
+          <Text size="ty">EBOOK</Text>
+          <Text size="lg">10 Secretos de Marketing Dental</Text>
+
           <TextLink
             marked
             textProps={{ size: "ty" }}
-            variant="white"
+            variant="black"
             to={DOWNLOAD_EBOOK}
           >
-            Descargar la Guia <Icon type={"arrowSquare"} size={"1rem"} />
+            Descargar la Guia
           </TextLink>
         </div>
       </section>

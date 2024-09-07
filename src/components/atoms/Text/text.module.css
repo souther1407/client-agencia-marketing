@@ -60,6 +60,9 @@
 .light {
   color: var(--white);
 }
+.dark-light {
+  color: var(--dark-white);
+}
 .error {
   color: var(--error);
 }

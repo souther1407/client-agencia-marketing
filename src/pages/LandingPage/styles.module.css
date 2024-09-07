@@ -69,7 +69,7 @@
   padding-top: calc(var(--linea-roja) + var(--linea-amarilla));
   padding-bottom: var(--linea-roja);
   display: flex;
-  background: var(--gradient);
+  background: var(--black);
 }
 
 .contents {
@@ -111,7 +111,7 @@
 .contactBannerSection {
   display: flex;
   width: 100%;
-  background-color: var(--black);
+  background-color: var(--white);
   padding-left: var(--width-unit);
   padding-right: var(--width-unit);
   padding-top: 128px;
@@ -167,7 +167,7 @@
 }
 
 .spainBanner {
-  background-color: rgb(252, 252, 242);
+  background-color: var(--light-black);
   padding-left: var(--width-unit);
   padding-right: var(--width-unit);
   display: flex;
@@ -178,6 +178,7 @@
 
 .spainBanner .spainBannerImg {
   width: 600px;
+  filter: drop-shadow(0px 0px 40px rgba(255, 238, 206, 0.151));
 }
 
 .spainBanner .desc {
@@ -189,6 +190,7 @@
 }
 .spainBanner .seeMore {
   width: 300px;
+  height: 60px;
 }
 
 .mainContent {
@@ -216,10 +218,11 @@
   display: flex;
   flex-direction: column;
   padding: 32px;
-  background-color: var(--black);
+  background-color: var(--white);
   border-radius: 16px;
-  width: 400px;
+  width: 340px;
   gap: 12px;
+  box-shadow: 4px 4px 120px rgba(58, 58, 58, 0.288);
 }
 
 .mainContent .card .cardImg {

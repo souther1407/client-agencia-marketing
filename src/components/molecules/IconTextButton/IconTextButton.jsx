@@ -14,7 +14,7 @@ const IconTextButton = ({
 }) => {
   return (
     <button
-      style={{ width: size }}
+      style={{ width: size, height: "100%" }}
       className={`${styles[colorVariant]} ${styles.iconTextButton} ${styles[variant]}`}
       onClick={onClick}
       {...otherProps}

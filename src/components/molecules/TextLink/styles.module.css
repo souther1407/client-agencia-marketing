@@ -48,3 +48,16 @@
   color: var(--primary-dark) !important;
   text-decoration: underline;
 }
+
+/* black */
+.black.textLink {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.black.textLink > *:hover,
+.black.textLink.marked > * {
+  color: var(--black) !important;
+  text-decoration: underline;
+}
