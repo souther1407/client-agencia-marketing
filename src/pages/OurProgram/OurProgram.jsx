@@ -78,7 +78,7 @@ const OurProgram = () => {
         <section className={styles.benefits}>
           <div className={styles.benefit}>
             <img className={styles.iconBenefit} src={iconBenefit} />
-            <Text>Marketing Dental</Text>
+            <Text size="lg">Marketing Dental</Text>
             <Text bold="font-light" size="sm">
               Nuevos pacientes asegurados cada mes.Nuevos pacientes asegurados
               cada mes.
@@ -86,14 +86,14 @@ const OurProgram = () => {
           </div>
           <div className={styles.benefit}>
             <img className={styles.iconBenefit} src={iconBenefit} />
-            <Text>Reuniones Semanales</Text>
+            <Text size="lg">Reuniones Semanales</Text>
             <Text bold="font-light" size="sm">
               Asesoramiento personal semanal por Zoom.
             </Text>
           </div>
           <div className={styles.benefit}>
             <img className={styles.iconBenefit} src={iconBenefit} />
-            <Text>Tratamientos Premium</Text>
+            <Text size="lg">Tratamientos Premium</Text>
             <Text bold="font-light" size="sm">
               Enfoque en pacientes de tratamientos de alto valor. Enfoque en
               pacientes de tratamientos de alto valor.
@@ -101,7 +101,7 @@ const OurProgram = () => {
           </div>
           <div className={styles.benefit}>
             <img className={styles.iconBenefit} src={iconBenefit} />
-            <Text>Desarrollo Web</Text>
+            <Text size="lg">Desarrollo Web</Text>
             <Text bold="font-light" size="sm">
               Nuevos pacientes asegurados cada mes.Nuevos pacientes asegurados
               cada mes.
@@ -109,7 +109,7 @@ const OurProgram = () => {
           </div>
           <div className={styles.benefit}>
             <img className={styles.iconBenefit} src={iconBenefit} />
-            <Text>Marketing Dental</Text>
+            <Text size="lg">Marketing Dental</Text>
             <Text bold="font-light" size="sm">
               Nuevos pacientes asegurados cada mes.Nuevos pacientes asegurados
               cada mes.
@@ -117,7 +117,7 @@ const OurProgram = () => {
           </div>
           <div className={styles.benefit}>
             <img className={styles.iconBenefit} src={iconBenefit} />
-            <Text>Marketing Dental</Text>
+            <Text size="lg">Marketing Dental</Text>
             <Text bold="font-light" size="sm">
               Nuevos pacientes asegurados cada mes.Nuevos pacientes asegurados
               cada mes.
@@ -146,6 +146,45 @@ const OurProgram = () => {
             </div>
           </div>
           <div className={styles.dropdowns}>
+            <div className={styles.dropdown}>
+              <Dropdown
+                title={`What makes your eCommerce development services stand out from
+other eCommerce development companies?`}
+              >
+                <Text>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Magnam quam, repudiandae explicabo tempora harum pariatur
+                  dolorem eligendi esse sapiente molestias iusto amet libero
+                  magni officia nobis quaerat deleniti. Obcaecati, veritatis!
+                </Text>
+              </Dropdown>
+            </div>
+            <div className={styles.dropdown}>
+              <Dropdown
+                title={`What makes your eCommerce development services stand out from
+other eCommerce development companies?`}
+              >
+                <Text>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Magnam quam, repudiandae explicabo tempora harum pariatur
+                  dolorem eligendi esse sapiente molestias iusto amet libero
+                  magni officia nobis quaerat deleniti. Obcaecati, veritatis!
+                </Text>
+              </Dropdown>
+            </div>
+            <div className={styles.dropdown}>
+              <Dropdown
+                title={`What makes your eCommerce development services stand out from
+other eCommerce development companies?`}
+              >
+                <Text>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Magnam quam, repudiandae explicabo tempora harum pariatur
+                  dolorem eligendi esse sapiente molestias iusto amet libero
+                  magni officia nobis quaerat deleniti. Obcaecati, veritatis!
+                </Text>
+              </Dropdown>
+            </div>
             <div className={styles.dropdown}>
               <Dropdown
                 title={`What makes your eCommerce development services stand out from

@@ -94,11 +94,11 @@ const LandingPage = () => {
         <div className={styles.desc}>
           <div className={styles.line}>
             <span className={`${styles.markLine}`} />
-            <Text size="sm" bold="font-light">
+            <Text size="ty" bold="font-light">
               NUESTRO PROGRAMA DE MARKETING
             </Text>
           </div>
-          <Text type="title" size="sm">
+          <Text type="smalltitle" size="sm">
             Transformamos tu clínica en 6 meses
           </Text>
           <Text size="sm" bold="font-light">
@@ -130,9 +130,13 @@ const LandingPage = () => {
             </Text>
           </div>
  */}
-          <div className={styles.btns}>
-            <IconTextButton>Ver Programa</IconTextButton>
-          </div>
+          <TextLink
+            textProps={{ size: "sm" }}
+            variant="black"
+            to={DOWNLOAD_EBOOK}
+          >
+            Descargar la Guia {">"}
+          </TextLink>
           {/*   <Text size="ty" color="soft" bold="font-light">
             *El programa solo tiene cupos para 10 dueños de clínicas dentales.
           </Text> */}
@@ -210,12 +214,12 @@ const LandingPage = () => {
         <img className={styles.spainBannerImg} src={spainBanner} />
         <div className={styles.desc}>
           <div className={styles.line}>
-            <span className={styles.markLine} />
+            <span className={`${styles.markLine} ${styles.secondary}`} />
             <Text size="ty" color="soft" bold="font-light">
               NUESTRA UBICACION
             </Text>
           </div>
-          <Text type="title" color="light">
+          <Text type="smalltitle" color="light">
             Trabajamos con clínicas en toda España.
           </Text>
           <Text size="sm" bold="font-light" color="soft">
@@ -225,7 +229,7 @@ const LandingPage = () => {
           <div className={styles.seeMore}>
             <IconTextButton
               size="100%"
-              textProps={{ size: "ty" }}
+              textProps={{ size: "sm" }}
               colorVariant="very-light-black"
             >
               Ver Programa
@@ -237,11 +241,13 @@ const LandingPage = () => {
         <div className={styles.desc}>
           <div className={styles.line}>
             <span className={styles.markLine} />
-            <Text size="sm">NUESTRO CONOCIMIENTO</Text>
+            <Text size="ty">NUESTRO CONOCIMIENTO</Text>
           </div>
-          <Text type="title">Aprende sobre Marketing Dental</Text>
-          <Text bold="font-light">¡Disfruta de nuestros ebooks gratuitos!</Text>
-          <TextLink>Ver todas las guias</TextLink>
+          <Text type="smalltitle">Aprende sobre Marketing Dental</Text>
+          <Text bold="font-light" size="sm">
+            ¡Disfruta de nuestros ebooks gratuitos!
+          </Text>
+          <TextLink variant="black">Ver todas las guias</TextLink>
         </div>
         <div className={styles.card}>
           <img className={styles.cardImg} src={EbookImg} />

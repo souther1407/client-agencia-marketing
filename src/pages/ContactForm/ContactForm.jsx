@@ -108,8 +108,10 @@ const ContactForm = () => {
             <hr className={styles.separator} />
             <Text>Links Utiles</Text>
             <div className={styles.usefullLinks}>
-              <TextLink textProps={{ size: "sm" }}>¿Que somos? {">"}</TextLink>
-              <TextLink textProps={{ size: "sm" }}>
+              <TextLink variant="black" textProps={{ size: "sm" }}>
+                ¿Que somos? {">"}
+              </TextLink>
+              <TextLink variant="black" textProps={{ size: "sm" }}>
                 Recursos Gratis {">"}
               </TextLink>
             </div>

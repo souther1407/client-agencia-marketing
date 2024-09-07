@@ -26,6 +26,10 @@
   background-color: var(--primary);
 }
 
+.markLine.secondary {
+  background-color: var(--secondary);
+}
+
 .help {
   position: fixed;
   bottom: 2%;

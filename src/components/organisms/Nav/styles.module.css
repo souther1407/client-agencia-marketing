@@ -157,11 +157,14 @@ body:has(.resoursesDropDown.show) {
 
 .resoursesDropDown .contactBanner > * {
   transition: all 0.3s ease-in;
+  padding: 4px;
+  border-radius: 8px;
 }
 .resoursesDropDown .contactBanner > *:hover {
-  color: var(--primary);
+  background-color: var(--gray-light);
+
   cursor: pointer;
-  transform: translateX(16px);
+  transform: translateX(5%);
 }
 .resoursesDropDown .content {
   display: flex;

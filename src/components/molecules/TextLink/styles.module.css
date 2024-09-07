@@ -56,8 +56,18 @@
   gap: 16px;
 }
 
-.black.textLink > *:hover,
 .black.textLink.marked > * {
   color: var(--black) !important;
   text-decoration: underline;
+}
+
+.black.textLink > * {
+  transition: all 0.3s ease-in;
+  padding: 4px;
+}
+.black.textLink > *:hover {
+  transform: translateX(10%);
+  border-radius: 16px;
+
+  background-color: var(--gray-light);
 }
