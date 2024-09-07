@@ -3,12 +3,10 @@
   background-color: var(--background);
   min-height: 100vh;
   width: 100%;
-  overflow-y: hidden;
   --banner-height: calc(var(--width-unit) * 2);
   --yellow-line: calc(var(--width-unit) * 0.375);
   --green-line: calc(var(--width-unit) * 0.25);
   --mobile-margin: 32px;
-  overflow-x: hidden;
 }
 .line {
   display: flex;
@@ -24,6 +22,10 @@
 
 .markLine.primary {
   background-color: var(--primary);
+}
+
+.markLine.secondary {
+  background-color: var(--secondary);
 }
 
 .help {
@@ -118,14 +120,13 @@
   padding-bottom: 128px;
   justify-content: space-between;
 }
-
-.contactBannerSection .desc {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
+.contactBannerSection .stickyContainer {
   position: sticky;
-  position: -webkit-sticky;
-  top: 0;
+  top: 200px;
+}
+.contactBannerSection .desc {
+  display: block;
+  gap: 24px;
   width: 500px;
 }
 .contactBannerSection .details {

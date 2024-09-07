@@ -50,7 +50,7 @@
   --gray: #455a64;
   --gray-blue: #e3eaf1;
   --gray-blue-dark: #d4e1ee;
-  --gray-light: #92a3a377;
+  --gray-light: #92a3a346;
   --gray-dark: rgba(34, 33, 33, 0.411);
   --light-blue-transparent: #ccd6dd;
   --blue: #4682a9;
@@ -93,7 +93,6 @@ ol {
 html,
 body {
   font-size: 18px;
-  overflow-x: hidden;
 }
 
 img {

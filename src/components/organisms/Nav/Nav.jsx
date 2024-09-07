@@ -35,14 +35,18 @@ const Nav = ({ hideTopMenu = false }) => {
     contacto: false,
   });
 
-  const handleShowResources = () => {
-    setShowResources((prev) => !prev);
-    setShowContact(false);
+  const handleShowResources = (e) => {
+    if (e.type != "mouseenter" || (e.type === "mouseenter" && !showResources)) {
+      setShowResources((prev) => !prev);
+      setShowContact(false);
+    }
   };
 
-  const handleShowContact = () => {
-    setShowResources(false);
-    setShowContact((prev) => !prev);
+  const handleShowContact = (e) => {
+    if (e.type != "mouseenter" || (e.type === "mouseenter" && !showContact)) {
+      setShowResources(false);
+      setShowContact((prev) => !prev);
+    }
   };
   const handleHideDropElements = (e) => {
     if (e.target.id == "shadow-zone") {
@@ -70,7 +74,7 @@ const Nav = ({ hideTopMenu = false }) => {
           <div className={styles.content}>
             <TextLink
               to={LANDING_EBOOKS}
-              variant="primary-dark"
+              variant="black"
               textProps={{ size: "sm" }}
             >
               ver todas las guias
@@ -236,7 +240,7 @@ const Nav = ({ hideTopMenu = false }) => {
               <div className={styles.seeGuides}>
                 <TextLink
                   to={LANDING_EBOOKS}
-                  variant="primary-dark"
+                  variant="black"
                   textProps={{ size: "sm" }}
                 >
                   ver todas las guias

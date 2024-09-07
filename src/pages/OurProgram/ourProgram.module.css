@@ -3,12 +3,10 @@
   background-color: var(--background);
   min-height: 100vh;
   width: 100%;
-  overflow-y: hidden;
   --banner-height: calc(var(--width-unit) * 2);
   --yellow-line: calc(var(--width-unit) * 0.375);
   --green-line: calc(var(--width-unit) * 0.25);
   --mobile-margin: 32px;
-  overflow-x: hidden;
 }
 
 .line {
@@ -146,13 +144,20 @@
   display: flex;
   margin-top: 128px;
   gap: 40px;
+  padding: 32px;
 }
 
 .faq .desc {
   display: flex;
   flex-direction: column;
-  gap: 16px;
   flex-grow: 1;
+}
+.faq .stickyContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: sticky;
+  top: 120px;
 }
 .faq .desc .wpBtn {
   width: 300px;
