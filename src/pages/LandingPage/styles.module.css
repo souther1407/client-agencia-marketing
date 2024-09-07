@@ -103,7 +103,7 @@
 
 .banner__btns {
   display: flex;
-  height: 5rem;
+  height: 3.5rem;
   align-self: flex-start;
   width: 300px;
 }
