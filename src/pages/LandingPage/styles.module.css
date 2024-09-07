@@ -118,6 +118,7 @@
   padding-right: var(--width-unit);
   padding-top: 128px;
   padding-bottom: 128px;
+  gap: 64px;
   justify-content: space-between;
 }
 .contactBannerSection .stickyContainer {
@@ -125,9 +126,14 @@
   top: 200px;
 }
 .contactBannerSection .desc {
-  display: block;
-  gap: 24px;
-  width: 500px;
+  display: flex;
+}
+.contactBannerSection .stickyContainer {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  position: sticky;
+  top: 140px;
 }
 .contactBannerSection .details {
   display: flex;
