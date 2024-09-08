@@ -19,7 +19,7 @@
 
 .secondary.textLink > *:hover,
 .secondary.textLink.marked > * {
-  color: var(--gray) !important;
+  color: var(--black) !important;
   text-decoration: underline;
 }
 

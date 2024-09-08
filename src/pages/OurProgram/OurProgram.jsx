@@ -9,9 +9,14 @@ import iconBenefit from "@assets/iconoBeneficio.svg";
 import Dropdown from "../../components/molecules/Dropdown/Dropdown";
 import Input from "../../components/atoms/Input/Input";
 import TextArea from "../../components/atoms/Textarea/Textarea";
+import { useNavigate } from "react-router-dom";
+import { CONTACT_FORM } from "../../constants/routes";
+import Prefooter from "../../components/organisms/PreFooter/PreFooter";
+import Footer from "../../components/organisms/Footer/Footer";
+
 const OurProgram = () => {
   const [showModalVideo, setShowModalVideo] = useState(false);
-
+  const navigate = useNavigate();
   const handleHideModalVideo = (e) => {
     if (e.target.id == "bg-video-modal") {
       setShowModalVideo(false);
@@ -60,8 +65,10 @@ const OurProgram = () => {
       <main className={styles.main}>
         <section className={styles.header}>
           <div className={styles.title}>
-            <Text size="ty">UN PROGRAMA COMPLETO</Text>
-            <Text size="xxlg">
+            <Text size="ty" bold="regular">
+              UN PROGRAMA COMPLETO
+            </Text>
+            <Text size="xxxlg">
               Resuelve los problemas que limitan el crecimiento de tu práctica
             </Text>
           </div>
@@ -69,6 +76,7 @@ const OurProgram = () => {
             <IconTextButton
               textProps={{ size: "sm", bold: "font-light" }}
               colorVariant="black"
+              onClick={() => navigate(CONTACT_FORM)}
               size="100%"
             >
               Aplicar Ahora
@@ -78,7 +86,9 @@ const OurProgram = () => {
         <section className={styles.benefits}>
           <div className={styles.benefit}>
             <img className={styles.iconBenefit} src={iconBenefit} />
-            <Text size="lg">Marketing Dental</Text>
+            <Text size="lg" bold="regular">
+              Marketing Dental
+            </Text>
             <Text bold="font-light" size="sm">
               Nuevos pacientes asegurados cada mes.Nuevos pacientes asegurados
               cada mes.
@@ -86,14 +96,18 @@ const OurProgram = () => {
           </div>
           <div className={styles.benefit}>
             <img className={styles.iconBenefit} src={iconBenefit} />
-            <Text size="lg">Reuniones Semanales</Text>
+            <Text size="lg" bold="regular">
+              Reuniones Semanales
+            </Text>
             <Text bold="font-light" size="sm">
               Asesoramiento personal semanal por Zoom.
             </Text>
           </div>
           <div className={styles.benefit}>
             <img className={styles.iconBenefit} src={iconBenefit} />
-            <Text size="lg">Tratamientos Premium</Text>
+            <Text size="lg" bold="regular">
+              Tratamientos Premium
+            </Text>
             <Text bold="font-light" size="sm">
               Enfoque en pacientes de tratamientos de alto valor. Enfoque en
               pacientes de tratamientos de alto valor.
@@ -101,7 +115,9 @@ const OurProgram = () => {
           </div>
           <div className={styles.benefit}>
             <img className={styles.iconBenefit} src={iconBenefit} />
-            <Text size="lg">Desarrollo Web</Text>
+            <Text size="lg" bold="regular">
+              Desarrollo Web
+            </Text>
             <Text bold="font-light" size="sm">
               Nuevos pacientes asegurados cada mes.Nuevos pacientes asegurados
               cada mes.
@@ -109,7 +125,9 @@ const OurProgram = () => {
           </div>
           <div className={styles.benefit}>
             <img className={styles.iconBenefit} src={iconBenefit} />
-            <Text size="lg">Marketing Dental</Text>
+            <Text size="lg" bold="regular">
+              Marketing Dental
+            </Text>
             <Text bold="font-light" size="sm">
               Nuevos pacientes asegurados cada mes.Nuevos pacientes asegurados
               cada mes.
@@ -117,7 +135,9 @@ const OurProgram = () => {
           </div>
           <div className={styles.benefit}>
             <img className={styles.iconBenefit} src={iconBenefit} />
-            <Text size="lg">Marketing Dental</Text>
+            <Text size="lg" bold="regular">
+              Marketing Dental
+            </Text>
             <Text bold="font-light" size="sm">
               Nuevos pacientes asegurados cada mes.Nuevos pacientes asegurados
               cada mes.
@@ -129,10 +149,12 @@ const OurProgram = () => {
             <div className={styles.stickyContainer}>
               <div className={styles.line}>
                 <span className={styles.markLine} />
-                <Text size="ty">SOBRE EL PROGRAMA</Text>
+                <Text size="ty" bold="regular">
+                  SOBRE EL PROGRAMA
+                </Text>
               </div>
-              <Text type="subtitle">Preguntas Frecuentes</Text>
-              <Text bold="font-light">
+              <Text size="xxxlg">Preguntas Frecuentes</Text>
+              <Text bold="font-light" size="sm">
                 ¿Tienes alguna duda que no hayamos resuelto? Hablanos al
                 Whatsapp.
               </Text>
@@ -154,7 +176,7 @@ const OurProgram = () => {
                 title={`What makes your eCommerce development services stand out from
 other eCommerce development companies?`}
               >
-                <Text>
+                <Text size="sm">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Magnam quam, repudiandae explicabo tempora harum pariatur
                   dolorem eligendi esse sapiente molestias iusto amet libero
@@ -167,7 +189,7 @@ other eCommerce development companies?`}
                 title={`What makes your eCommerce development services stand out from
 other eCommerce development companies?`}
               >
-                <Text>
+                <Text size="sm">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Magnam quam, repudiandae explicabo tempora harum pariatur
                   dolorem eligendi esse sapiente molestias iusto amet libero
@@ -180,7 +202,7 @@ other eCommerce development companies?`}
                 title={`What makes your eCommerce development services stand out from
 other eCommerce development companies?`}
               >
-                <Text>
+                <Text size="sm">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Magnam quam, repudiandae explicabo tempora harum pariatur
                   dolorem eligendi esse sapiente molestias iusto amet libero
@@ -193,7 +215,7 @@ other eCommerce development companies?`}
                 title={`What makes your eCommerce development services stand out from
 other eCommerce development companies?`}
               >
-                <Text>
+                <Text size="sm">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Magnam quam, repudiandae explicabo tempora harum pariatur
                   dolorem eligendi esse sapiente molestias iusto amet libero
@@ -206,7 +228,7 @@ other eCommerce development companies?`}
                 title={`What makes your eCommerce development services stand out from
 other eCommerce development companies?`}
               >
-                <Text>
+                <Text size="sm">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Magnam quam, repudiandae explicabo tempora harum pariatur
                   dolorem eligendi esse sapiente molestias iusto amet libero
@@ -219,7 +241,7 @@ other eCommerce development companies?`}
                 title={`What makes your eCommerce development services stand out from
 other eCommerce development companies?`}
               >
-                <Text>
+                <Text size="sm">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Magnam quam, repudiandae explicabo tempora harum pariatur
                   dolorem eligendi esse sapiente molestias iusto amet libero
@@ -312,7 +334,7 @@ other eCommerce development companies?`}
                 onChange={() => {}}
               />
               <div className={styles.btnEnviar}>
-                <IconTextButton colorVariant="white">
+                <IconTextButton colorVariant="white" textProps={{ size: "sm" }}>
                   Quiero ser Contactado
                 </IconTextButton>
               </div>
@@ -320,6 +342,8 @@ other eCommerce development companies?`}
           </div>
         </section>
       </main>
+      <Prefooter />
+      <Footer />
     </div>
   );
 };

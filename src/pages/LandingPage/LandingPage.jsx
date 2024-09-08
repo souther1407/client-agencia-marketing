@@ -16,6 +16,7 @@ import {
   DOWNLOAD_EBOOK,
   LANDING_EBOOKS,
   CONTACT_FORM,
+  OUR_PROGRAM,
 } from "../../constants/routes";
 import ImgBanner from "./components/BannerImg/BannerImg";
 import PreFooter from "../../components/organisms/PreFooter/PreFooter";
@@ -52,8 +53,8 @@ const LandingPage = () => {
           <Icon size={"2.5rem"} type={"wp"} color="var(--primary)" />
         </div>
       </div>
+      <Nav />
       <header className={styles.header}>
-        <Nav />
         <section className={styles.banner}>
           <div className={styles.contents}>
             <div className={styles.banner__content}>
@@ -91,7 +92,7 @@ const LandingPage = () => {
           <div className={styles.stickyContainer}>
             <div className={styles.line}>
               <span className={`${styles.markLine}`} />
-              <Text size="ty" bold="font-light">
+              <Text size="ty" bold="regular">
                 NUESTRO PROGRAMA DE MARKETING
               </Text>
             </div>
@@ -116,7 +117,9 @@ const LandingPage = () => {
           <div className={styles.detail}>
             <div className={styles.line}>
               <img className={styles.iconBenefit} src={iconBenefit} />
-              <Text size="lg">Programa Exclusivo (Solo 10 cupos)</Text>
+              <Text size="lg" bold="regular">
+                Programa Exclusivo (Solo 10 cupos)
+              </Text>
             </div>
             <Text size="sm" bold="font-light">
               ¿Buscas una agencia que brinde resultados a largo plazo? Aprende
@@ -127,7 +130,9 @@ const LandingPage = () => {
           <div className={styles.detail}>
             <div className={styles.line}>
               <img className={styles.iconBenefit} src={iconBenefit} />
-              <Text size="lg">Factura con pacientes premium</Text>
+              <Text size="lg" bold="regular">
+                Factura con pacientes premium
+              </Text>
             </div>
             <Text size="sm" bold="font-light">
               ¿Buscas una agencia que brinde resultados a largo plazo? Aprende
@@ -138,7 +143,9 @@ const LandingPage = () => {
           <div className={styles.detail}>
             <div className={styles.line}>
               <img className={styles.iconBenefit} src={iconBenefit} />
-              <Text size="lg">Crece sin esfuerzo</Text>
+              <Text size="lg" bold="regular">
+                Crece sin esfuerzo
+              </Text>
             </div>
             <Text size="sm" bold="font-light">
               ¿Buscas una agencia que brinde resultados a largo plazo? Aprende
@@ -149,7 +156,9 @@ const LandingPage = () => {
           <div className={styles.detail}>
             <div className={styles.line}>
               <img className={styles.iconBenefit} src={iconBenefit} />
-              <Text size="lg">Reuniones Semanales</Text>
+              <Text size="lg" bold="regular">
+                Reuniones Semanales
+              </Text>
             </div>
             <Text size="sm" bold="font-light">
               ¿Buscas una agencia que brinde resultados a largo plazo? Aprende
@@ -160,7 +169,9 @@ const LandingPage = () => {
           <div className={styles.detail}>
             <div className={styles.line}>
               <img className={styles.iconBenefit} src={iconBenefit} />
-              <Text size="lg">Programa Exclusivo (Solo 10 cupos)</Text>
+              <Text size="lg" bold="regular">
+                Programa Exclusivo (Solo 10 cupos)
+              </Text>
             </div>
             <Text size="sm" bold="font-light">
               ¿Buscas una agencia que brinde resultados a largo plazo? Aprende
@@ -171,7 +182,9 @@ const LandingPage = () => {
           <div className={styles.detail}>
             <div className={styles.line}>
               <img className={styles.iconBenefit} src={iconBenefit} />
-              <Text size="lg">Programa Exclusivo (Solo 10 cupos)</Text>
+              <Text size="lg" bold="regular">
+                Programa Exclusivo (Solo 10 cupos)
+              </Text>
             </div>
             <Text size="sm" bold="font-light">
               ¿Buscas una agencia que brinde resultados a largo plazo? Aprende
@@ -186,7 +199,7 @@ const LandingPage = () => {
         <div className={styles.desc}>
           <div className={styles.line}>
             <span className={`${styles.markLine} ${styles.secondary}`} />
-            <Text size="ty" color="soft" bold="font-light">
+            <Text size="ty" color="soft" bold="regular">
               NUESTRA UBICACION
             </Text>
           </div>
@@ -201,6 +214,7 @@ const LandingPage = () => {
             <IconTextButton
               size="100%"
               textProps={{ size: "sm" }}
+              onClick={() => navigate(OUR_PROGRAM)}
               colorVariant="very-light-black"
             >
               Ver Programa
@@ -212,15 +226,19 @@ const LandingPage = () => {
         <div className={styles.desc}>
           <div className={styles.line}>
             <span className={styles.markLine} />
-            <Text size="ty">NUESTRO CONOCIMIENTO</Text>
+            <Text size="ty" bold="regular">
+              NUESTRO CONOCIMIENTO
+            </Text>
           </div>
           <Text type="smalltitle">Aprende sobre Marketing Dental</Text>
           <Text bold="font-light" size="sm">
             ¡Disfruta de nuestros ebooks gratuitos!
           </Text>
-          <TextLink variant="black">Ver todas las guias</TextLink>
+          <TextLink textProps={{ size: "sm" }} to={OUR_PROGRAM} variant="black">
+            Ver Programa {">"}
+          </TextLink>
         </div>
-        <div className={styles.card}>
+        <div className={styles.card} onClick={() => navigate(DOWNLOAD_EBOOK)}>
           <img className={styles.cardImg} src={EbookImg} />
           <Text size="ty">EBOOK</Text>
           <Text size="lg">10 Secretos de Marketing Dental</Text>
@@ -228,7 +246,7 @@ const LandingPage = () => {
           <TextLink
             marked
             textProps={{ size: "ty" }}
-            variant="black"
+            variant="secondary"
             to={DOWNLOAD_EBOOK}
           >
             Descargar la Guia

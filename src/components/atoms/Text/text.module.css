@@ -81,7 +81,9 @@
 .normal {
   font-weight: 500;
 }
-
+.regular {
+  font-weight: 400;
+}
 .font-light {
   font-weight: 300;
 }

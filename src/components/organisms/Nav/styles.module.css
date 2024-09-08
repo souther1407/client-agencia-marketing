@@ -13,8 +13,9 @@
 .nav {
   display: flex;
   align-items: center;
-  position: fixed;
-  width: 100vw;
+  position: sticky;
+  width: 100%;
+  top: 0;
   z-index: 1000;
   background-color: var(--black);
 }
@@ -46,7 +47,7 @@
   background-color: var(--black);
   padding: 16px;
   position: relative;
-  border-bottom: 1px solid var(--primary);
+  border-bottom: 1px solid var(--blue);
 }
 .closeBtn {
   position: absolute;
@@ -325,6 +326,10 @@ body:has(.resoursesDropDown.show) {
     padding: 0;
     height: auto;
     animation: none;
+  }
+
+  .resoursesDropDown {
+    display: none;
   }
 
   .elements {

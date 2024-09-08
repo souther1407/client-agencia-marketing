@@ -7,7 +7,9 @@ const Dropdown = ({ children, title }) => {
   return (
     <div className={styles.dropdown}>
       <div className={styles.header} onClick={() => setShow((prev) => !prev)}>
-        <Text bold="font-bold">{title}</Text>
+        <Text bold="font-bold" size="sm">
+          {title}
+        </Text>
         <span className={`${styles.icon} ${show && styles.inverted}`}>
           <Icon color="var(--black)" type={"arrowDown"} size={"2rem"} />
         </span>

@@ -5,6 +5,8 @@ const getSize = (size) => {
   switch (size) {
     case "big":
       return "2.334rem";
+    case "xxxlg":
+      return "1.77778rem";
     case "xxlg":
       return "1.5rem";
     case "xlg":
