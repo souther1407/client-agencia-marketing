@@ -42,12 +42,13 @@ const Text = ({
     type === "title" ||
     type == "bigtitle" ||
     type == "smalltitle" ||
-    type == "smallsubtitle"
+    type == "smallsubtitle" ||
+    type == "ultrabigtitle"
   ) {
     return (
       <h1
         className={`${styles[type]} ${styles[color]} ${styles[bold]} ${styles[fontFamily]}`}
-        style={{ textAlign, fontSize: getSize(size) ?? "" }}
+        style={{ textAlign }}
         {...otherProps}
       >
         {children}
@@ -57,7 +58,7 @@ const Text = ({
     return (
       <h3
         className={`${styles.subtitle} ${styles[color]} ${styles[bold]} ${styles[fontFamily]}`}
-        style={{ textAlign, fontSize: getSize(size) ?? "" }}
+        style={{ textAlign }}
         {...otherProps}
       >
         {children}
