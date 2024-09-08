@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import {
   DOWNLOAD_EBOOK,
   LANDING_EBOOKS,
@@ -13,7 +13,13 @@ import AdminDashboard from "./pages/AdminDashboard/AdminDashboard";
 import LandingPage from "./pages/LandingPage/LandingPage";
 import ContactForm from "./pages/ContactForm/ContactForm";
 import OurProgram from "./pages/OurProgram/OurProgram";
+import { useLayoutEffect } from "react";
+
 function App() {
+  const location = useLocation();
+  useLayoutEffect(() => {
+    document.documentElement.scrollTo({ top: 0, left: 0, behavior: "instant" });
+  }, [location.pathname]);
   return (
     <Routes>
       <Route path={LANDING_PAGE} element={<LandingPage />} />
