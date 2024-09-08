@@ -408,6 +408,7 @@
   .stickyContainer {
     position: static !important;
     width: 100% !important;
+    gap: 16px;
   }
   .contactBannerSection .details {
     width: 100%;
