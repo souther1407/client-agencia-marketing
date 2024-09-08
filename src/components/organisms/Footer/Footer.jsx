@@ -4,6 +4,11 @@ import Text from "../../atoms/Text/Text";
 import Link from "../../atoms/Link/Link";
 import Logo from "../../atoms/Logo/Logo";
 import Icon from "../../atoms/Icon/Icon";
+import {
+  CONTACT_FORM,
+  OUR_PROGRAM,
+  LANDING_EBOOKS,
+} from "../../../constants/routes";
 const Footer = () => {
   return (
     <footer className={styles.footer}>
@@ -19,12 +24,12 @@ const Footer = () => {
               <Text color="light" size="ty">
                 Recursos Gratis
               </Text>
-              <Link>
+              <Link to={OUR_PROGRAM}>
                 <Text color="soft" size="xty" bold="font-light">
                   Nuestro Programa
                 </Text>
               </Link>
-              <Link>
+              <Link to={CONTACT_FORM}>
                 <Text color="soft" size="xty" bold="font-light">
                   Aplica a el programa
                 </Text>
@@ -34,7 +39,7 @@ const Footer = () => {
               <Text color="light" size="ty">
                 Recursos Gratis
               </Text>
-              <Link>
+              <Link to={LANDING_EBOOKS}>
                 <Text color="soft" size="xty" bold="font-light">
                   Biblioteca de Marketing Dental
                 </Text>
