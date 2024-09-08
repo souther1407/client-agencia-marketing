@@ -80,6 +80,11 @@
   justify-content: space-between;
   gap: 64px;
 }
+.contents > :last-child {
+  position: relative;
+  bottom: 32px;
+  left: 32px;
+}
 .underLine {
   border-bottom: 4px solid var(--black);
 }
@@ -393,6 +398,18 @@
     flex-direction: column;
   }
   .videoDrawer {
+    width: 100%;
+  }
+  .contents > :last-child {
+    position: relative;
+    bottom: 0;
+    left: 0;
+  }
+  .stickyContainer {
+    position: static !important;
+    width: 100% !important;
+  }
+  .contactBannerSection .details {
     width: 100%;
   }
 }
