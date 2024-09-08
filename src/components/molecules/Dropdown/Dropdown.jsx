@@ -8,9 +8,14 @@ const Dropdown = ({ children, title }) => {
     <div className={styles.dropdown}>
       <div className={styles.header} onClick={() => setShow((prev) => !prev)}>
         <Text bold="font-bold">{title}</Text>
-        <Icon color="var(--black)" type={"arrowDown"} size={"2rem"} />
+        <span className={`${styles.icon} ${show && styles.inverted}`}>
+          <Icon color="var(--black)" type={"arrowDown"} size={"2rem"} />
+        </span>
       </div>
-      {show && <div className={styles.content}>{children}</div>}
+
+      <div className={`${styles.content} ${show && styles.show}`}>
+        {children}
+      </div>
     </div>
   );
 };
