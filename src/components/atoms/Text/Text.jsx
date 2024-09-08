@@ -3,6 +3,8 @@ import styles from "./text.module.css";
 
 const getSize = (size) => {
   switch (size) {
+    case "ultrabig":
+      return "3.33334rem";
     case "big":
       return "2.334rem";
     case "xxxlg":

@@ -145,7 +145,8 @@
   display: flex;
   margin-top: 128px;
   gap: 40px;
-  padding: 32px;
+  padding: 128px 32px;
+  background-color: var(--very-light-white);
 }
 
 .faq .desc {

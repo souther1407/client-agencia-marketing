@@ -59,7 +59,7 @@ const LandingPage = () => {
           <div className={styles.contents}>
             <div className={styles.banner__content}>
               <Text
-                type="bigtitle"
+                size="ultrabig"
                 bold="extra-bold"
                 fontFamily="font-secondary"
                 color="light"
