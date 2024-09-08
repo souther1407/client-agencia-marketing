@@ -219,9 +219,11 @@ const Nav = ({ hideTopMenu = false }) => {
       <Drawer show={showMobileMenu} onClose={() => setShowMobileMenu(false)}>
         <div className={styles.mobileMenu}>
           <div className={styles.dropdownMenu}>
-            <div className={styles.dropMenuBtn}>
-              <Text type="subtitle">¿Que somos?</Text>
-            </div>
+            <Link to={OUR_PROGRAM} target="_blank">
+              <div className={styles.dropMenuBtn}>
+                <Text type="subtitle">Nuestro Programa</Text>
+              </div>
+            </Link>
           </div>
           <div className={styles.dropdownMenu}>
             <div
