@@ -7,19 +7,23 @@ import Text from "../../components/atoms/Text/Text";
 import IconTextButton from "../../components/molecules/IconTextButton/IconTextButton";
 import EbookImg from "@assets/imgEbookPrueba.svg";
 import IconButton from "../../components/molecules/IconButton/IconButton";
-
 import Footer from "../../components/organisms/Footer/Footer";
 import Icon from "../../components/atoms/Icon/Icon";
 import TextLink from "../../components/molecules/TextLink/TextLink";
 import { useNavigate } from "react-router-dom";
 import {
   DOWNLOAD_EBOOK,
-  LANDING_EBOOKS,
   CONTACT_FORM,
   OUR_PROGRAM,
 } from "../../constants/routes";
 import ImgBanner from "./components/BannerImg/BannerImg";
 import PreFooter from "../../components/organisms/PreFooter/PreFooter";
+import Mark from "../../components/atoms/Mark/Mark";
+import FacebookAds from "@assets/Facebook Ads.svg";
+import Hubspot from "@assets/Hubspot.svg";
+import MailChimp from "@assets/MailChimp.svg";
+import Zapier from "@assets/Zapier.svg";
+import Medicos from "@assets/Medicos.svg";
 
 const LandingPage = () => {
   const navigate = useNavigate();
@@ -64,7 +68,7 @@ const LandingPage = () => {
                 fontFamily="font-secondary"
                 color="light"
               >
-                Tu Mejor Opción en Marketing Dental.
+                Tu Mejor Opción en <Mark color="mark">Marketing Dental.</Mark>
               </Text>
               <Text size="sm" bold="font-light" color="light">
                 Convertimos tu clínica en autoridad local
@@ -85,23 +89,23 @@ const LandingPage = () => {
 
             <ImgBanner />
           </div>
+          <div className={styles.partners}>
+            <img src={FacebookAds} />
+            <img src={Hubspot} />
+            <img src={MailChimp} />
+            <img src={Zapier} />
+          </div>
         </section>
       </header>
       <div className={styles.contactBannerSection}>
         <div cassName={styles.desc}>
           <div className={styles.stickyContainer}>
-            <div className={styles.line}>
-              <span className={`${styles.markLine}`} />
-              <Text size="ty" bold="regular">
-                NUESTRO PROGRAMA DE MARKETING
-              </Text>
-            </div>
-            <Text type="smalltitle" size="sm">
-              Transformamos tu clínica en 6 meses
+            <Text type="title" size="sm" color="black" bold="bold">
+              ¿Por qué los pacientes <Mark color="underline">no eligen</Mark> tu
+              clínica dental?
             </Text>
             <Text size="sm" bold="font-light">
-              Aprende más sobre nuestro programa de 6 meses y cómo puede cambiar
-              tu práctica dental.
+              Aprende más sobre nuestro programa de 6 meses
             </Text>
 
             <TextLink
@@ -109,88 +113,136 @@ const LandingPage = () => {
               variant="black"
               to={DOWNLOAD_EBOOK}
             >
-              Descargar la Guia {">"}
+              Quiero Saber Mas {">"}
             </TextLink>
+            <div className={styles.cardJoinUs}>
+              <img src={Medicos} />
+              <div className={styles.desc}>
+                <Text size="ty" color="black">
+                  Únete a los dentistas
+                </Text>
+                <Text size="ty" bold="font-light">
+                  que han decidido transformar sus consultorios
+                </Text>
+              </div>
+            </div>
           </div>
         </div>
         <div className={styles.details}>
           <div className={styles.detail}>
-            <div className={styles.line}>
-              <img className={styles.iconBenefit} src={iconBenefit} />
-              <Text size="lg" bold="regular">
-                Programa Exclusivo (Solo 10 cupos)
+            <Text type="subtitle" bold="bold" color="black">
+              La publicidad de tu consultorio es{" "}
+              <Mark color="submarked-blue">genérica</Mark>
+            </Text>
+            <hr />
+            <div className={styles.desc}>
+              <Text size="sm" color="black" bold="font-light">
+                <Mark color="soft">Solucion:</Mark> ¿Buscas una agencia que
+                brinde resultados a largo plazo? Aprende más sobre nuestro
+                programa de 180 días y cómo puede cambiar tu práctica dental.
+                <Mark color="submarked-yellow">
+                  ¿Buscas una agencia que brinde resultados a largo plazo?
+                </Mark>
+              </Text>
+              <Text size="sm" color="black" bold="font-light">
+                <Mark color="submarked-blue">
+                  ¿Buscas una agencia que brinde resultados a largo plazo?
+                </Mark>{" "}
+                Aprende más sobre nuestro programa de 180 días.
               </Text>
             </div>
-            <Text size="sm" bold="font-light">
-              ¿Buscas una agencia que brinde resultados a largo plazo? Aprende
-              más sobre nuestro programa de 180 días y cómo puede cambiar tu
-              práctica dental.
-            </Text>
           </div>
           <div className={styles.detail}>
-            <div className={styles.line}>
-              <img className={styles.iconBenefit} src={iconBenefit} />
-              <Text size="lg" bold="regular">
-                Factura con pacientes premium
+            <Text type="subtitle" bold="bold" color="black">
+              La publicidad de tu consultorio es{" "}
+              <Mark color="submarked-blue">genérica</Mark>
+            </Text>
+            <hr />
+            <div className={styles.desc}>
+              <Text size="sm" color="black" bold="font-light">
+                <Mark color="soft">Solucion:</Mark> ¿Buscas una agencia que
+                brinde resultados a largo plazo? Aprende más sobre nuestro
+                programa de 180 días y cómo puede cambiar tu práctica dental.
+                <Mark color="submarked-yellow">
+                  ¿Buscas una agencia que brinde resultados a largo plazo?
+                </Mark>
+              </Text>
+              <Text size="sm" color="black" bold="font-light">
+                <Mark color="submarked-blue">
+                  ¿Buscas una agencia que brinde resultados a largo plazo?
+                </Mark>{" "}
+                Aprende más sobre nuestro programa de 180 días.
               </Text>
             </div>
-            <Text size="sm" bold="font-light">
-              ¿Buscas una agencia que brinde resultados a largo plazo? Aprende
-              más sobre nuestro programa de 180 días y cómo puede cambiar tu
-              práctica dental.
-            </Text>
           </div>
           <div className={styles.detail}>
-            <div className={styles.line}>
-              <img className={styles.iconBenefit} src={iconBenefit} />
-              <Text size="lg" bold="regular">
-                Crece sin esfuerzo
+            <Text type="subtitle" bold="bold" color="black">
+              La publicidad de tu consultorio es{" "}
+              <Mark color="submarked-blue">genérica</Mark>
+            </Text>
+            <hr />
+            <div className={styles.desc}>
+              <Text size="sm" color="black" bold="font-light">
+                <Mark color="soft">Solucion:</Mark> ¿Buscas una agencia que
+                brinde resultados a largo plazo? Aprende más sobre nuestro
+                programa de 180 días y cómo puede cambiar tu práctica dental.
+                <Mark color="submarked-yellow">
+                  ¿Buscas una agencia que brinde resultados a largo plazo?
+                </Mark>
+              </Text>
+              <Text size="sm" color="black" bold="font-light">
+                <Mark color="submarked-blue">
+                  ¿Buscas una agencia que brinde resultados a largo plazo?
+                </Mark>{" "}
+                Aprende más sobre nuestro programa de 180 días.
               </Text>
             </div>
-            <Text size="sm" bold="font-light">
-              ¿Buscas una agencia que brinde resultados a largo plazo? Aprende
-              más sobre nuestro programa de 180 días y cómo puede cambiar tu
-              práctica dental.
-            </Text>
           </div>
           <div className={styles.detail}>
-            <div className={styles.line}>
-              <img className={styles.iconBenefit} src={iconBenefit} />
-              <Text size="lg" bold="regular">
-                Reuniones Semanales
+            <Text type="subtitle" bold="bold" color="black">
+              La publicidad de tu consultorio es{" "}
+              <Mark color="submarked-blue">genérica</Mark>
+            </Text>
+            <hr />
+            <div className={styles.desc}>
+              <Text size="sm" color="black" bold="font-light">
+                <Mark color="soft">Solucion:</Mark> ¿Buscas una agencia que
+                brinde resultados a largo plazo? Aprende más sobre nuestro
+                programa de 180 días y cómo puede cambiar tu práctica dental.
+                <Mark color="submarked-yellow">
+                  ¿Buscas una agencia que brinde resultados a largo plazo?
+                </Mark>
+              </Text>
+              <Text size="sm" color="black" bold="font-light">
+                <Mark color="submarked-blue">
+                  ¿Buscas una agencia que brinde resultados a largo plazo?
+                </Mark>{" "}
+                Aprende más sobre nuestro programa de 180 días.
               </Text>
             </div>
-            <Text size="sm" bold="font-light">
-              ¿Buscas una agencia que brinde resultados a largo plazo? Aprende
-              más sobre nuestro programa de 180 días y cómo puede cambiar tu
-              práctica dental.
-            </Text>
           </div>
           <div className={styles.detail}>
-            <div className={styles.line}>
-              <img className={styles.iconBenefit} src={iconBenefit} />
-              <Text size="lg" bold="regular">
-                Programa Exclusivo (Solo 10 cupos)
+            <Text type="subtitle" bold="bold" color="black">
+              La publicidad de tu consultorio es{" "}
+              <Mark color="submarked-blue">genérica</Mark>
+            </Text>
+            <hr />
+            <div className={styles.desc}>
+              <Text size="sm" color="black" bold="font-light">
+                <Mark color="soft">Solucion:</Mark> ¿Buscas una agencia que
+                brinde resultados a largo plazo? Aprende más sobre nuestro
+                programa de 180 días y cómo puede cambiar tu práctica dental.
+                <Mark color="submarked-yellow">
+                  ¿Buscas una agencia que brinde resultados a largo plazo?
+                </Mark>
+              </Text>
+              <Text size="sm" color="black" bold="font-light">
+                <Mark color="submarked-blue">
+                  ¿Buscas una agencia que brinde resultados a largo plazo?
+                </Mark>{" "}
+                Aprende más sobre nuestro programa de 180 días.
               </Text>
             </div>
-            <Text size="sm" bold="font-light">
-              ¿Buscas una agencia que brinde resultados a largo plazo? Aprende
-              más sobre nuestro programa de 180 días y cómo puede cambiar tu
-              práctica dental.
-            </Text>
-          </div>
-          <div className={styles.detail}>
-            <div className={styles.line}>
-              <img className={styles.iconBenefit} src={iconBenefit} />
-              <Text size="lg" bold="regular">
-                Programa Exclusivo (Solo 10 cupos)
-              </Text>
-            </div>
-            <Text size="sm" bold="font-light">
-              ¿Buscas una agencia que brinde resultados a largo plazo? Aprende
-              más sobre nuestro programa de 180 días y cómo puede cambiar tu
-              práctica dental.
-            </Text>
           </div>
         </div>
       </div>

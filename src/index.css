@@ -38,7 +38,8 @@
   --white: #ecf1f4;
   --very-light-white: #fafafa;
   --light-white: #f1f6fa;
-  --dark-white: #afbec6;
+  --dark-white: #d7e0ea;
+  --very-dark-white: #bcccdc;
   --white-transparent: #d9d9d9;
   --yellow-cream: #f6f4eb;
   --black: #1c2c3b;
@@ -74,7 +75,7 @@
   --background-dark: rgb(21, 26, 43);
   --background-container: var(--white-transparent);
   --container-border: var(--light-gray);
-  --width-unit: calc(100vw / 5.625);
+  --width-unit: calc(100vw / 5.6);
   --linea-amarilla: calc(100vw / 13);
   --linea-verde: calc(100vw / 24.5);
   --linea-rosa: calc(100vw / 6.67);

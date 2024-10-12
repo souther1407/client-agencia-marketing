@@ -57,7 +57,7 @@
 }
 
 .black.textLink.marked > * {
-  color: var(--black) !important;
+  color: var(--dark-black) !important;
   text-decoration: underline;
 }
 
@@ -66,9 +66,32 @@
   padding-top: 8px;
   padding-bottom: 8px;
   border-radius: 20px;
+  color: var(--dark-black) !important;
 }
 .black.textLink > *:hover {
   padding-left: 16px;
   padding-right: 16px;
   background-color: var(--gray-light);
+}
+
+/* rounded */
+
+.rounded.textLink {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.rounded.textLink.marked > * {
+  background-color: var(--very-light-black);
+}
+.rounded.textLink > * {
+  transition: all 0.2s ease-in;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 20px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.rounded.textLink > *:hover {
+  background-color: var(--very-light-black);
 }

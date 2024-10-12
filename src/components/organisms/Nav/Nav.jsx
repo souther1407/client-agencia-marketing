@@ -85,24 +85,13 @@ const Nav = ({ hideTopMenu = false }) => {
                   <img src={imgEbookPrueba} className={styles.cardImg} />
                 </div>
                 <Text size="ty" bold="font-light">
-                  Ebook
+                  2024
                 </Text>
-                <Text size="sm">Marketing Dental: La Guia Definitiva</Text>
-                <Text size="ty" bold="font-light">
-                  23 Paginas
+                <Text size="ty" bold="bold">
+                  Marketing Dental: La Guia Definitiva
                 </Text>
-              </div>
-              <div className={styles.separator}></div>
-              <div className={styles.card}>
-                <div className={styles.cardImgContainer}>
-                  <img src={imgEbookPrueba} className={styles.cardImg} />
-                </div>
                 <Text size="ty" bold="font-light">
-                  Ebook
-                </Text>
-                <Text size="sm">Marketing Dental: La Guia Definitiva</Text>
-                <Text size="ty" bold="font-light">
-                  23 Paginas
+                  Descargar Gratis
                 </Text>
               </div>
               <div className={styles.separator}></div>
@@ -111,11 +100,28 @@ const Nav = ({ hideTopMenu = false }) => {
                   <img src={imgEbookPrueba} className={styles.cardImg} />
                 </div>
                 <Text size="ty" bold="font-light">
-                  Ebook
+                  2024
                 </Text>
-                <Text size="sm">Marketing Dental: La Guia Definitiva</Text>
+                <Text size="ty" bold="bold">
+                  Marketing Dental: La Guia Definitiva
+                </Text>
                 <Text size="ty" bold="font-light">
-                  23 Paginas
+                  Descargar Gratis
+                </Text>
+              </div>
+              <div className={styles.separator}></div>
+              <div className={styles.card}>
+                <div className={styles.cardImgContainer}>
+                  <img src={imgEbookPrueba} className={styles.cardImg} />
+                </div>
+                <Text size="ty" bold="font-light">
+                  2024
+                </Text>
+                <Text size="ty" bold="bold">
+                  Marketing Dental: La Guia Definitiva
+                </Text>
+                <Text size="ty" bold="font-light">
+                  Descargar Gratis
                 </Text>
               </div>
             </div>
@@ -130,9 +136,9 @@ const Nav = ({ hideTopMenu = false }) => {
         <div
           className={`${styles.contactBanner} ${showContact && styles.show}`}
         >
-          <Text>Forma de contacto</Text>
-          <Text>info@inkadentist.com</Text>
-          <Text>657302731</Text>
+          <Text color="black">Forma de contacto</Text>
+          <Text color="black">info@inkadentist.com</Text>
+          <Text color="black">657302731</Text>
         </div>
       </div>
       <div className={styles.elements}>
@@ -175,12 +181,14 @@ const Nav = ({ hideTopMenu = false }) => {
             >
               <TextLink
                 marked={showResources}
+                variant="rounded"
                 textProps={{ color: "soft", bold: "font-light", size: "ty" }}
               >
                 Recursos gratis
               </TextLink>
             </div>
             <TextLink
+              variant="rounded"
               to={OUR_PROGRAM}
               textProps={{ color: "soft", bold: "font-light", size: "ty" }}
             >
@@ -188,6 +196,7 @@ const Nav = ({ hideTopMenu = false }) => {
             </TextLink>
             <div onMouseEnter={handleShowContact} onClick={handleShowContact}>
               <TextLink
+                variant="rounded"
                 marked={showContact}
                 textProps={{ color: "soft", bold: "font-light", size: "ty" }}
               >
