@@ -18,8 +18,13 @@
 
 @font-face {
   font-family: "lexend";
-  src: url("./assets/fonts/Lexend-SemiBold.ttf");
+  src: url("./assets/fonts/Lexend-Bold.ttf");
   font-weight: bold;
+}
+@font-face {
+  font-family: "lexend";
+  src: url("./assets/fonts/Lexend-SemiBold.ttf");
+  font-weight: 600;
 }
 @font-face {
   font-family: "lexend";

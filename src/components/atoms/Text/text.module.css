@@ -95,7 +95,9 @@
 .font-light {
   font-weight: 300;
 }
-
+.semibold {
+  font-weight: 600;
+}
 .bold {
   font-weight: bold;
 }

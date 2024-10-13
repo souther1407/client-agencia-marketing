@@ -32,3 +32,23 @@
   text-decoration: underline;
   color: var(--dark-black);
 }
+
+.medium {
+  font-weight: 500;
+}
+.regular {
+  font-weight: 400;
+}
+.font-light {
+  font-weight: 300;
+}
+.semibold {
+  font-weight: 600;
+}
+.bold {
+  font-weight: bold;
+}
+
+.extra-bold {
+  font-weight: bolder;
+}
