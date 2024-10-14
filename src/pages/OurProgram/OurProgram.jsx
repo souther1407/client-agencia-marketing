@@ -13,7 +13,8 @@ import { useNavigate } from "react-router-dom";
 import { CONTACT_FORM } from "../../constants/routes";
 import Prefooter from "../../components/organisms/PreFooter/PreFooter";
 import Footer from "../../components/organisms/Footer/Footer";
-
+import Mark from "../../components/atoms/Mark/Mark";
+import Nene from "@assets/NeneArio.svg";
 const OurProgram = () => {
   const [showModalVideo, setShowModalVideo] = useState(false);
   const navigate = useNavigate();
@@ -28,11 +29,15 @@ const OurProgram = () => {
       <Nav />
       <header className={styles.banner}>
         <div className={styles.elements}>
-          <Text type="title" color="light">
-            ¿Cómo funciona?
+          <Text type="bigtitle" color="light">
+            ¿Cuánto dinero estás dejando sobre la mesa?
           </Text>
           <Text textAlign="center" bold="font-light" color="light">
-            Haz crecer tu práctica sin esfuerzo con nuestro método comprobado
+            ¿Tiene una práctica dental que factura más de $10,000 euros al mes?
+            Registrate <br /> al programa de marketing de HackDental y&nbsp;
+            <Mark color="primary">
+              desbloquea el crecimiento de tu clínica dental.
+            </Mark>
           </Text>
           <div className={styles.videoDrawer}>
             <img className={styles.videoImg} src={imgVideo} />
@@ -63,194 +68,32 @@ const OurProgram = () => {
         </div>
       </header>
       <main className={styles.main}>
-        <section className={styles.header}>
-          <div className={styles.title}>
-            <Text size="ty" bold="regular">
-              UN PROGRAMA COMPLETO
-            </Text>
-            <Text size="xxxlg">
+        <div className={styles.ventaHumo}>
+          <Text fontFamily="font-light">
+            Puedes ponerte en contacto con nosotros por correo electrónico a
+            jaka@conversion.design y te responderemos en un plazo de 24 horas.
+          </Text>
+
+          <Text>
+            No olvides incluir algunas palabras sobre ti y tu negocio.
+          </Text>
+          <div className={styles.subsection}>
+            <Text type="bigtitle" color="black">
               Resuelve los problemas que limitan el crecimiento de tu práctica
             </Text>
+            <Text>
+              Puedes ponerte en contacto con nosotros por correo electrónico a
+              jaka@ .design y te responderemos en un plazo de 24 horas.
+            </Text>
+            <Text>
+              No olvides incluir algunas palabras sobre ti y tu negocio. Puedes
+              ponerte en contacto con nosotros por correo electrónico a jaka@
+              .design y te responderemos en un plazo de 24 horas.
+            </Text>
+            <img src={Nene} className={styles.neneArio} />
           </div>
-          <div className={styles.applyBtn}>
-            <IconTextButton
-              textProps={{ size: "sm", bold: "font-light" }}
-              colorVariant="black"
-              onClick={() => navigate(CONTACT_FORM)}
-              size="100%"
-            >
-              Aplicar Ahora
-            </IconTextButton>
-          </div>
-        </section>
-        <section className={styles.benefits}>
-          <div className={styles.benefit}>
-            <img className={styles.iconBenefit} src={iconBenefit} />
-            <Text size="lg" bold="regular">
-              Marketing Dental
-            </Text>
-            <Text bold="font-light" size="sm">
-              Nuevos pacientes asegurados cada mes.Nuevos pacientes asegurados
-              cada mes.
-            </Text>
-          </div>
-          <div className={styles.benefit}>
-            <img className={styles.iconBenefit} src={iconBenefit} />
-            <Text size="lg" bold="regular">
-              Reuniones Semanales
-            </Text>
-            <Text bold="font-light" size="sm">
-              Asesoramiento personal semanal por Zoom.
-            </Text>
-          </div>
-          <div className={styles.benefit}>
-            <img className={styles.iconBenefit} src={iconBenefit} />
-            <Text size="lg" bold="regular">
-              Tratamientos Premium
-            </Text>
-            <Text bold="font-light" size="sm">
-              Enfoque en pacientes de tratamientos de alto valor. Enfoque en
-              pacientes de tratamientos de alto valor.
-            </Text>
-          </div>
-          <div className={styles.benefit}>
-            <img className={styles.iconBenefit} src={iconBenefit} />
-            <Text size="lg" bold="regular">
-              Desarrollo Web
-            </Text>
-            <Text bold="font-light" size="sm">
-              Nuevos pacientes asegurados cada mes.Nuevos pacientes asegurados
-              cada mes.
-            </Text>
-          </div>
-          <div className={styles.benefit}>
-            <img className={styles.iconBenefit} src={iconBenefit} />
-            <Text size="lg" bold="regular">
-              Marketing Dental
-            </Text>
-            <Text bold="font-light" size="sm">
-              Nuevos pacientes asegurados cada mes.Nuevos pacientes asegurados
-              cada mes.
-            </Text>
-          </div>
-          <div className={styles.benefit}>
-            <img className={styles.iconBenefit} src={iconBenefit} />
-            <Text size="lg" bold="regular">
-              Marketing Dental
-            </Text>
-            <Text bold="font-light" size="sm">
-              Nuevos pacientes asegurados cada mes.Nuevos pacientes asegurados
-              cada mes.
-            </Text>
-          </div>
-        </section>
-        <section className={styles.faq}>
-          <div className={styles.desc}>
-            <div className={styles.stickyContainer}>
-              <div className={styles.line}>
-                <span className={styles.markLine} />
-                <Text size="ty" bold="regular">
-                  SOBRE EL PROGRAMA
-                </Text>
-              </div>
-              <Text size="xxxlg">Preguntas Frecuentes</Text>
-              <Text bold="font-light" size="sm">
-                ¿Tienes alguna duda que no hayamos resuelto? Hablanos al
-                Whatsapp.
-              </Text>
-              <div className={styles.wpBtn}>
-                <IconTextButton
-                  icon={"wp"}
-                  colorVariant="black"
-                  variant="bordered"
-                  size="100%"
-                >
-                  Whatsapp
-                </IconTextButton>
-              </div>
-            </div>
-          </div>
-          <div className={styles.dropdowns}>
-            <div className={styles.dropdown}>
-              <Dropdown
-                title={`What makes your eCommerce development services stand out from
-other eCommerce development companies?`}
-              >
-                <Text size="sm">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Magnam quam, repudiandae explicabo tempora harum pariatur
-                  dolorem eligendi esse sapiente molestias iusto amet libero
-                  magni officia nobis quaerat deleniti. Obcaecati, veritatis!
-                </Text>
-              </Dropdown>
-            </div>
-            <div className={styles.dropdown}>
-              <Dropdown
-                title={`What makes your eCommerce development services stand out from
-other eCommerce development companies?`}
-              >
-                <Text size="sm">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Magnam quam, repudiandae explicabo tempora harum pariatur
-                  dolorem eligendi esse sapiente molestias iusto amet libero
-                  magni officia nobis quaerat deleniti. Obcaecati, veritatis!
-                </Text>
-              </Dropdown>
-            </div>
-            <div className={styles.dropdown}>
-              <Dropdown
-                title={`What makes your eCommerce development services stand out from
-other eCommerce development companies?`}
-              >
-                <Text size="sm">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Magnam quam, repudiandae explicabo tempora harum pariatur
-                  dolorem eligendi esse sapiente molestias iusto amet libero
-                  magni officia nobis quaerat deleniti. Obcaecati, veritatis!
-                </Text>
-              </Dropdown>
-            </div>
-            <div className={styles.dropdown}>
-              <Dropdown
-                title={`What makes your eCommerce development services stand out from
-other eCommerce development companies?`}
-              >
-                <Text size="sm">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Magnam quam, repudiandae explicabo tempora harum pariatur
-                  dolorem eligendi esse sapiente molestias iusto amet libero
-                  magni officia nobis quaerat deleniti. Obcaecati, veritatis!
-                </Text>
-              </Dropdown>
-            </div>
-            <div className={styles.dropdown}>
-              <Dropdown
-                title={`What makes your eCommerce development services stand out from
-other eCommerce development companies?`}
-              >
-                <Text size="sm">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Magnam quam, repudiandae explicabo tempora harum pariatur
-                  dolorem eligendi esse sapiente molestias iusto amet libero
-                  magni officia nobis quaerat deleniti. Obcaecati, veritatis!
-                </Text>
-              </Dropdown>
-            </div>
-            <div className={styles.dropdown}>
-              <Dropdown
-                title={`What makes your eCommerce development services stand out from
-other eCommerce development companies?`}
-              >
-                <Text size="sm">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Magnam quam, repudiandae explicabo tempora harum pariatur
-                  dolorem eligendi esse sapiente molestias iusto amet libero
-                  magni officia nobis quaerat deleniti. Obcaecati, veritatis!
-                </Text>
-              </Dropdown>
-            </div>
-          </div>
-        </section>
+        </div>
+
         <section className={styles.contact}>
           <div className={styles.desc}>
             <div className={styles.line}>

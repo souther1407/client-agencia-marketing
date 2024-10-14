@@ -44,10 +44,14 @@
   width: 100%;
   gap: 16px;
   justify-content: center;
-  background-color: var(--black);
+  background-color: #3d5a98;
   padding: 16px;
   position: relative;
-  border-bottom: 1px solid var(--blue);
+  border-bottom: 1px solid var(--primary-transparent);
+}
+.country {
+  position: relative;
+  top: 4px;
 }
 .closeBtn {
   position: absolute;

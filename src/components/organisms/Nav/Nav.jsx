@@ -17,6 +17,7 @@ import {
 import { useNavigate } from "react-router-dom";
 import IconTextButton from "../../molecules/IconTextButton/IconTextButton";
 import imgEbookPrueba from "@assets/imgEbookPrueba.svg";
+import { ES } from "country-flag-icons/react/3x2";
 
 const Nav = ({ hideTopMenu = false }) => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -144,24 +145,13 @@ const Nav = ({ hideTopMenu = false }) => {
       <div className={styles.elements}>
         {hideTopMenu || isTopMenuHidden || (
           <div className={styles.topMenu}>
-            <div className={styles.closeBtn}>
-              <IconButton
-                icon="close"
-                variant="terciary"
-                size="1.2rem"
-                onClick={() => setisTopMenuHidden(true)}
-              />
-            </div>
-            <Text size="xty" color="light" bold="font-light">
-              ¿Quieres Llenar tu Clínica de Pacientes? Aprende Gratis con
-              nuestra biblioteca de ebooks?
+            <Text size="sm" color="light" bold="font-light">
+              ¡Solo Valido para Octubre! Aceptamos 10 nuevas clínicas en España{" "}
+              &nbsp;
+              <span className={styles.country}>
+                <ES width={"1.4rem"} />
+              </span>
             </Text>
-            <TextLink
-              to={LANDING_EBOOKS}
-              textProps={{ size: "xty", color: "light", bold: "font-light" }}
-            >
-              Ir ahora <Icon size={"0.8rem"} type={"arrowSquare"} />
-            </TextLink>
           </div>
         )}
         <div className={styles.bottomMenu}>
