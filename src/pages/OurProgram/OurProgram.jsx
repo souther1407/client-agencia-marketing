@@ -39,6 +39,7 @@ const OurProgram = () => {
               desbloquea el crecimiento de tu clínica dental.
             </Mark>
           </Text>
+
           <div className={styles.videoDrawer}>
             <img className={styles.videoImg} src={imgVideo} />
             <button
@@ -69,17 +70,23 @@ const OurProgram = () => {
       </header>
       <main className={styles.main}>
         <div className={styles.ventaHumo}>
-          <Text fontFamily="font-light">
-            Puedes ponerte en contacto con nosotros por correo electrónico a
-            jaka@conversion.design y te responderemos en un plazo de 24 horas.
-          </Text>
+          <div className={styles.header}>
+            <Text fontFamily="font-light">
+              Puedes ponerte en contacto con nosotros por correo electrónico a
+              jaka@conversion.design y te responderemos en un plazo de 24 horas.
+            </Text>
 
-          <Text>
-            No olvides incluir algunas palabras sobre ti y tu negocio.
-          </Text>
+            <Text>
+              No olvides incluir algunas palabras sobre ti y tu negocio.
+            </Text>
+          </div>
           <div className={styles.subsection}>
-            <Text type="bigtitle" color="black">
-              Resuelve los problemas que limitan el crecimiento de tu práctica
+            <Text type="bigtitle" color="black" textAlign="center" bold="bold">
+              Resuelve los{" "}
+              <Mark color="submarked-blue" bold="bold">
+                problemas que limitan
+              </Mark>{" "}
+              el crecimiento de tu práctica
             </Text>
             <Text>
               Puedes ponerte en contacto con nosotros por correo electrónico a
@@ -93,7 +100,34 @@ const OurProgram = () => {
             <img src={Nene} className={styles.neneArio} />
           </div>
         </div>
-
+        <div className={styles.sectionHorrible}>
+          <div className={styles.subsection}>
+            <Text type="bigtitle" color="light" textAlign="center" bold="bold">
+              Los{" "}
+              <Mark bold="bold" color="error">
+                3 errores más comunes
+              </Mark>{" "}
+              que los consultorios dentales cometen.
+            </Text>
+            <Text color="light" bold="font-light">
+              Puedes ponerte en contacto con nosotros por correo electrónico a
+              jaka@ .design y te responderemos en un plazo de 24 horas.
+            </Text>
+            <Text color="light" bold="font-light">
+              No olvides incluir algunas palabras sobre ti y tu negocio. Puedes
+              ponerte en contacto con nosotros por correo electrónico a{" "}
+              <Mark bold="bold" color="marked">
+                jaka@ .design
+              </Mark>{" "}
+              y te responderemos en un plazo de 24 horas.
+            </Text>
+            <Text color="light" bold="font-light">
+              No olvides incluir algunas palabras sobre ti y tu negocio. Puedes
+              ponerte en contacto con nosotros por correo electrónico a jaka@
+              .design y te responderemos en un plazo de 24 horas.
+            </Text>
+          </div>
+        </div>
         <section className={styles.contact}>
           <div className={styles.desc}>
             <div className={styles.line}>

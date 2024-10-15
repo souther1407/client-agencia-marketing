@@ -33,6 +33,14 @@
   color: var(--dark-black);
 }
 
+.mark.error {
+  text-decoration: underline;
+  color: red;
+}
+.mark.marked {
+  color: var(--white);
+  text-decoration: underline;
+}
 .medium {
   font-weight: 500;
 }

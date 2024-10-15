@@ -115,12 +115,43 @@
 .ventaHumo {
   display: flex;
   flex-direction: column;
-
-  width: 80%;
+  width: 85%;
   align-self: center;
 }
 .ventaHumo > :first-child {
   margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+
+  width: 80%;
+  align-self: center;
+}
+.ventaHumo > .subsection {
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+}
+
+.sectionHorrible {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--black-horrible);
+}
+.sectionHorrible > .subsection {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  gap: 32px;
+  align-items: center;
+}
+.ventaHumo > .subsection > *:not(:first-child) {
+  width: 80%;
+}
+.sectionHorrible > .subsection > *:not(:first-child) {
+  width: 80%;
 }
 .neneArio {
   width: 100%;
