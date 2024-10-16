@@ -126,6 +126,69 @@ const OurProgram = () => {
               ponerte en contacto con nosotros por correo electrónico a jaka@
               .design y te responderemos en un plazo de 24 horas.
             </Text>
+            <hr />
+            <Text color="light" bold="bold" type="subtitle">
+              Aquí es donde la mayoría de consultorios se equivocan:
+            </Text>
+            <div className={styles.errors}>
+              <div className={styles.error}>
+                <Icon size={"2rem"} color="red" type={"closeCircle"} />
+                <Text color="light" bold="font-light">
+                  Puedes ponerte en contacto con nosotros por correo electrónico
+                  a <Mark color="marked">jaka@ .design</Mark> y te responderemos
+                  en un plazo de 24 horas.
+                </Text>
+              </div>
+              <div className={styles.error}>
+                <Icon size={"2rem"} color="red" type={"closeCircle"} />
+                <Text color="light" bold="font-light">
+                  Puedes ponerte en contacto con nosotros por correo electrónico
+                  a <Mark color="marked">jaka@ .design</Mark> y te responderemos
+                  en un plazo de 24 horas.
+                </Text>
+              </div>
+              <div className={styles.error}>
+                <Icon size={"2rem"} color="red" type={"closeCircle"} />
+                <Text color="light" bold="font-light">
+                  Puedes ponerte en contacto con nosotros por correo electrónico
+                  a <Mark color="marked">jaka@ .design</Mark> y te responderemos
+                  en un plazo de 24 horas.
+                </Text>
+              </div>
+              <div className={styles.error}>
+                <Icon size={"2rem"} color="red" type={"closeCircle"} />
+                <Text color="light" bold="font-light">
+                  Puedes ponerte en contacto con nosotros por correo electrónico
+                  a <Mark color="marked">jaka@ .design</Mark> y te responderemos
+                  en un plazo de 24 horas.
+                </Text>
+              </div>
+            </div>
+          </div>
+          <div className={styles.cardMeet}>
+            <Text type="title" color="black" textAlign="center" bold="bold">
+              ¿Abrirías{" "}
+              <Mark color="submarked-blue" bold="bold">
+                más consultorios
+              </Mark>{" "}
+              si supieras cómo atraer más pacientes?
+            </Text>
+            <div className={styles.cardMeetDetail}>
+              <Text bold="font-light">
+                Puedes ponerte en contacto con nosotros por correo electrónico a
+                jaka@ .design y te responderemos en un plazo de 24 horas.
+              </Text>
+              <Text bold="font-light">
+                No olvides incluir algunas palabras sobre ti y tu negocio.
+                Puedes ponerte en contacto con nosotros por correo electrónico a
+                jaka@ .design y te responderemos en un plazo de 24 horas.
+              </Text>
+              <div className={styles.btnMeet}>
+                <IconTextButton size="100%">
+                  Solicita una reunión
+                </IconTextButton>
+              </div>
+            </div>
           </div>
         </div>
         <section className={styles.contact}>

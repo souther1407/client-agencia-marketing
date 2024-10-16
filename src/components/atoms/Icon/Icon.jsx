@@ -7,7 +7,7 @@ import {
   FaCheck,
   FaBars,
 } from "react-icons/fa";
-import { IoDiamondOutline } from "react-icons/io5";
+import { IoDiamondOutline, IoCloseCircle } from "react-icons/io5";
 import { MdArrowForwardIos } from "react-icons/md";
 import styles from "./icon.module.css";
 import { FaLinkedin } from "react-icons/fa6";
@@ -40,6 +40,7 @@ const Icon = ({ type, size, color = "inherit" }) => {
     arrowSquare: <PiArrowSquareOutBold {...props} />,
     arrowDown: <IoIosArrowDown {...props} />,
     play: <FaPlay {...props} />,
+    closeCircle: <IoCloseCircle {...props} />,
   };
   return <i>{icons[type]}</i>;
 };
