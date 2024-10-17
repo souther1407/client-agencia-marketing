@@ -33,6 +33,11 @@
   color: var(--dark-black);
 }
 
+.mark.mark.underline-blue {
+  text-decoration: underline;
+  color: var(--very-light-black);
+}
+
 .mark.error {
   text-decoration: underline;
   color: red;

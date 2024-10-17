@@ -191,6 +191,63 @@ const OurProgram = () => {
             </div>
           </div>
         </div>
+        <div className={styles.comoFunciona}>
+          <Text type="title" color="black" bold="bold" textAlign="center">
+            ¿Cuánto más vas a{" "}
+            <Mark color="submarked-blue" bold="bold">
+              postergar el éxito
+            </Mark>{" "}
+            de tu consultorio dental?
+          </Text>
+          <div className={styles.subsection}>
+            <Text>
+              Puedes ponerte en contacto con nosotros por c y te responderemos
+              en un plazo de 24 horas.
+            </Text>
+            <Text>
+              No olvides incluir algunas palabras sobre ti y tu negocio. Puedes
+              ponerte en contacto con nosotros por correo electrónico a jaka@
+              .design y te responderemos en un plazo de 24 horas.
+            </Text>
+            <hr className={styles.separator} />
+            <Text type="smalltitle" bold="bold" color="black">
+              Como funciona nuestro programa:
+            </Text>
+            <ul className={styles.list}>
+              <li className={styles.element}>
+                <Text type="bigtitle">1</Text>
+                <Text>
+                  <Mark color="underline-blue">
+                    Puedes ponerte en contacto con nosotros por correo
+                    electrónico a jaka@ .design y te responderemos en un plazo
+                    de 24 horas.
+                  </Mark>
+                </Text>
+              </li>
+              <li className={styles.element}>
+                <Text type="bigtitle">2</Text>
+                <Text>
+                  Puedes ponerte en contacto con nosotros por correo electrónico
+                  a jaka@ .design y te responderemos en un plazo de 24 horas.
+                </Text>
+              </li>
+              <li className={styles.element}>
+                <Text type="bigtitle">3</Text>
+                <Text>
+                  Puedes ponerte en contacto con nosotros por correo electrónico
+                  a jaka@ .design y te responderemos en un plazo de 24 horas.
+                </Text>
+              </li>
+              <li className={styles.element}>
+                <Text type="bigtitle">4</Text>
+                <Text>
+                  Puedes ponerte en contacto con nosotros por correo electrónico
+                  a jaka@ .design y te responderemos en un plazo de 24 horas.
+                </Text>
+              </li>
+            </ul>
+          </div>
+        </div>
         <section className={styles.contact}>
           <div className={styles.desc}>
             <div className={styles.line}>

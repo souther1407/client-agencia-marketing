@@ -14,7 +14,9 @@
   gap: 12px;
   align-items: center;
 }
-
+.separator {
+  width: 100%;
+}
 .markLine {
   width: 40px;
   height: 1px;
@@ -124,6 +126,7 @@
   flex-direction: column;
   width: 80%;
   align-self: center;
+  gap: 32px;
 }
 .ventaHumo > .subsection {
   margin-top: 64px;
@@ -179,6 +182,7 @@
   flex-direction: column;
   position: relative;
   top: 48px;
+  box-shadow: 0 2px 8px var(--black-transparent);
 }
 .cardMeet .btnMeet {
   height: 60px;
@@ -192,6 +196,45 @@
   width: 80%;
   gap: 32px;
   margin-top: 32px;
+}
+.comoFunciona {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  align-self: center;
+  padding-top: 128px;
+  padding-bottom: 64px;
+  position: relative;
+}
+.comoFunciona::after {
+  position: absolute;
+  content: " ";
+  width: 1px;
+  left: 0;
+  right: 0;
+  top: 100%;
+  margin: 0 auto;
+  border: 40px solid transparent;
+  z-index: 1;
+  border-top: 40px solid var(--white);
+}
+.comoFunciona > .subsection {
+  padding-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 80%;
+  align-items: center;
+  align-self: center;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.list > .element {
+  display: flex;
+  gap: 32px;
 }
 .contact {
   display: flex;
