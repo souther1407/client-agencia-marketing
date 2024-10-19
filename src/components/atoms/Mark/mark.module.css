@@ -22,7 +22,10 @@
   color: var(--black);
   background-color: #bcccdc;
 }
-
+.mark.mark.submarked-blue-light {
+  background-color: var(--dark-blue);
+  color: var(--white);
+}
 .mark.submarked-yellow {
   color: var(--black);
   background-color: #e0ddd3;

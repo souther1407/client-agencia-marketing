@@ -136,3 +136,38 @@
   justify-content: space-between;
   width: 100%;
 }
+
+/* black */
+.black {
+  display: block;
+  position: relative;
+  width: 100%;
+  border-radius: 8px;
+}
+.black .header {
+  background-color: var(--dark-gray);
+  padding: 8px;
+}
+
+.black .icon {
+  color: var(--white);
+}
+
+.black .elementsList {
+  width: 100%;
+  position: absolute;
+  background-color: var(--dark-gray);
+  padding: 8px;
+}
+.black .elementsList .hover > :first-child {
+  color: var(--white);
+}
+.black .placeholder {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.black .placeholder > :first-child {
+  color: var(--very-dark-white);
+}

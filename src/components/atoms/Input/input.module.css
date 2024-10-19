@@ -108,7 +108,7 @@
   border-radius: 4px;
   padding: 12px;
   color: var(--white);
-  background-color: var(--light-black);
+  background-color: var(--dark-gray);
   font-size: 0.7rem;
 }
 .black .input:focus {
@@ -118,7 +118,7 @@
   color: gray;
 }
 .black .input::placeholder {
-  color: var(--dark-white);
+  color: var(--very-dark-white);
 }
 
 .black.error .input {

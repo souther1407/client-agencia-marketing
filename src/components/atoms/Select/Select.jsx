@@ -11,6 +11,7 @@ const Select = ({
   onError,
   variant = "primary",
   icon,
+  labelColor = "standard",
   listPosition = "bottom",
   onChange,
   label,
@@ -39,13 +40,18 @@ const Select = ({
     onError(id, !value ? "ingrese un valor por favor" : "");
   }, [value]);
   return (
-    <a
+    <div
       className={`${styles[variant]} ${styles.select}`}
       style={{ width: size }}
-      href="#"
       onBlur={handleCloseOnBlur}
     >
-      {label && <Text size={"ty"}>{label}</Text>}
+      {label && (
+        <div className={styles.label}>
+          <Text size={"ty"} bold="font-light" color={labelColor}>
+            {label}
+          </Text>
+        </div>
+      )}
       <div className={styles.header} onClick={handleClick}>
         <div className={styles.placeholder}>
           <Text size="ty" bold={!value && "font-light"}>
@@ -69,7 +75,7 @@ const Select = ({
           </div>
         </div>
       )}
-    </a>
+    </div>
   );
 };
 

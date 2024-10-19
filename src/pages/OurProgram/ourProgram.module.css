@@ -238,15 +238,17 @@
 }
 .contact {
   display: flex;
-  background-color: var(--black);
+  background-color: var(--dark-gray);
   height: 800px;
 }
 
 .contact .desc {
-  background-color: var(--light-black);
   padding-top: 80px;
   padding-left: var(--width-unit);
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
 .contact .formContainer {
@@ -261,8 +263,9 @@
   flex-direction: column;
   width: 600px;
   padding: 32px;
-  padding-left: 64px;
+  border-radius: 8px;
   gap: 16px;
+  background-color: var(--black);
 }
 
 .contact .formLine {

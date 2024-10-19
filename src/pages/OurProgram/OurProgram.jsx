@@ -5,8 +5,7 @@ import Text from "../../components/atoms/Text/Text";
 import Icon from "../../components/atoms/Icon/Icon";
 import imgVideo from "@assets/imgVideo.svg";
 import IconTextButton from "../../components/molecules/IconTextButton/IconTextButton";
-import iconBenefit from "@assets/iconoBeneficio.svg";
-import Dropdown from "../../components/molecules/Dropdown/Dropdown";
+
 import Input from "../../components/atoms/Input/Input";
 import TextArea from "../../components/atoms/Textarea/Textarea";
 import { useNavigate } from "react-router-dom";
@@ -15,6 +14,8 @@ import Prefooter from "../../components/organisms/PreFooter/PreFooter";
 import Footer from "../../components/organisms/Footer/Footer";
 import Mark from "../../components/atoms/Mark/Mark";
 import Nene from "@assets/NeneArio.svg";
+import Select from "../../components/atoms/Select/Select";
+
 const OurProgram = () => {
   const [showModalVideo, setShowModalVideo] = useState(false);
   const navigate = useNavigate();
@@ -250,14 +251,24 @@ const OurProgram = () => {
         </div>
         <section className={styles.contact}>
           <div className={styles.desc}>
-            <div className={styles.line}>
-              <span className={`${styles.markLine} ${styles.primary}`} />
-              <Text size="sm" color="light" bold="font-light">
-                SERVICIO SIN-COSTO
-              </Text>
-            </div>
-            <Text size="xxlg" color="light">
-              Conversa con uno de nuestros expertos en Marketing Dental.
+            <Text type="title" color="light" bold="bold">
+              Recibe una{" "}
+              <Mark color="submarked-blue-light" bold="bold">
+                Auditoría Gratuita
+              </Mark>{" "}
+              para tu consultorío
+            </Text>
+            <Text color="light" bold="font-light">
+              Puedes ponerte en contacto con nosotros por correo electrónico a
+              jaka@ .design y te responderemos en un plazo de 24 horas.
+            </Text>
+            <Text color="light" bold="font-light">
+              No olvides incluir algunas palabras sobre ti y tu negocio. Puedes
+              ponerte en nosotros por{" "}
+              <Mark color="submarked-blue-light">
+                Aceptamos 10 nuevas clínicas
+              </Mark>{" "}
+              contacto con nosotros. Aceptamos 10 nuevas clínicas
             </Text>
           </div>
           <div className={styles.formContainer}>
@@ -312,14 +323,27 @@ const OurProgram = () => {
                   onChange={() => {}}
                   onError={() => {}}
                 />
-                <Input
+                {/*  <Input
                   label="Yo Quiero*"
                   id={"objetive"}
                   variant="black"
                   labelColor="light"
                   onChange={() => {}}
                   onError={() => {}}
-                />
+                /> */}
+                <div>
+                  <Select
+                    onChange={() => {}}
+                    onError={() => {}}
+                    id={"objetive"}
+                    elements={["ASFAFS"]}
+                    label={"Yo Quiero*"}
+                    variant="black"
+                    labelColor="light"
+                    placeholder={"Elegir Opción"}
+                    icon={"arrowDown"}
+                  />
+                </div>
               </div>
               <TextArea
                 label="Comentarios (opcional)"

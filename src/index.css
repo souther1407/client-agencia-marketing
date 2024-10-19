@@ -45,9 +45,10 @@
   --light-white: #f1f6fa;
   --dark-white: #d7e0ea;
   --very-dark-white: #bcccdc;
-  --white-transparent: #d9d9d9;
+  --white-transparent: #d9d9d979;
   --yellow-cream: #f6f4eb;
   --black: #1c2c3b;
+  --dark-gray: #33475b;
   --black-horrible: #1c1c2e;
   --text: #565f65;
   --very-light-black: #486581;
@@ -55,6 +56,7 @@
   --dark-black: #1a1e23;
   --black-transparent: #1e22265e;
   --light-blue: #749bc2;
+  --dark-blue: #3d5a98;
   --light-gray: rgba(97, 97, 97, 0.26);
   --gray: #455a64;
   --gray-blue: #e3eaf1;
