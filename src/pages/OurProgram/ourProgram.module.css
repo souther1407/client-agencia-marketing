@@ -283,69 +283,130 @@
   align-self: flex-end;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1280px) {
   .banner {
-    padding: var(--mobile-margin);
-    height: 100%;
+    height: auto;
+    padding: 32px;
+    position: relative;
+    padding-bottom: 128px;
+    height: 600px;
   }
   .banner .elements {
-    position: relative;
-    top: 80px;
+    gap: 64px;
   }
   .videoDrawer {
-    width: 100%;
+    width: 80%;
   }
-
-  .header {
-    padding: var(--mobile-margin) !important;
-    margin-bottom: 32px;
-  }
-
-  .title {
-    flex-basis: 100%;
-  }
-  .applyBtn {
+  .comoFunciona::after {
     display: none;
   }
-  .benefits {
-    display: grid;
-    grid-template-columns: repeat(1, auto);
-    gap: 32px;
-    padding: var(--mobile-margin) !important;
+  .main {
+    padding-top: 280px;
   }
-  .faq {
-    margin-top: 32px;
-    padding: var(--mobile-margin) !important;
-    flex-direction: column;
+  .main > *:not(.contact) {
+    padding-left: 0;
+    padding-right: 0;
   }
 
-  .dropdown {
-    width: 100% !important;
-  }
   .contact {
     flex-direction: column;
     height: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
+    gap: 32px;
   }
-
   .contact .desc {
-    padding: var(--mobile-margin);
     width: 100%;
-  }
-
-  .contact .formContainer {
-    padding: var(--mobile-margin);
-    width: 100%;
-  }
-  .contact .formContainer .form {
     padding: 0;
+  }
+  .contact .formContainer {
+    width: 100%;
+    padding: 0;
+    display: flex;
+  }
+  .contact .form {
     width: 100%;
   }
-  .form .formLine {
+  .contact .formLine {
     flex-direction: column;
   }
   .contact .formLine > * {
     width: 100%;
   }
-  .btnEnviar {
+
+  .ventaHumo {
+    width: 100%;
+  }
+  .ventaHumo > .subsection {
+    padding: 32px;
+    margin-top: 16px;
+  }
+  .ventaHumo > .subsection > * {
+    width: 100% !important;
+  }
+  .sectionHorrible > .subsection > * {
+    width: 100% !important;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .banner {
+    padding: 64px;
+  }
+  .contact {
+    padding: 64px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .contact {
+    padding: 64px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 768px) {
+}
+@media screen and (max-width: 480px) {
+  .videoDrawer {
+    width: 100%;
+    top: 0;
+  }
+  .main {
+    padding-top: 64px;
+  }
+  .header .elements > :nth-child(2) {
+    text-align: start;
+    word-wrap: break-word;
+  }
+  .main * {
+    text-align: start !important;
+  }
+
+  .ventaHumo {
+    width: 100%;
+  }
+  .ventaHumo > .subsection {
+    padding: 32px;
+    margin-top: 16px;
+  }
+  .ventaHumo > .subsection > * {
+    width: 100% !important;
+  }
+  .sectionHorrible > .subsection > * {
+    width: 100% !important;
+  }
+  .neneArio {
+    transform: scale(1.2);
+  }
+  .cardMeet {
+    width: 100%;
+    border-radius: 0;
+    padding: 32px;
+  }
+  .cardMeet .cardMeetDetail {
+    align-self: flex-start;
+    width: 100%;
+  }
+  .comoFunciona .subsection {
+    width: 100%;
   }
 }

@@ -97,7 +97,7 @@ const LandingPage = () => {
           </div>
         </section>
       </header>
-      <div className={styles.contactBannerSection}>
+      <section className={styles.contactBannerSection}>
         <div cassName={styles.desc}>
           <div className={styles.stickyContainer}>
             <Text type="title" size="sm" color="black" bold="bold">
@@ -253,8 +253,8 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className={styles.spainBanner}>
+      </section>
+      <section className={styles.spainBanner}>
         <img className={styles.spainBannerImg} src={spainBanner} />
         <div className={styles.desc}>
           <Text type="smalltitle" color="light" bold="bold">
@@ -265,7 +265,7 @@ const LandingPage = () => {
             pacientes locales.
           </Text>
         </div>
-      </div>
+      </section>
       <section className={styles.mainContent}>
         <div className={styles.desc}>
           <Text type="title" color="black">
@@ -304,9 +304,9 @@ const LandingPage = () => {
           </TextLink>
         </div>
       </section>
-      <div className={styles.prefooter}>
+      <section className={styles.prefooter}>
         <PreFooter />
-      </div>
+      </section>
       <Footer />
     </div>
   );

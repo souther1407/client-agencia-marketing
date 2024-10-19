@@ -363,8 +363,6 @@ const OurProgram = () => {
           </div>
         </section>
       </main>
-      <Prefooter />
-      <Footer />
     </div>
   );
 };

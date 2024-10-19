@@ -5,7 +5,7 @@
 }
 
 @font-face {
-  font-family: "ms sands";
+  font-family: "ms serif display";
   src: url("./assets/fonts/DMSerifDisplay-Regular.ttf");
   font-weight: 400;
 }
@@ -116,5 +116,12 @@ img {
   html,
   body {
     font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html,
+  body {
+    font-size: 12px;
   }
 }

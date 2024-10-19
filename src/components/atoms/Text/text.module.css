@@ -54,7 +54,7 @@
 }
 
 .font-secondary {
-  font-family: "ms sands";
+  font-family: "ms serif display";
 }
 
 .black {
@@ -104,4 +104,10 @@
 
 .extra-bold {
   font-weight: bolder;
+}
+
+@media screen and (max-width: 400px) {
+  .ultrabigtitle {
+    font-size: 2.5rem;
+  }
 }

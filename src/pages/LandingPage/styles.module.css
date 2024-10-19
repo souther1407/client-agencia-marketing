@@ -615,7 +615,22 @@
     padding-top: 32px !important;
     padding-bottom: 32px;
   }
+  header::after,
+  section::after {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 600px) {
+  .contactBannerSection {
+    padding: 40px 0;
+  }
+  .stickyContainer {
+    padding: 32px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .partners > img {
+    width: 160px;
+  }
 }
