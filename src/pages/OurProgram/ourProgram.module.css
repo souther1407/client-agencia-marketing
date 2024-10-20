@@ -8,7 +8,14 @@
   --green-line: calc(var(--width-unit) * 0.25);
   --mobile-margin: 32px;
 }
-
+.flecha {
+  width: 300px;
+  position: absolute;
+}
+.flecha.nuestroPrograma {
+  bottom: 40%;
+  left: 8%;
+}
 .line {
   display: flex;
   gap: 12px;
@@ -36,6 +43,7 @@
   flex-direction: column;
   background-color: var(--black);
   border-top: 1px solid var(--blue);
+  position: relative;
 }
 
 .banner .elements {
@@ -184,9 +192,18 @@
   top: 48px;
   box-shadow: 0 2px 8px var(--black-transparent);
 }
+.flecha1Izquierda {
+  bottom: 4%;
+  left: -6%;
+}
+.flecha1Derecha {
+  right: -6%;
+  bottom: 4%;
+  transform: rotateZ(180deg);
+}
 .cardMeet .btnMeet {
-  height: 60px;
-  width: 320px;
+  height: 72px;
+  width: 400px;
 }
 .cardMeet .cardMeetDetail {
   display: flex;
@@ -226,6 +243,13 @@
   width: 80%;
   align-items: center;
   align-self: center;
+  position: relative;
+}
+.flecha2 {
+  top: 50%;
+  left: -25%;
+  width: 150px;
+  filter: hue-rotate(85deg) brightness(80%);
 }
 .list {
   display: flex;
@@ -236,14 +260,22 @@
   display: flex;
   gap: 32px;
 }
+
 .contact {
   display: flex;
+  padding-top: 64px;
   background-color: var(--dark-gray);
-  height: 800px;
+  position: relative;
+}
+
+.flecha3 {
+  position: absolute;
+  width: 180px;
+  left: 40%;
 }
 
 .contact .desc {
-  padding-top: 80px;
+  padding-top: 120px;
   padding-left: var(--width-unit);
   width: 50%;
   display: flex;
@@ -284,6 +316,10 @@
 }
 
 @media screen and (max-width: 1280px) {
+  .flecha {
+    display: none;
+  }
+
   .banner {
     height: auto;
     padding: 32px;

@@ -10,11 +10,12 @@ import Input from "../../components/atoms/Input/Input";
 import TextArea from "../../components/atoms/Textarea/Textarea";
 import { useNavigate } from "react-router-dom";
 import { CONTACT_FORM } from "../../constants/routes";
-import Prefooter from "../../components/organisms/PreFooter/PreFooter";
-import Footer from "../../components/organisms/Footer/Footer";
 import Mark from "../../components/atoms/Mark/Mark";
 import Nene from "@assets/NeneArio.svg";
 import Select from "../../components/atoms/Select/Select";
+import FlechaNuestroPrograma from "@assets/nuestro metodo.svg";
+import Flecha1 from "@assets/flecha 1.svg";
+import Flecha2 from "@assets/flecha 3.svg";
 
 const OurProgram = () => {
   const [showModalVideo, setShowModalVideo] = useState(false);
@@ -29,6 +30,10 @@ const OurProgram = () => {
     <div className={styles.page}>
       <Nav />
       <header className={styles.banner}>
+        <img
+          src={FlechaNuestroPrograma}
+          className={`${styles.flecha} ${styles.nuestroPrograma}`}
+        />
         <div className={styles.elements}>
           <Text type="bigtitle" color="light">
             ¿Cuánto dinero estás dejando sobre la mesa?
@@ -167,6 +172,14 @@ const OurProgram = () => {
             </div>
           </div>
           <div className={styles.cardMeet}>
+            <img
+              src={Flecha1}
+              className={`${styles.flecha} ${styles.flecha1Izquierda}`}
+            />
+            <img
+              src={Flecha1}
+              className={`${styles.flecha} ${styles.flecha1Derecha} `}
+            />
             <Text type="title" color="black" textAlign="center" bold="bold">
               ¿Abrirías{" "}
               <Mark color="submarked-blue" bold="bold">
@@ -201,6 +214,10 @@ const OurProgram = () => {
             de tu consultorio dental?
           </Text>
           <div className={styles.subsection}>
+            <img
+              src={Flecha1}
+              className={`${styles.flecha} ${styles.flecha2}`}
+            />
             <Text>
               Puedes ponerte en contacto con nosotros por c y te responderemos
               en un plazo de 24 horas.
@@ -216,7 +233,9 @@ const OurProgram = () => {
             </Text>
             <ul className={styles.list}>
               <li className={styles.element}>
-                <Text type="bigtitle">1</Text>
+                <Text type="bigtitle" color="blue">
+                  1
+                </Text>
                 <Text>
                   <Mark color="underline-blue">
                     Puedes ponerte en contacto con nosotros por correo
@@ -226,21 +245,27 @@ const OurProgram = () => {
                 </Text>
               </li>
               <li className={styles.element}>
-                <Text type="bigtitle">2</Text>
+                <Text type="bigtitle" color="blue">
+                  2
+                </Text>
                 <Text>
                   Puedes ponerte en contacto con nosotros por correo electrónico
                   a jaka@ .design y te responderemos en un plazo de 24 horas.
                 </Text>
               </li>
               <li className={styles.element}>
-                <Text type="bigtitle">3</Text>
+                <Text type="bigtitle" color="blue">
+                  3
+                </Text>
                 <Text>
                   Puedes ponerte en contacto con nosotros por correo electrónico
                   a jaka@ .design y te responderemos en un plazo de 24 horas.
                 </Text>
               </li>
               <li className={styles.element}>
-                <Text type="bigtitle">4</Text>
+                <Text type="bigtitle" color="blue">
+                  4
+                </Text>
                 <Text>
                   Puedes ponerte en contacto con nosotros por correo electrónico
                   a jaka@ .design y te responderemos en un plazo de 24 horas.
@@ -250,6 +275,7 @@ const OurProgram = () => {
           </div>
         </div>
         <section className={styles.contact}>
+          <img src={Flecha2} className={`${styles.flecha} ${styles.flecha3}`} />
           <div className={styles.desc}>
             <Text type="title" color="light" bold="bold">
               Recibe una{" "}
