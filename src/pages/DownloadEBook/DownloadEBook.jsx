@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import styles from "./styles.module.css";
 import Text from "../../components/atoms/Text/Text";
-import logo from "@assets/react.svg";
 import IconTextButton from "../../components/molecules/IconTextButton/IconTextButton";
 import Modal from "../../components/molecules/Modal/Modal";
 import DownloadForm from "./components/DownloadForm/DownloadForm";
 import Logo from "../../components/atoms/Logo/Logo";
 import Icon from "../../components/atoms/Icon/Icon";
-import EBookImg from "@assets/Foto Prueba.svg";
+import EBookImg from "@assets/imagen ebook page.svg";
 import EbookPortada from "@assets/ImgPortadaEbook.svg";
 import Link from "../../components/atoms/Link/Link";
+import Medicos from "@assets/Medicos.svg";
 
 const DownloadEBook = () => {
   const [modalOpened, setModalOpened] = useState(false);
@@ -21,8 +21,8 @@ const DownloadEBook = () => {
       <main className={styles.main}>
         <div className={styles.banner}>
           <section className={styles.banner__desc}>
-            <Text color="primary" size="sm">
-              Ebook Gratuito
+            <Text color="soft" size="sm">
+              {new Date().getFullYear()}
             </Text>
             <Text color="light" type="title" bold>
               Como Mejorar la Aceptación de Casos de tu Clinica
@@ -30,8 +30,7 @@ const DownloadEBook = () => {
             <div className={styles.desc}>
               <Text color="soft" bold="font-light" size="sm">
                 Save thousands of engineering hours by using the NexHealth
-                Synchronizer API to sync bidirectionally with health record
-                systems like Dentrix, Open Dental, eClinicalWorks, and more
+                Synchronizer API to sync bidirectionally
               </Text>
             </div>
             <div className={styles.downloadEBook}>
@@ -42,6 +41,17 @@ const DownloadEBook = () => {
               >
                 Descargar Ahora
               </IconTextButton>
+            </div>
+            <div className={styles.card}>
+              <img src={Medicos} className={styles.medicos} />
+              <div className={styles.desc}>
+                <Text size="ty" color="soft">
+                  Únete a los muchos dentista
+                </Text>
+                <Text size="ty" color="soft" bold="font-light">
+                  que aprenden con nuestros ebooks gratuitos
+                </Text>
+              </div>
             </div>
           </section>
           <img className={styles.ebook} src={EBookImg} />
