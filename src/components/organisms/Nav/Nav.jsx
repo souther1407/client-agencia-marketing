@@ -16,7 +16,7 @@ import {
 } from "../../../constants/routes";
 import { useNavigate } from "react-router-dom";
 import IconTextButton from "../../molecules/IconTextButton/IconTextButton";
-import imgEbookPrueba from "@assets/imgEbookPrueba.svg";
+import imgEbookPrueba from "@assets/ImgCardsNav.svg";
 import { ES } from "country-flag-icons/react/3x2";
 
 const Nav = ({ hideTopMenu = false }) => {
