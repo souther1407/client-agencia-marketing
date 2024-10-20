@@ -5,7 +5,7 @@ import Text from "../../components/atoms/Text/Text";
 import Icon from "../../components/atoms/Icon/Icon";
 import imgVideo from "@assets/imgVideo.svg";
 import IconTextButton from "../../components/molecules/IconTextButton/IconTextButton";
-
+import Link from "../../components/atoms/Link/Link";
 import Input from "../../components/atoms/Input/Input";
 import TextArea from "../../components/atoms/Textarea/Textarea";
 import { useNavigate } from "react-router-dom";
@@ -407,6 +407,30 @@ const OurProgram = () => {
             </div>
           </div>
         </section>
+        <footer className={styles.footer}>
+          <Text color="light" bold="font-light">
+            Copyright © {new Date().getFullYear()}, HackDental.com
+          </Text>
+          <div className={styles.links}>
+            <Link to={"#"}>
+              <Text color="soft-light" size="ty" bold="font-light">
+                Politica de Privacidad
+              </Text>
+            </Link>
+            <hr className={styles.separator_footer} />
+            <Link to={"#"}>
+              <Text color="soft-light" size="ty" bold="font-light">
+                Politica de Privacidad
+              </Text>{" "}
+            </Link>
+            <hr className={styles.separator_footer} />
+            <Link to={"#"}>
+              <Text color="soft-light" size="ty" bold="font-light">
+                Politica de Privacidad
+              </Text>
+            </Link>
+          </div>
+        </footer>
       </main>
     </div>
   );

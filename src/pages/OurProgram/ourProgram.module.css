@@ -271,6 +271,7 @@
   padding-top: 64px;
   background-color: var(--dark-gray);
   position: relative;
+  padding-bottom: 32px;
 }
 
 .flecha3 {
@@ -299,7 +300,7 @@
   display: flex;
   flex-direction: column;
   width: 600px;
-  padding: 32px;
+  padding: 48px 32px;
   border-radius: 8px;
   gap: 16px;
   background-color: var(--black);
@@ -319,7 +320,24 @@
   width: fit-content;
   align-self: flex-end;
 }
-
+.separator_footer {
+  height: 0.77rem;
+  border: 1px solid var(--light-blue-transparent);
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--black);
+  padding-top: 32px;
+  gap: 8px;
+  padding-bottom: calc(var(--linea-amarilla) / 2);
+}
+.footer .links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
 @media screen and (max-width: 1280px) {
   .flecha {
     display: none;
