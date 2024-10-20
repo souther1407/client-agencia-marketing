@@ -158,8 +158,8 @@ const LandingPage = () => {
           </div>
           <div className={styles.detail}>
             <Text type="subtitle" bold="semibold" color="black">
-              La publicidad de tu consultorio es{" "}
-              <Mark color="submarked-blue">genérica</Mark>
+              El diseño de tu Sitio Web Dental es{" "}
+              <Mark color="submarked-blue">ineficiente </Mark>
             </Text>
             <hr />
             <div className={styles.desc}>
@@ -182,8 +182,8 @@ const LandingPage = () => {
           </div>
           <div className={styles.detail}>
             <Text type="subtitle" bold="semibold" color="black">
-              La publicidad de tu consultorio es{" "}
-              <Mark color="submarked-blue">genérica</Mark>
+              Tu estrategia de redes sociales es{" "}
+              <Mark color="submarked-blue">pobre</Mark>
             </Text>
             <hr />
             <div className={styles.desc}>
@@ -206,8 +206,8 @@ const LandingPage = () => {
           </div>
           <div className={styles.detail}>
             <Text type="subtitle" bold="semibold" color="black">
-              La publicidad de tu consultorio es{" "}
-              <Mark color="submarked-blue">genérica</Mark>
+              <Mark color="submarked-blue">Te faltan</Mark> reseñas positivas
+              online
             </Text>
             <hr />
             <div className={styles.desc}>
@@ -230,8 +230,8 @@ const LandingPage = () => {
           </div>
           <div className={styles.detail}>
             <Text type="subtitle" bold="semibold" color="black">
-              La publicidad de tu consultorio es{" "}
-              <Mark color="submarked-blue">genérica</Mark>
+              Tienes un <Mark color="submarked-blue">mal sistema</Mark> de
+              recordatorio de citas
             </Text>
             <hr />
             <div className={styles.desc}>

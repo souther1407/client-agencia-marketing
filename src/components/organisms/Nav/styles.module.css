@@ -150,24 +150,13 @@ body:has(.resoursesDropDown.show) {
   right: 25vw;
   visibility: hidden;
   opacity: 0;
-  top: -105%;
+  top: -100%;
   transition: all 0.5s ease-in-out;
   z-index: 1000;
 }
-.resoursesDropDown .contactBanner::after {
-  position: absolute;
-  content: "";
-  width: 1px;
-  left: 0;
-  right: 0;
-  bottom: 100%;
-  margin: 0 auto;
-  border: 15px solid transparent;
-  border-bottom: 15px solid var(--white);
-  z-index: 1000;
-}
+
 .resoursesDropDown.show .contactBanner.show {
-  top: 20px;
+  top: 0;
   visibility: visible;
   opacity: 1;
 }
