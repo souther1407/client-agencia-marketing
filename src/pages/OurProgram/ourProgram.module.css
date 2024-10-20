@@ -122,6 +122,11 @@
   padding-left: var(--width-unit);
   padding-right: var(--width-unit);
 }
+.header {
+  display: flex;
+  flex-direction: column;
+  word-break: keep-all;
+}
 .ventaHumo {
   display: flex;
   flex-direction: column;
@@ -400,6 +405,21 @@
   }
 }
 @media screen and (min-width: 480px) and (max-width: 768px) {
+  .main {
+    padding-top: 128px;
+  }
+  .cardMeet {
+    width: 100%;
+    border-radius: 0;
+    padding: 32px;
+  }
+  .cardMeet .cardMeetDetail {
+    align-self: flex-start;
+    width: 100%;
+  }
+  .comoFunciona .subsection {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 480px) {
   .videoDrawer {
@@ -407,8 +427,9 @@
     top: 0;
   }
   .main {
-    padding-top: 64px;
+    padding-top: 128px;
   }
+
   .header .elements > :nth-child(2) {
     text-align: start;
     word-wrap: break-word;

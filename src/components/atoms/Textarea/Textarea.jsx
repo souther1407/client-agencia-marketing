@@ -9,6 +9,7 @@ const Textarea = ({
   labelColor = "standard",
   size = "100%",
   errorValue,
+
   ...otherProps
 }) => {
   const handleChange = (e) => {

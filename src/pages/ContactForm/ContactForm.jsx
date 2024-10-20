@@ -1,9 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import styles from "./styles.module.css";
 import Text from "../../components/atoms/Text/Text";
-import Icon from "../../components/atoms/Icon/Icon";
 import IconTextButton from "../../components/molecules/IconTextButton/IconTextButton";
-import TextLink from "../../components/molecules/TextLink/TextLink";
 import Nav from "../../components/organisms/Nav/Nav";
 import Input from "../../components/atoms/Input/Input";
 import Select from "../../components/atoms/Select/Select";
@@ -11,6 +9,8 @@ import TextArea from "../../components/atoms/Textarea/Textarea";
 import Footer from "../../components/organisms/Footer/Footer";
 import { sendContactForm } from "../../services/api/sendContactForm";
 import LoadingScreen from "../../components/molecules/LoadingScreen/LoadingScreen";
+import Mark from "../../components/atoms/Mark/Mark";
+import Flecha3 from "@assets/flecha 3.svg";
 
 const ContactForm = () => {
   const [contactForm, setContactForm] = useState({
@@ -48,77 +48,34 @@ const ContactForm = () => {
       {loading && <LoadingScreen />}
       <main className={styles.content}>
         <div className={styles.content_sections}>
+          <img src={Flecha3} className={`${styles.flecha}`} />
           <section className={styles.desc}>
-            <Text size="big" bold="bold">
-              Contactanos
+            <Text type="smalltitle" bold="bold" color="black">
+              Recibe una{" "}
+              <Mark bold="bold" color="submarked-blue-light">
+                Auditoria Gratuita
+              </Mark>{" "}
+              para para tu Consultorio
             </Text>
-            <Text size="sm" bold="font-light">
-              Solo tenemos <strong>10 cupos</strong> para{" "}
-              <strong>nuestro programa anual 2024 de marketing dental.</strong>{" "}
-              Completa la forma para recibir más información. En HackDental nos
-              enorgullecemos de ser:
-            </Text>
-            <div className={styles.benefits}>
-              <div className={styles.line}>
-                <Icon
-                  type={"check"}
-                  color="var(--primary-dark)"
-                  size={"1.2rem"}
-                />
-                <Text size="ty" bold="font-light">
-                  Autoridad en marketing dental
-                </Text>
-              </div>
-              <div className={styles.line}>
-                <Icon
-                  type={"check"}
-                  color="var(--primary-dark)"
-                  size={"1.2rem"}
-                />
-                <Text size="ty" bold="font-light">
-                  Expertos en Publicidad de Tratamientos
-                </Text>
-              </div>
-              <div className={styles.line}>
-                <Icon
-                  type={"check"}
-                  color="var(--primary-dark)"
-                  size={"1.2rem"}
-                />
-                <Text size="ty" bold="font-light">
-                  Expertos en Desarrollo Web
-                </Text>
-              </div>
-              <div className={styles.line}>
-                <Icon
-                  type={"check"}
-                  color="var(--primary-dark)"
-                  size={"1.2rem"}
-                />
-                <Text size="ty" bold="font-light">
-                  Expertos en Google Ads
-                </Text>
-              </div>
+            <div className={styles.detail}>
+              <Text size="sm" bold="font-light" color="black">
+                Puedes ponerte en contacto con nosotros por Whatsapp o directa a{" "}
+                <Mark color="underline-blue">jaka@conversion.design</Mark> y te
+                responderemos en un plazo de 24 horas.
+              </Text>
+              <Text size="sm" bold="font-light" color="black">
+                No olvides incluir algunas palabras sobre ti y tu negocio
+              </Text>
             </div>
             <div className={styles.infoBtn}>
               <IconTextButton icon={"wp"} colorVariant="secondary-dark">
                 Whatsapp
               </IconTextButton>
             </div>
-            <hr className={styles.separator} />
-            <Text>Links Utiles</Text>
-            <div className={styles.usefullLinks}>
-              <TextLink variant="black" textProps={{ size: "sm" }}>
-                ¿Que somos? {">"}
-              </TextLink>
-              <TextLink variant="black" textProps={{ size: "sm" }}>
-                Recursos Gratis {">"}
-              </TextLink>
-            </div>
           </section>
           <section className={styles.form}>
-            <Text size="xlg">
-              Completa esta forma para aplicar a nuestro programa.
+            <Text size="xlg" color="black">
+              ¡Estás a un paso de trabajar con nosotros!
             </Text>
             <div className={styles.input_line}>
               <Input
@@ -189,7 +146,7 @@ const ContactForm = () => {
                 onError={() => {}}
                 placeholder="Porfavor seleccione"
                 label="Ubicación de la clínica*"
-                icon={"arrow"}
+                icon={"arrowDown"}
                 value={contactForm.location}
               />
               <Select
@@ -200,7 +157,7 @@ const ContactForm = () => {
                 onError={() => {}}
                 placeholder="Porfavor seleccione"
                 label="Ingresos Anuales*"
-                icon={"arrow"}
+                icon={"arrowDown"}
                 value={contactForm.anual_revenues}
               />
             </div>

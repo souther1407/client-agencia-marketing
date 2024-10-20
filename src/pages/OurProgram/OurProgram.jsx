@@ -77,28 +77,34 @@ const OurProgram = () => {
       <main className={styles.main}>
         <div className={styles.ventaHumo}>
           <div className={styles.header}>
-            <Text fontFamily="font-light">
+            <Text bold="font-light">
               Puedes ponerte en contacto con nosotros por correo electrónico a
-              jaka@conversion.design y te responderemos en un plazo de 24 horas.
+              jaka@ .design y te responderemos en un plazo de 24 horas.
             </Text>
 
-            <Text>
+            <Text bold="font-light">
               No olvides incluir algunas palabras sobre ti y tu negocio.
             </Text>
           </div>
           <div className={styles.subsection}>
-            <Text type="bigtitle" color="black" textAlign="center" bold="bold">
+            <Text
+              type="bigtitle"
+              fontSize="2.3333rem"
+              color="black"
+              textAlign="center"
+              bold="bold"
+            >
               Resuelve los{" "}
               <Mark color="submarked-blue" bold="bold">
                 problemas que limitan
               </Mark>{" "}
               el crecimiento de tu práctica
             </Text>
-            <Text>
+            <Text bold="font-light">
               Puedes ponerte en contacto con nosotros por correo electrónico a
               jaka@ .design y te responderemos en un plazo de 24 horas.
             </Text>
-            <Text>
+            <Text bold="font-light">
               No olvides incluir algunas palabras sobre ti y tu negocio. Puedes
               ponerte en contacto con nosotros por correo electrónico a jaka@
               .design y te responderemos en un plazo de 24 horas.
@@ -108,7 +114,13 @@ const OurProgram = () => {
         </div>
         <div className={styles.sectionHorrible}>
           <div className={styles.subsection}>
-            <Text type="bigtitle" color="light" textAlign="center" bold="bold">
+            <Text
+              type="bigtitle"
+              fontSize="2.3333rem"
+              color="light"
+              textAlign="center"
+              bold="bold"
+            >
               Los{" "}
               <Mark bold="bold" color="error">
                 3 errores más comunes
@@ -180,7 +192,14 @@ const OurProgram = () => {
               src={Flecha1}
               className={`${styles.flecha} ${styles.flecha1Derecha} `}
             />
-            <Text type="title" color="black" textAlign="center" bold="bold">
+            <Text
+              type="title"
+              size="big"
+              color="black"
+              textAlign="center"
+              bold="bold"
+              fontSize="2.3333rem"
+            >
               ¿Abrirías{" "}
               <Mark color="submarked-blue" bold="bold">
                 más consultorios
@@ -218,11 +237,11 @@ const OurProgram = () => {
               src={Flecha1}
               className={`${styles.flecha} ${styles.flecha2}`}
             />
-            <Text>
+            <Text bold="font-light" color="black">
               Puedes ponerte en contacto con nosotros por c y te responderemos
               en un plazo de 24 horas.
             </Text>
-            <Text>
+            <Text bold="font-light" color="black">
               No olvides incluir algunas palabras sobre ti y tu negocio. Puedes
               ponerte en contacto con nosotros por correo electrónico a jaka@
               .design y te responderemos en un plazo de 24 horas.
@@ -248,7 +267,7 @@ const OurProgram = () => {
                 <Text type="bigtitle" color="blue">
                   2
                 </Text>
-                <Text>
+                <Text bold="font-light" color="black">
                   Puedes ponerte en contacto con nosotros por correo electrónico
                   a jaka@ .design y te responderemos en un plazo de 24 horas.
                 </Text>
@@ -257,7 +276,7 @@ const OurProgram = () => {
                 <Text type="bigtitle" color="blue">
                   3
                 </Text>
-                <Text>
+                <Text bold="font-light" color="black">
                   Puedes ponerte en contacto con nosotros por correo electrónico
                   a jaka@ .design y te responderemos en un plazo de 24 horas.
                 </Text>
@@ -266,7 +285,7 @@ const OurProgram = () => {
                 <Text type="bigtitle" color="blue">
                   4
                 </Text>
-                <Text>
+                <Text bold="font-light" color="black">
                   Puedes ponerte en contacto con nosotros por correo electrónico
                   a jaka@ .design y te responderemos en un plazo de 24 horas.
                 </Text>
