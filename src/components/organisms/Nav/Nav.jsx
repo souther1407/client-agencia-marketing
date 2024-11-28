@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./styles.module.css";
 import Text from "../../atoms/Text/Text";
 import Link from "../../atoms/Link/Link";
@@ -21,7 +21,7 @@ import { ES } from "country-flag-icons/react/3x2";
 
 const Nav = ({ hideTopMenu = false }) => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
-  const [isTopMenuHidden, setisTopMenuHidden] = useState(false);
+  const [isTopMenuHidden] = useState(false);
   const navigate = useNavigate();
   useEffect(() => {
     window.addEventListener("resize", () => {
@@ -137,9 +137,28 @@ const Nav = ({ hideTopMenu = false }) => {
         <div
           className={`${styles.contactBanner} ${showContact && styles.show}`}
         >
-          <Text color="black">Forma de contacto</Text>
-          <Text color="black">info@inkadentist.com</Text>
-          <Text color="black">657302731</Text>
+          <div className={styles.content}>
+            <Text color="black" size="lg" bold="semibold">
+              Contacta a un Representante
+            </Text>
+            <div className={styles.contactBtn}>
+              <Text color="black">Forma de contacto</Text>
+              <Icon color="black" size={"1rem"} type={"arrow"} />
+            </div>
+            <div className={styles.contactBtn}>
+              <Text color="black">info@inkadentist.com</Text>
+              <Icon color="black" size={"1rem"} type={"arrow"} />
+            </div>
+            <div className={styles.contactBtn}>
+              <div
+                style={{ display: "flex", alignItems: "center", gap: "8px" }}
+              >
+                <Icon color="black" size={"1rem"} type={"wp"} />
+                <Text color="black"> 657302731</Text>
+              </div>
+              <Icon color="black" size={"1rem"} type={"arrow"} />
+            </div>
+          </div>
         </div>
       </div>
       <div className={styles.elements}>

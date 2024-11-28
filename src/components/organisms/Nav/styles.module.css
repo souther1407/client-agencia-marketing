@@ -143,16 +143,34 @@ body:has(.resoursesDropDown.show) {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  background-color: var(--white);
+  background-color: var(--dark-white);
   height: fit-content;
   padding: 32px;
-  width: 300px;
-  right: 25vw;
+  width: 100%;
   visibility: hidden;
   opacity: 0;
   top: -100%;
   transition: all 0.5s ease-in-out;
   z-index: 1000;
+  border-radius: 0 0 24px 24px;
+}
+.resoursesDropDown .contactBanner .content {
+  width: fit-content;
+  position: relative;
+  left: 25%;
+  display: flex;
+  flex-direction: column;
+}
+.contactBanner .contactBtn {
+  background-color: var(--white);
+  border-radius: 8px;
+  border: 1px solid var(--gray);
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  cursor: pointer;
 }
 
 .resoursesDropDown.show .contactBanner.show {
@@ -161,17 +179,13 @@ body:has(.resoursesDropDown.show) {
   opacity: 1;
 }
 
-.resoursesDropDown .contactBanner > * {
+.resoursesDropDown .contactBanner .content > * {
   transition: all 0.3s ease-in;
   padding-top: 4px;
   padding-bottom: 4px;
   border-radius: 16px;
 }
-.resoursesDropDown .contactBanner > *:hover {
-  background-color: var(--gray-light);
-  padding: 4px 16px;
-  cursor: pointer;
-}
+
 .resoursesDropDown .content {
   display: flex;
   flex-direction: column;
