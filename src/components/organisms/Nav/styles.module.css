@@ -62,7 +62,16 @@
   padding-left: var(--width-unit);
   padding-right: var(--width-unit);
 }
-
+.linkContainer {
+  position: relative;
+}
+.newTag {
+  position: absolute;
+  background-color: var(--primary-darker);
+  padding: 4px;
+  right: -10%;
+  top: -20%;
+}
 .logo {
   cursor: pointer;
   z-index: 0;
@@ -124,7 +133,7 @@ body:has(.resoursesDropDown.show) {
   display: flex;
   width: 100%;
   height: fit-content;
-  background-color: var(--very-dark-white);
+  background-color: var(--dark-white);
   justify-content: center;
   transform: translateY(-100%);
   visibility: hidden;
@@ -193,7 +202,6 @@ body:has(.resoursesDropDown.show) {
   padding: 16px;
 }
 .resoursesDropDown .content > :nth-child(1) {
-  align-self: flex-end;
 }
 
 .resoursesDropDown .separator {
@@ -207,7 +215,7 @@ body:has(.resoursesDropDown.show) {
 }
 .resoursesDropDown .card {
   width: 220px;
-  background-color: var(--gray-blue);
+  background-color: var(--white);
   padding: 16px;
   display: flex;
   flex-direction: column;
@@ -215,6 +223,7 @@ body:has(.resoursesDropDown.show) {
   cursor: pointer;
   border-radius: 12px;
   transition: all 0.3s ease-in-out;
+  border: 1px solid var(--black);
 }
 .resoursesDropDown .card:hover {
   background-color: var(--gray-blue-dark);
@@ -252,6 +261,11 @@ body:has(.resoursesDropDown.show) {
 .resoursesDropDown .cardsBanner.show .developText:hover > * {
   transform: scale(1.1);
   transition: all 0.1s ease-in-out;
+}
+.resoursesDropDown .cardsBanner .seeEbooksBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 .mobileMenu {
 }

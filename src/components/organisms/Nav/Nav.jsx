@@ -73,13 +73,18 @@ const Nav = ({ hideTopMenu = false }) => {
           className={`${styles.cardsBanner} ${showResources && styles.show}`}
         >
           <div className={styles.content}>
-            <TextLink
-              to={LANDING_EBOOKS}
-              variant="black"
-              textProps={{ size: "sm" }}
-            >
-              ver todas las guias
-            </TextLink>
+            <div className={styles.header}>
+              <div className={styles.seeEbooksBtn}>
+                <Text bold="bold" type="subtitle" color="black">
+                  Ebooks Gratuitos
+                </Text>
+                <Icon color="black" size={"1.2rem"} type={"arrow"} />
+              </div>
+              <Text bold="font-light" size="sm">
+                Aprende sobre Marketing dental con nuestros recursos 100%
+                Gratuitos
+              </Text>
+            </div>
             <div className={styles.cards}>
               <div className={styles.card}>
                 <div className={styles.cardImgContainer}>
@@ -138,7 +143,7 @@ const Nav = ({ hideTopMenu = false }) => {
           className={`${styles.contactBanner} ${showContact && styles.show}`}
         >
           <div className={styles.content}>
-            <Text color="black" size="lg" bold="semibold">
+            <Text color="black" type="subtitle" bold="semibold">
               Contacta a un Representante
             </Text>
             <div className={styles.contactBtn}>
@@ -175,11 +180,7 @@ const Nav = ({ hideTopMenu = false }) => {
         )}
         <div className={styles.bottomMenu}>
           <div className={styles.left}>
-            <div
-              className={styles.logo}
-              onhO
-              onClick={() => navigate(LANDING_PAGE)}
-            >
+            <div className={styles.logo} onClick={() => navigate(LANDING_PAGE)}>
               <Logo />
             </div>
           </div>
@@ -187,7 +188,13 @@ const Nav = ({ hideTopMenu = false }) => {
             <div
               onMouseEnter={handleShowResources}
               onClick={handleShowResources}
+              className={styles.linkContainer}
             >
+              <div className={styles.newTag}>
+                <Text size="xxty" color="light">
+                  NUEVO
+                </Text>
+              </div>
               <TextLink
                 marked={showResources}
                 variant="rounded"
@@ -196,13 +203,21 @@ const Nav = ({ hideTopMenu = false }) => {
                 Recursos gratis
               </TextLink>
             </div>
-            <TextLink
-              variant="rounded"
-              to={OUR_PROGRAM}
-              textProps={{ color: "soft", bold: "font-light", size: "ty" }}
-            >
-              Nuestro Programa
-            </TextLink>
+            <div className={styles.linkContainer}>
+              <div className={styles.newTag}>
+                <Text size="xxty" color="light">
+                  NUEVO
+                </Text>
+              </div>
+              <TextLink
+                variant="rounded"
+                to={OUR_PROGRAM}
+                textProps={{ color: "soft", bold: "font-light", size: "ty" }}
+              >
+                Nuestro Programa
+              </TextLink>
+            </div>
+
             <div onMouseEnter={handleShowContact} onClick={handleShowContact}>
               <TextLink
                 variant="rounded"
