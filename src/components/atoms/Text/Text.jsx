@@ -24,7 +24,7 @@ const getSize = (size) => {
     case "xty":
       return "0.666667rem";
     case "xxty":
-      return "0.466667rem";
+      return "0.566667rem";
     default:
       return "1rem";
   }

@@ -68,7 +68,7 @@
 .newTag {
   position: absolute;
   background-color: var(--primary-darker);
-  padding: 4px;
+  padding: 0 4px;
   right: -10%;
   top: -20%;
 }
