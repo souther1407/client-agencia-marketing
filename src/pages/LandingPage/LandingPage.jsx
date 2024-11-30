@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import styles from "./styles.module.css";
 import Nav from "../../components/organisms/Nav/Nav";
-import iconBenefit from "@assets/iconoBeneficio.svg";
+import NeneArio from "@assets/Nene Ario Landing.svg";
 import spainBanner from "@assets/spainBanner.svg";
 import Text from "../../components/atoms/Text/Text";
 import IconTextButton from "../../components/molecules/IconTextButton/IconTextButton";
@@ -97,38 +97,81 @@ const LandingPage = () => {
           </div>
         </section>
       </header>
+      <section className={styles.whoAreWe}>
+        <div className={styles.whoAreWe__contents}>
+          <Text color="light" type="bigtitle">
+            ¿Quienes Somos?
+          </Text>
+          <Text color="light" bold="font-light">
+            Puedes ponerte en contacto con nosotros por correo electrónico a
+            jaka@ .design y te responderemos en un plazo de 24 horas.
+          </Text>
+          <Text color="light" bold="font-light">
+            No olvides incluir algunas palabras sobre ti y tu negocio. Puedes
+            ponerte en contacto con nosotros por correo electrónico a jaka@
+            .design y te responderemos en un plazo de 24 horas.
+          </Text>
+          <img className={styles.neneArio} src={NeneArio} alt="Nene ario" />
+
+          <hr className={styles.separator} />
+          <Text color="light" size="xxlg" bold="bold">
+            ¿Qué nos <Mark color="primary-underline">diferencia</Mark> de otras
+            agencias?
+          </Text>
+          <div className={styles.listDiferences}>
+            <div className={styles.line}>
+              <Icon type={"check"} color="var(--primary)" size={"1rem"} />
+              <Text color="light" bold="font-light">
+                Enfocamos TODO nuestro tiempo al Marketing de Clínicas Dentales.
+              </Text>
+            </div>
+            <div className={styles.line}>
+              <Icon type={"check"} color="var(--primary)" size={"1rem"} />
+              <Text color="light" bold="font-light">
+                Trabajamos con un numero limitado de consultorio.
+              </Text>
+            </div>
+            <div className={styles.line}>
+              <Icon type={"check"} color="var(--primary)" size={"1rem"} />
+              <Text color="light" bold="font-light">
+                Traemos pacientes de tus tratamientos más rentables.
+              </Text>
+            </div>
+            <div className={styles.line}>
+              <Icon type={"check"} color="var(--primary)" size={"1rem"} />
+              <Text color="light" bold="font-light">
+                Trabajamos con un numero limitado de consultorio.
+              </Text>
+            </div>
+            <div className={styles.line}>
+              <Icon type={"check"} color="var(--primary)" size={"1rem"} />
+              <Text color="light" bold="font-light">
+                Traemos pacientes de tus tratamientos más rentables.
+              </Text>
+            </div>
+          </div>
+          <Text color="light" bold="bold" size="lg">
+            Puedes ponerte en contacto con nosotros por{" "}
+            <Mark color="primary" bold="bold">
+              correo electrónico a jaka@ .design
+            </Mark>{" "}
+            y te responderemos en un plazo de 24 horas.
+          </Text>
+        </div>
+      </section>
       <section className={styles.contactBannerSection}>
         <div cassName={styles.desc}>
           <div className={styles.stickyContainer}>
-            <Text type="title" size="sm" color="black" bold="bold">
-              ¿Por qué los pacientes{" "}
-              <Mark color="underline" bold="bold">
-                no eligen
-              </Mark>{" "}
-              tu clínica dental?
+            <Text type="bigtitle" color="black" bold="bold">
+              ¿Por qué nuevos pacientes no eligen tu clínica dental?
             </Text>
-            <Text size="sm" bold="font-light">
-              Aprende más sobre nuestro programa de 6 meses
-            </Text>
-
-            <TextLink
-              textProps={{ size: "sm" }}
-              variant="black"
-              to={DOWNLOAD_EBOOK}
+            <IconTextButton
+              colorVariant="blue"
+              size="fit-content"
+              textProps={{ bold: "font-light" }}
             >
-              Quiero Saber Mas {">"}
-            </TextLink>
-            <div className={styles.cardJoinUs}>
-              <img src={Medicos} />
-              <div className={styles.desc}>
-                <Text size="ty" color="black" bold="semibold">
-                  Únete a los dentistas
-                </Text>
-                <Text size="ty" bold="font-light">
-                  que han decidido transformar sus consultorios
-                </Text>
-              </div>
-            </div>
+              Quiero crecer mi Consultorio {">"}
+            </IconTextButton>
           </div>
         </div>
         <div className={styles.details}>

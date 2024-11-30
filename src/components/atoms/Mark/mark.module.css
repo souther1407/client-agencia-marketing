@@ -35,6 +35,11 @@
   text-decoration: underline;
   color: var(--dark-black);
 }
+.mark.primary-underline {
+  color: var(--primary);
+  text-decoration: underline;
+  font-weight: bold;
+}
 
 .mark.underline-blue {
   text-decoration: underline;

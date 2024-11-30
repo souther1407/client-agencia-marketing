@@ -85,7 +85,12 @@
   background: var(--black);
   flex-direction: column;
 }
-
+.separator {
+  height: 2px;
+  width: 100%;
+  border: transparent;
+  background-color: var(--white-transparent);
+}
 .contents {
   display: flex;
   height: var(--width-unit);
@@ -151,6 +156,48 @@
   gap: 32px;
   justify-content: space-between;
   position: relative;
+}
+.whoAreWe {
+  background-color: var(--dark-gray);
+  padding-left: var(--width-unit);
+  padding-right: var(--width-unit);
+  width: 100%;
+  padding-top: 128px;
+  padding-bottom: 128px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.whoAreWe::after {
+  position: absolute;
+  content: " ";
+  width: 1px;
+  left: 0;
+  right: 0;
+  top: 100%;
+  margin: 0 auto;
+  border: 40px solid transparent;
+  border-top: 40px solid var(--dark-gray);
+  z-index: 1;
+}
+.whoAreWe__contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  gap: 24px;
+}
+.neneArio {
+  width: 100%;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transform: scale(1.4);
+}
+.listDiferences {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 .contactBannerSection::after {
   position: absolute;
@@ -506,6 +553,7 @@
     height: auto;
     padding: 48px 32px;
   }
+
   .mainContent {
     padding: var(--mobile-margin);
   }

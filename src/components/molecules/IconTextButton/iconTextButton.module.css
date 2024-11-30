@@ -4,6 +4,7 @@
 .yellow.iconTextButton,
 .black.iconTextButton,
 .white.iconTextButton,
+.blue.iconTextButton,
 .very-light-black.iconTextButton {
   display: flex;
   outline: none;
@@ -157,9 +158,27 @@
   background-color: var(--black);
 }
 
-.primary-dark.iconTextButton.bordered {
-  border: 1px solid var(--primary);
-  color: var(--primary);
+/*blue*/
+.blue.iconTextButton {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  border-radius: 24px;
+  border: none;
+  padding: 16px 32px;
+}
+
+.blue.iconTextButton:disabled {
+  background-color: #2d4356;
+  cursor: auto;
+  color: var(--white);
+  cursor: no-drop;
+}
+
+.blue.iconTextButton:disabled:hover {
+}
+
+.blue.iconTextButton:hover {
+  background-color: var(--black);
 }
 
 /* yellow */
