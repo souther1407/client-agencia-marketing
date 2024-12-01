@@ -213,13 +213,10 @@
 }
 
 .contactBannerSection .desc {
-  display: flex;
-  flex-grow: 1;
 }
 .contactBannerSection .stickyContainer {
   display: flex;
   flex-direction: column;
-
   position: sticky;
   top: 220px;
   gap: 16px;
@@ -255,31 +252,30 @@
 }
 
 .details .detail {
-  background-color: var(--white);
+  background-color: var(--very-light-white);
   padding: 40px;
   position: relative;
   border-radius: 16px;
+  width: 700px;
+  border: 1px solid var(--gray-light);
 }
-
-.details .detail::before {
-  position: absolute;
-  content: " ";
-  width: 1px;
-  left: 10%;
-  bottom: 100%;
-  border: 20px solid transparent;
-  border-top: 20px solid var(--dark-white);
-  transform: translateY(100%);
+.detail__header {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
 }
-
-.details .detail::after {
-  position: absolute;
-  content: " ";
-  width: 1px;
-  left: 10%;
-  top: 100%;
-  border: 20px solid transparent;
-  border-top: 20px solid var(--white);
+.detail__img {
+  width: 100%;
+  transform: scale(1.1);
+}
+.detail__header .number {
+  padding: 0 8px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  background-color: var(--dark-blue);
 }
 
 .detail .desc {

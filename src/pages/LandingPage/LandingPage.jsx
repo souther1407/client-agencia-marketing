@@ -24,6 +24,7 @@ import Hubspot from "@assets/Hubspot.svg";
 import MailChimp from "@assets/MailChimp.svg";
 import Zapier from "@assets/Zapier.svg";
 import Medicos from "@assets/Medicos.svg";
+import AntesDespues from "@assets/antes despues.svg";
 
 const LandingPage = () => {
   const navigate = useNavigate();
@@ -160,7 +161,7 @@ const LandingPage = () => {
         </div>
       </section>
       <section className={styles.contactBannerSection}>
-        <div cassName={styles.desc}>
+        <div className={styles.desc}>
           <div className={styles.stickyContainer}>
             <Text type="bigtitle" color="black" bold="bold">
               ¿Por qué nuevos pacientes no eligen tu clínica dental?
@@ -176,123 +177,103 @@ const LandingPage = () => {
         </div>
         <div className={styles.details}>
           <div className={styles.detail}>
-            <Text type="subtitle" bold="semibold" color="black">
-              La publicidad de tu consultorio es{" "}
-              <Mark color="submarked-blue">genérica</Mark>
-            </Text>
+            <div className={styles.detail__header}>
+              <div className={styles.number}>
+                <Text bold="semibold" size={"sm"} color="light">
+                  1
+                </Text>
+              </div>
+              <Text type="subtitle" bold="semibold" color="black">
+                La publicidad de tu consultorio es genérica
+              </Text>
+            </div>
             <hr />
             <div className={styles.desc}>
               <Text size="sm" color="black" bold="font-light">
-                <Mark color="soft">Solucion:</Mark> ¿Buscas una agencia que
-                brinde resultados a largo plazo? Aprende más sobre nuestro
-                programa de 180 días y cómo puede cambiar tu práctica dental.
-                <Mark color="submarked-yellow" bold="medium">
-                  ¿Buscas una agencia que brinde resultados a largo plazo?
-                </Mark>
+                Aprende más sobre nuestro programa de 180 días y cómo puede
+                cambiar tu práctica dental
               </Text>
-              <Text size="sm" color="black" bold="font-light">
-                <Mark color="submarked-blue" bold="medium">
-                  ¿Buscas una agencia que brinde resultados a largo plazo?{" "}
-                  <br />
-                </Mark>{" "}
-                Aprende más sobre nuestro programa de 180 días.
-              </Text>
+              <img className={styles.detail__img} src={AntesDespues} />
             </div>
           </div>
           <div className={styles.detail}>
-            <Text type="subtitle" bold="semibold" color="black">
-              El diseño de tu Sitio Web Dental es{" "}
-              <Mark color="submarked-blue">ineficiente </Mark>
-            </Text>
+            <div className={styles.detail__header}>
+              <div className={styles.number}>
+                <Text bold="semibold" size={"sm"} color="light">
+                  1
+                </Text>
+              </div>
+              <Text type="subtitle" bold="semibold" color="black">
+                La publicidad de tu consultorio es genérica
+              </Text>
+            </div>
             <hr />
             <div className={styles.desc}>
               <Text size="sm" color="black" bold="font-light">
-                <Mark color="soft">Solucion:</Mark> ¿Buscas una agencia que
-                brinde resultados a largo plazo? Aprende más sobre nuestro
-                programa de 180 días y cómo puede cambiar tu práctica dental.
-                <Mark color="submarked-yellow" bold="medium">
-                  ¿Buscas una agencia que brinde resultados a largo plazo?
-                </Mark>
+                Aprende más sobre nuestro programa de 180 días y cómo puede
+                cambiar tu práctica dental
               </Text>
-              <Text size="sm" color="black" bold="font-light">
-                <Mark color="submarked-blue" bold="medium">
-                  ¿Buscas una agencia que brinde resultados a largo plazo?{" "}
-                  <br />
-                </Mark>{" "}
-                Aprende más sobre nuestro programa de 180 días.
-              </Text>
+              <img className={styles.detail__img} src={AntesDespues} />
             </div>
           </div>
           <div className={styles.detail}>
-            <Text type="subtitle" bold="semibold" color="black">
-              Tu estrategia de redes sociales es{" "}
-              <Mark color="submarked-blue">pobre</Mark>
-            </Text>
+            <div className={styles.detail__header}>
+              <div className={styles.number}>
+                <Text bold="semibold" size={"sm"} color="light">
+                  1
+                </Text>
+              </div>
+              <Text type="subtitle" bold="semibold" color="black">
+                La publicidad de tu consultorio es genérica
+              </Text>
+            </div>
             <hr />
             <div className={styles.desc}>
               <Text size="sm" color="black" bold="font-light">
-                <Mark color="soft">Solucion:</Mark> ¿Buscas una agencia que
-                brinde resultados a largo plazo? Aprende más sobre nuestro
-                programa de 180 días y cómo puede cambiar tu práctica dental.
-                <Mark color="submarked-yellow" bold="medium">
-                  ¿Buscas una agencia que brinde resultados a largo plazo?
-                </Mark>
+                Aprende más sobre nuestro programa de 180 días y cómo puede
+                cambiar tu práctica dental
               </Text>
-              <Text size="sm" color="black" bold="font-light">
-                <Mark color="submarked-blue" bold="medium">
-                  ¿Buscas una agencia que brinde resultados a largo plazo?{" "}
-                  <br />
-                </Mark>{" "}
-                Aprende más sobre nuestro programa de 180 días.
-              </Text>
+              <img className={styles.detail__img} src={AntesDespues} />
             </div>
           </div>
           <div className={styles.detail}>
-            <Text type="subtitle" bold="semibold" color="black">
-              <Mark color="submarked-blue">Te faltan</Mark> reseñas positivas
-              online
-            </Text>
+            <div className={styles.detail__header}>
+              <div className={styles.number}>
+                <Text bold="semibold" size={"sm"} color="light">
+                  1
+                </Text>
+              </div>
+              <Text type="subtitle" bold="semibold" color="black">
+                La publicidad de tu consultorio es genérica
+              </Text>
+            </div>
             <hr />
             <div className={styles.desc}>
               <Text size="sm" color="black" bold="font-light">
-                <Mark color="soft">Solucion:</Mark> ¿Buscas una agencia que
-                brinde resultados a largo plazo? Aprende más sobre nuestro
-                programa de 180 días y cómo puede cambiar tu práctica dental.
-                <Mark color="submarked-yellow" bold="medium">
-                  ¿Buscas una agencia que brinde resultados a largo plazo?
-                </Mark>
+                Aprende más sobre nuestro programa de 180 días y cómo puede
+                cambiar tu práctica dental
               </Text>
-              <Text size="sm" color="black" bold="font-light">
-                <Mark color="submarked-blue" bold="medium">
-                  ¿Buscas una agencia que brinde resultados a largo plazo?{" "}
-                  <br />
-                </Mark>{" "}
-                Aprende más sobre nuestro programa de 180 días.
-              </Text>
+              <img className={styles.detail__img} src={AntesDespues} />
             </div>
           </div>
           <div className={styles.detail}>
-            <Text type="subtitle" bold="semibold" color="black">
-              Tienes un <Mark color="submarked-blue">mal sistema</Mark> de
-              recordatorio de citas
-            </Text>
+            <div className={styles.detail__header}>
+              <div className={styles.number}>
+                <Text bold="semibold" size={"sm"} color="light">
+                  1
+                </Text>
+              </div>
+              <Text type="subtitle" bold="semibold" color="black">
+                La publicidad de tu consultorio es genérica
+              </Text>
+            </div>
             <hr />
             <div className={styles.desc}>
               <Text size="sm" color="black" bold="font-light">
-                <Mark color="soft">Solucion:</Mark> ¿Buscas una agencia que
-                brinde resultados a largo plazo? Aprende más sobre nuestro
-                programa de 180 días y cómo puede cambiar tu práctica dental.
-                <Mark color="submarked-yellow" bold="medium">
-                  ¿Buscas una agencia que brinde resultados a largo plazo?
-                </Mark>
+                Aprende más sobre nuestro programa de 180 días y cómo puede
+                cambiar tu práctica dental
               </Text>
-              <Text size="sm" color="black" bold="font-light">
-                <Mark color="submarked-blue" bold="medium">
-                  ¿Buscas una agencia que brinde resultados a largo plazo?{" "}
-                  <br />
-                </Mark>{" "}
-                Aprende más sobre nuestro programa de 180 días.
-              </Text>
+              <img className={styles.detail__img} src={AntesDespues} />
             </div>
           </div>
         </div>
