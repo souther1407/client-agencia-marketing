@@ -25,7 +25,7 @@ import MailChimp from "@assets/MailChimp.svg";
 import Zapier from "@assets/Zapier.svg";
 import Medicos from "@assets/Medicos.svg";
 import AntesDespues from "@assets/antes despues.svg";
-
+import Subrayado from "@assets/imagen subrayado.svg";
 const LandingPage = () => {
   const navigate = useNavigate();
   const [showWSMsg, setShowWSMsg] = useState(true);
@@ -164,7 +164,11 @@ const LandingPage = () => {
         <div className={styles.desc}>
           <div className={styles.stickyContainer}>
             <Text type="bigtitle" color="black" bold="bold">
-              ¿Por qué nuevos pacientes no eligen tu clínica dental?
+              ¿Por qué nuevos pacientes{" "}
+              <span className={styles.subrayado}>
+                no eligen <img src={Subrayado} />
+              </span>{" "}
+              tu clínica dental?
             </Text>
             <IconTextButton
               colorVariant="blue"
@@ -278,16 +282,65 @@ const LandingPage = () => {
           </div>
         </div>
       </section>
-      <section className={styles.spainBanner}>
-        <img className={styles.spainBannerImg} src={spainBanner} />
-        <div className={styles.desc}>
-          <Text type="smalltitle" color="light" bold="bold">
-            Trabajamos con clínicas en toda España.
+      <section className={styles.spainLocation}>
+        <Text type="bigtitle" textAlign="center" color="light" bold="bold">
+          ¿Necesitas una Agencia especializada en Marketing Dental?
+        </Text>
+        <div className={styles.spainLocation__desc}>
+          <Text color="light" bold="font-light">
+            Puedes ponerte en contacto con nosotros por correo electrónico a
+            jaka@ .design y te responderemos en un plazo de 24 horas.
           </Text>
-          <Text size="sm" bold="font-light" color="soft">
-            Nuestras estrategias están diseñadas para ser efectivas con
-            pacientes locales.
+          <Text color="light" bold="font-light">
+            No olvides incluir algunas palabras sobre ti y tu negocio. Puedes
+            ponerte en contacto con nosotros por correo electrónico a jaka@
+            .design.
           </Text>
+        </div>
+        <div className={styles.spainLocation__card}>
+          <div className={styles.spainLocation__card__elements}>
+            <Text size="big" color="dark" bold="semibold">
+              Si tu consultorio dental:
+            </Text>
+            <hr className={styles.spainLocation__card__separator} />
+            <div className={styles.spainLocation__items}>
+              <div className={styles.spainLocation__items__item}>
+                <Icon
+                  type={"rightArrow"}
+                  size={"2rem"}
+                  color="var(--lemon-green)"
+                />
+                <Text size="lg" color="dark">
+                  Está ubicado en España.
+                </Text>
+              </div>
+              <div className={styles.spainLocation__items__item}>
+                <Icon
+                  type={"rightArrow"}
+                  size={"2rem"}
+                  color="var(--lemon-green)"
+                />
+                <Text size="lg" color="dark">
+                  Factura 10,000 euros o más al mes
+                </Text>
+              </div>
+              <div className={styles.spainLocation__items__item}>
+                <Icon
+                  type={"rightArrow"}
+                  size={"2rem"}
+                  color="var(--lemon-green)"
+                />
+                <Text size="lg" color="dark">
+                  Quiere crecer rápidamente en el 2025.
+                </Text>
+              </div>
+            </div>
+            <div className={styles.spainLocation__btn}>
+              <IconTextButton colorVariant="lemon" size="100%">
+                Solicita una reunión
+              </IconTextButton>
+            </div>
+          </div>
         </div>
       </section>
       <section className={styles.mainContent}>

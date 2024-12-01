@@ -11,7 +11,7 @@
 .title,
 .subtitle,
 .smallsubtitle {
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 .text {
@@ -28,7 +28,7 @@
 }
 .bigtitle {
   font-size: 2.67rem;
-  line-height: 1.15;
+  line-height: 1.5;
 }
 
 .ultrabigtitle {
@@ -83,6 +83,9 @@
 }
 .soft-light {
   color: var(--light-blue-transparent);
+}
+.dark {
+  color: var(--light-black);
 }
 .link {
   color: var(--light-blue);
