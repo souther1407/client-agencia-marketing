@@ -81,6 +81,9 @@
 .soft {
   color: var(--dark-white);
 }
+.lemon {
+  color: var(--lemon-green);
+}
 .soft-light {
   color: var(--light-blue-transparent);
 }

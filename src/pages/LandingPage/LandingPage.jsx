@@ -26,6 +26,9 @@ import Zapier from "@assets/Zapier.svg";
 import Medicos from "@assets/Medicos.svg";
 import AntesDespues from "@assets/antes despues.svg";
 import Subrayado from "@assets/imagen subrayado.svg";
+import ImagenEbook1 from "@assets/Imagen ebook 1.svg";
+import ImagenEbookWp from "@assets/imagen ebook de whatsapp.svg";
+
 const LandingPage = () => {
   const navigate = useNavigate();
   const [showWSMsg, setShowWSMsg] = useState(true);
@@ -344,41 +347,56 @@ const LandingPage = () => {
         </div>
       </section>
       <section className={styles.mainContent}>
-        <div className={styles.desc}>
-          <Text type="title" color="black">
-            Aprende sobre Marketing Dental
+        <Text type="bigtitle" textAlign="center" color="black" bold="bold">
+          ¿Quieres descubrir como crecer tu consultorio? Revisa nuestros ebooks
+          gratuitos?
+        </Text>
+        <div className={styles.mainContent__desc}>
+          <Text color="black" bold="font-light" textAlign="center">
+            Si tienes una práctica dental que factura más de $10,000 euros al
+            mes y quieres llevarla al siguiente nivel, no dudes en contactarnos.
+            Somos expertos en Marketing Dental.
           </Text>
-          <Text bold="font-light" size="sm">
-            ¡Disfruta de nuestros ebooks gratuitos!
-          </Text>
-          <TextLink textProps={{ size: "sm" }} to={OUR_PROGRAM} variant="black">
-            Ver Programa {">"}
-          </TextLink>
-          <div className={styles.cardJoinUs}>
-            <img src={Medicos} />
-            <div className={styles.desc}>
-              <Text size="ty" color="black">
-                Únete a Andrés, Luis, y los muchos dentistas
-              </Text>
-              <Text size="ty" bold="font-light">
-                que aprenden con nuestros ebooks gratuito
-              </Text>
-            </div>
-          </div>
         </div>
-        <div className={styles.card} onClick={() => navigate(DOWNLOAD_EBOOK)}>
-          <img className={styles.cardImg} src={EbookImg} />
-          <Text size="ty">EBOOK</Text>
-          <Text size="lg">10 Secretos de Marketing Dental</Text>
-
-          <TextLink
-            marked
-            textProps={{ size: "ty" }}
-            variant="secondary"
-            to={DOWNLOAD_EBOOK}
-          >
-            Descargar la Guia
-          </TextLink>
+        <div className={styles.mainContent__cards}>
+          <div className={styles.mainContent__card}>
+            <div className={styles.mainContent__card__desc}>
+              <Text bold="semibold">2024</Text>
+              <Text type="title" bold="bold" color="black">
+                7 Secretos del Marketing Dental
+              </Text>
+              <Text size="sm">
+                Save thousands of engineering hours by using the NexHealth
+                Synchronizer API.
+              </Text>
+              <div className={styles.mainContent__card__btn}>
+                <IconTextButton colorVariant="blue" size="100%">
+                  Descargar Ahora
+                </IconTextButton>
+              </div>
+            </div>
+            <img src={ImagenEbook1} />
+          </div>
+          <div className={styles.mainContent__card}>
+            <div className={styles.mainContent__card__desc}>
+              <Text bold="semibold" color="lemon">
+                2024
+              </Text>
+              <Text type="title" bold="bold" color="black">
+                WhatsApp para Clinicas Dentales
+              </Text>
+              <Text size="sm">
+                Save thousands of engineering hours by using the NexHealth
+                Synchronizer API.
+              </Text>
+              <div className={styles.mainContent__card__btn}>
+                <IconTextButton colorVariant="lemon" size="100%">
+                  Descargar Ahora
+                </IconTextButton>
+              </div>
+            </div>
+            <img src={ImagenEbookWp} />
+          </div>
         </div>
       </section>
       <section className={styles.prefooter}>
