@@ -4,19 +4,20 @@
   gap: 32px;
   padding-left: var(--width-unit);
   padding-right: var(--width-unit);
-  align-items: center;
-  justify-content: space-between;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  justify-content: center;
   word-wrap: break-word;
+  border-radius: 60px 60px 0 0;
 }
 
 .preFooter .desc {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 24px;
 }
-.preFooter .desc > :last-child {
-  align-self: self-start;
-}
+
 .preFooterImg {
   width: 240px;
 }

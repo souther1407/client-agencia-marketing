@@ -20,7 +20,7 @@ const Footer = () => {
             </div>
           </section>
           <div className={styles.linkSection}>
-            <section className={styles.section}>
+            {/* <section className={styles.section}>
               <Text color="light" size="ty">
                 Recursos Gratis
               </Text>
@@ -44,15 +44,22 @@ const Footer = () => {
                   Biblioteca de Marketing Dental
                 </Text>
               </Link>
-            </section>
+            </section> */}
             <section className={styles.section}>
-              <Text color="light" size="ty">
+              <Text color="light" size="lg">
                 Contáctanos
               </Text>
-
-              <Text color="soft" bold="font-light" size="xty">
+              <Link to={LANDING_EBOOKS}>
+                <div
+                  style={{ display: "flex", gap: "8px", alignItems: "center" }}
+                >
+                  <Icon size={"1rem"} type={"wp"} color="var(--primary)" />
+                  <Text color="primary">Haznos Cualquier Consulta</Text>
+                </div>
+              </Link>
+              {/*  <Text color="soft" bold="font-light" size="xty">
                 info@inkadentist.com
-              </Text>
+              </Text> */}
 
               {/* <div className={styles.socialMedia}>
               <Icon type={"wp"} size={"1rem"} color="var(--dark-white)" />
