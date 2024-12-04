@@ -117,13 +117,13 @@ img {
 @media screen and (max-width: 800px) {
   html,
   body {
-    font-size: 14px;
+    font-size: 12px !important;
   }
 }
 
 @media screen and (max-width: 480px) {
   html,
   body {
-    font-size: 12px;
+    font-size: 12px !important;
   }
 }

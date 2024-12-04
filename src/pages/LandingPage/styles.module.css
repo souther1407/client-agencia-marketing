@@ -194,6 +194,11 @@
   padding-bottom: 32px;
   transform: scale(1.4);
 }
+.neneArio.mobile {
+  display: none;
+
+  transform: scale(1);
+}
 .listDiferences {
   display: flex;
   flex-direction: column;
@@ -570,7 +575,7 @@
 
 @media screen and (max-width: 1400px) {
   .mainContent {
-    padding: var(--mobile-margin);
+    padding: 0;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -608,13 +613,26 @@
   }
 
   .mainContent {
-    padding: var(--mobile-margin);
   }
   .mainEBook__card {
     height: auto;
   }
 }
 @media screen and (max-width: 1024px) {
+  .whoAreWe {
+    padding: 32px;
+    align-items: flex-start;
+  }
+  .whoAreWe__contents {
+    width: 100%;
+  }
+  .neneArio {
+    display: none;
+  }
+  .neneArio.mobile {
+    display: block;
+    padding: 0;
+  }
   .videoSection {
     flex-direction: column;
   }
@@ -650,6 +668,18 @@
     width: 100%;
     padding: var(--mobile-margin);
   }
+  .mainContent__card {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .mainContent__card img {
+    width: 100%;
+    height: 500px;
+    align-self: center;
+  }
+  .mainContent__card__desc {
+    gap: 16px;
+  }
   .partners {
     justify-content: center;
   }
@@ -682,7 +712,22 @@
 
   .spainLocation {
     flex-direction: column;
-    padding: 64px 32px;
+    align-items: flex-start;
+    padding: 64px 0;
+  }
+  .spainLocation > :first-child {
+    padding: 32px;
+  }
+  .spainLocation__desc {
+    width: 100%;
+    padding: 32px;
+  }
+  .spainLocation__card {
+    width: 100%;
+    padding: 32px;
+  }
+  .spainLocation__btn {
+    width: 100%;
   }
 
   .banner__btns {
@@ -695,8 +740,9 @@
     width: 100% !important;
   }
   .mainContent {
-    padding: 64px 32px;
     flex-direction: column;
+
+    padding: 64px 0;
   }
   .mainContent .card {
     width: 100%;

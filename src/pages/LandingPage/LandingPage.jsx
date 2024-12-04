@@ -2,6 +2,7 @@ import { useState } from "react";
 import styles from "./styles.module.css";
 import Nav from "../../components/organisms/Nav/Nav";
 import NeneArio from "@assets/Nene Ario Landing.svg";
+import NeneArioMobile from "@assets/NeneArioMobile.svg";
 import spainBanner from "@assets/spainBanner.svg";
 import Text from "../../components/atoms/Text/Text";
 import IconTextButton from "../../components/molecules/IconTextButton/IconTextButton";
@@ -23,7 +24,7 @@ import FacebookAds from "@assets/Facebook Ads.svg";
 import Hubspot from "@assets/Hubspot.svg";
 import MailChimp from "@assets/MailChimp.svg";
 import Zapier from "@assets/Zapier.svg";
-import Medicos from "@assets/Medicos.svg";
+
 import AntesDespues from "@assets/antes despues.svg";
 import Subrayado from "@assets/imagen subrayado.svg";
 import ImagenEbook1 from "@assets/Imagen ebook 1.svg";
@@ -116,7 +117,11 @@ const LandingPage = () => {
             .design y te responderemos en un plazo de 24 horas.
           </Text>
           <img className={styles.neneArio} src={NeneArio} alt="Nene ario" />
-
+          <img
+            className={`${styles.neneArio} ${styles.mobile}`}
+            src={NeneArioMobile}
+            alt="Nene ario"
+          />
           <hr className={styles.separator} />
           <Text color="light" size="xxlg" bold="bold">
             ¿Qué nos <Mark color="primary-underline">diferencia</Mark> de otras
@@ -358,6 +363,7 @@ const LandingPage = () => {
             Somos expertos en Marketing Dental.
           </Text>
         </div>
+
         <div className={styles.mainContent__cards}>
           <div className={styles.mainContent__card}>
             <div className={styles.mainContent__card__desc}>
