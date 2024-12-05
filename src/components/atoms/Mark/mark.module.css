@@ -17,6 +17,13 @@
   color: var(--black);
   font-weight: bold;
 }
+.mark.dark-bg {
+  color: var(--white);
+  background-color: var(--black);
+  font-weight: bold;
+  padding: 0 8px;
+  border-radius: 4px;
+}
 
 .mark.submarked-blue {
   color: var(--black);

@@ -178,13 +178,16 @@ const LandingPage = () => {
               </span>{" "}
               tu clínica dental?
             </Text>
-            <IconTextButton
-              colorVariant="blue"
-              size="fit-content"
-              textProps={{ bold: "font-light" }}
-            >
-              Quiero crecer mi Consultorio {">"}
-            </IconTextButton>
+
+            <div className={styles.quieroHacerCrecerBtn}>
+              <IconTextButton
+                colorVariant="blue"
+                size="100%"
+                textProps={{ bold: "font-light" }}
+              >
+                Quiero crecer mi Consultorio {">"}
+              </IconTextButton>
+            </div>
           </div>
         </div>
         <div className={styles.details}>
@@ -353,8 +356,8 @@ const LandingPage = () => {
       </section>
       <section className={styles.mainContent}>
         <Text type="bigtitle" textAlign="center" color="black" bold="bold">
-          ¿Quieres descubrir como crecer tu consultorio? Revisa nuestros ebooks
-          gratuitos?
+          ¿Quieres descubrir como crecer tu consultorio? Revisa nuestros{" "}
+          <Mark color="dark-bg">ebooks gratuitos</Mark>
         </Text>
         <div className={styles.mainContent__desc}>
           <Text color="black" bold="font-light" textAlign="center">

@@ -181,6 +181,16 @@ body:has(.resoursesDropDown.show) {
   gap: 8px;
   cursor: pointer;
 }
+.mobileContact .contactBtn {
+  background-color: var(--very-light-white);
+  border-radius: 16px;
+  border: 1px solid var(--gray);
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
 
 .resoursesDropDown.show .contactBanner.show {
   top: 0;
@@ -268,6 +278,16 @@ body:has(.resoursesDropDown.show) {
   gap: 8px;
 }
 .mobileMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.btns {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 32px;
 }
 .dropdownMenu {
   display: flex;
@@ -291,7 +311,7 @@ body:has(.resoursesDropDown.show) {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  background-color: var(--gray-light);
+  background-color: var(--dark-white);
   transform-origin: top;
   overflow: hidden;
   transition: all 0.3s ease-in;
@@ -302,16 +322,19 @@ body:has(.resoursesDropDown.show) {
 }
 .mobileCard {
   display: flex;
-  background-color: var(--gray-blue);
+  background-color: var(--white);
   padding: 16px;
   border-radius: 8px;
   margin: 8px 16px;
   gap: 16px;
   cursor: pointer;
 }
+.mobileCardContainer {
+  background-color: var(--black);
+}
 .mobileCard .mobileImg {
   width: 100px;
-  height: 100px;
+  height: 75px;
   border-radius: 8px;
 }
 .mobileCard .mobileDesc {
@@ -327,6 +350,7 @@ body:has(.resoursesDropDown.show) {
   flex-direction: column;
   width: 100%;
   padding: 8px 16px;
+  gap: 16px;
 }
 @media screen and (max-width: 1200px) {
   .elements {

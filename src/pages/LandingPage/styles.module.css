@@ -157,6 +157,9 @@
   justify-content: space-between;
   position: relative;
 }
+.quieroHacerCrecerBtn {
+  width: 400px;
+}
 .whoAreWe {
   background-color: var(--dark-gray);
   padding-left: var(--width-unit);
@@ -446,18 +449,6 @@
 .mainContent__card__btn {
   width: 100%;
 }
-.mainContent::after {
-  position: absolute;
-  content: " ";
-  width: 1px;
-  left: 0;
-  right: 0;
-  top: 100%;
-  margin: 0 auto;
-  border: 40px solid transparent;
-  z-index: 1;
-  border-top: 40px solid var(--dark-white);
-}
 
 .iconBenefit {
   width: 48px;
@@ -623,8 +614,16 @@
     padding: 32px;
     align-items: flex-start;
   }
+  .quieroHacerCrecerBtn {
+    width: 100%;
+  }
   .whoAreWe__contents {
     width: 100%;
+  }
+  .detail__header .number {
+    align-self: start;
+    position: relative;
+    top: 8px;
   }
   .neneArio {
     display: none;
@@ -716,11 +715,11 @@
     padding: 64px 0;
   }
   .spainLocation > :first-child {
-    padding: 32px;
+    padding: 0 32px;
   }
   .spainLocation__desc {
     width: 100%;
-    padding: 32px;
+    padding: 0 32px;
   }
   .spainLocation__card {
     width: 100%;
