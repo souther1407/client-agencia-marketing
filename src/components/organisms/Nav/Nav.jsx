@@ -197,7 +197,7 @@ const Nav = ({ hideTopMenu = false }) => {
               </div>
               <TextLink
                 marked={showResources}
-                variant="rounded"
+                variant="primary"
                 textProps={{ color: "black", bold: "font-light", size: "ty" }}
               >
                 Recursos gratis
@@ -210,7 +210,7 @@ const Nav = ({ hideTopMenu = false }) => {
                 </Text>
               </div>
               <TextLink
-                variant="rounded"
+                variant="primary"
                 to={OUR_PROGRAM}
                 textProps={{ color: "black", bold: "font-light", size: "ty" }}
               >
@@ -220,7 +220,7 @@ const Nav = ({ hideTopMenu = false }) => {
 
             <div onMouseEnter={handleShowContact} onClick={handleShowContact}>
               <TextLink
-                variant="rounded"
+                variant="primary"
                 marked={showContact}
                 textProps={{ color: "black", bold: "font-light", size: "ty" }}
               >
