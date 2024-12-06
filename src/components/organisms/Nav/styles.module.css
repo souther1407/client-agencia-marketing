@@ -17,7 +17,6 @@
   width: 100%;
   top: 0;
   z-index: 1000;
-  background-color: var(--black);
 }
 .nav.ajust {
   height: auto;
@@ -30,9 +29,9 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+
+  background-color: white;
   z-index: 1000;
-  background-color: var(--black);
 }
 .topMenu,
 .bottomMenu {
@@ -44,7 +43,7 @@
   width: 100%;
   gap: 16px;
   justify-content: center;
-  background-color: #3d5a98;
+  background-color: var(--primary);
   padding: 16px;
   position: relative;
   border-bottom: 1px solid var(--primary-transparent);
@@ -61,6 +60,7 @@
   justify-content: space-between;
   padding-left: var(--width-unit);
   padding-right: var(--width-unit);
+  background-color: var(--primary-transparent);
 }
 .linkContainer {
   position: relative;
@@ -133,7 +133,7 @@ body:has(.resoursesDropDown.show) {
   display: flex;
   width: 100%;
   height: fit-content;
-  background-color: var(--dark-white);
+  background-color: var(--gradient-banner);
   justify-content: center;
   transform: translateY(-100%);
   visibility: hidden;
@@ -152,7 +152,7 @@ body:has(.resoursesDropDown.show) {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  background-color: var(--dark-white);
+  background-color: var(--gradient-banner);
   height: fit-content;
   padding: 32px;
   width: 100%;

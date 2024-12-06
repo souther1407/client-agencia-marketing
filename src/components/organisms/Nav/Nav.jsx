@@ -198,7 +198,7 @@ const Nav = ({ hideTopMenu = false }) => {
               <TextLink
                 marked={showResources}
                 variant="rounded"
-                textProps={{ color: "soft", bold: "font-light", size: "ty" }}
+                textProps={{ color: "black", bold: "font-light", size: "ty" }}
               >
                 Recursos gratis
               </TextLink>
@@ -212,7 +212,7 @@ const Nav = ({ hideTopMenu = false }) => {
               <TextLink
                 variant="rounded"
                 to={OUR_PROGRAM}
-                textProps={{ color: "soft", bold: "font-light", size: "ty" }}
+                textProps={{ color: "black", bold: "font-light", size: "ty" }}
               >
                 Nuestro Programa
               </TextLink>
@@ -222,7 +222,7 @@ const Nav = ({ hideTopMenu = false }) => {
               <TextLink
                 variant="rounded"
                 marked={showContact}
-                textProps={{ color: "soft", bold: "font-light", size: "ty" }}
+                textProps={{ color: "black", bold: "font-light", size: "ty" }}
               >
                 Contacto
               </TextLink>
@@ -230,7 +230,7 @@ const Nav = ({ hideTopMenu = false }) => {
             <div className={styles.separator}></div>
             <div className={styles.formBtn}>
               <IconTextButton
-                colorVariant="primary-rounded"
+                colorVariant="primary"
                 textProps={{ size: "ty" }}
                 onClick={() => navigate(CONTACT_FORM)}
               >

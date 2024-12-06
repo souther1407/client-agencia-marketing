@@ -17,13 +17,14 @@ import {
   CONTACT_FORM,
   OUR_PROGRAM,
 } from "../../constants/routes";
-import ImgBanner from "./components/BannerImg/BannerImg";
+
 import PreFooter from "../../components/organisms/PreFooter/PreFooter";
 import Mark from "../../components/atoms/Mark/Mark";
 import FacebookAds from "@assets/Facebook Ads.svg";
 import Hubspot from "@assets/Hubspot.svg";
 import MailChimp from "@assets/MailChimp.svg";
 import Zapier from "@assets/Zapier.svg";
+import ImgBanner from "@assets/ImgBanner.svg";
 
 import AntesDespues from "@assets/antes despues.svg";
 import Subrayado from "@assets/imagen subrayado.svg";
@@ -71,11 +72,11 @@ const LandingPage = () => {
                 type="ultrabigtitle"
                 bold="extra-bold"
                 fontFamily="font-secondary"
-                color="light"
+                color="black"
               >
                 Tu Mejor Opción en <Mark color="mark">Marketing Dental.</Mark>
               </Text>
-              <Text size="sm" bold="font-light" color="light">
+              <Text size="sm" bold="font-light" color="black">
                 Convertimos tu clínica en autoridad local
               </Text>
 
@@ -91,8 +92,8 @@ const LandingPage = () => {
                 *Solo trabajamos con clínicas que ofrecen implantes.
               </Text>
             </div>
-
-            <ImgBanner />
+            <img className={styles.banner__img} src={ImgBanner} />
+            {/* <ImgBanner /> */}
           </div>
           <div className={styles.partners}>
             <img src={FacebookAds} />
@@ -104,14 +105,14 @@ const LandingPage = () => {
       </header>
       <section className={styles.whoAreWe}>
         <div className={styles.whoAreWe__contents}>
-          <Text color="light" type="bigtitle">
+          <Text color="black" type="bigtitle">
             ¿Quienes Somos?
           </Text>
-          <Text color="light" bold="font-light">
+          <Text color="black" bold="font-light">
             Puedes ponerte en contacto con nosotros por correo electrónico a
             jaka@ .design y te responderemos en un plazo de 24 horas.
           </Text>
-          <Text color="light" bold="font-light">
+          <Text color="black" bold="font-light">
             No olvides incluir algunas palabras sobre ti y tu negocio. Puedes
             ponerte en contacto con nosotros por correo electrónico a jaka@
             .design y te responderemos en un plazo de 24 horas.
@@ -123,43 +124,43 @@ const LandingPage = () => {
             alt="Nene ario"
           />
           <hr className={styles.separator} />
-          <Text color="light" size="xxlg" bold="bold">
+          <Text color="black" size="xxlg" bold="bold">
             ¿Qué nos <Mark color="primary-underline">diferencia</Mark> de otras
             agencias?
           </Text>
           <div className={styles.listDiferences}>
             <div className={styles.line}>
               <Icon type={"check"} color="var(--primary)" size={"1rem"} />
-              <Text color="light" bold="font-light">
+              <Text color="black" bold="font-light">
                 Enfocamos TODO nuestro tiempo al Marketing de Clínicas Dentales.
               </Text>
             </div>
             <div className={styles.line}>
               <Icon type={"check"} color="var(--primary)" size={"1rem"} />
-              <Text color="light" bold="font-light">
+              <Text color="black" bold="font-light">
                 Trabajamos con un numero limitado de consultorio.
               </Text>
             </div>
             <div className={styles.line}>
               <Icon type={"check"} color="var(--primary)" size={"1rem"} />
-              <Text color="light" bold="font-light">
+              <Text color="black" bold="font-light">
                 Traemos pacientes de tus tratamientos más rentables.
               </Text>
             </div>
             <div className={styles.line}>
               <Icon type={"check"} color="var(--primary)" size={"1rem"} />
-              <Text color="light" bold="font-light">
+              <Text color="black" bold="font-light">
                 Trabajamos con un numero limitado de consultorio.
               </Text>
             </div>
             <div className={styles.line}>
               <Icon type={"check"} color="var(--primary)" size={"1rem"} />
-              <Text color="light" bold="font-light">
+              <Text color="black" bold="font-light">
                 Traemos pacientes de tus tratamientos más rentables.
               </Text>
             </div>
           </div>
-          <Text color="light" bold="bold" size="lg">
+          <Text color="black" bold="bold" size="lg">
             Puedes ponerte en contacto con nosotros por{" "}
             <Mark color="primary" bold="bold">
               correo electrónico a jaka@ .design
@@ -181,7 +182,7 @@ const LandingPage = () => {
 
             <div className={styles.quieroHacerCrecerBtn}>
               <IconTextButton
-                colorVariant="blue"
+                colorVariant="primary"
                 size="100%"
                 textProps={{ bold: "font-light" }}
               >

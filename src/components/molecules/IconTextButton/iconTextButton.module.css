@@ -24,7 +24,7 @@
 /* Primary */
 .primary.iconTextButton.full {
   background-color: var(--primary);
-  color: var(--dark-black);
+  color: var(--white);
   border-radius: 8px;
 }
 .primary.iconTextButton:disabled {
