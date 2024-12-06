@@ -3,6 +3,14 @@
   font-weight: bold;
 }
 
+.primary-bg {
+  color: var(--white);
+  background-color: var(--primary);
+  font-weight: bold;
+  padding: 0 8px;
+  border-radius: 4px;
+}
+
 .mark.soft {
   color: var(--gray);
   font-weight: bold;

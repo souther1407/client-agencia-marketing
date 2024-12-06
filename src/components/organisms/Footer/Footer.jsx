@@ -46,7 +46,7 @@ const Footer = () => {
               </Link>
             </section> */}
             <section className={styles.section}>
-              <Text color="light" size="lg">
+              <Text color="black" size="lg">
                 Contáctanos
               </Text>
               <Link to={LANDING_EBOOKS}>
@@ -54,7 +54,7 @@ const Footer = () => {
                   style={{ display: "flex", gap: "8px", alignItems: "center" }}
                 >
                   <Icon size={"1rem"} type={"wp"} color="var(--primary)" />
-                  <Text color="primary">Haznos Cualquier Consulta</Text>
+                  <Text color="black">Haznos Cualquier Consulta</Text>
                 </div>
               </Link>
               {/*  <Text color="soft" bold="font-light" size="xty">
@@ -76,24 +76,24 @@ const Footer = () => {
         </header>
         <div className={styles.separator}></div>
         <div className={styles.copy}>
-          <Text color="soft" bold="font-light" size="sm">
+          <Text color="black" bold="font-light" size="sm">
             Copyright © {new Date().getFullYear()}, hackdental.com
           </Text>
           <div className={styles.links}>
             <Link>
-              <Text color="soft" bold="font-light" size="ty">
+              <Text color="black" bold="font-light" size="ty">
                 Politica de Privacidad
               </Text>
             </Link>
             <div className={styles.vbar}></div>
             <Link>
-              <Text color="soft" bold="font-light" size="ty">
+              <Text color="black" bold="font-light" size="ty">
                 Manejo de Cookies
               </Text>
             </Link>
             <div className={styles.vbar}></div>
             <Link>
-              <Text color="soft" bold="font-light" size="ty">
+              <Text color="black" bold="font-light" size="ty">
                 Cosas Legales
               </Text>
             </Link>

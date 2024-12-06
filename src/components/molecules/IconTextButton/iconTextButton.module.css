@@ -6,6 +6,7 @@
 .white.iconTextButton,
 .blue.iconTextButton,
 .lemon.iconTextButton,
+.primary-rounded,
 .very-light-black.iconTextButton {
   display: flex;
   outline: none;
@@ -50,7 +51,7 @@
 /*primary rounded*/
 .primary-rounded.iconTextButton.full {
   background-color: var(--primary);
-  color: var(--dark-black);
+  color: var(--white);
   border-radius: 32px;
   border: none;
   padding: 8px 16px;
@@ -179,6 +180,29 @@
 }
 
 .blue.iconTextButton:hover {
+  background-color: var(--black);
+}
+
+/*primary-rounded*/
+.primary-rounded.iconTextButton {
+  background-color: var(--primary);
+  color: var(--white);
+  border-radius: 24px;
+  border: none;
+  padding: 16px 32px;
+}
+
+.primary-rounded.iconTextButton:disabled {
+  background-color: #2d4356;
+  cursor: auto;
+  color: var(--white);
+  cursor: no-drop;
+}
+
+.primary-rounded.iconTextButton:disabled:hover {
+}
+
+.primary-rounded.iconTextButton:hover {
   background-color: var(--black);
 }
 

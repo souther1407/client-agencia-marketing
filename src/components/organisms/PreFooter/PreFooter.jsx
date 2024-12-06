@@ -10,10 +10,10 @@ const PreFooter = () => {
   return (
     <section className={styles.preFooter}>
       <div className={styles.desc}>
-        <Text size="big" color="light" bold="bold">
+        <Text size="big" color="black" bold="bold">
           Impulsemos tu Clínica Dental, Juntos
         </Text>
-        <Text color="light" bold="font-light">
+        <Text color="black" bold="font-light">
           Pide una auditoría para tu consultorio dental, es 100% gratis
         </Text>
         <IconTextButton onClick={() => navigate(CONTACT_FORM)}>

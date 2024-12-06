@@ -295,15 +295,15 @@ const LandingPage = () => {
         </div>
       </section>
       <section className={styles.spainLocation}>
-        <Text type="bigtitle" textAlign="center" color="light" bold="bold">
+        <Text type="bigtitle" textAlign="center" color="black" bold="bold">
           ¿Necesitas una Agencia especializada en Marketing Dental?
         </Text>
         <div className={styles.spainLocation__desc}>
-          <Text color="light" bold="font-light">
+          <Text color="black" bold="font-light">
             Puedes ponerte en contacto con nosotros por correo electrónico a
             jaka@ .design y te responderemos en un plazo de 24 horas.
           </Text>
-          <Text color="light" bold="font-light">
+          <Text color="black" bold="font-light">
             No olvides incluir algunas palabras sobre ti y tu negocio. Puedes
             ponerte en contacto con nosotros por correo electrónico a jaka@
             .design.
@@ -320,7 +320,7 @@ const LandingPage = () => {
                 <Icon
                   type={"rightArrow"}
                   size={"2rem"}
-                  color="var(--lemon-green)"
+                  color="var(--primary)"
                 />
                 <Text size="lg" color="dark">
                   Está ubicado en España.
@@ -330,7 +330,7 @@ const LandingPage = () => {
                 <Icon
                   type={"rightArrow"}
                   size={"2rem"}
-                  color="var(--lemon-green)"
+                  color="var(--primary)"
                 />
                 <Text size="lg" color="dark">
                   Factura 10,000 euros o más al mes
@@ -340,7 +340,7 @@ const LandingPage = () => {
                 <Icon
                   type={"rightArrow"}
                   size={"2rem"}
-                  color="var(--lemon-green)"
+                  color="var(--primary)"
                 />
                 <Text size="lg" color="dark">
                   Quiere crecer rápidamente en el 2025.
@@ -348,7 +348,7 @@ const LandingPage = () => {
               </div>
             </div>
             <div className={styles.spainLocation__btn}>
-              <IconTextButton colorVariant="lemon" size="100%">
+              <IconTextButton colorVariant="primary" size="100%">
                 Solicita una reunión
               </IconTextButton>
             </div>
@@ -358,7 +358,7 @@ const LandingPage = () => {
       <section className={styles.mainContent}>
         <Text type="bigtitle" textAlign="center" color="black" bold="bold">
           ¿Quieres descubrir como crecer tu consultorio? Revisa nuestros{" "}
-          <Mark color="dark-bg">ebooks gratuitos</Mark>
+          <Mark color="primary-bg">ebooks gratuitos</Mark>
         </Text>
         <div className={styles.mainContent__desc}>
           <Text color="black" bold="font-light" textAlign="center">
@@ -387,9 +387,9 @@ const LandingPage = () => {
             </div>
             <img src={ImagenEbook1} />
           </div>
-          <div className={styles.mainContent__card}>
+          {/*  <div className={styles.mainContent__card}>
             <div className={styles.mainContent__card__desc}>
-              <Text bold="semibold" color="lemon">
+              <Text bold="semibold" color="primary">
                 2024
               </Text>
               <Text type="title" bold="bold" color="black">
@@ -400,13 +400,13 @@ const LandingPage = () => {
                 Synchronizer API.
               </Text>
               <div className={styles.mainContent__card__btn}>
-                <IconTextButton colorVariant="lemon" size="100%">
+                <IconTextButton colorVariant="primary-rounded" size="100%">
                   Descargar Ahora
                 </IconTextButton>
               </div>
             </div>
             <img src={ImagenEbookWp} />
-          </div>
+          </div> */}
         </div>
       </section>
       <section className={styles.prefooter}>
