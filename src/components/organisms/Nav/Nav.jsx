@@ -18,6 +18,7 @@ import { useNavigate } from "react-router-dom";
 import IconTextButton from "../../molecules/IconTextButton/IconTextButton";
 import imgEbookPrueba from "@assets/ImgCardsNav.svg";
 import { ES } from "country-flag-icons/react/3x2";
+import { parseNumberToMonthName } from "../../../utils/parsing";
 
 const Nav = ({ hideTopMenu = false }) => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -170,8 +171,8 @@ const Nav = ({ hideTopMenu = false }) => {
         {hideTopMenu || isTopMenuHidden || (
           <div className={styles.topMenu}>
             <Text size="sm" color="light" bold="font-light">
-              ¡Solo Valido para Octubre! Aceptamos 10 nuevas clínicas en España{" "}
-              &nbsp;
+              ¡Solo Valido para {parseNumberToMonthName(new Date().getMonth())}!
+              Aceptamos 10 nuevas clínicas en España &nbsp;
               <span className={styles.country}>
                 <ES width={"1.4rem"} />
               </span>
