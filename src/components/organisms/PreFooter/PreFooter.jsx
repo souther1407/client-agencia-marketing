@@ -10,7 +10,7 @@ const PreFooter = () => {
   return (
     <section className={styles.preFooter}>
       <div className={styles.desc}>
-        <Text size="big" color="black" bold="bold">
+        <Text type="title" color="black" bold="bold">
           Impulsemos tu Clínica Dental, Juntos
         </Text>
         <Text color="black" bold="font-light">

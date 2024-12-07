@@ -29,9 +29,9 @@
   position: relative;
   display: flex;
   flex-direction: column;
-
   background-color: white;
   z-index: 1000;
+  border-bottom: 1px solid var(--primary);
 }
 .topMenu,
 .bottomMenu {
@@ -276,6 +276,16 @@ body:has(.resoursesDropDown.show) {
   display: flex;
   align-items: center;
   gap: 8px;
+  width: fit-content;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  padding-top: 4px;
+  padding-bottom: 8px;
+  border-radius: 4px;
+}
+.resoursesDropDown .cardsBanner .seeEbooksBtn:hover {
+  background-color: var(--primary-transparent-2);
+  padding-left: 8px;
 }
 .mobileMenu {
   display: flex;

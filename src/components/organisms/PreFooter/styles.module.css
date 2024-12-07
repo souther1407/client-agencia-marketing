@@ -4,8 +4,8 @@
   gap: 32px;
   padding-left: var(--width-unit);
   padding-right: var(--width-unit);
-  padding-top: 64px;
-  padding-bottom: 64px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   justify-content: center;
   word-wrap: break-word;
   border-radius: 60px 60px 0 0;

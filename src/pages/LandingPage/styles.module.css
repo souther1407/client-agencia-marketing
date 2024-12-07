@@ -277,7 +277,7 @@
   padding: 40px;
   position: relative;
   border-radius: 16px;
-  width: 660px;
+  width: 700px;
   border: 1px solid var(--gray-light);
 }
 .detail__header {
@@ -331,7 +331,7 @@
 }
 
 .spainLocation {
-  background-color: var(--primary-transparent);
+  background-color: var(--primary-transparent-2);
   padding-left: var(--width-unit);
   padding-right: var(--width-unit);
   display: flex;

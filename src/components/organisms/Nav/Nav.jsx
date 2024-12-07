@@ -75,7 +75,10 @@ const Nav = ({ hideTopMenu = false }) => {
         >
           <div className={styles.content}>
             <div className={styles.header}>
-              <div className={styles.seeEbooksBtn}>
+              <div
+                className={styles.seeEbooksBtn}
+                onClick={() => navigate(LANDING_EBOOKS)}
+              >
                 <Text bold="bold" type="subtitle" color="black">
                   Ebooks Gratuitos
                 </Text>

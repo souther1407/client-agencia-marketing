@@ -25,9 +25,13 @@ import Hubspot from "@assets/Hubspot.svg";
 import MailChimp from "@assets/MailChimp.svg";
 import Zapier from "@assets/Zapier.svg";
 import ImgBanner from "@assets/ImgBanner.svg";
-
 import AntesDespues from "@assets/antes despues.svg";
-import Subrayado from "@assets/imagen subrayado.svg";
+import Subrayado from "@assets/imagen subrayado verde.svg";
+import imgPublicidadCard from "@assets/La publicidad de tu consultorio es genérica.svg";
+import imgDiseñoCard from "@assets/El diseño de tu Sitio Web Dental es ineficiente.svg";
+import imgEstrategiaCard from "@assets/Tu estrategia de redes sociales es pobre.svg";
+import imgReseñasCard from "@assets/Te faltan reseñas positivas online.svg";
+import imgRecordatorioCard from "@assets/Tienes un mal sistema de recordatorio de citas.svg";
 import ImagenEbook1 from "@assets/Imagen ebook 1.svg";
 import ImagenEbookWp from "@assets/imagen ebook de whatsapp.svg";
 
@@ -209,18 +213,18 @@ const LandingPage = () => {
                 Aprende más sobre nuestro programa de 180 días y cómo puede
                 cambiar tu práctica dental
               </Text>
-              <img className={styles.detail__img} src={AntesDespues} />
+              <img className={styles.detail__img} src={imgPublicidadCard} />
             </div>
           </div>
           <div className={styles.detail}>
             <div className={styles.detail__header}>
               <div className={styles.number}>
                 <Text bold="semibold" size={"sm"} color="light">
-                  1
+                  2
                 </Text>
               </div>
               <Text type="subtitle" bold="semibold" color="black">
-                La publicidad de tu consultorio es genérica
+                El diseño de tu Sitio Web Dental es ineficiente
               </Text>
             </div>
             <hr />
@@ -229,18 +233,18 @@ const LandingPage = () => {
                 Aprende más sobre nuestro programa de 180 días y cómo puede
                 cambiar tu práctica dental
               </Text>
-              <img className={styles.detail__img} src={AntesDespues} />
+              <img className={styles.detail__img} src={imgDiseñoCard} />
             </div>
           </div>
           <div className={styles.detail}>
             <div className={styles.detail__header}>
               <div className={styles.number}>
                 <Text bold="semibold" size={"sm"} color="light">
-                  1
+                  3
                 </Text>
               </div>
               <Text type="subtitle" bold="semibold" color="black">
-                La publicidad de tu consultorio es genérica
+                Tu estrategia de redes sociales es pobre
               </Text>
             </div>
             <hr />
@@ -249,18 +253,18 @@ const LandingPage = () => {
                 Aprende más sobre nuestro programa de 180 días y cómo puede
                 cambiar tu práctica dental
               </Text>
-              <img className={styles.detail__img} src={AntesDespues} />
+              <img className={styles.detail__img} src={imgEstrategiaCard} />
             </div>
           </div>
           <div className={styles.detail}>
             <div className={styles.detail__header}>
               <div className={styles.number}>
                 <Text bold="semibold" size={"sm"} color="light">
-                  1
+                  4
                 </Text>
               </div>
               <Text type="subtitle" bold="semibold" color="black">
-                La publicidad de tu consultorio es genérica
+                Te faltan reseñas positivas online
               </Text>
             </div>
             <hr />
@@ -269,18 +273,18 @@ const LandingPage = () => {
                 Aprende más sobre nuestro programa de 180 días y cómo puede
                 cambiar tu práctica dental
               </Text>
-              <img className={styles.detail__img} src={AntesDespues} />
+              <img className={styles.detail__img} src={imgReseñasCard} />
             </div>
           </div>
           <div className={styles.detail}>
             <div className={styles.detail__header}>
               <div className={styles.number}>
                 <Text bold="semibold" size={"sm"} color="light">
-                  1
+                  5
                 </Text>
               </div>
               <Text type="subtitle" bold="semibold" color="black">
-                La publicidad de tu consultorio es genérica
+                Tienes un mal sistema de recordatorio de citas
               </Text>
             </div>
             <hr />
@@ -289,7 +293,7 @@ const LandingPage = () => {
                 Aprende más sobre nuestro programa de 180 días y cómo puede
                 cambiar tu práctica dental
               </Text>
-              <img className={styles.detail__img} src={AntesDespues} />
+              <img className={styles.detail__img} src={imgRecordatorioCard} />
             </div>
           </div>
         </div>
@@ -387,7 +391,7 @@ const LandingPage = () => {
             </div>
             <img src={ImagenEbook1} />
           </div>
-          {/*  <div className={styles.mainContent__card}>
+          <div className={styles.mainContent__card}>
             <div className={styles.mainContent__card__desc}>
               <Text bold="semibold" color="primary">
                 2024
@@ -406,7 +410,7 @@ const LandingPage = () => {
               </div>
             </div>
             <img src={ImagenEbookWp} />
-          </div> */}
+          </div>
         </div>
       </section>
       <section className={styles.prefooter}>
