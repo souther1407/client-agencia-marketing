@@ -440,6 +440,7 @@
   width: 500px;
   height: 500px;
   align-self: center;
+  cursor: pointer;
 }
 
 .mainContent__card__desc {

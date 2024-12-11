@@ -78,7 +78,7 @@ const LandingPage = () => {
                 fontFamily="font-secondary"
                 color="black"
               >
-                Tu Mejor Opción en <Mark color="mark">Marketing Dental.</Mark>
+                Tu Mejor Opción en Marketing <Mark color="mark">Dental.</Mark>
               </Text>
               <Text size="sm" bold="font-light" color="black">
                 Convertimos tu clínica en autoridad local

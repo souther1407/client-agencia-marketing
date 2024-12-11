@@ -20,6 +20,7 @@
   align-items: center;
   font-weight: 700;
   gap: 16px;
+  box-shadow: 1px 1px 5px var(--gray-dark);
 }
 
 /* Primary */

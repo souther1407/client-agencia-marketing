@@ -20,7 +20,7 @@ import imgEbookPrueba from "@assets/ImgCardsNav.svg";
 import { ES } from "country-flag-icons/react/3x2";
 import { parseNumberToMonthName } from "../../../utils/parsing";
 
-const Nav = ({ hideTopMenu = false }) => {
+const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const [isTopMenuHidden] = useState(false);
   const navigate = useNavigate();
@@ -135,10 +135,14 @@ const Nav = ({ hideTopMenu = false }) => {
                 </Text>
               </div>
             </div>
-            <div className={styles.developText}>
+            <div
+              className={styles.developText}
+              onClick={() => navigate(LANDING_EBOOKS)}
+            >
               <Text bold="font-light" size="ty" textAlign="center">
-                Pagina Web Desarrrollada por el equipo de HackDental
+                Ir a la bilbioteca de ebooks
               </Text>
+              <Icon size={"1rem"} type={"arrow"} />
             </div>
           </div>
         </div>
@@ -172,7 +176,7 @@ const Nav = ({ hideTopMenu = false }) => {
       </div>
       <div className={styles.elements}>
         {hideTopMenu || isTopMenuHidden || (
-          <div className={styles.topMenu}>
+          <div className={styles.topMenu} onClick={() => navigate(OUR_PROGRAM)}>
             <Text size="sm" color="light" bold="font-light">
               ¡Solo Valido para {parseNumberToMonthName(new Date().getMonth())}!
               Aceptamos 10 nuevas clínicas en España &nbsp;
@@ -182,76 +186,86 @@ const Nav = ({ hideTopMenu = false }) => {
             </Text>
           </div>
         )}
-        <div className={styles.bottomMenu}>
-          <div className={styles.left}>
-            <div className={styles.logo} onClick={() => navigate(LANDING_PAGE)}>
-              <Logo />
+        {hideBottomMenu || (
+          <div
+            className={`${styles.bottomMenu} ${
+              (showContact || showResources) && styles.changeColor
+            }`}
+          >
+            <div className={styles.left}>
+              <div
+                className={styles.logo}
+                onClick={() => navigate(LANDING_PAGE)}
+              >
+                <Logo />
+              </div>
+            </div>
+            <div className={styles.right}>
+              <div
+                onMouseEnter={handleShowResources}
+                onClick={handleShowResources}
+                className={styles.linkContainer}
+              >
+                <div className={styles.newTag}>
+                  <Text size="xxty" color="light">
+                    NUEVO
+                  </Text>
+                </div>
+                <TextLink
+                  marked={showResources}
+                  variant="primary"
+                  textProps={{ color: "black", bold: "font-light", size: "ty" }}
+                >
+                  Recursos gratis
+                </TextLink>
+              </div>
+              <div className={styles.linkContainer}>
+                <div className={styles.newTag}>
+                  <Text size="xxty" color="light">
+                    NUEVO
+                  </Text>
+                </div>
+                <TextLink
+                  variant="primary"
+                  to={OUR_PROGRAM}
+                  textProps={{ color: "black", bold: "font-light", size: "ty" }}
+                >
+                  Nuestro Programa
+                </TextLink>
+              </div>
+
+              <div onMouseEnter={handleShowContact} onClick={handleShowContact}>
+                <TextLink
+                  variant="primary"
+                  marked={showContact}
+                  textProps={{ color: "black", bold: "font-light", size: "ty" }}
+                >
+                  Contacto
+                </TextLink>
+              </div>
+              <div className={styles.separator}></div>
+              <div className={styles.formBtn}>
+                <Link to={CONTACT_FORM} target="_blank">
+                  <IconTextButton
+                    colorVariant="primary"
+                    textProps={{ size: "ty" }}
+                  >
+                    Solicita una reunión
+                  </IconTextButton>
+                </Link>
+              </div>
+
+              <div className={styles.btnDropdown}>
+                <IconButton
+                  icon="bars"
+                  size="2rem"
+                  variant="terciary"
+                  onClick={() => setShowMobileMenu(true)}
+                />
+              </div>
             </div>
           </div>
-          <div className={styles.right}>
-            <div
-              onMouseEnter={handleShowResources}
-              onClick={handleShowResources}
-              className={styles.linkContainer}
-            >
-              <div className={styles.newTag}>
-                <Text size="xxty" color="light">
-                  NUEVO
-                </Text>
-              </div>
-              <TextLink
-                marked={showResources}
-                variant="primary"
-                textProps={{ color: "black", bold: "font-light", size: "ty" }}
-              >
-                Recursos gratis
-              </TextLink>
-            </div>
-            <div className={styles.linkContainer}>
-              <div className={styles.newTag}>
-                <Text size="xxty" color="light">
-                  NUEVO
-                </Text>
-              </div>
-              <TextLink
-                variant="primary"
-                to={OUR_PROGRAM}
-                textProps={{ color: "black", bold: "font-light", size: "ty" }}
-              >
-                Nuestro Programa
-              </TextLink>
-            </div>
-
-            <div onMouseEnter={handleShowContact} onClick={handleShowContact}>
-              <TextLink
-                variant="primary"
-                marked={showContact}
-                textProps={{ color: "black", bold: "font-light", size: "ty" }}
-              >
-                Contacto
-              </TextLink>
-            </div>
-            <div className={styles.separator}></div>
-            <div className={styles.formBtn}>
-              <IconTextButton
-                colorVariant="primary"
-                textProps={{ size: "ty" }}
-                onClick={() => navigate(CONTACT_FORM)}
-              >
-                Solicita una reunión
-              </IconTextButton>
-            </div>
-
-            <div className={styles.btnDropdown}>
-              <IconButton
-                icon="bars"
-                size="2rem"
-                variant="terciary"
-                onClick={() => setShowMobileMenu(true)}
-              />
-            </div>
-          </div>
-        </div>
+        )}
       </div>
       <Drawer show={showMobileMenu} onClose={() => setShowMobileMenu(false)}>
         <div className={styles.mobileMenu}>

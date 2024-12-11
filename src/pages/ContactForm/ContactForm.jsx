@@ -44,7 +44,7 @@ const ContactForm = () => {
   };
   return (
     <div className={styles.contactForm}>
-      <Nav hideTopMenu />
+      <Nav hideBottomMenu />
       {loading && <LoadingScreen />}
       <main className={styles.content}>
         <div className={styles.content_sections}>
