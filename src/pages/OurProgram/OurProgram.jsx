@@ -11,7 +11,7 @@ import TextArea from "../../components/atoms/Textarea/Textarea";
 import { useNavigate } from "react-router-dom";
 import { CONTACT_FORM } from "../../constants/routes";
 import Mark from "../../components/atoms/Mark/Mark";
-import Nene from "@assets/NeneArio.svg";
+import Nene from "@assets/imagen dentista programa.svg";
 import Select from "../../components/atoms/Select/Select";
 import FlechaNuestroPrograma from "@assets/nuestro metodo.svg";
 import Flecha1 from "@assets/flecha 1.svg";
@@ -35,13 +35,13 @@ const OurProgram = () => {
           className={`${styles.flecha} ${styles.nuestroPrograma}`}
         />
         <div className={styles.elements}>
-          <Text type="bigtitle" color="light">
+          <Text type="bigtitle" color="black" bold="semibold">
             ¿Cuánto dinero estás dejando sobre la mesa?
           </Text>
-          <Text textAlign="center" bold="font-light" color="light">
+          <Text textAlign="center" bold="font-light" color="black">
             ¿Tiene una práctica dental que factura más de $10,000 euros al mes?
             Registrate <br /> al programa de marketing de HackDental y&nbsp;
-            <Mark color="primary">
+            <Mark color="dark">
               desbloquea el crecimiento de tu clínica dental.
             </Mark>
           </Text>
@@ -95,7 +95,7 @@ const OurProgram = () => {
               bold="bold"
             >
               Resuelve los{" "}
-              <Mark color="submarked-blue" bold="bold">
+              <Mark color="primary-bg" bold="bold">
                 problemas que limitan
               </Mark>{" "}
               el crecimiento de tu práctica
@@ -201,17 +201,17 @@ const OurProgram = () => {
               fontSize="2.3333rem"
             >
               ¿Abrirías{" "}
-              <Mark color="submarked-blue" bold="bold">
+              <Mark color="primary-bg" bold="bold">
                 más consultorios
               </Mark>{" "}
               si supieras cómo atraer más pacientes?
             </Text>
             <div className={styles.cardMeetDetail}>
-              <Text bold="font-light">
+              <Text bold="font-light" color="black">
                 Puedes ponerte en contacto con nosotros por correo electrónico a
                 jaka@ .design y te responderemos en un plazo de 24 horas.
               </Text>
-              <Text bold="font-light">
+              <Text bold="font-light" color="black">
                 No olvides incluir algunas palabras sobre ti y tu negocio.
                 Puedes ponerte en contacto con nosotros por correo electrónico a
                 jaka@ .design y te responderemos en un plazo de 24 horas.
@@ -227,7 +227,7 @@ const OurProgram = () => {
         <div className={styles.comoFunciona}>
           <Text type="title" color="black" bold="bold" textAlign="center">
             ¿Cuánto más vas a{" "}
-            <Mark color="submarked-blue" bold="bold">
+            <Mark color="primary-bg" bold="bold">
               postergar el éxito
             </Mark>{" "}
             de tu consultorio dental?
@@ -252,11 +252,11 @@ const OurProgram = () => {
             </Text>
             <ul className={styles.list}>
               <li className={styles.element}>
-                <Text type="bigtitle" color="blue">
+                <Text type="bigtitle" color="primary">
                   1
                 </Text>
                 <Text>
-                  <Mark color="underline-blue">
+                  <Mark color="primary-underline">
                     Puedes ponerte en contacto con nosotros por correo
                     electrónico a jaka@ .design y te responderemos en un plazo
                     de 24 horas.
@@ -264,7 +264,7 @@ const OurProgram = () => {
                 </Text>
               </li>
               <li className={styles.element}>
-                <Text type="bigtitle" color="blue">
+                <Text type="bigtitle" color="primary">
                   2
                 </Text>
                 <Text bold="font-light" color="black">
@@ -273,7 +273,7 @@ const OurProgram = () => {
                 </Text>
               </li>
               <li className={styles.element}>
-                <Text type="bigtitle" color="blue">
+                <Text type="bigtitle" color="primary">
                   3
                 </Text>
                 <Text bold="font-light" color="black">
@@ -282,7 +282,7 @@ const OurProgram = () => {
                 </Text>
               </li>
               <li className={styles.element}>
-                <Text type="bigtitle" color="blue">
+                <Text type="bigtitle" color="primary">
                   4
                 </Text>
                 <Text bold="font-light" color="black">
@@ -297,11 +297,7 @@ const OurProgram = () => {
           <img src={Flecha2} className={`${styles.flecha} ${styles.flecha3}`} />
           <div className={styles.desc}>
             <Text type="title" color="light" bold="bold">
-              Recibe una{" "}
-              <Mark color="submarked-blue-light" bold="bold">
-                Auditoría Gratuita
-              </Mark>{" "}
-              para tu consultorío
+              Pide una Auditoria para tu Consultorio
             </Text>
             <Text color="light" bold="font-light">
               Puedes ponerte en contacto con nosotros por correo electrónico a
