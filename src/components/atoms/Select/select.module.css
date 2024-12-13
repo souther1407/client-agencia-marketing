@@ -116,10 +116,12 @@
 }
 .white .header {
   border: 1px solid var(--black);
-  background-color: var(--white);
+  background-color: var(--light-green);
   padding: 8px;
 }
-
+.white .label {
+  color: var(--black);
+}
 .white .icon {
   color: var(--black);
 }
@@ -128,7 +130,7 @@
   width: 100%;
   position: absolute;
   border: 1px solid var(--black);
-  background-color: var(--white);
+  background-color: var(--light-green);
   padding: 8px;
 }
 .white .placeholder {

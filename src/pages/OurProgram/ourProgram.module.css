@@ -301,8 +301,9 @@
   width: 600px;
   padding: 48px 32px;
   border-radius: 8px;
-  gap: 16px;
-  background-color: var(--black);
+  gap: 24px;
+  background-color: var(--light-green);
+  box-shadow: -8px 8px 0px rgb(168, 206, 150);
 }
 
 .contact .formLine {

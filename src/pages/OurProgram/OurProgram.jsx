@@ -294,7 +294,7 @@ const OurProgram = () => {
           </div>
         </div>
         <section className={styles.contact}>
-          <img src={Flecha2} className={`${styles.flecha} ${styles.flecha3}`} />
+          {/*  <img src={Flecha2} className={`${styles.flecha} ${styles.flecha3}`} /> */}
           <div className={styles.desc}>
             <Text type="title" color="light" bold="bold">
               Pide una Auditoria para tu Consultorio
@@ -314,11 +314,14 @@ const OurProgram = () => {
           </div>
           <div className={styles.formContainer}>
             <div className={styles.form}>
+              <Text>
+                <Mark color="primary-bg">ÚLTIMO PASO</Mark>
+              </Text>
               <div className={styles.formLine}>
                 <Input
                   label="Nombre*"
-                  variant="black"
-                  labelColor="light"
+                  variant="white"
+                  labelColor="black"
                   id={"firstName"}
                   placeholder="Nombre"
                   onChange={() => {}}
@@ -326,9 +329,9 @@ const OurProgram = () => {
                 />
                 <Input
                   label="Apellido*"
-                  variant="black"
+                  variant="white"
                   placeholder="Apellido"
-                  labelColor="light"
+                  labelColor="black"
                   id={"lasttName"}
                   onChange={() => {}}
                   onError={() => {}}
@@ -337,8 +340,8 @@ const OurProgram = () => {
               <div className={styles.formLine}>
                 <Input
                   label="Email*"
-                  variant="black"
-                  labelColor="light"
+                  variant="white"
+                  labelColor="black"
                   placeholder="Email"
                   id={"email"}
                   onChange={() => {}}
@@ -348,8 +351,8 @@ const OurProgram = () => {
                   label="Teléfono*"
                   placeholder="Teléfono"
                   id={"phone"}
-                  variant="black"
-                  labelColor="light"
+                  variant="white"
+                  labelColor="black"
                   onChange={() => {}}
                   onError={() => {}}
                 />
@@ -357,9 +360,9 @@ const OurProgram = () => {
               <div className={styles.formLine}>
                 <Input
                   label="Pais*"
-                  variant="black"
+                  variant="white"
                   placeholder="Pais"
-                  labelColor="light"
+                  labelColor="black"
                   id={"location"}
                   onChange={() => {}}
                   onError={() => {}}
@@ -379,8 +382,8 @@ const OurProgram = () => {
                     id={"objetive"}
                     elements={["ASFAFS"]}
                     label={"Yo Quiero*"}
-                    variant="black"
-                    labelColor="light"
+                    variant="white"
+                    labelColor="black"
                     placeholder={"Elegir Opción"}
                     icon={"arrowDown"}
                   />
@@ -388,15 +391,18 @@ const OurProgram = () => {
               </div>
               <TextArea
                 label="Comentarios (opcional)"
-                labelColor="light"
-                variant="black"
+                labelColor="black"
+                variant="white"
                 id={"comments"}
                 placeholder="Ingresa tus comentarios aqui."
                 errorValue={() => {}}
                 onChange={() => {}}
               />
               <div className={styles.btnEnviar}>
-                <IconTextButton colorVariant="white" textProps={{ size: "sm" }}>
+                <IconTextButton
+                  colorVariant="primary"
+                  textProps={{ size: "sm" }}
+                >
                   Quiero ser Contactado
                 </IconTextButton>
               </div>
