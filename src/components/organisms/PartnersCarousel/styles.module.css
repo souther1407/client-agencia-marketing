@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+}
+.carousel {
+  width: 100% !important;
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.carousel.slide-track {
+  display: flex;
+}
+.img {
+  width: 200px;
+}

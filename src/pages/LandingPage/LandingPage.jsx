@@ -36,7 +36,7 @@ import ImagenEbook1 from "@assets/Imagen ebook 1.svg";
 import ImagenEbookWp from "@assets/imagen ebook de whatsapp.svg";
 import imagenDentista from "@assets/foto dentista.svg";
 import { ES } from "country-flag-icons/react/3x2";
-
+import PartnersCarousel from "../../components/organisms/PartnersCarousel/PartnersCarousel";
 const LandingPage = () => {
   const navigate = useNavigate();
   const [showWSMsg, setShowWSMsg] = useState(true);
@@ -48,11 +48,11 @@ const LandingPage = () => {
       setShowModalVideo(false);
     }
   }; */
-  useEffect(() => {
+  /* useEffect(() => {
     setTimeout(() => {
       setShowPopup(true);
     }, 10 * 1000);
-  }, []);
+  }, []); */
   return (
     <div className={styles.page}>
       {showPopup && (
@@ -86,7 +86,11 @@ const LandingPage = () => {
                 método “Consultorio Exitoso” .
               </Text>
               <div className={styles.popupBtns}>
-                <IconTextButton size="100%" textProps={{ size: "ty" }}>
+                <IconTextButton
+                  size="100%"
+                  textProps={{ size: "ty" }}
+                  onClick={() => navigate(OUR_PROGRAM)}
+                >
                   Ver programa
                 </IconTextButton>
                 <IconTextButton
@@ -154,15 +158,21 @@ const LandingPage = () => {
             <img className={styles.banner__img} src={ImgBanner} />
             {/* <ImgBanner /> */}
           </div>
-          <div className={styles.partners}>
+          {/* <div className={styles.partners}>
             <img src={FacebookAds} />
             <img src={Hubspot} />
             <img src={MailChimp} />
             <img src={Zapier} />
-          </div>
+          </div> */}
         </section>
       </header>
       <section className={styles.whoAreWe}>
+        <div className={styles.partners}>
+          <Text>
+            En HackDental utilizamos las mejores herramientas de Marketing
+          </Text>
+          <PartnersCarousel />
+        </div>
         <div className={styles.whoAreWe__contents}>
           <Text color="black" type="bigtitle">
             ¿Quienes Somos?
