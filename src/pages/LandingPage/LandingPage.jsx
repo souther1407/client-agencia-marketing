@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./styles.module.css";
 import Nav from "../../components/organisms/Nav/Nav";
 import NeneArio from "@assets/Nene Ario Landing.svg";
@@ -34,19 +34,74 @@ import imgReseñasCard from "@assets/Te faltan reseñas positivas online.svg";
 import imgRecordatorioCard from "@assets/Tienes un mal sistema de recordatorio de citas.svg";
 import ImagenEbook1 from "@assets/Imagen ebook 1.svg";
 import ImagenEbookWp from "@assets/imagen ebook de whatsapp.svg";
+import imagenDentista from "@assets/foto dentista.svg";
+import { ES } from "country-flag-icons/react/3x2";
 
 const LandingPage = () => {
   const navigate = useNavigate();
   const [showWSMsg, setShowWSMsg] = useState(true);
-  const [showModalVideo, setShowModalVideo] = useState(false);
 
-  const handleHideModalVideo = (e) => {
+  /* const [showModalVideo, setShowModalVideo] = useState(false); */
+  const [showPopup, setShowPopup] = useState(false);
+  /* const handleHideModalVideo = (e) => {
     if (e.target.id == "bg-video-modal") {
       setShowModalVideo(false);
     }
-  };
+  }; */
+  useEffect(() => {
+    setTimeout(() => {
+      setShowPopup(true);
+    }, 10 * 1000);
+  }, []);
   return (
     <div className={styles.page}>
+      {showPopup && (
+        <div className={styles.popupContainer}>
+          <div className={styles.popupcard}>
+            <div className={styles.popImg}>
+              <Text color="light" type="title" textAlign="center">
+                1O CUPOS
+              </Text>
+              <img src={imagenDentista} />
+            </div>
+            <div className={styles.popupDesc}>
+              <span
+                className={styles.popupCloseBtn}
+                onClick={() => setShowPopup(false)}
+              >
+                <Icon size={"2rem"} type={"close"} color="var(--gray)" />
+              </span>
+              <ES width={"2rem"} />
+              <Text color="primary">¡SOLO POR ENERO!</Text>
+              <Text
+                color="black"
+                type="subtitle"
+                bold="semibold"
+                textAlign="center"
+              >
+                10 cupos para el programa “Consultorio Exitoso”
+              </Text>
+              <Text size="ty" textAlign="center">
+                Transformamos tu consultorio en tan solo 6 meses con nuestro
+                método “Consultorio Exitoso” .
+              </Text>
+              <div className={styles.popupBtns}>
+                <IconTextButton size="100%" textProps={{ size: "ty" }}>
+                  Ver programa
+                </IconTextButton>
+                <IconTextButton
+                  size="100%"
+                  variant="bordered"
+                  textProps={{ size: "ty" }}
+                  onClick={() => setShowPopup(false)}
+                >
+                  No gracias
+                </IconTextButton>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
       <div className={styles.help}>
         {showWSMsg && (
           <div className={styles.notification}>
