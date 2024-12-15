@@ -1,3 +1,17 @@
+.banner {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary-very-transparent);
+  align-items: center;
+  padding-left: var(--width-unit);
+  padding-right: var(--width-unit);
+  padding-top: 32px;
+  padding-bottom: 64px;
+  position: relative;
+  border-radius: 60px 60px 0 0;
+  top: 32px;
+}
+
 .preFooter {
   background-color: var(--celeste);
   display: flex;
@@ -9,6 +23,8 @@
   justify-content: center;
   word-wrap: break-word;
   border-radius: 60px 60px 0 0;
+  z-index: 10;
+  position: relative;
 }
 
 .preFooter .desc {
@@ -21,13 +37,25 @@
 .preFooterImg {
   width: 240px;
 }
-
+.btn {
+  width: 280px;
+}
 @media screen and (max-width: 800px) {
   .preFooter {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 32px;
+  }
+
+  .banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px;
+    gap: 16px;
+    top: 40px;
+    padding-bottom: 64px;
   }
   .preFooter .desc {
     display: flex;

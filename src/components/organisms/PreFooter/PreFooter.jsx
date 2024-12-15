@@ -4,24 +4,43 @@ import IconTextButton from "../../molecules/IconTextButton/IconTextButton";
 
 import { useNavigate } from "react-router-dom";
 import { CONTACT_FORM } from "../../../constants/routes";
+import PartnersCarousel from "../PartnersCarousel/PartnersCarousel";
 const PreFooter = () => {
   const navigate = useNavigate();
 
   return (
-    <section className={styles.preFooter}>
-      <div className={styles.desc}>
-        <Text type="title" color="black" bold="bold">
-          Impulsemos tu Clínica Dental, Juntos
+    <div>
+      <section className={styles.banner}>
+        <Text type="subtitle" color="black" bold="bold">
+          En HackDental utilizamos las mejores herramientas de Marketing
         </Text>
-        <Text color="black" bold="font-light">
+        <Text color="black" size="sm" bold="font-light">
           Pide una auditoría para tu consultorio dental, es 100% gratis
         </Text>
-        <IconTextButton onClick={() => navigate(CONTACT_FORM)}>
-          Solicita una reunión
-        </IconTextButton>
-      </div>
-      {/*  <img className={styles.preFooterImg} src={PreFooterImg} /> */}
-    </section>
+        <PartnersCarousel />
+        <div className={styles.btn}>
+          <IconTextButton colorVariant="primary" variant="bordered" size="100%">
+            Ver programa
+          </IconTextButton>
+        </div>
+      </section>
+      <section className={styles.preFooter}>
+        <div className={styles.desc}>
+          <Text type="subtitle" color="black" bold="bold">
+            Impulsemos tu Clínica Dental, Juntos
+          </Text>
+          <Text color="black" size="sm" bold="font-light">
+            Pide una auditoría para tu consultorio dental, es 100% gratis
+          </Text>
+          <div className={styles.btn}>
+            <IconTextButton size="100%" onClick={() => navigate(CONTACT_FORM)}>
+              Solicita una reunión
+            </IconTextButton>
+          </div>
+        </div>
+        {/*  <img className={styles.preFooterImg} src={PreFooterImg} /> */}
+      </section>
+    </div>
   );
 };
 

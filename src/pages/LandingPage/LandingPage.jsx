@@ -168,7 +168,7 @@ const LandingPage = () => {
       </header>
       <section className={styles.whoAreWe}>
         <div className={styles.partners}>
-          <Text>
+          <Text textAlign="center">
             En HackDental utilizamos las mejores herramientas de Marketing
           </Text>
           <PartnersCarousel />
