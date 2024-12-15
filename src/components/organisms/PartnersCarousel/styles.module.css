@@ -15,9 +15,11 @@
   flex-grow: 0;
   flex-shrink: 0;
   overflow: hidden;
+  overflow-x: hidden;
   --img-width: 184px;
-  width: calc(var(--img-width) * 5.3);
+  max-width: calc(var(--img-width) * 5.3);
   position: relative;
+  flex-wrap: nowrap;
 }
 /* .carousel::before {
   content: "";
@@ -48,11 +50,7 @@
 } */
 .list {
   display: flex;
-  flex-grow: 0;
-  flex-shrink: 0;
-  width: 100%;
   gap: 8px;
-
   animation: move 20s linear infinite;
 }
 .img {
@@ -61,6 +59,6 @@
 
 @media screen and (max-width: 1024px) {
   .carousel {
-    display: none;
+    width: 80vw;
   }
 }

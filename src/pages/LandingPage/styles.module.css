@@ -157,12 +157,6 @@ body:has(.popupContainer) {
   left: 32px;
 }
 
-.partners {
-  display: flex;
-  flex-direction: column;
-  padding: 32px;
-}
-
 .underLine {
   border-bottom: 4px solid var(--black);
 }
@@ -826,7 +820,4 @@ body:has(.popupContainer) {
   }
 }
 @media screen and (max-width: 400px) {
-  .partners > img {
-    width: 160px;
-  }
 }
