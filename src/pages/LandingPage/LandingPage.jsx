@@ -48,11 +48,11 @@ const LandingPage = () => {
       setShowModalVideo(false);
     }
   }; */
-  /* useEffect(() => {
+  useEffect(() => {
     setTimeout(() => {
       setShowPopup(true);
     }, 10 * 1000);
-  }, []); */
+  }, []);
   return (
     <div className={styles.page}>
       {showPopup && (
