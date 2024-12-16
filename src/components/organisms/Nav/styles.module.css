@@ -31,7 +31,8 @@
   flex-direction: column;
   background-color: white;
   z-index: 1000;
-  border-bottom: 1px solid var(--primary);
+  border-bottom: 2px solid var(--primary-transparent-50);
+  box-shadow: 1px 0 4px var(--gray-light);
 }
 .topMenu,
 .bottomMenu {
@@ -379,7 +380,6 @@ body:has(.resoursesDropDown.show) {
     width: 100%;
   }
   .nav {
-    padding: 8px;
     height: auto;
   }
   .topMenu {

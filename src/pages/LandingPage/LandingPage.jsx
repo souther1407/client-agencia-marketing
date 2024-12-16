@@ -71,7 +71,7 @@ const LandingPage = () => {
               >
                 <Icon size={"2rem"} type={"close"} color="var(--gray)" />
               </span>
-              <ES width={"2rem"} />
+
               <Text color="primary">¡SOLO POR ENERO!</Text>
               <Text
                 color="black"
@@ -133,11 +133,14 @@ const LandingPage = () => {
             <div className={styles.banner__content}>
               <Text
                 type="ultrabigtitle"
-                bold="extra-bold"
+                bold="semibold"
                 fontFamily="font-secondary"
                 color="black"
               >
-                Tu Mejor Opción en Marketing <Mark color="mark">Dental.</Mark>
+                Tu Mejor Opción en Marketing{" "}
+                <Mark color="mark" bold="bold">
+                  Dental.
+                </Mark>
               </Text>
               <Text size="sm" bold="font-light" color="black">
                 Convertimos tu clínica en autoridad local
@@ -151,7 +154,7 @@ const LandingPage = () => {
                   Quiero saber más
                 </IconTextButton>
               </div>
-              <Text size="sm" bold="font-light" color="soft">
+              <Text size="sm" bold="font-light" color="black">
                 *Solo trabajamos con clínicas que ofrecen implantes.
               </Text>
             </div>
@@ -241,7 +244,7 @@ const LandingPage = () => {
       <section className={styles.contactBannerSection}>
         <div className={styles.desc}>
           <div className={styles.stickyContainer}>
-            <Text type="bigtitle" color="black" bold="bold">
+            <Text type="bigtitle" color="black" bold="semibold">
               ¿Por qué nuevos pacientes{" "}
               <span className={styles.subrayado}>
                 no eligen <img src={Subrayado} />
@@ -425,9 +428,11 @@ const LandingPage = () => {
         </div>
       </section>
       <section className={styles.mainContent}>
-        <Text type="bigtitle" textAlign="center" color="black" bold="bold">
+        <Text type="bigtitle" textAlign="center" color="black" bold="semibold">
           ¿Quieres descubrir como crecer tu consultorio? Revisa nuestros{" "}
-          <Mark color="primary-bg">ebooks gratuitos</Mark>
+          <Mark color="primary-bg" bold="bold">
+            ebooks gratuitos
+          </Mark>
         </Text>
         <div className={styles.mainContent__desc}>
           <Text color="black" bold="font-light" textAlign="center">

@@ -62,7 +62,7 @@
   --gray-blue: #dce7f1;
   --gray-blue-dark: #d4e1ee;
   --gray-light: #92a3a371;
-  --gray-dark: rgba(34, 33, 33, 0.411);
+  --gray-dark: rgba(34, 33, 33, 0.596);
   --light-blue-transparent: #ccd6dd;
   --blue: #4681a96e;
   --green: #11b474;
@@ -70,6 +70,7 @@
   --light-green: #eef5f4;
   --dark-green: #1e2226;
   --primary: #006a43;
+  --primary-transparent-50: rgba(45, 104, 82, 0.308);
   --primary-transparent: #006a4326;
   --primary-very-transparent: #006a430c;
   --primary-transparent-2: #006a4318;

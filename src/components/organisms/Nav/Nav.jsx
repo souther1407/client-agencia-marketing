@@ -259,7 +259,7 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                 <IconButton
                   icon="bars"
                   size="2rem"
-                  variant="terciary"
+                  variant="secondary"
                   onClick={() => setShowMobileMenu(true)}
                 />
               </div>

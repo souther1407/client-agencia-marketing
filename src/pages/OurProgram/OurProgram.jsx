@@ -92,7 +92,7 @@ const OurProgram = () => {
               fontSize="2.3333rem"
               color="black"
               textAlign="center"
-              bold="bold"
+              bold="semibold"
             >
               Resuelve los{" "}
               <Mark color="primary-bg" bold="bold">
@@ -197,7 +197,7 @@ const OurProgram = () => {
               size="big"
               color="black"
               textAlign="center"
-              bold="bold"
+              bold="semibold"
               fontSize="2.3333rem"
             >
               ¿Abrirías{" "}
@@ -225,7 +225,7 @@ const OurProgram = () => {
           </div>
         </div>
         <div className={styles.comoFunciona}>
-          <Text type="title" color="black" bold="bold" textAlign="center">
+          <Text type="title" color="black" bold="semibold" textAlign="center">
             ¿Cuánto más vas a{" "}
             <Mark color="primary-bg" bold="bold">
               postergar el éxito

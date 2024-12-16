@@ -95,6 +95,7 @@ body:has(.popupContainer) {
   align-items: center;
   gap: 12px;
   position: relative;
+  justify-content: space-evenly;
   background-color: var(--primary-very-transparent);
 }
 .popupCloseBtn {
@@ -276,6 +277,8 @@ body:has(.popupContainer) {
 }
 .subrayado {
   position: relative;
+  color: var(--primary);
+  font-weight: bold;
 }
 .subrayado img {
   width: 100%;
@@ -616,6 +619,12 @@ body:has(.popupContainer) {
   .mainContent {
     padding: 0;
   }
+  .contents {
+    height: auto;
+    justify-content: center;
+    flex-direction: column;
+    gap: 32px;
+  }
 }
 @media screen and (max-width: 1200px) {
   .header {
@@ -627,18 +636,13 @@ body:has(.popupContainer) {
     padding: 0;
     padding-top: calc(var(--linea-roja) + var(--linea-amarilla));
   }
-  .contents {
-    height: auto;
-    justify-content: center;
-    flex-direction: column;
-    gap: 32px;
-  }
-  .banner__content + * {
-    display: none;
-  }
+
   .bannerImg {
     width: 75%;
     transform: none;
+  }
+  .banner__img {
+    width: 100%;
   }
   .banner__content {
     width: 100%;
