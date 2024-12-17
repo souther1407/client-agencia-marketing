@@ -48,20 +48,15 @@ const ContactForm = () => {
       {loading && <LoadingScreen />}
       <main className={styles.content}>
         <div className={styles.content_sections}>
-          <img src={Flecha3} className={`${styles.flecha}`} />
+          {/*  <img src={Flecha3} className={`${styles.flecha}`} /> */}
           <section className={styles.desc}>
             <Text type="smalltitle" bold="bold" color="black">
-              Recibe una{" "}
-              <Mark bold="bold" color="submarked-blue-light">
-                Auditoria Gratuita
-              </Mark>{" "}
-              para para tu Consultorio
+              Pide una Auditoria para tu Consultorio
             </Text>
             <div className={styles.detail}>
               <Text size="sm" bold="font-light" color="black">
-                Puedes ponerte en contacto con nosotros por Whatsapp o directa a{" "}
-                <Mark color="underline-blue">jaka@conversion.design</Mark> y te
-                responderemos en un plazo de 24 horas.
+                Puedes ponerte en contacto con nosotros por Whatsapp o directa a
+                <Mark color="underline-blue">jaka@conversion.design</Mark>
               </Text>
               <Text size="sm" bold="font-light" color="black">
                 No olvides incluir algunas palabras sobre ti y tu negocio
@@ -74,22 +69,27 @@ const ContactForm = () => {
             </div>
           </section>
           <section className={styles.form}>
-            <Text size="xlg" color="black">
+            <Text>
+              <Mark color="primary-bg">ÚLTIMO PASO</Mark>
+            </Text>
+            <Text size="xlg" color="black" bold="semibold">
               ¡Estás a un paso de trabajar con nosotros!
             </Text>
             <div className={styles.input_line}>
               <Input
-                variant="secondary"
+                variant="white"
                 id={"first_name"}
                 label="Nombre*"
+                labelColor="black"
                 onChange={handleChange}
                 onError={() => {}}
                 placeholder="Nombre"
                 value={contactForm.first_name}
               />
               <Input
-                variant="secondary"
+                variant="white"
                 id={"last_name"}
+                labelColor="black"
                 label="Apellido*"
                 onChange={handleChange}
                 onError={() => {}}
@@ -99,17 +99,19 @@ const ContactForm = () => {
             </div>
             <div className={styles.input_line}>
               <Input
-                variant="secondary"
+                variant="white"
                 id={"email"}
                 label="Email*"
+                labelColor="black"
                 onChange={handleChange}
                 onError={() => {}}
                 placeholder="Email"
                 value={contactForm.email}
               />
               <Input
-                variant="secondary"
+                variant="white"
                 id={"phone"}
+                labelColor="black"
                 label="Teléfono*"
                 onChange={handleChange}
                 onError={() => {}}
@@ -119,8 +121,9 @@ const ContactForm = () => {
             </div>
             <div className={styles.input_line}>
               <Input
-                variant="secondary"
+                variant="white"
                 id={"clinic_name"}
+                labelColor="black"
                 label="Nombre de la Clinica Dental*"
                 onChange={handleChange}
                 onError={() => {}}
@@ -128,9 +131,10 @@ const ContactForm = () => {
                 value={contactForm.clinic_name}
               />
               <Input
-                variant="secondary"
+                variant="white"
                 id={"website"}
                 label="Sitio Web*"
+                labelColor="black"
                 onChange={handleChange}
                 onError={() => {}}
                 placeholder="Sitio Web*"
@@ -139,7 +143,8 @@ const ContactForm = () => {
             </div>
             <div className={styles.input_line}>
               <Select
-                variant="secondary"
+                variant="white"
+                labelColor="black"
                 elements={["safasf", "eee"]}
                 id={"location"}
                 onChange={handleChange}
@@ -150,7 +155,8 @@ const ContactForm = () => {
                 value={contactForm.location}
               />
               <Select
-                variant="secondary"
+                variant="white"
+                labelColor="black"
                 elements={["safasf", "eee"]}
                 id={"anual_revenues"}
                 onChange={handleChange}
@@ -162,19 +168,17 @@ const ContactForm = () => {
               />
             </div>
             <TextArea
-              variant="secondary"
+              variant="white"
+              labelColor="black"
               label="Comentarios (opcional)"
               id={"comments"}
               onChange={handleChange}
               value={contactForm.comments}
             />
-            <Text size="sm">
-              Nos comunicaremos con usted por correo electrónico en menos de 24
-              horas.
-            </Text>
+
             <div className={styles.sendBtn}>
               <IconTextButton
-                colorVariant="primary-dark"
+                colorVariant="primary"
                 onClick={handleSendFormData}
               >
                 Quiero Ser Contactado {">"}
