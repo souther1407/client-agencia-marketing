@@ -8,10 +8,10 @@ import {
   FaBars,
 } from "react-icons/fa";
 import { IoDiamondOutline, IoCloseCircle } from "react-icons/io5";
-import { MdArrowForwardIos } from "react-icons/md";
+import { MdArrowForwardIos, MdEmail } from "react-icons/md";
 import styles from "./icon.module.css";
 import { FaLinkedin, FaArrowRight } from "react-icons/fa6";
-import { FaFacebook, FaInstagram, FaPlay } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaPlay, FaWpforms } from "react-icons/fa";
 import { BiSolidMedal } from "react-icons/bi";
 import { CiWarning } from "react-icons/ci";
 import { IoIosArrowForward, IoIosArrowDown } from "react-icons/io";
@@ -43,6 +43,8 @@ const Icon = ({ type, size, color = "inherit" }) => {
     arrowDown: <IoIosArrowDown {...props} />,
     play: <FaPlay {...props} />,
     closeCircle: <IoCloseCircle {...props} />,
+    email: <MdEmail {...props} />,
+    form: <FaWpforms {...props} />,
   };
   return <i>{icons[type]}</i>;
 };

@@ -7,6 +7,7 @@ import IconButton from "../../molecules/IconButton/IconButton";
 import Drawer from "../../molecules/Drawer/Drawer";
 import Icon from "../../atoms/Icon/Icon";
 import TextLink from "../../molecules/TextLink/TextLink";
+import Mark from "../../atoms/Mark/Mark";
 import {
   DOWNLOAD_EBOOK,
   LANDING_EBOOKS,
@@ -22,14 +23,18 @@ import { parseNumberToMonthName } from "../../../utils/parsing";
 
 const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
+  const [showMobileContacMenu, setShowMobileContacMenu] = useState(false);
+  const [showMobileEbooksMenu, setShowMobileEbooksMenu] = useState(false);
   const [isTopMenuHidden] = useState(false);
   const navigate = useNavigate();
+
   useEffect(() => {
     window.addEventListener("resize", () => {
       setShowMobileMenu(false);
     });
     return () => window.removeEventListener("resize", window);
   }, []);
+
   const [showResources, setShowResources] = useState(false);
   const [showContact, setShowContact] = useState(false);
   const [dropElements, setDropElements] = useState({
@@ -273,7 +278,18 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
             <div className={styles.dropdownMenu}>
               <Link to={OUR_PROGRAM} target="_blank">
                 <div className={styles.dropMenuBtn}>
-                  <Text type="subtitle">Nuestro Programa</Text>
+                  <div className={styles.dropdownTitleDesc}>
+                    <div className={styles.dropdownTitle}>
+                      <Text type="subtitle" color="black">
+                        Nuestro Programa
+                      </Text>
+                      <Icon color="black" type={"arrow"} size={"2rem"} />
+                    </div>
+                    <Text>Transforma tu Consultorio en 6 meses.</Text>
+                  </div>
+                  <Text size="xxlg">
+                    <Mark color="primary-bg">Nuevo</Mark>
+                  </Text>
                 </div>
               </Link>
             </div>
@@ -282,73 +298,20 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                 className={`${styles.dropMenuBtn} ${
                   dropElements.recursosGratis && styles.focus
                 }`}
-                onClick={() => handleDropMobileElements("recursosGratis")}
+                onClick={() => setShowMobileEbooksMenu(true)}
               >
-                <Text type="subtitle">Recursos gratis</Text>
-              </div>
-              <div
-                className={`${styles.dropElements} ${
-                  dropElements.recursosGratis && styles.show
-                }`}
-              >
-                <div className={styles.recursosDesc}>
-                  <Text type="subtitle" color="black">
-                    Ebooks Gratuitos
-                  </Text>
-                  <Text size="sm" bold="font-light">
-                    Aprende sobre Marketing dental con nuestros recursos 100%
-                    Gratuitos
-                  </Text>
+                <div className={styles.dropdownTitleDesc}>
+                  <div className={styles.dropdownTitle}>
+                    <Text type="subtitle" color="black">
+                      Recursos Gratis
+                    </Text>
+                    <Icon color="black" type={"arrow"} size={"2rem"} />
+                  </div>
+                  <Text>Aprende sobre Marketing dental.</Text>
                 </div>
-                <Link to={DOWNLOAD_EBOOK} target="_blank">
-                  <div className={styles.mobileCard}>
-                    <div className={styles.mobileCardContainer}>
-                      <img src={imgEbookPrueba} className={styles.mobileImg} />
-                    </div>
-                    <div className={styles.mobileDesc}>
-                      <Text bold="font-light" size="ty">
-                        {new Date().getFullYear()}
-                      </Text>
-                      <Text color="dark">
-                        Marketing Dental: La Guia Definitiva
-                      </Text>
-                      <Text size="sm">Descargar Gratis</Text>
-                    </div>
-                  </div>
-                </Link>
-                <Link to={DOWNLOAD_EBOOK} target="_blank">
-                  <div className={styles.mobileCard}>
-                    <div className={styles.mobileCardContainer}>
-                      <img src={imgEbookPrueba} className={styles.mobileImg} />
-                    </div>
-
-                    <div className={styles.mobileDesc}>
-                      <Text bold="font-light" size="ty">
-                        {new Date().getFullYear()}
-                      </Text>
-                      <Text color="dark">
-                        Marketing Dental: La Guia Definitiva
-                      </Text>
-                      <Text size="sm">Descargar Gratis</Text>
-                    </div>
-                  </div>
-                </Link>
-                <Link to={DOWNLOAD_EBOOK} target="_blank">
-                  <div className={styles.mobileCard}>
-                    <div className={styles.mobileCardContainer}>
-                      <img src={imgEbookPrueba} className={styles.mobileImg} />
-                    </div>
-                    <div className={styles.mobileDesc}>
-                      <Text bold="font-light" size="ty">
-                        {new Date().getFullYear()}
-                      </Text>
-                      <Text color="dark">
-                        Marketing Dental: La Guia Definitiva
-                      </Text>
-                      <Text size="sm">Descargar Gratis</Text>
-                    </div>
-                  </div>
-                </Link>
+                <Text size="xxlg">
+                  <Mark color="primary-bg">Nuevo</Mark>
+                </Text>
               </div>
             </div>
             <div className={styles.dropdownMenu}>
@@ -356,57 +319,32 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                 className={`${styles.dropMenuBtn} ${
                   dropElements.contacto && styles.focus
                 }`}
-                onClick={() => handleDropMobileElements("contacto")}
+                onClick={() => setShowMobileContacMenu(true)}
               >
-                <Text type="subtitle">Contacto</Text>
+                <div className={styles.dropdownTitleDesc}>
+                  <div className={styles.dropdownTitle}>
+                    <Text type="subtitle" color="black">
+                      Contacto
+                    </Text>
+                    <Icon color="black" type={"arrow"} size={"2rem"} />
+                  </div>
+                  <Text>Haznos cualquier consulta.</Text>
+                </div>
+                <Text size="xxlg"></Text>
               </div>
               <div
                 className={`${styles.dropElements} ${
                   dropElements.contacto && styles.show
                 }`}
-              >
-                <div className={styles.mobileContact}>
-                  <Text color="black" size="lg">
-                    Contacta a un representante
-                  </Text>
-                  <div className={styles.contactBtn}>
-                    <Text color="black" size="lg">
-                      Forma de contacto
-                    </Text>
-                    <Icon color="black" size={"1rem"} type={"arrow"} />
-                  </div>
-                  <div className={styles.contactBtn}>
-                    <Text color="black" size="lg">
-                      info@inkadentist.com
-                    </Text>
-                    <Icon color="black" size={"1rem"} type={"arrow"} />
-                  </div>
-                  <div className={styles.contactBtn}>
-                    <div
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        gap: "8px",
-                      }}
-                    >
-                      <Icon color="black" size={"1rem"} type={"wp"} />
-                      <Text color="black" size="lg">
-                        {" "}
-                        657302731
-                      </Text>
-                    </div>
-                    <Icon color="black" size={"1rem"} type={"arrow"} />
-                  </div>
-                </div>
-              </div>
+              ></div>
             </div>
-            <div className={styles.dropdownMenu}>
+            {/*   <div className={styles.dropdownMenu}>
               <Link to={CONTACT_FORM} target="_blank">
                 <div className={styles.dropMenuBtn}>
                   <Text type="subtitle">Cuentanos de tu Clinica {">"}</Text>
                 </div>
               </Link>
-            </div>
+            </div> */}
           </div>
 
           <div className={styles.btns}>
@@ -419,6 +357,130 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
               Solicita una reunion
             </IconTextButton>
           </div>
+          <Drawer
+            show={showMobileEbooksMenu}
+            onClose={() => setShowMobileEbooksMenu(false)}
+          >
+            <div className={`${styles.dropElements} ${styles.show}`}>
+              <div className={styles.recursosDesc}>
+                <Text type="subtitle" color="black">
+                  Ebooks Gratuitos
+                </Text>
+                <Text size="sm" bold="font-light">
+                  Aprende sobre Marketing dental con nuestros recursos 100%
+                  Gratuitos
+                </Text>
+              </div>
+              <Link to={DOWNLOAD_EBOOK} target="_blank">
+                <div className={styles.mobileCard}>
+                  <div className={styles.mobileCardContainer}>
+                    <img src={imgEbookPrueba} className={styles.mobileImg} />
+                  </div>
+                  <div className={styles.mobileDesc}>
+                    <Text bold="font-light" size="ty">
+                      {new Date().getFullYear()}
+                    </Text>
+                    <Text color="dark">
+                      Marketing Dental: La Guia Definitiva
+                    </Text>
+                    <Text size="sm">Descargar Gratis</Text>
+                  </div>
+                </div>
+              </Link>
+              <Link to={DOWNLOAD_EBOOK} target="_blank">
+                <div className={styles.mobileCard}>
+                  <div className={styles.mobileCardContainer}>
+                    <img src={imgEbookPrueba} className={styles.mobileImg} />
+                  </div>
+
+                  <div className={styles.mobileDesc}>
+                    <Text bold="font-light" size="ty">
+                      {new Date().getFullYear()}
+                    </Text>
+                    <Text color="dark">
+                      Marketing Dental: La Guia Definitiva
+                    </Text>
+                    <Text size="sm">Descargar Gratis</Text>
+                  </div>
+                </div>
+              </Link>
+              <Link to={DOWNLOAD_EBOOK} target="_blank">
+                <div className={styles.mobileCard}>
+                  <div className={styles.mobileCardContainer}>
+                    <img src={imgEbookPrueba} className={styles.mobileImg} />
+                  </div>
+                  <div className={styles.mobileDesc}>
+                    <Text bold="font-light" size="ty">
+                      {new Date().getFullYear()}
+                    </Text>
+                    <Text color="dark">
+                      Marketing Dental: La Guia Definitiva
+                    </Text>
+                    <Text size="sm">Descargar Gratis</Text>
+                  </div>
+                </div>
+              </Link>
+            </div>
+          </Drawer>
+          <Drawer
+            show={showMobileContacMenu}
+            onClose={() => setShowMobileContacMenu(false)}
+          >
+            <div className={styles.mobileContact}>
+              <Text color="black" size="xxxlg" bold="bold">
+                Contacta a un representante
+              </Text>
+              <Text size="xlg">
+                Haznos cualquier consulta, te responderemos en menos de 24
+                horas.
+              </Text>
+              <div className={styles.contactBtn}>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "8px",
+                  }}
+                >
+                  <Icon color="black" size={"2rem"} type={"form"} />
+                  <Text color="black" size="xxlg">
+                    {" "}
+                    Forma de contacto
+                  </Text>
+                </div>
+              </div>
+              <div className={styles.contactBtn}>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "8px",
+                  }}
+                >
+                  <Icon color="black" size={"2rem"} type={"email"} />
+                  <Text color="black" size="xxlg">
+                    {" "}
+                    info@inkadentist.com
+                  </Text>
+                </div>
+              </div>
+              <div className={styles.contactBtn}>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "8px",
+                  }}
+                >
+                  <Icon color="black" size={"2rem"} type={"wp"} />
+                  <Text color="black" size="xxlg">
+                    {" "}
+                    WhatsApp
+                  </Text>
+                </div>
+              </div>
+            </div>
+          </Drawer>
         </div>
       </Drawer>
     </nav>

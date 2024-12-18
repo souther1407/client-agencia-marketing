@@ -177,24 +177,21 @@ body:has(.resoursesDropDown.show) {
   flex-direction: column;
 }
 .contactBanner .contactBtn {
-  background-color: var(--white);
   border-radius: 8px;
-  border: 1px solid var(--gray);
   padding: 0 16px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   gap: 8px;
   cursor: pointer;
 }
+.mobileContact {
+  background-color: var(--primary-transparent-2);
+  height: 100%;
+}
 .mobileContact .contactBtn {
-  background-color: var(--very-light-white);
   border-radius: 16px;
-  border: 1px solid var(--gray);
-  padding: 8px 12px;
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 8px;
 }
 
@@ -303,6 +300,7 @@ body:has(.resoursesDropDown.show) {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+  background-color: var(--primary-transparent-2);
 }
 .btns {
   display: flex;
@@ -313,7 +311,7 @@ body:has(.resoursesDropDown.show) {
 .dropdownMenu {
   display: flex;
   flex-direction: column;
-  align-items: center;
+
   border-bottom: 1px solid var(--black);
   overflow: hidden;
 }
@@ -322,28 +320,37 @@ body:has(.resoursesDropDown.show) {
   display: flex;
   padding: 16px;
   cursor: pointer;
-  justify-content: center;
+  justify-content: space-between;
 }
-.dropMenuBtn.focus > * {
-  color: var(--primary) !important;
+.dropdownTitleDesc {
+  display: flex;
+  flex-direction: column;
 }
+.dropdownTitle > :last-child {
+  position: relative;
+  top: 2px;
+}
+.dropdownTitle {
+  display: flex;
+  align-items: center;
+}
+
 .dropElements {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  background-color: var(--dark-white);
+  background-color: var(--primary-transparent-2);
   transform-origin: top;
   overflow: hidden;
   transition: all 0.3s ease-in;
-  max-height: 0;
+  height: 100% !important;
 }
-.dropElements.show {
-  max-height: fit-content;
-}
+
 .mobileCard {
   display: flex;
-  background-color: var(--white);
+  background-color: #fff;
+  border: 1px solid var(--primary);
   padding: 16px;
   border-radius: 8px;
   margin: 8px 16px;
