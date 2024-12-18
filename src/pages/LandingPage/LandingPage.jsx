@@ -35,7 +35,7 @@ import imgRecordatorioCard from "@assets/Tienes un mal sistema de recordatorio d
 import ImagenEbook1 from "@assets/Imagen ebook 1.svg";
 import ImagenEbookWp from "@assets/imagen ebook de whatsapp.svg";
 import imagenDentista from "@assets/foto dentista.svg";
-import { ES } from "country-flag-icons/react/3x2";
+
 import PartnersCarousel from "../../components/organisms/PartnersCarousel/PartnersCarousel";
 const LandingPage = () => {
   const navigate = useNavigate();
@@ -58,6 +58,12 @@ const LandingPage = () => {
       {showPopup && (
         <div className={styles.popupContainer}>
           <div className={styles.popupcard}>
+            <span
+              className={styles.popupMobileCloseBtn}
+              onClick={() => setShowPopup(false)}
+            >
+              <Icon size={"2rem"} type={"close"} color="var(--white)" />
+            </span>
             <div className={styles.popImg}>
               <Text color="light" type="title" textAlign="center">
                 1O CUPOS

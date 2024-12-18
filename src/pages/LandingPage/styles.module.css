@@ -75,6 +75,10 @@ body:has(.popupContainer) {
   display: flex;
   background-color: var(--white);
   border-radius: 32px;
+  position: relative;
+}
+.popupMobileCloseBtn {
+  display: none;
 }
 .popImg {
   display: flex;
@@ -668,6 +672,23 @@ body:has(.popupContainer) {
   }
   .quieroHacerCrecerBtn {
     width: 100%;
+  }
+  .popupcard {
+    width: 100%;
+    flex-direction: column;
+  }
+  .popupMobileCloseBtn {
+    display: block;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+  }
+  .popImg {
+    width: 100%;
+    border-radius: 32px 32px 0 0;
+  }
+  .popupCloseBtn {
+    display: none;
   }
   .whoAreWe__contents {
     width: 100%;
