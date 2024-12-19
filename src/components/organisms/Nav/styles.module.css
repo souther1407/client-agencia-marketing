@@ -307,12 +307,15 @@ body:has(.resoursesDropDown.show) {
   flex-direction: column;
   gap: 8px;
   padding: 32px;
+  border-top: 1px solid var(--gray-light);
+}
+.btns * {
+  font-size: 17px !important;
 }
 .dropdownMenu {
   display: flex;
   flex-direction: column;
 
-  border-bottom: 1px solid var(--black);
   overflow: hidden;
 }
 .dropMenuBtn {
@@ -333,6 +336,14 @@ body:has(.resoursesDropDown.show) {
 .dropdownTitle {
   display: flex;
   align-items: center;
+  gap: 4px;
+}
+
+.resourcesContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  gap: 16px;
 }
 
 .dropElements {
@@ -353,7 +364,7 @@ body:has(.resoursesDropDown.show) {
   border: 1px solid var(--primary);
   padding: 16px;
   border-radius: 8px;
-  margin: 8px 16px;
+
   gap: 16px;
   cursor: pointer;
 }

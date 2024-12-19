@@ -280,14 +280,16 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                 <div className={styles.dropMenuBtn}>
                   <div className={styles.dropdownTitleDesc}>
                     <div className={styles.dropdownTitle}>
-                      <Text type="subtitle" color="black">
+                      <Text bold="regular" size="xxlg" color="black">
                         Nuestro Programa
                       </Text>
-                      <Icon color="black" type={"arrow"} size={"2rem"} />
+                      <Icon color="black" type={"arrow"} size={"1.5rem"} />
                     </div>
-                    <Text>Transforma tu Consultorio en 6 meses.</Text>
+                    <Text size="lg" bold="font-light">
+                      Transforma tu Consultorio en 6 meses.
+                    </Text>
                   </div>
-                  <Text size="xxlg">
+                  <Text>
                     <Mark color="primary-bg">Nuevo</Mark>
                   </Text>
                 </div>
@@ -302,14 +304,16 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
               >
                 <div className={styles.dropdownTitleDesc}>
                   <div className={styles.dropdownTitle}>
-                    <Text type="subtitle" color="black">
+                    <Text bold="regular" size="xxlg" color="black">
                       Recursos Gratis
                     </Text>
-                    <Icon color="black" type={"arrow"} size={"2rem"} />
+                    <Icon color="black" type={"arrow"} size={"1.5rem"} />
                   </div>
-                  <Text>Aprende sobre Marketing dental.</Text>
+                  <Text size="lg" bold="font-light">
+                    Aprende sobre Marketing dental.
+                  </Text>
                 </div>
-                <Text size="xxlg">
+                <Text>
                   <Mark color="primary-bg">Nuevo</Mark>
                 </Text>
               </div>
@@ -323,14 +327,16 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
               >
                 <div className={styles.dropdownTitleDesc}>
                   <div className={styles.dropdownTitle}>
-                    <Text type="subtitle" color="black">
+                    <Text bold="regular" size="xxlg" color="black">
                       Contacto
                     </Text>
-                    <Icon color="black" type={"arrow"} size={"2rem"} />
+                    <Icon color="black" type={"arrow"} size={"1.5rem"} />
                   </div>
-                  <Text>Haznos cualquier consulta.</Text>
+                  <Text size="lg" bold="font-light">
+                    Haznos cualquier consulta.
+                  </Text>
                 </div>
-                <Text size="xxlg"></Text>
+                <Text></Text>
               </div>
               <div
                 className={`${styles.dropElements} ${
@@ -360,77 +366,115 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
           <Drawer
             show={showMobileEbooksMenu}
             onClose={() => setShowMobileEbooksMenu(false)}
-          >
-            <div className={`${styles.dropElements} ${styles.show}`}>
-              <div className={styles.recursosDesc}>
-                <Text type="subtitle" color="black">
-                  Ebooks Gratuitos
-                </Text>
-                <Text size="sm" bold="font-light">
-                  Aprende sobre Marketing dental con nuestros recursos 100%
-                  Gratuitos
+            hideLogo
+            renderCloBtn={
+              <div
+                style={{
+                  display: "flex",
+                  gap: "8px",
+                  alignItems: "center",
+                }}
+              >
+                <span style={{ position: "relative", top: "2px" }}>
+                  <Icon size={"2rem"} type={"arrowLeft"} color="var(--white)" />
+                </span>
+
+                <Text color="light" size="xlg">
+                  Recursos Gratuitos
                 </Text>
               </div>
-              <Link to={DOWNLOAD_EBOOK} target="_blank">
-                <div className={styles.mobileCard}>
-                  <div className={styles.mobileCardContainer}>
-                    <img src={imgEbookPrueba} className={styles.mobileImg} />
-                  </div>
-                  <div className={styles.mobileDesc}>
-                    <Text bold="font-light" size="ty">
-                      {new Date().getFullYear()}
-                    </Text>
-                    <Text color="dark">
-                      Marketing Dental: La Guia Definitiva
-                    </Text>
-                    <Text size="sm">Descargar Gratis</Text>
-                  </div>
+            }
+          >
+            <div className={`${styles.dropElements} ${styles.show}`}>
+              <div className={styles.resourcesContainer}>
+                <div className={styles.recursosDesc}>
+                  <Text type="subtitle" color="black">
+                    Ebooks Gratuitos
+                  </Text>
+                  <Text size="lg" bold="font-light">
+                    Aprende sobre Marketing dental con nuestros recursos 100%
+                    Gratuitos
+                  </Text>
                 </div>
-              </Link>
-              <Link to={DOWNLOAD_EBOOK} target="_blank">
-                <div className={styles.mobileCard}>
-                  <div className={styles.mobileCardContainer}>
-                    <img src={imgEbookPrueba} className={styles.mobileImg} />
+                <Link to={DOWNLOAD_EBOOK} target="_blank">
+                  <div className={styles.mobileCard}>
+                    <div className={styles.mobileCardContainer}>
+                      <img src={imgEbookPrueba} className={styles.mobileImg} />
+                    </div>
+                    <div className={styles.mobileDesc}>
+                      <Text bold="font-light" size="ty">
+                        {new Date().getFullYear()}
+                      </Text>
+                      <Text color="dark">
+                        Marketing Dental: La Guia Definitiva
+                      </Text>
+                      <Text size="sm">Descargar Gratis</Text>
+                    </div>
                   </div>
+                </Link>
+                <Link to={DOWNLOAD_EBOOK} target="_blank">
+                  <div className={styles.mobileCard}>
+                    <div className={styles.mobileCardContainer}>
+                      <img src={imgEbookPrueba} className={styles.mobileImg} />
+                    </div>
 
-                  <div className={styles.mobileDesc}>
-                    <Text bold="font-light" size="ty">
-                      {new Date().getFullYear()}
-                    </Text>
-                    <Text color="dark">
-                      Marketing Dental: La Guia Definitiva
-                    </Text>
-                    <Text size="sm">Descargar Gratis</Text>
+                    <div className={styles.mobileDesc}>
+                      <Text bold="font-light" size="ty">
+                        {new Date().getFullYear()}
+                      </Text>
+                      <Text color="dark">
+                        Marketing Dental: La Guia Definitiva
+                      </Text>
+                      <Text size="sm">Descargar Gratis</Text>
+                    </div>
                   </div>
-                </div>
-              </Link>
-              <Link to={DOWNLOAD_EBOOK} target="_blank">
-                <div className={styles.mobileCard}>
-                  <div className={styles.mobileCardContainer}>
-                    <img src={imgEbookPrueba} className={styles.mobileImg} />
+                </Link>
+                <Link to={DOWNLOAD_EBOOK} target="_blank">
+                  <div className={styles.mobileCard}>
+                    <div className={styles.mobileCardContainer}>
+                      <img src={imgEbookPrueba} className={styles.mobileImg} />
+                    </div>
+                    <div className={styles.mobileDesc}>
+                      <Text bold="font-light" size="ty">
+                        {new Date().getFullYear()}
+                      </Text>
+                      <Text color="dark">
+                        Marketing Dental: La Guia Definitiva
+                      </Text>
+                      <Text size="sm">Descargar Gratis</Text>
+                    </div>
                   </div>
-                  <div className={styles.mobileDesc}>
-                    <Text bold="font-light" size="ty">
-                      {new Date().getFullYear()}
-                    </Text>
-                    <Text color="dark">
-                      Marketing Dental: La Guia Definitiva
-                    </Text>
-                    <Text size="sm">Descargar Gratis</Text>
-                  </div>
-                </div>
-              </Link>
+                </Link>
+              </div>
             </div>
           </Drawer>
           <Drawer
             show={showMobileContacMenu}
             onClose={() => setShowMobileContacMenu(false)}
+            hideLogo
+            renderCloBtn={
+              <div
+                style={{
+                  display: "flex",
+                  gap: "8px",
+                  alignItems: "center",
+                }}
+              >
+                <span style={{ position: "relative", top: "2px" }}>
+                  <Icon size={"2rem"} type={"arrowLeft"} color="var(--white)" />
+                </span>
+
+                <Text color="light" size="xlg">
+                  Contacto
+                </Text>
+              </div>
+            }
           >
             <div className={styles.mobileContact}>
-              <Text color="black" size="xxxlg" bold="bold">
+              <Text color="black" type="subtitle" bold="semibold">
                 Contacta a un representante
               </Text>
-              <Text size="xlg">
+              <Text size="lg" bold="font-light">
                 Haznos cualquier consulta, te responderemos en menos de 24
                 horas.
               </Text>

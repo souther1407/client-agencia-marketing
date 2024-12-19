@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./drawer.module.css";
 import Icon from "../../atoms/Icon/Icon";
 import Logo from "../../atoms/Logo/Logo";
-const Drawer = ({ show, children, onClose }) => {
+const Drawer = ({ show, children, onClose, renderCloBtn, hideLogo }) => {
   return (
     <div
       className={`${styles.drawer} ${show && styles.show}`}
@@ -10,9 +10,9 @@ const Drawer = ({ show, children, onClose }) => {
     >
       <div className={styles.container} onClick={(e) => e.stopPropagation()}>
         <header className={styles.header}>
-          <Logo />
+          {hideLogo ? <div></div> : <Logo color="white" />}
           <div className={styles.close} onClick={onClose}>
-            <Icon size="2rem" type={"close"} color="white" />
+            {renderCloBtn || <Icon size="2rem" type={"close"} color="white" />}
           </div>
         </header>
         <div className={styles.content}>{children}</div>

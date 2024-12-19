@@ -8,13 +8,22 @@ import {
   FaBars,
 } from "react-icons/fa";
 import { IoDiamondOutline, IoCloseCircle } from "react-icons/io5";
-import { MdArrowForwardIos, MdEmail } from "react-icons/md";
+import {
+  MdArrowForwardIos,
+  MdEmail,
+  MdKeyboardArrowLeft,
+} from "react-icons/md";
 import styles from "./icon.module.css";
 import { FaLinkedin, FaArrowRight } from "react-icons/fa6";
 import { FaFacebook, FaInstagram, FaPlay, FaWpforms } from "react-icons/fa";
 import { BiSolidMedal } from "react-icons/bi";
 import { CiWarning } from "react-icons/ci";
-import { IoIosArrowForward, IoIosArrowDown } from "react-icons/io";
+
+import {
+  IoIosArrowForward,
+  IoIosArrowDown,
+  IoLogoWhatsapp,
+} from "react-icons/io";
 import { PiArrowSquareOutBold } from "react-icons/pi";
 
 const Icon = ({ type, size, color = "inherit" }) => {
@@ -25,7 +34,7 @@ const Icon = ({ type, size, color = "inherit" }) => {
   };
   const icons = {
     send: <RiSendPlaneLine {...props} />,
-    wp: <FaWhatsapp {...props} />,
+    wp: <IoLogoWhatsapp {...props} />,
     info: <FaInfoCircle {...props} />,
     diamond: <IoDiamondOutline {...props} />,
     close: <FaTimes {...props} />,
@@ -33,6 +42,7 @@ const Icon = ({ type, size, color = "inherit" }) => {
     bars: <FaBars {...props} />,
     rightArrow: <FaArrowRight {...props} />,
     arrow: <MdArrowForwardIos {...props} />,
+    arrowLeft: <MdKeyboardArrowLeft {...props} />,
     linkedin: <FaLinkedin {...props} />,
     facebook: <FaFacebook {...props} />,
     instagram: <FaInstagram {...props} />,
