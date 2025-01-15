@@ -57,11 +57,21 @@
   font-family: "ms serif display";
 }
 
+.font-terciary {
+  font-family: "bree serif";
+}
+
 .black {
   color: var(--black);
 }
 .primary {
   color: var(--primary);
+}
+.primary-light {
+  color: var(--primary-light);
+}
+.primary-darker {
+  color: var(--primary-darker);
 }
 .blue {
   color: var(--dark-blue);
