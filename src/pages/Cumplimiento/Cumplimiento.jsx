@@ -3,7 +3,7 @@ import Nav from "../../components/organisms/Nav/Nav";
 import imgEspaña from "@assets/imagen españa.svg";
 import Text from "../../components/atoms/Text/Text";
 import Footer from "../../components/organisms/Footer/Footer";
-import Preefoter from "../../components/organisms/PreFooter/PreFooter";
+import PreefoterSimple from "../../components/organisms/PreefooterSimple/PreefooterSimple";
 const Cumplimiento = () => {
   return (
     <div className={styles.page}>
@@ -59,7 +59,7 @@ const Cumplimiento = () => {
           absoluta confianza.
         </Text>
       </main>
-
+      <PreefoterSimple />
       <Footer />
     </div>
   );
