@@ -16,6 +16,7 @@ import LandingPage from "./pages/LandingPage/LandingPage";
 import ContactForm from "./pages/ContactForm/ContactForm";
 import OurProgram from "./pages/OurProgram/OurProgram";
 import Cumplimiento from "./pages/Cumplimiento/Cumplimiento";
+import AcercaDe from "./pages/AcercaDe/AcercaDe";
 import { useLayoutEffect } from "react";
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
       <Route path={CONTACT_FORM} element={<ContactForm />} />
       <Route path={OUR_PROGRAM} element={<OurProgram />} />
       <Route path={CUMPLIMIENTO} element={<Cumplimiento />} />
+      <Route path={ACERCA_DE} element={<AcercaDe />} />
     </Routes>
   );
 }

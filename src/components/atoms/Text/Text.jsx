@@ -39,6 +39,7 @@ const Text = ({
   textAlign = "start",
   fontFamily = "font-primary",
   fontSize = "",
+  s = {},
   ...otherProps
 }) => {
   if (
@@ -51,7 +52,7 @@ const Text = ({
     return (
       <h1
         className={`${styles[type]} ${styles[color]} ${styles[bold]} ${styles[fontFamily]}`}
-        style={{ textAlign, fontSize }}
+        style={{ textAlign, fontSize, ...s }}
         {...otherProps}
       >
         {children}
@@ -61,7 +62,7 @@ const Text = ({
     return (
       <h3
         className={`${styles.subtitle} ${styles[color]} ${styles[bold]} ${styles[fontFamily]}`}
-        style={{ textAlign, fontSize }}
+        style={{ textAlign, fontSize, ...s }}
         {...otherProps}
       >
         {children}
@@ -71,7 +72,7 @@ const Text = ({
   return (
     <p
       className={`${styles.text} ${styles[color]} ${styles[bold]} ${styles[fontFamily]}`}
-      style={{ textAlign, fontSize: (fontSize || getSize(size)) ?? "" }}
+      style={{ textAlign, fontSize: (fontSize || getSize(size)) ?? "", ...s }}
       {...otherProps}
     >
       {children}
