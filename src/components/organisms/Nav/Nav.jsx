@@ -14,6 +14,8 @@ import {
   LANDING_PAGE,
   CONTACT_FORM,
   OUR_PROGRAM,
+  ACERCA_DE,
+  CUMPLIMIENTO,
 } from "../../../constants/routes";
 import { useNavigate } from "react-router-dom";
 import IconTextButton from "../../molecules/IconTextButton/IconTextButton";
@@ -37,14 +39,17 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
 
   const [showResources, setShowResources] = useState(false);
   const [showContact, setShowContact] = useState(false);
+  const [showAboutUs, setShowAboutUs] = useState(false);
   const [dropElements, setDropElements] = useState({
     recursosGratis: false,
     contacto: false,
+    sobreNosotros: false,
   });
 
   const handleShowResources = (e) => {
     if (e.type != "mouseenter" || (e.type === "mouseenter" && !showResources)) {
       setShowResources((prev) => !prev);
+      setShowAboutUs(false);
       setShowContact(false);
     }
   };
@@ -52,26 +57,35 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
   const handleShowContact = (e) => {
     if (e.type != "mouseenter" || (e.type === "mouseenter" && !showContact)) {
       setShowResources(false);
+      setShowAboutUs(false);
       setShowContact((prev) => !prev);
+    }
+  };
+
+  const handleShowAboutUs = (e) => {
+    if (e.type != "mouseenter" || (e.type === "mouseenter" && !showAboutUs)) {
+      setShowResources(false);
+      setShowContact(false);
+      setShowAboutUs((prev) => !prev);
     }
   };
   const handleHideDropElements = (e) => {
     if (e.target.id == "shadow-zone") {
       setShowResources(false);
       setShowContact(false);
+      setShowAboutUs(false);
     }
   };
 
   const handleDropMobileElements = (name) => {
     setDropElements((prev) => ({ ...prev, [name]: !dropElements[name] }));
   };
-
   return (
     <nav className={`${styles.nav} ${hideTopMenu && styles.ajust}`}>
       <div
         id="shadow-zone"
         className={`${styles.resoursesDropDown} ${
-          (showResources || showContact) && styles.show
+          (showResources || showContact || showAboutUs) && styles.show
         }`}
         onClick={handleHideDropElements}
       >
@@ -80,15 +94,15 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
         >
           <div className={styles.content}>
             <div className={styles.header}>
-              <div
-                className={styles.seeEbooksBtn}
-                onClick={() => navigate(LANDING_EBOOKS)}
+              <Text
+                bold="bold"
+                type="title"
+                color="black"
+                fontFamily="font-terciary"
               >
-                <Text bold="bold" type="subtitle" color="black">
-                  Ebooks Gratuitos
-                </Text>
-                <Icon color="black" size={"1.2rem"} type={"arrow"} />
-              </div>
+                Ebooks Gratuitos
+              </Text>
+
               <Text bold="font-light" size="sm">
                 Aprende sobre Marketing dental con nuestros recursos 100%
                 Gratuitos
@@ -156,25 +170,62 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
           className={`${styles.contactBanner} ${showContact && styles.show}`}
         >
           <div className={styles.content}>
-            <Text color="black" type="subtitle" bold="semibold">
+            <Text
+              color="black"
+              type="title"
+              bold="semibold"
+              fontFamily="font-terciary"
+            >
               Contacta a un Representante
             </Text>
+            <Text size="sm" bold="font-light">
+              Haznos cualquier consulta, te responderemos en menos de 24 horas.
+            </Text>
             <div className={styles.contactBtn}>
+              <Icon color="black" size={"1.2rem"} type={"form"} />
               <Text color="black">Forma de contacto</Text>
-              <Icon color="black" size={"1rem"} type={"arrow"} />
             </div>
             <div className={styles.contactBtn}>
+              <Icon color="black" size={"1.2rem"} type={"email"} />
               <Text color="black">info@inkadentist.com</Text>
-              <Icon color="black" size={"1rem"} type={"arrow"} />
             </div>
             <div className={styles.contactBtn}>
-              <div
-                style={{ display: "flex", alignItems: "center", gap: "8px" }}
-              >
-                <Icon color="black" size={"1rem"} type={"wp"} />
-                <Text color="black"> 657302731</Text>
-              </div>
-              <Icon color="black" size={"1rem"} type={"arrow"} />
+              <Icon color="black" size={"1.2rem"} type={"wp"} />
+              <Text color="black"> Whatsapp</Text>
+            </div>
+          </div>
+        </div>
+
+        <div className={`${styles.aboutUs} ${showAboutUs && styles.show}`}>
+          <div className={styles.content}>
+            <Text
+              color="black"
+              type="title"
+              bold="semibold"
+              fontFamily="font-terciary"
+            >
+              ¿Quienes somos?
+            </Text>
+            <Text size="sm" bold="font-light">
+              Informate sobre HackDental y sus áreas de expertise.
+            </Text>
+            <div
+              className={styles.contactBtn}
+              onClick={() => navigate(ACERCA_DE)}
+            >
+              <Icon color="black" size={"1.2rem"} type={"team"} />
+              <Text color="black">Nuestro Equipo</Text>
+            </div>
+            <div
+              className={styles.contactBtn}
+              onClick={() => navigate(CUMPLIMIENTO)}
+            >
+              <Icon color="black" size={"1.2rem"} type={"commitment"} />
+              <Text color="black">Cumplimiento del RGPD</Text>
+            </div>
+            <div className={styles.contactBtn}>
+              <Icon color="black" size={"1.2rem"} type={"privacy"} />
+              <Text color="black">Política de Privacidad</Text>
             </div>
           </div>
         </div>
@@ -194,7 +245,8 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
         {hideBottomMenu || (
           <div
             className={`${styles.bottomMenu} ${
-              (showContact || showResources) && styles.changeColor
+              (showContact || showResources || showAboutUs) &&
+              styles.changeColor
             }`}
           >
             <div className={styles.left}>
@@ -239,6 +291,15 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                 </TextLink>
               </div>
 
+              <div onMouseEnter={handleShowAboutUs} onClick={handleShowAboutUs}>
+                <TextLink
+                  variant="primary"
+                  marked={showAboutUs}
+                  textProps={{ color: "black", bold: "font-light", size: "ty" }}
+                >
+                  Sobre Nosotros
+                </TextLink>
+              </div>
               <div onMouseEnter={handleShowContact} onClick={handleShowContact}>
                 <TextLink
                   variant="primary"

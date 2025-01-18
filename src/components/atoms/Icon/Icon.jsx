@@ -1,5 +1,5 @@
 import React from "react";
-import { RiSendPlaneLine } from "react-icons/ri";
+import { RiSendPlaneLine, RiContractLine } from "react-icons/ri";
 import {
   FaInfoCircle,
   FaWhatsapp,
@@ -10,8 +10,8 @@ import {
 import { IoDiamondOutline, IoCloseCircle } from "react-icons/io5";
 import {
   MdArrowForwardIos,
-  MdEmail,
   MdKeyboardArrowLeft,
+  MdOutlinePrivacyTip,
 } from "react-icons/md";
 import styles from "./icon.module.css";
 import { FaLinkedin, FaArrowRight } from "react-icons/fa6";
@@ -24,7 +24,8 @@ import {
   IoIosArrowDown,
   IoLogoWhatsapp,
 } from "react-icons/io";
-import { PiArrowSquareOutBold } from "react-icons/pi";
+import { PiArrowSquareOutBold, PiUsersThree } from "react-icons/pi";
+import { CiMail } from "react-icons/ci";
 
 const Icon = ({ type, size, color = "inherit" }) => {
   const props = {
@@ -34,7 +35,7 @@ const Icon = ({ type, size, color = "inherit" }) => {
   };
   const icons = {
     send: <RiSendPlaneLine {...props} />,
-    wp: <IoLogoWhatsapp {...props} />,
+    wp: <FaWhatsapp {...props} />,
     info: <FaInfoCircle {...props} />,
     diamond: <IoDiamondOutline {...props} />,
     close: <FaTimes {...props} />,
@@ -53,8 +54,11 @@ const Icon = ({ type, size, color = "inherit" }) => {
     arrowDown: <IoIosArrowDown {...props} />,
     play: <FaPlay {...props} />,
     closeCircle: <IoCloseCircle {...props} />,
-    email: <MdEmail {...props} />,
+    email: <CiMail {...props} />,
     form: <FaWpforms {...props} />,
+    team: <PiUsersThree {...props} />,
+    privacy: <MdOutlinePrivacyTip {...props} />,
+    commitment: <RiContractLine {...props} />,
   };
   return <i>{icons[type]}</i>;
 };

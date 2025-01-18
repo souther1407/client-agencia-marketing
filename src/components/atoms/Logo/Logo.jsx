@@ -1,7 +1,8 @@
 import React from "react";
 import styles from "./styles.module.css";
-import LogoImg from "@assets/Logo negro.svg";
+import LogoImg from "@assets/Logo.svg";
 import LogoImgBlanco from "@assets/Logo Blanco.svg";
+
 const Logo = ({ color = "black" }) => {
   if (color === "black")
     return <img src={LogoImg} alt="Logo" className={styles.logo} />;
