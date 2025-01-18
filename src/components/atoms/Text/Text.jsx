@@ -1,7 +1,6 @@
-import React from "react";
 import styles from "./text.module.css";
 
-const getSize = (size) => {
+/* const getSize = (size) => {
   switch (size) {
     case "ultrabig":
       return "3.33334rem";
@@ -28,7 +27,7 @@ const getSize = (size) => {
     default:
       return "1rem";
   }
-};
+}; */
 
 const Text = ({
   type = "text",
@@ -71,8 +70,8 @@ const Text = ({
   }
   return (
     <p
-      className={`${styles.text} ${styles[color]} ${styles[bold]} ${styles[fontFamily]}`}
-      style={{ textAlign, fontSize: (fontSize || getSize(size)) ?? "", ...s }}
+      className={`${styles.text} ${styles[color]} ${styles[bold]} ${styles[fontFamily]} ${styles[size]}`}
+      style={{ textAlign, fontSize: fontSize ?? "", ...s }}
       {...otherProps}
     >
       {children}

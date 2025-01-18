@@ -49,6 +49,44 @@
   color: inherit;
 }
 
+/* Tamaños de fuente */
+.xxty {
+  font-size: 0.566667rem;
+}
+
+.xty {
+  font-size: 0.666667rem;
+}
+.ty {
+  font-size: 0.7778rem;
+}
+.sm {
+  font-size: 0.88888889rem;
+}
+.md {
+  font-size: 1rem;
+}
+.lg {
+  font-size: 1.16667rem;
+}
+.xlg {
+  font-size: 1.3334rem;
+}
+
+.xxlg {
+  font-size: 1.5rem;
+}
+
+.xxxlg {
+  font-size: 1.77778rem;
+}
+.big {
+  font-size: 2.334rem;
+}
+.ultrabig {
+  font-size: 3.33334rem;
+}
+
 .font-primary {
   font-family: "lexend";
 }
@@ -123,6 +161,18 @@
 
 .extra-bold {
   font-weight: bolder;
+}
+
+@media screen and (max-width: 1024px) {
+  .title {
+    font-size: 3rem;
+  }
+  .sm {
+    font-size: 1.1rem;
+  }
+  .ty {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (max-width: 400px) {

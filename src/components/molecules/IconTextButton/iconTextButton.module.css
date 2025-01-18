@@ -7,7 +7,8 @@
 .blue.iconTextButton,
 .lemon.iconTextButton,
 .primary-rounded,
-.very-light-black.iconTextButton {
+.very-light-black.iconTextButton,
+.dark-green.iconTextButton {
   display: flex;
   outline: none;
   border: 1px solid transparent;
@@ -330,6 +331,32 @@
 }
 
 .very-light-black.iconTextButton.bordered {
+  border: 1px solid var(--very-light-black);
+  color: var(--very-light-black);
+}
+
+/* dark-green */
+.dark-green.iconTextButton.full {
+  background-color: var(--primary-transparent-50);
+  color: var(--black);
+  border-radius: 4px;
+}
+.dark-green.iconTextButton:disabled {
+  background-color: #2d4356;
+  cursor: auto;
+  color: var(--white);
+  cursor: no-drop;
+}
+.dark-green.iconTextButton:disabled:hover {
+}
+
+.dark-green.iconTextButton.full:hover {
+}
+
+.dark-green.iconTextButton.bordered:hover {
+}
+
+.dark-green.iconTextButton.bordered {
   border: 1px solid var(--very-light-black);
   color: var(--very-light-black);
 }

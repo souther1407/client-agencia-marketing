@@ -36,3 +36,15 @@
   gap: 32px;
   background-color: var(--light-green);
 }
+
+@media screen and (max-width: 1024px) {
+  .banner {
+    flex-direction: column;
+    padding-bottom: 32px;
+    gap: 16px;
+  }
+  .main {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}

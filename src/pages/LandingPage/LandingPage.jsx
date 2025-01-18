@@ -42,7 +42,7 @@ const LandingPage = () => {
   const [showWSMsg, setShowWSMsg] = useState(true);
 
   /* const [showModalVideo, setShowModalVideo] = useState(false); */
-  const [showPopup, setShowPopup] = useState(false);
+  const [showPopup, setShowPopup] = useState(true);
   /* const handleHideModalVideo = (e) => {
     if (e.target.id == "bg-video-modal") {
       setShowModalVideo(false);
@@ -78,7 +78,12 @@ const LandingPage = () => {
                 <Icon size={"2rem"} type={"close"} color="var(--gray)" />
               </span>
 
-              <Text color="primary">¡SOLO POR ENERO!</Text>
+              <div className={styles.popTextOffer}>
+                <Text color="black" bold="semibold">
+                  ¡SOLO POR ENERO!
+                </Text>
+                <hr className={styles.underline} />
+              </div>
               <Text
                 color="black"
                 type="subtitle"
@@ -87,9 +92,14 @@ const LandingPage = () => {
               >
                 10 cupos para el programa “Consultorio Exitoso”
               </Text>
-              <Text size="ty" textAlign="center">
-                Transformamos tu consultorio en tan solo 6 meses con nuestro
-                método “Consultorio Exitoso” .
+              <Text
+                size="sm"
+                textAlign="center"
+                color="black"
+                bold="font-light"
+              >
+                Es un programa de marketing dental completo para <br /> llenar
+                tu consultorio de pacientes en solo 6 meses.
               </Text>
               <div className={styles.popupBtns}>
                 <IconTextButton
@@ -101,7 +111,7 @@ const LandingPage = () => {
                 </IconTextButton>
                 <IconTextButton
                   size="100%"
-                  variant="bordered"
+                  colorVariant="dark-green"
                   textProps={{ size: "ty" }}
                   onClick={() => setShowPopup(false)}
                 >
