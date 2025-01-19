@@ -101,7 +101,7 @@
   color: var(--error);
 }
 
-/*black*/
+/* black */
 
 .black .input {
   border: 1px solid transparent;
@@ -121,11 +121,32 @@
   color: var(--very-dark-white);
 }
 
-.black.error .input {
+/* primary-bordered */
+
+.primary-bordered .input {
+  border: 2px solid var(--primary);
+  border-radius: 4px;
+  padding: 12px;
+  color: var(--black);
+  background-color: transparent;
+  font-size: 0.7rem;
+}
+.primary-bordered .input:focus {
+  outline: 1px solid var(--blue);
+}
+.primary-bordered .icon {
+  color: gray;
+}
+.primary-bordered .input::placeholder {
+  color: gray;
+}
+
+.primary-bordered.error .input {
   border: 1px solid var(--error);
   color: var(--error);
 }
 
+/* plain*/
 .plain.container {
   outline: none;
   background-color: transparent;

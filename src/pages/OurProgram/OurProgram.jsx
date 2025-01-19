@@ -36,41 +36,88 @@ const OurProgram = () => {
         />
         <div className={styles.elements}>
           <Text type="bigtitle" color="black" bold="semibold">
-            ¿Cuánto dinero estás dejando sobre la mesa?
-          </Text>
-          <Text textAlign="center" bold="font-light" color="black">
-            ¿Tiene una práctica dental que factura más de $10,000 euros al mes?
-            Registrate <br /> al programa de marketing de HackDental y&nbsp;
-            <Mark color="dark">
-              desbloquea el crecimiento de tu clínica dental.
-            </Mark>
+            ¿Cuál es el potencial de tu consultorio?
           </Text>
 
-          <div className={styles.videoDrawer}>
-            <img className={styles.videoImg} src={imgVideo} />
-            <button
-              className={styles.videoPlayBtn}
-              onClick={() => setShowModalVideo(true)}
-            >
-              <Icon size={"1.5rem"} color="var(--white)" type={"play"} />
-            </button>
-            <div
-              id="bg-video-modal"
-              className={`${styles.modalVideo} ${
-                showModalVideo && styles.show
-              }`}
-              onClick={handleHideModalVideo}
-            >
-              <iframe
-                className={styles.video}
-                src="https://www.youtube.com/embed/Fu4GHmyvDk8?si=-ugwjpi28KLqfGSM?controls=0&showinfo=0"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; modestbranding; encrypted-media; gyroscope; picture-in-picture"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-              ></iframe>
+          <div className={styles.videoContainer}>
+            <div className={styles.videoDrawer}>
+              <img className={styles.videoImg} src={imgVideo} />
+              <button
+                className={styles.videoPlayBtn}
+                onClick={() => setShowModalVideo(true)}
+              >
+                <Icon size={"1.5rem"} color="var(--white)" type={"play"} />
+              </button>
+              <div
+                id="bg-video-modal"
+                className={`${styles.modalVideo} ${
+                  showModalVideo && styles.show
+                }`}
+                onClick={handleHideModalVideo}
+              >
+                <iframe
+                  className={styles.video}
+                  src="https://www.youtube.com/embed/Fu4GHmyvDk8?si=-ugwjpi28KLqfGSM?controls=0&showinfo=0"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; modestbranding; encrypted-media; gyroscope; picture-in-picture"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
             </div>
+            <form className={styles.formContacto}>
+              <Text>
+                <Mark color="primary-bg">
+                  **DUEÑOS DE CONSULTORIOS DENTALES!**
+                </Mark>
+              </Text>
+              <Text type="subtitle" color="black" bold="semibold">
+                Reunete con nosotros y <br />
+                comentanos tus necesidades
+              </Text>
+              <div className={styles.inputLine}>
+                <Input
+                  id={"name"}
+                  label="Nombre*"
+                  variant="primary-bordered"
+                  placeholder="Nombre*"
+                  labelColor="black"
+                  onChange={() => {}}
+                  onError={() => {}}
+                />
+                <Input
+                  id={"lastName"}
+                  label="Apellido*"
+                  variant="primary-bordered"
+                  placeholder="Apellido*"
+                  labelColor="black"
+                  onChange={() => {}}
+                  onError={() => {}}
+                />
+              </div>
+              <Input
+                id={"email"}
+                label="Email*"
+                variant="primary-bordered"
+                placeholder="Email*"
+                labelColor="black"
+                onChange={() => {}}
+                onError={() => {}}
+              />
+              <Input
+                id={"phone"}
+                label="Teléfono*"
+                variant="primary-bordered"
+                placeholder="Teléfono*"
+                labelColor="black"
+                onChange={() => {}}
+                onError={() => {}}
+              />
+              <div className={styles.nextStepBtn}>
+                <IconTextButton>Siguiente Paso</IconTextButton>
+              </div>
+            </form>
           </div>
         </div>
       </header>

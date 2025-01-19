@@ -14,7 +14,8 @@
 }
 .flecha.nuestroPrograma {
   bottom: 40%;
-  left: 8%;
+  left: 16%;
+  display: none;
 }
 .line {
   display: flex;
@@ -36,7 +37,7 @@
 
 .banner {
   width: 100%;
-  height: var(--banner-height);
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,10 +55,13 @@
   position: relative;
   top: 25%;
 }
+.videoContainer {
+  display: flex;
+  gap: 32px;
+}
 .videoDrawer {
-  width: calc(var(--width-unit) * 3);
+  width: calc(var(--width-unit) * 2);
   position: relative;
-  top: 64px;
 }
 .videoImg {
   width: 100%;
@@ -93,6 +97,19 @@
   align-items: center;
   transition: all 0.5s ease-in-out;
 }
+.formContacto {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.inputLine {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.inputLine > * {
+  width: 200px;
+}
 .modalVideo.show {
   visibility: visible;
   opacity: 1;
@@ -111,11 +128,14 @@
   width: 650px;
   height: 400px;
 }
-
+.nextStepBtn {
+  display: flex;
+  justify-content: center;
+}
 .main {
   display: flex;
   flex-direction: column;
-  padding-top: 18%;
+  padding-top: 128px;
   background-color: var(--light-green);
 }
 
@@ -347,8 +367,6 @@
     height: auto;
     padding: 32px;
     position: relative;
-    padding-bottom: 128px;
-    height: 600px;
   }
   .banner .elements {
     gap: 64px;
@@ -356,11 +374,20 @@
   .videoDrawer {
     width: 80%;
   }
+  .videoContainer {
+    flex-direction: column;
+  }
+  .inputLine {
+    flex-direction: column;
+  }
+  .inputLine > * {
+    width: 100%;
+  }
   .comoFunciona::after {
     display: none;
   }
   .main {
-    padding-top: 280px;
+    padding-top: 32px;
   }
   .main > *:not(.contact) {
     padding-left: 0;
@@ -424,7 +451,7 @@
 }
 @media screen and (min-width: 480px) and (max-width: 768px) {
   .main {
-    padding-top: 128px;
+    padding-top: 32px;
   }
   .cardMeet {
     width: 100%;
@@ -445,7 +472,7 @@
     top: 0;
   }
   .main {
-    padding-top: 128px;
+    padding-top: 32px;
   }
 
   .header .elements > :nth-child(2) {

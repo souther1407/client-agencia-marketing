@@ -421,6 +421,9 @@ body:has(.resoursesDropDown.show) {
   .bottomMenu {
     padding: 0 32px;
   }
+  .formBtn {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 800px) {
