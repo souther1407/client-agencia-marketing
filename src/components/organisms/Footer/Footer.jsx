@@ -20,61 +20,51 @@ const Footer = () => {
             </div>
           </section>
           <div className={styles.linkSection}>
-            {/* <section className={styles.section}>
-              <Text color="light" size="ty">
-                Recursos Gratis
+            <section className={styles.section}>
+              <Text
+                color="black"
+                type="subtitle"
+                bold="bold"
+                fontFamily="font-terciary"
+              >
+                Contacta a un Representante
               </Text>
-              <Link to={OUR_PROGRAM}>
-                <Text color="soft" size="xty" bold="font-light">
-                  Nuestro Programa
-                </Text>
-              </Link>
+              <Text bold="font-light" size="sm" s={{ paddingBottom: "12px" }}>
+                Te responderemos en menos de 24 horas
+              </Text>
               <Link to={CONTACT_FORM}>
-                <Text color="soft" size="xty" bold="font-light">
-                  Aplica a el programa
-                </Text>
-              </Link>
-            </section>
-            <section className={styles.section}>
-              <Text color="light" size="ty">
-                Recursos Gratis
-              </Text>
-              <Link to={LANDING_EBOOKS}>
-                <Text color="soft" size="xty" bold="font-light">
-                  Biblioteca de Marketing Dental
-                </Text>
-              </Link>
-            </section> */}
-            <section className={styles.section}>
-              <Text color="black" size="lg">
-                Contáctanos
-              </Text>
-              <Link to={LANDING_EBOOKS}>
                 <div
                   style={{ display: "flex", gap: "8px", alignItems: "center" }}
                 >
-                  <Icon size={"1rem"} type={"wp"} color="var(--primary)" />
-                  <Text color="black">Haznos Cualquier Consulta</Text>
+                  <Icon size={"1.2rem"} type={"form"} />
+                  <Text color="black">Forma de Contacto</Text>
                 </div>
               </Link>
-              {/*  <Text color="soft" bold="font-light" size="xty">
-                info@inkadentist.com
-              </Text> */}
-
-              {/* <div className={styles.socialMedia}>
-              <Icon type={"wp"} size={"1rem"} color="var(--dark-white)" />
-              <Icon type={"facebook"} size={"1rem"} color="var(--dark-white)" />
-              <Icon
-                type={"instagram"}
-                size={"1rem"}
-                color="var(--dark-white)"
-              />
-              <Icon type={"linkedin"} size={"1rem"} color="var(--dark-white)" />
-            </div> */}
+              <Link to={"/"}>
+                <div
+                  style={{
+                    display: "flex",
+                    gap: "8px",
+                    alignItems: "center",
+                    padding: "12px 0",
+                  }}
+                >
+                  <Icon size={"1.2rem"} type={"email"} />
+                  <Text color="black">info@inkadentist.com</Text>
+                </div>
+              </Link>
+              <Link to={"/"}>
+                <div
+                  style={{ display: "flex", gap: "8px", alignItems: "center" }}
+                >
+                  <Icon size={"1.2rem"} type={"wp"} />
+                  <Text color="black">Whatsapp</Text>
+                </div>
+              </Link>
             </section>
           </div>
         </header>
-        <div className={styles.separator}></div>
+        <div className={styles.separator} style={{ marginTop: "32px" }}></div>
         <div className={styles.copy}>
           <Text color="black" bold="font-light" size="sm">
             Copyright © {new Date().getFullYear()}, hackdental.com
