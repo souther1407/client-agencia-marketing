@@ -92,7 +92,6 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
           <div className={styles.content}>
             <div className={styles.header}>
               <Text
-                bold="bold"
                 type="title"
                 color="black"
                 fontFamily="font-terciary"
@@ -169,12 +168,7 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
           className={`${styles.contactBanner} ${showContact && styles.show}`}
         >
           <div className={styles.content}>
-            <Text
-              color="black"
-              type="title"
-              bold="semibold"
-              fontFamily="font-terciary"
-            >
+            <Text color="black" type="title" fontFamily="font-terciary">
               Contacta a un Representante
             </Text>
             <Text size="sm" bold="font-light">
@@ -183,15 +177,22 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
             <div className={styles.links}>
               <div className={styles.contactBtn}>
                 <Icon color="black" size={"1.2rem"} type={"form"} />
-                <Text color="black">Forma de contacto</Text>
+                <Text color="black" bold="regular">
+                  Forma de contacto
+                </Text>
               </div>
               <div className={styles.contactBtn}>
                 <Icon color="black" size={"1.2rem"} type={"email"} />
-                <Text color="black">info@inkadentist.com</Text>
+                <Text color="black" bold="regular">
+                  info@inkadentist.com
+                </Text>
               </div>
               <div className={styles.contactBtn}>
                 <Icon color="black" size={"1.2rem"} type={"wp"} />
-                <Text color="black"> Whatsapp</Text>
+                <Text color="black" bold="regular">
+                  {" "}
+                  Whatsapp
+                </Text>
               </div>
             </div>
           </div>
@@ -199,12 +200,7 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
 
         <div className={`${styles.aboutUs} ${showAboutUs && styles.show}`}>
           <div className={styles.content}>
-            <Text
-              color="black"
-              type="title"
-              bold="semibold"
-              fontFamily="font-terciary"
-            >
+            <Text color="black" type="title" fontFamily="font-terciary">
               ¿Quienes somos?
             </Text>
             <Text size="sm" bold="font-light" s={{ paddingBottom: "28px" }}>
@@ -216,18 +212,24 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                 onClick={() => navigate(ACERCA_DE)}
               >
                 <Icon color="black" size={"1.2rem"} type={"team"} />
-                <Text color="black">Nuestro Equipo</Text>
+                <Text color="black" bold="regular">
+                  Nuestro Equipo
+                </Text>
               </div>
               <div
                 className={styles.contactBtn}
                 onClick={() => navigate(CUMPLIMIENTO)}
               >
                 <Icon color="black" size={"1.2rem"} type={"commitment"} />
-                <Text color="black">Cumplimiento del RGPD</Text>
+                <Text color="black" bold="regular">
+                  Cumplimiento del RGPD
+                </Text>
               </div>
               <div className={styles.contactBtn}>
                 <Icon color="black" size={"1.2rem"} type={"privacy"} />
-                <Text color="black">Política de Privacidad</Text>
+                <Text color="black" bold="regular">
+                  Política de Privacidad
+                </Text>
               </div>
             </div>
           </div>
@@ -452,7 +454,11 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
             <div className={`${styles.dropElements} ${styles.show}`}>
               <div className={styles.resourcesContainer}>
                 <div className={styles.recursosDesc}>
-                  <Text type="subtitle" color="black">
+                  <Text
+                    type="subtitle"
+                    color="black"
+                    fontFamily="font-terciary"
+                  >
                     Ebooks Gratuitos
                   </Text>
                   <Text size="lg" bold="font-light">
