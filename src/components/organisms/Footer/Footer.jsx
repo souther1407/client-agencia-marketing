@@ -21,12 +21,7 @@ const Footer = () => {
           </section>
           <div className={styles.linkSection}>
             <section className={styles.section}>
-              <Text
-                color="black"
-                type="subtitle"
-                bold="bold"
-                fontFamily="font-terciary"
-              >
+              <Text color="black" type="subtitle" fontFamily="font-terciary">
                 Contacta a un Representante
               </Text>
               <Text bold="font-light" size="sm" s={{ paddingBottom: "12px" }}>
