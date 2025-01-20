@@ -42,7 +42,7 @@ const LandingPage = () => {
   const [showWSMsg, setShowWSMsg] = useState(true);
 
   /* const [showModalVideo, setShowModalVideo] = useState(false); */
-  const [showPopup, setShowPopup] = useState(true);
+  const [showPopup, setShowPopup] = useState(false);
   /* const handleHideModalVideo = (e) => {
     if (e.target.id == "bg-video-modal") {
       setShowModalVideo(false);

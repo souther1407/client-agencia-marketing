@@ -77,9 +77,6 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
     }
   };
 
-  const handleDropMobileElements = (name) => {
-    setDropElements((prev) => ({ ...prev, [name]: !dropElements[name] }));
-  };
   return (
     <nav className={`${styles.nav} ${hideTopMenu && styles.ajust}`}>
       <div
@@ -99,6 +96,7 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                 type="title"
                 color="black"
                 fontFamily="font-terciary"
+                s={{ paddingBottom: "8px" }}
               >
                 Ebooks Gratuitos
               </Text>
@@ -113,13 +111,14 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                 <div className={styles.cardImgContainer}>
                   <img src={imgEbookPrueba} className={styles.cardImg} />
                 </div>
-                <Text size="ty" bold="font-light">
+                <Text size="ty" bold="font-light" s={{ padding: "8px 0" }}>
                   2024
                 </Text>
-                <Text size="ty" bold="bold">
-                  Marketing Dental: La Guia Definitiva
+                <Text size="ty" bold="semibold" color="black">
+                  Marketing Dental:
+                  <br /> La Guia Definitiva
                 </Text>
-                <Text size="ty" bold="font-light">
+                <Text size="ty" bold="font-light" s={{ paddingTop: "8px" }}>
                   Descargar Gratis
                 </Text>
               </div>
@@ -128,13 +127,13 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                 <div className={styles.cardImgContainer}>
                   <img src={imgEbookPrueba} className={styles.cardImg} />
                 </div>
-                <Text size="ty" bold="font-light">
+                <Text size="ty" bold="font-light" s={{ padding: "8px 0" }}>
                   2024
                 </Text>
-                <Text size="ty" bold="bold">
-                  Marketing Dental: La Guia Definitiva
+                <Text size="ty" bold="semibold" color="black">
+                  Marketing Dental: <br /> La Guia Definitiva
                 </Text>
-                <Text size="ty" bold="font-light">
+                <Text size="ty" bold="font-light" s={{ paddingTop: "8px" }}>
                   Descargar Gratis
                 </Text>
               </div>
@@ -143,13 +142,13 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                 <div className={styles.cardImgContainer}>
                   <img src={imgEbookPrueba} className={styles.cardImg} />
                 </div>
-                <Text size="ty" bold="font-light">
+                <Text size="ty" bold="font-light" s={{ padding: "8px 0" }}>
                   2024
                 </Text>
-                <Text size="ty" bold="bold">
-                  Marketing Dental: La Guia Definitiva
+                <Text size="ty" bold="semibold" color="black">
+                  Marketing Dental: <br /> La Guia Definitiva
                 </Text>
-                <Text size="ty" bold="font-light">
+                <Text size="ty" bold="font-light" s={{ paddingTop: "8px" }}>
                   Descargar Gratis
                 </Text>
               </div>
@@ -181,17 +180,19 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
             <Text size="sm" bold="font-light">
               Haznos cualquier consulta, te responderemos en menos de 24 horas.
             </Text>
-            <div className={styles.contactBtn}>
-              <Icon color="black" size={"1.2rem"} type={"form"} />
-              <Text color="black">Forma de contacto</Text>
-            </div>
-            <div className={styles.contactBtn}>
-              <Icon color="black" size={"1.2rem"} type={"email"} />
-              <Text color="black">info@inkadentist.com</Text>
-            </div>
-            <div className={styles.contactBtn}>
-              <Icon color="black" size={"1.2rem"} type={"wp"} />
-              <Text color="black"> Whatsapp</Text>
+            <div className={styles.links}>
+              <div className={styles.contactBtn}>
+                <Icon color="black" size={"1.2rem"} type={"form"} />
+                <Text color="black">Forma de contacto</Text>
+              </div>
+              <div className={styles.contactBtn}>
+                <Icon color="black" size={"1.2rem"} type={"email"} />
+                <Text color="black">info@inkadentist.com</Text>
+              </div>
+              <div className={styles.contactBtn}>
+                <Icon color="black" size={"1.2rem"} type={"wp"} />
+                <Text color="black"> Whatsapp</Text>
+              </div>
             </div>
           </div>
         </div>
@@ -206,26 +207,28 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
             >
               ¿Quienes somos?
             </Text>
-            <Text size="sm" bold="font-light">
+            <Text size="sm" bold="font-light" s={{ paddingBottom: "28px" }}>
               Informate sobre HackDental y sus áreas de expertise.
             </Text>
-            <div
-              className={styles.contactBtn}
-              onClick={() => navigate(ACERCA_DE)}
-            >
-              <Icon color="black" size={"1.2rem"} type={"team"} />
-              <Text color="black">Nuestro Equipo</Text>
-            </div>
-            <div
-              className={styles.contactBtn}
-              onClick={() => navigate(CUMPLIMIENTO)}
-            >
-              <Icon color="black" size={"1.2rem"} type={"commitment"} />
-              <Text color="black">Cumplimiento del RGPD</Text>
-            </div>
-            <div className={styles.contactBtn}>
-              <Icon color="black" size={"1.2rem"} type={"privacy"} />
-              <Text color="black">Política de Privacidad</Text>
+            <div className={styles.links}>
+              <div
+                className={styles.contactBtn}
+                onClick={() => navigate(ACERCA_DE)}
+              >
+                <Icon color="black" size={"1.2rem"} type={"team"} />
+                <Text color="black">Nuestro Equipo</Text>
+              </div>
+              <div
+                className={styles.contactBtn}
+                onClick={() => navigate(CUMPLIMIENTO)}
+              >
+                <Icon color="black" size={"1.2rem"} type={"commitment"} />
+                <Text color="black">Cumplimiento del RGPD</Text>
+              </div>
+              <div className={styles.contactBtn}>
+                <Icon color="black" size={"1.2rem"} type={"privacy"} />
+                <Text color="black">Política de Privacidad</Text>
+              </div>
             </div>
           </div>
         </div>
