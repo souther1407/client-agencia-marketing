@@ -39,7 +39,9 @@
 .primary.iconTextButton:disabled:hover {
 }
 .primary.iconTextButton.full:hover {
-  background-color: var(--primary-dark);
+  background-color: transparent;
+  color: var(--primary);
+  border: 1px solid var(--primary);
 }
 
 .primary.iconTextButton.bordered:hover {
