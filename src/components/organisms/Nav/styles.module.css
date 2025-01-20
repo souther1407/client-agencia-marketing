@@ -34,12 +34,19 @@
   border-bottom: 2px solid var(--primary-transparent-50);
   box-shadow: 1px 0 4px var(--gray-light);
 }
+
+.elements:has(.bottomMenu.changeColor) {
+  box-shadow: none;
+  border-bottom: 1px solid var(--light-gray);
+}
+
 .topMenu,
 .bottomMenu {
   display: flex;
   flex-grow: 1;
   align-items: center;
 }
+
 .topMenu {
   width: 100%;
   gap: 16px;
@@ -67,6 +74,7 @@
 .bottomMenu.changeColor {
   background-color: var(--light-green);
 }
+
 .linkContainer {
   position: relative;
 }
