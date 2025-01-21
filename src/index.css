@@ -59,7 +59,7 @@
   --text: #565f65;
   --very-light-black: #486581;
   --light-black: #213343;
-  --dark-black: #1a1e23;
+  --dark-black: #1b1b1b;
   --black-transparent: #1e22265e;
   --light-blue: #749bc2;
   --dark-blue: #3d5a98;
@@ -68,7 +68,7 @@
   --gray-blue: #dce7f1;
   --gray-blue-dark: #d4e1ee;
   --gray-light: #92a3a371;
-  --gray-dark: rgba(34, 33, 33, 0.596);
+  --gray-dark: rgba(34, 33, 33, 0.74);
   --light-blue-transparent: #ccd6dd;
   --blue: #4681a96e;
   --green: #11b474;

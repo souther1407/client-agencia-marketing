@@ -27,6 +27,7 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const [showMobileContacMenu, setShowMobileContacMenu] = useState(false);
   const [showMobileEbooksMenu, setShowMobileEbooksMenu] = useState(false);
+  const [showMobileAboutUsMenu, setShowMobileAboutUsMenu] = useState(false);
   const [isTopMenuHidden] = useState(false);
   const navigate = useNavigate();
 
@@ -92,10 +93,9 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
           <div className={styles.content}>
             <div className={styles.header}>
               <Text
-                type="title"
                 color="black"
                 fontFamily="font-terciary"
-                s={{ paddingBottom: "8px" }}
+                s={{ paddingBottom: "8px", fontSize: "30px" }}
               >
                 Ebooks Gratuitos
               </Text>
@@ -113,7 +113,7 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                 <Text size="ty" bold="font-light" s={{ padding: "8px 0" }}>
                   2024
                 </Text>
-                <Text size="ty" bold="semibold" color="black">
+                <Text size="sm" bold="semibold" color="black">
                   Marketing Dental:
                   <br /> La Guia Definitiva
                 </Text>
@@ -129,7 +129,7 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                 <Text size="ty" bold="font-light" s={{ padding: "8px 0" }}>
                   2024
                 </Text>
-                <Text size="ty" bold="semibold" color="black">
+                <Text size="sm" bold="semibold" color="black">
                   Marketing Dental: <br /> La Guia Definitiva
                 </Text>
                 <Text size="ty" bold="font-light" s={{ paddingTop: "8px" }}>
@@ -144,7 +144,7 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                 <Text size="ty" bold="font-light" s={{ padding: "8px 0" }}>
                   2024
                 </Text>
-                <Text size="ty" bold="semibold" color="black">
+                <Text size="sm" bold="semibold" color="black">
                   Marketing Dental: <br /> La Guia Definitiva
                 </Text>
                 <Text size="ty" bold="font-light" s={{ paddingTop: "8px" }}>
@@ -168,28 +168,32 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
           className={`${styles.contactBanner} ${showContact && styles.show}`}
         >
           <div className={styles.content}>
-            <Text color="black" type="title" fontFamily="font-terciary">
+            <Text
+              color="black"
+              fontFamily="font-terciary"
+              s={{ fontSize: "30px" }}
+            >
               Contacta a un Representante
             </Text>
-            <Text size="sm" bold="font-light">
+            <Text size="sm" bold="font-light" s={{ paddingBottom: "28px" }}>
               Haznos cualquier consulta, te responderemos en menos de 24 horas.
             </Text>
             <div className={styles.links}>
               <div className={styles.contactBtn}>
-                <Icon color="black" size={"1.2rem"} type={"form"} />
-                <Text color="black" bold="regular">
+                <Icon color="black" size={"1rem"} type={"form"} />
+                <Text color="dark" bold="regular" size="sm">
                   Forma de contacto
                 </Text>
               </div>
               <div className={styles.contactBtn}>
-                <Icon color="black" size={"1.2rem"} type={"email"} />
-                <Text color="black" bold="regular">
+                <Icon color="black" size={"1rem"} type={"email"} />
+                <Text color="dark" bold="regular" size="sm">
                   info@inkadentist.com
                 </Text>
               </div>
               <div className={styles.contactBtn}>
-                <Icon color="black" size={"1.2rem"} type={"wp"} />
-                <Text color="black" bold="regular">
+                <Icon color="black" size={"1rem"} type={"wp"} />
+                <Text color="dark" bold="regular" size="sm">
                   {" "}
                   Whatsapp
                 </Text>
@@ -200,7 +204,11 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
 
         <div className={`${styles.aboutUs} ${showAboutUs && styles.show}`}>
           <div className={styles.content}>
-            <Text color="black" type="title" fontFamily="font-terciary">
+            <Text
+              color="black"
+              s={{ fontSize: "30px" }}
+              fontFamily="font-terciary"
+            >
               ¿Quienes somos?
             </Text>
             <Text size="sm" bold="font-light" s={{ paddingBottom: "28px" }}>
@@ -211,8 +219,8 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                 className={styles.contactBtn}
                 onClick={() => navigate(ACERCA_DE)}
               >
-                <Icon color="black" size={"1.2rem"} type={"team"} />
-                <Text color="black" bold="regular">
+                <Icon color="black" size={"1rem"} type={"team"} />
+                <Text color="dark" bold="regular" size="sm">
                   Nuestro Equipo
                 </Text>
               </div>
@@ -220,14 +228,14 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                 className={styles.contactBtn}
                 onClick={() => navigate(CUMPLIMIENTO)}
               >
-                <Icon color="black" size={"1.2rem"} type={"commitment"} />
-                <Text color="black" bold="regular">
+                <Icon color="black" size={"1rem"} type={"commitment"} />
+                <Text color="dark" bold="regular" size="sm">
                   Cumplimiento del RGPD
                 </Text>
               </div>
               <div className={styles.contactBtn}>
-                <Icon color="black" size={"1.2rem"} type={"privacy"} />
-                <Text color="black" bold="regular">
+                <Icon color="black" size={"1rem"} type={"privacy"} />
+                <Text color="dark" bold="regular" size="sm">
                   Política de Privacidad
                 </Text>
               </div>
@@ -410,13 +418,31 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                 }`}
               ></div>
             </div>
-            {/*   <div className={styles.dropdownMenu}>
-              <Link to={CONTACT_FORM} target="_blank">
-                <div className={styles.dropMenuBtn}>
-                  <Text type="subtitle">Cuentanos de tu Clinica {">"}</Text>
+            <div className={styles.dropdownMenu}>
+              <div
+                className={`${styles.dropMenuBtn} ${
+                  dropElements.contacto && styles.focus
+                }`}
+                onClick={() => setShowMobileAboutUsMenu(true)}
+              >
+                <div className={styles.dropdownTitleDesc}>
+                  <div className={styles.dropdownTitle}>
+                    <Text bold="regular" size="xxlg" color="black">
+                      Sobre nosotros
+                    </Text>
+                    <Icon color="black" type={"arrow"} size={"1.5rem"} />
+                  </div>
+                  <Text size="lg" bold="font-light">
+                    Informate sobre HackDental
+                  </Text>
                 </div>
-              </Link>
-            </div> */}
+              </div>
+              <div
+                className={`${styles.dropElements} ${
+                  dropElements.contacto && styles.show
+                }`}
+              ></div>
+            </div>
           </div>
 
           <div className={styles.btns}>
@@ -541,7 +567,7 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
             }
           >
             <div className={styles.mobileContact}>
-              <Text color="black" type="subtitle" bold="semibold">
+              <Text color="black" type="subtitle" fontFamily="font-terciary">
                 Contacta a un representante
               </Text>
               <Text size="lg" bold="font-light">
@@ -590,6 +616,84 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                   <Text color="black" size="xxlg">
                     {" "}
                     WhatsApp
+                  </Text>
+                </div>
+              </div>
+            </div>
+          </Drawer>
+          <Drawer
+            show={showMobileAboutUsMenu}
+            onClose={() => setShowMobileAboutUsMenu(false)}
+            hideLogo
+            renderCloBtn={
+              <div
+                style={{
+                  display: "flex",
+                  gap: "8px",
+                  alignItems: "center",
+                }}
+              >
+                <span style={{ position: "relative", top: "2px" }}>
+                  <Icon size={"2rem"} type={"arrowLeft"} color="var(--white)" />
+                </span>
+
+                <Text color="light" size="xlg">
+                  Sobre nosotros
+                </Text>
+              </div>
+            }
+          >
+            <div className={styles.mobileContact}>
+              <Text color="black" type="subtitle" fontFamily="font-terciary">
+                ¿Quienes somos?
+              </Text>
+              <Text size="lg" bold="font-light">
+                Informate sobre HackDental y sus áreas de expertise.
+              </Text>
+              <div className={styles.contactBtn}>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "8px",
+                  }}
+                  onClick={() => navigate(ACERCA_DE)}
+                >
+                  <Icon color="black" size={"2rem"} type={"team"} />
+                  <Text color="black" size="xxlg">
+                    {" "}
+                    Nuestro Equipo
+                  </Text>
+                </div>
+              </div>
+              <div className={styles.contactBtn}>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "8px",
+                  }}
+                  onClick={() => navigate(CUMPLIMIENTO)}
+                >
+                  <Icon color="black" size={"2rem"} type={"commitment"} />
+                  <Text color="black" size="xxlg">
+                    {" "}
+                    Cumplimiento del RGPD
+                  </Text>
+                </div>
+              </div>
+              <div className={styles.contactBtn}>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "8px",
+                  }}
+                >
+                  <Icon color="black" size={"2rem"} type={"privacy"} />
+                  <Text color="black" size="xxlg">
+                    {" "}
+                    Política de privacidad
                   </Text>
                 </div>
               </div>

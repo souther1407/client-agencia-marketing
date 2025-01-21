@@ -136,7 +136,7 @@
   color: var(--light-blue-transparent);
 }
 .dark {
-  color: var(--light-black);
+  color: var(--dark-black);
 }
 .link {
   color: var(--light-blue);

@@ -107,7 +107,7 @@
   width: 2px;
   height: 2rem;
   margin: 0 16px;
-  background-color: var(--gray-light);
+  background-color: var(--light-gray);
 }
 
 .formBtn {
@@ -226,7 +226,7 @@ body:has(.resoursesDropDown.show) {
 
 .resoursesDropDown .contactBanner .content > * {
   transition: all 0.3s ease-in;
-  padding-top: 4px;
+
   padding-bottom: 4px;
   border-radius: 16px;
 }
@@ -244,7 +244,7 @@ body:has(.resoursesDropDown.show) {
 .resoursesDropDown .separator {
   width: 1px;
   height: 100%;
-  background-color: var(--gray);
+  background-color: var(--light-gray);
 }
 .resoursesDropDown .cards {
   display: flex;
@@ -260,7 +260,7 @@ body:has(.resoursesDropDown.show) {
   cursor: pointer;
   border-radius: 12px;
   transition: all 0.3s ease-in-out;
-  border: 1px solid var(--black);
+  border: 1px solid var(--light-gray);
 }
 .resoursesDropDown .card:hover {
   background-color: var(--gray-blue-dark);
