@@ -35,19 +35,16 @@ import imgRecordatorioCard from "@assets/Tienes un mal sistema de recordatorio d
 import ImagenEbook1 from "@assets/Imagen ebook 1.svg";
 import ImagenEbookWp from "@assets/imagen ebook de whatsapp.svg";
 import imagenDentista from "@assets/foto dentista.svg";
-
 import PartnersCarousel from "../../components/organisms/PartnersCarousel/PartnersCarousel";
+import { useConfigStore } from "../../stores/useConfig";
+
 const LandingPage = () => {
   const navigate = useNavigate();
   const [showWSMsg, setShowWSMsg] = useState(true);
-
-  /* const [showModalVideo, setShowModalVideo] = useState(false); */
   const [showPopup, setShowPopup] = useState(false);
-  /* const handleHideModalVideo = (e) => {
-    if (e.target.id == "bg-video-modal") {
-      setShowModalVideo(false);
-    }
-  }; */
+  const navMobileMenuIsShow = useConfigStore(
+    (state) => state.navMobileMenuIsShow
+  );
   useEffect(() => {
     setTimeout(() => {
       setShowPopup(true);
@@ -55,7 +52,7 @@ const LandingPage = () => {
   }, []);
   return (
     <div className={styles.page}>
-      {showPopup && (
+      {showPopup && !navMobileMenuIsShow && (
         <div className={styles.popupContainer}>
           <div className={styles.popupcard}>
             <span

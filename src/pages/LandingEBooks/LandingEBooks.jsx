@@ -11,6 +11,7 @@ import { DOWNLOAD_EBOOK } from "../../constants/routes";
 import imgEbookPrueba from "@assets/imgEbookPrueba.svg";
 import { useNavigate } from "react-router-dom";
 import Link from "../../components/atoms/Link/Link";
+
 const LandingEBooks = () => {
   const navigate = useNavigate();
   return (

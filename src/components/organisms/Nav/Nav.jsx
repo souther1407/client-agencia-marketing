@@ -22,6 +22,7 @@ import IconTextButton from "../../molecules/IconTextButton/IconTextButton";
 import imgEbookPrueba from "@assets/ImgCardsNav.svg";
 import { ES } from "country-flag-icons/react/3x2";
 import { parseNumberToMonthName } from "../../../utils/parsing";
+import { useConfigStore } from "../../../stores/useConfig";
 
 const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -46,6 +47,10 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
     contacto: false,
     sobreNosotros: false,
   });
+
+  const setNavMobileMenuIsShow = useConfigStore(
+    (state) => state.setNavMobileMenuIsShow
+  );
 
   const handleShowResources = (e) => {
     if (e.type != "mouseenter" || (e.type === "mouseenter" && !showResources)) {
@@ -339,14 +344,23 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                   icon="bars"
                   size="2rem"
                   variant="secondary"
-                  onClick={() => setShowMobileMenu(true)}
+                  onClick={() => {
+                    setShowMobileMenu(true);
+                    setNavMobileMenuIsShow(true);
+                  }}
                 />
               </div>
             </div>
           </div>
         )}
       </div>
-      <Drawer show={showMobileMenu} onClose={() => setShowMobileMenu(false)}>
+      <Drawer
+        show={showMobileMenu}
+        onClose={() => {
+          setShowMobileMenu(false);
+          setNavMobileMenuIsShow(false);
+        }}
+      >
         <div className={styles.mobileMenu}>
           <div>
             <div className={styles.dropdownMenu}>
