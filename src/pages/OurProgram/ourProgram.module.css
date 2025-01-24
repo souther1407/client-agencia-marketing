@@ -390,6 +390,9 @@
   .formContacto {
     width: 100%;
   }
+  .contact .form {
+    margin-left: 0;
+  }
   .comoFunciona::after {
     display: none;
   }
