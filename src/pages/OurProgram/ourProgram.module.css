@@ -37,7 +37,6 @@
 
 .banner {
   width: 100%;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,6 +44,8 @@
   background-color: var(--primary-transparent-2);
   border-top: 1px solid var(--blue);
   position: relative;
+  padding-top: 80px;
+  padding-bottom: 44px;
 }
 
 .banner .elements {
@@ -55,9 +56,12 @@
   position: relative;
   top: 25%;
 }
+.banner .elements > :first-child {
+  margin-bottom: 44px;
+}
 .videoContainer {
   display: flex;
-  gap: 32px;
+  gap: 44px;
 }
 .videoDrawer {
   width: calc(var(--width-unit) * 2);
@@ -100,15 +104,27 @@
 .formContacto {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  width: 540px;
+}
+.formContacto > :nth-child(1) {
+  padding-bottom: 12px;
+}
+.formContacto > :nth-child(2) {
+  padding-bottom: 20px;
+}
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 .inputLine {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  gap: 16px;
 }
 .inputLine > * {
-  width: 200px;
+  width: 380px;
 }
 .modalVideo.show {
   visibility: visible;
@@ -135,7 +151,7 @@
 .main {
   display: flex;
   flex-direction: column;
-  padding-top: 128px;
+  padding-top: 72px;
   background-color: var(--light-green);
 }
 
@@ -163,10 +179,10 @@
   gap: 32px;
 }
 .ventaHumo > .subsection {
-  margin-top: 64px;
+  margin-top: 60px;
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 44px;
   align-items: center;
 }
 
@@ -182,7 +198,7 @@
   display: flex;
   flex-direction: column;
   width: 85%;
-  gap: 32px;
+  gap: 44px;
   align-items: center;
 }
 .ventaHumo > .subsection > *:not(:first-child) {
@@ -194,7 +210,7 @@
 .errors {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 32px;
 }
 .error {
   display: flex;
@@ -214,7 +230,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  top: 48px;
+  top: 120px;
   box-shadow: 0 2px 8px var(--black-transparent);
 }
 .flecha1Izquierda {
@@ -244,27 +260,16 @@
   flex-direction: column;
   width: 85%;
   align-self: center;
-  padding-top: 128px;
-  padding-bottom: 64px;
+  padding-top: 188px;
+  padding-bottom: 72px;
   position: relative;
 }
-.comoFunciona::after {
-  position: absolute;
-  content: " ";
-  width: 1px;
-  left: 0;
-  right: 0;
-  top: 100%;
-  margin: 0 auto;
-  border: 40px solid transparent;
-  z-index: 1;
-  border-top: 40px solid var(--white);
-}
+
 .comoFunciona > .subsection {
-  padding-top: 32px;
+  padding-top: 44px;
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 36px;
   width: 80%;
   align-items: center;
   align-self: center;
@@ -278,7 +283,7 @@
 .list {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 36px;
 }
 .list > .element {
   display: flex;
@@ -287,10 +292,10 @@
 
 .contact {
   display: flex;
-  padding-top: 64px;
+  padding-top: 72px;
   background-color: var(--primary-dark);
   position: relative;
-  padding-bottom: 32px;
+  padding-bottom: 60px;
 }
 
 .flecha3 {
@@ -300,7 +305,6 @@
 }
 
 .contact .desc {
-  padding-top: 120px;
   padding-left: var(--width-unit);
   width: 50%;
   display: flex;
@@ -310,7 +314,6 @@
 
 .contact .formContainer {
   display: flex;
-  padding-top: 80px;
   flex-direction: column;
   padding-right: var(--width-unit);
   width: 50%;
@@ -322,6 +325,7 @@
   padding: 48px 32px;
   border-radius: 8px;
   gap: 24px;
+  margin-left: 80px;
   background-color: var(--light-green);
   box-shadow: -8px 8px 0px rgb(168, 206, 150);
 }
@@ -349,9 +353,9 @@
   flex-direction: column;
   align-items: center;
   background-color: var(--black);
-  padding-top: 32px;
+  height: 100px;
   gap: 8px;
-  padding-bottom: calc(var(--linea-amarilla) / 2);
+  justify-content: center;
 }
 .footer .links {
   display: flex;
@@ -381,6 +385,9 @@
     flex-direction: column;
   }
   .inputLine > * {
+    width: 100%;
+  }
+  .formContacto {
     width: 100%;
   }
   .comoFunciona::after {

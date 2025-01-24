@@ -128,7 +128,7 @@
   border-radius: 4px;
   padding: 12px;
   color: var(--black);
-  background-color: transparent;
+  background-color: #ebeced;
   font-size: 0.7rem;
 }
 .primary-bordered .input:focus {

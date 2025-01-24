@@ -3,7 +3,7 @@ import styles from "./ourProgram.module.css";
 import Nav from "../../components/organisms/Nav/Nav";
 import Text from "../../components/atoms/Text/Text";
 import Icon from "../../components/atoms/Icon/Icon";
-import imgVideo from "@assets/imgVideo.svg";
+import imgVideo from "@assets/Foto video.gif";
 import IconTextButton from "../../components/molecules/IconTextButton/IconTextButton";
 import Link from "../../components/atoms/Link/Link";
 import Input from "../../components/atoms/Input/Input";
@@ -15,7 +15,6 @@ import Nene from "@assets/imagen dentista programa.svg";
 import Select from "../../components/atoms/Select/Select";
 import FlechaNuestroPrograma from "@assets/nuestro metodo.svg";
 import Flecha1 from "@assets/flecha 1.svg";
-import Flecha2 from "@assets/flecha 3.svg";
 
 const OurProgram = () => {
   const [showModalVideo, setShowModalVideo] = useState(false);
@@ -67,55 +66,62 @@ const OurProgram = () => {
               </div>
             </div>
             <form className={styles.formContacto}>
-              <Text>
+              <Text textAlign="center">
                 <Mark color="primary-bg">
                   **DUEÑOS DE CONSULTORIOS DENTALES!**
                 </Mark>
               </Text>
-              <Text type="subtitle" color="black" bold="semibold">
+              <Text
+                type="subtitle"
+                color="black"
+                bold="semibold"
+                textAlign="center"
+              >
                 Reunete con nosotros y <br />
                 comentanos tus necesidades
               </Text>
-              <div className={styles.inputLine}>
+              <div className={styles.inputs}>
+                <div className={styles.inputLine}>
+                  <Input
+                    id={"name"}
+                    label="Nombre*"
+                    variant="primary-bordered"
+                    placeholder="Nombre*"
+                    labelColor="black"
+                    onChange={() => {}}
+                    onError={() => {}}
+                  />
+                  <Input
+                    id={"lastName"}
+                    label="Apellido*"
+                    variant="primary-bordered"
+                    placeholder="Apellido*"
+                    labelColor="black"
+                    onChange={() => {}}
+                    onError={() => {}}
+                  />
+                </div>
                 <Input
-                  id={"name"}
-                  label="Nombre*"
+                  id={"email"}
+                  label="Email*"
                   variant="primary-bordered"
-                  placeholder="Nombre*"
+                  placeholder="Email*"
                   labelColor="black"
                   onChange={() => {}}
                   onError={() => {}}
                 />
                 <Input
-                  id={"lastName"}
-                  label="Apellido*"
+                  id={"phone"}
+                  label="Teléfono*"
                   variant="primary-bordered"
-                  placeholder="Apellido*"
+                  placeholder="Teléfono*"
                   labelColor="black"
                   onChange={() => {}}
                   onError={() => {}}
                 />
-              </div>
-              <Input
-                id={"email"}
-                label="Email*"
-                variant="primary-bordered"
-                placeholder="Email*"
-                labelColor="black"
-                onChange={() => {}}
-                onError={() => {}}
-              />
-              <Input
-                id={"phone"}
-                label="Teléfono*"
-                variant="primary-bordered"
-                placeholder="Teléfono*"
-                labelColor="black"
-                onChange={() => {}}
-                onError={() => {}}
-              />
-              <div className={styles.nextStepBtn}>
-                <IconTextButton>Siguiente Paso</IconTextButton>
+                <div className={styles.nextStepBtn}>
+                  <IconTextButton>Siguiente Paso</IconTextButton>
+                </div>
               </div>
             </form>
           </div>
