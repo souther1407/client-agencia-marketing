@@ -221,6 +221,8 @@
 .neneArio {
   width: 100%;
   position: relative;
+  transform: scale(1.5);
+  top: 120px;
 }
 .cardMeet {
   background-color: var(--white);
@@ -445,7 +447,11 @@
     width: 100% !important;
   }
 }
-
+@media screen and (max-width: 800px) {
+  .neneArio {
+    transform: scale(1);
+  }
+}
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
   .banner {
     padding: 64px;
@@ -506,9 +512,7 @@
   .sectionHorrible > .subsection > * {
     width: 100% !important;
   }
-  .neneArio {
-    transform: scale(1.2);
-  }
+
   .cardMeet {
     width: 100%;
     border-radius: 0;
