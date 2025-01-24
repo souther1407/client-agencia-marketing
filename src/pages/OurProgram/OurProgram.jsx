@@ -34,7 +34,12 @@ const OurProgram = () => {
           className={`${styles.flecha} ${styles.nuestroPrograma}`}
         />
         <div className={styles.elements}>
-          <Text type="bigtitle" color="black" bold="semibold">
+          <Text
+            type="bigtitle"
+            color="black"
+            bold="semibold"
+            textAlign="center"
+          >
             ¿Cuál es el potencial de tu consultorio?
           </Text>
 
@@ -198,7 +203,7 @@ const OurProgram = () => {
               .design y te responderemos en un plazo de 24 horas.
             </Text>
             <hr />
-            <Text color="light" bold="bold" type="subtitle">
+            <Text color="light" bold="bold" type="subtitle" textAlign="center">
               Aquí es donde la mayoría de consultorios se equivocan:
             </Text>
             <div className={styles.errors}>
@@ -300,7 +305,12 @@ const OurProgram = () => {
               .design y te responderemos en un plazo de 24 horas.
             </Text>
             <hr className={styles.separator} />
-            <Text type="smalltitle" bold="bold" color="black">
+            <Text
+              type="smalltitle"
+              bold="bold"
+              color="black"
+              textAlign="center"
+            >
               Como funciona nuestro programa:
             </Text>
             <ul className={styles.list}>
