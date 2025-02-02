@@ -1,6 +1,6 @@
 .page {
   position: relative;
-  background-color: white;
+
   min-height: 100vh;
   width: 100%;
   --banner-height: calc(var(--width-unit) * 2);
@@ -304,6 +304,8 @@ body:has(.popupContainer) {
   flex-direction: column;
   gap: 32px;
   width: 1000px;
+  position: relative;
+  z-index: 3;
 }
 
 .contactBannerSection .details .detail {
@@ -315,11 +317,24 @@ body:has(.popupContainer) {
 .details .detail {
   background-color: var(--very-light-white);
   padding: 40px;
-  position: relative;
   border-radius: 16px;
   width: 700px;
   border: 1px solid var(--gray-light);
+  position: relative;
 }
+.details .detail::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  border-radius: 16px;
+  height: 100%;
+  left: -8px;
+  top: 12px;
+  background-color: var(--primary-transparent-50);
+  border: 2px solid var(--primary);
+}
+
 .detail__header {
   display: flex;
   flex-direction: row;
@@ -396,8 +411,24 @@ body:has(.popupContainer) {
   border: 1px solid var(--gray-light);
   padding: 60px;
   width: 75%;
-  border-radius: 24px;
+  border-radius: 32px;
   align-items: center;
+
+  position: relative;
+}
+
+.spainLocation__card::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  border-radius: 32px;
+  height: 100%;
+  left: -8px;
+  top: -8px;
+  padding: 8px;
+  background-color: var(--primary-transparent-50);
+  border: 2px solid var(--primary);
 }
 
 .spainLocation__card__elements {
@@ -475,6 +506,20 @@ body:has(.popupContainer) {
   width: 100%;
   height: 650px;
   justify-content: space-evenly;
+  position: relative;
+}
+.mainContent__card::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  border-radius: 32px;
+  height: 100%;
+  left: -8px;
+  top: -8px;
+  padding: 8px;
+  background-color: var(--primary-transparent-50);
+  border: 2px solid var(--primary);
 }
 .mainContent__card img {
   width: 500px;

@@ -145,9 +145,9 @@ const LandingPage = () => {
                 fontFamily="font-secondary"
                 color="black"
               >
-                Tu Mejor Opción en Marketing{" "}
+                Marketing para consultorios
                 <Mark color="primary-bg-triangular" bold="bold">
-                  Dental.
+                  Dentales
                 </Mark>
               </Text>
               <Text size="sm" bold="font-light" color="black">
@@ -246,11 +246,9 @@ const LandingPage = () => {
         <div className={styles.desc}>
           <div className={styles.stickyContainer}>
             <Text type="bigtitle" color="black" bold="semibold">
-              ¿Por qué nuevos pacientes{" "}
-              <span className={styles.subrayado}>
-                no eligen <img src={Subrayado} />
-              </span>{" "}
-              tu clínica dental?
+              5 Razones por las que pacientes{" "}
+              <Mark color="primary-bg-triangular">no eligen</Mark>
+              <br /> tu consultorio
             </Text>
 
             <div className={styles.quieroHacerCrecerBtn}>
@@ -259,7 +257,7 @@ const LandingPage = () => {
                 size="100%"
                 textProps={{ bold: "font-light" }}
               >
-                Quiero crecer mi Consultorio {">"}
+                Quiero saber más
               </IconTextButton>
             </div>
           </div>
@@ -278,11 +276,11 @@ const LandingPage = () => {
             </div>
             <hr />
             <div className={styles.desc}>
+              <img className={styles.detail__img} src={imgPublicidadCard} />
               <Text size="sm" color="black" bold="font-light">
                 Aprende más sobre nuestro programa de 180 días y cómo puede
                 cambiar tu práctica dental
               </Text>
-              <img className={styles.detail__img} src={imgPublicidadCard} />
             </div>
           </div>
           <div className={styles.detail}>
@@ -298,11 +296,11 @@ const LandingPage = () => {
             </div>
             <hr />
             <div className={styles.desc}>
+              <img className={styles.detail__img} src={imgDiseñoCard} />
               <Text size="sm" color="black" bold="font-light">
                 Aprende más sobre nuestro programa de 180 días y cómo puede
                 cambiar tu práctica dental
               </Text>
-              <img className={styles.detail__img} src={imgDiseñoCard} />
             </div>
           </div>
           <div className={styles.detail}>
@@ -318,11 +316,11 @@ const LandingPage = () => {
             </div>
             <hr />
             <div className={styles.desc}>
+              <img className={styles.detail__img} src={imgEstrategiaCard} />
               <Text size="sm" color="black" bold="font-light">
                 Aprende más sobre nuestro programa de 180 días y cómo puede
                 cambiar tu práctica dental
               </Text>
-              <img className={styles.detail__img} src={imgEstrategiaCard} />
             </div>
           </div>
           <div className={styles.detail}>
@@ -338,11 +336,11 @@ const LandingPage = () => {
             </div>
             <hr />
             <div className={styles.desc}>
+              <img className={styles.detail__img} src={imgReseñasCard} />
               <Text size="sm" color="black" bold="font-light">
                 Aprende más sobre nuestro programa de 180 días y cómo puede
                 cambiar tu práctica dental
               </Text>
-              <img className={styles.detail__img} src={imgReseñasCard} />
             </div>
           </div>
           <div className={styles.detail}>
@@ -358,18 +356,23 @@ const LandingPage = () => {
             </div>
             <hr />
             <div className={styles.desc}>
+              <img className={styles.detail__img} src={imgRecordatorioCard} />
               <Text size="sm" color="black" bold="font-light">
                 Aprende más sobre nuestro programa de 180 días y cómo puede
                 cambiar tu práctica dental
               </Text>
-              <img className={styles.detail__img} src={imgRecordatorioCard} />
             </div>
           </div>
         </div>
       </section>
       <section className={styles.spainLocation}>
         <Text type="bigtitle" textAlign="center" color="black" bold="bold">
-          ¿Necesitas una Agencia especializada en Marketing Dental?
+          ¿Necesitas una Agencia especializada <br />
+          en Marketing{" "}
+          <Mark color="primary-bg-triangular" bold="bold">
+            Dental
+          </Mark>
+          ?
         </Text>
         <div className={styles.spainLocation__desc}>
           <Text color="black" bold="font-light">
@@ -430,9 +433,10 @@ const LandingPage = () => {
       </section>
       <section className={styles.mainContent}>
         <Text type="bigtitle" textAlign="center" color="black" bold="semibold">
-          ¿Quieres descubrir como crecer tu consultorio? Revisa nuestros{" "}
-          <Mark color="primary-bg" bold="bold">
-            ebooks gratuitos
+          Te enseñamos cómo crecer tu consultorio.
+          <br /> Revisa nuestros ebooks
+          <Mark color="primary-bg-triangular" bold="bold">
+            gratuitos
           </Mark>
         </Text>
         <div className={styles.mainContent__desc}>

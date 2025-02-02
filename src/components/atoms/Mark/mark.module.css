@@ -14,7 +14,7 @@
   color: var(--black);
   position: relative;
   padding: 0 4px;
-  display: flex;
+  display: inline-block;
   width: fit-content;
   height: fit-content;
   z-index: 1;
