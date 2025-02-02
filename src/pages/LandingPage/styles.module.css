@@ -122,21 +122,9 @@ body:has(.popupContainer) {
   display: flex;
   flex-direction: column;
   position: relative;
-  background-color: var(--primary-transparent);
+  background: linear-gradient(var(--primary-transparent), white);
   border-radius: 0 0 120px 0;
 }
-/* .header::after {
-  position: absolute;
-  content: " ";
-  width: 1px;
-  left: 0;
-  right: 0;
-  top: 100%;
-  margin: 0 auto;
-  border: 40px solid transparent;
-  z-index: 1;
-  border-top: 40px solid var(--black);
-} */
 .banner {
   position: relative;
   width: 100%;
