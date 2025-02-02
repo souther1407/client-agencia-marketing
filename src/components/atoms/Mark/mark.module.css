@@ -10,6 +10,25 @@
   padding: 2px 8px;
   border-radius: 4px;
 }
+.primary-bg-triangular {
+  color: var(--black);
+  position: relative;
+  padding: 0 4px;
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  z-index: 1;
+}
+.primary-bg-triangular::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-light);
+  position: absolute;
+  z-index: -1;
+  transform: rotateZ(-2deg) skewX(16deg);
+  right: 2px;
+}
 
 .mark.soft {
   color: var(--gray);

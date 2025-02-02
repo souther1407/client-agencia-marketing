@@ -64,7 +64,7 @@
   gap: 44px;
 }
 .videoDrawer {
-  width: calc(var(--width-unit) * 2);
+  width: calc(var(--width-unit) * 2.2);
   position: relative;
 }
 .videoImg {
@@ -104,18 +104,18 @@
 .formContacto {
   display: flex;
   flex-direction: column;
-  width: 540px;
+  width: 420px;
 }
 .formContacto > :nth-child(1) {
-  padding-bottom: 12px;
+  padding-bottom: 8px;
 }
 .formContacto > :nth-child(2) {
-  padding-bottom: 20px;
+  padding-bottom: 16px;
 }
 .inputs {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 20px;
 }
 .inputLine {
   display: flex;

@@ -40,7 +40,10 @@ const OurProgram = () => {
             bold="semibold"
             textAlign="center"
           >
-            ¿Cuál es el potencial de tu consultorio?
+            Desbloquea el potencial de tu <br />
+            <div style={{ display: "flex", justifyContent: "center" }}>
+              <Mark color="primary-bg-triangular">Consultorio</Mark>
+            </div>
           </Text>
 
           <div className={styles.videoContainer}>

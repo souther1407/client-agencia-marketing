@@ -3,10 +3,8 @@ import styles from "./styles.module.css";
 import Nav from "../../components/organisms/Nav/Nav";
 import NeneArio from "@assets/Nene Ario Landing.svg";
 import NeneArioMobile from "@assets/NeneArioMobile.svg";
-import spainBanner from "@assets/spainBanner.svg";
 import Text from "../../components/atoms/Text/Text";
 import IconTextButton from "../../components/molecules/IconTextButton/IconTextButton";
-import EbookImg from "@assets/imgEbookPrueba.svg";
 import IconButton from "../../components/molecules/IconButton/IconButton";
 import Footer from "../../components/organisms/Footer/Footer";
 import Icon from "../../components/atoms/Icon/Icon";
@@ -20,12 +18,7 @@ import {
 
 import PreFooter from "../../components/organisms/PreFooter/PreFooter";
 import Mark from "../../components/atoms/Mark/Mark";
-import FacebookAds from "@assets/Facebook Ads.svg";
-import Hubspot from "@assets/Hubspot.svg";
-import MailChimp from "@assets/MailChimp.svg";
-import Zapier from "@assets/Zapier.svg";
 import ImgBanner from "@assets/ImgBanner.svg";
-import AntesDespues from "@assets/antes despues.svg";
 import Subrayado from "@assets/imagen subrayado verde.svg";
 import imgPublicidadCard from "@assets/La publicidad de tu consultorio es genérica.svg";
 import imgDiseñoCard from "@assets/El diseño de tu Sitio Web Dental es ineficiente.svg";
@@ -45,11 +38,13 @@ const LandingPage = () => {
   const navMobileMenuIsShow = useConfigStore(
     (state) => state.navMobileMenuIsShow
   );
+
   useEffect(() => {
     setTimeout(() => {
       setShowPopup(true);
     }, 10 * 1000);
   }, []);
+
   return (
     <div className={styles.page}>
       {showPopup && !navMobileMenuIsShow && (
@@ -151,7 +146,7 @@ const LandingPage = () => {
                 color="black"
               >
                 Tu Mejor Opción en Marketing{" "}
-                <Mark color="mark" bold="bold">
+                <Mark color="primary-bg-triangular" bold="bold">
                   Dental.
                 </Mark>
               </Text>
@@ -172,14 +167,7 @@ const LandingPage = () => {
               </Text>
             </div>
             <img className={styles.banner__img} src={ImgBanner} />
-            {/* <ImgBanner /> */}
           </div>
-          {/* <div className={styles.partners}>
-            <img src={FacebookAds} />
-            <img src={Hubspot} />
-            <img src={MailChimp} />
-            <img src={Zapier} />
-          </div> */}
         </section>
       </header>
       <section className={styles.whoAreWe}>
