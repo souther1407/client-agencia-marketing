@@ -141,8 +141,8 @@ const LandingPage = () => {
             <div className={styles.banner__content}>
               <Text
                 type="ultrabigtitle"
-                bold="semibold"
-                fontFamily="font-secondary"
+                bold="bold"
+                fontFamily="font-cuarternary"
                 color="black"
               >
                 Marketing para consultorios
@@ -245,7 +245,12 @@ const LandingPage = () => {
       <section className={styles.contactBannerSection}>
         <div className={styles.desc}>
           <div className={styles.stickyContainer}>
-            <Text type="bigtitle" color="black" bold="semibold">
+            <Text
+              type="bigtitle"
+              color="black"
+              bold="semibold"
+              fontFamily="font-cuarternary"
+            >
               5 Razones por las que pacientes{" "}
               <Mark color="primary-bg-triangular">no eligen</Mark>
               <br /> tu consultorio
@@ -366,13 +371,12 @@ const LandingPage = () => {
         </div>
       </section>
       <section className={styles.spainLocation}>
-        <Text type="bigtitle" textAlign="center" color="black" bold="bold">
+        <Text type="bigtitle" textAlign="center" color="black" bold="semibold">
           ¿Necesitas una Agencia especializada <br />
           en Marketing{" "}
           <Mark color="primary-bg-triangular" bold="bold">
-            Dental
+            Dental?
           </Mark>
-          ?
         </Text>
         <div className={styles.spainLocation__desc}>
           <Text color="black" bold="font-light">

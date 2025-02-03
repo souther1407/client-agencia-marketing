@@ -5,6 +5,30 @@
 }
 
 @font-face {
+  font-family: "ibm plex serif";
+  src: url("./assets/fonts/IBMPlexSerif-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "ibm plex serif";
+  src: url("./assets/fonts/Lexend-Medium.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "ibm plex serif";
+  src: url("./assets/fonts/IBMPlexSerif-SemiBold.ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "ibm plex serif";
+  src: url("./assets/fonts/IBMPlexSerif-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
   font-family: "ms serif display";
   src: url("./assets/fonts/DMSerifDisplay-Regular.ttf");
   font-weight: 400;
@@ -98,7 +122,7 @@
   --background-dark: rgb(21, 26, 43);
   --background-container: var(--white-transparent);
   --container-border: var(--light-gray);
-  --width-unit: calc(100vw / 5.6);
+  --width-unit: calc(100vw / 6.2);
   --linea-amarilla: calc(100vw / 13);
   --linea-verde: calc(100vw / 24.5);
   --linea-rosa: calc(100vw / 6.67);

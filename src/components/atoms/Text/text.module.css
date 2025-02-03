@@ -32,7 +32,7 @@
 }
 
 .ultrabigtitle {
-  font-size: 3.33334rem;
+  font-size: 2.666667rem;
   line-height: 1.15;
 }
 
@@ -97,6 +97,10 @@
 
 .font-terciary {
   font-family: "bree serif";
+}
+
+.font-cuarternary {
+  font-family: "ibm plex serif";
 }
 
 .black {

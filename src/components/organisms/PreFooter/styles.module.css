@@ -9,11 +9,10 @@
   padding-bottom: 64px;
   position: relative;
   border-radius: 60px 60px 0 0;
-  top: 32px;
 }
 
 .preFooter {
-  background-color: var(--celeste);
+  background-color: #21917b27;
   display: flex;
   gap: 32px;
   padding-left: var(--width-unit);
