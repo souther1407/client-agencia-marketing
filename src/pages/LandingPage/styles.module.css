@@ -190,7 +190,7 @@ body:has(.popupContainer) {
 .contactBannerSection {
   display: flex;
   width: 100%;
-  background-color: var(--primary-transparent);
+  background: linear-gradient(var(--primary-transparent), white);
   padding-left: var(--width-unit);
   padding-right: var(--width-unit);
   padding-top: 128px;
@@ -386,7 +386,7 @@ body:has(.popupContainer) {
 }
 
 .spainLocation {
-  background-color: var(--primary-transparent-2);
+  background: linear-gradient(var(--primary-transparent-2), white);
   padding-left: var(--width-unit);
   padding-right: var(--width-unit);
   display: flex;
@@ -397,6 +397,7 @@ body:has(.popupContainer) {
   position: relative;
   padding-top: 128px;
   padding-bottom: 128px;
+  z-index: 1;
 }
 .spainLocation__desc {
   display: flex;
@@ -478,7 +479,7 @@ body:has(.popupContainer) {
 .mainContent {
   display: flex;
   gap: 16px;
-  background: var(--primary-transparent);
+  background: linear-gradient(var(--primary-transparent), white);
   padding-top: var(--linea-roja);
   padding-bottom: var(--linea-roja);
   padding-left: var(--width-unit);
@@ -486,6 +487,7 @@ body:has(.popupContainer) {
   flex-direction: column;
   align-items: center;
   position: relative;
+  z-index: 1;
 }
 .mainContent__desc {
   display: flex;

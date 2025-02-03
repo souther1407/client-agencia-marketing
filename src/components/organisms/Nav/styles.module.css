@@ -31,7 +31,7 @@
   flex-direction: column;
   background-color: white;
   z-index: 1000;
-  border-bottom: 2px solid var(--primary-transparent-50);
+
   box-shadow: 1px 0 4px var(--gray-light);
 }
 
