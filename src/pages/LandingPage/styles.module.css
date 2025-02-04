@@ -409,7 +409,7 @@ body:has(.popupContainer) {
 }
 
 .spainLocation {
-  background: linear-gradient(var(--primary-transparent-2), white);
+  background: linear-gradient(90deg, var(--primary-transparent-2), white);
   padding-left: var(--width-unit);
   padding-right: var(--width-unit);
   display: flex;
@@ -502,7 +502,7 @@ body:has(.popupContainer) {
 .mainContent {
   display: flex;
   gap: 16px;
-  background: linear-gradient(var(--primary-transparent), white);
+  background: linear-gradient(0deg, var(--primary-transparent) 10%, white);
   padding-top: 80px;
   padding-bottom: 80px;
   padding-left: var(--width-unit);
