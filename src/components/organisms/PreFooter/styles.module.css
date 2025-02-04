@@ -14,7 +14,7 @@
   margin-bottom: 20px;
 }
 .banner > :nth-child(2) {
-  margin-bottom: 32px;
+  margin-bottom: 12px;
 }
 .preFooter {
   background-color: #21917b27;
@@ -42,7 +42,7 @@
   width: 240px;
 }
 .btn {
-  margin-top: 32px;
+  margin-top: 12px;
   width: 280px;
 }
 @media screen and (max-width: 800px) {
