@@ -11,7 +11,13 @@ const PreFooter = () => {
   return (
     <div>
       <section className={styles.banner}>
-        <Text type="subtitle" color="black" textAlign="center" bold="semibold">
+        <Text
+          type="subtitle"
+          color="black"
+          textAlign="center"
+          bold="semibold"
+          s={{ lineHeight: "1.3" }}
+        >
           En HackDental utilizamos las mejores <br /> herramientas de Marketing
         </Text>
         <Text color="black" size="sm" bold="font-light">

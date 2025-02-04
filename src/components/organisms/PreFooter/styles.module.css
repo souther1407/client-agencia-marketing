@@ -14,7 +14,7 @@
   margin-bottom: 20px;
 }
 .banner > :nth-child(2) {
-  margin-bottom: 12px;
+  margin-bottom: 16px;
 }
 .preFooter {
   background-color: #21917b27;
@@ -22,8 +22,8 @@
   gap: 32px;
   padding-left: var(--width-unit);
   padding-right: var(--width-unit);
-  padding-top: 36px;
-  padding-bottom: 36px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   justify-content: center;
   word-wrap: break-word;
   border-radius: 60px 60px 0 0;
@@ -42,7 +42,7 @@
   width: 240px;
 }
 .btn {
-  margin-top: 12px;
+  margin-top: 16px;
   width: 280px;
 }
 @media screen and (max-width: 800px) {
