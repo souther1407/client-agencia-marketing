@@ -11,7 +11,7 @@ const PreFooter = () => {
   return (
     <div>
       <section className={styles.banner}>
-        <Text type="subtitle" color="black" textAlign="center" bold="bold">
+        <Text type="subtitle" color="black" textAlign="center" bold="semibold">
           En HackDental utilizamos las mejores <br /> herramientas de Marketing
         </Text>
         <Text color="black" size="sm" bold="font-light">
@@ -26,7 +26,12 @@ const PreFooter = () => {
       </section>
       <section className={styles.preFooter}>
         <div className={styles.desc}>
-          <Text type="subtitle" color="black" textAlign="center">
+          <Text
+            type="subtitle"
+            color="black"
+            textAlign="center"
+            bold="semibold"
+          >
             Impulsemos tu Clínica Dental, Juntos
           </Text>
           <Text color="black" size="sm" bold="font-light">
