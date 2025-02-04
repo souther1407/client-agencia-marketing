@@ -5,8 +5,8 @@
   align-items: center;
   padding-left: var(--width-unit);
   padding-right: var(--width-unit);
-  padding-top: 36px;
-  padding-bottom: 36px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   position: relative;
   border-radius: 60px 60px 0 0;
 }
