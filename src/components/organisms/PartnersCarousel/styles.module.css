@@ -16,7 +16,7 @@
   flex-shrink: 0;
   overflow: hidden;
   overflow-x: hidden;
-  --img-width: 184px;
+  --img-width: 140px;
   max-width: calc(var(--img-width) * 5.3);
   position: relative;
   flex-wrap: nowrap;
