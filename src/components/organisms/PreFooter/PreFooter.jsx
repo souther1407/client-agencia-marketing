@@ -11,8 +11,8 @@ const PreFooter = () => {
   return (
     <div>
       <section className={styles.banner}>
-        <Text type="subtitle" color="black" textAlign="center">
-          En HackDental utilizamos las mejores herramientas de Marketing
+        <Text type="subtitle" color="black" textAlign="center" bold="bold">
+          En HackDental utilizamos las mejores <br /> herramientas de Marketing
         </Text>
         <Text color="black" size="sm" bold="font-light">
           Pide una auditoría para tu consultorio dental, es 100% gratis

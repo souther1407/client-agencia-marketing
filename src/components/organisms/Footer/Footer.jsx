@@ -59,7 +59,7 @@ const Footer = () => {
             </section>
           </div>
         </header>
-        <div className={styles.separator} style={{ marginTop: "32px" }}></div>
+        <div className={styles.separator} style={{ marginTop: "36px" }}></div>
         <div className={styles.copy}>
           <Text color="black" bold="font-light" size="sm">
             Copyright © {new Date().getFullYear()}, hackdental.com

@@ -1,24 +1,29 @@
 .banner {
   display: flex;
   flex-direction: column;
-  background-color: var(--primary-very-transparent);
+  background-color: var(--primary-transparent-25);
   align-items: center;
   padding-left: var(--width-unit);
   padding-right: var(--width-unit);
-  padding-top: 32px;
-  padding-bottom: 64px;
+  padding-top: 36px;
+  padding-bottom: 36px;
   position: relative;
   border-radius: 60px 60px 0 0;
 }
-
+.banner > :nth-child(1) {
+  margin-bottom: 24px;
+}
+.banner > :nth-child(2) {
+  margin-bottom: 36px;
+}
 .preFooter {
   background-color: #21917b27;
   display: flex;
   gap: 32px;
   padding-left: var(--width-unit);
   padding-right: var(--width-unit);
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 36px;
+  padding-bottom: 36px;
   justify-content: center;
   word-wrap: break-word;
   border-radius: 60px 60px 0 0;
@@ -37,6 +42,7 @@
   width: 240px;
 }
 .btn {
+  margin-top: 36px;
   width: 280px;
 }
 @media screen and (max-width: 800px) {

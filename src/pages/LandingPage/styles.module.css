@@ -174,7 +174,13 @@ body:has(.popupContainer) {
   position: relative;
   z-index: 1;
   width: 600px;
-  gap: 24px;
+}
+.banner__content > :nth-child(1) {
+  margin-bottom: 28px;
+}
+.banner__content > :nth-child(2),
+.banner__content > :nth-child(3) {
+  margin-bottom: 16px;
 }
 .banner__img {
   width: 600px;
@@ -193,7 +199,7 @@ body:has(.popupContainer) {
   background: linear-gradient(var(--primary-transparent), white);
   padding-left: var(--width-unit);
   padding-right: var(--width-unit);
-  padding-top: 128px;
+  padding-top: 80px;
   padding-bottom: 128px;
   gap: 32px;
   justify-content: space-between;
@@ -207,12 +213,18 @@ body:has(.popupContainer) {
   padding-left: var(--width-unit);
   padding-right: var(--width-unit);
   width: 100%;
-  padding-top: 128px;
-  padding-bottom: 128px;
+  padding-top: 44px;
+  padding-bottom: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
+}
+.partners {
+  margin-bottom: 60px;
+}
+.partners > :first-child {
+  margin-bottom: 16px;
 }
 /* .whoAreWe::after {
   position: absolute;
@@ -231,12 +243,15 @@ body:has(.popupContainer) {
   flex-direction: column;
   align-items: center;
   width: 60%;
-  gap: 24px;
+}
+.whoAreWe__contents > :nth-child(1),
+.whoAreWe__contents > :nth-child(2) {
+  margin-bottom: 44px;
 }
 .neneArio {
   width: 100%;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  margin-top: 72px;
+  margin-bottom: 72px;
   transform: scale(1.4);
 }
 .neneArio.mobile {
@@ -244,10 +259,17 @@ body:has(.popupContainer) {
 
   transform: scale(1);
 }
+.whoAreWe__contents .separator {
+  margin-bottom: 36px;
+}
+.whoAreWe__contents > :nth-child(7) {
+  margin-bottom: 36px;
+}
 .listDiferences {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 28px;
+  margin-bottom: 36px;
 }
 /* .contactBannerSection::after {
   position: absolute;
@@ -262,7 +284,8 @@ body:has(.popupContainer) {
   z-index: 1;
 } */
 
-.contactBannerSection .desc {
+.contactBannerSection > .desc {
+  margin-top: 20px;
 }
 .contactBannerSection .stickyContainer {
   display: flex;
@@ -390,13 +413,13 @@ body:has(.popupContainer) {
   padding-left: var(--width-unit);
   padding-right: var(--width-unit);
   display: flex;
-  gap: 64px;
+  gap: 44px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
-  padding-top: 128px;
-  padding-bottom: 128px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   z-index: 1;
 }
 .spainLocation__desc {
@@ -480,14 +503,15 @@ body:has(.popupContainer) {
   display: flex;
   gap: 16px;
   background: linear-gradient(var(--primary-transparent), white);
-  padding-top: var(--linea-roja);
-  padding-bottom: var(--linea-roja);
+  padding-top: 80px;
+  padding-bottom: 80px;
   padding-left: var(--width-unit);
   padding-right: var(--width-unit);
   flex-direction: column;
   align-items: center;
   position: relative;
   z-index: 1;
+  gap: 44px;
 }
 .mainContent__desc {
   display: flex;
@@ -535,8 +559,15 @@ body:has(.popupContainer) {
   flex-direction: column;
   justify-content: center;
   flex-basis: 30%;
-  gap: 24px;
 }
+.mainContent__card__desc > :nth-child(1) {
+  margin-bottom: 20px;
+}
+.mainContent__card__desc > :nth-child(2),
+.mainContent__card__desc > :nth-child(3) {
+  margin-bottom: 28px;
+}
+
 .mainContent__card__btn {
   width: 100%;
 }
@@ -653,9 +684,6 @@ body:has(.popupContainer) {
 
 .btnDownload {
   align-self: self-start;
-}
-.prefooter {
-  background-color: var(--primary-transparent);
 }
 
 @media screen and (max-width: 1400px) {
