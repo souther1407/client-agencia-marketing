@@ -342,6 +342,7 @@ body:has(.popupContainer) {
 .details .detail {
   background-color: var(--very-light-white);
   padding: 40px;
+  padding-top: 60px;
   border-radius: 16px;
   width: 760px;
   border: 1px solid var(--gray-light);
