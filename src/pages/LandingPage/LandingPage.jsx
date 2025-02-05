@@ -431,12 +431,10 @@ const LandingPage = () => {
         </div>
       </section>
       <section className={styles.mainContent}>
-        <Text type="bigtitle" textAlign="center" color="black" bold="semibold">
+        <Text type="bigtitle" textAlign="center" color="black">
           Te enseñamos cómo crecer tu consultorio.
           <br /> Revisa nuestros ebooks
-          <Mark color="primary-bg-triangular" bold="bold">
-            gratuitos
-          </Mark>
+          <Mark color="primary-bg-triangular">gratuitos</Mark>
         </Text>
         <div className={styles.mainContent__desc}>
           <Text color="black" bold="font-light" textAlign="center">
