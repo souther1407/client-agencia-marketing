@@ -247,6 +247,7 @@ const LandingPage = () => {
               color="black"
               bold="semibold"
               fontFamily="font-cuarternary"
+              s={{ lineHeight: "1.4" }}
             >
               5 Razones por las que pacientes{" "}
               <Mark color="primary-bg-triangular">no eligen</Mark>
