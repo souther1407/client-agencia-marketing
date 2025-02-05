@@ -309,7 +309,11 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                 </TextLink>
               </div>
 
-              <div onMouseEnter={handleShowAboutUs} onClick={handleShowAboutUs}>
+              <div
+                className={styles.linkContainer}
+                onMouseEnter={handleShowAboutUs}
+                onClick={handleShowAboutUs}
+              >
                 <TextLink
                   variant="primary"
                   marked={showAboutUs}
@@ -318,7 +322,11 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                   Sobre Nosotros
                 </TextLink>
               </div>
-              <div onMouseEnter={handleShowContact} onClick={handleShowContact}>
+              <div
+                className={styles.linkContainer}
+                onMouseEnter={handleShowContact}
+                onClick={handleShowContact}
+              >
                 <TextLink
                   variant="primary"
                   marked={showContact}
