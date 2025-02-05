@@ -397,30 +397,30 @@ const LandingPage = () => {
               <div className={styles.spainLocation__items__item}>
                 <Icon
                   type={"rightArrow"}
-                  size={"2rem"}
+                  size={"1.4rem"}
                   color="var(--primary)"
                 />
-                <Text size="lg" color="dark">
+                <Text color="dark" bold="regular">
                   Está ubicado en España.
                 </Text>
               </div>
               <div className={styles.spainLocation__items__item}>
                 <Icon
                   type={"rightArrow"}
-                  size={"2rem"}
+                  size={"1.4rem"}
                   color="var(--primary)"
                 />
-                <Text size="lg" color="dark">
+                <Text color="dark" bold="regular">
                   Factura 10,000 euros o más al mes
                 </Text>
               </div>
               <div className={styles.spainLocation__items__item}>
                 <Icon
                   type={"rightArrow"}
-                  size={"2rem"}
+                  size={"1.4rem"}
                   color="var(--primary)"
                 />
-                <Text size="lg" color="dark">
+                <Text color="dark" bold="regular">
                   Quiere crecer rápidamente en el 2025.
                 </Text>
               </div>
