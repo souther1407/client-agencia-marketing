@@ -369,7 +369,7 @@ const LandingPage = () => {
         </div>
       </section>
       <section className={styles.spainLocation}>
-        <Text type="bigtitle" textAlign="center" color="black" bold="semibold">
+        <Text type="bigtitle" textAlign="center" color="black">
           ¿Necesitas una Agencia especializada <br />
           en Marketing{" "}
           <Mark color="primary-bg-triangular" bold="bold">
@@ -389,7 +389,7 @@ const LandingPage = () => {
         </div>
         <div className={styles.spainLocation__card}>
           <div className={styles.spainLocation__card__elements}>
-            <Text size="big" color="dark" bold="semibold">
+            <Text size="semibig" color="dark">
               Si tu consultorio dental:
             </Text>
             <hr className={styles.spainLocation__card__separator} />
