@@ -32,7 +32,9 @@ const Footer = () => {
                   style={{ display: "flex", gap: "8px", alignItems: "center" }}
                 >
                   <Icon size={"1.2rem"} type={"form"} />
-                  <Text color="black">Forma de Contacto</Text>
+                  <Text color="black" size="sm" bold="regular">
+                    Forma de Contacto
+                  </Text>
                 </div>
               </Link>
               <Link to={"/"}>
@@ -45,7 +47,9 @@ const Footer = () => {
                   }}
                 >
                   <Icon size={"1.2rem"} type={"email"} />
-                  <Text color="black">info@inkadentist.com</Text>
+                  <Text color="black" size="sm" bold="regular">
+                    info@inkadentist.com
+                  </Text>
                 </div>
               </Link>
               <Link to={"/"}>
@@ -53,7 +57,9 @@ const Footer = () => {
                   style={{ display: "flex", gap: "8px", alignItems: "center" }}
                 >
                   <Icon size={"1.2rem"} type={"wp"} />
-                  <Text color="black">Whatsapp</Text>
+                  <Text color="black" size="sm" bold="regular">
+                    Whatsapp
+                  </Text>
                 </div>
               </Link>
             </section>
