@@ -1,3 +1,6 @@
+.mainContainer {
+  background-color: var(--primary-transparent);
+}
 .banner {
   display: flex;
   flex-direction: column;
@@ -15,6 +18,9 @@
 }
 .banner > :nth-child(2) {
   margin-bottom: 16px;
+}
+.prefooterContainer {
+  background-color: var(--primary-transparent-25);
 }
 .preFooter {
   background-color: #21917b27;

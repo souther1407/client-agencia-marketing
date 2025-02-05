@@ -22,9 +22,10 @@
 .primary-bg-triangular::before {
   content: "";
   width: 100%;
-  height: 100%;
+  height: 75%;
   background-color: #76cc91;
   position: absolute;
+  top: 8px;
   z-index: -1;
   transform: rotateZ(-2deg) skewX(24deg);
 }
