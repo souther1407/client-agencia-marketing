@@ -369,9 +369,17 @@ const LandingPage = () => {
         </div>
       </section>
       <section className={styles.spainLocation}>
-        <Text type="bigtitle" textAlign="center" color="black">
+        <Text
+          type="bigtitle"
+          textAlign="center"
+          color="black"
+          s={{ lineHeight: "1.3" }}
+        >
           ¿Necesitas una Agencia especializada <br />
-          en Marketing <Mark color="primary-bg-triangular">Dental?</Mark>
+          en Marketing{" "}
+          <Mark color="primary-bg-triangular" bold="medium">
+            Dental?
+          </Mark>
         </Text>
         <div className={styles.spainLocation__desc}>
           <Text color="black" bold="font-light">
@@ -431,10 +439,17 @@ const LandingPage = () => {
         </div>
       </section>
       <section className={styles.mainContent}>
-        <Text type="bigtitle" textAlign="center" color="black">
+        <Text
+          type="bigtitle"
+          textAlign="center"
+          color="black"
+          s={{ lineHeight: "1.3" }}
+        >
           Te enseñamos cómo crecer tu consultorio.
           <br /> Revisa nuestros ebooks
-          <Mark color="primary-bg-triangular">gratuitos</Mark>
+          <Mark color="primary-bg-triangular" bold="medium">
+            gratuitos
+          </Mark>
         </Text>
         <div className={styles.mainContent__desc}>
           <Text color="black" bold="font-light" textAlign="center">
