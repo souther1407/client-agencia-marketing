@@ -197,9 +197,8 @@ const LandingPage = () => {
             alt="Nene ario"
           />
           <hr className={styles.separator} />
-          <Text color="black" size="xxlg" bold="bold">
-            ¿Qué nos <Mark color="primary-underline">diferencia</Mark> de otras
-            agencias?
+          <Text color="black" size="xxlg">
+            ¿Qué nos diferencia de otras agencias?
           </Text>
           <div className={styles.listDiferences}>
             <div className={styles.line}>
@@ -233,12 +232,9 @@ const LandingPage = () => {
               </Text>
             </div>
           </div>
-          <Text color="black" bold="bold" size="lg">
-            Puedes ponerte en contacto con nosotros por{" "}
-            <Mark color="primary" bold="bold">
-              correo electrónico a jaka@ .design
-            </Mark>{" "}
-            y te responderemos en un plazo de 24 horas.
+          <Text color="black" size="lg">
+            Puedes ponerte en contacto con nosotros por correo electrónico a
+            jaka@ .design y te responderemos en un plazo de 24 horas.
           </Text>
         </div>
       </section>
