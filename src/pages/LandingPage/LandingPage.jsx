@@ -371,10 +371,7 @@ const LandingPage = () => {
       <section className={styles.spainLocation}>
         <Text type="bigtitle" textAlign="center" color="black">
           ¿Necesitas una Agencia especializada <br />
-          en Marketing{" "}
-          <Mark color="primary-bg-triangular" bold="bold">
-            Dental?
-          </Mark>
+          en Marketing <Mark color="primary-bg-triangular">Dental?</Mark>
         </Text>
         <div className={styles.spainLocation__desc}>
           <Text color="black" bold="font-light">
