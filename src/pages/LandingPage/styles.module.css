@@ -504,7 +504,7 @@ body:has(.popupContainer) {
 
 .mainContent {
   display: flex;
-  gap: 16px;
+
   background: linear-gradient(0deg, var(--primary-transparent) 10%, white);
   padding-top: 80px;
   padding-bottom: 80px;
@@ -514,7 +514,12 @@ body:has(.popupContainer) {
   align-items: center;
   position: relative;
   z-index: 1;
-  gap: 44px;
+}
+.mainContent > :nth-child(1) {
+  margin-bottom: 32px;
+}
+.mainContent > :nth-child(2) {
+  margin-bottom: 48px;
 }
 .mainContent__desc {
   display: flex;
