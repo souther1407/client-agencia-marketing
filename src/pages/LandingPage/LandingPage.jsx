@@ -225,15 +225,16 @@ const LandingPage = () => {
                 Trabajamos con un numero limitado de consultorio.
               </Text>
             </div>
-            <div className={styles.line}>
+            {/* <div className={styles.line}>
               <Icon type={"check"} color="var(--primary)" size={"1rem"} />
               <Text color="black" bold="font-light">
                 Traemos pacientes de tus tratamientos más rentables.
               </Text>
-            </div>
+            </div> */}
           </div>
           <Text color="black" size="lg">
             Puedes ponerte en contacto con nosotros por correo electrónico a
+            <br />
             jaka@ .design y te responderemos en un plazo de 24 horas.
           </Text>
         </div>

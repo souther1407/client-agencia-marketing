@@ -214,7 +214,7 @@ body:has(.popupContainer) {
   padding-right: var(--width-unit);
   width: 100%;
   padding-top: 44px;
-  padding-bottom: 60px;
+  padding-bottom: 68px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -265,12 +265,12 @@ body:has(.popupContainer) {
   margin-bottom: 36px;
 }
 .whoAreWe__contents > :nth-child(7) {
-  margin-bottom: 36px;
+  margin-bottom: 32px;
 }
 .listDiferences {
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: 24px;
   margin-bottom: 36px;
 }
 /* .contactBannerSection::after {
