@@ -244,9 +244,11 @@ body:has(.popupContainer) {
   align-items: center;
   width: 60%;
 }
-.whoAreWe__contents > :nth-child(1),
+.whoAreWe__contents > :nth-child(1) {
+  margin-bottom: 36px;
+}
 .whoAreWe__contents > :nth-child(2) {
-  margin-bottom: 44px;
+  margin-bottom: 32px;
 }
 .neneArio {
   width: 100%;
