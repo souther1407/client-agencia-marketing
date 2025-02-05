@@ -463,10 +463,10 @@ const LandingPage = () => {
           <div className={styles.mainContent__card}>
             <div className={styles.mainContent__card__desc}>
               <Text bold="semibold">2024</Text>
-              <Text type="title" bold="bold" color="black">
+              <Text type="title" bold="semibold" color="black">
                 7 Secretos del Marketing Dental
               </Text>
-              <Text size="sm">
+              <Text size="sm" bold="font-light">
                 Save thousands of engineering hours by using the NexHealth
                 Synchronizer API.
               </Text>
@@ -483,10 +483,10 @@ const LandingPage = () => {
               <Text bold="semibold" color="primary">
                 2024
               </Text>
-              <Text type="title" bold="bold" color="black">
+              <Text type="title" bold="semibold" color="black">
                 WhatsApp para Clinicas Dentales
               </Text>
-              <Text size="sm">
+              <Text size="sm" bold="font-light">
                 Save thousands of engineering hours by using the NexHealth
                 Synchronizer API.
               </Text>

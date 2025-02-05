@@ -529,7 +529,7 @@ body:has(.popupContainer) {
   display: flex;
   flex-direction: column;
   width: 100%;
-  gap: 128px;
+  gap: 44px;
 }
 .mainContent__card {
   display: flex;
