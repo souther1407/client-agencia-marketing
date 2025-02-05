@@ -9,8 +9,7 @@
 .nav {
   display: flex;
   justify-content: center;
-  background-color: var(--black);
-  border-bottom: 1px solid var(--gray);
+  background-color: var(--primary-transparent);
 }
 
 .main {
@@ -28,17 +27,28 @@
 .banner {
   display: flex;
   gap: 32px;
-  padding-top: var(--linea-amarilla);
-  padding-bottom: var(--linea-amarilla);
+  padding-top: 100px;
+  padding-bottom: 120px;
   padding-left: var(--width-unit);
   padding-right: var(--width-unit);
-  background-color: var(--black);
+  background-color: var(--primary-transparent);
 }
 
 .banner__desc {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+}
+.banner__desc > :nth-child(1) {
+  margin-bottom: 16px;
+}
+.banner__desc > :nth-child(2) {
+  margin-bottom: 20px;
+}
+.banner__desc > :nth-child(3) {
+  margin-bottom: 24px;
+}
+.banner__desc > :nth-child(4) {
+  margin-bottom: 20px;
 }
 .downloadEBook {
   width: 50%;
@@ -51,7 +61,7 @@
 .card {
   display: flex;
   gap: 32px;
-  background-color: var(--dark-gray);
+  background-color: var(--primary-transparent);
   width: fit-content;
   padding: 8px 32px;
   border-radius: 32px;

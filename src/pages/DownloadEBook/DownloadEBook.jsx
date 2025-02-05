@@ -21,14 +21,15 @@ const DownloadEBook = () => {
       <main className={styles.main}>
         <div className={styles.banner}>
           <section className={styles.banner__desc}>
-            <Text color="soft" size="sm">
+            <Text color="primary" size="sm">
               {new Date().getFullYear()}
             </Text>
-            <Text color="light" type="title" bold>
-              Como Mejorar la Aceptación de Casos de tu Clinica
+            <Text color="black" type="title" bold>
+              Como Mejorar la Aceptación de
+              <br /> Casos de tu Clinica
             </Text>
             <div className={styles.desc}>
-              <Text color="soft" bold="font-light" size="sm">
+              <Text color="black" bold="font-light" size="sm">
                 Save thousands of engineering hours by using the NexHealth
                 Synchronizer API to sync bidirectionally
               </Text>
@@ -45,10 +46,10 @@ const DownloadEBook = () => {
             <div className={styles.card}>
               <img src={Medicos} className={styles.medicos} />
               <div className={styles.desc}>
-                <Text size="ty" color="soft">
+                <Text size="ty" color="black">
                   Únete a los muchos dentista
                 </Text>
-                <Text size="ty" color="soft" bold="font-light">
+                <Text size="ty" color="black" bold="font-light">
                   que aprenden con nuestros ebooks gratuitos
                 </Text>
               </div>
