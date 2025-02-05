@@ -47,7 +47,7 @@
   margin-bottom: 8px;
   height: 1px;
   width: 100%;
-  background-color: var(--primary);
+  background-color: var(--primary-transparent-50);
 }
 .links {
   display: flex;
