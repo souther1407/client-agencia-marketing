@@ -59,7 +59,7 @@ const DownloadEBook = () => {
         </div>
         <div className={styles.moreInfo}>
           <div className={styles.info}>
-            <Text bold="bold" type="subtitle">
+            <Text bold="semibold" type="subtitle">
               Adentro aprenderás:
             </Text>
             <div className={styles.line}>
@@ -98,8 +98,8 @@ const DownloadEBook = () => {
         </div>
       </main>
       <section className={styles.prefooter}>
-        <Text color="light" type="title">
-          Obten tu Guia Gratis
+        <Text color="black" type="title">
+          ¿Listo para empezar?
         </Text>
         <div className={styles.downloadBtn}>
           <IconTextButton
@@ -107,29 +107,29 @@ const DownloadEBook = () => {
             textProps={{ size: "sm" }}
             onClick={() => setModalOpened(true)}
           >
-            Descargar Ahora
+            Obten tu Guia Gratis
           </IconTextButton>
         </div>
       </section>
       <footer className={styles.footer}>
-        <Text color="light" bold="font-light">
+        <Text color="black" bold="font-light">
           Copyright © {new Date().getFullYear()}, HackDental.com
         </Text>
         <div className={styles.links}>
           <Link to={"#"}>
-            <Text color="soft-light" size="ty" bold="font-light">
+            <Text color="black" size="ty" bold="font-light">
               Politica de Privacidad
             </Text>
           </Link>
           <hr className={styles.separator} />
           <Link to={"#"}>
-            <Text color="soft-light" size="ty" bold="font-light">
+            <Text color="black" size="ty" bold="font-light">
               Politica de Privacidad
             </Text>{" "}
           </Link>
           <hr className={styles.separator} />
           <Link to={"#"}>
-            <Text color="soft-light" size="ty" bold="font-light">
+            <Text color="black" size="ty" bold="font-light">
               Politica de Privacidad
             </Text>
           </Link>
