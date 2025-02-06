@@ -31,7 +31,6 @@
   flex-direction: column;
   background-color: white;
   z-index: 1000;
-
   box-shadow: 1px 0 4px var(--gray-light);
 }
 
@@ -70,6 +69,7 @@
   padding-left: var(--width-unit);
   padding-right: var(--width-unit);
   background-color: #eef5f4;
+  height: 92px;
 }
 .bottomMenu.changeColor {
   background-color: var(--light-green);
