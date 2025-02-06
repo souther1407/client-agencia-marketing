@@ -117,6 +117,8 @@
   display: flex;
   width: 250px;
   height: 70px;
+  position: relative;
+  right: 30px;
 }
 .separator {
   height: 0.77rem;
