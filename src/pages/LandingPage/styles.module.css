@@ -693,7 +693,9 @@ body:has(.popupContainer) {
 .btnDownload {
   align-self: self-start;
 }
-
+.prefooter {
+  background-color: var(--primary-transparent);
+}
 @media screen and (max-width: 1400px) {
   .mainContent {
     padding: 0;
