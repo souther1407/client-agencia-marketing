@@ -47,10 +47,16 @@ const DownloadEBook = () => {
             <div className={styles.card}>
               <img src={Medicos} className={styles.medicos} />
               <div className={styles.desc}>
-                <Text size="ty" color="black">
+                <Text size="ty" color="black" s={{ lineHeight: "1.4" }}>
                   Únete a los muchos dentista
                 </Text>
-                <Text size="ty" color="black" bold="font-light">
+                <Text
+                  size="ty"
+                  color="black"
+                  bold="font-light"
+                  s={{ lineHeight: "1.4" }}
+                  textAlign="center"
+                >
                   que aprenden con nuestros ebooks gratuitos
                 </Text>
               </div>
