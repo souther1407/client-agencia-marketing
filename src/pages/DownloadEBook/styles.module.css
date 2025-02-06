@@ -92,6 +92,10 @@
   display: flex;
   gap: 8px;
 }
+.line > :first-child {
+  position: relative;
+  top: 3px;
+}
 .imgPortada {
   width: 400px;
 }
