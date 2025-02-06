@@ -30,7 +30,7 @@ const LandingEBooks = () => {
           >
             Biblioteca de Marketing Dental
           </Text>
-          <Text color="light" textAlign="center">
+          <Text bold="font-light" textAlign="center" s={{ color: "white" }}>
             Todos los recursos de HackDental, en 1 solo lugar
           </Text>
         </section>
