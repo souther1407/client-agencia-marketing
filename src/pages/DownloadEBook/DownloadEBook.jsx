@@ -60,7 +60,7 @@ const DownloadEBook = () => {
         </div>
         <div className={styles.moreInfo}>
           <div className={styles.info}>
-            <Text bold="semibold" type="subtitle">
+            <Text size="xxxlg" color="black">
               Adentro aprenderás:
             </Text>
             <div className={styles.line}>
@@ -99,7 +99,7 @@ const DownloadEBook = () => {
         </div>
       </main>
       <section className={styles.prefooter}>
-        <Text color="black" type="title">
+        <Text color="black" size="xxxlg">
           ¿Listo para empezar?
         </Text>
         <div className={styles.downloadBtn}>
