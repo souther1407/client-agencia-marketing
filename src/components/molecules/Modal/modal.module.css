@@ -39,7 +39,7 @@
   display: flex;
   justify-content: flex-end;
   border-bottom: 1px solid var(--gray);
-  background-color: var(--dark-white);
+  background-color: var(--light-green);
 }
 @media screen and (max-width: 800px) {
   .modal {
