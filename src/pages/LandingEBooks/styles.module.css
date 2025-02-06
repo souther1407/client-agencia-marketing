@@ -14,12 +14,17 @@
   justify-content: center;
   align-items: center;
   flex-grow: 1;
-  gap: 16px;
+
   padding-top: calc(var(--linea-roja));
   padding-bottom: calc(var(--linea-roja) * 1.5);
   background: #206767;
 }
-
+.banner > :nth-child(1) {
+  margin-top: 8px;
+}
+.banner > :nth-child(2) {
+  margin-bottom: 16px;
+}
 .subnav {
   display: flex;
   justify-content: flex-end;
