@@ -19,7 +19,9 @@ const LandingEBooks = () => {
       <Nav hideTopMenu={true} />
       <header className={styles.header}>
         <section className={styles.banner}>
-          <Text color="primary">CONTENIDO 100% GRATUITO</Text>
+          <Text fontFamily="font-terciary" s={{ color: "#25c19b" }}>
+            Contenido 100% Gratuito
+          </Text>
           <Text type="title" bold="bold" color="light" textAlign="center">
             Biblioteca de Marketing Dental
           </Text>
