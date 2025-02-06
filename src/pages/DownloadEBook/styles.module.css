@@ -115,8 +115,8 @@
 }
 .prefooter .downloadBtn {
   display: flex;
-  width: 350px;
-  height: 80px;
+  width: 250px;
+  height: 70px;
 }
 .separator {
   height: 0.77rem;
