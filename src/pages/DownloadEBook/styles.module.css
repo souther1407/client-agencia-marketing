@@ -85,8 +85,11 @@
 .info {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 8px;
   width: 440px;
+}
+.info > :first-child {
+  margin-bottom: 8px;
 }
 .line {
   display: flex;
