@@ -19,7 +19,7 @@ const LandingEBooks = () => {
       <Nav hideTopMenu={true} />
       <header className={styles.header}>
         <section className={styles.banner}>
-          <Text fontFamily="font-terciary" s={{ color: "#25c19b" }}>
+          <Text size="xlg" fontFamily="font-terciary" s={{ color: "#25c19b" }}>
             Contenido 100% Gratuito
           </Text>
           <Text
@@ -30,7 +30,12 @@ const LandingEBooks = () => {
           >
             Biblioteca de Marketing Dental
           </Text>
-          <Text bold="font-light" textAlign="center" s={{ color: "white" }}>
+          <Text
+            bold="font-light"
+            size="lg"
+            textAlign="center"
+            s={{ color: "white" }}
+          >
             Todos los recursos de HackDental, en 1 solo lugar
           </Text>
         </section>
