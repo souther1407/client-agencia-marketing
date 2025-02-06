@@ -3,7 +3,7 @@
 .banner {
   display: flex;
   flex-direction: column;
-  background-color: var(--primary-transparent-25);
+  background-color: var(--primary-transparent-2);
   align-items: center;
   padding-left: var(--width-unit);
   padding-right: var(--width-unit);
@@ -19,10 +19,10 @@
   margin-bottom: 16px;
 }
 .prefooterContainer {
-  background-color: var(--primary-transparent-25);
+  background-color: var(--primary-transparent-2);
 }
 .preFooter {
-  background-color: #21917b27;
+  background-color: rgba(33, 145, 123, 0.153);
   display: flex;
   gap: 32px;
   padding-left: var(--width-unit);
