@@ -20,13 +20,13 @@
 
 .ebook {
   width: 500px;
-  height: auto;
+  height: 500px;
   object-fit: cover;
 }
 
 .banner {
   display: flex;
-  gap: 32px;
+  gap: 64px;
   padding-top: 100px;
   padding-bottom: 120px;
   padding-left: calc(100vw / 5);
@@ -137,7 +137,8 @@
   }
   .ebook {
     width: 100%;
-    transform: scale(1.2);
+    height: auto;
+    transform: scale(1.1);
   }
 
   .desc {
