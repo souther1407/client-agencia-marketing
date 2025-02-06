@@ -128,7 +128,7 @@
   align-items: center;
   background-color: var(--primary-transparent-25);
   padding-top: 32px;
-  gap: 8px;
+  gap: 6px;
   padding-bottom: calc(var(--linea-amarilla) / 2);
   height: 120px;
 }
