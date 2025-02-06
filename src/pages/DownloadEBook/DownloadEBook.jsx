@@ -113,7 +113,7 @@ const DownloadEBook = () => {
         </div>
       </section>
       <footer className={styles.footer}>
-        <Text color="black" bold="font-light">
+        <Text size="sm" color="black" bold="font-light">
           Copyright © {new Date().getFullYear()}, HackDental.com
         </Text>
         <div className={styles.links}>
