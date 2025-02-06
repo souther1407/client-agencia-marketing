@@ -57,7 +57,7 @@
 }
 .mainEbookCard {
   position: relative;
-  padding: 32px;
+  padding: 28px;
   display: flex;
   background-color: var(--white);
   border: 1px solid transparent;
