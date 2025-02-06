@@ -15,10 +15,9 @@
   align-items: center;
   flex-grow: 1;
   gap: 16px;
-
   padding-top: calc(var(--linea-roja));
   padding-bottom: calc(var(--linea-roja) * 1.5);
-  background: var(--light-black);
+  background: #206767;
 }
 
 .subnav {
