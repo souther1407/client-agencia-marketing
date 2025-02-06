@@ -38,7 +38,7 @@
 .banner__desc {
   display: flex;
   flex-direction: column;
-  flex-shrink: 0.5;
+  width: 600px;
 }
 .banner__desc > :nth-child(1) {
   margin-bottom: 16px;
@@ -140,6 +140,9 @@
     width: 100%;
     height: auto;
     transform: scale(1.1);
+  }
+  .banner__desc {
+    width: 100%;
   }
 
   .desc {

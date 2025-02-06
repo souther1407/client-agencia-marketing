@@ -31,6 +31,7 @@ const DownloadEBook = () => {
             <div className={styles.desc}>
               <Text color="black" bold="font-light" size="sm">
                 Save thousands of engineering hours by using the NexHealth
+                <br />
                 Synchronizer API to sync bidirectionally
               </Text>
             </div>
