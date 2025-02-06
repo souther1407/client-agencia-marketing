@@ -6,7 +6,7 @@
   width: 355px;
   height: 500px;
   background-color: var(--white);
-  padding: 16px;
+  padding: 28px;
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
