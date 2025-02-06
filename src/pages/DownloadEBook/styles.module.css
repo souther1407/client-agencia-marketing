@@ -29,8 +29,8 @@
   gap: 32px;
   padding-top: 100px;
   padding-bottom: 120px;
-  padding-left: var(--width-unit);
-  padding-right: var(--width-unit);
+  padding-left: calc(100vw / 5);
+  padding-right: calc(100vw / 7);
   background-color: var(--primary-transparent);
 }
 
