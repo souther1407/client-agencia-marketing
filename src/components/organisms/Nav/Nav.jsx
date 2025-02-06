@@ -277,7 +277,7 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
             <div className={styles.right}>
               <div
                 onMouseEnter={handleShowResources}
-                onClick={handleShowResources}
+                onClick={() => navigate(LANDING_EBOOKS)}
                 className={styles.linkContainer}
               >
                 <div className={styles.newTag}>
