@@ -110,7 +110,7 @@
   padding-bottom: calc(var(--linea-amarilla) / 2);
   padding-left: 480px;
   padding-right: 480px;
-  height: 160px;
+  height: 180px;
   background: var(--primary-transparent-2);
 }
 .prefooter .downloadBtn {
