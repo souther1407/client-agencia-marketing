@@ -12,12 +12,10 @@ const EBookCard = ({ img, title, desc }) => {
         <img className={styles.img} src={img} alt={title} />
 
         <div className={styles.descBook}>
-          <Text bold type="smallsubtitle" textAlign="center">
+          <Text bold type="smallsubtitle">
             {title}
           </Text>
-          <Text size={"ty"} textAlign="center">
-            {desc}
-          </Text>
+          <Text size={"ty"}>{desc}</Text>
 
           <TextLink
             marked
