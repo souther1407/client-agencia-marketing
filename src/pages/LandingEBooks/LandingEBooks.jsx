@@ -22,7 +22,12 @@ const LandingEBooks = () => {
           <Text fontFamily="font-terciary" s={{ color: "#25c19b" }}>
             Contenido 100% Gratuito
           </Text>
-          <Text type="title" bold="bold" color="light" textAlign="center">
+          <Text
+            size="xbig"
+            bold="semibold"
+            s={{ color: "white" }}
+            textAlign="center"
+          >
             Biblioteca de Marketing Dental
           </Text>
           <Text color="light" textAlign="center">
