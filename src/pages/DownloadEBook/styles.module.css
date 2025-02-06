@@ -38,6 +38,7 @@
 .banner__desc {
   display: flex;
   flex-direction: column;
+  flex-shrink: 0.5;
 }
 .banner__desc > :nth-child(1) {
   margin-bottom: 16px;
@@ -129,7 +130,7 @@
   align-items: center;
   gap: 8px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
   .banner {
     flex-direction: column-reverse;
     width: 100%;
