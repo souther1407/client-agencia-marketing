@@ -164,7 +164,6 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
               <Text bold="font-light" size="ty" textAlign="center">
                 Ir a la bilbioteca de ebooks
               </Text>
-              <Icon size={"1rem"} type={"arrow"} />
             </div>
           </div>
         </div>
