@@ -12,6 +12,10 @@
   background-color: var(--primary-transparent);
 }
 
+.nav > :first-child {
+  width: 270px;
+}
+
 .main {
   display: flex;
   flex-direction: column;
