@@ -18,7 +18,9 @@ const EBookCard = ({ img, title, desc }) => {
           <Text bold type="smallsubtitle" color="black">
             {title}
           </Text>
-          <Text size={"ty"}>{desc}</Text>
+          <Text size={"ty"} bold="font-light">
+            {desc}
+          </Text>
 
           <TextLink
             marked
