@@ -15,7 +15,7 @@ const EBookCard = ({ img, title, desc }) => {
           <Text size="ty" s={{ color: "#006a43" }}>
             EBOOK
           </Text>
-          <Text bold type="smallsubtitle">
+          <Text bold type="smallsubtitle" color="black">
             {title}
           </Text>
           <Text size={"ty"}>{desc}</Text>

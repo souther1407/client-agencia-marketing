@@ -51,7 +51,10 @@ const LandingEBooks = () => {
               </div>
               <img className={styles.ebookImg} src={imgEbookPrueba} />
               <div className={styles.desc}>
-                <Text type="smallsubtitle">
+                <Text size="ty" s={{ color: "#006a43" }}>
+                  EBOOK
+                </Text>
+                <Text type="smallsubtitle" color="black">
                   Marketing Dental: La Guia Definitiva
                 </Text>
                 <Text bold="font-light" size="ty">
