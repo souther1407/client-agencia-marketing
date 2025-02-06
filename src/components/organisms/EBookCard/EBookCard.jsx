@@ -12,6 +12,9 @@ const EBookCard = ({ img, title, desc }) => {
         <img className={styles.img} src={img} alt={title} />
 
         <div className={styles.descBook}>
+          <Text size="ty" s={{ color: "#006a43" }}>
+            EBOOK
+          </Text>
           <Text bold type="smallsubtitle">
             {title}
           </Text>
