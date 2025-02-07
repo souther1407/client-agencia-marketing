@@ -155,11 +155,8 @@ const OurProgram = () => {
               textAlign="center"
               bold="semibold"
             >
-              Resuelve los{" "}
-              <Mark color="primary-bg" bold="bold">
-                problemas que limitan
-              </Mark>{" "}
-              el crecimiento de tu práctica
+              Resuelve los <Mark color="primary-bg-triangular">problemas </Mark>{" "}
+              que limitan el crecimiento de tu práctica
             </Text>
             <Text bold="font-light">
               Puedes ponerte en contacto con nosotros por correo electrónico a
@@ -183,10 +180,10 @@ const OurProgram = () => {
               bold="bold"
             >
               Los{" "}
-              <Mark bold="bold" color="error">
-                3 errores más comunes
+              <Mark bold="bold" color="error-bg-triangular">
+                3 errores{" "}
               </Mark>{" "}
-              que los consultorios dentales cometen.
+              más comunes que los consultorios dentales cometen.
             </Text>
             <Text color="light" bold="font-light">
               Puedes ponerte en contacto con nosotros por correo electrónico a
@@ -287,17 +284,14 @@ const OurProgram = () => {
         </div>
         <div className={styles.comoFunciona}>
           <Text type="title" color="black" bold="semibold" textAlign="center">
-            ¿Cuánto más vas a{" "}
-            <Mark color="primary-bg" bold="bold">
-              postergar el éxito
-            </Mark>{" "}
-            de tu consultorio dental?
+            ¿Cuánto más vas a postergar el éxito de
+            <br /> tu consultorio dental?
           </Text>
           <div className={styles.subsection}>
-            <img
+            {/*  <img
               src={Flecha1}
               className={`${styles.flecha} ${styles.flecha2}`}
-            />
+            /> */}
             <Text bold="font-light" color="black">
               Puedes ponerte en contacto con nosotros por c y te responderemos
               en un plazo de 24 horas.
@@ -308,30 +302,22 @@ const OurProgram = () => {
               .design y te responderemos en un plazo de 24 horas.
             </Text>
             <hr className={styles.separator} />
-            <Text
-              type="smalltitle"
-              bold="bold"
-              color="black"
-              textAlign="center"
-            >
-              Como funciona nuestro programa:
+            <Text type="smalltitle" color="black" textAlign="center">
+              Como aplicar a nuestro programa:
             </Text>
             <ul className={styles.list}>
               <li className={styles.element}>
-                <Text type="bigtitle" color="primary">
-                  1
+                <Text size="ty">
+                  <Mark color="primary-bg">#1</Mark>
                 </Text>
                 <Text>
-                  <Mark color="primary-underline">
-                    Puedes ponerte en contacto con nosotros por correo
-                    electrónico a jaka@ .design y te responderemos en un plazo
-                    de 24 horas.
-                  </Mark>
+                  Puedes ponerte en contacto con nosotros por correo electrónico
+                  a jaka@ .design y te responderemos en un plazo de 24 horas.
                 </Text>
               </li>
               <li className={styles.element}>
-                <Text type="bigtitle" color="primary">
-                  2
+                <Text size="ty">
+                  <Mark color="primary-bg">#2</Mark>
                 </Text>
                 <Text bold="font-light" color="black">
                   Puedes ponerte en contacto con nosotros por correo electrónico
@@ -339,8 +325,8 @@ const OurProgram = () => {
                 </Text>
               </li>
               <li className={styles.element}>
-                <Text type="bigtitle" color="primary">
-                  3
+                <Text size="ty">
+                  <Mark color="primary-bg">#3</Mark>
                 </Text>
                 <Text bold="font-light" color="black">
                   Puedes ponerte en contacto con nosotros por correo electrónico
@@ -348,8 +334,8 @@ const OurProgram = () => {
                 </Text>
               </li>
               <li className={styles.element}>
-                <Text type="bigtitle" color="primary">
-                  4
+                <Text size="ty">
+                  <Mark color="primary-bg">#4</Mark>
                 </Text>
                 <Text bold="font-light" color="black">
                   Puedes ponerte en contacto con nosotros por correo electrónico

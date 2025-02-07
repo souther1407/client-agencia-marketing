@@ -30,6 +30,26 @@
   transform: rotateZ(-2deg) skewX(24deg);
 }
 
+.error-bg-triangular {
+  color: var(--white);
+  position: relative;
+  padding: 0 4px;
+  display: inline-block;
+  width: fit-content;
+  height: fit-content;
+  z-index: 1;
+}
+.error-bg-triangular::before {
+  content: "";
+  width: 100%;
+  height: 75%;
+  background-color: rgba(236, 27, 27, 0.719);
+  position: absolute;
+  top: 8px;
+  z-index: -1;
+  transform: rotateZ(-2deg) skewX(24deg);
+}
+
 .mark.soft {
   color: var(--gray);
   font-weight: bold;
