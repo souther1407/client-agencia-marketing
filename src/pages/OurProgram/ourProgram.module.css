@@ -320,6 +320,7 @@
   background-color: var(--primary-dark);
   position: relative;
   padding-bottom: 60px;
+  z-index: -1;
 }
 
 .flecha3 {
@@ -347,13 +348,26 @@
   flex-direction: column;
   width: 600px;
   padding: 48px 32px;
-  border-radius: 8px;
+  border-radius: 16px;
   gap: 24px;
   margin-left: 80px;
   background-color: var(--light-green);
-  box-shadow: -8px 8px 0px rgb(168, 206, 150);
+  position: relative;
+  border: 1px solid var(--primary);
 }
-
+.contact .form::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 97%;
+  border-radius: 16px;
+  height: 97%;
+  left: -12px;
+  top: 12px;
+  padding: 8px;
+  background-color: rgb(196, 209, 190);
+  border: 2px solid var(--primary);
+}
 .contact .formLine {
   display: flex;
   width: 100%;
