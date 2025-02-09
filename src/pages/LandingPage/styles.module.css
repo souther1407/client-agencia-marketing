@@ -773,6 +773,9 @@ body:has(.popupContainer) {
   .whoAreWe__contents > :nth-child(2) {
     margin-bottom: 24px;
   }
+  .whoAreWe__contents .separator {
+    margin-bottom: 36px;
+  }
   .banner__btns > :first-child {
     height: 54px !important;
   }
