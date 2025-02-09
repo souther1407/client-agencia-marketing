@@ -207,6 +207,7 @@ body:has(.popupContainer) {
 }
 .quieroHacerCrecerBtn {
   width: 400px;
+  height: 52px !important;
 }
 .whoAreWe {
   background-color: var(--primary-very-transparent);
@@ -731,12 +732,6 @@ body:has(.popupContainer) {
     width: 100%;
     right: 0;
   }
-  .contactBannerSection {
-    display: flex;
-    justify-content: center;
-    height: auto;
-    padding: 48px 32px;
-  }
 
   .mainContent {
   }
@@ -759,6 +754,9 @@ body:has(.popupContainer) {
   }
   .partners > :first-child {
     margin-bottom: 14px;
+  }
+  .contactBannerSection > .desc {
+    margin-top: 0px;
   }
   .banner__content > :nth-child(2) {
     text-align: center !important;
@@ -858,6 +856,12 @@ body:has(.popupContainer) {
     position: static !important;
     width: 100% !important;
     gap: 16px;
+  }
+  .contactBannerSection {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    padding: 52px 32px;
   }
   .contactBannerSection .details {
     width: 100%;
@@ -973,12 +977,6 @@ body:has(.popupContainer) {
 }
 
 @media screen and (max-width: 600px) {
-  .contactBannerSection {
-    padding: 40px 0;
-  }
-  .stickyContainer {
-    padding: 20px;
-  }
 }
 @media screen and (max-width: 400px) {
 }

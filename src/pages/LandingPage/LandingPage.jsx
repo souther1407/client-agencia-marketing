@@ -259,12 +259,8 @@ const LandingPage = () => {
             </Text>
 
             <div className={styles.quieroHacerCrecerBtn}>
-              <IconTextButton
-                colorVariant="primary"
-                size="100%"
-                textProps={{ bold: "font-light" }}
-              >
-                Quiero saber más
+              <IconTextButton colorVariant="primary" size="100%">
+                Ver más
               </IconTextButton>
             </div>
           </div>
