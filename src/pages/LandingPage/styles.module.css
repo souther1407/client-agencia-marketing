@@ -725,9 +725,7 @@ body:has(.popupContainer) {
     width: 75%;
     transform: none;
   }
-  .banner__img {
-    width: 100%;
-  }
+
   .banner__content {
     width: 100%;
     right: 0;
@@ -746,6 +744,9 @@ body:has(.popupContainer) {
   }
 }
 @media screen and (max-width: 1024px) {
+  .banner__content {
+    overflow-x: hidden;
+  }
   .banner__content > :nth-child(1) {
     text-align: center !important;
     font-size: 3.2rem;
@@ -766,6 +767,9 @@ body:has(.popupContainer) {
   .whoAreWe {
     padding: 20px;
     align-items: flex-start;
+  }
+  .banner__img {
+    width: 115%;
   }
   .quieroHacerCrecerBtn {
     width: 100%;
