@@ -753,7 +753,9 @@ body:has(.popupContainer) {
     line-height: 1.1;
     margin-bottom: 24px;
   }
-
+  .partners > :first-child {
+    margin-bottom: 14px;
+  }
   .banner__content > :nth-child(2) {
     text-align: center !important;
     font-size: 15px;
@@ -767,6 +769,7 @@ body:has(.popupContainer) {
   }
   .whoAreWe {
     padding: 20px;
+    padding-top: 28px;
     align-items: flex-start;
   }
   .banner__img {
