@@ -178,7 +178,7 @@
     font-size: 3rem;
   }
   .sm {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   .ty {
     font-size: 1rem;
@@ -188,6 +188,10 @@
   }
   .text {
     line-height: 1.5;
+  }
+  .subtitle {
+    font-size: 20px;
+    line-height: 1.3;
   }
 }
 

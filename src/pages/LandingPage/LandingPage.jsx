@@ -273,7 +273,7 @@ const LandingPage = () => {
                   1
                 </Text>
               </div>
-              <Text type="subtitle" bold="semibold" color="black">
+              <Text type="subtitle" color="black">
                 La publicidad de tu consultorio es genérica
               </Text>
             </div>
@@ -293,7 +293,7 @@ const LandingPage = () => {
                   2
                 </Text>
               </div>
-              <Text type="subtitle" bold="semibold" color="black">
+              <Text type="subtitle" color="black">
                 El diseño de tu Sitio Web Dental es ineficiente
               </Text>
             </div>
@@ -313,7 +313,7 @@ const LandingPage = () => {
                   3
                 </Text>
               </div>
-              <Text type="subtitle" bold="semibold" color="black">
+              <Text type="subtitle" color="black">
                 Tu estrategia de redes sociales es pobre
               </Text>
             </div>
@@ -333,7 +333,7 @@ const LandingPage = () => {
                   4
                 </Text>
               </div>
-              <Text type="subtitle" bold="semibold" color="black">
+              <Text type="subtitle" color="black">
                 Te faltan reseñas positivas online
               </Text>
             </div>
@@ -353,7 +353,7 @@ const LandingPage = () => {
                   5
                 </Text>
               </div>
-              <Text type="subtitle" bold="semibold" color="black">
+              <Text type="subtitle" color="black">
                 Tienes un mal sistema de recordatorio de citas
               </Text>
             </div>

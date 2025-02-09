@@ -373,13 +373,14 @@ body:has(.popupContainer) {
   transform: scale(1.1);
 }
 .detail__header .number {
-  padding: 0 8px;
+  padding: 0 5px;
   border-radius: 4px;
   display: flex;
   justify-content: center;
   align-items: center;
   align-self: center;
   background-color: var(--primary);
+  height: 16px;
 }
 
 .detail .desc {
@@ -830,7 +831,7 @@ body:has(.popupContainer) {
   .detail__header .number {
     align-self: start;
     position: relative;
-    top: 8px;
+    top: 4px;
   }
   .neneArio {
     margin-top: 16px;
