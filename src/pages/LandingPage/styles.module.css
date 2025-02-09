@@ -760,7 +760,7 @@ body:has(.popupContainer) {
   }
   .banner__content > :nth-child(4) {
     text-align: center !important;
-    font-size: 13px;
+    font-size: 12.5px;
   }
   .banner__btns > :first-child {
     height: 54px !important;
