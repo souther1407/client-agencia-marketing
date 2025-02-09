@@ -746,6 +746,16 @@ body:has(.popupContainer) {
   }
 }
 @media screen and (max-width: 1024px) {
+  .banner__content > :nth-child(1) {
+    text-align: center !important;
+  }
+
+  .banner__content > :nth-child(2) {
+    text-align: center !important;
+  }
+  .banner__content > :nth-child(4) {
+    text-align: center !important;
+  }
   .whoAreWe {
     padding: 20px;
     align-items: flex-start;
