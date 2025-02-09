@@ -768,7 +768,7 @@ body:has(.popupContainer) {
     font-size: 12.5px;
   }
   .whoAreWe__contents > :nth-child(1) {
-    margin-bottom: 24px;
+    margin-bottom: 20px;
   }
   .whoAreWe__contents > :nth-child(2) {
     margin-bottom: 24px;
@@ -825,7 +825,7 @@ body:has(.popupContainer) {
     top: 8px;
   }
   .neneArio {
-    margin-top: 24px;
+    margin-top: 12px;
     display: none;
   }
   .neneArio.mobile {
