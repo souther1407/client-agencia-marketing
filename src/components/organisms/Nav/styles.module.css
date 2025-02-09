@@ -69,7 +69,7 @@
   padding-left: var(--width-unit);
   padding-right: var(--width-unit);
   background-color: #eef5f4;
-  height: 92px;
+  height: 84px;
 }
 .bottomMenu.changeColor {
   background-color: var(--light-green);
@@ -422,6 +422,9 @@ body:has(.resoursesDropDown.show) {
     display: flex;
     flex-direction: column;
     width: 100%;
+  }
+  .logo > :first-child {
+    width: 180px;
   }
   .nav {
     height: auto;
