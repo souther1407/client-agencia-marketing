@@ -704,7 +704,7 @@ body:has(.popupContainer) {
     height: auto;
     justify-content: center;
     flex-direction: column;
-    gap: 32px;
+    gap: 12px;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -751,6 +751,7 @@ body:has(.popupContainer) {
     text-align: center !important;
     font-size: 3.2rem;
     line-height: 1.1;
+    margin-bottom: 24px;
   }
 
   .banner__content > :nth-child(2) {
