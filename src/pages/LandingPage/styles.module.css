@@ -769,7 +769,7 @@ body:has(.popupContainer) {
     align-items: flex-start;
   }
   .banner__img {
-    width: 115%;
+    width: 100%;
   }
   .quieroHacerCrecerBtn {
     width: 100%;
