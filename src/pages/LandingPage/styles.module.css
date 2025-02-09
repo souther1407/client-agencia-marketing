@@ -760,6 +760,9 @@ body:has(.popupContainer) {
     text-align: center !important;
     font-size: 12px;
   }
+  .banner__btns > :first-child {
+    height: 50px !important;
+  }
   .whoAreWe {
     padding: 20px;
     align-items: flex-start;

@@ -183,6 +183,9 @@
   .ty {
     font-size: 1rem;
   }
+  .md {
+    font-size: 1.334rem;
+  }
 }
 
 @media screen and (max-width: 400px) {
