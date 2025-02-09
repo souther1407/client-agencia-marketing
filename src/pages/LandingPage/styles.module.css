@@ -5,7 +5,7 @@
   --banner-height: calc(var(--width-unit) * 2);
   --yellow-line: calc(var(--width-unit) * 0.375);
   --green-line: calc(var(--width-unit) * 0.25);
-  --mobile-margin: 16px;
+  --mobile-margin: 20px;
 }
 .line {
   display: flex;
