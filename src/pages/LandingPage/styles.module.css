@@ -767,6 +767,9 @@ body:has(.popupContainer) {
     align-items: center;
     border-radius: 32px 32px 0 0;
   }
+  .mainContent__desc {
+    width: 100%;
+  }
   .popImg img {
     width: 140px;
   }
