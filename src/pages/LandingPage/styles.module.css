@@ -748,7 +748,8 @@ body:has(.popupContainer) {
 @media screen and (max-width: 1024px) {
   .banner__content > :nth-child(1) {
     text-align: center !important;
-    font-size: 3.7rem;
+    font-size: 3.2rem;
+    line-height: 1.1;
   }
 
   .banner__content > :nth-child(2) {
