@@ -202,7 +202,7 @@ const LandingPage = () => {
             alt="Nene ario"
           />
           <hr className={styles.separator} />
-          <Text color="black" size="xxlg">
+          <Text color="black" size="xxxlg" textAlign="center">
             ¿Qué nos diferencia de otras agencias?
           </Text>
           <div className={styles.listDiferences}>
