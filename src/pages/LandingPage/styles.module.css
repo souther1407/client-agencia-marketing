@@ -828,8 +828,8 @@ body:has(.popupContainer) {
     top: 8px;
   }
   .neneArio {
-    margin-top: 12px;
-    margin-bottom: 0;
+    margin-top: 16px;
+    margin-bottom: 16px;
     display: none;
   }
   .neneArio.mobile {
