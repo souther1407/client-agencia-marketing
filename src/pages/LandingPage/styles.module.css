@@ -771,7 +771,7 @@ body:has(.popupContainer) {
     margin-bottom: 28px;
   }
   .whoAreWe__contents > :nth-child(2) {
-    margin-bottom: 32px;
+    margin-bottom: 24px;
   }
   .banner__btns > :first-child {
     height: 54px !important;
