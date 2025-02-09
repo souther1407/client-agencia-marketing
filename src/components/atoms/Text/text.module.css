@@ -186,6 +186,9 @@
   .md {
     font-size: 1.334rem;
   }
+  .text {
+    line-height: 1.3;
+  }
 }
 
 @media screen and (max-width: 400px) {
