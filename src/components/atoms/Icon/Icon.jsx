@@ -14,7 +14,7 @@ import {
   MdOutlinePrivacyTip,
 } from "react-icons/md";
 import styles from "./icon.module.css";
-import { FaLinkedin, FaArrowRight } from "react-icons/fa6";
+import { FaLinkedin, FaArrowRight, FaCircleCheck } from "react-icons/fa6";
 import { FaFacebook, FaInstagram, FaPlay, FaWpforms } from "react-icons/fa";
 import { BiSolidMedal } from "react-icons/bi";
 import { CiWarning } from "react-icons/ci";
@@ -39,7 +39,7 @@ const Icon = ({ type, size, color = "inherit" }) => {
     info: <FaInfoCircle {...props} />,
     diamond: <IoDiamondOutline {...props} />,
     close: <FaTimes {...props} />,
-    check: <FaCheck {...props} />,
+    check: <FaCircleCheck {...props} />,
     bars: <FaBars {...props} />,
     rightArrow: <FaArrowRight {...props} />,
     arrow: <MdArrowForwardIos {...props} />,
