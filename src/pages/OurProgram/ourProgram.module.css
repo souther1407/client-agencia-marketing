@@ -407,7 +407,7 @@
 
   .banner {
     height: auto;
-    padding: 32px;
+    padding: 16px;
     position: relative;
   }
   .banner .elements {
@@ -461,7 +461,7 @@
     height: auto;
     align-items: center;
     justify-content: center;
-    padding: 32px;
+    padding: 16px;
     gap: 44px;
     padding-top: 72px;
     padding-bottom: 60px;
@@ -489,7 +489,7 @@
     width: 100%;
   }
   .ventaHumo > .subsection {
-    padding: 32px;
+    padding: 16px;
     margin-top: 28px;
   }
   .ventaHumo > .subsection > * {
@@ -528,7 +528,7 @@
   .cardMeet {
     width: 100%;
     border-radius: 0;
-    padding: 32px;
+    padding: 16px;
     top: 60px;
   }
   .cardMeet .cardMeetDetail {
@@ -557,7 +557,7 @@
     width: 100%;
   }
   .ventaHumo > .subsection {
-    padding: 32px;
+    padding: 16px;
     margin-top: 28px;
   }
   .ventaHumo > .subsection > * {
@@ -570,7 +570,7 @@
   .cardMeet {
     width: 100%;
     border-radius: 0;
-    padding: 32px;
+    padding: 16px;
     top: 60px;
   }
   .cardMeet .cardMeetDetail {
