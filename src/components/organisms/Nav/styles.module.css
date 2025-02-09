@@ -440,7 +440,7 @@ body:has(.resoursesDropDown.show) {
     display: flex;
   }
   .bottomMenu {
-    padding: 0 32px;
+    padding: 0 16px 0 4px;
   }
   .formBtn {
     display: none;

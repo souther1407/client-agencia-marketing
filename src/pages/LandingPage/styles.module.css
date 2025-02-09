@@ -5,7 +5,7 @@
   --banner-height: calc(var(--width-unit) * 2);
   --yellow-line: calc(var(--width-unit) * 0.375);
   --green-line: calc(var(--width-unit) * 0.25);
-  --mobile-margin: 32px;
+  --mobile-margin: 16px;
 }
 .line {
   display: flex;
@@ -829,6 +829,7 @@ body:has(.popupContainer) {
   .mainContent__card {
     flex-direction: column;
     gap: 16px;
+    height: auto;
   }
   .mainContent__card img {
     width: 100%;
