@@ -273,6 +273,7 @@ body:has(.popupContainer) {
   gap: 24px;
   margin-bottom: 36px;
 }
+
 /* .contactBannerSection::after {
   position: absolute;
   content: " ";
@@ -782,7 +783,13 @@ body:has(.popupContainer) {
   .whoAreWe {
     padding: 20px;
     padding-top: 28px;
+    padding-bottom: 32px;
     align-items: flex-start;
+  }
+  .listDiferences .line > i {
+    position: relative;
+    align-self: self-start;
+    top: 6px;
   }
   .banner__img {
     width: 100%;

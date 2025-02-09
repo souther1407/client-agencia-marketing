@@ -202,7 +202,12 @@ const LandingPage = () => {
             alt="Nene ario"
           />
           <hr className={styles.separator} />
-          <Text color="black" size="xxxlg" textAlign="center">
+          <Text
+            color="black"
+            size="xxxlg"
+            textAlign="center"
+            s={{ lineHeight: "1.3" }}
+          >
             ¿Qué nos diferencia de otras agencias?
           </Text>
           <div className={styles.listDiferences}>
@@ -230,14 +235,8 @@ const LandingPage = () => {
                 Trabajamos con un numero limitado de consultorio.
               </Text>
             </div>
-            {/* <div className={styles.line}>
-              <Icon type={"check"} color="var(--primary)" size={"1rem"} />
-              <Text color="black" bold="font-light">
-                Traemos pacientes de tus tratamientos más rentables.
-              </Text>
-            </div> */}
           </div>
-          <Text color="black" size="lg">
+          <Text color="black">
             Puedes ponerte en contacto con nosotros por correo electrónico a
             <br />
             jaka@ .design y te responderemos en un plazo de 24 horas.
