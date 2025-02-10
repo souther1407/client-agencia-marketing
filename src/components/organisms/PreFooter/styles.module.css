@@ -67,6 +67,12 @@
 
     padding-bottom: 64px;
   }
+  .banner > :nth-child(1) {
+    margin-bottom: 12px;
+  }
+  .banner > :nth-child(2) {
+    margin-bottom: 8px;
+  }
   .preFooter {
     padding: 36px 0;
   }
