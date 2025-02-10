@@ -253,9 +253,10 @@ const LandingPage = () => {
               fontFamily="font-cuarternary"
               s={{ lineHeight: "1.4" }}
             >
-              5 Razones por las que pacientes{" "}
-              <Mark color="primary-bg-triangular">no eligen</Mark>
-              <br /> tu consultorio
+              5 Razones por las que <br />
+              pacientes <Mark color="primary-bg-triangular">no eligen</Mark>
+              <br />
+              tu consultorio
             </Text>
 
             <div className={styles.quieroHacerCrecerBtn}>
