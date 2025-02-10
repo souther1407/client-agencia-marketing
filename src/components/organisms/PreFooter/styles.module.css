@@ -63,9 +63,9 @@
     flex-direction: column;
     align-items: center;
     padding: 36px;
+    padding-top: 44px;
     gap: 16px;
-
-    padding-bottom: 64px;
+    padding-bottom: 44px;
   }
   .banner > :nth-child(1) {
     margin-bottom: 12px;
@@ -73,8 +73,11 @@
   .banner > :nth-child(2) {
     margin-bottom: 8px;
   }
+  .banner .btn {
+    margin-top: 8px;
+  }
   .preFooter {
-    padding: 36px 0;
+    padding: 44px 0;
   }
   .preFooter .desc {
     display: flex;
