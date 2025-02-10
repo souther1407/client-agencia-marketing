@@ -899,7 +899,9 @@ body:has(.popupContainer) {
 
   .spainLocation__card {
     width: 100%;
-    padding: 28px;
+    padding: 16px;
+    padding-top: 32px;
+    padding-bottom: 24px;
   }
   .spainLocation__btn {
     width: 100%;
