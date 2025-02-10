@@ -442,19 +442,19 @@ const LandingPage = () => {
         </div>
       </section>
       <section className={styles.mainContent}>
-        <Text
-          type="bigtitle"
-          textAlign="center"
-          color="black"
-          s={{ lineHeight: "1.3" }}
-        >
-          Te enseñamos cómo crecer tu consultorio.
-          <br /> Revisa nuestros ebooks
-          <Mark color="primary-bg-triangular" bold="medium">
-            gratuitos
-          </Mark>
-        </Text>
         <div className={styles.mainContent__desc}>
+          <Text
+            type="bigtitle"
+            textAlign="center"
+            color="black"
+            s={{ lineHeight: "1.3" }}
+          >
+            Te enseñamos cómo crecer tu consultorio.
+            <br /> Revisa nuestros ebooks
+            <Mark color="primary-bg-triangular" bold="medium">
+              gratuitos
+            </Mark>
+          </Text>
           <Text color="black" bold="font-light" textAlign="center">
             Si tienes una práctica dental que factura más de $10,000 euros al
             mes y quieres llevarla al siguiente nivel, no dudes en contactarnos.

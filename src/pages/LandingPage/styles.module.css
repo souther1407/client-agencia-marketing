@@ -530,7 +530,9 @@ body:has(.popupContainer) {
 }
 .mainContent__desc {
   display: flex;
+  flex-direction: column;
   width: 70%;
+  gap: 32px;
 }
 .mainContent__cards {
   display: flex;
@@ -822,6 +824,7 @@ body:has(.popupContainer) {
   }
   .mainContent__desc {
     width: 100%;
+    padding: 0 28px;
   }
   .popImg img {
     width: 140px;
@@ -921,6 +924,16 @@ body:has(.popupContainer) {
     width: 100%;
     margin-top: 12px;
   }
+  .mainContent {
+    flex-direction: column;
+    padding: 64px 0px;
+  }
+  .mainContent__cards {
+    padding: 0 12px;
+  }
+  .mainContent .card {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 800px) {
   .banner {
@@ -985,13 +998,6 @@ body:has(.popupContainer) {
   }
   .contactWS > * {
     width: 100% !important;
-  }
-  .mainContent {
-    flex-direction: column;
-    padding: 64px 28px;
-  }
-  .mainContent .card {
-    width: 100%;
   }
 
   .btn {
