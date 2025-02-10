@@ -434,6 +434,9 @@ body:has(.popupContainer) {
   width: 60%;
   gap: 32px;
 }
+.spanishLocation__card_container {
+  width: 75%;
+}
 .spainLocation__card {
   display: flex;
   flex-direction: column;
@@ -443,7 +446,6 @@ body:has(.popupContainer) {
   width: 75%;
   border-radius: 32px;
   align-items: center;
-
   position: relative;
 }
 
