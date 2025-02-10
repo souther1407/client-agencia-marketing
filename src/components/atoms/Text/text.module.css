@@ -80,6 +80,7 @@
 .xxxlg {
   font-size: 1.666665rem;
 }
+
 .semibig {
   font-size: 2rem;
 }
@@ -188,6 +189,9 @@
   }
   .text {
     line-height: 1.5;
+  }
+  .xxxlg {
+    font-size: 1.83333rem;
   }
   .subtitle {
     font-size: 20px;

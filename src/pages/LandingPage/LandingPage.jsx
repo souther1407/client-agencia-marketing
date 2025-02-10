@@ -396,7 +396,7 @@ const LandingPage = () => {
         <div className={styles.spanishLocation__card_container}>
           <div className={styles.spainLocation__card}>
             <div className={styles.spainLocation__card__elements}>
-              <Text size="semibig" color="dark">
+              <Text size="xxxlg" color="dark">
                 Si tu consultorio dental:
               </Text>
               <hr className={styles.spainLocation__card__separator} />
