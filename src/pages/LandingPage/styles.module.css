@@ -880,6 +880,24 @@ body:has(.popupContainer) {
     padding-top: 32px;
     padding-bottom: 24px;
   }
+  .spainLocation {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 52px 28px;
+    gap: 20px;
+  }
+  .spainLocation > :first-child {
+  }
+  .spainLocation__desc {
+    width: 100%;
+  }
+  .spainLocation__card {
+    width: 100%;
+    padding: 28px;
+  }
+  .spainLocation__btn {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 800px) {
   .banner {
@@ -934,24 +952,6 @@ body:has(.popupContainer) {
   }
   .contactBannerSection .btns > :first-child {
     width: 100% !important;
-  }
-
-  .spainLocation {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 64px 28px;
-  }
-  .spainLocation > :first-child {
-  }
-  .spainLocation__desc {
-    width: 100%;
-  }
-  .spainLocation__card {
-    width: 100%;
-    padding: 28px;
-  }
-  .spainLocation__btn {
-    width: 100%;
   }
 
   .banner__btns {
