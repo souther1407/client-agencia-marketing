@@ -552,9 +552,9 @@ body:has(.popupContainer) {
   width: 100%;
   border-radius: 32px;
   height: 100%;
-  left: -8px;
-  top: -8px;
-  padding: 8px;
+  left: -7px;
+  top: -7px;
+  padding: 6px;
   background-color: var(--primary-transparent-50);
   border: 2px solid var(--primary);
 }
