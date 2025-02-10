@@ -436,6 +436,8 @@ body:has(.popupContainer) {
 }
 .spanishLocation__card_container {
   width: 75%;
+  display: flex;
+  justify-content: center;
 }
 .spainLocation__card {
   display: flex;
