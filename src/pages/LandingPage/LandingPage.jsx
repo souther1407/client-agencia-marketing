@@ -393,48 +393,50 @@ const LandingPage = () => {
             .design.
           </Text>
         </div>
-        <div className={styles.spainLocation__card}>
-          <div className={styles.spainLocation__card__elements}>
-            <Text size="semibig" color="dark">
-              Si tu consultorio dental:
-            </Text>
-            <hr className={styles.spainLocation__card__separator} />
-            <div className={styles.spainLocation__items}>
-              <div className={styles.spainLocation__items__item}>
-                <Icon
-                  type={"rightArrow"}
-                  size={"1.4rem"}
-                  color="var(--primary)"
-                />
-                <Text color="dark" bold="regular">
-                  Está ubicado en España.
-                </Text>
+        <div className={styles.spanishLocation__card_container}>
+          <div className={styles.spainLocation__card}>
+            <div className={styles.spainLocation__card__elements}>
+              <Text size="semibig" color="dark">
+                Si tu consultorio dental:
+              </Text>
+              <hr className={styles.spainLocation__card__separator} />
+              <div className={styles.spainLocation__items}>
+                <div className={styles.spainLocation__items__item}>
+                  <Icon
+                    type={"rightArrow"}
+                    size={"1.4rem"}
+                    color="var(--primary)"
+                  />
+                  <Text color="dark" bold="regular">
+                    Está ubicado en España.
+                  </Text>
+                </div>
+                <div className={styles.spainLocation__items__item}>
+                  <Icon
+                    type={"rightArrow"}
+                    size={"1.4rem"}
+                    color="var(--primary)"
+                  />
+                  <Text color="dark" bold="regular">
+                    Factura 10,000 euros o más al mes
+                  </Text>
+                </div>
+                <div className={styles.spainLocation__items__item}>
+                  <Icon
+                    type={"rightArrow"}
+                    size={"1.4rem"}
+                    color="var(--primary)"
+                  />
+                  <Text color="dark" bold="regular">
+                    Quiere crecer rápidamente en el 2025.
+                  </Text>
+                </div>
               </div>
-              <div className={styles.spainLocation__items__item}>
-                <Icon
-                  type={"rightArrow"}
-                  size={"1.4rem"}
-                  color="var(--primary)"
-                />
-                <Text color="dark" bold="regular">
-                  Factura 10,000 euros o más al mes
-                </Text>
+              <div className={styles.spainLocation__btn}>
+                <IconTextButton colorVariant="primary" size="100%">
+                  Solicita una reunión
+                </IconTextButton>
               </div>
-              <div className={styles.spainLocation__items__item}>
-                <Icon
-                  type={"rightArrow"}
-                  size={"1.4rem"}
-                  color="var(--primary)"
-                />
-                <Text color="dark" bold="regular">
-                  Quiere crecer rápidamente en el 2025.
-                </Text>
-              </div>
-            </div>
-            <div className={styles.spainLocation__btn}>
-              <IconTextButton colorVariant="primary" size="100%">
-                Solicita una reunión
-              </IconTextButton>
             </div>
           </div>
         </div>

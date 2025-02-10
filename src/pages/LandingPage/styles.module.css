@@ -883,14 +883,20 @@ body:has(.popupContainer) {
   .spainLocation {
     flex-direction: column;
     align-items: flex-start;
-    padding: 52px 28px;
+    padding: 52px 0px;
     gap: 20px;
   }
-  .spainLocation > :first-child {
-  }
+
   .spainLocation__desc {
     width: 100%;
+    padding: 0 28px;
+    margin-bottom: 8px;
   }
+  .spanishLocation__card_container {
+    padding: 0 10px;
+    width: 100%;
+  }
+
   .spainLocation__card {
     width: 100%;
     padding: 28px;
