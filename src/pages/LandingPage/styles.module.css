@@ -934,6 +934,9 @@ body:has(.popupContainer) {
   .mainContent .card {
     width: 100%;
   }
+  .mainContent__card {
+    padding: 32px 24px 16px 24px;
+  }
 }
 @media screen and (max-width: 800px) {
   .banner {
