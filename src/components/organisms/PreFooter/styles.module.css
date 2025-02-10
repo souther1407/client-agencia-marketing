@@ -50,7 +50,7 @@
   margin-top: 16px;
   width: 280px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   .preFooter {
     display: flex;
     flex-direction: column;
@@ -62,10 +62,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 36px;
     gap: 16px;
 
     padding-bottom: 64px;
+  }
+  .preFooter {
+    padding: 36px 0;
   }
   .preFooter .desc {
     display: flex;
