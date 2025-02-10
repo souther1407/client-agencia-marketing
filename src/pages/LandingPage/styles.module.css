@@ -907,6 +907,9 @@ body:has(.popupContainer) {
     padding-top: 32px;
     padding-bottom: 24px;
   }
+  .spainLocation > :first-child {
+    padding: 0 28px;
+  }
   .spainLocation__btn {
     width: 100%;
   }
