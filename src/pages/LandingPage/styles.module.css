@@ -785,6 +785,9 @@ body:has(.popupContainer) {
     padding-bottom: 32px;
     align-items: flex-start;
   }
+  .details .detail::after {
+    top: 6px;
+  }
   .listDiferences .line > i {
     position: relative;
     align-self: self-start;
