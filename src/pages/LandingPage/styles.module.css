@@ -862,10 +862,14 @@ body:has(.popupContainer) {
     display: flex;
     justify-content: center;
     height: auto;
-    padding: 52px 28px;
+    padding: 52px 0px;
+  }
+  .contactBannerSection > :first-child {
+    padding: 0 28px;
   }
   .contactBannerSection .details {
     width: 100%;
+    padding: 0 12px 0 12px;
   }
   .contactBannerSection .details .detail {
     width: 100%;
