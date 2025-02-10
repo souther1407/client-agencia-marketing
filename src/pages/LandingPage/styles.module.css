@@ -877,7 +877,8 @@ body:has(.popupContainer) {
   .contactBannerSection .details .detail {
     width: 100%;
     padding: 24px;
-    padding-top: 60px;
+    padding-top: 44px;
+    padding-bottom: 28px;
   }
 }
 @media screen and (max-width: 800px) {
@@ -919,7 +920,7 @@ body:has(.popupContainer) {
   .contactBannerSection {
     flex-direction: column;
     width: 100%;
-    gap: 64px;
+    gap: 28px;
   }
   .contactBannerSection .details .detail {
     width: 100%;
