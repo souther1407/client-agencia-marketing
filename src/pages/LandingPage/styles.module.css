@@ -937,6 +937,12 @@ body:has(.popupContainer) {
   .mainContent__card {
     padding: 32px 24px 16px 24px;
   }
+  .mainContent__card__desc {
+    gap: 0;
+  }
+  .mainContent__card__desc > :nth-child(2) {
+    margin-bottom: 28px;
+  }
 }
 @media screen and (max-width: 800px) {
   .banner {
@@ -960,9 +966,7 @@ body:has(.popupContainer) {
     height: 500px;
     align-self: center;
   }
-  .mainContent__card__desc {
-    gap: 16px;
-  }
+
   .partners {
     justify-content: center;
   }
