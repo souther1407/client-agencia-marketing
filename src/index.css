@@ -61,6 +61,11 @@
   src: url("./assets/fonts/Lexend-Light.ttf");
   font-weight: 300;
 }
+@font-face {
+  font-family: "lexend";
+  src: url("./assets/fonts/Lexend-Regular.ttf");
+  font-weight: 400;
+}
 
 @font-face {
   font-family: "bree serif";
