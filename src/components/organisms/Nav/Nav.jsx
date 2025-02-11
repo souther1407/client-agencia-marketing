@@ -489,7 +489,7 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
               size="100%"
               icon={"wp"}
             >
-              Solicita una reunion
+              Consultas al Whatsapp
             </IconTextButton>
           </div>
           <Drawer
