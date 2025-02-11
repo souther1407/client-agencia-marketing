@@ -8,7 +8,8 @@
 .lemon.iconTextButton,
 .primary-rounded,
 .very-light-black.iconTextButton,
-.dark-green.iconTextButton {
+.dark-green.iconTextButton,
+.primary-bordered.iconTextButton {
   display: flex;
   outline: none;
   border: 1px solid transparent;
@@ -143,6 +144,34 @@
   top: 1px;
 }
 .secondary-dark.iconTextButton.bordered {
+  border: 1px solid var(--black);
+  color: var(--black);
+}
+
+/*primary-bordered*/
+.primary-bordered.iconTextButton {
+  display: flex;
+  border: 1px solid var(--primary);
+  padding: 10px 24px;
+  border-radius: 8px;
+  color: var(--black);
+  background-color: white;
+  transition: all 0.3s ease-in;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.primary-bordered.iconTextButton:hover {
+}
+
+.primary-bordered.iconTextButton > i {
+  color: #006a43;
+  position: relative;
+  top: 1px;
+}
+.primary-bordered.iconTextButton.bordered {
   border: 1px solid var(--black);
   color: var(--black);
 }

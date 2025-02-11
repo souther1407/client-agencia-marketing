@@ -326,7 +326,7 @@ body:has(.resoursesDropDown.show) {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  background-color: var(--primary-transparent-2);
+  background-color: #eef5f4;
   padding-top: 60px;
 }
 .btns {

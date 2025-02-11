@@ -485,7 +485,7 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
           <div className={styles.btns}>
             <IconTextButton size="100%">Solicita una reunion</IconTextButton>
             <IconTextButton
-              colorVariant="secondary-dark"
+              colorVariant="primary-bordered"
               size="100%"
               icon={"wp"}
             >
