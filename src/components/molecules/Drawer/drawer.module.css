@@ -19,13 +19,13 @@ body:has(.drawer.show) {
   opacity: 1;
 }
 .logo > :first-child {
-  width: 130px;
+  width: 120px;
 }
 .header {
   display: flex;
   padding: 0 16px 0 16px;
   width: 100%;
-  min-height: 80px;
+  min-height: 72px;
   align-items: center;
   justify-content: space-between;
   background-color: var(--primary);

@@ -18,7 +18,9 @@ const Drawer = ({ show, children, onClose, renderCloBtn, hideLogo }) => {
             </div>
           )}
           <div className={styles.close} onClick={onClose}>
-            {renderCloBtn || <Icon size="2rem" type={"close"} color="white" />}
+            {renderCloBtn || (
+              <Icon size="1.8rem" type={"close"} color="white" />
+            )}
           </div>
         </header>
         <div className={styles.content}>{children}</div>

@@ -379,7 +379,7 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
               Menu
             </Text>
             <span style={{ position: "relative", top: "2px" }}>
-              <Icon size={"2rem"} type={"close"} color="var(--white)" />
+              <Icon size={"1.7rem"} type={"close"} color="var(--white)" />
             </span>
           </div>
         }
