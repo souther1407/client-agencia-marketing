@@ -385,7 +385,7 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
         }
       >
         <div className={styles.mobileMenu}>
-          <div>
+          <div className={styles.dropdownMenus}>
             <div className={styles.dropdownMenu}>
               <Link to={OUR_PROGRAM} target="_blank">
                 <div className={styles.dropMenuBtn}>

@@ -327,7 +327,7 @@ body:has(.resoursesDropDown.show) {
   justify-content: space-between;
   height: 100%;
   background-color: var(--primary-transparent-2);
-  padding-top: 16px;
+  padding-top: 44px;
 }
 .btns {
   display: flex;
@@ -339,16 +339,20 @@ body:has(.resoursesDropDown.show) {
 .btns * {
   font-size: 17px !important;
 }
+.dropdownMenus {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
 .dropdownMenu {
   display: flex;
   flex-direction: column;
-
   overflow: hidden;
 }
 .dropMenuBtn {
   width: 100%;
   display: flex;
-  padding: 16px;
+  padding: 0 16px;
   cursor: pointer;
   justify-content: space-between;
 }
