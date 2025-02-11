@@ -394,7 +394,7 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                       <Text bold="regular" size="xxlg" color="black">
                         Nuestro Programa
                       </Text>
-                      <Icon color="black" type={"arrow"} size={"1.5rem"} />
+                      <Icon color="black" type={"arrow"} size={"1.088rem"} />
                     </div>
                     <Text size="lg" bold="font-light">
                       Transforma tu Consultorio en 6 meses.
@@ -418,7 +418,7 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                     <Text bold="regular" size="xxlg" color="black">
                       Recursos Gratis
                     </Text>
-                    <Icon color="black" type={"arrow"} size={"1.5rem"} />
+                    <Icon color="black" type={"arrow"} size={"1.088rem"} />
                   </div>
                   <Text size="lg" bold="font-light">
                     Aprende sobre Marketing dental.
@@ -441,7 +441,7 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                     <Text bold="regular" size="xxlg" color="black">
                       Contacto
                     </Text>
-                    <Icon color="black" type={"arrow"} size={"1.5rem"} />
+                    <Icon color="black" type={"arrow"} size={"1.088rem"} />
                   </div>
                   <Text size="lg" bold="font-light">
                     Haznos cualquier consulta.
@@ -467,7 +467,7 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                     <Text bold="regular" size="xxlg" color="black">
                       Sobre nosotros
                     </Text>
-                    <Icon color="black" type={"arrow"} size={"1.5rem"} />
+                    <Icon color="black" type={"arrow"} size={"1.088rem"} />
                   </div>
                   <Text size="lg" bold="font-light">
                     Informate sobre HackDental
