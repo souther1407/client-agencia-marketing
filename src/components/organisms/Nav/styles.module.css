@@ -84,7 +84,7 @@
   background-color: var(--primary-darker);
   padding: 0 4px;
   right: -10%;
-  top: -20%;
+  top: -22%;
 }
 .logo {
   cursor: pointer;
@@ -327,7 +327,7 @@ body:has(.resoursesDropDown.show) {
   justify-content: space-between;
   height: 100%;
   background-color: #eef5f4;
-  padding-top: 60px;
+  padding-top: 48px;
 }
 .btns {
   display: flex;

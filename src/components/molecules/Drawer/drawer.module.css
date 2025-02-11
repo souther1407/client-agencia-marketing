@@ -25,7 +25,7 @@ body:has(.drawer.show) {
   display: flex;
   padding: 0 20px 0 20px;
   width: 100%;
-  min-height: 72px;
+  min-height: 68px;
   align-items: center;
   justify-content: space-between;
   background-color: var(--primary);
