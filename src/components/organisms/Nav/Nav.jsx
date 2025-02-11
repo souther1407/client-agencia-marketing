@@ -401,7 +401,7 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                     </Text>
                   </div>
                   <Text size="xty">
-                    <Mark color="primary-bg">Nuevo</Mark>
+                    <Mark color="primary-bg">NUEVO</Mark>
                   </Text>
                 </div>
               </Link>
@@ -425,7 +425,7 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                   </Text>
                 </div>
                 <Text size="xty">
-                  <Mark color="primary-bg">Nuevo</Mark>
+                  <Mark color="primary-bg">NUEVO</Mark>
                 </Text>
               </div>
             </div>
