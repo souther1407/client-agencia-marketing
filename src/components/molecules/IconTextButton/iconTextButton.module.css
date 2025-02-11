@@ -155,7 +155,7 @@
   padding: 10px 24px;
   border-radius: 8px;
   color: var(--black);
-  background-color: white;
+  background-color: #fafafa;
   transition: all 0.3s ease-in;
   justify-content: center;
   align-items: center;
