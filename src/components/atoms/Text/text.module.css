@@ -190,7 +190,9 @@
   .text {
     line-height: 1.5;
   }
-
+  .xxlg {
+    font-size: 17px;
+  }
   .subtitle {
     font-size: 20px;
     line-height: 1.3;
