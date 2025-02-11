@@ -347,7 +347,7 @@ body:has(.resoursesDropDown.show) {
 .dropdownMenus {
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: 24px;
 }
 .dropdownMenu {
   display: flex;
