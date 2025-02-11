@@ -94,7 +94,9 @@
 }
 
 .secondary.iconTextButton > i {
-  color: var(--primary);
+  color: #006a43;
+  position: relative;
+  top: 6px;
 }
 
 /* terciary */
@@ -136,7 +138,9 @@
 }
 
 .secondary-dark.iconTextButton > i {
-  color: var(--primary);
+  color: #006a43;
+  position: relative;
+  top: 1px;
 }
 .secondary-dark.iconTextButton.bordered {
   border: 1px solid var(--black);

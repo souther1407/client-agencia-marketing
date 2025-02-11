@@ -35,7 +35,7 @@ const Icon = ({ type, size, color = "inherit" }) => {
   };
   const icons = {
     send: <RiSendPlaneLine {...props} />,
-    wp: <FaWhatsapp {...props} />,
+    wp: <IoLogoWhatsapp {...props} />,
     info: <FaInfoCircle {...props} />,
     diamond: <IoDiamondOutline {...props} />,
     close: <IoMdClose {...props} />,
