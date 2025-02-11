@@ -14,9 +14,12 @@
   visibility: visible;
   opacity: 1;
 }
+.logo > :first-child {
+  width: 150px;
+}
 .header {
   display: flex;
-  padding: 0 8px 0 32px;
+  padding: 0 16px 0 16px;
   width: 100%;
   min-height: 80px;
   align-items: center;

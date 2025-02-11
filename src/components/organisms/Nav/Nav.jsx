@@ -384,7 +384,7 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                       Transforma tu Consultorio en 6 meses.
                     </Text>
                   </div>
-                  <Text>
+                  <Text size="ty">
                     <Mark color="primary-bg">Nuevo</Mark>
                   </Text>
                 </div>
@@ -408,7 +408,7 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                     Aprende sobre Marketing dental.
                   </Text>
                 </div>
-                <Text>
+                <Text size="ty">
                   <Mark color="primary-bg">Nuevo</Mark>
                 </Text>
               </div>

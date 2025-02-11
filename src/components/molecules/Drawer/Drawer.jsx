@@ -10,7 +10,13 @@ const Drawer = ({ show, children, onClose, renderCloBtn, hideLogo }) => {
     >
       <div className={styles.container} onClick={(e) => e.stopPropagation()}>
         <header className={styles.header}>
-          {hideLogo ? <div></div> : <Logo color="white" />}
+          {hideLogo ? (
+            <div></div>
+          ) : (
+            <div className={styles.logo}>
+              <Logo color="white" />
+            </div>
+          )}
           <div className={styles.close} onClick={onClose}>
             {renderCloBtn || <Icon size="2rem" type={"close"} color="white" />}
           </div>
