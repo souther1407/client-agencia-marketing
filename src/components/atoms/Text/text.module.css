@@ -184,6 +184,9 @@
   .ty {
     font-size: 1rem;
   }
+  .xty {
+    font-size: 10px;
+  }
   .md {
     font-size: 1.334rem;
   }
