@@ -367,6 +367,22 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
           setShowMobileMenu(false);
           setNavMobileMenuIsShow(false);
         }}
+        renderCloBtn={
+          <div
+            style={{
+              display: "flex",
+              gap: "8px",
+              alignItems: "center",
+            }}
+          >
+            <Text size="xlg" color="light">
+              Menu
+            </Text>
+            <span style={{ position: "relative", top: "2px" }}>
+              <Icon size={"2rem"} type={"close"} color="var(--white)" />
+            </span>
+          </div>
+        }
       >
         <div className={styles.mobileMenu}>
           <div>

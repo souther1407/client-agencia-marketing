@@ -18,7 +18,7 @@ import { FaLinkedin, FaArrowRight, FaCircleCheck } from "react-icons/fa6";
 import { FaFacebook, FaInstagram, FaPlay, FaWpforms } from "react-icons/fa";
 import { BiSolidMedal } from "react-icons/bi";
 import { CiWarning } from "react-icons/ci";
-
+import { IoMdClose } from "react-icons/io";
 import {
   IoIosArrowForward,
   IoIosArrowDown,
@@ -38,7 +38,7 @@ const Icon = ({ type, size, color = "inherit" }) => {
     wp: <FaWhatsapp {...props} />,
     info: <FaInfoCircle {...props} />,
     diamond: <IoDiamondOutline {...props} />,
-    close: <FaTimes {...props} />,
+    close: <IoMdClose {...props} />,
     check: <FaCircleCheck {...props} />,
     bars: <FaBars {...props} />,
     rightArrow: <FaArrowRight {...props} />,
