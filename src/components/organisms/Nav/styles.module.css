@@ -354,6 +354,10 @@ body:has(.resoursesDropDown.show) {
   flex-direction: column;
   overflow: hidden;
 }
+.dropMenuBtn :last-child {
+  position: relative;
+  top: 2px;
+}
 .dropMenuBtn {
   width: 100%;
   display: flex;
