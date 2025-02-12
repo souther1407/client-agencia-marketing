@@ -622,7 +622,7 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                     }}
                   >
                     <Icon color="black" size={"1.52rem"} type={"form"} />
-                    <Text color="black" size="xxlg" bold="regular">
+                    <Text color="black" s={{ fontSize: "15px" }} bold="regular">
                       {" "}
                       Forma de contacto
                     </Text>
@@ -637,7 +637,7 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                     }}
                   >
                     <Icon color="black" size={"1.52rem"} type={"email"} />
-                    <Text color="black" size="xxlg" bold="regular">
+                    <Text color="black" s={{ fontSize: "15px" }} bold="regular">
                       {" "}
                       info@inkadentist.com
                     </Text>
@@ -652,7 +652,7 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                     }}
                   >
                     <Icon color="black" size={"1.52rem"} type={"wp"} />
-                    <Text color="black" size="xxlg" bold="regular">
+                    <Text color="black" s={{ fontSize: "15px" }} bold="regular">
                       {" "}
                       WhatsApp
                     </Text>
