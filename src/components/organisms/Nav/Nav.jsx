@@ -673,7 +673,7 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
               <div
                 style={{
                   display: "flex",
-                  gap: "8px",
+                  gap: "4px",
                   alignItems: "center",
                 }}
               >
