@@ -411,7 +411,7 @@ body:has(.resoursesDropDown.show) {
   border-radius: 8px;
   gap: 16px;
   cursor: pointer;
-  height: 120px;
+  height: 112px;
 }
 .mobileCardContainer {
   background-color: var(--black);
