@@ -688,57 +688,63 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
             }
           >
             <div className={styles.mobileContact}>
-              <Text color="black" type="subtitle" fontFamily="font-terciary">
+              <Text
+                color="black"
+                s={{ fontSize: "21px" }}
+                fontFamily="font-terciary"
+              >
                 ¿Quienes somos?
               </Text>
               <Text size="lg" bold="font-light">
                 Informate sobre HackDental y sus áreas de expertise.
               </Text>
-              <div className={styles.contactBtn}>
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "8px",
-                  }}
-                  onClick={() => navigate(ACERCA_DE)}
-                >
-                  <Icon color="black" size={"2rem"} type={"team"} />
-                  <Text color="black" size="xxlg">
-                    {" "}
-                    Nuestro Equipo
-                  </Text>
+              <div className={styles.links}>
+                <div className={styles.contactBtn}>
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "8px",
+                    }}
+                    onClick={() => navigate(ACERCA_DE)}
+                  >
+                    <Icon color="black" size={"1.52rem"} type={"team"} />
+                    <Text color="black" s={{ fontSize: "15px" }} bold="regular">
+                      {" "}
+                      Nuestro Equipo
+                    </Text>
+                  </div>
                 </div>
-              </div>
-              <div className={styles.contactBtn}>
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "8px",
-                  }}
-                  onClick={() => navigate(CUMPLIMIENTO)}
-                >
-                  <Icon color="black" size={"2rem"} type={"commitment"} />
-                  <Text color="black" size="xxlg">
-                    {" "}
-                    Cumplimiento del RGPD
-                  </Text>
+                <div className={styles.contactBtn}>
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "8px",
+                    }}
+                    onClick={() => navigate(CUMPLIMIENTO)}
+                  >
+                    <Icon color="black" size={"1.52rem"} type={"commitment"} />
+                    <Text color="black" s={{ fontSize: "15px" }} bold="regular">
+                      {" "}
+                      Cumplimiento del RGPD
+                    </Text>
+                  </div>
                 </div>
-              </div>
-              <div className={styles.contactBtn}>
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "8px",
-                  }}
-                >
-                  <Icon color="black" size={"2rem"} type={"privacy"} />
-                  <Text color="black" size="xxlg">
-                    {" "}
-                    Política de privacidad
-                  </Text>
+                <div className={styles.contactBtn}>
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "8px",
+                    }}
+                  >
+                    <Icon color="black" size={"1.52rem"} type={"privacy"} />
+                    <Text color="black" s={{ fontSize: "15px" }} bold="regular">
+                      {" "}
+                      Política de privacidad
+                    </Text>
+                  </div>
                 </div>
               </div>
             </div>
