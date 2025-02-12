@@ -417,9 +417,11 @@ body:has(.resoursesDropDown.show) {
   background-color: var(--black);
 }
 .mobileCard .mobileImg {
-  width: 100px;
+  width: 120px;
   height: 75px;
   border-radius: 8px;
+  object-fit: fill;
+  object-position: 0 5px;
 }
 .mobileCard .mobileDesc {
   display: flex;
