@@ -431,7 +431,9 @@ body:has(.resoursesDropDown.show) {
   width: 100%;
   padding: 8px 16px;
   padding-top: 48px;
-  gap: 16px;
+}
+.mobileContact > :nth-child(1) {
+  margin-bottom: 4px;
 }
 @media screen and (max-width: 1200px) {
   .elements {
