@@ -435,6 +435,14 @@ body:has(.resoursesDropDown.show) {
 .mobileContact > :nth-child(1) {
   margin-bottom: 4px;
 }
+.mobileContact > :nth-child(2) {
+  margin-bottom: 24px;
+}
+.mobileContact .links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
 @media screen and (max-width: 1200px) {
   .elements {
     display: flex;

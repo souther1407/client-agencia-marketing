@@ -611,49 +611,52 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                 Haznos cualquier consulta, te responderemos en menos de 24
                 horas.
               </Text>
-              <div className={styles.contactBtn}>
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "8px",
-                  }}
-                >
-                  <Icon color="black" size={"1.52rem"} type={"form"} />
-                  <Text color="black" size="xxlg" bold="regular">
-                    {" "}
-                    Forma de contacto
-                  </Text>
+
+              <div className={styles.links}>
+                <div className={styles.contactBtn}>
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "8px",
+                    }}
+                  >
+                    <Icon color="black" size={"1.52rem"} type={"form"} />
+                    <Text color="black" size="xxlg" bold="regular">
+                      {" "}
+                      Forma de contacto
+                    </Text>
+                  </div>
                 </div>
-              </div>
-              <div className={styles.contactBtn}>
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "8px",
-                  }}
-                >
-                  <Icon color="black" size={"1.52rem"} type={"email"} />
-                  <Text color="black" size="xxlg" bold="regular">
-                    {" "}
-                    info@inkadentist.com
-                  </Text>
+                <div className={styles.contactBtn}>
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "8px",
+                    }}
+                  >
+                    <Icon color="black" size={"1.52rem"} type={"email"} />
+                    <Text color="black" size="xxlg" bold="regular">
+                      {" "}
+                      info@inkadentist.com
+                    </Text>
+                  </div>
                 </div>
-              </div>
-              <div className={styles.contactBtn}>
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "8px",
-                  }}
-                >
-                  <Icon color="black" size={"1.52rem"} type={"wp"} />
-                  <Text color="black" size="xxlg" bold="regular">
-                    {" "}
-                    WhatsApp
-                  </Text>
+                <div className={styles.contactBtn}>
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "8px",
+                    }}
+                  >
+                    <Icon color="black" size={"1.52rem"} type={"wp"} />
+                    <Text color="black" size="xxlg" bold="regular">
+                      {" "}
+                      WhatsApp
+                    </Text>
+                  </div>
                 </div>
               </div>
             </div>
