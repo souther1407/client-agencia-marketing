@@ -620,7 +620,7 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                   }}
                 >
                   <Icon color="black" size={"2rem"} type={"form"} />
-                  <Text color="black" size="xxlg">
+                  <Text color="black" size="xxlg" bold="regular">
                     {" "}
                     Forma de contacto
                   </Text>
@@ -635,7 +635,7 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                   }}
                 >
                   <Icon color="black" size={"2rem"} type={"email"} />
-                  <Text color="black" size="xxlg">
+                  <Text color="black" size="xxlg" bold="regular">
                     {" "}
                     info@inkadentist.com
                   </Text>
@@ -650,7 +650,7 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                   }}
                 >
                   <Icon color="black" size={"2rem"} type={"wp"} />
-                  <Text color="black" size="xxlg">
+                  <Text color="black" size="xxlg" bold="regular">
                     {" "}
                     WhatsApp
                   </Text>
