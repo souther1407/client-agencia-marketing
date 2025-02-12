@@ -550,7 +550,7 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                         >
                           Marketing Dental: La Guia Definitiva
                         </Text>
-                        <Text s={{ fontSize: "13px" }} bold="regular">
+                        <Text s={{ fontSize: "12px" }} bold="regular">
                           Descarga Gratis
                         </Text>
                       </div>
@@ -575,7 +575,7 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                         >
                           Marketing Dental: La Guia Definitiva
                         </Text>
-                        <Text s={{ fontSize: "13px" }} bold="regular">
+                        <Text s={{ fontSize: "12px" }} bold="regular">
                           Descarga Gratis
                         </Text>
                       </div>
