@@ -610,7 +610,7 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
               </div>
               <div className={styles.btns}>
                 <IconTextButton colorVariant="primary-bordered" size="100%">
-                  Ir a la biblioteca de ebooks
+                  Ir a biblioteca de ebooks
                 </IconTextButton>
               </div>
             </div>
