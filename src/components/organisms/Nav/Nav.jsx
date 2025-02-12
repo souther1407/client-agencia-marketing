@@ -619,7 +619,7 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                     gap: "8px",
                   }}
                 >
-                  <Icon color="black" size={"2rem"} type={"form"} />
+                  <Icon color="black" size={"1.52rem"} type={"form"} />
                   <Text color="black" size="xxlg" bold="regular">
                     {" "}
                     Forma de contacto
@@ -634,7 +634,7 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                     gap: "8px",
                   }}
                 >
-                  <Icon color="black" size={"2rem"} type={"email"} />
+                  <Icon color="black" size={"1.52rem"} type={"email"} />
                   <Text color="black" size="xxlg" bold="regular">
                     {" "}
                     info@inkadentist.com
@@ -649,7 +649,7 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                     gap: "8px",
                   }}
                 >
-                  <Icon color="black" size={"2rem"} type={"wp"} />
+                  <Icon color="black" size={"1.52rem"} type={"wp"} />
                   <Text color="black" size="xxlg" bold="regular">
                     {" "}
                     WhatsApp
