@@ -548,7 +548,9 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                         >
                           Marketing Dental: La Guia Definitiva
                         </Text>
-                        <Text s={{ fontSize: "13px" }}>Descargar Gratis</Text>
+                        <Text s={{ fontSize: "13px" }} bold="regular">
+                          Descarga Gratis
+                        </Text>
                       </div>
                     </div>
                   </Link>
@@ -571,7 +573,9 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                         >
                           Marketing Dental: La Guia Definitiva
                         </Text>
-                        <Text s={{ fontSize: "13px" }}>Descargar Gratis</Text>
+                        <Text s={{ fontSize: "13px" }} bold="regular">
+                          Descarga Gratis
+                        </Text>
                       </div>
                     </div>
                   </Link>
@@ -593,7 +597,9 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                         >
                           Marketing Dental: La Guia Definitiva
                         </Text>
-                        <Text s={{ fontSize: "13px" }}>Descargar Gratis</Text>
+                        <Text s={{ fontSize: "13px" }} bold="regular">
+                          Descarga Gratis
+                        </Text>
                       </div>
                     </div>
                   </Link>
