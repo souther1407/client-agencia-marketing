@@ -514,7 +514,9 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
               </div>
             }
           >
-            <div className={`${styles.dropElements} ${styles.show}`}>
+            <div
+              className={`${styles.dropElements} ${styles.resources} ${styles.show}`}
+            >
               <div className={styles.resourcesContainer}>
                 <div className={styles.recursosDesc}>
                   <Text
@@ -579,7 +581,8 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                       </div>
                     </div>
                   </Link>
-                  <Link to={DOWNLOAD_EBOOK} target="_blank">
+
+                  {/*  <Link to={DOWNLOAD_EBOOK} target="_blank">
                     <div className={styles.mobileCard}>
                       <div className={styles.mobileCardContainer}>
                         <img
@@ -602,8 +605,13 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                         </Text>
                       </div>
                     </div>
-                  </Link>
+                  </Link> */}
                 </div>
+              </div>
+              <div className={styles.btns}>
+                <IconTextButton colorVariant="primary-bordered" size="100%">
+                  Ir a la biblioteca de ebooks
+                </IconTextButton>
               </div>
             </div>
           </Drawer>
