@@ -529,55 +529,66 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                     Gratuitos
                   </Text>
                 </div>
-                <Link to={DOWNLOAD_EBOOK} target="_blank">
-                  <div className={styles.mobileCard}>
-                    <div className={styles.mobileCardContainer}>
-                      <img src={imgEbookPrueba} className={styles.mobileImg} />
+                <div className={styles.cards}>
+                  <Link to={DOWNLOAD_EBOOK} target="_blank">
+                    <div className={styles.mobileCard}>
+                      <div className={styles.mobileCardContainer}>
+                        <img
+                          src={imgEbookPrueba}
+                          className={styles.mobileImg}
+                        />
+                      </div>
+                      <div className={styles.mobileDesc}>
+                        <Text bold="font-light" size="ty">
+                          {new Date().getFullYear()}
+                        </Text>
+                        <Text color="dark">
+                          Marketing Dental: La Guia Definitiva
+                        </Text>
+                        <Text s={{ fontSize: "13px" }}>Descargar Gratis</Text>
+                      </div>
                     </div>
-                    <div className={styles.mobileDesc}>
-                      <Text bold="font-light" size="ty">
-                        {new Date().getFullYear()}
-                      </Text>
-                      <Text color="dark">
-                        Marketing Dental: La Guia Definitiva
-                      </Text>
-                      <Text size="sm">Descargar Gratis</Text>
-                    </div>
-                  </div>
-                </Link>
-                <Link to={DOWNLOAD_EBOOK} target="_blank">
-                  <div className={styles.mobileCard}>
-                    <div className={styles.mobileCardContainer}>
-                      <img src={imgEbookPrueba} className={styles.mobileImg} />
-                    </div>
+                  </Link>
+                  <Link to={DOWNLOAD_EBOOK} target="_blank">
+                    <div className={styles.mobileCard}>
+                      <div className={styles.mobileCardContainer}>
+                        <img
+                          src={imgEbookPrueba}
+                          className={styles.mobileImg}
+                        />
+                      </div>
 
-                    <div className={styles.mobileDesc}>
-                      <Text bold="font-light" size="ty">
-                        {new Date().getFullYear()}
-                      </Text>
-                      <Text color="dark">
-                        Marketing Dental: La Guia Definitiva
-                      </Text>
-                      <Text size="sm">Descargar Gratis</Text>
+                      <div className={styles.mobileDesc}>
+                        <Text bold="font-light" size="ty">
+                          {new Date().getFullYear()}
+                        </Text>
+                        <Text color="dark">
+                          Marketing Dental: La Guia Definitiva
+                        </Text>
+                        <Text s={{ fontSize: "13px" }}>Descargar Gratis</Text>
+                      </div>
                     </div>
-                  </div>
-                </Link>
-                <Link to={DOWNLOAD_EBOOK} target="_blank">
-                  <div className={styles.mobileCard}>
-                    <div className={styles.mobileCardContainer}>
-                      <img src={imgEbookPrueba} className={styles.mobileImg} />
+                  </Link>
+                  <Link to={DOWNLOAD_EBOOK} target="_blank">
+                    <div className={styles.mobileCard}>
+                      <div className={styles.mobileCardContainer}>
+                        <img
+                          src={imgEbookPrueba}
+                          className={styles.mobileImg}
+                        />
+                      </div>
+                      <div className={styles.mobileDesc}>
+                        <Text bold="font-light" size="ty">
+                          {new Date().getFullYear()}
+                        </Text>
+                        <Text color="dark">
+                          Marketing Dental: La Guia Definitiva
+                        </Text>
+                        <Text s={{ fontSize: "13px" }}>Descargar Gratis</Text>
+                      </div>
                     </div>
-                    <div className={styles.mobileDesc}>
-                      <Text bold="font-light" size="ty">
-                        {new Date().getFullYear()}
-                      </Text>
-                      <Text color="dark">
-                        Marketing Dental: La Guia Definitiva
-                      </Text>
-                      <Text size="sm">Descargar Gratis</Text>
-                    </div>
-                  </div>
-                </Link>
+                  </Link>
+                </div>
               </div>
             </div>
           </Drawer>
