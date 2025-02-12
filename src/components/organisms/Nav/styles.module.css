@@ -443,6 +443,12 @@ body:has(.resoursesDropDown.show) {
   flex-direction: column;
   gap: 16px;
 }
+.recursosDesc {
+  margin-bottom: 24px;
+}
+.recursosDesc > :nth-child(1) {
+  margin-bottom: 4px;
+}
 @media screen and (max-width: 1200px) {
   .elements {
     display: flex;

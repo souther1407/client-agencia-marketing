@@ -518,7 +518,7 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
               <div className={styles.resourcesContainer}>
                 <div className={styles.recursosDesc}>
                   <Text
-                    type="subtitle"
+                    s={{ fontSize: "21px" }}
                     color="black"
                     fontFamily="font-terciary"
                   >
