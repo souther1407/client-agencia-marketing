@@ -441,7 +441,7 @@ body:has(.resoursesDropDown.show) {
 .mobileContact .links {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 16px;
 }
 @media screen and (max-width: 1200px) {
   .elements {

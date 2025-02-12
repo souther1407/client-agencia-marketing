@@ -604,7 +604,11 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
             }
           >
             <div className={styles.mobileContact}>
-              <Text color="black" type="subtitle" fontFamily="font-terciary">
+              <Text
+                color="black"
+                s={{ fontSize: "21px" }}
+                fontFamily="font-terciary"
+              >
                 Contacta a un representante
               </Text>
               <Text size="lg" bold="font-light">
