@@ -409,9 +409,9 @@ body:has(.resoursesDropDown.show) {
   border: 1px solid var(--primary);
   padding: 16px;
   border-radius: 8px;
-
   gap: 16px;
   cursor: pointer;
+  height: 128px;
 }
 .mobileCardContainer {
   background-color: var(--black);
