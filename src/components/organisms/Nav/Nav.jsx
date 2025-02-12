@@ -542,7 +542,10 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                         <Text bold="font-light" size="ty">
                           {new Date().getFullYear()}
                         </Text>
-                        <Text color="dark" s={{ lineHeight: "1.25" }}>
+                        <Text
+                          color="dark"
+                          s={{ lineHeight: "1.25", fontSize: "14px" }}
+                        >
                           Marketing Dental: La Guia Definitiva
                         </Text>
                         <Text s={{ fontSize: "13px" }}>Descargar Gratis</Text>
@@ -562,7 +565,10 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                         <Text bold="font-light" size="ty">
                           {new Date().getFullYear()}
                         </Text>
-                        <Text color="dark" s={{ lineHeight: "1.25" }}>
+                        <Text
+                          color="dark"
+                          s={{ lineHeight: "1.25", fontSize: "14px" }}
+                        >
                           Marketing Dental: La Guia Definitiva
                         </Text>
                         <Text s={{ fontSize: "13px" }}>Descargar Gratis</Text>
@@ -581,7 +587,10 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                         <Text bold="font-light" size="ty">
                           {new Date().getFullYear()}
                         </Text>
-                        <Text color="dark" s={{ lineHeight: "1.25" }}>
+                        <Text
+                          color="dark"
+                          s={{ lineHeight: "1.25", fontSize: "14px" }}
+                        >
                           Marketing Dental: La Guia Definitiva
                         </Text>
                         <Text s={{ fontSize: "13px" }}>Descargar Gratis</Text>
