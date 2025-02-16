@@ -52,7 +52,7 @@ const ContactForm = () => {
         <div className={styles.content_sections}>
           {/*  <img src={Flecha3} className={`${styles.flecha}`} /> */}
           <section className={styles.desc}>
-            <Text type="smalltitle" bold="bold" color="black">
+            <Text type="smalltitle" bold="semibold" color="black">
               Pide una Auditoria para tu Consultorio
             </Text>
             <div className={styles.detail}>
