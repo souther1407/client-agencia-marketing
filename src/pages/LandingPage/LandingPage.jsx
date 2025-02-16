@@ -99,19 +99,19 @@ const LandingPage = () => {
             </div>
             <div className={styles.beneficios}>
               <div className={styles.beneficio}>
-                <Icon size={"1rem"} color="var(--primary)" type={"check"} />
+                <Icon size={"1.16rem"} color="var(--primary)" type={"check"} />
                 <Text color="black" bold="font-light">
                   Trabajamos con pocos consultorios.
                 </Text>
               </div>
               <div className={styles.beneficio}>
-                <Icon size={"1rem"} color="var(--primary)" type={"check"} />
+                <Icon size={"1.16rem"} color="var(--primary)" type={"check"} />
                 <Text color="black" bold="font-light">
                   Nos enfocamos en tus tratamientos más rentables.
                 </Text>
               </div>
               <div className={styles.beneficio}>
-                <Icon size={"1rem"} color="var(--primary)" type={"check"} />
+                <Icon size={"1.16rem"} color="var(--primary)" type={"check"} />
                 <Text color="black" bold="font-light">
                   Nos enfocamos en el mercado español.
                 </Text>

@@ -895,6 +895,8 @@ body:has(.popupContainer.show) {
     align-self: self-start;
     top: 6px;
   }
+  .beneficio > :first-child {
+  }
   .banner__img {
     width: 100%;
   }
