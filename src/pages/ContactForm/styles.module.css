@@ -65,6 +65,9 @@
 .input_line > * {
   width: 280px;
 }
+.input_line input {
+  height: 48px !important;
+}
 .benefits {
   display: flex;
   flex-direction: column;

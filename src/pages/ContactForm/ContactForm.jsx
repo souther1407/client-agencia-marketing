@@ -131,6 +131,7 @@ const ContactForm = () => {
                 label="Ubicación de la clínica*"
                 icon={"arrowDown"}
                 value={contactForm.location}
+                style={{ height: "48px" }}
               />
               <Select
                 variant="white"
@@ -143,6 +144,7 @@ const ContactForm = () => {
                 label="Ingresos Anuales*"
                 icon={"arrowDown"}
                 value={contactForm.anual_revenues}
+                style={{ height: "48px" }}
               />
             </div>
 

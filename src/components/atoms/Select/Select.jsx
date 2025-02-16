@@ -17,6 +17,7 @@ const Select = ({
   label,
   placeholder,
   onClear = () => {},
+  ...otherProps
 }) => {
   const [show, setShow] = useState(false);
   const btn = useRef();
@@ -52,7 +53,7 @@ const Select = ({
           </Text>
         </div>
       )}
-      <div className={styles.header} onClick={handleClick}>
+      <div className={styles.header} onClick={handleClick} {...otherProps}>
         <div className={styles.placeholder}>
           <Text size="ty" bold={!value && "font-light"}>
             {value || placeholder}
