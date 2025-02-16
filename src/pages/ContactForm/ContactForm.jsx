@@ -158,9 +158,10 @@ const ContactForm = () => {
             <div className={styles.sendBtn}>
               <IconTextButton
                 colorVariant="primary"
+                textProps={{ size: "sm" }}
                 onClick={handleSendFormData}
               >
-                Quiero Ser Contactado {">"}
+                Quiero Una Auditoría
               </IconTextButton>
             </div>
           </section>
