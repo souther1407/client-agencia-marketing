@@ -92,12 +92,7 @@ const LandingPage = () => {
               </Text>
             </div>
             <div className={styles.desc}>
-              <Text
-                size="sm"
-                textAlign="center"
-                color="black"
-                bold="font-light"
-              >
+              <Text textAlign="center" color="black" bold="font-light">
                 Transformamos tu consultorio en tan solo 6 meses con nuestro
                 método de “Ventas Convenientes”.
               </Text>
@@ -123,11 +118,7 @@ const LandingPage = () => {
               </div>
             </div>
             <div className={styles.popupBtns}>
-              <IconTextButton
-                size="100%"
-                textProps={{ size: "ty" }}
-                onClick={() => navigate(OUR_PROGRAM)}
-              >
+              <IconTextButton size="100%" onClick={() => navigate(OUR_PROGRAM)}>
                 Ver programa
               </IconTextButton>
               {/* <IconTextButton
