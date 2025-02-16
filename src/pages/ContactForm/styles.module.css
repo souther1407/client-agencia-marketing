@@ -20,7 +20,7 @@
   flex-grow: 1;
   padding-left: var(--width-unit);
   padding-right: var(--width-unit);
-  padding-top: var(--linea-amarilla);
+  padding-top: calc(100vw / 20);
   padding-bottom: var(--linea-amarilla);
 }
 .content_sections {
@@ -39,7 +39,7 @@
   gap: 32px;
   margin-right: 32px;
   width: 600px;
-  padding-top: 32px;
+  padding-top: 64px;
 }
 .detail {
   width: 80%;
