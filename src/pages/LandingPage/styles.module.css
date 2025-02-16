@@ -60,7 +60,7 @@
   border-radius: 16px;
 }
 
-body:has(.popupContainer) {
+body:has(.popupContainer.show) {
   overflow: hidden;
 }
 
