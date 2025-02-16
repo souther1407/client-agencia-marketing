@@ -78,23 +78,27 @@ const LandingPage = () => {
                 </Text>
                 <hr className={styles.underline} />
               </div> */}
-              <Text
-                color="black"
-                type="title"
-                bold="semibold"
-                textAlign="center"
-              >
-                Aplica al programa “Consultorio Exitoso”.
-              </Text>
-              <Text
-                size="sm"
-                textAlign="center"
-                color="black"
-                bold="font-light"
-              >
-                Transformamos tu consultorio en tan solo 6 meses con nuestro
-                método de “Ventas Convenientes”.
-              </Text>
+              <div className={styles.title}>
+                <Text
+                  color="black"
+                  type="title"
+                  bold="semibold"
+                  textAlign="center"
+                >
+                  Aplica al programa “Consultorio Exitoso”.
+                </Text>
+              </div>
+              <div className={styles.desc}>
+                <Text
+                  size="sm"
+                  textAlign="center"
+                  color="black"
+                  bold="font-light"
+                >
+                  Transformamos tu consultorio en tan solo 6 meses con nuestro
+                  método de “Ventas Convenientes”.
+                </Text>
+              </div>
               <div className={styles.beneficios}>
                 <div className={styles.beneficio}>
                   <Icon size={"1rem"} color="var(--primary)" type={"check"} />
@@ -132,7 +136,9 @@ const LandingPage = () => {
                   No gracias
                 </IconTextButton> */}
               </div>
-              <MedicsCard />
+              <div className={styles.medicosCard}>
+                <MedicsCard />
+              </div>
             </div>
           </div>
         </div>
