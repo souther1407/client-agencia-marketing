@@ -47,7 +47,7 @@ const Select = ({
     >
       {label && (
         <div className={styles.label}>
-          <Text size={"sm"} color={labelColor}>
+          <Text size={"sm"} bold="regular" color={labelColor}>
             {label}
           </Text>
         </div>
