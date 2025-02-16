@@ -131,6 +131,9 @@
   .input_line > * {
     width: 100%;
   }
+  .detail {
+    gap: 24px;
+  }
   .sendBtn {
     width: 100%;
     display: flex;
