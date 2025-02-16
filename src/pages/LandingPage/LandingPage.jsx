@@ -32,102 +32,105 @@ import { useConfigStore } from "../../stores/useConfig";
 const LandingPage = () => {
   const navigate = useNavigate();
   const [showWSMsg, setShowWSMsg] = useState(true);
-  const [showPopup, setShowPopup] = useState(true);
+  const [showPopup, setShowPopup] = useState(false);
   const navMobileMenuIsShow = useConfigStore(
     (state) => state.navMobileMenuIsShow
   );
 
-  /*   useEffect(() => {
+  useEffect(() => {
     setTimeout(() => {
-      setShowPopup(false);
-    }, 10 * 1000);
-  }, []); */
+      setShowPopup(true);
+    }, 3 * 1000);
+  }, []);
 
   return (
     <div className={styles.page}>
-      {showPopup && !navMobileMenuIsShow && (
-        <div className={styles.popupContainer}>
-          <div className={styles.popupcard}>
-            <div className={`${styles.tagSupIzq}`}></div>
-            <div className={`${styles.tagSupDer}`}></div>
-            <div className={`${styles.tagInfIzq}`}></div>
-            <div className={`${styles.tagInfDer}`}></div>
-            <span
-              className={styles.popupMobileCloseBtn}
-              onClick={() => setShowPopup(false)}
-            >
-              <Icon size={"2rem"} type={"close"} color="var(--white)" />
-            </span>
-            {/*  <div className={styles.popImg}>
+      <div
+        className={`${styles.popupContainer} ${
+          showPopup && !navMobileMenuIsShow && styles.show
+        }`}
+      >
+        <div className={`${styles.popupcard}`}>
+          <div className={`${styles.tagSupIzq}`}></div>
+          <div className={`${styles.tagSupDer}`}></div>
+          <div className={`${styles.tagInfIzq}`}></div>
+          <div className={`${styles.tagInfDer}`}></div>
+          <span
+            className={styles.popupMobileCloseBtn}
+            onClick={() => setShowPopup(false)}
+          >
+            <Icon size={"2rem"} type={"close"} color="var(--white)" />
+          </span>
+          {/*  <div className={styles.popImg}>
               <Text color="light" type="title" textAlign="center">
                 1O CUPOS
               </Text>
               <img src={imagenDentista} />
             </div> */}
-            <div className={styles.popupDesc}>
-              <span
-                className={styles.popupCloseBtn}
-                onClick={() => setShowPopup(false)}
-              >
-                <Icon size={"2rem"} type={"close"} color="var(--gray)" />
-              </span>
+          <div className={styles.popupDesc}>
+            <span
+              className={styles.popupCloseBtn}
+              onClick={() => setShowPopup(false)}
+            >
+              <Icon size={"2rem"} type={"close"} color="var(--gray)" />
+            </span>
 
-              {/* <div className={styles.popTextOffer}>
+            {/* <div className={styles.popTextOffer}>
                 <Text color="black" bold="semibold">
                   ¡SOLO POR ENERO!
                 </Text>
                 <hr className={styles.underline} />
               </div> */}
-              <div className={styles.title}>
-                <Text
-                  color="black"
-                  type="title"
-                  bold="semibold"
-                  textAlign="center"
-                >
-                  Aplica al programa “Consultorio Exitoso”.
+            <div className={styles.title}>
+              <Text
+                color="black"
+                type="title"
+                bold="semibold"
+                textAlign="center"
+              >
+                Aplica al programa “Consultorio Exitoso”.
+              </Text>
+            </div>
+            <div className={styles.desc}>
+              <Text
+                size="sm"
+                textAlign="center"
+                color="black"
+                bold="font-light"
+              >
+                Transformamos tu consultorio en tan solo 6 meses con nuestro
+                método de “Ventas Convenientes”.
+              </Text>
+            </div>
+            <div className={styles.beneficios}>
+              <div className={styles.beneficio}>
+                <Icon size={"1rem"} color="var(--primary)" type={"check"} />
+                <Text color="black" bold="font-light">
+                  Trabajamos con pocos consultorios.
                 </Text>
               </div>
-              <div className={styles.desc}>
-                <Text
-                  size="sm"
-                  textAlign="center"
-                  color="black"
-                  bold="font-light"
-                >
-                  Transformamos tu consultorio en tan solo 6 meses con nuestro
-                  método de “Ventas Convenientes”.
+              <div className={styles.beneficio}>
+                <Icon size={"1rem"} color="var(--primary)" type={"check"} />
+                <Text color="black" bold="font-light">
+                  Nos enfocamos en tus tratamientos más rentables.
                 </Text>
               </div>
-              <div className={styles.beneficios}>
-                <div className={styles.beneficio}>
-                  <Icon size={"1rem"} color="var(--primary)" type={"check"} />
-                  <Text color="black" bold="font-light">
-                    Trabajamos con pocos consultorios.
-                  </Text>
-                </div>
-                <div className={styles.beneficio}>
-                  <Icon size={"1rem"} color="var(--primary)" type={"check"} />
-                  <Text color="black" bold="font-light">
-                    Nos enfocamos en tus tratamientos más rentables.
-                  </Text>
-                </div>
-                <div className={styles.beneficio}>
-                  <Icon size={"1rem"} color="var(--primary)" type={"check"} />
-                  <Text color="black" bold="font-light">
-                    Nos enfocamos en el mercado español.
-                  </Text>
-                </div>
+              <div className={styles.beneficio}>
+                <Icon size={"1rem"} color="var(--primary)" type={"check"} />
+                <Text color="black" bold="font-light">
+                  Nos enfocamos en el mercado español.
+                </Text>
               </div>
-              <div className={styles.popupBtns}>
-                <IconTextButton
-                  size="100%"
-                  textProps={{ size: "ty" }}
-                  onClick={() => navigate(OUR_PROGRAM)}
-                >
-                  Ver programa
-                </IconTextButton>
-                {/* <IconTextButton
+            </div>
+            <div className={styles.popupBtns}>
+              <IconTextButton
+                size="100%"
+                textProps={{ size: "ty" }}
+                onClick={() => navigate(OUR_PROGRAM)}
+              >
+                Ver programa
+              </IconTextButton>
+              {/* <IconTextButton
                   size="100%"
                   colorVariant="dark-green"
                   textProps={{ size: "ty" }}
@@ -135,14 +138,14 @@ const LandingPage = () => {
                 >
                   No gracias
                 </IconTextButton> */}
-              </div>
-              <div className={styles.medicosCard}>
-                <MedicsCard />
-              </div>
+            </div>
+            <div className={styles.medicosCard}>
+              <MedicsCard />
             </div>
           </div>
         </div>
-      )}
+      </div>
+
       <div className={styles.help}>
         {showWSMsg && (
           <div className={styles.notification}>

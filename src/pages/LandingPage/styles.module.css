@@ -70,18 +70,31 @@ body:has(.popupContainer) {
   width: 100%;
   height: 100%;
   background-color: var(--gray-dark);
-  display: flex;
   justify-content: center;
   align-items: center;
+  display: flex;
+  transition: all 0.5s linear;
+  visibility: hidden;
+  opacity: 0;
 }
+
+.popupContainer.show {
+  visibility: visible;
+  opacity: 1;
+}
+
 .popupcard {
   display: flex;
   background-color: var(--white);
   position: relative;
   width: 1000px;
   height: 700px;
+  transition: all 0.5s ease-out;
+  transform: translateY(150%);
 }
-
+.popupContainer.show .popupcard {
+  transform: translateY(0);
+}
 .tagSupIzq,
 .tagSupDer,
 .tagInfIzq,
@@ -841,6 +854,7 @@ body:has(.popupContainer) {
   .popupDesc {
     padding: 20px;
     padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   .tagSupIzq,
