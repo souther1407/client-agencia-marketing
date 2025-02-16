@@ -59,7 +59,7 @@ const LandingPage = () => {
             className={styles.popupMobileCloseBtn}
             onClick={() => setShowPopup(false)}
           >
-            <Icon size={"2rem"} type={"close"} color="var(--white)" />
+            <Icon size={"2rem"} type={"close"} color="var(--black)" />
           </span>
           {/*  <div className={styles.popImg}>
               <Text color="light" type="title" textAlign="center">
