@@ -5,6 +5,13 @@
   flex-direction: column;
   background-color: var(--light-green);
 }
+.nav {
+  display: flex;
+  justify-content: center;
+}
+.nav > :first-child {
+  width: 230px;
+}
 
 .content {
   display: flex;

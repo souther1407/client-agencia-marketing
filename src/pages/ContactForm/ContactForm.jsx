@@ -11,7 +11,7 @@ import { sendContactForm } from "../../services/api/sendContactForm";
 import LoadingScreen from "../../components/molecules/LoadingScreen/LoadingScreen";
 import Mark from "../../components/atoms/Mark/Mark";
 import Flecha3 from "@assets/flecha 3.svg";
-
+import Logo from "../../components/atoms/Logo/Logo";
 const ContactForm = () => {
   const [contactForm, setContactForm] = useState({
     first_name: "",
@@ -44,7 +44,9 @@ const ContactForm = () => {
   };
   return (
     <div className={styles.contactForm}>
-      <Nav hideBottomMenu />
+      <nav className={styles.nav}>
+        <Logo />
+      </nav>
       {loading && <LoadingScreen />}
       <main className={styles.content}>
         <div className={styles.content_sections}>
