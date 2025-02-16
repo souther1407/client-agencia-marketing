@@ -133,7 +133,8 @@ const LandingPage = () => {
             <div className={styles.medicosCard}>
               <MedicsCard
                 bgColor={"#8fc29f33"}
-                textDesc="Únete a los dentistas
+                title="Únete a los dentistas"
+                textDesc="
 que quieren llevar su consultorio al siguiente nivel."
               />
             </div>

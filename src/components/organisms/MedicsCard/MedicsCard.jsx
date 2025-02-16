@@ -4,13 +4,14 @@ import Text from "../../atoms/Text/Text";
 const MedicsCard = ({
   bgColor = "",
   textDesc = "que aprenden con nuestros ebooks gratuitos",
+  title = " Únete a los muchos dentista",
 }) => {
   return (
     <div className={styles.card} style={{ backgroundColor: bgColor }}>
       <img src={Medicos} className={styles.medicos} />
       <div className={styles.desc}>
         <Text size="ty" color="black" s={{ lineHeight: "1.4" }}>
-          Únete a los muchos dentista
+          {title}
         </Text>
         <Text
           size="ty"
