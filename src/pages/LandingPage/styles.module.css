@@ -140,7 +140,8 @@ body:has(.popupContainer.show) {
   width: 90%;
 }
 .popupDesc {
-  padding-top: 128px;
+  padding-top: 80px;
+  padding-bottom: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
