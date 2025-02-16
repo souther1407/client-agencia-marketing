@@ -860,7 +860,7 @@ body:has(.popupContainer.show) {
   .popupDesc {
     padding: 20px;
     padding-top: 60px;
-    padding-bottom: 24px;
+    padding-bottom: 20px;
     gap: 24px;
   }
 
