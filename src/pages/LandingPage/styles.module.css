@@ -176,12 +176,11 @@ body:has(.popupContainer.show) {
 .popupBtns {
   display: flex;
   gap: 16px;
-  width: 250px;
-
   margin-top: 24px;
+  width: 350px;
 }
 .popupBtns > :first-child {
-  height: 50px !important;
+  height: 80px !important;
 }
 .header {
   display: flex;
