@@ -113,7 +113,6 @@
   .content {
     padding: 32px;
     flex-direction: column;
-    padding-top: calc(var(--linea-amarilla) * 2);
   }
   .content_sections {
     flex-direction: column;
@@ -121,6 +120,7 @@
   }
   .desc {
     width: 100%;
+    padding-top: 0px;
   }
   .form {
     width: 100%;
