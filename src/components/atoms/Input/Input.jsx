@@ -51,11 +51,7 @@ const Input = ({
       )}
 
       {label && (
-        <Text
-          size={"ty"}
-          bold="font-light"
-          color={errorMsg ? "error" : labelColor}
-        >
+        <Text size={"sm"} color={errorMsg ? "error" : labelColor}>
           {label}
         </Text>
       )}
