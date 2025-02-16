@@ -101,7 +101,7 @@ body:has(.popupContainer.show) {
 .tagInfDer {
   width: 140px;
   height: 32px;
-  background-color: var(--lemon-green);
+  background-color: #8fc29f;
   position: absolute;
   z-index: 1;
 }
