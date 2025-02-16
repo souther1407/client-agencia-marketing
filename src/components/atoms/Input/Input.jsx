@@ -51,13 +51,15 @@ const Input = ({
       )}
 
       {label && (
-        <Text
-          size={"sm"}
-          bold="regular"
-          color={errorMsg ? "error" : labelColor}
-        >
-          {label}
-        </Text>
+        <div className={styles.label}>
+          <Text
+            size={"sm"}
+            bold="regular"
+            color={errorMsg ? "error" : labelColor}
+          >
+            {label}
+          </Text>
+        </div>
       )}
       <input
         ref={input}

@@ -75,6 +75,9 @@
   color: var(--black);
   padding: 12px;
 }
+.white .label {
+  margin-bottom: 4px;
+}
 .white .input:focus {
   outline: 2px solid var(--primary-transparent);
 }

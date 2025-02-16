@@ -123,6 +123,7 @@
 }
 .white .label {
   color: var(--black);
+  margin-bottom: 4px;
 }
 .white .icon {
   color: var(--black);

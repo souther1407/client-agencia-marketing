@@ -22,9 +22,11 @@ const Textarea = ({
       }`}
     >
       {label && (
-        <Text size={"sm"} bold="regular" color={labelColor}>
-          {label}
-        </Text>
+        <div className={styles.label}>
+          <Text size={"sm"} bold="regular" color={labelColor}>
+            {label}
+          </Text>
+        </div>
       )}
       <textarea
         style={{ width: size }}

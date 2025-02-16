@@ -86,6 +86,9 @@
   background-color: #ebeced;
   font-size: 0.7rem;
 }
+.white .label {
+  margin-bottom: 4px;
+}
 .white .input:focus {
   outline: 1px solid var(--blue);
 }
