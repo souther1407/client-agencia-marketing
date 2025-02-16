@@ -180,7 +180,7 @@ body:has(.popupContainer.show) {
   width: 350px;
 }
 .popupBtns > :first-child {
-  height: 80px !important;
+  height: 72px !important;
 }
 .header {
   display: flex;
