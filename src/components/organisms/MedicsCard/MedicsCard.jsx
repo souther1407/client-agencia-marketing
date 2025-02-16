@@ -1,9 +1,12 @@
 import Medicos from "@assets/Medicos.svg";
 import styles from "./styles.module.css";
 import Text from "../../atoms/Text/Text";
-const MedicsCard = () => {
+const MedicsCard = ({
+  bgColor = "",
+  textDesc = "que aprenden con nuestros ebooks gratuitos",
+}) => {
   return (
-    <div className={styles.card}>
+    <div className={styles.card} style={{ backgroundColor: bgColor }}>
       <img src={Medicos} className={styles.medicos} />
       <div className={styles.desc}>
         <Text size="ty" color="black" s={{ lineHeight: "1.4" }}>
@@ -16,7 +19,7 @@ const MedicsCard = () => {
           s={{ lineHeight: "1.4" }}
           textAlign="center"
         >
-          que aprenden con nuestros ebooks gratuitos
+          {textDesc}
         </Text>
       </div>
     </div>
