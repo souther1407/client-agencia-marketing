@@ -53,6 +53,8 @@
   gap: 20px;
   background-color: var(--light-green);
   padding: 24px;
+  padding-top: 32px;
+  padding-bottom: 60px;
   flex-grow: 1;
   border-radius: 16px;
   border: 2px solid var(--primary);
