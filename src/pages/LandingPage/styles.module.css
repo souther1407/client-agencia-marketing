@@ -146,10 +146,9 @@ body:has(.popupContainer.show) {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 12px;
+  gap: 28px;
   width: 100%;
   position: relative;
-
   background-color: var(--primary-transparent-2);
 }
 .popupDesc > .title,
@@ -182,6 +181,10 @@ body:has(.popupContainer.show) {
 }
 .popupBtns > :first-child {
   height: 72px !important;
+}
+.medicosCard {
+  position: relative;
+  bottom: 8px;
 }
 .header {
   display: flex;
