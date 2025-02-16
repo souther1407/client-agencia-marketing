@@ -861,6 +861,7 @@ body:has(.popupContainer.show) {
     padding: 20px;
     padding-top: 60px;
     padding-bottom: 24px;
+    gap: 24px;
   }
 
   .tagSupIzq,
