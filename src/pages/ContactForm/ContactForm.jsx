@@ -71,12 +71,10 @@ const ContactForm = () => {
             </div>
           </section>
           <section className={styles.form}>
-            <Text>
+            <Text size="ty">
               <Mark color="primary-bg">ÚLTIMO PASO</Mark>
             </Text>
-            <Text size="xlg" color="black" bold="semibold">
-              ¡Estás a un paso de trabajar con nosotros!
-            </Text>
+
             <div className={styles.input_line}>
               <Input
                 variant="white"
