@@ -115,8 +115,8 @@
   position: relative;
 }
 .white .header {
-  border: 1px solid var(--black);
-  background-color: var(--light-green);
+  border: 2px solid #006a43;
+  background-color: #ebeced;
   padding: 8px;
 }
 .white .label {
@@ -129,8 +129,8 @@
 .white .elementsList {
   width: 100%;
   position: absolute;
-  border: 1px solid var(--black);
-  background-color: var(--light-green);
+  border: 2px solid #006a43;
+  background-color: #ebeced;
   padding: 8px;
 }
 .white .placeholder {
