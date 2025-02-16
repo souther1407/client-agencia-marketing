@@ -84,3 +84,9 @@
 .white .input::placeholder {
   color: var(--gray);
 }
+
+@media screen and (max-width: 1024px) {
+  .white .input {
+    font-size: 12px;
+  }
+}

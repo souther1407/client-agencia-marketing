@@ -103,6 +103,11 @@
   border: 1px solid var(--error);
   color: var(--error);
 }
+@media screen and (max-width: 1024px) {
+  .white .input {
+    font-size: 12px;
+  }
+}
 
 /* black */
 
