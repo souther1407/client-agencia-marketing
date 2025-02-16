@@ -20,7 +20,7 @@
   flex-grow: 1;
   padding-left: var(--width-unit);
   padding-right: var(--width-unit);
-  padding-top: calc(100vw / 20);
+  padding-top: calc(100vw / 25);
   padding-bottom: var(--linea-amarilla);
 }
 .content_sections {
