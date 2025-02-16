@@ -391,6 +391,12 @@ body:has(.resoursesDropDown.show) {
   gap: 12px;
 }
 
+.whiteMark {
+  background-color: var(--white);
+  padding: 0 8px;
+  border-radius: 32px;
+}
+
 .dropElements {
   display: flex;
   flex-direction: column;
