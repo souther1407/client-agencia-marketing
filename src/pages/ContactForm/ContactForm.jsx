@@ -12,6 +12,7 @@ import LoadingScreen from "../../components/molecules/LoadingScreen/LoadingScree
 import Mark from "../../components/atoms/Mark/Mark";
 import Flecha3 from "@assets/flecha 3.svg";
 import Logo from "../../components/atoms/Logo/Logo";
+import Link from "../../components/atoms/Link/Link";
 const ContactForm = () => {
   const [contactForm, setContactForm] = useState({
     first_name: "",
@@ -169,7 +170,31 @@ const ContactForm = () => {
           </section>
         </div>
       </main>
-      <Footer />
+
+      <footer className={styles.footer}>
+        <Text size="sm" color="black" bold="font-light">
+          Copyright © {new Date().getFullYear()}, HackDental.com
+        </Text>
+        <div className={styles.links}>
+          <Link to={"#"}>
+            <Text color="black" size="ty" bold="font-light">
+              Politica de Privacidad
+            </Text>
+          </Link>
+          <hr className={styles.separator} />
+          <Link to={"#"}>
+            <Text color="black" size="ty" bold="font-light">
+              Politica de Privacidad
+            </Text>{" "}
+          </Link>
+          <hr className={styles.separator} />
+          <Link to={"#"}>
+            <Text color="black" size="ty" bold="font-light">
+              Politica de Privacidad
+            </Text>
+          </Link>
+        </div>
+      </footer>
     </div>
   );
 };
