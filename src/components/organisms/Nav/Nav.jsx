@@ -255,11 +255,15 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                 NUEVO
               </Text>
             </span>
-            <Text size="sm" color="light" bold="font-light">
-              Aceptamos 10 nuevas clínicas en España &nbsp;
-              <span className={styles.country}>
-                <Icon color="white" size={"1rem"} type={"arrowFoward"} />
+            <Text size="sm" color="light">
+              Aceptamos 10 nuevas clínicas en España:{" "}
+              <span style={{ fontWeight: "lighter" }}>
+                Descubre si calificas
               </span>
+              &nbsp;→
+              {/* <span className={styles.country}>
+                <Icon color="white" size={"1rem"} type={"arrowFoward"} />
+              </span> */}
             </Text>
           </div>
         )}
