@@ -9,8 +9,8 @@ import Icon from "../../components/atoms/Icon/Icon";
 import EBookImg from "@assets/imagen ebook page.svg";
 import EbookPortada from "@assets/ImgPortadaEbook.svg";
 import Link from "../../components/atoms/Link/Link";
-import Medicos from "@assets/Medicos.svg";
 
+import MedicsCard from "../../components/organisms/MedicsCard/MedicsCard";
 const DownloadEBook = () => {
   const [modalOpened, setModalOpened] = useState(false);
   return (
@@ -44,23 +44,8 @@ const DownloadEBook = () => {
                 Descargar Ahora
               </IconTextButton>
             </div>
-            <div className={styles.card}>
-              <img src={Medicos} className={styles.medicos} />
-              <div className={styles.desc}>
-                <Text size="ty" color="black" s={{ lineHeight: "1.4" }}>
-                  Únete a los muchos dentista
-                </Text>
-                <Text
-                  size="ty"
-                  color="black"
-                  bold="font-light"
-                  s={{ lineHeight: "1.4" }}
-                  textAlign="center"
-                >
-                  que aprenden con nuestros ebooks gratuitos
-                </Text>
-              </div>
-            </div>
+
+            <MedicsCard />
           </section>
           <img className={styles.ebook} src={EBookImg} />
         </div>

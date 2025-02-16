@@ -77,8 +77,40 @@ body:has(.popupContainer) {
 .popupcard {
   display: flex;
   background-color: var(--white);
-  border-radius: 32px;
   position: relative;
+  width: 1000px;
+  height: 700px;
+}
+
+.tagSupIzq,
+.tagSupDer,
+.tagInfIzq,
+.tagInfDer {
+  width: 140px;
+  height: 32px;
+  background-color: var(--lemon-green);
+  position: absolute;
+  z-index: 1;
+}
+.tagSupIzq {
+  transform: rotateZ(-15deg) skewX(20deg);
+  top: -2%;
+  left: -2%;
+}
+.tagSupDer {
+  right: -2%;
+  top: -2%;
+  transform: rotateZ(15deg) skewX(20deg);
+}
+.tagInfIzq {
+  bottom: -2%;
+  left: -2%;
+  transform: rotateZ(15deg) skewX(20deg);
+}
+.tagInfDer {
+  right: -2%;
+  bottom: -2%;
+  transform: rotateZ(-15deg) skewX(20deg);
 }
 .popupMobileCloseBtn {
   display: none;
@@ -96,14 +128,15 @@ body:has(.popupContainer) {
 }
 .popupDesc {
   padding: 32px;
+  padding-top: 128px;
   display: flex;
-  flex-basis: 60%;
   flex-direction: column;
   align-items: center;
   gap: 12px;
+  width: 100%;
   position: relative;
   justify-content: space-evenly;
-  background-color: var(--primary-very-transparent);
+  background-color: var(--primary-transparent-2);
 }
 .popupCloseBtn {
   position: absolute;
@@ -111,11 +144,25 @@ body:has(.popupContainer) {
   top: 5%;
   cursor: pointer;
 }
+.beneficios {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.beneficio {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
 .popupBtns {
   display: flex;
   gap: 16px;
-  width: 100%;
+  width: 250px;
+
   margin-top: 24px;
+}
+.popupBtns > :first-child {
+  height: 50px !important;
 }
 .header {
   display: flex;

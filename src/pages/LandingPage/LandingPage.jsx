@@ -8,7 +8,7 @@ import IconTextButton from "../../components/molecules/IconTextButton/IconTextBu
 import IconButton from "../../components/molecules/IconButton/IconButton";
 import Footer from "../../components/organisms/Footer/Footer";
 import Icon from "../../components/atoms/Icon/Icon";
-import TextLink from "../../components/molecules/TextLink/TextLink";
+import MedicsCard from "../../components/organisms/MedicsCard/MedicsCard";
 import { useNavigate } from "react-router-dom";
 import {
   DOWNLOAD_EBOOK,
@@ -19,7 +19,6 @@ import {
 import PreFooter from "../../components/organisms/PreFooter/PreFooter";
 import Mark from "../../components/atoms/Mark/Mark";
 import ImgBanner from "@assets/ImgBanner.svg";
-import Subrayado from "@assets/imagen subrayado verde.svg";
 import imgPublicidadCard from "@assets/La publicidad de tu consultorio es genérica.svg";
 import imgDiseñoCard from "@assets/El diseño de tu Sitio Web Dental es ineficiente.svg";
 import imgEstrategiaCard from "@assets/Tu estrategia de redes sociales es pobre.svg";
@@ -27,41 +26,44 @@ import imgReseñasCard from "@assets/Te faltan reseñas positivas online.svg";
 import imgRecordatorioCard from "@assets/Tienes un mal sistema de recordatorio de citas.svg";
 import ImagenEbook1 from "@assets/Imagen ebook 1.svg";
 import ImagenEbookWp from "@assets/imagen ebook de whatsapp.svg";
-import imagenDentista from "@assets/foto dentista.svg";
 import PartnersCarousel from "../../components/organisms/PartnersCarousel/PartnersCarousel";
 import { useConfigStore } from "../../stores/useConfig";
 
 const LandingPage = () => {
   const navigate = useNavigate();
   const [showWSMsg, setShowWSMsg] = useState(true);
-  const [showPopup, setShowPopup] = useState(false);
+  const [showPopup, setShowPopup] = useState(true);
   const navMobileMenuIsShow = useConfigStore(
     (state) => state.navMobileMenuIsShow
   );
 
-  useEffect(() => {
+  /*   useEffect(() => {
     setTimeout(() => {
       setShowPopup(false);
     }, 10 * 1000);
-  }, []);
+  }, []); */
 
   return (
     <div className={styles.page}>
       {showPopup && !navMobileMenuIsShow && (
         <div className={styles.popupContainer}>
           <div className={styles.popupcard}>
+            <div className={`${styles.tagSupIzq}`}></div>
+            <div className={`${styles.tagSupDer}`}></div>
+            <div className={`${styles.tagInfIzq}`}></div>
+            <div className={`${styles.tagInfDer}`}></div>
             <span
               className={styles.popupMobileCloseBtn}
               onClick={() => setShowPopup(false)}
             >
               <Icon size={"2rem"} type={"close"} color="var(--white)" />
             </span>
-            <div className={styles.popImg}>
+            {/*  <div className={styles.popImg}>
               <Text color="light" type="title" textAlign="center">
                 1O CUPOS
               </Text>
               <img src={imagenDentista} />
-            </div>
+            </div> */}
             <div className={styles.popupDesc}>
               <span
                 className={styles.popupCloseBtn}
@@ -70,19 +72,19 @@ const LandingPage = () => {
                 <Icon size={"2rem"} type={"close"} color="var(--gray)" />
               </span>
 
-              <div className={styles.popTextOffer}>
+              {/* <div className={styles.popTextOffer}>
                 <Text color="black" bold="semibold">
                   ¡SOLO POR ENERO!
                 </Text>
                 <hr className={styles.underline} />
-              </div>
+              </div> */}
               <Text
                 color="black"
-                type="subtitle"
+                type="title"
                 bold="semibold"
                 textAlign="center"
               >
-                10 cupos para el programa “Consultorio Exitoso”
+                Aplica al programa “Consultorio Exitoso”.
               </Text>
               <Text
                 size="sm"
@@ -90,9 +92,29 @@ const LandingPage = () => {
                 color="black"
                 bold="font-light"
               >
-                Es un programa de marketing dental completo para <br /> llenar
-                tu consultorio de pacientes en solo 6 meses.
+                Transformamos tu consultorio en tan solo 6 meses con nuestro
+                método de “Ventas Convenientes”.
               </Text>
+              <div className={styles.beneficios}>
+                <div className={styles.beneficio}>
+                  <Icon size={"1rem"} color="var(--primary)" type={"check"} />
+                  <Text color="black" bold="font-light">
+                    Trabajamos con pocos consultorios.
+                  </Text>
+                </div>
+                <div className={styles.beneficio}>
+                  <Icon size={"1rem"} color="var(--primary)" type={"check"} />
+                  <Text color="black" bold="font-light">
+                    Nos enfocamos en tus tratamientos más rentables.
+                  </Text>
+                </div>
+                <div className={styles.beneficio}>
+                  <Icon size={"1rem"} color="var(--primary)" type={"check"} />
+                  <Text color="black" bold="font-light">
+                    Nos enfocamos en el mercado español.
+                  </Text>
+                </div>
+              </div>
               <div className={styles.popupBtns}>
                 <IconTextButton
                   size="100%"
@@ -101,15 +123,16 @@ const LandingPage = () => {
                 >
                   Ver programa
                 </IconTextButton>
-                <IconTextButton
+                {/* <IconTextButton
                   size="100%"
                   colorVariant="dark-green"
                   textProps={{ size: "ty" }}
                   onClick={() => setShowPopup(false)}
                 >
                   No gracias
-                </IconTextButton>
+                </IconTextButton> */}
               </div>
+              <MedicsCard />
             </div>
           </div>
         </div>
