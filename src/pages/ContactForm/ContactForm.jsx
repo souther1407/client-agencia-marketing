@@ -88,18 +88,6 @@ const ContactForm = () => {
               />
               <Input
                 variant="white"
-                id={"last_name"}
-                labelColor="black"
-                label="Apellido*"
-                onChange={handleChange}
-                onError={() => {}}
-                placeholder="Apellido"
-                value={contactForm.last_name}
-              />
-            </div>
-            <div className={styles.input_line}>
-              <Input
-                variant="white"
                 id={"email"}
                 label="Email*"
                 labelColor="black"
@@ -108,6 +96,8 @@ const ContactForm = () => {
                 placeholder="Email"
                 value={contactForm.email}
               />
+            </div>
+            <div className={styles.input_line}>
               <Input
                 variant="white"
                 id={"phone"}
@@ -117,18 +107,6 @@ const ContactForm = () => {
                 onError={() => {}}
                 placeholder="Teléfono"
                 value={contactForm.phone}
-              />
-            </div>
-            <div className={styles.input_line}>
-              <Input
-                variant="white"
-                id={"clinic_name"}
-                labelColor="black"
-                label="Nombre de la Clinica Dental*"
-                onChange={handleChange}
-                onError={() => {}}
-                placeholder="Nombre de la Clinica Dental"
-                value={contactForm.clinic_name}
               />
               <Input
                 variant="white"
@@ -167,6 +145,7 @@ const ContactForm = () => {
                 value={contactForm.anual_revenues}
               />
             </div>
+
             <TextArea
               variant="white"
               labelColor="black"
