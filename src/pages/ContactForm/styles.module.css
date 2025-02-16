@@ -21,7 +21,7 @@
   padding-left: var(--width-unit);
   padding-right: var(--width-unit);
   padding-top: calc(100vw / 25);
-  padding-bottom: var(--linea-amarilla);
+  padding-bottom: calc(100vw / 20);
 }
 .content_sections {
   display: flex;
