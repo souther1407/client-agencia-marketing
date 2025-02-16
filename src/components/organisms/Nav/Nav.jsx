@@ -251,7 +251,7 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
         {hideTopMenu || isTopMenuHidden || (
           <div className={styles.topMenu} onClick={() => navigate(OUR_PROGRAM)}>
             <span className={styles.whiteMark}>
-              <Text size="ty" color="black">
+              <Text s={{ fontSize: "12px" }} bold="semibold" color="black">
                 NUEVO
               </Text>
             </span>
