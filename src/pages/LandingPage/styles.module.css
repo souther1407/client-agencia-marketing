@@ -933,6 +933,18 @@ body:has(.popupContainer.show) {
   .popupBtns {
     flex-direction: column;
   }
+  .medicosCard > :first-child {
+    border-radius: 8px;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+  .medicosCard > :first-child > * {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+  }
   .whoAreWe__contents {
     width: 100%;
   }
