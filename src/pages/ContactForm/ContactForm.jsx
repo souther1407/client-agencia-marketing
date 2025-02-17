@@ -58,8 +58,9 @@ const ContactForm = () => {
             </Text>
             <div className={styles.detail}>
               <Text size="sm" bold="font-light" color="black">
-                Puedes ponerte en contacto con nosotros por Whatsapp o directa a
-                <Mark color="underline-blue">jaka@conversion.design</Mark>
+                {screen.availWidth > 1024
+                  ? "Puedes ponerte en contacto con nosotros directamente por Whatsapp o llenando tus datos en la forma de la izquierda."
+                  : "Puedes ponerte en contacto con nosotros directamente por Whatsapp o llenando tus datos en la forma de abajo"}
               </Text>
               <Text size="sm" bold="font-light" color="black">
                 No olvides incluir algunas palabras sobre ti y tu negocio
