@@ -116,7 +116,7 @@
   }
   .content_sections {
     flex-direction: column;
-    gap: 28px;
+    gap: 24px;
   }
   .desc {
     width: 100%;
@@ -137,7 +137,7 @@
     width: 100%;
   }
   .detail {
-    gap: 24px;
+    gap: 20px;
   }
   .sendBtn {
     width: 100%;
