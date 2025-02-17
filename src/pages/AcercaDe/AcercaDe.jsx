@@ -1,9 +1,11 @@
 import styles from "./styles.module.css";
 import Nav from "../../components/organisms/Nav/Nav";
-import imgAcercaDe from "@assets/imagen acerca.svg";
+import imgAcercaDe from "@assets/Imagen acerca.svg";
 import Text from "../../components/atoms/Text/Text";
 import Footer from "../../components/organisms/Footer/Footer";
 import PreefoterSimple from "../../components/organisms/PreefooterSimple/PreefooterSimple";
+import IconTextButton from "../../components/molecules/IconTextButton/IconTextButton";
+
 const AcercaDe = () => {
   return (
     <div className={styles.page}>
@@ -33,9 +35,11 @@ const AcercaDe = () => {
             textAlign="center"
             s={{ lineHeight: "1.1" }}
           >
-            Director de Marketing,
-            <br /> Hackdental
+            Director de Marketing, Hackdental
           </Text>
+          <IconTextButton colorVariant="white">
+            Contactar a José →
+          </IconTextButton>
         </div>
       </div>
       <main className={styles.main}>
