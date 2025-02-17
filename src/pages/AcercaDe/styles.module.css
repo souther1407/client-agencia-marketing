@@ -29,7 +29,7 @@
 }
 .desc > :nth-child(2) {
   font-size: 22px;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 .main {
   display: flex;
