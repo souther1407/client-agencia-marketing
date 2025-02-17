@@ -10,6 +10,12 @@
 }
 
 @font-face {
+  font-family: "queens";
+  src: url("./assets/fonts/QueensTrial-ExtraBold.ttf");
+  font-weight: 800;
+}
+
+@font-face {
   font-family: "ibm plex serif";
   src: url("./assets/fonts/IBMPlexSerif-Regular.ttf");
   font-weight: 400;

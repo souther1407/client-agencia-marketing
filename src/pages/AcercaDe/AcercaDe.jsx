@@ -21,21 +21,24 @@ const AcercaDe = () => {
           <Text
             fontFamily="font-secondary"
             color="light"
-            type="ultrabigtitle"
+            size="xxbig"
             textAlign="center"
-            bold="bold"
-            s={{ lineHeight: "1.1", fontFamily: "queens" }}
+            s={{
+              lineHeight: "0.95",
+              fontFamily: "queens",
+              fontWeight: "800",
+              letterSpacing: "-0.5px",
+            }}
           >
-            José
+            Jose
             <br />
             Whitembury
           </Text>
           <Text
-            color="primary-light"
             fontFamily="font-terciary"
             size="lg"
             textAlign="center"
-            s={{ lineHeight: "1.1" }}
+            s={{ lineHeight: "1.1", color: "#8fc29f" }}
           >
             Director de Marketing, Hackdental
           </Text>
