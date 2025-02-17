@@ -138,6 +138,7 @@
   }
   .detail {
     gap: 20px;
+    width: 100%;
   }
   .sendBtn {
     width: 100%;
