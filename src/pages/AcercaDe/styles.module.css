@@ -46,8 +46,10 @@
   display: flex;
   flex-direction: column;
   gap: 28px;
-  width: 740px;
+  width: 760px;
   flex-shrink: 0;
+  position: relative;
+  left: 32px;
   align-items: center;
 }
 .texts > * {
@@ -65,5 +67,6 @@
   }
   .texts {
     width: 100%;
+    left: 0;
   }
 }
