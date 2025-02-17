@@ -3,6 +3,11 @@
   margin: 0;
   box-sizing: border-box;
 }
+@font-face {
+  font-family: "queens";
+  src: url("./assets/fonts/QueensTrial-Bold.ttf");
+  font-weight: bold;
+}
 
 @font-face {
   font-family: "ibm plex serif";

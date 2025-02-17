@@ -22,7 +22,8 @@ const AcercaDe = () => {
             color="light"
             type="ultrabigtitle"
             textAlign="center"
-            s={{ lineHeight: "1.1" }}
+            bold="bold"
+            s={{ lineHeight: "1.1", fontFamily: "queens" }}
           >
             José
             <br />
@@ -31,7 +32,7 @@ const AcercaDe = () => {
           <Text
             color="primary-light"
             fontFamily="font-terciary"
-            type="subtitle"
+            size="lg"
             textAlign="center"
             s={{ lineHeight: "1.1" }}
           >

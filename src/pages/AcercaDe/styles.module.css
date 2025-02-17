@@ -25,7 +25,9 @@
   align-items: center;
   gap: 16px;
 }
-
+.desc > :nth-child(2) {
+  font-size: 22px;
+}
 .main {
   display: flex;
   flex-direction: column;
