@@ -44,6 +44,7 @@
   display: flex;
   flex-grow: 1;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .topMenu {
@@ -100,6 +101,7 @@
   align-items: center;
   gap: 16px;
   position: relative;
+  flex-shrink: 0;
 }
 .btnDropdown {
   display: none;
