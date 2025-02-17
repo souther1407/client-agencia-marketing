@@ -16,6 +16,7 @@ const AcercaDe = () => {
           alt="imagen españa"
           className={styles.imgAcerca}
         />
+
         <div className={styles.desc}>
           <Text
             fontFamily="font-secondary"
