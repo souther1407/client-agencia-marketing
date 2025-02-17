@@ -46,14 +46,13 @@
   display: flex;
   flex-direction: column;
   gap: 28px;
-  width: 760px;
+  width: 40%;
   flex-shrink: 0;
-  position: relative;
-  left: 32px;
   align-items: center;
 }
 .texts > * {
   align-self: center;
+  flex-shrink: 0;
 }
 @media screen and (max-width: 1024px) {
   .banner {
