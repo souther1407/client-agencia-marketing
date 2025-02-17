@@ -42,9 +42,11 @@ const AcercaDe = () => {
           >
             Director de Marketing, Hackdental
           </Text>
-          <IconTextButton colorVariant="white">
-            Contactar a José →
-          </IconTextButton>
+          <div className={styles.contactBtn}>
+            <IconTextButton colorVariant="white">
+              Contactar a José →
+            </IconTextButton>
+          </div>
         </div>
       </div>
       <main className={styles.main}>

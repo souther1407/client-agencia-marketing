@@ -31,15 +31,18 @@
   font-size: 22px;
   margin-bottom: 24px;
 }
+.contactBtn > :first-child {
+  width: 216px !important;
+}
 .main {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-left: 32%;
   padding-right: 32%;
-  padding-top: 32px;
+  padding-top: 40px;
   padding-bottom: 32px;
-  gap: 32px;
+  gap: 28px;
   background-color: var(--light-green);
 }
 
