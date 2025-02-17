@@ -60,10 +60,10 @@ const ContactForm = () => {
               <Text size="sm" bold="font-light" color="black">
                 {screen.availWidth > 1024
                   ? "Puedes ponerte en contacto con nosotros directamente por Whatsapp o llenando tus datos en la forma de la izquierda."
-                  : "Puedes ponerte en contacto con nosotros directamente por Whatsapp o llenando tus datos en la forma de abajo"}
+                  : "Puedes ponerte en contacto con nosotros directamente por Whatsapp o llenando tus datos en la forma de abajo."}
               </Text>
               <Text size="sm" bold="font-light" color="black">
-                No olvides incluir algunas palabras sobre ti y tu negocio
+                No olvides incluir algunas palabras sobre ti y tu negocio.
               </Text>
             </div>
             <div className={styles.infoBtn}>
