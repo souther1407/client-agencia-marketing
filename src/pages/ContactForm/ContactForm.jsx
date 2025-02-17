@@ -184,14 +184,8 @@ const ContactForm = () => {
           <hr className={styles.separator} />
           <Link to={"#"}>
             <Text color="black" size="ty" bold="font-light">
-              Politica de Privacidad
+              Cumplimiento del RGPD
             </Text>{" "}
-          </Link>
-          <hr className={styles.separator} />
-          <Link to={"#"}>
-            <Text color="black" size="ty" bold="font-light">
-              Politica de Privacidad
-            </Text>
           </Link>
         </div>
       </footer>
