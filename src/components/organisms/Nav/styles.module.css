@@ -490,6 +490,7 @@ body:has(.resoursesDropDown.show) {
   }
   .topMenu > :nth-child(2) {
     font-size: 13px;
+    line-height: 1.35;
   }
   .topMenu .whiteMark {
     align-self: self-start;
