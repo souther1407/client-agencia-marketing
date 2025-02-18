@@ -100,7 +100,7 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
               <Text
                 color="black"
                 fontFamily="font-terciary"
-                s={{ paddingBottom: "3px", fontSize: "30px" }}
+                s={{ fontSize: "30px" }}
               >
                 Ebooks Gratuitos
               </Text>
