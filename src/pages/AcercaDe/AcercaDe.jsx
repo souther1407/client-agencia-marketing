@@ -9,7 +9,7 @@ import IconTextButton from "../../components/molecules/IconTextButton/IconTextBu
 const AcercaDe = () => {
   return (
     <div className={styles.page}>
-      <Nav />
+      <Nav hideBottomMenu={false} />
       <div className={styles.banner}>
         <img
           src={imgAcercaDe}

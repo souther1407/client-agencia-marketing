@@ -465,7 +465,7 @@ body:has(.resoursesDropDown.show) {
 .recursosDesc > :nth-child(1) {
   margin-bottom: 4px;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1024px) {
   .elements {
     display: flex;
     flex-direction: column;
@@ -477,15 +477,15 @@ body:has(.resoursesDropDown.show) {
   .nav {
     height: auto;
   }
-  .topMenu {
-    display: none;
-  }
+
   .right > :nth-child(1),
   .right > :nth-child(2),
   .right > :nth-child(3),
   .right > :nth-child(4),
   .right > :nth-child(5) {
     display: none;
+  }
+  .topMenu {
   }
   .btnDropdown {
     display: flex;
@@ -512,9 +512,5 @@ body:has(.resoursesDropDown.show) {
   .elements {
     justify-content: space-between;
     padding: 0;
-  }
-
-  .topMenu {
-    display: none;
   }
 }

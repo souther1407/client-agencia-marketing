@@ -257,6 +257,7 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
             </span>
             <Text size="sm" color="light">
               Aceptamos 10 nuevas clínicas en España:{" "}
+              {screen.availWidth < 1024 && <br />}
               <span style={{ fontWeight: "lighter" }}>
                 Descubre si calificas
               </span>
