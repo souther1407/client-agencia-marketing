@@ -15,17 +15,13 @@
   .preefooter * {
     text-align: center !important;
   }
-  .desc {
-    display: flex;
-    justify-content: center;
-  }
 
   .preefooter > :nth-child(1) {
     font-size: 19px;
     margin-bottom: 8px;
   }
   .preefooter > :nth-child(2) {
-    font-size: 15px;
+    font-size: 14px;
     margin-bottom: 12px;
   }
 }

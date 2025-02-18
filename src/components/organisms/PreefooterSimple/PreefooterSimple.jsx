@@ -8,11 +8,10 @@ const PreefooterSimple = () => {
       <Text type="subtitle" color="dark" bold="semibold">
         Impulsemos tu Clínica, Juntos
       </Text>
-      <div className={styles.desc}>
-        <Text bold="font-light" color="dark">
-          Te ayudamos con una auditoría 100% gratuita
-        </Text>
-      </div>
+
+      <Text bold="font-light" color="dark">
+        Te ayudamos con una auditoría 100% gratuita
+      </Text>
 
       <IconTextButton size="300px">Pedir auditoría</IconTextButton>
     </div>
