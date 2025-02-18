@@ -30,8 +30,7 @@ const AcercaDe = () => {
               letterSpacing: "-0.5px",
             }}
           >
-            Jose
-            <br />
+            Jose {screen.availWidth > 1024 && <br />}
             Whitembury
           </Text>
           <Text
