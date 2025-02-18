@@ -505,6 +505,7 @@ body:has(.resoursesDropDown.show) {
   }
   .bottomMenu {
     padding: 0 16px 0 4px;
+    height: 76px;
   }
   .formBtn {
     display: none;
