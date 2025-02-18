@@ -192,7 +192,7 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
               <div className={styles.contactBtn}>
                 <Icon size={"1rem"} type={"email"} />
                 <Text color="dark" bold="regular" size="sm">
-                  info@inkadentist.com
+                  Email
                 </Text>
               </div>
               <div className={styles.contactBtn}>
@@ -690,7 +690,7 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                     <Icon color="black" size={"1.52rem"} type={"email"} />
                     <Text color="black" s={{ fontSize: "15px" }} bold="regular">
                       {" "}
-                      info@inkadentist.com
+                      Email
                     </Text>
                   </div>
                 </div>

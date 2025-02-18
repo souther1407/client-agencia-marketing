@@ -204,7 +204,7 @@ body:has(.resoursesDropDown.show) {
 .contactBanner .contactBtn,
 .aboutUs .contactBtn {
   border-radius: 8px;
-
+  width: fit-content;
   display: flex;
   align-items: center;
   gap: 8px;
