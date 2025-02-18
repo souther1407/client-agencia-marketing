@@ -31,7 +31,7 @@ const AcercaDe = () => {
             }}
           >
             Jose {screen.availWidth > 1024 && <br />}
-            Whitembury
+            Whittembury
           </Text>
           <Text
             fontFamily="font-terciary"
