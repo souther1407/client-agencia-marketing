@@ -131,9 +131,12 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                   Marketing Dental:
                   <br /> La Guia Definitiva
                 </Text>
-                <Text size="ty" bold="font-light" s={{ paddingTop: "8px" }}>
-                  Descargar Gratis
-                </Text>
+                <div className={styles.descargarGratis}>
+                  <Text size="ty" bold="font-light" s={{ paddingTop: "8px" }}>
+                    Descargar Gratis
+                  </Text>
+                  <Icon type={"arrowSquare"} size={"1rem"} />
+                </div>
               </div>
               <div className={styles.separator}></div>
               <div className={styles.card}>
@@ -155,9 +158,12 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                 >
                   Marketing Dental: <br /> La Guia Definitiva
                 </Text>
-                <Text size="ty" bold="font-light" s={{ paddingTop: "8px" }}>
-                  Descargar Gratis
-                </Text>
+                <div className={styles.descargarGratis}>
+                  <Text size="ty" bold="font-light" s={{ paddingTop: "8px" }}>
+                    Descargar Gratis
+                  </Text>
+                  <Icon type={"arrowSquare"} size={"1rem"} />
+                </div>
               </div>
               <div className={styles.separator}></div>
               <div className={styles.card}>
@@ -179,9 +185,12 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                 >
                   Marketing Dental: <br /> La Guia Definitiva
                 </Text>
-                <Text size="ty" bold="font-light" s={{ paddingTop: "8px" }}>
-                  Descargar Gratis
-                </Text>
+                <div className={styles.descargarGratis}>
+                  <Text size="ty" bold="font-light" s={{ paddingTop: "8px" }}>
+                    Descargar Gratis
+                  </Text>
+                  <Icon type={"arrowSquare"} size={"1rem"} />
+                </div>
               </div>
             </div>
             <div

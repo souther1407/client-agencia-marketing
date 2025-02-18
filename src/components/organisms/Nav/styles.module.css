@@ -265,6 +265,15 @@ body:has(.resoursesDropDown.show) {
   transition: all 0.3s ease-in-out;
   border: 1px solid var(--light-gray);
 }
+.descargarGratis {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.descargarGratis > :nth-child(2) {
+  position: relative;
+  top: 4px;
+}
 .resoursesDropDown .card:hover {
   background-color: var(--gray-blue-dark);
   transform: scale(1.1);

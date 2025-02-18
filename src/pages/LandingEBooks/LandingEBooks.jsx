@@ -65,9 +65,14 @@ const LandingEBooks = () => {
                   marked
                   variant="secondary"
                   to={DOWNLOAD_EBOOK}
-                  textProps={{ size: "sm" }}
+                  textProps={{
+                    size: "sm",
+                  }}
                 >
-                  Descargar la Guia <Icon type={"arrowSquare"} size={"1rem"} />
+                  Descargar la Guia{" "}
+                  <span style={{ position: "relative", top: "2px" }}>
+                    <Icon type={"arrowSquare"} size={"1rem"} />
+                  </span>
                 </TextLink>
               </div>
             </div>
