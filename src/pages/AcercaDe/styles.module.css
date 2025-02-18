@@ -62,10 +62,10 @@
   }
   .desc > :nth-child(1) {
     margin-bottom: 0px;
-    font-size: 40px;
+    font-size: 36px;
   }
   .desc > :nth-child(2) {
-    font-size: 18px;
+    font-size: 17px;
   }
   .imgAcerca {
     width: 250px;
