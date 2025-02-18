@@ -206,7 +206,7 @@ body:has(.resoursesDropDown.show) {
   border-radius: 8px;
   width: fit-content;
   display: flex;
-  align-items: center;
+  align-items: end;
   gap: 8px;
   cursor: pointer;
 }
