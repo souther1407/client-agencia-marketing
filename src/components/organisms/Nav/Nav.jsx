@@ -184,19 +184,19 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
             </Text>
             <div className={styles.links}>
               <div className={styles.contactBtn}>
-                <Icon color="black" size={"1rem"} type={"form"} />
+                <Icon size={"1rem"} type={"form"} />
                 <Text color="dark" bold="regular" size="sm">
                   Forma de contacto
                 </Text>
               </div>
               <div className={styles.contactBtn}>
-                <Icon color="black" size={"1rem"} type={"email"} />
+                <Icon size={"1rem"} type={"email"} />
                 <Text color="dark" bold="regular" size="sm">
                   info@inkadentist.com
                 </Text>
               </div>
               <div className={styles.contactBtn}>
-                <Icon color="black" size={"1rem"} type={"wp"} />
+                <Icon size={"1rem"} type={"wp"} />
                 <Text color="dark" bold="regular" size="sm">
                   {" "}
                   Whatsapp
@@ -223,7 +223,7 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                 className={styles.contactBtn}
                 onClick={() => navigate(ACERCA_DE)}
               >
-                <Icon color="black" size={"1rem"} type={"team"} />
+                <Icon size={"1rem"} type={"team"} />
                 <Text color="dark" bold="regular" size="sm">
                   Nuestro Equipo
                 </Text>
@@ -232,13 +232,13 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                 className={styles.contactBtn}
                 onClick={() => navigate(CUMPLIMIENTO)}
               >
-                <Icon color="black" size={"1rem"} type={"commitment"} />
+                <Icon size={"1rem"} type={"commitment"} />
                 <Text color="dark" bold="regular" size="sm">
                   Cumplimiento del RGPD
                 </Text>
               </div>
               <div className={styles.contactBtn}>
-                <Icon color="black" size={"1rem"} type={"privacy"} />
+                <Icon size={"1rem"} type={"privacy"} />
                 <Text color="dark" bold="regular" size="sm">
                   Política de Privacidad
                 </Text>

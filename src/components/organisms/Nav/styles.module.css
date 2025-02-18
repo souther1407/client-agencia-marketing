@@ -293,7 +293,10 @@ body:has(.resoursesDropDown.show) {
   gap: 32px;
   cursor: pointer;
 }
-
+.contactBtn:hover > * {
+  color: #006a5a;
+  text-decoration: underline;
+}
 .resoursesDropDown.show .developText:hover {
   overflow: hidden;
   background-color: var(--gray-blue-dark);
