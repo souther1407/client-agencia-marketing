@@ -118,7 +118,12 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                 <Text size="ty" bold="font-light" s={{ padding: "8px 0" }}>
                   2024
                 </Text>
-                <Text size="sm" bold="semibold" color="black">
+                <Text
+                  size="sm"
+                  bold="semibold"
+                  color="black"
+                  s={{ lineHeight: "1.35" }}
+                >
                   Marketing Dental:
                   <br /> La Guia Definitiva
                 </Text>
@@ -134,7 +139,12 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                 <Text size="ty" bold="font-light" s={{ padding: "8px 0" }}>
                   2024
                 </Text>
-                <Text size="sm" bold="semibold" color="black">
+                <Text
+                  size="sm"
+                  bold="semibold"
+                  color="black"
+                  s={{ lineHeight: "1.35" }}
+                >
                   Marketing Dental: <br /> La Guia Definitiva
                 </Text>
                 <Text size="ty" bold="font-light" s={{ paddingTop: "8px" }}>
@@ -149,7 +159,12 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                 <Text size="ty" bold="font-light" s={{ padding: "8px 0" }}>
                   2024
                 </Text>
-                <Text size="sm" bold="semibold" color="black">
+                <Text
+                  size="sm"
+                  bold="semibold"
+                  color="black"
+                  s={{ lineHeight: "1.35" }}
+                >
                   Marketing Dental: <br /> La Guia Definitiva
                 </Text>
                 <Text size="ty" bold="font-light" s={{ paddingTop: "8px" }}>
