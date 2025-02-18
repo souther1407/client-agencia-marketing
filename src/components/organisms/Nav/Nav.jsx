@@ -102,7 +102,7 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                 fontFamily="font-terciary"
                 s={{ fontSize: "30px" }}
               >
-                Ebooks Gratuitos
+                Ebooks Gratuitos 📚
               </Text>
 
               <Text bold="font-light" size="sm">
@@ -213,7 +213,7 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
               s={{ fontSize: "30px" }}
               fontFamily="font-terciary"
             >
-              ¿Quienes somos?
+              ¿Quienes somos? 🙋
             </Text>
             <Text size="sm" bold="font-light" s={{ paddingBottom: "28px" }}>
               Informate sobre HackDental y sus áreas de expertise.
