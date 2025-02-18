@@ -192,7 +192,7 @@ body:has(.resoursesDropDown.show) {
   flex-direction: column;
   padding-top: 45px;
   padding-bottom: 60px;
-  gap: 4px;
+  gap: 2px;
 }
 
 .aboutUs .links,
