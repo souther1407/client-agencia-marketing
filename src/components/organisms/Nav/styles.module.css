@@ -51,7 +51,7 @@
   width: 100%;
   gap: 16px;
   justify-content: center;
-  background-color: var(--primary);
+  background-color: #006a5a;
   padding: 12px;
   position: relative;
   border-bottom: 1px solid var(--primary-transparent);
@@ -495,7 +495,7 @@ body:has(.resoursesDropDown.show) {
   .topMenu .whiteMark {
     align-self: self-start;
     position: relative;
-    top: 4px;
+    top: 3px;
   }
   .topMenu .whiteMark > :first-child {
     font-size: 10px !important;
