@@ -486,9 +486,10 @@ body:has(.resoursesDropDown.show) {
     display: none;
   }
   .topMenu {
+    gap: 12px;
   }
   .topMenu > :nth-child(2) {
-    font-size: 14px;
+    font-size: 13px;
   }
   .topMenu .whiteMark {
     align-self: self-start;
