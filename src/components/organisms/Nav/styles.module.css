@@ -199,7 +199,7 @@ body:has(.resoursesDropDown.show) {
 .contactBanner .links {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 16px;
 }
 .contactBanner .contactBtn,
 .aboutUs .contactBtn {
