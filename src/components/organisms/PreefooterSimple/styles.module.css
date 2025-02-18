@@ -9,6 +9,9 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .preefooter {
+    gap: 12px;
+  }
   .preefooter > * {
     text-align: center !important;
   }
