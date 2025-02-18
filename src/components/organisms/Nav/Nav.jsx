@@ -177,7 +177,7 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
               fontFamily="font-terciary"
               s={{ fontSize: "30px" }}
             >
-              Contacta a un Representante
+              Contacta a un Representante 📲
             </Text>
             <Text size="sm" bold="font-light" s={{ paddingBottom: "28px" }}>
               Haznos cualquier consulta, te responderemos en menos de 24 horas.
@@ -533,7 +533,7 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                     color="black"
                     fontFamily="font-terciary"
                   >
-                    Ebooks Gratuitos
+                    Ebooks Gratuitos 📚
                   </Text>
                   <Text size="lg" bold="font-light">
                     Aprende sobre Marketing dental con nuestros recursos 100%
@@ -740,7 +740,7 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                 s={{ fontSize: "21px" }}
                 fontFamily="font-terciary"
               >
-                ¿Quienes somos?
+                ¿Quienes somos? 🙋
               </Text>
               <Text size="lg" bold="font-light">
                 Informate sobre HackDental y sus áreas de expertise.
