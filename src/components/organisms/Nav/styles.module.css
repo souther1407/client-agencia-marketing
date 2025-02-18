@@ -487,6 +487,18 @@ body:has(.resoursesDropDown.show) {
   }
   .topMenu {
   }
+  .topMenu > :nth-child(2) {
+    font-size: 14px;
+  }
+  .topMenu .whiteMark {
+    align-self: self-start;
+    position: relative;
+    top: 4px;
+  }
+  .topMenu .whiteMark > :first-child {
+    font-size: 10px !important;
+  }
+
   .btnDropdown {
     display: flex;
   }
