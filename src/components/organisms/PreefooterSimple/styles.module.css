@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   gap: 16px;
-  padding: 44px 28px;
+  padding: 44px 26px;
   background-color: var(--primary-transparent-25);
   border-radius: 80px 80px 0 0;
 }
@@ -12,8 +12,12 @@
   .preefooter {
     gap: 0;
   }
-  .preefooter > * {
+  .preefooter * {
     text-align: center !important;
+  }
+  .desc {
+    display: flex;
+    justify-content: center;
   }
 
   .preefooter > :nth-child(1) {
