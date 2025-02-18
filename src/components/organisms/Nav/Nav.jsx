@@ -115,7 +115,11 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                 <div className={styles.cardImgContainer}>
                   <img src={imgEbookPrueba} className={styles.cardImg} />
                 </div>
-                <Text size="ty" bold="font-light" s={{ padding: "8px 0" }}>
+                <Text
+                  size="ty"
+                  bold="font-light"
+                  s={{ padding: "12px 0 4px 0" }}
+                >
                   2024
                 </Text>
                 <Text
@@ -136,7 +140,11 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                 <div className={styles.cardImgContainer}>
                   <img src={imgEbookPrueba} className={styles.cardImg} />
                 </div>
-                <Text size="ty" bold="font-light" s={{ padding: "8px 0" }}>
+                <Text
+                  size="ty"
+                  bold="font-light"
+                  s={{ padding: "12px 0 4px 0" }}
+                >
                   2024
                 </Text>
                 <Text
@@ -156,7 +164,11 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                 <div className={styles.cardImgContainer}>
                   <img src={imgEbookPrueba} className={styles.cardImg} />
                 </div>
-                <Text size="ty" bold="font-light" s={{ padding: "8px 0" }}>
+                <Text
+                  size="ty"
+                  bold="font-light"
+                  s={{ padding: "12px 0 4px 0" }}
+                >
                   2024
                 </Text>
                 <Text

@@ -259,7 +259,7 @@ body:has(.resoursesDropDown.show) {
   padding: 16px;
   display: flex;
   flex-direction: column;
-  gap: 4px;
+
   cursor: pointer;
   border-radius: 12px;
   transition: all 0.3s ease-in-out;
