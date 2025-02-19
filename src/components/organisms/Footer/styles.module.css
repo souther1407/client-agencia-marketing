@@ -31,9 +31,12 @@
 .section {
   display: flex;
   flex-direction: column;
-  gap: 8px;
 }
-
+.section__links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
 .copy {
   display: flex;
   gap: 32px;

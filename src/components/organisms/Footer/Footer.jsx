@@ -21,47 +21,56 @@ const Footer = () => {
           </section>
           <div className={styles.linkSection}>
             <section className={styles.section}>
-              <Text color="black" type="subtitle" fontFamily="font-terciary">
+              <Text color="black" size="xxxlg" fontFamily="font-terciary">
                 Contacta a un Representante
               </Text>
-              <Text bold="font-light" size="sm" s={{ paddingBottom: "12px" }}>
+              <Text bold="font-light" size="sm" s={{ paddingBottom: "28px" }}>
                 Te responderemos en menos de 24 horas
               </Text>
-              <Link to={CONTACT_FORM}>
-                <div
-                  style={{ display: "flex", gap: "8px", alignItems: "center" }}
-                >
-                  <Icon size={"1.2rem"} type={"form"} />
-                  <Text color="black" size="sm" bold="regular">
-                    Forma de Contacto
-                  </Text>
-                </div>
-              </Link>
-              <Link to={"/"}>
-                <div
-                  style={{
-                    display: "flex",
-                    gap: "8px",
-                    alignItems: "center",
-                    padding: "12px 0",
-                  }}
-                >
-                  <Icon size={"1.2rem"} type={"email"} />
-                  <Text color="black" size="sm" bold="regular">
-                    info@inkadentist.com
-                  </Text>
-                </div>
-              </Link>
-              <Link to={"/"}>
-                <div
-                  style={{ display: "flex", gap: "8px", alignItems: "center" }}
-                >
-                  <Icon size={"1.2rem"} type={"wp"} />
-                  <Text color="black" size="sm" bold="regular">
-                    Whatsapp
-                  </Text>
-                </div>
-              </Link>
+              <div className={styles.section__links}>
+                <Link to={CONTACT_FORM}>
+                  <div
+                    style={{
+                      display: "flex",
+                      gap: "8px",
+                      alignItems: "end",
+                    }}
+                  >
+                    <Icon size={"1rem"} type={"form"} />
+                    <Text color="black" size="sm" bold="regular">
+                      Forma de Contacto
+                    </Text>
+                  </div>
+                </Link>
+                <Link to={"/"}>
+                  <div
+                    style={{
+                      display: "flex",
+                      gap: "8px",
+                      alignItems: "end",
+                    }}
+                  >
+                    <Icon size={"1rem"} type={"email"} />
+                    <Text color="black" size="sm" bold="regular">
+                      Email
+                    </Text>
+                  </div>
+                </Link>
+                <Link to={"/"}>
+                  <div
+                    style={{
+                      display: "flex",
+                      gap: "8px",
+                      alignItems: "end",
+                    }}
+                  >
+                    <Icon size={"1rem"} type={"wp"} />
+                    <Text color="black" size="sm" bold="regular">
+                      Whatsapp
+                    </Text>
+                  </div>
+                </Link>
+              </div>
             </section>
           </div>
         </header>
