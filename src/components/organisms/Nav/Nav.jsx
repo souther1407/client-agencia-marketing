@@ -135,7 +135,11 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                   <Text size="ty" bold="font-light" s={{ paddingTop: "8px" }}>
                     Descargar Gratis
                   </Text>
-                  <Icon type={"arrowSquare"} size={"1rem"} />
+                  <Icon
+                    type={"arrowSquare"}
+                    size={"0.8rem"}
+                    color="var(--text)"
+                  />
                 </div>
               </div>
               <div className={styles.separator}></div>
@@ -162,7 +166,11 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                   <Text size="ty" bold="font-light" s={{ paddingTop: "8px" }}>
                     Descargar Gratis
                   </Text>
-                  <Icon type={"arrowSquare"} size={"1rem"} />
+                  <Icon
+                    type={"arrowSquare"}
+                    size={"0.8rem"}
+                    color="var(--text)"
+                  />
                 </div>
               </div>
               <div className={styles.separator}></div>
@@ -189,7 +197,11 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
                   <Text size="ty" bold="font-light" s={{ paddingTop: "8px" }}>
                     Descargar Gratis
                   </Text>
-                  <Icon type={"arrowSquare"} size={"1rem"} />
+                  <Icon
+                    type={"arrowSquare"}
+                    size={"0.8rem"}
+                    color="var(--text)"
+                  />
                 </div>
               </div>
             </div>
