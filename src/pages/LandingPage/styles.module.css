@@ -50,14 +50,29 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--white);
+  background-color: #006a5a;
 }
 .notification {
-  padding: 16px;
+  padding: 32px;
+  padding-top: 40px;
   display: flex;
-  width: 270px;
-  background-color: var(--white);
+  width: 350px;
+  background-color: #fafafa;
   border-radius: 16px;
+  border: 1px solid #006a5a;
+  position: relative;
+}
+.wsImg {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 40%);
+  bottom: 100%;
+  width: 100px;
+}
+.closeBtn {
+  position: absolute;
+  right: 3%;
+  top: -25%;
 }
 
 body:has(.popupContainer.show) {

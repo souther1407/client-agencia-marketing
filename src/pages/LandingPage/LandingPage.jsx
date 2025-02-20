@@ -26,6 +26,7 @@ import imgReseñasCard from "@assets/Te faltan reseñas positivas online.svg";
 import imgRecordatorioCard from "@assets/Tienes un mal sistema de recordatorio de citas.svg";
 import ImagenEbook1 from "@assets/Imagen ebook 1.svg";
 import ImagenEbookWp from "@assets/imagen ebook de whatsapp.svg";
+import ImgBtnWS from "@assets/imgBtnWS.svg";
 import PartnersCarousel from "../../components/organisms/PartnersCarousel/PartnersCarousel";
 import { useConfigStore } from "../../stores/useConfig";
 
@@ -146,9 +147,11 @@ que quieren llevar su consultorio al siguiente nivel."
         {showWSMsg && (
           <div className={styles.notification}>
             <Text bold="font-light" size="ty">
-              👋 Tienes alguna duda sobre nuestros servicios de marketing?
-              Consultanos por WhatsApp
+              👋¡Hola! Mi nombre es Jose Whittembury, Director de Marketing en
+              HackDental. ¿Tienes alguna duda sobre nuestros servicios?
             </Text>
+
+            <img src={ImgBtnWS} alt="img ws" className={styles.wsImg} />
             <div className={styles.closeBtn}>
               <IconButton
                 icon="close"
@@ -159,7 +162,7 @@ que quieren llevar su consultorio al siguiente nivel."
           </div>
         )}
         <div className={styles.wsBtn}>
-          <Icon size={"2.5rem"} type={"wp"} color="var(--primary)" />
+          <Icon size={"2rem"} type={"wp"} color="#fafafa" />
         </div>
       </div>
       <Nav />
