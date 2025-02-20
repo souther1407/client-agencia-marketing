@@ -149,10 +149,10 @@ const DownloadForm = ({ modalOpened }) => {
         {currentForm == 2 && (
           <div className={styles.content}>
             <div className={styles.desc}>
-              <Text bold type="title" textAlign="center">
+              <Text bold type="title" color="black" textAlign="center">
                 Descarga el Ebook Gratuito
               </Text>
-              <Text size="ty" textAlign="center">
+              <Text size="ty" color="black" textAlign="center">
                 todos los campos son obligatorios
               </Text>
             </div>
@@ -163,12 +163,14 @@ const DownloadForm = ({ modalOpened }) => {
                 value={form.first_name}
                 onChange={handleChange}
                 onError={handleErrorsChange}
+                labelColor="black"
                 label="Nombre*"
                 validators={[isEmpty]}
               />
               <Input
                 variant="white"
                 id={"last_name"}
+                labelColor="black"
                 value={form.last_name}
                 onChange={handleChange}
                 onError={handleErrorsChange}
@@ -178,6 +180,7 @@ const DownloadForm = ({ modalOpened }) => {
               <Input
                 variant="white"
                 id={"phone_number"}
+                labelColor="black"
                 value={form.phone_number}
                 onChange={handleChange}
                 onError={handleErrorsChange}
@@ -187,6 +190,7 @@ const DownloadForm = ({ modalOpened }) => {
               <Select
                 icon={"arrowFoward"}
                 variant="white"
+                labelColor="black"
                 id={"how_know_about"}
                 onChange={handleChange}
                 label={"¿Como escuchaste de este ebook?*"}
