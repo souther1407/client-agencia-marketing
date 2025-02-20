@@ -44,8 +44,9 @@ const DownloadEBook = () => {
                 Descargar Ahora
               </IconTextButton>
             </div>
-
-            <MedicsCard />
+            <div className={styles.medicosCard}>
+              <MedicsCard bgColor={"#8fc29f33"} />
+            </div>
           </section>
           <img className={styles.ebook} src={EBookImg} />
         </div>
