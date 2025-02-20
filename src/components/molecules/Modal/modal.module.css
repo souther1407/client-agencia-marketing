@@ -44,8 +44,10 @@
 @media screen and (max-width: 1024px) {
   .modal {
     align-items: flex-start;
+    overflow: auto;
   }
   .modalContent {
     width: 100%;
+    overflow: auto;
   }
 }
