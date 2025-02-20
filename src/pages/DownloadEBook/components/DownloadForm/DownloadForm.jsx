@@ -135,7 +135,7 @@ const DownloadForm = ({ modalOpened }) => {
                 bold="font-light"
                 textAlign="center"
               >
-                todos los campos son obligatorios
+                Todos los campos son obligatorios
               </Text>
             </div>
 
@@ -163,7 +163,7 @@ const DownloadForm = ({ modalOpened }) => {
                 bold="font-light"
                 textAlign="center"
               >
-                todos los campos son obligatorios
+                Todos los campos son obligatorios
               </Text>
             </div>
             <div className={styles.inputChecks}>
