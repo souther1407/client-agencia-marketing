@@ -161,6 +161,7 @@
     right: 8px;
   }
   .banner__desc > :nth-child(1) {
+    font-size: 15px;
     margin-bottom: 12px;
   }
   .medicosCard {
