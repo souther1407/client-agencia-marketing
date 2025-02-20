@@ -129,7 +129,12 @@ const DownloadForm = ({ modalOpened }) => {
               <Text bold type="title" color="black" textAlign="center">
                 Descarga el Ebook Gratuito
               </Text>
-              <Text size="ty" color="black" textAlign="center">
+              <Text
+                size="ty"
+                color="black"
+                bold="font-light"
+                textAlign="center"
+              >
                 todos los campos son obligatorios
               </Text>
             </div>
@@ -152,7 +157,12 @@ const DownloadForm = ({ modalOpened }) => {
               <Text bold type="title" color="black" textAlign="center">
                 Descarga el Ebook Gratuito
               </Text>
-              <Text size="ty" color="black" textAlign="center">
+              <Text
+                size="ty"
+                color="black"
+                bold="font-light"
+                textAlign="center"
+              >
                 todos los campos son obligatorios
               </Text>
             </div>
