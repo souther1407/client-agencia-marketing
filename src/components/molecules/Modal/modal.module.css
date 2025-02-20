@@ -41,8 +41,11 @@
   border-bottom: 1px solid var(--gray);
   background-color: var(--light-green);
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   .modal {
     align-items: flex-start;
+  }
+  .modalContent {
+    width: 100%;
   }
 }

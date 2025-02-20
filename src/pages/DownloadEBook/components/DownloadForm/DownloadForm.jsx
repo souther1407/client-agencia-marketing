@@ -126,10 +126,10 @@ const DownloadForm = ({ modalOpened }) => {
         {currentForm == 1 && (
           <div className={styles.content}>
             <div className={styles.desc}>
-              <Text bold type="title" textAlign="center">
+              <Text bold type="title" color="black" textAlign="center">
                 Descarga el Ebook Gratuito
               </Text>
-              <Text size="ty" textAlign="center">
+              <Text size="ty" color="black" textAlign="center">
                 todos los campos son obligatorios
               </Text>
             </div>
@@ -140,6 +140,7 @@ const DownloadForm = ({ modalOpened }) => {
               value={form.email}
               onChange={handleChange}
               onError={handleErrorsChange}
+              labelColor="black"
               label="Correo electronico de trabajo*"
               validators={[isEmail, isEmail]}
             />
