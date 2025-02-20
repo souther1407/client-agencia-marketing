@@ -38,7 +38,7 @@
   padding: 16px;
   display: flex;
   justify-content: flex-end;
-  border-bottom: 1px solid var(--gray);
+  border-bottom: 1px solid var(--gray-transparent-50);
   background-color: var(--light-green);
 }
 @media screen and (max-width: 1024px) {
