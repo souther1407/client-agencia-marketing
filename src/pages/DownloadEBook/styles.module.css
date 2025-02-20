@@ -165,6 +165,9 @@
     font-size: 15px;
     margin-bottom: 12px;
   }
+  .banner__desc > :nth-child(2) {
+    font-size: 26px;
+  }
   .medicosCard {
     display: flex;
     justify-content: center;
