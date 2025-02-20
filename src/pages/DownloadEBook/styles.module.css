@@ -152,13 +152,16 @@
     flex-direction: column-reverse;
     width: 100%;
     padding: 28px;
-    gap: 16px;
+    gap: 24px;
   }
   .ebook {
     width: 102%;
     height: auto;
     position: relative;
     right: 8px;
+  }
+  .banner__desc > :nth-child(1) {
+    margin-bottom: 12px;
   }
   .medicosCard {
     display: flex;
