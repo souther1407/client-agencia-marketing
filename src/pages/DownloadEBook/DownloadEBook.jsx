@@ -6,7 +6,7 @@ import Modal from "../../components/molecules/Modal/Modal";
 import DownloadForm from "./components/DownloadForm/DownloadForm";
 import Logo from "../../components/atoms/Logo/Logo";
 import Icon from "../../components/atoms/Icon/Icon";
-import EBookImg from "@assets/imagen ebook page.svg";
+import EBookImg from "@assets/imgEbook.svg";
 import EbookPortada from "@assets/ImgPortadaEbook.svg";
 import Link from "../../components/atoms/Link/Link";
 

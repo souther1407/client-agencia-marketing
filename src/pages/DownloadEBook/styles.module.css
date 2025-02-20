@@ -155,8 +155,10 @@
     gap: 16px;
   }
   .ebook {
-    width: 100%;
+    width: 102%;
     height: auto;
+    position: relative;
+    right: 6px;
   }
   .medicosCard {
     display: flex;
