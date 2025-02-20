@@ -152,6 +152,7 @@
     flex-direction: column-reverse;
     width: 100%;
     padding: 28px;
+    padding-top: 12px;
     gap: 24px;
   }
   .ebook {
