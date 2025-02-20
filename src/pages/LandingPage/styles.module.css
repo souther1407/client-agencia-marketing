@@ -68,7 +68,7 @@
   left: 50%;
   transform: translate(-50%, 40%);
   bottom: 100%;
-  width: 100px;
+  width: 80px;
 }
 .closeBtn {
   position: absolute;
