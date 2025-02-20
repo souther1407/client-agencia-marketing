@@ -214,4 +214,7 @@
     padding: 28px;
     gap: 16px;
   }
+  .footer {
+    height: 100px;
+  }
 }
