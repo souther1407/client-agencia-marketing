@@ -124,7 +124,7 @@ const DownloadForm = ({ modalOpened }) => {
       </header>
       <main className={styles.main}>
         {currentForm == 1 && (
-          <div className={styles.content}>
+          <div className={`${styles.content} ${styles.first}`}>
             <div className={styles.desc}>
               <Text bold type="title" color="black" textAlign="center">
                 Descarga el Ebook Gratuito
@@ -147,7 +147,7 @@ const DownloadForm = ({ modalOpened }) => {
           </div>
         )}
         {currentForm == 2 && (
-          <div className={styles.content}>
+          <div className={`${styles.content} ${styles.second}`}>
             <div className={styles.desc}>
               <Text bold type="title" color="black" textAlign="center">
                 Descarga el Ebook Gratuito

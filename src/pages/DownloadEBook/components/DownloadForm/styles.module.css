@@ -155,16 +155,20 @@
   .inputs {
     flex-direction: column;
   }
+
   .content {
     width: 100%;
     overflow: auto;
     align-items: stretch;
     padding: 0;
   }
+  .content.first {
+    margin-top: 72px;
+  }
   .downloadForm {
     width: 100%;
     height: 100vh;
-    justify-content: space-evenly;
+    justify-content: start;
   }
   .inputChecks {
     grid-template-columns: 100%;
