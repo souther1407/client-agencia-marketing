@@ -30,7 +30,7 @@
 
 .banner {
   display: flex;
-  gap: 64px;
+  gap: calc(100vh / 50);
   padding-top: 100px;
   padding-bottom: 120px;
   padding-left: calc(100vw / 5);
@@ -109,8 +109,6 @@
 .medicosCard {
   position: relative;
   bottom: 8px;
-  display: flex;
-  justify-content: center;
 }
 
 .prefooter {
@@ -129,7 +127,6 @@
   width: 250px;
   height: 70px;
   position: relative;
-  right: 30px;
 }
 .separator {
   height: 0.77rem;
@@ -154,12 +151,16 @@
   .banner {
     flex-direction: column-reverse;
     width: 100%;
-    padding: 32px;
+    padding: 28px;
+    gap: 16px;
   }
   .ebook {
     width: 100%;
     height: auto;
-    transform: scale(1.1);
+  }
+  .medicosCard {
+    display: flex;
+    justify-content: center;
   }
   .medicosCard > :first-child {
     border-radius: 8px;
@@ -189,7 +190,7 @@
   .moreInfo {
     width: 100%;
     flex-direction: column;
-    padding: 32px;
+    padding: 28px;
     gap: 16px;
   }
   .info {
@@ -200,7 +201,7 @@
   }
   .prefooter {
     flex-direction: column;
-    padding: 32px;
+    padding: 28px;
     gap: 16px;
   }
 }
