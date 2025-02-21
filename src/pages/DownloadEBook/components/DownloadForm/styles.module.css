@@ -189,6 +189,7 @@
     font-size: 15px !important;
   }
   .content .desc > :nth-child(1) {
+    margin-top: 12px;
     margin-bottom: 12px;
   }
   .content .desc > :nth-child(2) {
