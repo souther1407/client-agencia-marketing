@@ -80,15 +80,9 @@ const DownloadForm = ({ modalOpened }) => {
 
   return (
     <div
-      className={styles.downloadForm}
-      style={{
-        height:
-          window.innerWidth <= 600
-            ? form.email.length > 0
-              ? "100vh"
-              : "75vh"
-            : "",
-      }}
+      className={`${styles.downloadForm} ${currentForm == 1 && styles.first}  ${
+        currentForm == 2 && styles.second
+      }`}
     >
       {loading && <LoadingScreen />}
       <header className={styles.header}>
