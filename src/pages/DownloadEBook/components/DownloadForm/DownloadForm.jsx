@@ -192,7 +192,7 @@ const DownloadForm = ({ modalOpened }) => {
                 validators={[isEmpty]}
               />
               <Select
-                icon={"arrowFoward"}
+                icon={"arrowDown"}
                 variant="white"
                 labelColor="black"
                 id={"how_know_about"}
@@ -203,6 +203,7 @@ const DownloadForm = ({ modalOpened }) => {
                 elements={["Redes sociales", "Google"]}
                 value={form.how_know_about}
                 validators={[isEmpty]}
+                style={{ height: "48px" }}
               />
             </div>
             <div className={styles.privacy}>
