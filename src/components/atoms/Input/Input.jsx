@@ -12,6 +12,7 @@ const Input = ({
   labelColor = "standard",
   icon,
   size = "100%",
+  errorMsg = "",
   setFocus = false,
   validators = [],
   onEnterPressed = () => {},
@@ -19,10 +20,9 @@ const Input = ({
 }) => {
   const input = useRef(null);
 
-  const [errorMsg, setErrorMsg] = useState("");
   const handleChange = (e) => {
-    handleError(e.target.value);
     onChange(id, e.target.value);
+    handleError(e.target.value);
   };
 
   const handleError = (value) => {
@@ -31,7 +31,7 @@ const Input = ({
       error = validator(value);
       if (error) break;
     }
-    setErrorMsg(error);
+
     onError(id, error);
   };
   useEffect(() => {

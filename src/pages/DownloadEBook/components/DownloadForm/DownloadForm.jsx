@@ -28,10 +28,11 @@ const DownloadForm = ({ modalOpened }) => {
   });
 
   const [loading, setLoading] = useState(false);
-
+  const [cambioSeccion, setCambioSecction] = useState(false);
   const [currentForm, setCurrentForm] = useState(1);
 
   const handleNextForm = () => {
+    setCambioSecction(true);
     setCurrentForm((prev) => prev + 1);
   };
 
@@ -139,6 +140,7 @@ const DownloadForm = ({ modalOpened }) => {
               value={form.email}
               onChange={handleChange}
               onError={handleErrorsChange}
+              errorMsg={cambioSeccion === false ? "" : formErrors.email}
               labelColor="black"
               label="Correo electronico de trabajo*"
               validators={[isEmail, isEmail]}
@@ -168,6 +170,7 @@ const DownloadForm = ({ modalOpened }) => {
                 onChange={handleChange}
                 onError={handleErrorsChange}
                 labelColor="black"
+                errorMsg={formErrors.email}
                 label="Nombre*"
                 validators={[isEmpty]}
               />
@@ -233,7 +236,7 @@ const DownloadForm = ({ modalOpened }) => {
         <div className={currentForm === MAX_FORMS && styles.none}>
           <IconTextButton
             onClick={handleNextForm}
-            disabled={currentForm == 1 && !!formErrors.email}
+            disabled={currentForm == 1 && formErrors.email !== ""}
           >
             Siguiente
           </IconTextButton>
