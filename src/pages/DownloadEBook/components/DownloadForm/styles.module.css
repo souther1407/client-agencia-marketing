@@ -194,4 +194,7 @@
   .content .desc > :nth-child(2) {
     font-size: 16px;
   }
+  .privacy > :first-child {
+    font-size: 14px;
+  }
 }
