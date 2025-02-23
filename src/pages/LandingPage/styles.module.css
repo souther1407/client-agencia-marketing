@@ -208,7 +208,7 @@ body:has(.popupContainer.show) {
   display: flex;
   flex-direction: column;
   position: relative;
-  background: linear-gradient(135deg, var(--primary-transparent), white);
+  background: var(--primary-darker);
   border-radius: 0 0 120px 0;
 }
 .banner {

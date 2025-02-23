@@ -174,14 +174,24 @@ que quieren llevar su consultorio al siguiente nivel."
                 type="ultrabigtitle"
                 bold="bold"
                 fontFamily="font-cuarternary"
-                color="black"
+                color="light"
+                s={{
+                  lineHeight: "0.95",
+                  fontFamily: "queens",
+                  fontWeight: "800",
+                  letterSpacing: "-0.5px",
+                }}
               >
-                Marketing para consultorios
-                <Mark color="primary-bg-triangular" bold="bold">
+                Marketing para consultorios{" "}
+                <Mark color="primary-bg-triangular-light" bold="bold">
                   Dentales
                 </Mark>
               </Text>
-              <Text size="sm" bold="font-light" color="black">
+              <Text
+                fontFamily="font-terciary"
+                size="lg"
+                s={{ lineHeight: "1.1", color: "#8fc29f" }}
+              >
                 Convertimos tu clínica en autoridad local
               </Text>
 
@@ -189,13 +199,11 @@ que quieren llevar su consultorio al siguiente nivel."
                 <IconTextButton
                   size="100%"
                   onClick={() => navigate(CONTACT_FORM)}
+                  colorVariant="white"
                 >
                   Quiero saber más
                 </IconTextButton>
               </div>
-              <Text size="sm" bold="font-light" color="black">
-                *Solo trabajamos con clínicas que ofrecen implantes.
-              </Text>
             </div>
             <img className={styles.banner__img} src={ImgBanner} />
           </div>

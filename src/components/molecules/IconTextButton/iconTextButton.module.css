@@ -322,7 +322,7 @@
 .white.iconTextButton.full {
   background-color: var(--white);
   color: var(--black);
-  border-radius: 24px;
+  border-radius: 8px;
   padding: 8px 16px;
 }
 .white.iconTextButton:disabled {

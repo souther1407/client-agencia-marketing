@@ -30,6 +30,27 @@
   transform: rotateZ(-2deg) skewX(24deg);
 }
 
+.primary-bg-triangular-light {
+  color: var(--white);
+  position: relative;
+  padding: 0 4px;
+  display: inline-block;
+  width: fit-content;
+  height: fit-content;
+  z-index: 1;
+}
+
+.primary-bg-triangular-light::before {
+  content: "";
+  width: 100%;
+  height: 75%;
+  background-color: #21917b;
+  position: absolute;
+
+  z-index: -1;
+  transform: rotateZ(-2deg) skewX(24deg);
+}
+
 .error-bg-triangular {
   color: var(--white);
   position: relative;

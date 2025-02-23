@@ -51,7 +51,7 @@
   width: 100%;
   gap: 16px;
   justify-content: center;
-  background-color: #006a5a;
+  background-color: var(--primary-darker);
   padding: 12px;
   position: relative;
   border-bottom: 1px solid var(--primary-transparent);
