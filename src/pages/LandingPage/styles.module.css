@@ -355,7 +355,6 @@ body:has(.popupContainer.show) {
   width: 100%;
   margin-top: 72px;
   margin-bottom: 72px;
-  transform: scale(1.4);
 }
 .neneArio.mobile {
   display: none;
