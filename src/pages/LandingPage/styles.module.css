@@ -923,6 +923,7 @@ body:has(.popupContainer.show) {
   }
 
   .cardMetodo {
+    box-shadow: none;
   }
 
   .cardMetodo > :first-child {
@@ -947,6 +948,7 @@ body:has(.popupContainer.show) {
   }
   .details .detail::after {
     top: 6px;
+    display: none;
   }
   .listDiferences .line > i {
     position: relative;
@@ -1089,6 +1091,9 @@ body:has(.popupContainer.show) {
     padding-top: 32px;
     padding-bottom: 24px;
   }
+  .spainLocation__card::after {
+    display: none;
+  }
   .spainLocation > :first-child {
     padding: 0 28px;
   }
@@ -1112,6 +1117,9 @@ body:has(.popupContainer.show) {
   }
   .mainContent__card {
     padding: 32px 24px 16px 24px;
+  }
+  .mainContent__card::after {
+    display: none;
   }
   .mainContent__card__desc {
     gap: 0;
