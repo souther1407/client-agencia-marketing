@@ -1057,7 +1057,7 @@ body:has(.popupContainer.show) {
   }
   .contactBannerSection .details {
     width: 100%;
-    padding: 0 8px 0 10px;
+    padding: 0 28px;
   }
   .contactBannerSection .details .detail {
     width: 100%;
@@ -1082,7 +1082,7 @@ body:has(.popupContainer.show) {
     margin-bottom: 8px;
   }
   .spanishLocation__card_container {
-    padding: 0 10px;
+    padding: 0 28px;
     width: 100%;
   }
 
@@ -1110,7 +1110,7 @@ body:has(.popupContainer.show) {
     padding: 64px 0px;
   }
   .mainContent__cards {
-    padding: 0 12px;
+    padding: 0 28px;
   }
   .mainContent .card {
     width: 100%;
