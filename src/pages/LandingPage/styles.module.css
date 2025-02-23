@@ -834,9 +834,6 @@ body:has(.popupContainer.show) {
   }
 }
 @media screen and (max-width: 1024px) {
-  .banner__content {
-    overflow-x: hidden;
-  }
   .banner__content > :nth-child(1) {
     text-align: center !important;
     font-size: 3.2rem;
