@@ -924,6 +924,7 @@ body:has(.popupContainer.show) {
 
   .cardMetodo {
     box-shadow: none;
+    padding: 24px;
   }
 
   .cardMetodo > :first-child {
