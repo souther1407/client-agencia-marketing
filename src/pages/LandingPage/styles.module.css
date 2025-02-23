@@ -346,6 +346,7 @@ body:has(.popupContainer.show) {
 }
 .whoAreWe__contents > :nth-child(1) {
   margin-bottom: 36px;
+  font-size: 36px;
 }
 .whoAreWe__contents > :nth-child(2) {
   margin-bottom: 32px;

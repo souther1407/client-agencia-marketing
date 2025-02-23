@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import styles from "./styles.module.css";
 import Nav from "../../components/organisms/Nav/Nav";
-import NeneArio from "@assets/Nene Ario Landing.svg";
-import NeneArioMobile from "@assets/NeneArioMobile.svg";
+import NeneArio from "@assets/MarketingGenerico.svg";
+import NeneArioMobile from "@assets/MarketingGenerico.svg";
 import Text from "../../components/atoms/Text/Text";
 import IconTextButton from "../../components/molecules/IconTextButton/IconTextButton";
 import IconButton from "../../components/molecules/IconButton/IconButton";
@@ -222,9 +222,7 @@ que quieren llevar su consultorio al siguiente nivel."
           <PartnersCarousel />
         </div>
         <div className={styles.whoAreWe__contents}>
-          <Text color="black" type="bigtitle">
-            ¿Quienes Somos?
-          </Text>
+          <Text color="black">¿Quienes Somos?</Text>
           <Text color="black" bold="font-light">
             Puedes ponerte en contacto con nosotros por correo electrónico a
             jaka@ .design y te responderemos en un plazo de 24 horas.
