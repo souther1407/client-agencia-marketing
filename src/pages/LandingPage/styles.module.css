@@ -838,6 +838,12 @@ body:has(.popupContainer.show) {
     width: 100%;
     right: 0;
     bottom: 0;
+    background: radial-gradient(
+      ellipse,
+      rgba(1, 63, 54, 0.452) 0%,
+      transparent 75%,
+      transparent 100%
+    );
   }
 
   .mainContent {
