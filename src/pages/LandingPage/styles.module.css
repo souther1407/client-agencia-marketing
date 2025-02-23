@@ -266,7 +266,7 @@ body:has(.popupContainer.show) {
   background: var(--primary-darker);
 
   background: radial-gradient(
-    ellipse 400px 200px at 40% 50%,
+    ellipse 400px 300px at 40% 50%,
     rgba(1, 63, 54, 0.452) 0%,
     transparent 70%,
     transparent 100%
