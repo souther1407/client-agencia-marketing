@@ -249,25 +249,41 @@ que quieren llevar su consultorio al siguiente nivel."
           </Text>
           <div className={styles.listDiferences}>
             <div className={styles.line}>
-              <Icon type={"check"} color="#21917b" size={"1rem"} />
+              <Icon
+                type={"check"}
+                color="var(--primary-darker)"
+                size={"1rem"}
+              />
               <Text color="black" bold="font-light">
                 Enfocamos TODO nuestro tiempo al Marketing de Clínicas Dentales.
               </Text>
             </div>
             <div className={styles.line}>
-              <Icon type={"check"} color="#21917b" size={"1rem"} />
+              <Icon
+                type={"check"}
+                color="var(--primary-darker)"
+                size={"1rem"}
+              />
               <Text color="black" bold="font-light">
                 Trabajamos con un numero limitado de consultorio.
               </Text>
             </div>
             <div className={styles.line}>
-              <Icon type={"check"} color="#21917b" size={"1rem"} />
+              <Icon
+                type={"check"}
+                color="var(--primary-darker)"
+                size={"1rem"}
+              />
               <Text color="black" bold="font-light">
                 Traemos pacientes de tus tratamientos más rentables.
               </Text>
             </div>
             <div className={styles.line}>
-              <Icon type={"check"} color="#21917b" size={"1rem"} />
+              <Icon
+                type={"check"}
+                color="var(--primary-darker)"
+                size={"1rem"}
+              />
               <Text color="black" bold="font-light">
                 Trabajamos con un numero limitado de consultorio.
               </Text>
