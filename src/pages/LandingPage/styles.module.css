@@ -922,6 +922,13 @@ body:has(.popupContainer.show) {
     height: 20px;
   }
 
+  .cardMetodo {
+  }
+
+  .cardMetodo > :first-child {
+    font-size: 17px;
+  }
+
   .popupDesc > .title,
   .popupDesc > .desc {
     width: 100% !important;
