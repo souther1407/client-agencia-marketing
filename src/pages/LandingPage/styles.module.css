@@ -324,7 +324,7 @@ body:has(.popupContainer.show) {
   margin-bottom: 60px;
 }
 .partners > :first-child {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 /* .whoAreWe::after {
   position: absolute;
