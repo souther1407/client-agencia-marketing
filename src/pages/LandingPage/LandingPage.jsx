@@ -299,7 +299,9 @@ que quieren llevar su consultorio al siguiente nivel."
               ¿Eres un excelente dentista, pero atraer nuevos pacientes sigue
               siendo un desafío? 🦷
             </Text>
-            <IconTextButton>Ver el Método HackDental</IconTextButton>
+            <IconTextButton textProps={{ textAlign: "center" }}>
+              Ver el Método HackDental
+            </IconTextButton>
           </div>
         </div>
       </section>
