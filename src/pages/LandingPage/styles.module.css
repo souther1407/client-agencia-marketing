@@ -267,6 +267,7 @@ body:has(.popupContainer.show) {
 }
 .banner__content > :nth-child(2),
 .banner__content > :nth-child(3) {
+  font-size: 22px;
   margin-bottom: 16px;
 }
 .banner__img {

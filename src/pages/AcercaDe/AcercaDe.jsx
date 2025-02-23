@@ -20,7 +20,7 @@ const AcercaDe = () => {
         <div className={styles.desc}>
           <Text
             fontFamily="font-secondary"
-            color="light"
+            color="white"
             size="xxbig"
             textAlign="center"
             s={{

@@ -171,10 +171,10 @@ que quieren llevar su consultorio al siguiente nivel."
           <div className={styles.contents}>
             <div className={styles.banner__content}>
               <Text
-                type="ultrabigtitle"
+                size="xxbig"
                 bold="bold"
                 fontFamily="font-cuarternary"
-                color="light"
+                color="white"
                 s={{
                   lineHeight: "0.95",
                   fontFamily: "queens",

@@ -134,6 +134,11 @@
 .light {
   color: var(--white);
 }
+
+.white {
+  color: white;
+}
+
 .dark-light {
   color: var(--dark-white);
 }
