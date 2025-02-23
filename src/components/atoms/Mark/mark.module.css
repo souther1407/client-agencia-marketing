@@ -31,7 +31,7 @@
 }
 
 .primary-bg-triangular-light {
-  color: var(--white);
+  color: white;
   position: relative;
   padding: 0 4px;
   display: inline-block;
