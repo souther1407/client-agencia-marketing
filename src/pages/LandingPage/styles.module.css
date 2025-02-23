@@ -218,7 +218,7 @@ body:has(.popupContainer.show) {
   padding-right: var(--width-unit);
   padding-left: var(--width-unit);
   padding-top: 160px;
-  padding-bottom: 160px;
+  padding-bottom: 20px;
   display: flex;
   flex-direction: column;
 }
