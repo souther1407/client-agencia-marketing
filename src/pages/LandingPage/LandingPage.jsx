@@ -183,7 +183,7 @@ que quieren llevar su consultorio al siguiente nivel."
                 }}
               >
                 Marketing para consultorios{" "}
-                <Mark color="primary-bg-triangular-light" bold="bold">
+                <Mark color="primary-bg-triangular-light" bold="extra-bold">
                   Dentales
                 </Mark>
               </Text>

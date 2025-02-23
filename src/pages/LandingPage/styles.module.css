@@ -264,6 +264,17 @@ body:has(.popupContainer.show) {
   width: 600px;
   bottom: 32px;
 }
+
+.banner__content::after {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  z-index: 2;
+  background-color: #0000005e;
+  top: 0;
+  left: 0;
+}
+
 .banner__content > :nth-child(1) {
   margin-bottom: 6px;
 }
