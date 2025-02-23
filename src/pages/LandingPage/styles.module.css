@@ -263,16 +263,13 @@ body:has(.popupContainer.show) {
   z-index: 1;
   width: 600px;
   bottom: 32px;
-}
-
-.banner__content::after {
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  z-index: 2;
-  background-color: #0000005e;
-  top: 0;
-  left: 0;
+  background: var(--primary-darker);
+  background: radial-gradient(
+    circle,
+    rgba(1, 63, 54, 0.521) 0%,
+    transparent 50%,
+    transparent 100%
+  );
 }
 
 .banner__content > :nth-child(1) {
