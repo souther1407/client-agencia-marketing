@@ -218,7 +218,7 @@ body:has(.popupContainer.show) {
   padding-right: var(--width-unit);
   padding-left: var(--width-unit);
   padding-top: 160px;
-  padding-bottom: 20px;
+  padding-bottom: 100px;
   display: flex;
   flex-direction: column;
 }
@@ -257,10 +257,12 @@ body:has(.popupContainer.show) {
 }
 .banner__content {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   position: relative;
   z-index: 1;
   width: 600px;
+  bottom: 32px;
 }
 .banner__content > :nth-child(1) {
   margin-bottom: 6px;
@@ -825,6 +827,7 @@ body:has(.popupContainer.show) {
   .banner__content {
     width: 100%;
     right: 0;
+    bottom: 0;
   }
 
   .mainContent {
