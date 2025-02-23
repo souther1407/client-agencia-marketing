@@ -245,7 +245,7 @@ que quieren llevar su consultorio al siguiente nivel."
             textAlign="center"
             s={{ lineHeight: "1.3" }}
           >
-            ¿Qué nos diferencia de otras agencias?
+            ¿Qué nos diferencia de otras agencias? 🧐
           </Text>
           <div className={styles.listDiferences}>
             <div className={styles.line}>
@@ -273,11 +273,18 @@ que quieren llevar su consultorio al siguiente nivel."
               </Text>
             </div>
           </div>
-          <Text color="black">
+          {/*  <Text color="black">
             Puedes ponerte en contacto con nosotros por correo electrónico a
             <br />
             jaka@ .design y te responderemos en un plazo de 24 horas.
-          </Text>
+          </Text> */}
+          <div className={styles.cardMetodo}>
+            <Text color="black">
+              ¿Eres un excelente dentista, pero atraer nuevos pacientes sigue
+              siendo un desafío? 🦷
+            </Text>
+            <IconTextButton>Ver el Método HackDental</IconTextButton>
+          </div>
         </div>
       </section>
       <section className={styles.contactBannerSection}>
