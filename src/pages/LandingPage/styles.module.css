@@ -482,7 +482,7 @@ body:has(.popupContainer.show) {
   height: 16px;
 }
 .cardMetodo {
-  border: 2px solid #006a5a;
+  border: 3px solid #006a5a;
   padding: 32px;
   padding-top: 40px;
   border-radius: 16px;
