@@ -279,7 +279,7 @@ que quieren llevar su consultorio al siguiente nivel."
             jaka@ .design y te responderemos en un plazo de 24 horas.
           </Text> */}
           <div className={styles.cardMetodo}>
-            <Text color="black">
+            <Text color="black" s={{ lineHeight: "1.5" }}>
               ¿Eres un excelente dentista, pero atraer nuevos pacientes sigue
               siendo un desafío? 🦷
             </Text>
