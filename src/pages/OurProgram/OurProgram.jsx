@@ -82,7 +82,7 @@ const OurProgram = () => {
               </div>
             </div>
             <form className={styles.formContacto}>
-              <Text textAlign="center" color="white">
+              <Text size="sm" textAlign="center" color="white">
                 <Mark color="primary-darker-bg">
                   **DUEÑO DE CONSULTORIO DENTAL**
                 </Mark>
@@ -92,6 +92,7 @@ const OurProgram = () => {
                 color="white"
                 bold="semibold"
                 textAlign="center"
+                s={{ lineHeight: "1.15" }}
               >
                 Reunete con nosotros y <br />
                 comentanos tus necesidades
