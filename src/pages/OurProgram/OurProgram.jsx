@@ -48,7 +48,9 @@ const OurProgram = () => {
           >
             Desbloquea el potencial de tu <br />
             <div style={{ display: "flex", justifyContent: "center" }}>
-              <Mark color="primary-bg-triangular-light">Consultorio</Mark>
+              <Mark color="primary-bg-triangular-light" bold="extra-bold">
+                Consultorio
+              </Mark>
             </div>
           </Text>
 
