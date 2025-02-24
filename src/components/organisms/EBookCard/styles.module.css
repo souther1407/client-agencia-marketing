@@ -49,9 +49,10 @@
   margin-bottom: 6px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   .ebook {
     width: 100%;
     height: 500px;
+    align-items: start;
   }
 }
