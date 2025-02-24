@@ -25,7 +25,7 @@ const LandingEBooks = () => {
           <Text
             size="xbig"
             bold="semibold"
-            s={{ color: "white" }}
+            s={{ color: "white", lineHeight: "1.1" }}
             textAlign="center"
           >
             Biblioteca de Marketing Dental
