@@ -231,8 +231,7 @@
 .neneArio {
   width: 100%;
   position: relative;
-
-  bottom: 40px;
+  margin-top: 16px;
 }
 .cardMeet {
   background-color: var(--white);
@@ -537,6 +536,7 @@
   }
   .neneArio {
     width: 100%;
+    margin-top: 8px;
   }
   .list {
     gap: 32px;
