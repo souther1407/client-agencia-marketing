@@ -82,9 +82,9 @@ const OurProgram = () => {
               </div>
             </div>
             <form className={styles.formContacto}>
-              <Text textAlign="center">
+              <Text textAlign="center" color="white">
                 <Mark color="primary-darker-bg">
-                  **DUEÑOS DE CONSULTORIOS DENTALES!**
+                  **DUEÑO DE CONSULTORIO DENTAL**
                 </Mark>
               </Text>
               <Text
