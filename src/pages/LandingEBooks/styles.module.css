@@ -140,9 +140,6 @@
   .tag {
     right: -2%;
   }
-}
-
-@media screen and (max-width: 800px) {
   .books {
     grid-template-columns: repeat(1, auto);
     padding: 8px;
