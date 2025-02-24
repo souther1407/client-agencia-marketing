@@ -36,13 +36,19 @@ const OurProgram = () => {
         <div className={styles.elements}>
           <Text
             type="bigtitle"
-            color="black"
+            color="white"
             bold="semibold"
             textAlign="center"
+            s={{
+              lineHeight: "0.95",
+              fontFamily: "queens",
+              fontWeight: "800",
+              letterSpacing: "-0.5px",
+            }}
           >
             Desbloquea el potencial de tu <br />
             <div style={{ display: "flex", justifyContent: "center" }}>
-              <Mark color="primary-bg-triangular">Consultorio</Mark>
+              <Mark color="primary-bg-triangular-light">Consultorio</Mark>
             </div>
           </Text>
 
@@ -75,13 +81,13 @@ const OurProgram = () => {
             </div>
             <form className={styles.formContacto}>
               <Text textAlign="center">
-                <Mark color="primary-bg">
+                <Mark color="primary-darker-bg">
                   **DUEÑOS DE CONSULTORIOS DENTALES!**
                 </Mark>
               </Text>
               <Text
                 type="subtitle"
-                color="black"
+                color="white"
                 bold="semibold"
                 textAlign="center"
               >
@@ -95,7 +101,7 @@ const OurProgram = () => {
                     label="Nombre*"
                     variant="primary-bordered"
                     placeholder="Nombre*"
-                    labelColor="black"
+                    labelColor="white"
                     onChange={() => {}}
                     onError={() => {}}
                   />
@@ -104,7 +110,7 @@ const OurProgram = () => {
                     label="Apellido*"
                     variant="primary-bordered"
                     placeholder="Apellido*"
-                    labelColor="black"
+                    labelColor="white"
                     onChange={() => {}}
                     onError={() => {}}
                   />
@@ -114,7 +120,7 @@ const OurProgram = () => {
                   label="Email*"
                   variant="primary-bordered"
                   placeholder="Email*"
-                  labelColor="black"
+                  labelColor="white"
                   onChange={() => {}}
                   onError={() => {}}
                 />
@@ -123,12 +129,14 @@ const OurProgram = () => {
                   label="Teléfono*"
                   variant="primary-bordered"
                   placeholder="Teléfono*"
-                  labelColor="black"
+                  labelColor="white"
                   onChange={() => {}}
                   onError={() => {}}
                 />
                 <div className={styles.nextStepBtn}>
-                  <IconTextButton>Siguiente Paso</IconTextButton>
+                  <IconTextButton colorVariant="white">
+                    Siguiente Paso
+                  </IconTextButton>
                 </div>
               </div>
             </form>

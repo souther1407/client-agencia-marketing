@@ -41,7 +41,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: linear-gradient(var(--primary-transparent-2), white);
+  background: var(--primary-darker);
   border-top: 1px solid var(--blue);
   position: relative;
   padding-top: 80px;
@@ -58,6 +58,7 @@
 }
 .banner .elements > :first-child {
   margin-bottom: 44px;
+  font-size: 52px;
 }
 .videoContainer {
   display: flex;
@@ -147,6 +148,9 @@
 .nextStepBtn {
   display: flex;
   justify-content: center;
+}
+.nextStepBtn > :first-child {
+  width: 240px !important;
 }
 .main {
   display: flex;
@@ -400,9 +404,13 @@
   align-items: center;
   gap: 8px;
 }
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1024px) {
   .flecha {
     display: none;
+  }
+
+  .nextStepBtn > :first-child {
+    width: 100% !important;
   }
 
   .banner {
