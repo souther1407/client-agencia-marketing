@@ -126,10 +126,12 @@
   .mainEbookCard {
     flex-direction: column;
     height: 500px;
-    justify-content: space-around;
+  }
+  .mainEbookCard img {
+    height: 250px;
   }
   .desc {
-    gap: 32px;
+    gap: 0;
   }
   .ebookImg {
     width: 100%;
