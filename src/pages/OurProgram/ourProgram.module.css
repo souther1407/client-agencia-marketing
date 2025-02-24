@@ -516,6 +516,7 @@
   .ventaHumo > .subsection {
     padding: 28px;
     margin-top: 28px;
+    height: fit-content;
   }
   .ventaHumo > .subsection > * {
     width: 100% !important;
