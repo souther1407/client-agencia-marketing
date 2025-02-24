@@ -513,6 +513,12 @@
   .ventaHumo {
     width: 100%;
   }
+
+  .ventaHumo > :first-child {
+    width: 100%;
+    padding-left: 28px;
+    padding-right: 28px;
+  }
   .ventaHumo > .subsection {
     padding: 28px;
     margin-top: 28px;
@@ -580,10 +586,7 @@
   .ventaHumo {
     width: 100%;
   }
-  .ventaHumo > .subsection {
-    padding: 16px;
-    margin-top: 28px;
-  }
+
   .ventaHumo > .subsection > * {
     width: 100% !important;
   }
