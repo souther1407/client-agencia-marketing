@@ -191,7 +191,9 @@
   align-items: center;
   height: 900px;
 }
-
+.ventaHumo > .subsection > :first-child {
+  font-size: 36px;
+}
 .sectionHorrible {
   display: flex;
   flex-direction: column;
@@ -434,6 +436,10 @@
   }
   .formContacto > :nth-child(2) {
     padding-bottom: 24px;
+    font-size: 24px;
+  }
+
+  .ventaHumo > .subsection > :first-child {
     font-size: 24px;
   }
 

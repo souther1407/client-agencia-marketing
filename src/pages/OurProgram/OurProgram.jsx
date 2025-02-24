@@ -162,15 +162,8 @@ const OurProgram = () => {
             </Text>
           </div>
           <div className={styles.subsection}>
-            <Text
-              type="bigtitle"
-              fontSize="2.3333rem"
-              color="black"
-              textAlign="center"
-              bold="semibold"
-            >
-              Resuelve los <Mark color="primary-bg-triangular">problemas </Mark>{" "}
-              que limitan el crecimiento de tu práctica
+            <Text type="bigtitle" color="black" textAlign="center">
+              Eres el mejor en lo que haces, déjanos a nosotros el Marketing
             </Text>
             <Text bold="font-light">
               Puedes ponerte en contacto con nosotros por correo electrónico a
