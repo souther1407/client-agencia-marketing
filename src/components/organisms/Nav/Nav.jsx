@@ -540,7 +540,9 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
           </div>
 
           <div className={styles.btns}>
-            <IconTextButton size="100%">Solicita una reunion</IconTextButton>
+            <IconTextButton size="100%" onClick={() => navigate(CONTACT_FORM)}>
+              Solicita una reunion
+            </IconTextButton>
             <IconTextButton
               colorVariant="primary-bordered"
               size="100%"
