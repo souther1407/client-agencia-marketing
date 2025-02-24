@@ -187,12 +187,13 @@
   margin-top: 60px;
   display: flex;
   flex-direction: column;
-  gap: 44px;
+  gap: 24px;
   align-items: center;
   height: 900px;
 }
 .ventaHumo > .subsection > :first-child {
   font-size: 36px;
+  margin-bottom: 20px;
 }
 .sectionHorrible {
   display: flex;
