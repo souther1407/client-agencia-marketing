@@ -162,7 +162,12 @@ const OurProgram = () => {
             </Text>
           </div>
           <div className={styles.subsection}>
-            <Text type="bigtitle" color="black" textAlign="center">
+            <Text
+              type="bigtitle"
+              color="black"
+              textAlign="center"
+              s={{ lineHeight: "1.15" }}
+            >
               Eres el mejor en lo que haces, déjanos a nosotros el Marketing
             </Text>
             <Text bold="font-light">
