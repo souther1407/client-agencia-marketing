@@ -109,6 +109,11 @@
     padding-right: 28px;
     padding-bottom: 44px;
   }
+  .banner > :nth-child(1) {
+  }
+  .banner > :nth-child(2) {
+    margin-bottom: 8px;
+  }
   .books {
     grid-template-columns: repeat(2, auto);
     gap: 16px;
