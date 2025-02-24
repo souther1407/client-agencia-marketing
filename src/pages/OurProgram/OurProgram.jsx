@@ -102,7 +102,7 @@ const OurProgram = () => {
                   <Input
                     id={"name"}
                     label="Nombre*"
-                    variant="primary-bordered"
+                    variant="white"
                     placeholder="Nombre*"
                     labelColor="white"
                     onChange={() => {}}
@@ -111,7 +111,7 @@ const OurProgram = () => {
                   <Input
                     id={"lastName"}
                     label="Apellido*"
-                    variant="primary-bordered"
+                    variant="white"
                     placeholder="Apellido*"
                     labelColor="white"
                     onChange={() => {}}
@@ -121,7 +121,7 @@ const OurProgram = () => {
                 <Input
                   id={"email"}
                   label="Email*"
-                  variant="primary-bordered"
+                  variant="white"
                   placeholder="Email*"
                   labelColor="white"
                   onChange={() => {}}
@@ -130,7 +130,7 @@ const OurProgram = () => {
                 <Input
                   id={"phone"}
                   label="Teléfono*"
-                  variant="primary-bordered"
+                  variant="white"
                   placeholder="Teléfono*"
                   labelColor="white"
                   onChange={() => {}}
