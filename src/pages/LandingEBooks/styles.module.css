@@ -104,10 +104,9 @@
     height: auto;
   }
   .banner {
-    padding-top: calc(var(--linea-roja) * 7);
-    padding-bottom: calc(var(--linea-roja) * 4);
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-top: 44px;
+    padding-left: 28px;
+    padding-right: 28px;
   }
   .books {
     grid-template-columns: repeat(2, auto);
