@@ -11,7 +11,7 @@ import TextArea from "../../components/atoms/Textarea/Textarea";
 import { useNavigate } from "react-router-dom";
 import { CONTACT_FORM } from "../../constants/routes";
 import Mark from "../../components/atoms/Mark/Mark";
-import Nene from "@assets/imagen dentista programa.svg";
+import Nene from "@assets/nuevaImgDentistas.svg";
 import Select from "../../components/atoms/Select/Select";
 import FlechaNuestroPrograma from "@assets/nuestro metodo.svg";
 import Flecha1 from "@assets/flecha 1.svg";

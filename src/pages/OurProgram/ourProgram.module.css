@@ -231,7 +231,7 @@
 .neneArio {
   width: 100%;
   position: relative;
-  transform: scale(1);
+
   bottom: 40px;
 }
 .cardMeet {
@@ -513,7 +513,7 @@
     width: 100%;
   }
   .ventaHumo > .subsection {
-    padding: 16px;
+    padding: 28px;
     margin-top: 28px;
   }
   .ventaHumo > .subsection > * {
@@ -522,16 +522,14 @@
   .sectionHorrible > .subsection > * {
     width: 100% !important;
   }
-}
-@media screen and (max-width: 800px) {
   .neneArio {
-    transform: scale(1.1);
     width: 100%;
   }
   .list {
     gap: 32px;
   }
 }
+
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
   .banner {
     padding: 64px;
