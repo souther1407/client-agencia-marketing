@@ -974,6 +974,17 @@ body:has(.popupContainer.show) {
     height: auto;
     flex-direction: column;
   }
+
+  .notification {
+    width: 250px;
+    height: 125px;
+    padding: 20px;
+    padding-top: 28px;
+  }
+  .wsImg {
+    width: 60px;
+  }
+
   .popupMobileCloseBtn {
     display: block;
     position: absolute;

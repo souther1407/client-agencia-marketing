@@ -40,8 +40,8 @@ const LandingPage = () => {
 
   useEffect(() => {
     setTimeout(() => {
-      setShowPopup(false);
-    }, 3 * 1000);
+      setShowPopup(true);
+    }, 13 * 1000);
   }, []);
 
   return (
