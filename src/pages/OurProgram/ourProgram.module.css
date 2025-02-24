@@ -71,6 +71,7 @@
 .videoImg {
   width: 100%;
   height: auto;
+  border: 2px solid #8fc29f;
 }
 .videoPlayBtn {
   position: absolute;
