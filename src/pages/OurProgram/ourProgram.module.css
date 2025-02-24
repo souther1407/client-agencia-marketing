@@ -518,11 +518,17 @@
     width: 100%;
     padding-left: 28px;
     padding-right: 28px;
+    margin-bottom: 0;
   }
   .ventaHumo > .subsection {
     padding: 28px;
-    margin-top: 28px;
+    padding-top: 40px;
+    gap: 32px;
     height: fit-content;
+    margin-top: 0;
+  }
+  .ventaHumo > .subsection > :first-child {
+    margin-bottom: 0;
   }
   .ventaHumo > .subsection > * {
     width: 100% !important;
