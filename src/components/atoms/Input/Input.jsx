@@ -54,7 +54,7 @@ const Input = ({
         <div className={styles.label}>
           <Text
             size={"sm"}
-            bold="regular"
+            bold="font-light"
             color={errorMsg ? "error" : labelColor}
           >
             {label}

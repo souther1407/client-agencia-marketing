@@ -137,7 +137,10 @@ const OurProgram = () => {
                   onError={() => {}}
                 />
                 <div className={styles.nextStepBtn}>
-                  <IconTextButton colorVariant="white">
+                  <IconTextButton
+                    colorVariant="white"
+                    textProps={{ size: "sm" }}
+                  >
                     Siguiente Paso
                   </IconTextButton>
                 </div>
