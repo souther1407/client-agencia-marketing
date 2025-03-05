@@ -206,7 +206,7 @@ const OurProgram = () => {
                       size={"1.5rem"}
                       color="var(--primary)"
                     />
-                    <Text color="white" bold="font-light">
+                    <Text s={{ color: "#ebeced" }} bold="font-light">
                       Puedes ponerte en contacto con nosotros por correo
                     </Text>
                   </div>
@@ -216,7 +216,7 @@ const OurProgram = () => {
                       size={"1.5rem"}
                       color="var(--primary)"
                     />
-                    <Text color="white" bold="font-light">
+                    <Text s={{ color: "#ebeced" }} bold="font-light">
                       Puedes ponerte en contacto con nosotros por correo
                     </Text>
                   </div>
