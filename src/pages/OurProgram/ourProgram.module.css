@@ -215,7 +215,7 @@
   font-size: 36px;
 }
 .img__detalle1 {
-  width: 500px;
+  width: 550px;
 }
 .seccionDetalle1,
 .seccionDetalle2 {
@@ -225,7 +225,7 @@
 .detalleSeccion1 {
   display: flex;
   flex-direction: column;
-  width: 680px;
+  width: 640px;
   position: relative;
   left: 60px;
 }
