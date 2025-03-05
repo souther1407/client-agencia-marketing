@@ -233,7 +233,7 @@
 .detalleSeccion1 > :nth-child(1) {
   font-size: 28px;
   line-height: 1.1;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 .detalleSeccion1 > :nth-child(2) {
   margin-bottom: 32px;
