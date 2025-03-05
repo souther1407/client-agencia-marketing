@@ -151,16 +151,6 @@ const OurProgram = () => {
       </header>
       <main className={styles.main}>
         <div className={styles.ventaHumo}>
-          <div className={styles.header}>
-            <Text bold="font-light">
-              Puedes ponerte en contacto con nosotros por correo electrónico a
-              jaka@ .design y te responderemos en un plazo de 24 horas.
-            </Text>
-
-            <Text bold="font-light">
-              No olvides incluir algunas palabras sobre ti y tu negocio.
-            </Text>
-          </div>
           <div className={styles.subsection}>
             <Text
               type="bigtitle"

@@ -212,10 +212,10 @@
   align-items: center;
 }
 .ventaHumo > .subsection > *:not(:first-child) {
-  width: 80%;
+  width: 90%;
 }
 .sectionHorrible > .subsection > *:not(:first-child) {
-  width: 80%;
+  width: 90%;
 }
 .errors {
   display: flex;

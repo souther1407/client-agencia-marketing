@@ -13,7 +13,7 @@ import { useNavigate } from "react-router-dom";
 import Link from "../../components/atoms/Link/Link";
 
 const LandingEBooks = () => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   return (
     <div className={styles.page}>
       <Nav hideTopMenu={true} />
