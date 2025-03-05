@@ -223,6 +223,50 @@ const OurProgram = () => {
                 </div>
               </div>
             </section>
+            <section className={styles.seccionDetalle1}>
+              <img src={imagenDetalle1} className={styles.img__detalle1} />
+              <div className={styles.detalleSeccion1}>
+                <Text color="white">
+                  Usemos el método HackDental en tu Consultorio
+                </Text>
+                <Text color="white" bold="font-light">
+                  Puedes ponerte en contacto con nosotros por correo electrónico
+                  a jaka@ .design y te responderemos en un plazo de 24 horas
+                </Text>
+                <div className={styles.detailCards}>
+                  <div className={styles.detailCard}>
+                    <Icon
+                      type={"check"}
+                      size={"1.5rem"}
+                      color="var(--primary)"
+                    />
+                    <Text color="white" bold="regular">
+                      Puedes ponerte en contacto con nosotros por correo
+                    </Text>
+                  </div>
+                  <div className={styles.detailCard}>
+                    <Icon
+                      type={"check"}
+                      size={"1.5rem"}
+                      color="var(--primary)"
+                    />
+                    <Text color="white" bold="font-light">
+                      Puedes ponerte en contacto con nosotros por correo
+                    </Text>
+                  </div>
+                  <div className={styles.detailCard}>
+                    <Icon
+                      type={"check"}
+                      size={"1.5rem"}
+                      color="var(--primary)"
+                    />
+                    <Text color="white" bold="font-light">
+                      Puedes ponerte en contacto con nosotros por correo
+                    </Text>
+                  </div>
+                </div>
+              </div>
+            </section>
           </div>
         </div>
         <div className={styles.sectionHorrible}>
