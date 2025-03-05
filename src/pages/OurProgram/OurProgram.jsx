@@ -15,6 +15,8 @@ import Nene from "@assets/nuevaImgDentistas2.svg";
 import Select from "../../components/atoms/Select/Select";
 import FlechaNuestroPrograma from "@assets/nuestro metodo.svg";
 import Flecha1 from "@assets/flecha 1.svg";
+import imagenDetalle1 from "@assets/imagenDetalle1.svg";
+import imagenDetalle2 from "@assets/imagenDetalle2.svg";
 
 const OurProgram = () => {
   const [showModalVideo, setShowModalVideo] = useState(false);
@@ -170,6 +172,57 @@ const OurProgram = () => {
               .design y te responderemos en un plazo de 24 horas.
             </Text>
             <img src={Nene} className={styles.neneArio} />
+          </div>
+        </div>
+        <div className={styles.detalleNuestroPrograma}>
+          <div className={styles.detalle__content}>
+            <Text type="title" color="white">
+              ¿Qué incluye nuestro programa? 🧐
+            </Text>
+            <section className={styles.seccionDetalle1}>
+              <img src={imagenDetalle1} className={styles.img__detalle1} />
+              <div className={styles.detalleSeccion1}>
+                <Text color="white">
+                  Usemos el método HackDental en tu Consultorio
+                </Text>
+                <Text color="white" bold="font-light">
+                  Puedes ponerte en contacto con nosotros por correo electrónico
+                  a jaka@ .design y te responderemos en un plazo de 24 horas
+                </Text>
+                <div className={styles.detailCards}>
+                  <div className={styles.detailCard}>
+                    <Icon
+                      type={"check"}
+                      size={"1.5rem"}
+                      color="var(--primary)"
+                    />
+                    <Text color="white">
+                      Puedes ponerte en contacto con nosotros por correo
+                    </Text>
+                  </div>
+                  <div className={styles.detailCard}>
+                    <Icon
+                      type={"check"}
+                      size={"1.5rem"}
+                      color="var(--primary)"
+                    />
+                    <Text color="white">
+                      Puedes ponerte en contacto con nosotros por correo
+                    </Text>
+                  </div>
+                  <div className={styles.detailCard}>
+                    <Icon
+                      type={"check"}
+                      size={"1.5rem"}
+                      color="var(--primary)"
+                    />
+                    <Text color="white">
+                      Puedes ponerte en contacto con nosotros por correo
+                    </Text>
+                  </div>
+                </div>
+              </div>
+            </section>
           </div>
         </div>
         <div className={styles.sectionHorrible}>
