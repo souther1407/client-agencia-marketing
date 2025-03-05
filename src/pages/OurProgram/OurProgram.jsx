@@ -444,7 +444,7 @@ const OurProgram = () => {
             </ul>
           </div>
         </div>
-        <section className={styles.contact}>
+        <section id="contact" className={styles.contact}>
           {/*  <img src={Flecha2} className={`${styles.flecha} ${styles.flecha3}`} /> */}
           <div className={styles.desc}>
             <Text type="title" color="light" bold="bold">

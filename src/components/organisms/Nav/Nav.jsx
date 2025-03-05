@@ -297,7 +297,14 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
       </div>
       <div className={styles.elements}>
         {hideTopMenu || isTopMenuHidden || (
-          <div className={styles.topMenu} onClick={() => navigate(OUR_PROGRAM)}>
+          <div
+            className={styles.topMenu}
+            onClick={() => {
+              if (location.pathname === "/program")
+                return document.getElementById("contact").scrollIntoView();
+              navigate(OUR_PROGRAM);
+            }}
+          >
             <span className={styles.whiteMark}>
               <Text s={{ fontSize: "11px" }} bold="semibold" color="black">
                 {location.pathname === "/program" ? "APLICA AHORA" : "NUEVO"}
