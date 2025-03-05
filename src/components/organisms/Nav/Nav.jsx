@@ -300,20 +300,26 @@ const Nav = ({ hideTopMenu = false, hideBottomMenu = false }) => {
           <div className={styles.topMenu} onClick={() => navigate(OUR_PROGRAM)}>
             <span className={styles.whiteMark}>
               <Text s={{ fontSize: "11px" }} bold="semibold" color="black">
-                NUEVO
+                {location.pathname === "/program" ? "APLICA AHORA" : "NUEVO"}
               </Text>
             </span>
-            <Text size="sm" color="light">
-              Aceptamos 10 nuevas clínicas en España:{" "}
-              {screen.availWidth < 1024 && <br />}
-              <span style={{ fontWeight: "lighter" }}>
-                Descubre si calificas
-              </span>
-              &nbsp;→
-              {/* <span className={styles.country}>
+            {location.pathname === "/program" ? (
+              <Text size="sm" color="light">
+                Aceptamos 10 nuevas clínicas en España
+              </Text>
+            ) : (
+              <Text size="sm" color="light">
+                Aceptamos 10 nuevas clínicas en España:{" "}
+                {screen.availWidth < 1024 && <br />}
+                <span style={{ fontWeight: "lighter" }}>
+                  Descubre si calificas
+                </span>
+                &nbsp;→
+                {/* <span className={styles.country}>
                 <Icon color="white" size={"1rem"} type={"arrowFoward"} />
               </span> */}
-            </Text>
+              </Text>
+            )}
           </div>
         )}
         {hideBottomMenu || (
