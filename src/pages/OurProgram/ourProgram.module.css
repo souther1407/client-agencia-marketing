@@ -248,7 +248,21 @@
   padding: 24px 28px;
   border-radius: 8px;
 }
-.detailCard > :last-child {
+.detailCard > :first-child {
+  position: relative;
+  z-index: 1;
+}
+.detailCard > :first-child::after {
+  content: " ";
+  width: 50%;
+  height: 50%;
+  background-color: var(--white);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  border-radius: 50%;
 }
 .sectionHorrible {
   display: flex;
