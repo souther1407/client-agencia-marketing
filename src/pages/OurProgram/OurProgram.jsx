@@ -224,7 +224,7 @@ const OurProgram = () => {
               </div>
             </section>
             <section className={styles.seccionDetalle1}>
-              <img src={imagenDetalle1} className={styles.img__detalle1} />
+              <img src={imagenDetalle2} className={styles.img__detalle1} />
               <div className={styles.detalleSeccion1}>
                 <Text color="white">
                   Usemos el método HackDental en tu Consultorio
