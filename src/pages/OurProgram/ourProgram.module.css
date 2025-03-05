@@ -246,7 +246,7 @@
   display: flex;
   gap: 8px;
   background-color: hsla(139, 29%, 66%, 0.4);
-  padding: 24px 28px;
+  padding: 20px 28px;
   border-radius: 8px;
 }
 .detailCard > :first-child {
