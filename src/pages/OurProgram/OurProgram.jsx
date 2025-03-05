@@ -223,7 +223,7 @@ const OurProgram = () => {
                 </div>
               </div>
             </section>
-            <section className={styles.seccionDetalle1}>
+            <section className={styles.seccionDetalle2}>
               <img src={imagenDetalle2} className={styles.img__detalle1} />
               <div className={styles.detalleSeccion1}>
                 <Text color="white">
