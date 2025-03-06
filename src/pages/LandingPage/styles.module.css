@@ -487,8 +487,7 @@ body:has(.popupContainer.show) {
   height: 100%;
   left: -8px;
   top: 12px;
-  background-color: var(--primary-transparent-50);
-  border: 2px solid var(--primary);
+  background-color: #21917b;
 }
 
 .detail__header {
