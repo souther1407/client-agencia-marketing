@@ -28,6 +28,7 @@ import ImagenEbook1 from "@assets/Imagen ebook 1.svg";
 import ImagenEbookWp from "@assets/imagen ebook de whatsapp.svg";
 import ImgBtnWS from "@assets/imgBtnWS.svg";
 import PartnersCarousel from "../../components/organisms/PartnersCarousel/PartnersCarousel";
+import Medicos from "@assets/Medicos.svg";
 import { useConfigStore } from "../../stores/useConfig";
 
 const LandingPage = () => {
@@ -306,127 +307,145 @@ que quieren llevar su consultorio al siguiente nivel."
         </div>
       </section>
       <section className={styles.contactBannerSection}>
-        <div className={styles.desc}>
-          <div className={styles.stickyContainer}>
-            <Text
-              type="bigtitle"
-              color="black"
-              bold="semibold"
-              fontFamily="font-cuarternary"
-              s={{ lineHeight: "1.4" }}
-            >
-              5 Razones por las que pacientes{" "}
-              <Mark color="primary-bg-triangular">no eligen</Mark>
-              <br />
-              tu consultorio
-            </Text>
+        <div className={styles.contactBanner__contents}>
+          <div className={styles.desc}>
+            <div className={styles.stickyContainer}>
+              <Text
+                type="bigtitle"
+                color="white"
+                bold="semibold"
+                s={{ lineHeight: "1.15" }}
+              >
+                5 Razones por las que pacientes{" "}
+                <Mark color="primary-bg-triangular-light">no eligen</Mark>
+                <br />
+                tu consultorio
+              </Text>
 
-            <div className={styles.quieroHacerCrecerBtn}>
-              <IconTextButton colorVariant="primary" size="100%">
-                Ver más
-              </IconTextButton>
+              <div className={styles.quieroHacerCrecerBtn}>
+                <IconTextButton colorVariant="white" size="100%">
+                  Ver el Método HackDental
+                </IconTextButton>
+              </div>
+              <div className={styles.footer__card}>
+                <img src={Medicos} className={styles.footer__img} />
+                <div className={styles.footer__desc}>
+                  <Text s={{ color: "#ebeced", lineHeight: "1.33" }}>
+                    Únete a los dentistas
+                  </Text>
+                  <Text
+                    bold="font-light"
+                    s={{ color: "#ebeced", lineHeight: "1.33" }}
+                  >
+                    que usan nuestro método.{" "}
+                    <Mark bold="regular" color="primary-light">
+                      Cupos limitados.
+                    </Mark>
+                  </Text>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div className={styles.details}>
-          <div className={styles.detail}>
-            <div className={styles.detail__header}>
-              <div className={styles.number}>
-                <Text bold="semibold" size={"sm"} color="light">
-                  1
+          <div className={styles.details}>
+            <div className={styles.detail}>
+              <div className={styles.detail__header}>
+                <div className={styles.number}>
+                  <Text bold="semibold" size={"sm"} color="light">
+                    1
+                  </Text>
+                </div>
+                <Text type="subtitle" color="black">
+                  La publicidad de tu consultorio es genérica
                 </Text>
               </div>
-              <Text type="subtitle" color="black">
-                La publicidad de tu consultorio es genérica
-              </Text>
-            </div>
-            <hr />
-            <div className={styles.desc}>
-              <img className={styles.detail__img} src={imgPublicidadCard} />
-              <Text size="sm" color="black" bold="font-light">
-                Aprende más sobre nuestro programa de 180 días y cómo puede
-                cambiar tu práctica dental
-              </Text>
-            </div>
-          </div>
-          <div className={styles.detail}>
-            <div className={styles.detail__header}>
-              <div className={styles.number}>
-                <Text bold="semibold" size={"sm"} color="light">
-                  2
+              <hr />
+              <div className={styles.desc}>
+                <img className={styles.detail__img} src={imgPublicidadCard} />
+                <Text size="sm" color="black" bold="font-light">
+                  Aprende más sobre nuestro programa de 180 días y cómo puede
+                  cambiar tu práctica dental
                 </Text>
               </div>
-              <Text type="subtitle" color="black">
-                El diseño de tu Sitio Web Dental es ineficiente
-              </Text>
             </div>
-            <hr />
-            <div className={styles.desc}>
-              <img className={styles.detail__img} src={imgDiseñoCard} />
-              <Text size="sm" color="black" bold="font-light">
-                Aprende más sobre nuestro programa de 180 días y cómo puede
-                cambiar tu práctica dental
-              </Text>
-            </div>
-          </div>
-          <div className={styles.detail}>
-            <div className={styles.detail__header}>
-              <div className={styles.number}>
-                <Text bold="semibold" size={"sm"} color="light">
-                  3
+            <div className={styles.detail}>
+              <div className={styles.detail__header}>
+                <div className={styles.number}>
+                  <Text bold="semibold" size={"sm"} color="light">
+                    2
+                  </Text>
+                </div>
+                <Text type="subtitle" color="black">
+                  El diseño de tu Sitio Web Dental es ineficiente
                 </Text>
               </div>
-              <Text type="subtitle" color="black">
-                Tu estrategia de redes sociales es pobre
-              </Text>
-            </div>
-            <hr />
-            <div className={styles.desc}>
-              <img className={styles.detail__img} src={imgEstrategiaCard} />
-              <Text size="sm" color="black" bold="font-light">
-                Aprende más sobre nuestro programa de 180 días y cómo puede
-                cambiar tu práctica dental
-              </Text>
-            </div>
-          </div>
-          <div className={styles.detail}>
-            <div className={styles.detail__header}>
-              <div className={styles.number}>
-                <Text bold="semibold" size={"sm"} color="light">
-                  4
+              <hr />
+              <div className={styles.desc}>
+                <img className={styles.detail__img} src={imgDiseñoCard} />
+                <Text size="sm" color="black" bold="font-light">
+                  Aprende más sobre nuestro programa de 180 días y cómo puede
+                  cambiar tu práctica dental
                 </Text>
               </div>
-              <Text type="subtitle" color="black">
-                Te faltan reseñas positivas online
-              </Text>
             </div>
-            <hr />
-            <div className={styles.desc}>
-              <img className={styles.detail__img} src={imgReseñasCard} />
-              <Text size="sm" color="black" bold="font-light">
-                Aprende más sobre nuestro programa de 180 días y cómo puede
-                cambiar tu práctica dental
-              </Text>
-            </div>
-          </div>
-          <div className={styles.detail}>
-            <div className={styles.detail__header}>
-              <div className={styles.number}>
-                <Text bold="semibold" size={"sm"} color="light">
-                  5
+            <div className={styles.detail}>
+              <div className={styles.detail__header}>
+                <div className={styles.number}>
+                  <Text bold="semibold" size={"sm"} color="light">
+                    3
+                  </Text>
+                </div>
+                <Text type="subtitle" color="black">
+                  Tu estrategia de redes sociales es pobre
                 </Text>
               </div>
-              <Text type="subtitle" color="black">
-                Tienes un mal sistema de recordatorio de citas
-              </Text>
+              <hr />
+              <div className={styles.desc}>
+                <img className={styles.detail__img} src={imgEstrategiaCard} />
+                <Text size="sm" color="black" bold="font-light">
+                  Aprende más sobre nuestro programa de 180 días y cómo puede
+                  cambiar tu práctica dental
+                </Text>
+              </div>
             </div>
-            <hr />
-            <div className={styles.desc}>
-              <img className={styles.detail__img} src={imgRecordatorioCard} />
-              <Text size="sm" color="black" bold="font-light">
-                Aprende más sobre nuestro programa de 180 días y cómo puede
-                cambiar tu práctica dental
-              </Text>
+            <div className={styles.detail}>
+              <div className={styles.detail__header}>
+                <div className={styles.number}>
+                  <Text bold="semibold" size={"sm"} color="light">
+                    4
+                  </Text>
+                </div>
+                <Text type="subtitle" color="black">
+                  Te faltan reseñas positivas online
+                </Text>
+              </div>
+              <hr />
+              <div className={styles.desc}>
+                <img className={styles.detail__img} src={imgReseñasCard} />
+                <Text size="sm" color="black" bold="font-light">
+                  Aprende más sobre nuestro programa de 180 días y cómo puede
+                  cambiar tu práctica dental
+                </Text>
+              </div>
+            </div>
+            <div className={styles.detail}>
+              <div className={styles.detail__header}>
+                <div className={styles.number}>
+                  <Text bold="semibold" size={"sm"} color="light">
+                    5
+                  </Text>
+                </div>
+                <Text type="subtitle" color="black">
+                  Tienes un mal sistema de recordatorio de citas
+                </Text>
+              </div>
+              <hr />
+              <div className={styles.desc}>
+                <img className={styles.detail__img} src={imgRecordatorioCard} />
+                <Text size="sm" color="black" bold="font-light">
+                  Aprende más sobre nuestro programa de 180 días y cómo puede
+                  cambiar tu práctica dental
+                </Text>
+              </div>
             </div>
           </div>
         </div>

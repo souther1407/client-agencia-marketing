@@ -293,14 +293,35 @@ body:has(.popupContainer.show) {
 }
 
 .contactBannerSection {
-  display: flex;
   width: 100%;
-  background: linear-gradient(var(--primary-transparent), white);
+  background: var(--primary-darker);
+}
+
+.footer__card {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.footer__img {
+  width: 102px;
+}
+.footer__desc > :nth-child(1),
+.footer__desc > :nth-child(2) {
+  font-size: 16px;
+}
+.footer__cuposLimitados {
+  align-self: self-end;
+}
+.footer__cuposLimitados > :first-child {
+  font-size: 16px;
+}
+.contactBanner__contents {
   padding-left: var(--width-unit);
   padding-right: var(--width-unit);
+  gap: 32px;
   padding-top: 80px;
   padding-bottom: 128px;
-  gap: 32px;
+  display: flex;
   justify-content: space-between;
   position: relative;
 }
