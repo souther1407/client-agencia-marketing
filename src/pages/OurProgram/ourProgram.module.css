@@ -278,6 +278,8 @@
   gap: 16px;
 }
 .aplicarProgramaBtn {
+  width: 400px;
+  height: 90px;
 }
 .footer__card {
   display: flex;

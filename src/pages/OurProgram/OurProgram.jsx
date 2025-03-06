@@ -270,7 +270,7 @@ const OurProgram = () => {
             </section>
             <div className={styles.detalle__footer}>
               <div className={styles.aplicarProgramaBtn}>
-                <IconTextButton colorVariant="white">
+                <IconTextButton colorVariant="white" size="100%">
                   Aplicar al Programa
                 </IconTextButton>
               </div>
