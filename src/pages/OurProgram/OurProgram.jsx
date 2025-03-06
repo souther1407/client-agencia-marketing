@@ -285,7 +285,7 @@ const OurProgram = () => {
                     s={{ color: "#ebeced", lineHeight: "1.33" }}
                   >
                     que quieren crecer sus consultorios.{" "}
-                    <Mark bold="font-light" color="primary-light">
+                    <Mark bold="regular" color="primary-light">
                       Cupos limitados.
                     </Mark>
                   </Text>
