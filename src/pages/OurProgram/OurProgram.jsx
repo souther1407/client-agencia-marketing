@@ -305,7 +305,7 @@ const OurProgram = () => {
                   s={{ lineHeight: "1.1" }}
                 >
                   Los{" "}
-                  <Mark bold="bold" color="primary-bg-triangular-light">
+                  <Mark bold="medium" color="primary-bg-triangular-light">
                     3 errores{" "}
                   </Mark>{" "}
                   más comunes que los consultorios dentales cometen.
@@ -339,7 +339,7 @@ const OurProgram = () => {
                 </Text>
                 <div className={styles.errors}>
                   <div className={styles.error}>
-                    <Icon size={"2rem"} color="red" type={"closeCircle"} />
+                    <Icon size={"2rem"} color="#8fc29f" type={"closeCircle"} />
                     <Text color="light" bold="font-light">
                       Puedes ponerte en contacto con nosotros por correo
                       electrónico a <Mark color="marked">jaka@ .design</Mark> y
@@ -347,7 +347,7 @@ const OurProgram = () => {
                     </Text>
                   </div>
                   <div className={styles.error}>
-                    <Icon size={"2rem"} color="red" type={"closeCircle"} />
+                    <Icon size={"2rem"} color="#8fc29f" type={"closeCircle"} />
                     <Text color="light" bold="font-light">
                       Puedes ponerte en contacto con nosotros por correo
                       electrónico a <Mark color="marked">jaka@ .design</Mark> y
@@ -355,7 +355,7 @@ const OurProgram = () => {
                     </Text>
                   </div>
                   <div className={styles.error}>
-                    <Icon size={"2rem"} color="red" type={"closeCircle"} />
+                    <Icon size={"2rem"} color="#8fc29f" type={"closeCircle"} />
                     <Text color="light" bold="font-light">
                       Puedes ponerte en contacto con nosotros por correo
                       electrónico a <Mark color="marked">jaka@ .design</Mark> y
@@ -363,7 +363,7 @@ const OurProgram = () => {
                     </Text>
                   </div>
                   <div className={styles.error}>
-                    <Icon size={"2rem"} color="red" type={"closeCircle"} />
+                    <Icon size={"2rem"} color="#8fc29f" type={"closeCircle"} />
                     <Text color="light" bold="font-light">
                       Puedes ponerte en contacto con nosotros por correo
                       electrónico a <Mark color="marked">jaka@ .design</Mark> y
