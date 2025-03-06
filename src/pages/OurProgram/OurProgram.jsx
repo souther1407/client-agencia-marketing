@@ -17,6 +17,7 @@ import FlechaNuestroPrograma from "@assets/nuestro metodo.svg";
 import Flecha1 from "@assets/flecha 1.svg";
 import imagenDetalle1 from "@assets/imagenDetalle1.svg";
 import imagenDetalle2 from "@assets/imagenDetalle2.svg";
+import Medicos from "@assets/Medicos.svg";
 
 const OurProgram = () => {
   const [showModalVideo, setShowModalVideo] = useState(false);
@@ -267,6 +268,25 @@ const OurProgram = () => {
               </div>
               <img src={imagenDetalle2} className={styles.img__detalle1} />
             </section>
+            <div className={styles.detalle__footer}>
+              <div className={styles.aplicarProgramaBtn}>
+                <IconTextButton colorVariant="white">
+                  Aplicar al Programa
+                </IconTextButton>
+              </div>
+              <div className={styles.footer__card}>
+                <img src={Medicos} className={styles.footer__img} />
+                <div className={styles.footer__desc}>
+                  <Text s={{ color: "#ebeced" }}>Únete a los dentistas</Text>
+                  <Text bold="font-light" s={{ color: "#ebeced" }}>
+                    que quieren crecer sus consultorios.{" "}
+                  </Text>
+                </div>
+                <div className={styles.footer__cuposLimitados}>
+                  <Text s={{ color: "#0ecb81" }}>Cupos limitados.</Text>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div className={styles.sectionHorrible}>

@@ -271,6 +271,24 @@
   z-index: -1;
   border-radius: 50%;
 }
+.detalle__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.aplicarProgramaBtn {
+}
+.footer__card {
+  display: flex;
+  gap: 16px;
+}
+.footer__img {
+  width: 120px;
+}
+.footer__cuposLimitados {
+  align-self: self-end;
+}
 .sectionHorrible {
   display: flex;
   flex-direction: column;
