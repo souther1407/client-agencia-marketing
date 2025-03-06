@@ -411,7 +411,7 @@ body:has(.popupContainer.show) {
 } */
 
 .contactBanner__contents > .desc {
-  margin-top: 132px;
+  margin-top: 160px;
 }
 .contactBanner__contents .stickyContainer {
   display: flex;
