@@ -299,14 +299,13 @@ const OurProgram = () => {
             <div className={styles.seccionnes}>
               <div className={styles.subsection}>
                 <Text
-                  type="bigtitle"
-                  fontSize="2.3333rem"
+                  fontSize="2rem"
                   color="light"
                   textAlign="center"
-                  bold="bold"
+                  s={{ lineHeight: "1.1" }}
                 >
                   Los{" "}
-                  <Mark bold="bold" color="error-bg-triangular">
+                  <Mark bold="bold" color="primary-bg-triangular-light">
                     3 errores{" "}
                   </Mark>{" "}
                   más comunes que los consultorios dentales cometen.
@@ -329,12 +328,12 @@ const OurProgram = () => {
                   Puedes ponerte en contacto con nosotros por correo electrónico
                   a jaka@ .design y te responderemos en un plazo de 24 horas.
                 </Text>
-                <hr />
+
                 <Text
                   color="light"
-                  bold="bold"
                   type="subtitle"
                   textAlign="center"
+                  s={{ lineHeight: "1.1" }}
                 >
                   Aquí es donde la mayoría de consultorios se equivocan:
                 </Text>
