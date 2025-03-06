@@ -310,12 +310,7 @@ que quieren llevar su consultorio al siguiente nivel."
         <div className={styles.contactBanner__contents}>
           <div className={styles.desc}>
             <div className={styles.stickyContainer}>
-              <Text
-                type="bigtitle"
-                color="white"
-                bold="semibold"
-                s={{ lineHeight: "1.15" }}
-              >
+              <Text type="bigtitle" color="white" s={{ lineHeight: "1.15" }}>
                 5 Razones por las que pacientes{" "}
                 <Mark color="primary-bg-triangular-light">no eligen</Mark>
                 <br />

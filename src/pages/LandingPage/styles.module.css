@@ -326,8 +326,8 @@ body:has(.popupContainer.show) {
   position: relative;
 }
 .quieroHacerCrecerBtn {
-  width: 400px;
-  height: 52px !important;
+  width: 350px;
+  height: 72px !important;
 }
 .whoAreWe {
   background-color: var(--primary-very-transparent);
