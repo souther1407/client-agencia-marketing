@@ -319,7 +319,7 @@ body:has(.popupContainer.show) {
   padding-left: var(--width-unit);
   padding-right: var(--width-unit);
   gap: 32px;
-  padding-top: 80px;
+  padding-top: 132px;
   padding-bottom: 128px;
   display: flex;
   justify-content: space-between;
