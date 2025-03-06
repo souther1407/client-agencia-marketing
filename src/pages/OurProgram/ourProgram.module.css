@@ -217,24 +217,30 @@
 .img__detalle1 {
   width: 550px;
 }
-.seccionDetalle1,
-.seccionDetalle2 {
+.seccionDetalle {
   display: flex;
   margin-top: 52px;
 }
-.detalleSeccion1 {
+.seccionDetalle.dos {
+}
+.detalleSeccion {
   display: flex;
   flex-direction: column;
   width: 640px;
   position: relative;
   left: 60px;
 }
-.detalleSeccion1 > :nth-child(1) {
+
+.detalleSeccion.dos {
+  left: 0;
+  margin-right: 60px;
+}
+.detalleSeccion > :nth-child(1) {
   font-size: 28px;
   line-height: 1.1;
   margin-bottom: 20px;
 }
-.detalleSeccion1 > :nth-child(2) {
+.detalleSeccion > :nth-child(2) {
   margin-bottom: 32px;
 }
 .detailCards {

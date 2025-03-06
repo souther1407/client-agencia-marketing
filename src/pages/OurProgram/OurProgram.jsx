@@ -179,9 +179,9 @@ const OurProgram = () => {
             <Text type="title" color="white">
               ¿Qué incluye nuestro programa? 🧐
             </Text>
-            <section className={styles.seccionDetalle1}>
+            <section className={styles.seccionDetalle}>
               <img src={imagenDetalle1} className={styles.img__detalle1} />
-              <div className={styles.detalleSeccion1}>
+              <div className={styles.detalleSeccion}>
                 <Text color="white">
                   Usemos el método HackDental en tu Consultorio
                 </Text>
@@ -223,9 +223,8 @@ const OurProgram = () => {
                 </div>
               </div>
             </section>
-            <section className={styles.seccionDetalle2}>
-              <img src={imagenDetalle2} className={styles.img__detalle1} />
-              <div className={styles.detalleSeccion1}>
+            <section className={`${styles.seccionDetalle} ${styles.dos}`}>
+              <div className={`${styles.detalleSeccion} ${styles.dos}`}>
                 <Text color="white">
                   Usemos el método HackDental en tu Consultorio
                 </Text>
@@ -266,6 +265,7 @@ const OurProgram = () => {
                   </div>
                 </div>
               </div>
+              <img src={imagenDetalle2} className={styles.img__detalle1} />
             </section>
           </div>
         </div>
