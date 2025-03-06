@@ -13,6 +13,9 @@
 .primary-light {
   color: #0ecb81;
 }
+.primary-dark {
+  color: #006a5a;
+}
 .primary-darker-bg {
   color: var(--white);
   background-color: #21917b;

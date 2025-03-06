@@ -373,14 +373,14 @@ const OurProgram = () => {
                 </div>
               </div>
               <div className={styles.cardMeet}>
-                <img
+                {/*  <img
                   src={Flecha1}
                   className={`${styles.flecha} ${styles.flecha1Izquierda}`}
                 />
                 <img
                   src={Flecha1}
                   className={`${styles.flecha} ${styles.flecha1Derecha} `}
-                />
+                /> */}
                 <Text
                   type="title"
                   size="big"
@@ -389,11 +389,8 @@ const OurProgram = () => {
                   bold="semibold"
                   fontSize="2.3333rem"
                 >
-                  ¿Abrirías{" "}
-                  <Mark color="primary-bg" bold="bold">
-                    más consultorios
-                  </Mark>{" "}
-                  si supieras cómo atraer más pacientes?
+                  ¿Abrirías más consultorios si supieras cómo atraer más
+                  pacientes?
                 </Text>
                 <div className={styles.cardMeetDetail}>
                   <Text bold="font-light" color="black">
@@ -411,6 +408,23 @@ const OurProgram = () => {
                     <IconTextButton size="100%">
                       Solicita una reunión
                     </IconTextButton>
+                  </div>
+                  <div className={styles.footer__card}>
+                    <img src={Medicos} className={styles.footer__img} />
+                    <div className={styles.footer__desc}>
+                      <Text s={{ color: "black", lineHeight: "1.33" }}>
+                        Únete a los dentistas
+                      </Text>
+                      <Text
+                        bold="font-light"
+                        s={{ color: "black", lineHeight: "1.33" }}
+                      >
+                        que quieren crecer sus consultorios.{" "}
+                        <Mark bold="regular" color="primary-dark">
+                          Cupos limitados.
+                        </Mark>
+                      </Text>
+                    </div>
                   </div>
                 </div>
               </div>
