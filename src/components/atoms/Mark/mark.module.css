@@ -56,9 +56,9 @@
   height: 75%;
   background-color: #21917b;
   position: absolute;
-
   z-index: -1;
-  transform: rotateZ(-2deg) skewX(24deg);
+  top: 1px;
+  transform: rotateZ(-1deg) skewX(20deg);
 }
 
 .error-bg-triangular {

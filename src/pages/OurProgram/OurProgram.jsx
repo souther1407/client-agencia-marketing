@@ -306,7 +306,7 @@ const OurProgram = () => {
                 >
                   Los{" "}
                   <Mark bold="medium" color="primary-bg-triangular-light">
-                    3 errores{" "}
+                    3 errores
                   </Mark>{" "}
                   más comunes que los consultorios dentales cometen.
                 </Text>
