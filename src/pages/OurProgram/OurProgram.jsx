@@ -381,14 +381,7 @@ const OurProgram = () => {
                   src={Flecha1}
                   className={`${styles.flecha} ${styles.flecha1Derecha} `}
                 /> */}
-                <Text
-                  type="title"
-                  size="big"
-                  color="black"
-                  textAlign="center"
-                  bold="semibold"
-                  fontSize="2.3333rem"
-                >
+                <Text color="black" textAlign="center">
                   ¿Abrirías más consultorios si supieras cómo atraer más
                   pacientes?
                 </Text>
