@@ -295,113 +295,125 @@ const OurProgram = () => {
           </div>
         </div>
         <div className={styles.sectionHorrible}>
-          <div className={styles.subsection}>
-            <Text
-              type="bigtitle"
-              fontSize="2.3333rem"
-              color="light"
-              textAlign="center"
-              bold="bold"
-            >
-              Los{" "}
-              <Mark bold="bold" color="error-bg-triangular">
-                3 errores{" "}
-              </Mark>{" "}
-              más comunes que los consultorios dentales cometen.
-            </Text>
-            <Text color="light" bold="font-light">
-              Puedes ponerte en contacto con nosotros por correo electrónico a
-              jaka@ .design y te responderemos en un plazo de 24 horas.
-            </Text>
-            <Text color="light" bold="font-light">
-              No olvides incluir algunas palabras sobre ti y tu negocio. Puedes
-              ponerte en contacto con nosotros por correo electrónico a{" "}
-              <Mark bold="bold" color="marked">
-                jaka@ .design
-              </Mark>{" "}
-              y te responderemos en un plazo de 24 horas.
-            </Text>
-            <Text color="light" bold="font-light">
-              No olvides incluir algunas palabras sobre ti y tu negocio. Puedes
-              ponerte en contacto con nosotros por correo electrónico a jaka@
-              .design y te responderemos en un plazo de 24 horas.
-            </Text>
-            <hr />
-            <Text color="light" bold="bold" type="subtitle" textAlign="center">
-              Aquí es donde la mayoría de consultorios se equivocan:
-            </Text>
-            <div className={styles.errors}>
-              <div className={styles.error}>
-                <Icon size={"2rem"} color="red" type={"closeCircle"} />
+          <div className={styles.contenido}>
+            <div className={styles.seccionnes}>
+              <div className={styles.subsection}>
+                <Text
+                  type="bigtitle"
+                  fontSize="2.3333rem"
+                  color="light"
+                  textAlign="center"
+                  bold="bold"
+                >
+                  Los{" "}
+                  <Mark bold="bold" color="error-bg-triangular">
+                    3 errores{" "}
+                  </Mark>{" "}
+                  más comunes que los consultorios dentales cometen.
+                </Text>
                 <Text color="light" bold="font-light">
                   Puedes ponerte en contacto con nosotros por correo electrónico
-                  a <Mark color="marked">jaka@ .design</Mark> y te responderemos
-                  en un plazo de 24 horas.
+                  a jaka@ .design y te responderemos en un plazo de 24 horas.
                 </Text>
-              </div>
-              <div className={styles.error}>
-                <Icon size={"2rem"} color="red" type={"closeCircle"} />
                 <Text color="light" bold="font-light">
+                  No olvides incluir algunas palabras sobre ti y tu negocio.
                   Puedes ponerte en contacto con nosotros por correo electrónico
-                  a <Mark color="marked">jaka@ .design</Mark> y te responderemos
-                  en un plazo de 24 horas.
+                  a{" "}
+                  <Mark bold="bold" color="marked">
+                    jaka@ .design
+                  </Mark>{" "}
+                  y te responderemos en un plazo de 24 horas.
                 </Text>
-              </div>
-              <div className={styles.error}>
-                <Icon size={"2rem"} color="red" type={"closeCircle"} />
                 <Text color="light" bold="font-light">
+                  No olvides incluir algunas palabras sobre ti y tu negocio.
                   Puedes ponerte en contacto con nosotros por correo electrónico
-                  a <Mark color="marked">jaka@ .design</Mark> y te responderemos
-                  en un plazo de 24 horas.
+                  a jaka@ .design y te responderemos en un plazo de 24 horas.
                 </Text>
-              </div>
-              <div className={styles.error}>
-                <Icon size={"2rem"} color="red" type={"closeCircle"} />
-                <Text color="light" bold="font-light">
-                  Puedes ponerte en contacto con nosotros por correo electrónico
-                  a <Mark color="marked">jaka@ .design</Mark> y te responderemos
-                  en un plazo de 24 horas.
+                <hr />
+                <Text
+                  color="light"
+                  bold="bold"
+                  type="subtitle"
+                  textAlign="center"
+                >
+                  Aquí es donde la mayoría de consultorios se equivocan:
                 </Text>
+                <div className={styles.errors}>
+                  <div className={styles.error}>
+                    <Icon size={"2rem"} color="red" type={"closeCircle"} />
+                    <Text color="light" bold="font-light">
+                      Puedes ponerte en contacto con nosotros por correo
+                      electrónico a <Mark color="marked">jaka@ .design</Mark> y
+                      te responderemos en un plazo de 24 horas.
+                    </Text>
+                  </div>
+                  <div className={styles.error}>
+                    <Icon size={"2rem"} color="red" type={"closeCircle"} />
+                    <Text color="light" bold="font-light">
+                      Puedes ponerte en contacto con nosotros por correo
+                      electrónico a <Mark color="marked">jaka@ .design</Mark> y
+                      te responderemos en un plazo de 24 horas.
+                    </Text>
+                  </div>
+                  <div className={styles.error}>
+                    <Icon size={"2rem"} color="red" type={"closeCircle"} />
+                    <Text color="light" bold="font-light">
+                      Puedes ponerte en contacto con nosotros por correo
+                      electrónico a <Mark color="marked">jaka@ .design</Mark> y
+                      te responderemos en un plazo de 24 horas.
+                    </Text>
+                  </div>
+                  <div className={styles.error}>
+                    <Icon size={"2rem"} color="red" type={"closeCircle"} />
+                    <Text color="light" bold="font-light">
+                      Puedes ponerte en contacto con nosotros por correo
+                      electrónico a <Mark color="marked">jaka@ .design</Mark> y
+                      te responderemos en un plazo de 24 horas.
+                    </Text>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div className={styles.cardMeet}>
-            <img
-              src={Flecha1}
-              className={`${styles.flecha} ${styles.flecha1Izquierda}`}
-            />
-            <img
-              src={Flecha1}
-              className={`${styles.flecha} ${styles.flecha1Derecha} `}
-            />
-            <Text
-              type="title"
-              size="big"
-              color="black"
-              textAlign="center"
-              bold="semibold"
-              fontSize="2.3333rem"
-            >
-              ¿Abrirías{" "}
-              <Mark color="primary-bg" bold="bold">
-                más consultorios
-              </Mark>{" "}
-              si supieras cómo atraer más pacientes?
-            </Text>
-            <div className={styles.cardMeetDetail}>
-              <Text bold="font-light" color="black">
-                Puedes ponerte en contacto con nosotros por correo electrónico a
-                jaka@ .design y te responderemos en un plazo de 24 horas.
-              </Text>
-              <Text bold="font-light" color="black">
-                No olvides incluir algunas palabras sobre ti y tu negocio.
-                Puedes ponerte en contacto con nosotros por correo electrónico a
-                jaka@ .design y te responderemos en un plazo de 24 horas.
-              </Text>
-              <div className={styles.btnMeet}>
-                <IconTextButton size="100%">
-                  Solicita una reunión
-                </IconTextButton>
+              <div className={styles.cardMeet}>
+                <img
+                  src={Flecha1}
+                  className={`${styles.flecha} ${styles.flecha1Izquierda}`}
+                />
+                <img
+                  src={Flecha1}
+                  className={`${styles.flecha} ${styles.flecha1Derecha} `}
+                />
+                <Text
+                  type="title"
+                  size="big"
+                  color="black"
+                  textAlign="center"
+                  bold="semibold"
+                  fontSize="2.3333rem"
+                >
+                  ¿Abrirías{" "}
+                  <Mark color="primary-bg" bold="bold">
+                    más consultorios
+                  </Mark>{" "}
+                  si supieras cómo atraer más pacientes?
+                </Text>
+                <div className={styles.cardMeetDetail}>
+                  <Text bold="font-light" color="black">
+                    Puedes ponerte en contacto con nosotros por correo
+                    electrónico a jaka@ .design y te responderemos en un plazo
+                    de 24 horas.
+                  </Text>
+                  <Text bold="font-light" color="black">
+                    No olvides incluir algunas palabras sobre ti y tu negocio.
+                    Puedes ponerte en contacto con nosotros por correo
+                    electrónico a jaka@ .design y te responderemos en un plazo
+                    de 24 horas.
+                  </Text>
+                  <div className={styles.btnMeet}>
+                    <IconTextButton size="100%">
+                      Solicita una reunión
+                    </IconTextButton>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

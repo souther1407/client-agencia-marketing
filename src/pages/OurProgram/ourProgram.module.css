@@ -164,7 +164,8 @@
   padding-left: var(--width-unit);
   padding-right: var(--width-unit);
 }
-.main > .detalleNuestroPrograma {
+.main > .detalleNuestroPrograma,
+.main > .sectionHorrible {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
@@ -301,16 +302,26 @@
   font-size: 16px;
 }
 .sectionHorrible {
+  background-color: var(--primary-darker);
+}
+.sectionHorrible .contenido {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 64px;
   padding-bottom: 0px;
   position: relative;
-  z-index: -1;
-  background-color: var(--black-horrible);
+  padding-left: var(--width-unit);
+  padding-right: var(--width-unit);
+  background-color: rgba(0, 0, 0, 0.4);
 }
-.sectionHorrible > .subsection {
+.seccionnes {
+  width: 71%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.seccionnes > .subsection {
   display: flex;
   flex-direction: column;
   width: 85%;
@@ -320,7 +331,7 @@
 .ventaHumo > .subsection > *:not(:first-child) {
   width: 90%;
 }
-.sectionHorrible > .subsection > *:not(:first-child) {
+.contenido > .subsection > *:not(:first-child) {
   width: 90%;
 }
 .errors {
