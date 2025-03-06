@@ -282,12 +282,20 @@
 .footer__card {
   display: flex;
   gap: 16px;
+  align-items: center;
 }
 .footer__img {
   width: 120px;
 }
+.footer__desc > :nth-child(1),
+.footer__desc > :nth-child(2) {
+  font-size: 16px;
+}
 .footer__cuposLimitados {
   align-self: self-end;
+}
+.footer__cuposLimitados > :first-child {
+  font-size: 16px;
 }
 .sectionHorrible {
   display: flex;

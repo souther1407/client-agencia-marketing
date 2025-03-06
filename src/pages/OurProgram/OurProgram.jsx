@@ -277,13 +277,18 @@ const OurProgram = () => {
               <div className={styles.footer__card}>
                 <img src={Medicos} className={styles.footer__img} />
                 <div className={styles.footer__desc}>
-                  <Text s={{ color: "#ebeced" }}>Únete a los dentistas</Text>
-                  <Text bold="font-light" s={{ color: "#ebeced" }}>
-                    que quieren crecer sus consultorios.{" "}
+                  <Text s={{ color: "#ebeced", lineHeight: "1.33" }}>
+                    Únete a los dentistas
                   </Text>
-                </div>
-                <div className={styles.footer__cuposLimitados}>
-                  <Text s={{ color: "#0ecb81" }}>Cupos limitados.</Text>
+                  <Text
+                    bold="font-light"
+                    s={{ color: "#ebeced", lineHeight: "1.33" }}
+                  >
+                    que quieren crecer sus consultorios.{" "}
+                    <Mark bold="font-light" color="primary-light">
+                      Cupos limitados.
+                    </Mark>
+                  </Text>
                 </div>
               </div>
             </div>
