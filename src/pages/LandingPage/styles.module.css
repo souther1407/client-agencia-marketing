@@ -417,7 +417,12 @@ body:has(.popupContainer.show) {
   flex-direction: column;
   position: sticky;
   top: 220px;
-  gap: 16px;
+}
+.stickyContainer > :nth-child(1) {
+  margin-bottom: 24px;
+}
+.stickyContainer > :nth-child(2) {
+  margin-bottom: 12px;
 }
 .subrayado {
   position: relative;
