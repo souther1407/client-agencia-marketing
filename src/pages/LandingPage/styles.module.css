@@ -319,7 +319,7 @@ body:has(.popupContainer.show) {
   padding-left: var(--width-unit);
   padding-right: var(--width-unit);
   gap: 32px;
-  padding-top: 132px;
+
   padding-bottom: 128px;
   display: flex;
   background-color: rgba(0, 0, 0, 0.4);
@@ -410,10 +410,10 @@ body:has(.popupContainer.show) {
   z-index: 1;
 } */
 
-.contactBannerSection > .desc {
-  margin-top: 40px;
+.contactBanner__contents > .desc {
+  margin-top: 132px;
 }
-.contactBannerSection .stickyContainer {
+.contactBanner__contents .stickyContainer {
   display: flex;
   flex-direction: column;
   position: sticky;
@@ -460,6 +460,7 @@ body:has(.popupContainer.show) {
   width: 1000px;
   position: relative;
   z-index: 3;
+  margin-top: 60px;
 }
 
 .contactBannerSection .details .detail {
