@@ -402,7 +402,9 @@ const OurProgram = () => {
                       Solicita una reunión
                     </IconTextButton>
                   </div>
-                  <div className={styles.footer__card}>
+                  <div
+                    className={`${styles.footer__card} ${styles.footer__cardMeet}`}
+                  >
                     <img src={Medicos} className={styles.footer__img} />
                     <div className={styles.footer__desc}>
                       <Text s={{ color: "black", lineHeight: "1.33" }}>

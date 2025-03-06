@@ -370,9 +370,9 @@
   width: 100%;
   border-radius: 32px;
   height: 100%;
-  left: -8px;
-  top: -8px;
-  padding: 8px;
+  left: -10px;
+  top: -10px;
+  padding: 10px;
   background-color: #21917b;
 }
 .cardMeet > :nth-child(1) {
@@ -391,6 +391,7 @@
 .cardMeet .btnMeet {
   height: 72px;
   width: 400px;
+  margin-bottom: 12px;
 }
 .cardMeet .cardMeetDetail {
   display: flex;
@@ -398,8 +399,15 @@
   align-items: center;
   align-self: center;
   width: 80%;
-  gap: 32px;
+
   margin-top: 32px;
+}
+.cardMeet .cardMeetDetail > :nth-child(1),
+.cardMeet .cardMeetDetail > :nth-child(2) {
+  margin-bottom: 32px;
+}
+.footer__card.footer__cardMeet {
+  gap: 12px;
 }
 .comoFunciona {
   display: flex;
