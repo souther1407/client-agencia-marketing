@@ -15,19 +15,20 @@ import Logo from "../../components/atoms/Logo/Logo";
 import Link from "../../components/atoms/Link/Link";
 const ContactForm = () => {
   const [contactForm, setContactForm] = useState({
-    first_name: "",
-    last_name: "",
-    email: "",
-    phone: "",
-    clinic_name: "",
-    website: "",
-    location: "",
-    anual_revenues: "",
-    comments: "",
+    firstName: localStorage.getItem("firstName") ?? "",
+    lastName: localStorage.getItem("lastName") ?? "",
+    email: localStorage.getItem("email") ?? "",
+    phone: localStorage.getItem("phone") ?? "",
+    clinicName: localStorage.getItem("clinicName") ?? "",
+    website: localStorage.getItem("website") ?? "",
+    location: localStorage.getItem("location") ?? "",
+    anualRevenue: localStorage.getItem("anualRevenue") ?? "",
+    comments: localStorage.getItem("comments") ?? "",
   });
   const [loading, setLoading] = useState(false);
 
   const handleChange = (id, value) => {
+    localStorage.setItem(id, value);
     setContactForm((prev) => ({ ...prev, [id]: value }));
   };
 
@@ -80,13 +81,13 @@ const ContactForm = () => {
             <div className={styles.input_line}>
               <Input
                 variant="white"
-                id={"first_name"}
+                id={"firstName"}
                 label="Nombre*"
                 labelColor="black"
                 onChange={handleChange}
                 onError={() => {}}
                 placeholder="Nombre"
-                value={contactForm.first_name}
+                value={contactForm.firstName}
               />
               <Input
                 variant="white"
@@ -139,13 +140,13 @@ const ContactForm = () => {
                 variant="white"
                 labelColor="black"
                 elements={["safasf", "eee"]}
-                id={"anual_revenues"}
+                id={"anualRevenue"}
                 onChange={handleChange}
                 onError={() => {}}
                 placeholder="Porfavor seleccione"
                 label="Ingresos Anuales*"
                 icon={"arrowDown"}
-                value={contactForm.anual_revenues}
+                value={contactForm.anualRevenue}
                 style={{ height: "48px" }}
               />
             </div>
