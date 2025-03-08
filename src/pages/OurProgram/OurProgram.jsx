@@ -21,7 +21,17 @@ import Medicos from "@assets/Medicos.svg";
 
 const OurProgram = () => {
   const [showModalVideo, setShowModalVideo] = useState(false);
-  const navigate = useNavigate();
+  const [formData, setFormData] = useState({
+    firstName: localStorage.getItem("firstName") ?? "",
+    lastName: localStorage.getItem("lastName") ?? "",
+    email: localStorage.getItem("email") ?? "",
+    phone: localStorage.getItem("phone") ?? "",
+  });
+
+  const handleChange = (id, value) => {
+    localStorage.setItem(id, value);
+    setFormData((prev) => ({ ...prev, [id]: value }));
+  };
   const handleHideModalVideo = (e) => {
     if (e.target.id == "bg-video-modal") {
       setShowModalVideo(false);
@@ -103,12 +113,13 @@ const OurProgram = () => {
               <div className={styles.inputs}>
                 <div className={styles.inputLine}>
                   <Input
-                    id={"name"}
+                    id={"firstName"}
                     label="Nombre*"
                     variant="white"
                     placeholder="Nombre*"
                     labelColor="white"
-                    onChange={() => {}}
+                    onChange={handleChange}
+                    value={formData.firstName}
                     onError={() => {}}
                   />
                   <Input
@@ -117,7 +128,8 @@ const OurProgram = () => {
                     variant="white"
                     placeholder="Apellido*"
                     labelColor="white"
-                    onChange={() => {}}
+                    onChange={handleChange}
+                    value={formData.lastName}
                     onError={() => {}}
                   />
                 </div>
@@ -127,7 +139,8 @@ const OurProgram = () => {
                   variant="white"
                   placeholder="Email*"
                   labelColor="white"
-                  onChange={() => {}}
+                  onChange={handleChange}
+                  value={formData.email}
                   onError={() => {}}
                 />
                 <Input
@@ -136,7 +149,8 @@ const OurProgram = () => {
                   variant="white"
                   placeholder="Teléfono*"
                   labelColor="white"
-                  onChange={() => {}}
+                  onChange={handleChange}
+                  value={formData.phone}
                   onError={() => {}}
                 />
                 <div className={styles.nextStepBtn}>
@@ -495,6 +509,7 @@ const OurProgram = () => {
             <Text type="title" color="light" bold="bold">
               Pide una Auditoria para tu Consultorio
             </Text>
+
             <Text color="light" bold="font-light">
               Puedes ponerte en contacto con nosotros por correo electrónico a
               jaka@ .design y te responderemos en un plazo de 24 horas.
@@ -520,7 +535,8 @@ const OurProgram = () => {
                   labelColor="black"
                   id={"firstName"}
                   placeholder="Nombre"
-                  onChange={() => {}}
+                  onChange={handleChange}
+                  value={formData.firstName}
                   onError={() => {}}
                 />
                 <Input
@@ -528,8 +544,9 @@ const OurProgram = () => {
                   variant="white"
                   placeholder="Apellido"
                   labelColor="black"
-                  id={"lasttName"}
-                  onChange={() => {}}
+                  id={"lastName"}
+                  onChange={handleChange}
+                  value={formData.lastName}
                   onError={() => {}}
                 />
               </div>
@@ -540,7 +557,8 @@ const OurProgram = () => {
                   labelColor="black"
                   placeholder="Email"
                   id={"email"}
-                  onChange={() => {}}
+                  onChange={handleChange}
+                  value={formData.email}
                   onError={() => {}}
                 />
                 <Input
@@ -549,8 +567,8 @@ const OurProgram = () => {
                   id={"phone"}
                   variant="white"
                   labelColor="black"
-                  onChange={() => {}}
-                  onError={() => {}}
+                  onChange={handleChange}
+                  value={formData.phone}
                 />
               </div>
               <div className={styles.formLine}>

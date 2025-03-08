@@ -12,19 +12,19 @@ import LoadingScreen from "../../../../components/molecules/LoadingScreen/Loadin
 const MAX_FORMS = 2;
 const DownloadForm = ({ modalOpened }) => {
   const [form, setForm] = useState({
-    email: "",
-    first_name: "",
-    last_name: "",
-    how_know_about: "",
-    phone_number: "",
+    email: localStorage.getItem("email") ?? "",
+    firstName: localStorage.getItem("firstName") ?? "",
+    lastName: localStorage.getItem("lastName") ?? "",
+    howKnowAbout: "",
+    phone: localStorage.getItem("phone") ?? "",
   });
 
   const [formErrors, setFormErros] = useState({
-    email: "empty",
-    first_name: "empty",
-    last_name: "empty",
-    how_know_about: "empty",
-    phone_number: "empty",
+    email: localStorage.getItem("email") ? "" : "empty",
+    firstName: localStorage.getItem("firstName") ? "" : "empty",
+    lastName: localStorage.getItem("lastName") ? "" : "empty",
+    howKnowAbout: localStorage.getItem("howKnowAbout") ? "" : "empty",
+    phone: localStorage.getItem("phone") ? "" : "empty",
   });
 
   const [loading, setLoading] = useState(false);
@@ -98,7 +98,7 @@ const DownloadForm = ({ modalOpened }) => {
               }`}
             >
               {currentForm > 1 ? (
-                <Icon type={"check"} color="var(--white)" size={"1rem"} />
+                <Icon type={"check"} color="var(--primary)" size={"1.5rem"} />
               ) : (
                 <Text color="light">1</Text>
               )}
@@ -165,8 +165,8 @@ const DownloadForm = ({ modalOpened }) => {
             <div className={styles.inputChecks}>
               <Input
                 variant="white"
-                id={"first_name"}
-                value={form.first_name}
+                id={"firstName"}
+                value={form.firstName}
                 onChange={handleChange}
                 onError={handleErrorsChange}
                 labelColor="black"
@@ -176,9 +176,9 @@ const DownloadForm = ({ modalOpened }) => {
               />
               <Input
                 variant="white"
-                id={"last_name"}
+                id={"lastName"}
                 labelColor="black"
-                value={form.last_name}
+                value={form.lastName}
                 onChange={handleChange}
                 onError={handleErrorsChange}
                 label="Apellidos*"
@@ -186,9 +186,9 @@ const DownloadForm = ({ modalOpened }) => {
               />
               <Input
                 variant="white"
-                id={"phone_number"}
+                id={"phone"}
                 labelColor="black"
-                value={form.phone_number}
+                value={form.phone}
                 onChange={handleChange}
                 onError={handleErrorsChange}
                 label="Numero de Telefono*"
@@ -198,13 +198,13 @@ const DownloadForm = ({ modalOpened }) => {
                 icon={"arrowDown"}
                 variant="white"
                 labelColor="black"
-                id={"how_know_about"}
+                id={"howKnowAbout"}
                 onChange={handleChange}
                 label={"¿Como escuchaste de este ebook?*"}
                 onError={handleErrorsChange}
                 placeholder={"Porfavor Seleccione*"}
                 elements={["Redes sociales", "Google"]}
-                value={form.how_know_about}
+                value={form.howKnowAbout}
                 validators={[isEmpty]}
                 style={{ height: "48px" }}
               />
