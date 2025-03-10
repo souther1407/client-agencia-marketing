@@ -432,7 +432,7 @@ const OurProgram = () => {
               ¿Cuánto más vas a postergar <br />
               el éxito de tu consultorio dental? 🏆
             </Text>
-            <Text bold="font-light" color="black">
+            <Text bold="font-light" s={{ color: "#213343" }}>
               No olvides incluir algunas palabras sobre ti y tu negocio. Puedes
               ponerte en contacto con nosotros por correo electrónico.
             </Text>
