@@ -13,6 +13,7 @@ import Mark from "../../components/atoms/Mark/Mark";
 import Flecha3 from "@assets/flecha 3.svg";
 import Logo from "../../components/atoms/Logo/Logo";
 import Link from "../../components/atoms/Link/Link";
+
 const ContactForm = () => {
   const [contactForm, setContactForm] = useState({
     firstName: localStorage.getItem("firstName") ?? "",

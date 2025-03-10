@@ -18,6 +18,7 @@ import Flecha1 from "@assets/flecha 1.svg";
 import imagenDetalle1 from "@assets/imagenDetalle1.svg";
 import imagenDetalle2 from "@assets/imagenDetalle2.svg";
 import Medicos from "@assets/Medicos.svg";
+import ImgFlechas from "@assets/imgFlechas.svg";
 
 const OurProgram = () => {
   const [showModalVideo, setShowModalVideo] = useState(false);
@@ -318,11 +319,8 @@ const OurProgram = () => {
                   textAlign="center"
                   s={{ lineHeight: "1.1" }}
                 >
-                  Los{" "}
-                  <Mark bold="medium" color="primary-bg-triangular-light">
-                    3 errores
-                  </Mark>{" "}
-                  más comunes que los consultorios dentales cometen.
+                  Los 3 errores más comunes que los consultorios dentales
+                  cometen 😵‍💫❌
                 </Text>
                 <Text color="light" bold="font-light">
                   Puedes ponerte en contacto con nosotros por correo electrónico
@@ -337,11 +335,6 @@ const OurProgram = () => {
                   </Mark>{" "}
                   y te responderemos en un plazo de 24 horas.
                 </Text>
-                <Text color="light" bold="font-light">
-                  No olvides incluir algunas palabras sobre ti y tu negocio.
-                  Puedes ponerte en contacto con nosotros por correo electrónico
-                  a jaka@ .design y te responderemos en un plazo de 24 horas.
-                </Text>
 
                 <Text
                   color="light"
@@ -352,14 +345,6 @@ const OurProgram = () => {
                   Aquí es donde la mayoría de consultorios se equivocan:
                 </Text>
                 <div className={styles.errors}>
-                  <div className={styles.error}>
-                    <Icon size={"2rem"} color="#8fc29f" type={"closeCircle"} />
-                    <Text color="light" bold="font-light">
-                      Puedes ponerte en contacto con nosotros por correo
-                      electrónico a <Mark color="marked">jaka@ .design</Mark> y
-                      te responderemos en un plazo de 24 horas.
-                    </Text>
-                  </div>
                   <div className={styles.error}>
                     <Icon size={"2rem"} color="#8fc29f" type={"closeCircle"} />
                     <Text color="light" bold="font-light">
@@ -441,66 +426,16 @@ const OurProgram = () => {
           </div>
         </div>
         <div className={styles.comoFunciona}>
-          <Text type="title" color="black" bold="semibold" textAlign="center">
-            ¿Cuánto más vas a postergar el éxito de
-            <br /> tu consultorio dental?
-          </Text>
-          <div className={styles.subsection}>
-            {/*  <img
-              src={Flecha1}
-              className={`${styles.flecha} ${styles.flecha2}`}
-            /> */}
-            <Text bold="font-light" color="black">
-              Puedes ponerte en contacto con nosotros por c y te responderemos
-              en un plazo de 24 horas.
+          <img src={ImgFlechas} className={styles.comoFunciona__img} />
+          <div className={styles.comoFunciona__desc}>
+            <Text type="title" color="black">
+              ¿Cuánto más vas a postergar <br />
+              el éxito de tu consultorio dental? 🏆
             </Text>
             <Text bold="font-light" color="black">
               No olvides incluir algunas palabras sobre ti y tu negocio. Puedes
-              ponerte en contacto con nosotros por correo electrónico a jaka@
-              .design y te responderemos en un plazo de 24 horas.
+              ponerte en contacto con nosotros por correo electrónico.
             </Text>
-            <hr className={styles.separator} />
-            <Text type="smalltitle" color="black" textAlign="center">
-              Como aplicar a nuestro programa:
-            </Text>
-            <ul className={styles.list}>
-              <li className={styles.element}>
-                <Text size="ty">
-                  <Mark color="primary-bg">#1</Mark>
-                </Text>
-                <Text>
-                  Puedes ponerte en contacto con nosotros por correo electrónico
-                  a jaka@ .design y te responderemos en un plazo de 24 horas.
-                </Text>
-              </li>
-              <li className={styles.element}>
-                <Text size="ty">
-                  <Mark color="primary-bg">#2</Mark>
-                </Text>
-                <Text bold="font-light" color="black">
-                  Puedes ponerte en contacto con nosotros por correo electrónico
-                  a jaka@ .design y te responderemos en un plazo de 24 horas.
-                </Text>
-              </li>
-              <li className={styles.element}>
-                <Text size="ty">
-                  <Mark color="primary-bg">#3</Mark>
-                </Text>
-                <Text bold="font-light" color="black">
-                  Puedes ponerte en contacto con nosotros por correo electrónico
-                  a jaka@ .design y te responderemos en un plazo de 24 horas.
-                </Text>
-              </li>
-              <li className={styles.element}>
-                <Text size="ty">
-                  <Mark color="primary-bg">#4</Mark>
-                </Text>
-                <Text bold="font-light" color="black">
-                  Puedes ponerte en contacto con nosotros por correo electrónico
-                  a jaka@ .design y te responderemos en un plazo de 24 horas.
-                </Text>
-              </li>
-            </ul>
           </div>
         </div>
         <section id="contact" className={styles.contact}>
