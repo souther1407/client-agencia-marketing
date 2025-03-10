@@ -445,6 +445,79 @@
   align-self: center;
   position: relative;
 }
+
+.beneficiosScroll {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  background-color: var(--primary-darker);
+  width: 100%;
+}
+.beneficiosScroll__contents {
+  padding-left: var(--width-unit);
+  padding-right: var(--width-unit);
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+}
+.beneficiosScroll__contents > :first-child {
+  font-size: 32px;
+  margin-bottom: 24px;
+}
+.beneficiosScroll__card {
+  display: flex;
+  gap: 40px;
+  height: 522px;
+}
+
+.beneficiosScroll__imgs {
+  display: flex;
+  flex-direction: column;
+}
+.beneficiosScroll__img {
+  width: 600px;
+  object-fit: contain;
+}
+.beneficiosScroll__scrollBarNumero {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  align-items: center;
+}
+.beneficiosScroll__scrollBarNumero > :first-child {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 8px 0;
+}
+.beneficiosScroll__barraScrolling {
+  width: 4px;
+  height: auto;
+  background-color: rgb(4, 46, 46);
+  position: relative;
+  flex-grow: 1;
+}
+.beneficiosScroll__barraScrolling__scroll {
+  background-color: #006a5a;
+  height: 20%;
+}
+.beneficiosScroll__descripcion {
+  display: flex;
+  flex-direction: column;
+}
+.beneficiosScroll__descripcion > :first-child {
+  font-size: 28px;
+  line-height: 1.1;
+  margin-bottom: 8px;
+}
+
+.beneficiosScroll__descripcion > :nth-child(2) {
+  margin-bottom: 8px;
+}
+.beneficiosScroll__descripcion__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
 .flecha2 {
   top: 50%;
   left: -25%;

@@ -438,6 +438,175 @@ const OurProgram = () => {
             </Text>
           </div>
         </div>
+        <section className={styles.beneficiosScroll}>
+          <div className={styles.beneficiosScroll__contents}>
+            <Text color="white">
+              Aprende de Nuestro Metodo Especializado de Marketing Dental🔬
+            </Text>
+            <div className={styles.beneficiosScroll__card}>
+              <img src={Nene} className={styles.beneficiosScroll__img} />
+
+              <div className={styles.beneficiosScroll__scrollBarNumero}>
+                <Text color="white">01</Text>
+                <div className={styles.beneficiosScroll__barraScrolling}>
+                  <div
+                    className={styles.beneficiosScroll__barraScrolling__scroll}
+                  ></div>
+                </div>
+              </div>
+
+              <div className={styles.beneficiosScroll__descripcion}>
+                <Text color="white">
+                  Recibe una auditoría de marketing gratuita
+                </Text>
+                <Text color="light" bold="font-light">
+                  Aprende más sobre nuestro programa de 180 días y cómo puede
+                  cambiar tu práctica dental
+                </Text>
+                <div className={styles.beneficiosScroll__descripcion__cards}>
+                  <div className={styles.detailCard}>
+                    <Icon
+                      type={"check"}
+                      size={"1.5rem"}
+                      color="var(--primary)"
+                    />
+                    <Text color="white" bold="regular">
+                      Puedes ponerte en contacto con nosotros por correo
+                    </Text>
+                  </div>
+                  <div className={styles.detailCard}>
+                    <Icon
+                      type={"check"}
+                      size={"1.5rem"}
+                      color="var(--primary)"
+                    />
+                    <Text color="white" bold="regular">
+                      Puedes ponerte en contacto con nosotros por correo
+                    </Text>
+                  </div>
+                  <div className={styles.detailCard}>
+                    <Icon
+                      type={"check"}
+                      size={"1.5rem"}
+                      color="var(--primary)"
+                    />
+                    <Text color="white" bold="regular">
+                      Puedes ponerte en contacto con nosotros por correo
+                    </Text>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className={styles.beneficiosScroll__card}>
+              <img src={Nene} className={styles.beneficiosScroll__img} />
+
+              <div className={styles.beneficiosScroll__scrollBarNumero}>
+                <Text color="white">01</Text>
+                <div className={styles.beneficiosScroll__barraScrolling}>
+                  <div
+                    className={styles.beneficiosScroll__barraScrolling__scroll}
+                  ></div>
+                </div>
+              </div>
+
+              <div className={styles.beneficiosScroll__descripcion}>
+                <Text color="white">
+                  Recibe una auditoría de marketing gratuita
+                </Text>
+                <Text color="light" bold="font-light">
+                  Aprende más sobre nuestro programa de 180 días y cómo puede
+                  cambiar tu práctica dental
+                </Text>
+                <div className={styles.beneficiosScroll__descripcion__cards}>
+                  <div className={styles.detailCard}>
+                    <Icon
+                      type={"check"}
+                      size={"1.5rem"}
+                      color="var(--primary)"
+                    />
+                    <Text color="white" bold="regular">
+                      Puedes ponerte en contacto con nosotros por correo
+                    </Text>
+                  </div>
+                  <div className={styles.detailCard}>
+                    <Icon
+                      type={"check"}
+                      size={"1.5rem"}
+                      color="var(--primary)"
+                    />
+                    <Text color="white" bold="regular">
+                      Puedes ponerte en contacto con nosotros por correo
+                    </Text>
+                  </div>
+                  <div className={styles.detailCard}>
+                    <Icon
+                      type={"check"}
+                      size={"1.5rem"}
+                      color="var(--primary)"
+                    />
+                    <Text color="white" bold="regular">
+                      Puedes ponerte en contacto con nosotros por correo
+                    </Text>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className={styles.beneficiosScroll__card}>
+              <img src={Nene} className={styles.beneficiosScroll__img} />
+
+              <div className={styles.beneficiosScroll__scrollBarNumero}>
+                <Text color="white">01</Text>
+                <div className={styles.beneficiosScroll__barraScrolling}>
+                  <div
+                    className={styles.beneficiosScroll__barraScrolling__scroll}
+                  ></div>
+                </div>
+              </div>
+
+              <div className={styles.beneficiosScroll__descripcion}>
+                <Text color="white">
+                  Recibe una auditoría de marketing gratuita
+                </Text>
+                <Text color="light" bold="font-light">
+                  Aprende más sobre nuestro programa de 180 días y cómo puede
+                  cambiar tu práctica dental
+                </Text>
+                <div className={styles.beneficiosScroll__descripcion__cards}>
+                  <div className={styles.detailCard}>
+                    <Icon
+                      type={"check"}
+                      size={"1.5rem"}
+                      color="var(--primary)"
+                    />
+                    <Text color="white" bold="regular">
+                      Puedes ponerte en contacto con nosotros por correo
+                    </Text>
+                  </div>
+                  <div className={styles.detailCard}>
+                    <Icon
+                      type={"check"}
+                      size={"1.5rem"}
+                      color="var(--primary)"
+                    />
+                    <Text color="white" bold="regular">
+                      Puedes ponerte en contacto con nosotros por correo
+                    </Text>
+                  </div>
+                  <div className={styles.detailCard}>
+                    <Icon
+                      type={"check"}
+                      size={"1.5rem"}
+                      color="var(--primary)"
+                    />
+                    <Text color="white" bold="regular">
+                      Puedes ponerte en contacto con nosotros por correo
+                    </Text>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         <section id="contact" className={styles.contact}>
           {/*  <img src={Flecha2} className={`${styles.flecha} ${styles.flecha3}`} /> */}
           <div className={styles.desc}>
