@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./ourProgram.module.css";
 import Nav from "../../components/organisms/Nav/Nav";
 import Text from "../../components/atoms/Text/Text";
@@ -38,7 +38,26 @@ const OurProgram = () => {
       setShowModalVideo(false);
     }
   };
+  useEffect(() => {
+    const scrolls = document.querySelectorAll(".scroll");
 
+    const observers = [];
+    for (const scroll of scrolls) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add(styles.active);
+          }
+        });
+      });
+      observer.observe(scroll);
+      observers.push(observer);
+    }
+
+    return () => {
+      observers.forEach((o) => o.disconnect());
+    };
+  }, []);
   return (
     <div className={styles.page}>
       <Nav />
@@ -440,8 +459,9 @@ const OurProgram = () => {
         </div>
         <section className={styles.beneficiosScroll}>
           <div className={styles.beneficiosScroll__contents}>
-            <Text color="white">
-              Aprende de Nuestro Metodo Especializado de Marketing Dental🔬
+            <Text color="white" s={{ lineHeight: "1.1", textAlign: "center" }}>
+              Aprende de Nuestro Metodo <br /> Especializado de Marketing
+              Dental🔬
             </Text>
             <div className={styles.beneficiosScroll__card}>
               <img src={Nene} className={styles.beneficiosScroll__img} />
@@ -450,7 +470,7 @@ const OurProgram = () => {
                 <Text color="white">01</Text>
                 <div className={styles.beneficiosScroll__barraScrolling}>
                   <div
-                    className={styles.beneficiosScroll__barraScrolling__scroll}
+                    className={`${styles.beneficiosScroll__barraScrolling__scroll} scroll`}
                   ></div>
                 </div>
               </div>
@@ -504,7 +524,7 @@ const OurProgram = () => {
                 <Text color="white">01</Text>
                 <div className={styles.beneficiosScroll__barraScrolling}>
                   <div
-                    className={styles.beneficiosScroll__barraScrolling__scroll}
+                    className={`${styles.beneficiosScroll__barraScrolling__scroll} scroll`}
                   ></div>
                 </div>
               </div>
@@ -558,7 +578,7 @@ const OurProgram = () => {
                 <Text color="white">01</Text>
                 <div className={styles.beneficiosScroll__barraScrolling}>
                   <div
-                    className={styles.beneficiosScroll__barraScrolling__scroll}
+                    className={`${styles.beneficiosScroll__barraScrolling__scroll} scroll`}
                   ></div>
                 </div>
               </div>

@@ -484,6 +484,16 @@
   height: auto;
   align-items: center;
 }
+
+@keyframes scroll {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
 .beneficiosScroll__scrollBarNumero > :first-child {
   font-size: 36px;
   font-weight: bold;
@@ -497,8 +507,12 @@
   flex-grow: 1;
 }
 .beneficiosScroll__barraScrolling__scroll {
-  background-color: #006a5a;
-  height: 20%;
+  background-color: #25c19b;
+  height: 1%;
+  transition: all 1s linear;
+}
+.beneficiosScroll__barraScrolling__scroll.active {
+  height: 100%;
 }
 .beneficiosScroll__descripcion {
   display: flex;
