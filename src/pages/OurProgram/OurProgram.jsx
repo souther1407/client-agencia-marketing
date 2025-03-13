@@ -43,7 +43,7 @@ const OurProgram = () => {
     const scrolls = document.querySelectorAll(".scroll");
     let variablecontador = 0;
     let scrollY = 0;
-    const velocidad = 10;
+    const velocidad = 8;
     let contadoresScrolls = {
       contador1: 0,
       contador2: 0,
