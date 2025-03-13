@@ -38,26 +38,57 @@ const OurProgram = () => {
       setShowModalVideo(false);
     }
   };
+
   useEffect(() => {
     const scrolls = document.querySelectorAll(".scroll");
+    let variablecontador = 0;
+    let scrollY = 0;
+    const velocidad = 10;
+    let contadoresScrolls = {
+      contador1: 0,
+      contador2: 0,
+      contador3: 0,
+    };
+    const handleScroll = () => {
+      if (window.scrollY > scrollY) {
+        contadoresScrolls = {
+          contador1:
+            window.scrollY > 4000 ? contadoresScrolls.contador1 + velocidad : 0,
+          contador2:
+            window.scrollY > 5000 ? contadoresScrolls.contador2 + velocidad : 0,
+          contador3:
+            window.scrollY > 5500 ? contadoresScrolls.contador3 + velocidad : 0,
+        };
+      } else {
+        contadoresScrolls = {
+          contador1:
+            window.scrollY > 4000 ? contadoresScrolls.contador1 - velocidad : 0,
+          contador2:
+            window.scrollY > 5000 ? contadoresScrolls.contador2 - velocidad : 0,
+          contador3:
+            window.scrollY > 5500 ? contadoresScrolls.contador3 - velocidad : 0,
+        };
+      }
 
-    const observers = [];
-    for (const scroll of scrolls) {
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add(styles.active);
-          }
-        });
-      });
-      observer.observe(scroll);
-      observers.push(observer);
-    }
+      scrollY = window.scrollY; // Obtener la posición del scroll
+      let indice = 1;
+      console.log(scrollY);
+      console.log(contadoresScrolls);
 
+      for (let scroll of scrolls) {
+        /* scroll.style.transform = `perspective(1200px) translateY(${
+          contadoresScrolls["contador" + indice]
+        }px)`; */
+        scroll.style.height = `${contadoresScrolls["contador" + indice]}px`;
+        indice++;
+      }
+    };
+    document.addEventListener("scroll", handleScroll);
     return () => {
-      observers.forEach((o) => o.disconnect());
+      document.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   return (
     <div className={styles.page}>
       <Nav />

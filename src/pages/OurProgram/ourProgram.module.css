@@ -504,16 +504,19 @@
   height: auto;
   background-color: rgb(4, 46, 46);
   position: relative;
+  overflow: hidden;
   flex-grow: 1;
 }
 .beneficiosScroll__barraScrolling__scroll {
+  will-change: height;
   background-color: #25c19b;
+  left: 0;
+  right: 0;
+  overflow: hidden;
   height: 1%;
-  transition: all 1s linear;
+  transform: perspective(1200px);
 }
-.beneficiosScroll__barraScrolling__scroll.active {
-  height: 100%;
-}
+
 .beneficiosScroll__descripcion {
   display: flex;
   flex-direction: column;
