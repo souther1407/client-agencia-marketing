@@ -53,7 +53,7 @@ const OurProgram = () => {
       if (window.scrollY > scrollY) {
         contadoresScrolls = {
           contador1:
-            window.scrollY > 4000 ? contadoresScrolls.contador1 + velocidad : 0,
+            window.scrollY > 4100 ? contadoresScrolls.contador1 + velocidad : 0,
           contador2:
             window.scrollY > 5000 ? contadoresScrolls.contador2 + velocidad : 0,
           contador3:
@@ -62,7 +62,7 @@ const OurProgram = () => {
       } else {
         contadoresScrolls = {
           contador1:
-            window.scrollY > 4000 ? contadoresScrolls.contador1 - velocidad : 0,
+            window.scrollY > 4100 ? contadoresScrolls.contador1 - velocidad : 0,
           contador2:
             window.scrollY > 5000 ? contadoresScrolls.contador2 - velocidad : 0,
           contador3:
